@@ -1,0 +1,55 @@
+name: RRNC prospective Wine author strace
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run_author:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout fixed workflow commit
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
+      - name: Fetch pinned public inputs and run prospective author code
+        run: python3 experiment/run_hosted.py
+      - name: Retain success or failure receipt
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: rrnc-wine-strace-${{ github.run_id }}-${{ github.run_attempt }}
+          path: experiment/run_receipts/${{ github.run_id }}_${{ github.run_attempt }}/
+          if-no-files-found: error
+          retention-days: 30
+  attest_verified_author_run:
+    needs: run_author
+    if: needs.run_author.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+      artifact-metadata: write
+    steps:
+      - name: Checkout frozen verifier
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
+      - name: Download first-job receipt
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53
+        with:
+          name: rrnc-wine-strace-${{ github.run_id }}-${{ github.run_attempt }}
+          path: downloaded_receipt
+      - name: Independently verify author output and raw trace
+        run: python3 experiment/verify_receipt.py downloaded_receipt/receipt.tar bundle_verification.json
+      - name: Attest verified receipt tar
+        uses: actions/attest@c32b4b8b198b65d0bd9d63490e847ff7b53989d4
+        with:
+          subject-path: downloaded_receipt/receipt.tar

@@ -1,0 +1,18 @@
+{
+  "schema": "rrnc-prospective-wine-author-strace-v01",
+  "status": "FROZEN_BEFORE_HOSTED_RUN_LOCAL_ONLY",
+  "purpose": "Observe one new author-code Wine/Ours 25-draw execution with raw strace in a bounded GitHub-hosted Ubuntu container, then attest the independently verified receipt tar.",
+  "scope": "Prospective process and selected syscall evidence only. No complete read-byte set, original 2020 execution certification, independent scientific truth, human gold, or algorithmic method gain.",
+  "paper": "Leboeuf et al., NeurIPS 2020, Table 1 Wine/Ours",
+  "target": {"draws": 25, "seeds": "1,11,...,241", "prior_exponent": 13.7, "reported_mean_sd_3dp": ["0.904", "0.046"]},
+  "author": {"url": "https://codeload.github.com/jsleb333/paper-decision-trees-as-partitioning-machines/zip/0f354dac486a9845a9504419e31c84c7eb39507f", "bytes": 95119, "sha256": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"},
+  "data": {"url": "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data", "bytes": 10782, "sha256": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"},
+  "runner_sha256": "c9b05666e50969c96de62ac53fd56481517b58f7899bd5ffcbfc631f894639df",
+  "base_image": "ubuntu:24.04@sha256:008173c23f95b170204355c12626cb5a965d779a7e1283b09e9cffbb1bf33ca3",
+  "container_policy": ["network=none", "read-only rootfs", "all capabilities dropped", "no-new-privileges", "UID/GID 65534", "default Docker seccomp", "1 GiB", "1 CPU"],
+  "trace_rule": "Require raw strace openat and positive read events for the pinned Wine path; do not infer complete byte consumption or untraced activity.",
+  "release_rule": "Only a successful second-VM verifier may request a GitHub artifact attestation for the tar digest; that identifies a new workflow run, not the 2020 experiment.",
+  "source_redistribution": "The repository does not contain the author archive or UCI data; the first job downloads and hashes them before image build.",
+  "p1_real_replay_authorized": false,
+  "reserved_local_evaluation_opened": false
+}
