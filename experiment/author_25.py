@@ -19,7 +19,7 @@ SOURCE = HERE / "src/paper-decision-trees-as-partitioning-machines-0f354dac486a9
 def main() -> None:
     nonce = sys.argv[1]
     assert len(nonce) == 32 and all(ch in "0123456789abcdef" for ch in nonce)
-    out = HERE / "out" / f"author_result_{nonce}.json"
+    out = Path("/out") / f"author_result_{nonce}.json"
     assert not out.exists(), out
     csv_path = SOURCE / "experiments/results/wine/ac25/ours.csv"
     params_path = SOURCE / "experiments/results/wine/ac25/ours_exp_params.py"
