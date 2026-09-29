@@ -25,6 +25,7 @@ MAX_TAR_BYTES = 150_000_000
 MAX_EXTRACTED_BYTES = 180_000_000
 MAX_MEMBERS = 180
 MAX_JSON_BYTES = 200_000
+MAX_INPUT_BYTES = 200_000
 MAX_TRACE_BYTES = 80_000_000
 WINE_SUFFIX = "/experiments/datasets/raw/wine.raw"
 
@@ -87,6 +88,12 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
             and pin.get(key, {}).get("sha256") == protocol[key]["sha256"]
             and pin.get(key, {}).get("url") == protocol[key]["url"]
             for key in ("author", "data")) and host.get("inputs") == pin
+        retained = {"author": directory / "inputs/author.zip",
+                    "data": directory / "inputs/wine.raw"}
+        checks["retained_download_bytes"] = all(
+            len(raw := limited(retained[key], MAX_INPUT_BYTES)) == protocol[key]["bytes"]
+            and sha(raw) == protocol[key]["sha256"]
+            for key in ("author", "data"))
         environment = host.get("github_environment", {})
         run_id = environment.get("GITHUB_RUN_ID")
         attempt = environment.get("GITHUB_RUN_ATTEMPT")

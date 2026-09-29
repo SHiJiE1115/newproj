@@ -127,6 +127,10 @@ def main() -> None:
                 "author": download_input(protocol["author"], context / "author.zip"),
                 "data": download_input(protocol["data"], context / "wine.raw"),
             }
+            retained_inputs = directory / "inputs"
+            retained_inputs.mkdir()
+            shutil.copyfile(context / "author.zip", retained_inputs / "author.zip")
+            shutil.copyfile(context / "wine.raw", retained_inputs / "wine.raw")
             (directory / "input_pin.json").write_text(
                 json.dumps(host["inputs"], indent=2, sort_keys=True) + "\n", encoding="utf-8")
             tag = f"rrnc-wine-strace:{run_id}-{attempt}"

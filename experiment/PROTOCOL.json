@@ -1,10 +1,10 @@
 {
-  "schema": "rrnc-prospective-wine-author-strace-v03",
-  "status": "FROZEN_AFTER_COUNTERFACTUAL_IDENTITY_AUDIT_FOR_POSSIBLE_SECOND_RUN_UNRUN",
+  "schema": "rrnc-prospective-wine-author-strace-v04-development",
+  "status": "OFFLINE_INPUT_RETENTION_CANDIDATE_UNRUN",
   "supersedes_failed_run": "https://github.com/SHiJiE1115/newproj/actions/runs/36583899749",
   "v02_unrun_commit": "bf1fc84de02eec53b0afacedc49425364265440d",
   "identity_rule": "The second VM must compare the tar's reported GitHub repository, commit, run ID, and attempt to its own environment before requesting artifact attestation; standalone callers must supply independently trusted expected values.",
-  "purpose": "Observe one new author-code Wine/Ours 25-draw execution with raw strace in a bounded GitHub-hosted Ubuntu container, then attest the independently verified receipt tar.",
+  "purpose": "Observe one new author-code Wine/Ours 25-draw execution with raw strace in a bounded GitHub-hosted Ubuntu container, retain the exact pinned author and Wine input bytes, then attest the independently verified receipt tar.",
   "scope": "Prospective process and selected syscall evidence only. No complete read-byte set, original 2020 execution certification, independent scientific truth, human gold, or algorithmic method gain.",
   "paper": "Leboeuf et al., NeurIPS 2020, Table 1 Wine/Ours",
   "target": {
@@ -39,8 +39,9 @@
     "1 CPU"
   ],
   "trace_rule": "Require raw strace openat and positive read events for the pinned Wine path; do not infer complete byte consumption or untraced activity.",
+  "retained_input_rule": "The first job copies the exact downloaded author ZIP and Wine raw data into the receipt tar; the second VM recomputes both byte lengths and SHA-256 against the frozen protocol before any PASS. This does not by itself prove which bytes the process consumed.",
   "release_rule": "Only a successful second-VM verifier may request a GitHub artifact attestation for the tar digest; that identifies a new workflow run, not the 2020 experiment.",
-  "source_redistribution": "The repository does not contain the author archive or UCI data; the first job downloads and hashes them before image build.",
+  "source_redistribution": "The repository does not contain the author archive or UCI data; a future run's artifact would retain both public downloaded originals for independent byte verification.",
   "p1_real_replay_authorized": false,
   "reserved_local_evaluation_opened": false
 }
