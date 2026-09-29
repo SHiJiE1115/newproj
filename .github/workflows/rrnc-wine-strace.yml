@@ -48,7 +48,7 @@ jobs:
           name: rrnc-wine-strace-${{ github.run_id }}-${{ github.run_attempt }}
           path: downloaded_receipt
       - name: Independently verify author output and raw trace
-        run: python3 experiment/verify_receipt.py downloaded_receipt/receipt.tar bundle_verification.json
+        run: python3 experiment/verify_receipt.py downloaded_receipt/receipt.tar bundle_verification.json "$GITHUB_REPOSITORY" "$GITHUB_SHA" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
       - name: Attest verified receipt tar
         uses: actions/attest@c32b4b8b198b65d0bd9d63490e847ff7b53989d4
         with:

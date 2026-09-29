@@ -59,7 +59,8 @@ def expected_sources() -> tuple[dict, dict]:
     return freeze, expected
 
 
-def audit_tree(directory: Path, *, require_source_snapshot: bool = True) -> dict:
+def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
+               expected_identity: dict | None = None) -> dict:
     checks: dict[str, bool] = {}
     observations: dict = {}
     try:
@@ -96,6 +97,14 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True) -> dict
             and isinstance(commit, str) and re.fullmatch(r"[0-9a-f]{40}", commit) is not None
             and environment.get("RUNNER_OS") == "Linux"
             and environment.get("RUNNER_ARCH") == "X64")
+        identity_keys = ("GITHUB_REPOSITORY", "GITHUB_SHA", "GITHUB_RUN_ID",
+                         "GITHUB_RUN_ATTEMPT")
+        checks["github_run_identity_context"] = (
+            isinstance(expected_identity, dict) and all(
+                isinstance(expected_identity.get(key), str)
+                and bool(expected_identity[key])
+                and environment.get(key) == expected_identity[key]
+                for key in identity_keys))
         nonce = sha(f"{commit}:{run_id}:{attempt}".encode())[:32]
         checks["nonce_binding"] = host.get("run_nonce") == nonce
         command = host.get("container_command", [])
@@ -208,16 +217,23 @@ def safely_extract(tar_path: Path, directory: Path) -> None:
 
 
 def main() -> None:
+    if len(sys.argv) != 7:
+        raise SystemExit("usage: verify_receipt.py TAR REPORT EXPECTED_REPOSITORY "
+                         "EXPECTED_SHA EXPECTED_RUN_ID EXPECTED_RUN_ATTEMPT")
     tar_path, report_path = (Path(arg).resolve() for arg in sys.argv[1:3])
+    expected_identity = dict(zip(
+        ("GITHUB_REPOSITORY", "GITHUB_SHA", "GITHUB_RUN_ID", "GITHUB_RUN_ATTEMPT"),
+        sys.argv[3:7]))
     report = {"schema": "rrnc-wine-strace-bundle-verification-v01",
               "status": "INVALID_OR_UNRUN",
-              "scope": "Prospective selected syscall and arithmetic evidence only"}
+              "scope": "Prospective selected syscall and arithmetic evidence only",
+              "expected_github_identity_from_caller": expected_identity}
     try:
         report["tar_sha256"] = sha(limited(tar_path, MAX_TAR_BYTES))
         with tempfile.TemporaryDirectory(prefix="rrnc_wine_receipt_") as temporary:
             root = Path(temporary)
             safely_extract(tar_path, root)
-            check = audit_tree(root)
+            check = audit_tree(root, expected_identity=expected_identity)
             report["receipt_audit"] = check
             report["status"] = check["status"]
     except (OSError, ValueError, tarfile.TarError, json.JSONDecodeError) as error:

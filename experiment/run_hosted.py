@@ -162,7 +162,11 @@ def main() -> None:
             host["status"] = "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
             (directory / "host_run.json").write_text(
                 json.dumps(host, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-            check = verify_receipt.audit_tree(directory, require_source_snapshot=True)
+            check = verify_receipt.audit_tree(
+                directory, require_source_snapshot=True,
+                expected_identity={key: os.environ.get(key) for key in (
+                    "GITHUB_REPOSITORY", "GITHUB_SHA", "GITHUB_RUN_ID",
+                    "GITHUB_RUN_ATTEMPT")})
             (directory / "first_job_verification.json").write_text(
                 json.dumps(check, indent=2, sort_keys=True) + "\n", encoding="utf-8")
             host["status"] = check["status"]
