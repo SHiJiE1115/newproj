@@ -1,15 +1,15 @@
 {
-  "schema": "rrnc-wine-strace-source-freeze-v05-development",
+  "schema": "rrnc-wine-strace-source-freeze-v06-development",
   "sha256_by_relative_path": {
     ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
     ".github/workflows/rrnc-wine-strace.yml": "ac687fa4c84ab93f2fecc571db1953c148e2863ddc74dc6e164d79b4ee4a202c",
-    "README.md": "7360a7a9bd0c8a5653798ea29437c4a54813bad6e94f32637ee17e2f638edef7",
+    "README.md": "bf08dc23c1ea979e6e95c5d23f020c2b8fb69fdd27b553cf2442a6a2fc56fa03",
     "experiment/Dockerfile": "3c21f0c56c0f519ba93722bf3a2b81e3f0a876ce96f708a88f0a30529f5be7a2",
     "experiment/PROTOCOL.json": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c",
     "experiment/author_25.py": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
     "experiment/entrypoint.sh": "36b8ed4c2f1245322f2fa51669afb47abdef4245ebf0f8ee7954358ecd396168",
     "experiment/run_hosted.py": "b8356cbf176dc2a188903ddb02b4bfaa4d29afd4ce3c9a721bd2330c684b2194",
-    "experiment/verify_receipt.py": "0b3c1e0d0f36f7bba518fbb8610f7c2216b1c4eda17a49c918cb9be997810565"
+    "experiment/verify_receipt.py": "2427f81638b841a4e859e7e722272030ab8d4ecec635349da150729b80463695"
   },
-  "status": "OFFLINE_TRACE_ISOLATION_CANDIDATE_UNRUN"
+  "status": "OFFLINE_PORTABLE_TAR_CANDIDATE_UNRUN"
 }

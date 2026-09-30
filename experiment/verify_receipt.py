@@ -253,15 +253,29 @@ def safely_extract(tar_path: Path, directory: Path) -> dict:
         raise ValueError("TAR_BYTE_CAP")
     total, seen = 0, set()
     metadata = {}
+    extraction_root = directory.resolve()
     with tarfile.open(tar_path, "r:") as archive:
         members = archive.getmembers()
         if len(members) > MAX_MEMBERS:
             raise ValueError("TAR_MEMBER_CAP")
         for member in members:
             pure = PurePosixPath(member.name)
+            # The receipt uses POSIX names, but this verifier is also run on
+            # Windows after download. Windows treats backslash and drive/ADS
+            # colons as path syntax even though PurePosixPath does not.
+            parts = pure.parts
+            reserved = {"con", "prn", "aux", "nul"}
+            reserved.update(f"com{number}" for number in range(1, 10))
+            reserved.update(f"lpt{number}" for number in range(1, 10))
             if (member.name != pure.as_posix() or pure.is_absolute()
-                    or ".." in pure.parts or not pure.parts or not member.isfile()
-                    or member.name in seen or member.size < 0):
+                    or not parts or not member.isfile()
+                    or member.name in seen or member.size < 0
+                    or "\\" in member.name or ":" in member.name
+                    or any(part in {".", ".."}
+                           or re.fullmatch(r"[A-Za-z0-9._-]{1,120}", part) is None
+                           or part.endswith(".")
+                           or part.split(".", 1)[0].casefold() in reserved
+                           for part in parts)):
                 raise ValueError("UNSAFE_TAR_MEMBER")
             seen.add(member.name)
             metadata[member.name] = {
@@ -277,7 +291,9 @@ def safely_extract(tar_path: Path, directory: Path) -> dict:
             data = stream.read(member.size + 1)
             if len(data) != member.size:
                 raise ValueError("TAR_MEMBER_SIZE_MISMATCH")
-            target = directory.joinpath(*pure.parts)
+            target = directory.joinpath(*parts)
+            if not target.resolve().is_relative_to(extraction_root):
+                raise ValueError("TAR_MEMBER_OUTSIDE_EXTRACTION_ROOT")
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(data)
     return metadata
