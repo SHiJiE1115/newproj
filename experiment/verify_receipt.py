@@ -13,6 +13,7 @@ import io
 import json
 from pathlib import Path, PurePosixPath
 import re
+import stat
 import statistics
 import sys
 import tarfile
@@ -49,6 +50,10 @@ def obj(path: Path) -> dict:
     return value
 
 
+def flag_values(argv: list[str], flag: str) -> list[str]:
+    return [argv[i + 1] for i, item in enumerate(argv[:-1]) if item == flag]
+
+
 def expected_sources() -> tuple[dict, dict]:
     freeze = obj(HERE / "FREEZE.json")
     expected = freeze["sha256_by_relative_path"]
@@ -61,7 +66,8 @@ def expected_sources() -> tuple[dict, dict]:
 
 
 def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
-               expected_identity: dict | None = None) -> dict:
+               expected_identity: dict | None = None,
+               tar_metadata: dict | None = None) -> dict:
     checks: dict[str, bool] = {}
     observations: dict = {}
     try:
@@ -121,7 +127,14 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
             and command[-1] == nonce
             and all(item in command for item in (
                 "--network", "none", "--read-only", "--cap-drop", "ALL",
-                "--security-opt", "no-new-privileges", "--user", "65534:65534"))
+                "--security-opt", "no-new-privileges"))
+            and flag_values(command, "--user") == ["0:0"]
+            and flag_values(command, "--cap-add") == [
+                "SETUID", "SETGID", "SYS_PTRACE"]
+            and any(arg.startswith("type=bind,") and
+                    "dst=/out" in arg.split(",") and
+                    not any(opt in ("readonly", "ro") for opt in arg.split(","))
+                    for arg in flag_values(command, "--mount"))
             and host.get("build", {}).get("returncode") == 0
             and host.get("container", {}).get("returncode") == 0
             and str(host.get("image_id", "")).startswith("sha256:"))
@@ -131,6 +144,15 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
             result.get("status") == "success" and result.get("run_nonce") == nonce
             and result.get("shape") == [178, 13, 3]
             and result.get("network_attempts_python_guard") == 0)
+        checks["author_unprivileged_and_write_denied"] = (
+            all(result.get(key) == 65534 for key in (
+                "uid_self_reported", "euid_self_reported",
+                "gid_self_reported", "egid_self_reported"))
+            and result.get("groups_self_reported") == []
+            and result.get("cap_eff_self_reported") == 0
+            and result.get("observer_write_canary_denied") is True
+            and result.get("observer_rename_canary_denied") is True
+            and result.get("observer_fd_absent") is True)
         checks["trace_exit_zero"] = (
             limited(out / "trace_exit_code.txt", 20).strip() == b"0")
         csv_bytes = limited(directory / "results/ours.csv", 100_000)
@@ -160,24 +182,56 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
         pid = result.get("pid_self_reported")
         if not isinstance(pid, int) or pid <= 0:
             raise ValueError("BAD_AUTHOR_PID")
-        trace_paths = sorted(out.glob("trace.*"))
+        trace_paths = sorted((out / "observer").glob("trace.*"))
         checks["trace_file_set_bounded"] = 1 <= len(trace_paths) <= 64 and all(
             path.stat().st_size <= MAX_TRACE_BYTES for path in trace_paths)
-        trace = limited(out / f"trace.{pid}", MAX_TRACE_BYTES).decode(
+        isolation = host.get("trace_isolation", {})
+        files = isolation.get("trace_files", {})
+        checks["trace_isolation_observed"] = (
+            isolation.get("out_mode_octal") == "0o1777"
+            and isolation.get("observer_pre_mode_text") == "0:0:700"
+            and limited(out / "observer_pre_mode.txt", 30).strip() == b"0:0:700"
+            and isolation.get("observer_uid") == 0
+            and isolation.get("observer_gid") == 0
+            and isolation.get("observer_post_mode_octal") == "0o755"
+            and isinstance(files, dict)
+            and set(files) == {path.name for path in trace_paths}
+            and all(entry == {"uid": 0, "gid": 0, "mode_octal": "0o644"}
+                    for entry in files.values()))
+        if tar_metadata is None:
+            checks["trace_file_owner_not_subject"] = all(
+                path.stat().st_uid == 0 and path.stat().st_gid == 0
+                and stat.S_IMODE(path.stat().st_mode) == 0o644
+                for path in trace_paths)
+        else:
+            checks["trace_file_owner_not_subject"] = all(
+                tar_metadata.get(f"out/observer/{path.name}") ==
+                {"uid": 0, "gid": 0, "mode_octal": "0o644"}
+                for path in trace_paths)
+        trace = limited(out / f"observer/trace.{pid}", MAX_TRACE_BYTES).decode(
             "utf-8", errors="replace")
         lines = trace.splitlines()
         wine_path = ("/probe/src/paper-decision-trees-as-partitioning-machines-"
                      "0f354dac486a9845a9504419e31c84c7eb39507f" + WINE_SUFFIX)
         checks["main_trace_clean_exit"] = (
             bool(lines) and lines[-1].strip().endswith("+++ exited with 0 +++"))
-        checks["wine_open_observed"] = any(
-            "openat(" in line and f'"{wine_path}"' in line
-            and re.search(r"=\s+\d+(?:\s|<|$)", line)
-            for line in lines)
-        checks["wine_positive_read_observed"] = any(
-            "read(" in line and f"<{wine_path}>" in line
-            and re.search(r"=\s+[1-9]\d*(?:\s|$)", line)
-            for line in lines)
+        execve = re.compile(
+            r'^\d+\.\d+ execve\("/usr/bin/python3", '
+            r'\["/usr/bin/python3", "-I", "-B", "/probe/author_25.py", "'
+            + re.escape(nonce) + r'"\], .*\) = 0$')
+        exec_indices = [i for i, line in enumerate(lines) if execve.fullmatch(line)]
+        open_indices = [i for i, line in enumerate(lines)
+                        if "openat(" in line and f'"{wine_path}"' in line
+                        and re.search(r"=\s+\d+(?:\s|<|$)", line)]
+        read_indices = [i for i, line in enumerate(lines)
+                        if "read(" in line and f"<{wine_path}>" in line
+                        and re.search(r"=\s+[1-9]\d*(?:\s|$)", line)]
+        checks["author_execve_same_pid"] = len(exec_indices) == 1
+        checks["wine_open_observed"] = bool(open_indices)
+        checks["wine_positive_read_observed"] = bool(read_indices)
+        checks["execve_wine_order"] = (
+            bool(exec_indices and open_indices and read_indices)
+            and exec_indices[0] < open_indices[0] < read_indices[0])
         observations["trace_files"] = len(trace_paths)
         observations["author_main_pid"] = pid
     except (OSError, ValueError, KeyError, TypeError, IndexError, UnicodeError,
@@ -194,10 +248,11 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
             "scope": "Prospective selected syscall and arithmetic evidence only"}
 
 
-def safely_extract(tar_path: Path, directory: Path) -> None:
+def safely_extract(tar_path: Path, directory: Path) -> dict:
     if tar_path.stat().st_size > MAX_TAR_BYTES:
         raise ValueError("TAR_BYTE_CAP")
     total, seen = 0, set()
+    metadata = {}
     with tarfile.open(tar_path, "r:") as archive:
         members = archive.getmembers()
         if len(members) > MAX_MEMBERS:
@@ -209,6 +264,10 @@ def safely_extract(tar_path: Path, directory: Path) -> None:
                     or member.name in seen or member.size < 0):
                 raise ValueError("UNSAFE_TAR_MEMBER")
             seen.add(member.name)
+            metadata[member.name] = {
+                "uid": member.uid, "gid": member.gid,
+                "mode_octal": oct(member.mode),
+            }
             total += member.size
             if total > MAX_EXTRACTED_BYTES:
                 raise ValueError("TAR_EXTRACTED_BYTE_CAP")
@@ -221,6 +280,7 @@ def safely_extract(tar_path: Path, directory: Path) -> None:
             target = directory.joinpath(*pure.parts)
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(data)
+    return metadata
 
 
 def main() -> None:
@@ -239,8 +299,9 @@ def main() -> None:
         report["tar_sha256"] = sha(limited(tar_path, MAX_TAR_BYTES))
         with tempfile.TemporaryDirectory(prefix="rrnc_wine_receipt_") as temporary:
             root = Path(temporary)
-            safely_extract(tar_path, root)
-            check = audit_tree(root, expected_identity=expected_identity)
+            tar_metadata = safely_extract(tar_path, root)
+            check = audit_tree(root, expected_identity=expected_identity,
+                               tar_metadata=tar_metadata)
             report["receipt_audit"] = check
             report["status"] = check["status"]
     except (OSError, ValueError, tarfile.TarError, json.JSONDecodeError) as error:

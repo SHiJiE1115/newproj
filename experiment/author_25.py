@@ -19,6 +19,7 @@ SOURCE = HERE / "src/paper-decision-trees-as-partitioning-machines-0f354dac486a9
 def main() -> None:
     nonce = sys.argv[1]
     assert len(nonce) == 32 and all(ch in "0123456789abcdef" for ch in nonce)
+    os.umask(0o022)
     out = Path("/out") / f"author_result_{nonce}.json"
     assert not out.exists(), out
     csv_path = SOURCE / "experiments/results/wine/ac25/ours.csv"
@@ -27,6 +28,42 @@ def main() -> None:
     result = {"status": "started", "run_nonce": nonce, "cwd_initial": os.getcwd(),
               "pid_self_reported": os.getpid(), "started_ns_self_reported": time.time_ns()}
     try:
+        result["uid_self_reported"] = os.getuid()
+        result["euid_self_reported"] = os.geteuid()
+        result["gid_self_reported"] = os.getgid()
+        result["egid_self_reported"] = os.getegid()
+        result["groups_self_reported"] = os.getgroups()
+        proc_status = Path("/proc/self/status").read_text(encoding="ascii")
+        cap_line = next(line for line in proc_status.splitlines()
+                        if line.startswith("CapEff:"))
+        result["cap_eff_self_reported"] = int(cap_line.split()[1], 16)
+        assert (result["uid_self_reported"], result["euid_self_reported"],
+                result["gid_self_reported"], result["egid_self_reported"]) == (65534,) * 4
+        assert result["groups_self_reported"] == []
+        assert result["cap_eff_self_reported"] == 0
+        try:
+            (Path("/out/observer") / f"write_canary_{nonce}").write_text("denied\n")
+        except PermissionError:
+            result["observer_write_canary_denied"] = True
+        else:
+            raise RuntimeError("AUTHOR_CAN_WRITE_OBSERVER_DIRECTORY")
+        try:
+            os.rename("/out/observer", f"/out/observer_rename_canary_{nonce}")
+        except PermissionError:
+            result["observer_rename_canary_denied"] = True
+        else:
+            raise RuntimeError("AUTHOR_CAN_RENAME_OBSERVER_DIRECTORY")
+        inherited_observer_fds = []
+        for fd in os.listdir("/proc/self/fd"):
+            try:
+                target = os.readlink(f"/proc/self/fd/{fd}")
+            except FileNotFoundError:
+                continue
+            if target.startswith("/out/observer"):
+                inherited_observer_fds.append(fd)
+        result["observer_fd_absent"] = not inherited_observer_fds
+        assert result["observer_fd_absent"], "AUTHOR_INHERITED_OBSERVER_FD"
+
         import numpy as np
         import pandas as pd
         import scipy

@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import stat
 import subprocess
 import sys
 import tarfile
@@ -146,12 +147,14 @@ def main() -> None:
                 raise RuntimeError("IMAGE_ID_UNAVAILABLE")
             out, results = directory / "out", directory / "results"
             out.mkdir(); results.mkdir()
-            out.chmod(0o777); results.chmod(0o777)
+            out.chmod(0o1777); results.chmod(0o777)
             name = f"rrnc-wine-strace-{run_id}-{attempt}"
             argv = ["docker", "run", "--rm", "--name", name, "--network", "none",
-                    "--read-only", "--cap-drop", "ALL", "--security-opt", "no-new-privileges",
+                    "--read-only", "--cap-drop", "ALL",
+                    "--cap-add", "SETUID", "--cap-add", "SETGID",
+                    "--cap-add", "SYS_PTRACE", "--security-opt", "no-new-privileges",
                     "--pids-limit", "64", "--memory", "1g", "--cpus", "1",
-                    "--user", "65534:65534", "--tmpfs", "/tmp:rw,nosuid,nodev,size=64m",
+                    "--user", "0:0", "--tmpfs", "/tmp:rw,nosuid,nodev,size=64m",
                     "--mount", f"type=bind,src={out},dst=/out",
                     "--mount", "type=bind,src=" + str(results) + ",dst=/probe/src/"
                     "paper-decision-trees-as-partitioning-machines-0f354dac486a9845a9504419e31c84c7eb39507f/"
@@ -163,6 +166,30 @@ def main() -> None:
             host["cleanup_returncode"] = cleanup["returncode"]
             if host["container"]["returncode"] != 0:
                 raise RuntimeError("AUTHOR_CONTAINER_FAILED")
+            observer = out / "observer"
+            trace_files = sorted(observer.glob("trace.*"))
+            host["trace_isolation"] = {
+                "out_mode_octal": oct(stat.S_IMODE(out.stat().st_mode)),
+                "observer_pre_mode_text": (out / "observer_pre_mode.txt").read_text().strip(),
+                "observer_uid": observer.stat().st_uid,
+                "observer_gid": observer.stat().st_gid,
+                "observer_post_mode_octal": oct(stat.S_IMODE(observer.stat().st_mode)),
+                "trace_files": {
+                    path.name: {
+                        "uid": path.stat().st_uid, "gid": path.stat().st_gid,
+                        "mode_octal": oct(stat.S_IMODE(path.stat().st_mode)),
+                    } for path in trace_files
+                },
+            }
+            isolation = host["trace_isolation"]
+            if not (isolation["out_mode_octal"] == "0o1777"
+                    and isolation["observer_pre_mode_text"] == "0:0:700"
+                    and (isolation["observer_uid"], isolation["observer_gid"]) == (0, 0)
+                    and isolation["observer_post_mode_octal"] == "0o755"
+                    and trace_files and len(trace_files) <= 64
+                    and all(entry == {"uid": 0, "gid": 0, "mode_octal": "0o644"}
+                            for entry in isolation["trace_files"].values())):
+                raise RuntimeError("TRACE_ISOLATION_NOT_OBSERVED")
             host["status"] = "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
             (directory / "host_run.json").write_text(
                 json.dumps(host, indent=2, sort_keys=True) + "\n", encoding="utf-8")
