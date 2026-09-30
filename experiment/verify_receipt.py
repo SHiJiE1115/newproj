@@ -251,7 +251,7 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
 def safely_extract(tar_path: Path, directory: Path) -> dict:
     if tar_path.stat().st_size > MAX_TAR_BYTES:
         raise ValueError("TAR_BYTE_CAP")
-    total, seen = 0, set()
+    total, seen, seen_windows = 0, set(), set()
     metadata = {}
     extraction_root = directory.resolve()
     with tarfile.open(tar_path, "r:") as archive:
@@ -267,9 +267,11 @@ def safely_extract(tar_path: Path, directory: Path) -> dict:
             reserved = {"con", "prn", "aux", "nul"}
             reserved.update(f"com{number}" for number in range(1, 10))
             reserved.update(f"lpt{number}" for number in range(1, 10))
+            windows_identity = "/".join(part.casefold() for part in parts)
             if (member.name != pure.as_posix() or pure.is_absolute()
                     or not parts or not member.isfile()
-                    or member.name in seen or member.size < 0
+                    or member.name in seen or windows_identity in seen_windows
+                    or member.size < 0
                     or "\\" in member.name or ":" in member.name
                     or any(part in {".", ".."}
                            or re.fullmatch(r"[A-Za-z0-9._-]{1,120}", part) is None
@@ -278,6 +280,7 @@ def safely_extract(tar_path: Path, directory: Path) -> dict:
                            for part in parts)):
                 raise ValueError("UNSAFE_TAR_MEMBER")
             seen.add(member.name)
+            seen_windows.add(windows_identity)
             metadata[member.name] = {
                 "uid": member.uid, "gid": member.gid,
                 "mode_octal": oct(member.mode),
