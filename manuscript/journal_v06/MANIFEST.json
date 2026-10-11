@@ -1,0 +1,46 @@
+{
+  "schema": "journal-v06-reading-packet-v1",
+  "status": "REVIEWED_PREPARATION_COPY_NOT_SUBMISSION",
+  "files": [
+    {
+      "path": "CHANGES.md",
+      "bytes": 2804,
+      "sha256": "1044a32710c67ec94e587c4b19922c40e9b7148765dc483b15b12dbebf32658e"
+    },
+    {
+      "path": "paper.pdf",
+      "bytes": 548825,
+      "sha256": "8b43ec92bc06dbf2eb0d6ac92cde89ab2e7cd530a16288cf77385bbcedb88516"
+    },
+    {
+      "path": "paper.tex",
+      "bytes": 62884,
+      "sha256": "732c2f137dba6c2a11c10ee4c2b212efde535f4801e582ee1ee96b7b0adadf76"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2674,
+      "sha256": "dc467f45927fadde56bb98257f71861edcd20ee1ee48d7dbffe85a5be0a57cd4"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 9733,
+      "sha256": "0b15e13a0c724d4442aa5ae4d17abdc6ae48b0a2bae07d58493ef8d242dcc91b"
+    }
+  ],
+  "pdf_pages": 24,
+  "self_hash_excluded": true,
+  "existing_core_statement_count_unchanged": 6,
+  "existing_explicit_proof_count_unchanged": 3,
+  "added_analytic_arguments": true,
+  "whole_mathematical_body_byte_identical_to_prior_drafts": false,
+  "bibliography_entries": 15,
+  "bibliography_v04_to_v05_added": 1,
+  "bibliography_v05_to_v06_byte_identical": true,
+  "packet_scripts_run_mathematics": false,
+  "new_finite_certificate_premise": false,
+  "human_author_review_completed": false,
+  "private_author_forms_included": false,
+  "publisher_typesetting_dependencies_bundled": false,
+  "new_blanket_licence_selected": false
+}
