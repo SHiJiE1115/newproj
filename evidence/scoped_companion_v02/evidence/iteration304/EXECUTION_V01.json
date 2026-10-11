@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "status": "PASS_RELOCATION_QA_ACTUAL_EXECUTION_RECORDED",
+  "human_review": false,
+  "recorded_at_utc": "2026-10-11T19:18:48.420241+00:00",
+  "actual_tool": {
+    "tool_chunk_id": "f4093b",
+    "exit_code": 0,
+    "wall_seconds": 5.3833474,
+    "session_id": null,
+    "kind": "Agent transcription of the actual exec result; not OS-signed."
+  },
+  "command": [
+    "C:/Users/dongs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/accept_relocated_v01.py"
+  ],
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/accept_relocated_v01.py",
+    "bytes": 22443,
+    "sha256": "96f1631bc1284d818715b454d10a83aa62c0b4a0c9a29ab4d03afade5271e2c8"
+  },
+  "result": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/PACKAGE_ACCEPTANCE_V01.json",
+    "bytes": 47262,
+    "sha256": "ab8d53a6278c88a9c4133cc763ca12922fc2648f2f5165c7c9ba6449dc7ba113"
+  },
+  "guards": [
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER304_RELOCATION_QA_PREFLIGHT_V01.json",
+      "bytes": 3194,
+      "sha256": "d3eff50861bc9809144bab84a216c27d096c0eef9fc8364bcd05ed804b880ce6",
+      "actual_tool_chunk_id": "7241f0",
+      "exit_code": 0
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER304_RELOCATION_QA_EXEC_PREFLIGHT_V01.json",
+      "bytes": 3192,
+      "sha256": "abb3072796a96cabaaa02614f6f01b9d79e9d2731a1ee12364291d200b041fac",
+      "actual_tool_chunk_id": "244530",
+      "exit_code": 0
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER304_RELOCATION_QA_RECEIPT_PREFLIGHT_V01.json",
+      "bytes": 3189,
+      "sha256": "f8e7581edd8d47c706d8c29674894787a85df21c26c43411e5dddf8a4c6c7db0",
+      "actual_tool_chunk_id": "44b226",
+      "exit_code": 0
+    }
+  ],
+  "launcher_actual": {
+    "command": [
+      "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration304\\clean package with spaces\\run.py",
+      "--pdftotext",
+      "C:\\Users\\dongs\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdftotext.exe",
+      "--output",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\qa_v01\\relocated output"
+    ],
+    "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/unrelated working directory",
+    "started_utc": "2026-10-11T19:18:01.748978+00:00",
+    "pid": 29208,
+    "returncode": 0,
+    "wall_seconds": 2.8247341999958735,
+    "ended_utc": "2026-10-11T19:18:04.574062+00:00",
+    "stdout": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stdout.txt",
+      "bytes": 246,
+      "sha256": "3823dd16a5df66d80a4787e9b5d35eac684c5cccdce45187d122328478d06f1e"
+    },
+    "stderr": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "replay_child_exit_code": 0,
+  "launcher_exit_code": 0,
+  "replay_invocations": 1,
+  "whole_replay_child_wall_seconds": 2.6176106999919284,
+  "qa_total_wall_seconds_including_launcher": 4.958333999995375,
+  "qa_content_read_bytes": 16585579,
+  "qa_content_read_calls": 85,
+  "zip_extraction_decompressed_bytes": 2481173,
+  "accounting_limits": [
+    "QA authentication, ZIP extraction, prior interactive static reads and this receipt generation are separate from the charged seven-read replay. Instrumented QA bytes are not total OS/disk-bus bytes.",
+    "One already-present local replay, potentially hot-cache; timing is not network/cold-cache benefit or a method comparison.",
+    "Old303 answers opened only after new launcher terminal; no sandbox isolation claimed.",
+    "Initial static console display 95a454/1 failed on cp932 Unicode; UTF-8 static reread 5a77da/0 completed before any replay. No scientific execution failure or retry."
+  ],
+  "all_existing_owned_files": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/accept_relocated_v01.py",
+      "bytes": 22443,
+      "sha256": "96f1631bc1284d818715b454d10a83aa62c0b4a0c9a29ab4d03afade5271e2c8"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stdout.txt",
+      "bytes": 246,
+      "sha256": "3823dd16a5df66d80a4787e9b5d35eac684c5cccdce45187d122328478d06f1e"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/PACKAGE_ACCEPTANCE_V01.json",
+      "bytes": 47262,
+      "sha256": "ab8d53a6278c88a9c4133cc763ca12922fc2648f2f5165c7c9ba6449dc7ba113"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/EXECUTION_V01.json",
+      "bytes": 1938,
+      "sha256": "2028f6ceea15f69305f82f4432a31523fc424df6061d9546b4fafcd58cd2997d"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_13_pdf.txt",
+      "bytes": 42965,
+      "sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_13_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_16_pdf.txt",
+      "bytes": 56008,
+      "sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_16_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_35_pdf.txt",
+      "bytes": 26859,
+      "sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_35_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_3_pdf.txt",
+      "bytes": 32533,
+      "sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_3_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_41_pdf.txt",
+      "bytes": 27756,
+      "sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_41_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/POSTPROCESS_QA_V01.json",
+      "bytes": 917,
+      "sha256": "39fe20d7f691a7619eb040c45b3e4b89a08ee1b6890c290524990f4193c914dc"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/process.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/process.stdout.txt",
+      "bytes": 287,
+      "sha256": "43afe33189ddd11a6426353ea3ac8b865619822f9afa53b770ddf0ad0dbccfd8"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/RESULT_V01.json",
+      "bytes": 22264,
+      "sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27"
+    }
+  ],
+  "files_exclude_this_self_referential_receipt": true,
+  "old_files_changed": false,
+  "new_scientific_samples": 0,
+  "no_additional_tests_after_this_acceptance": true
+}

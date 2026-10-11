@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "checked_at_utc": "2026-10-11T19:37:47.248185+00:00",
+  "output_directory": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/baseline",
+  "free_bytes": 5655038513152,
+  "minimum_free_bytes": 67108864,
+  "purpose": "Fresh administrative output-volume check; not a scientific evidence premise.",
+  "replaces_original_machine_guard": true,
+  "original_guard_replayed": false
+}

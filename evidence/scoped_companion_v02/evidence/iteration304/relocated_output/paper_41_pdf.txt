@@ -1,0 +1,308 @@
+Friedrich Nietzsche at SemEval-2023 Task 4: Detection of Human Values
+                  from Text Using Machine Learning
+    Abdul Jawad Mohammed                      Sruthi Sundharram                    Sanidhya Sharma
+     M.S. Computer Science                   M.S. Computer Science                M.S. Computer Science
+       Purdue University                       Purdue University                    Purdue University
+      Fort Wayne, Indiana                     Fort Wayne, Indiana                  Fort Wayne, Indiana
+       mohaa05@pfw.edu                         sunds01@pfw.edu                      shars05@pfw.edu
+
+
+                       Abstract                              detecting and determining human values in texts
+                                                             could serve a potent role in many Natural Language
+    Literature permeates almost every facet of our           Processing applications, including the categoriza-
+    lives, whether through books, magazines, or in-          tion of text information for tag-based recommen-
+    ternet articles. Moreover, every piece of written
+                                                             dation systems, opinion/stance detection in arti-
+    work contains ideas and opinions that we tend
+    to relate to, accept or disregard, the debate over,      cles, and analysis of complex literature written by
+    or enlighten ourselves. However, the existence           poets and philosophers. As part of the SemEval
+    of subtle themes that are difficult to discern           2023 ValueEval task (Kiesel et al., 2023), we seek
+    inspired us to utilize four machine learning al-         to explore the effectiveness of supervised earning
+    gorithms: Decision Trees, Random Forest, Lo-             classifiers for semantic analysis through the utiliza-
+    gistic Regression, and Support Vector Classifier         tion of algorithms like Decision Trees, Logistic
+    (SVC) to aid in their detection. Trained on the
+                                                             Regression, Support Vector Machines, and Ran-
+    ValueEval data set as a multi-label classifica-
+    tion problem, the supervised machine learning            dom Forest in the extraction of implicit themes
+    models did not perform as well as expected,              within the literature. With most research on seman-
+    with F1 metrics hovering from 0.0 to 0.04 for            tic analysis being conducted using more powerful
+    each value. Noting this, our paper discusses             transformer/neural network based models, our pa-
+    our approach’s limitations and weaknesses.               per chose to focus on more traditional machine
+                                                             learning techniques for their potential in being inte-
+1   Introduction                                             grated with lightweight, portable recommendation
+                                                             systems and software based on thematic analysis
+The creation of language remains one of human-
+                                                             of literature. Due to its vast array of libraries for
+ity’s greatest achievements, through which con-
+                                                             machine learning/Data analysis/Natural Language
+cepts, knowledge, stories, memories and emotions
+                                                             Processing applications, Python was the primary
+are encapsulated into words and conveyed across
+                                                             language used for our study.
+generations. Among the multitude of ideas con-
+tained within the ever-growing expanse of written               With the problem being of multi-label nature
+texts, whether it be news articles, novels, maga-            and the SemEval2023 dataset as our main sub-
+zines or philosophical and religious scripture, there        ject of analysis, the data features underwent term
+exists a commonality: The commentary on hu-                  frequency-inverse document frequency (TF-IDF)
+manistic archetypes of freedom, creativity, self-            vectorization before being fed to ensembles of each
+preservation, etc. upon which rational beings base           machine learning model for training in order to pre-
+their actions and thoughts on. These notions are             dict 20 human value themes on the test data. The
+expressed textually in varying degrees, sometimes            hyper-parameters for each model were also tuned
+apparent while at other times too subtle and dif-            to inspect for changes in performance.
+ficult for the layman to recognize. For example,                Ultimately, we observed that the aforementioned
+advertisements and political campaigns try to iden-          techniques did not generally perform as well as
+tify with potential customers and voters by openly           their Deep learning counterparts, as reflected in our
+appealing to their human values such as religious            placing last in the rankings for scoring the main test
+beliefs and concerns about nature and the environ-           set provided by SemEval. The limitations of the
+ment. At other times, however, ambiguous and                 TF-IDF vectorization, coupled with the lower com-
+obscure literature could foster misunderstandings,           plexity of machine learning algorithms compared
+misinterpretations, and even conflict. Therefore,            to neural networks, hindered the overall scoring
+                                                          2179
+      Proceedings of the The 17th International Workshop on Semantic Evaluation (SemEval-2023), pages 2179–2183
+                            July 13-14, 2023 ©2023 Association for Computational Linguistics
+performance of our ensembles. Nevertheless, the          among the most frequent non-stop words for all
+paper’s primary purpose is to serve as both a cau-       categories, suggesting that a great portion of the
+tionary and foundational study for future research       conclusion-premise pairs revolved around legisla-
+on this subject.                                         tion, moral discussions, and societal issues as seen
+                                                         in Figure 2.
+2    Background
+Related Work: Human values are of concern
+to most if not to all social sciences (Rokeach,
+1973) and have also been integrated into computa-
+tional frameworks of argumentation (Bench-Capon,
+2003). In NLP, values have been analyzed for per-
+sonality profiling (Maheshwari et al., 2017), but
+not yet for argument mining, as considered here.
+There has been significant progress recently in the
+creation of data sets for human values. One such
+data new data set is the ValueNet data set which
+contains human attitudes on 21,374 text scenarios
+(Qiu et al., 2022). ValueNet categorizes the text
+scenarios into 10 categories, namely, Universal-                        Figure 1: 20 Human Values
+ism, Benevolence, Conformity, Tradition, Security,
+Power, Achievement, Hedonism, Stimulation, and
+Self-direction. Their work employs the data set
+to train a Transformer based regression model and
+apply it to dialogue systems.
+   The ETHICS data set (Hendrycks et al., 2020) is
+a new benchmark that can predict moral judgments.
+They also show to assess a language model’s knowl-
+edge of morality.
+   The creation and evaluation of these data sets
+is a significant step in setting up benchmarks
+for human emotion and they pave the way for              Figure 2: A bar plot of the most frequent terms in the
+training models and subsequently training intelli-       labelled dataset
+gent agents guided by ethically sound directives.
+
+Dataset Information:                                     3     Experimental Setup
+   Two datasets, one labelled for model refinement       Due to the multi-label nature of the task and our
+and the other being an unlabelled test dataset for the   data set comprising of both text and categorical
+final submission, were provided by the SemEval           features, feeding them into the models at once had
+Task 2023, containing arguments categorized under        given rise to various incompatibility issues that
+20 labels, each representing one or more human-          forced us to look for alternative approaches. The
+istic themes as shown in Figure 1. An argument           stages of our final decided approach will be ex-
+sample consists of three attributes:                     plored in this section.
+    • Premise: A text feature showcasing the main
+                                                         3.1    Experimental Procedure
+      argument.
+                                                         Our experimental pipeline is as follows:
+    • Conclusion: A text feature representing the
+      conclusion inferred from the Premise.                  1. The three features are pre-processed according
+    • Stance: Value indicating if the conclusion is             to their data type (text/categorical),
+      in ‘favor of’ or ‘against’ the premise.
+                                                             2. Four machine learning techniques were se-
+   Across the labelled data set, we observed words              lected to be used for multi-label classification.
+like ‘abolish’, ‘ban’, ‘adopt’, and ‘legalize’ were             Using sklearn, we were able to initialize the
+                                                     2180
+     multi-output versions of each learning algo-
+     rithm we chose.
+
+  3. For each machine learning technique, three
+     model copies were created, each trained on
+     one of the three features. The predictions were
+     made through the maximum voting process,
+     similar to an ensemble classifier.
+
+  4. Each model was then trained on 70 per cent         Figure 3: The Metrics obtained for the four machine
+     of the Labelled ValueEval dataset provided to      learning algorithms when trained/tested on the labelled
+     us, before being made to predict the remain-       ValueEval Dataset
+     ing 30 per cent. Due to imbalance in class
+     frequencies observed within the dataset, we
+     chose three specific metrics for evaluation:       3.3     Models used
+
+      (a) Macro Average Precision: A type of            To aid in the extraction of implicit themes, we
+          precision that considers all classes with     looked to traditional machine learning techniques
+          equal weight,                                 as a foundation to which we base our experiments
+      (b) Weighted Average Precision: A preci-          off. Taking the difficulty of multi-label classifica-
+          sion calculation that adjusts the weight      tion into consideration, we decided to implement
+          of each class according to the amount of      ’triplet ensembles’ of four learning algorithms.
+          samples belonging to it.
+                                                        3.3.1    Logistic Regression
+      (c) F1-Score: A harmonic mean of recall
+          and precision, and the primary measure        A probabilistic classifier chosen for its versatility
+          of performance in the competition.            and simplicity. Final adjusted hyper-parameters:
+                                                        Penalty = ’l2’, C = 1.0, solver = ’lbfgs’
+  5. Model hyper parameters are fine-tuned and
+     observed for changes in performance,               3.3.2    Decision Tree
+  6. The overall best performing model is chosen        A split-based algorithm that continuously divides
+     for the prediction of the main test set provided   samples based on feature importance. Final ad-
+     by ValueEval.                                      justed hyper-parameters: Criterion = ’gini’, splitter
+                                                        = ’best’, minimum sample split = 2
+3.2 Data Pre-processing
+The ‘Conclusion’ and ‘Premise’ features, being in       3.3.3    Random Forest
+textual form, needed to be pre-processed before be-     A combination of decision trees that have their
+ing fed into our machine learning models. To break      predictions go through a maximum voting process
+them down into simpler, digestible components, we       to produce the final output. Final adjusted hyper-
+performed:                                              parameters: Number of estimators = 100, criterion
+                                                        = ’gini’, minimum sample split = 2, minimum leaf
+   • Stopword removal to prevent potential bias,
+                                                        samples = 1
+   • Punctuation removal to reduce noisy data,
+   • Tokenization,                                      3.3.4    Support Vector Classifier (SVC)
+
+   • TF-IDF vectorization, a technique that takes       A classification model that focuses on finding the
+     word frequencies into account, giving more         margin that best segregates data points based on
+     importance to uncommon words while plac-           their classes. Final adjusted hyper-parameters:
+     ing a lower weight on very frequent terms.         C = 1.0, rbf kernel, tolerance (tol) = 0.001
+     This type of vectorization converts text into
+     numeric data to be understood by the model.        We have published our submission runs
+                                                        on Github in the following repository
+The ‘Stance’ feature was encoded into a binary          https://github.com/sanidhyaRsharma/2022-
+value, as it represented only two types.                SemEval-Human-Value-Detection
+                                                    2181
+                                                                                                                                                                                                                                                                                                               Benevolence: dependability
+                                                                                                                                                                                                                                                  Conformity: interpersonal
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                     Universalism: objectivity
+                                                                                                                                                                                                                                                                                                                                                                                           Universalism: tolerance
+                                 Self-direction: thought
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                            Universalism: concern
+                                                                                                                                                                                                                                                                                                                                                                    Universalism: nature
+                                                           Self-direction: action
+
+
+
+
+                                                                                                                                                                                                                                                                                         Benevolence: caring
+                                                                                                                           Power: dominance
+
+
+
+
+                                                                                                                                                                        Security: personal
+
+
+
+
+                                                                                                                                                                                                                              Conformity: rules
+                                                                                                                                                                                             Security: societal
+                                                                                                                                              Power: resources
+                                                                                                             Achievement
+                                                                                    Stimulation
+                                                                                                  Hedonism
+
+
+
+
+                                                                                                                                                                                                                  Tradition
+
+
+
+
+                                                                                                                                                                                                                                                                              Humility
+                                                                                                                                                                 Face
+    Test set / Approach    All
+    Main
+     Best per category     .59 .61 .71 .39 .39 .66 .50 .57 .39 .80 .68 .65 .61 .69 .39 .60 .43 .78 .87 .46 .58
+     Best approach         .56 .57 .71 .32 .25 .66 .47 .53 .38 .76 .64 .63 .60 .65 .32 .57 .43 .73 .82 .46 .52
+     BERT                  .42 .44 .55 .05 .20 .56 .29 .44 .13 .74 .59 .43 .47 .23 .07 .46 .14 .67 .71 .32 .33
+     1-Baseline            .26 .17 .40 .09 .03 .41 .13 .12 .12 .51 .40 .19 .31 .07 .09 .35 .19 .54 .17 .22 .46
+     2023-01-30-08-51-04   .01 .00 .00 .00 .00 .01 .00 .00 .00 .08 .03 .00 .00 .00 .00 .00 .00 .01 .04 .00 .00
+
+Table 1: Achieved F1 -score of team friedrich-nietzsche per test dataset, from macro-precision and macro-recall
+(All) and for each of the 20 value categories. Approaches marked with * were not part of the official evaluation.
+Approaches in gray are shown for comparison: an ensemble using the best participant approach for each individual
+category; the best participant approach; and the organizer’s BERT and 1-Baseline.
+
+
+4    Results and Analysis                                                                                                                                        is a more ’straightforward’ method of predicting
+                                                                                                                                                                 classes through margin distances.
+As shown in Figure 3, the supervised learning al-
+gorithms achieved considerably significant average                                                                                                               5           Conclusion and Future Work
+F1-Scores when trained and tested using a 70-30
+split of the labelled ValueEval Dataset. Select-                                                                                                                 Finding human values in argumentative texts can
+ing the Support Vector Classifier as our competing                                                                                                               be useful for a number of applications, including
+model due to it obtaining slightly higher precision                                                                                                              value-based argument generating, value-based per-
+rates for the classes, we expected it to attain similar                                                                                                          sonality profiles, and argument-faceted searches. A
+scores when predicting ValueEval’s evaluation test                                                                                                               study of human values has the potential to expand
+set. However, Table 1 reflects the underwhelming                                                                                                                 prospective research in each of these applications.
+results achieved on the unlabelled test dataset that                                                                                                             With this study being our first foray into Natural
+placed us last in the competition, with F1-scores                                                                                                                Language Processing, we observed that multi-label
+ranging from 0.0 to only 0.04 for each class. De-                                                                                                                human value prediction can be convoluted due to
+spite the scores being insignificant when compared                                                                                                               steep pre-requisites of data preprocessing and need
+to others’ approaches, they are signs of insight as                                                                                                              of more complex machine learning models for bet-
+the possible limitations with our tools are revealed.                                                                                                            ter extraction of semantic relations between argu-
+   One of the biggest problems with our method                                                                                                                   ments and conclusions. Despite the lackluster per-
+was the TF-IDF vectorization. Due to it only con-                                                                                                                formance of our approach, we still believe in the
+sidering word frequency and converting terms into                                                                                                                potential of traditional machine learning algorithms
+sparse vectors of simple ones and zeroes, the tech-                                                                                                              to be a low-cost alternative to neural networks for
+nique fails at capturing context depending on the                                                                                                                classification of thematic literary values. As no
+phrase or sentence provided. Moreover, unlike un-                                                                                                                field of research is ever truly conquered, we plan to
+supervised algorithms like GloVE and Word2Vec,                                                                                                                   further our research to include BERT-based models,
+TF-IDF cannot extract patterns on its own and                                                                                                                    unsupervised vectorization methods, and more lit-
+solely relies on a static factor like word count to                                                                                                              erary data sets for not only enlightening machines,
+generate word vectors.                                                                                                                                           but ourselves to witness the beauty of our writings.
+   The simpler complexity of traditional machine
+                                                                                                                                                                 6           Acknowledgments
+learning models when put next to their deep learn-
+ing counterparts cannot be ignored either. While                                                                                                                 The authors would like to begin by expressing their
+BERT-based architectures consist of multiple lay-                                                                                                                utmost gratitude to Dr. Jonathan Rusert for his
+ers with each serving a purpose in the seman-                                                                                                                    guidance and support throughout the research pro-
+tic recognition of text data, the SVC we utilized                                                                                                                cess. Secondly, we sincerely thank the organizers
+                                                                                                                                              2182
+of SemEval 2023 for granting us a special opportu-
+nity to improve our research skills and expand our
+knowledge in the field of Semantic Analysis.
+
+
+References
+Trevor JM Bench-Capon. 2003. Persuasion in prac-
+  tical argument using value-based argumentation
+  frameworks. Journal of Logic and Computation,
+  13(3):429–448.
+
+Dan Hendrycks, Collin Burns, Steven Basart, Andrew
+  Critch, Jerry Zheng Li, Dawn Xiaodong Song, and Ja-
+  cob Steinhardt. 2020. Aligning ai with shared human
+  values. ArXiv, abs/2008.02275.
+
+Johannes Kiesel, Milad Alshomary, Nailia Mirzakhme-
+  dova, Maximilian Heinrich, Nicolas Handke, Hen-
+  ning Wachsmuth, and Benno Stein. 2023. Semeval-
+  2023 task 4: Identification of human values behind
+  arguments. In 17th International Workshop on Se-
+  mantic Evaluation (SemEval-2023).
+Tushar Maheshwari, Aishwarya Reganti, Upendra Ku-
+  mar, Tanmoy Chakraborty, and Amitava Das. 2017.
+  Semantic interpretation of social network commu-
+  nities. In Proceedings of the AAAI Conference on
+  Artificial Intelligence, volume 31.
+Liang Qiu, Yizhou Zhao, Jinchao Li, Pan Lu, Baolin
+  Peng, Jianfeng Gao, and Song-Chun Zhu. 2022. Val-
+  uenet. Proceedings of the AAAI Conference on Artifi-
+  cial Intelligence, 36(10):11183–11191.
+Milton Rokeach. 1973. The nature of human values.
+  Free press.
+
+
+
+
+                                                     2183
+

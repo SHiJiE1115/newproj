@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "status": "PASS_RELOCATED_REPLAY_AND_POSTPROCESS",
+  "started_utc": "2026-10-11T19:18:01.901821+00:00",
+  "replay_invocations": 1,
+  "raw_sources_pre_read_by_launcher": false,
+  "expected_read_before_child_terminal": false,
+  "actual_child_returncode": 0,
+  "whole_child_process_wall_seconds": 2.6176106999919284,
+  "command": [
+    "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration304\\clean package with spaces\\budget_replay.py",
+    "--protocol",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration304\\clean package with spaces\\protocol.json",
+    "--output",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\qa_v01\\relocated output",
+    "--pdftotext",
+    "C:\\Users\\dongs\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdftotext.exe"
+  ],
+  "stdout": {
+    "path": "process.stdout.txt",
+    "bytes": 287,
+    "sha256": "43afe33189ddd11a6426353ea3ac8b865619822f9afa53b770ddf0ad0dbccfd8"
+  },
+  "stderr": {
+    "path": "process.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "result": {
+    "path": "RESULT_V01.json",
+    "bytes": 22264,
+    "sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27"
+  },
+  "postprocess_qa": {
+    "path": "POSTPROCESS_QA_V01.json",
+    "bytes": 917,
+    "sha256": "39fe20d7f691a7619eb040c45b3e4b89a08ee1b6890c290524990f4193c914dc"
+  },
+  "ended_utc": "2026-10-11T19:18:04.551242+00:00",
+  "launcher_total_wall_seconds": 2.649304899998242,
+  "launcher_exit_code": 0,
+  "process_tree_cpu_measured": false,
+  "network_access": false,
+  "scope": "Relocated replay and subsequent output comparison; no new scientific samples or method advantage."
+}

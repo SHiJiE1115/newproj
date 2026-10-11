@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "status": "PASS_BOOTSTRAP_BUILD_ONLY_NOT_ASSEMBLED",
+  "human_review": false,
+  "scientific_executions": 0,
+  "assembly_executions": 0,
+  "source_copies": [
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\MANIFEST.json",
+        "bytes": 2179,
+        "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+      },
+      "target": {
+        "path": "skeleton/MANIFEST.json",
+        "bytes": 2179,
+        "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\README.md",
+        "bytes": 4992,
+        "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+      },
+      "target": {
+        "path": "skeleton/README.md",
+        "bytes": 4992,
+        "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\budget_replay.py",
+        "bytes": 12746,
+        "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+      },
+      "target": {
+        "path": "skeleton/budget_replay.py",
+        "bytes": 12746,
+        "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\expected_scientific.json",
+        "bytes": 19930,
+        "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+      },
+      "target": {
+        "path": "skeleton/expected_scientific.json",
+        "bytes": 19930,
+        "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\parser\\verify_exact_id_five.py",
+        "bytes": 11749,
+        "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+      },
+      "target": {
+        "path": "skeleton/parser/verify_exact_id_five.py",
+        "bytes": 11749,
+        "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\protocol.json",
+        "bytes": 7843,
+        "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+      },
+      "target": {
+        "path": "skeleton/protocol.json",
+        "bytes": 7843,
+        "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\run.py",
+        "bytes": 6676,
+        "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+      },
+      "target": {
+        "path": "skeleton/run.py",
+        "bytes": 6676,
+        "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources\\paper_13.pdf",
+        "bytes": 693104,
+        "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+      },
+      "target": {
+        "path": "skeleton/sources/paper_13.pdf",
+        "bytes": 693104,
+        "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources\\paper_16.pdf",
+        "bytes": 283898,
+        "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+      },
+      "target": {
+        "path": "skeleton/sources/paper_16.pdf",
+        "bytes": 283898,
+        "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources\\paper_3.pdf",
+        "bytes": 507457,
+        "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+      },
+      "target": {
+        "path": "skeleton/sources/paper_3.pdf",
+        "bytes": 507457,
+        "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources\\paper_35.pdf",
+        "bytes": 143066,
+        "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+      },
+      "target": {
+        "path": "skeleton/sources/paper_35.pdf",
+        "bytes": 143066,
+        "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+      }
+    },
+    {
+      "source": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources\\paper_41.pdf",
+        "bytes": 293535,
+        "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+      },
+      "target": {
+        "path": "skeleton/sources/paper_41.pdf",
+        "bytes": 293535,
+        "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+      }
+    }
+  ],
+  "skeleton_members": 12,
+  "omitted_members": [
+    {
+      "path": "sources/archive_evaluations.raw",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+    },
+    {
+      "path": "sources/organizer_main.raw",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+    }
+  ],
+  "original_manifest_unchanged": true,
+  "files": [
+    {
+      "path": "hydrate.py",
+      "bytes": 8527,
+      "sha256": "d2f67acadf8630b1a4dbd95bfbef1d1965a2a448ab0c8f794d6093bf1aa3b634"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 2777,
+      "sha256": "3aff9461a025f489026cf2bf03cd646c197a388bf59cbc645f4f58ec83838d7f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4545,
+      "sha256": "bd72eaf1532e011010b14e0b7972307ea81ab2122f30d452792e5fe0322df40f"
+    },
+    {
+      "path": "skeleton/budget_replay.py",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+    },
+    {
+      "path": "skeleton/expected_scientific.json",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+    },
+    {
+      "path": "skeleton/MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+    },
+    {
+      "path": "skeleton/parser/verify_exact_id_five.py",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+    },
+    {
+      "path": "skeleton/protocol.json",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    {
+      "path": "skeleton/README.md",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+    },
+    {
+      "path": "skeleton/run.py",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+    },
+    {
+      "path": "skeleton/sources/paper_13.pdf",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+    },
+    {
+      "path": "skeleton/sources/paper_16.pdf",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+    },
+    {
+      "path": "skeleton/sources/paper_3.pdf",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+    },
+    {
+      "path": "skeleton/sources/paper_35.pdf",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+    },
+    {
+      "path": "skeleton/sources/paper_41.pdf",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+    },
+    {
+      "path": "SOURCE_NOTICE.md",
+      "bytes": 9211,
+      "sha256": "f26718a7051f3c0d87f57287bfeb31082f3e56216511f8aff9311059406a6078"
+    }
+  ],
+  "zip": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\valueeval_bootstrap_v01.zip",
+    "bytes": 1717835,
+    "sha256": "f5e805effc6ed28a9360ac9fd107f6a1922016c9efee1babaec0c52ddfee5a7c"
+  },
+  "notice_source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_notice_v01\\VALUEEVAL_PUBLIC_NOTICE_V02.md",
+    "bytes": 9211,
+    "sha256": "f26718a7051f3c0d87f57287bfeb31082f3e56216511f8aff9311059406a6078"
+  },
+  "builder": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\build_bootstrap_v01.py",
+    "bytes": 8455,
+    "sha256": "901ed8a4a168bbe094636358a69fff32e34d825487bacd93f10dfa6977db0729"
+  },
+  "scope": "New distribution bootstrap; original full ZIP unchanged and not included. Assembly must restore exact fourteen-file package before unchanged scientific replay."
+}

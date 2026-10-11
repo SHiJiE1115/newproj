@@ -1,0 +1,2088 @@
+{
+  "schema": 1,
+  "status": "PASS_RELOCATED_WINE_FULL_REPORTS_AND_CERTIFICATE_REBIND",
+  "human_review": false,
+  "started_utc": "2026-10-11T19:37:46.107037+00:00",
+  "launcher_invocations": 1,
+  "new_research_samples": 0,
+  "references_opened_for_comparison_before_terminal": false,
+  "build_receipt": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/PACKAGE_BUILD_V01.json",
+    "bytes": 26743,
+    "sha256": "46b68384de1a0d021be8e91d9d896e939c89153fca9ace8ed64639f43678a011"
+  },
+  "delivery_zip": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01.zip",
+    "bytes": 1019047,
+    "sha256": "7c69e4d62437f25485cad2994c99936a8c74c9e456d7d839b483e6c4f7c70002"
+  },
+  "package_directory": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces",
+  "extracted_members": [
+    {
+      "path": "evidence/signature/ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+    },
+    {
+      "path": "evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+    },
+    {
+      "path": "evidence/signature/verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+    },
+    {
+      "path": "evidence/v07/CANDIDATE_REPORT.json",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41"
+    },
+    {
+      "path": "evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673"
+    },
+    {
+      "path": "evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f"
+    },
+    {
+      "path": "evidence/v07/receipt.tar",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+    },
+    {
+      "path": "evidence/v08/CANDIDATE_REPORT.json",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24"
+    },
+    {
+      "path": "evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a"
+    },
+    {
+      "path": "evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0"
+    },
+    {
+      "path": "evidence/v08/receipt.tar",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+    },
+    {
+      "path": "evidence/v09/CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+    },
+    {
+      "path": "evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+    },
+    {
+      "path": "evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+    },
+    {
+      "path": "evidence/v09/receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+    },
+    {
+      "path": "layer_candidate.py",
+      "bytes": 22187,
+      "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 4588,
+      "sha256": "b16186eff87eb616975d84c91567f031bc4cdc5872a2f34e50c87f851c39c667"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5424,
+      "sha256": "818cc458f60c2e565dfaf278260d3bb818c7371c3752f918cb233f449a8265b8"
+    },
+    {
+      "path": "references/BASELINE_RESULT_V02.json",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+    },
+    {
+      "path": "references/CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+    },
+    {
+      "path": "run.py",
+      "bytes": 13571,
+      "sha256": "5dbe42e4b54998425bae78847bdd29c042087ad0e857cbb958d95b1cb13a5777"
+    },
+    {
+      "path": "semantic/rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    },
+    {
+      "path": "semantic/rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    {
+      "path": "sql_baseline_v02.py",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+    }
+  ],
+  "extraction_decompressed_bytes": 4992809,
+  "reference_handling_before_terminal": "References streamed/copied/hashed as opaque ZIP payload only, never parsed for answers.",
+  "static_review": {
+    "code_diff": [
+      {
+        "file": "layer_candidate.py",
+        "original_sha256": "50412f29910b082096bb4f394d2e4abe48b5be39221c1a55dafadee8447589f1",
+        "adapted_sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b",
+        "declared_replacements": 3,
+        "unchanged_functions": [
+          "sha",
+          "require",
+          "plain",
+          "pinned",
+          "edge",
+          "all_edges",
+          "compare_keys",
+          "load_run",
+          "numeric",
+          "selected_read",
+          "retained_signature",
+          "load_semantics",
+          "certify_layer",
+          "main"
+        ]
+      },
+      {
+        "file": "sql_baseline_v02.py",
+        "original_sha256": "487cc0a6f95fe0026edc05298765ac7608b693aea0e4473d84f4e8e1c0977312",
+        "adapted_sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488",
+        "declared_replacements": 7,
+        "unchanged_functions": [
+          "need",
+          "digest",
+          "parse",
+          "descriptor",
+          "key_for",
+          "difference",
+          "source_locator",
+          "inspect_run",
+          "numeric",
+          "retained_read_gate",
+          "retained_signature"
+        ]
+      }
+    ],
+    "17_input_bytes_and_semantic_modules_unchanged": true,
+    "protocol_inverse_equals_original": true,
+    "child_isolation": "Candidate and SQL sequential subprocesses, each once; unchanged helpers do not read the other output or references. Candidate certify_layer still calls unchanged checker for all 30 certificates.",
+    "reference_control_flow": "Launcher waits for both terminals and both zero exits before reference reads; QA also waits for launcher zero before old original answers.",
+    "runtime_limits": "Each child parent timeout 120 s; baseline cooperative original 60 s; launcher fresh output-volume resource check, not old machine guard.",
+    "historical_paths": "Exact retained inputs/references may contain old paths. They are inert metadata. Old workspace remains OS-accessible: no sandbox claim."
+  },
+  "inputs_before": {
+    "original": [
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/receipt.tar",
+        "bytes": 245760,
+        "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/CANDIDATE_REPORT.json",
+        "bytes": 1325,
+        "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+        "bytes": 742,
+        "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+        "bytes": 2012,
+        "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/receipt.tar",
+        "bytes": 1853440,
+        "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/CANDIDATE_REPORT.json",
+        "bytes": 1829,
+        "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+        "bytes": 1183,
+        "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+        "bytes": 2007,
+        "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+        "bytes": 2314240,
+        "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+        "bytes": 1874,
+        "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+        "bytes": 1204,
+        "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+        "bytes": 2373,
+        "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+        "bytes": 15110,
+        "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+        "bytes": 11909,
+        "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+      },
+      {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/code/rules_v2_core.py",
+        "bytes": 20969,
+        "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+      },
+      {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/code/rules_v2_checker.py",
+        "bytes": 10859,
+        "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+      }
+    ],
+    "relocated": [
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/receipt.tar",
+        "bytes": 245760,
+        "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/CANDIDATE_REPORT.json",
+        "bytes": 1325,
+        "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/DIRECT_BASELINE_REPORT.json",
+        "bytes": 742,
+        "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/POSTRUN_RELEASE_GATE.json",
+        "bytes": 2012,
+        "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/receipt.tar",
+        "bytes": 1853440,
+        "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/CANDIDATE_REPORT.json",
+        "bytes": 1829,
+        "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/DIRECT_BASELINE_REPORT.json",
+        "bytes": 1183,
+        "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/POSTRUN_RELEASE_GATE.json",
+        "bytes": 2007,
+        "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/receipt.tar",
+        "bytes": 2314240,
+        "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/CANDIDATE_REPORT.json",
+        "bytes": 1874,
+        "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/DIRECT_BASELINE_REPORT.json",
+        "bytes": 1204,
+        "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/POSTRUN_RELEASE_GATE.json",
+        "bytes": 2373,
+        "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/verified.stdout.json",
+        "bytes": 15110,
+        "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+        "bytes": 11909,
+        "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_core.py",
+        "bytes": 20969,
+        "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_checker.py",
+        "bytes": 10859,
+        "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+      }
+    ]
+  },
+  "actual_launcher": {
+    "command": [
+      "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\run.py",
+      "--output",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output"
+    ],
+    "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/unrelated working directory",
+    "started_utc": "2026-10-11T19:37:47.018964+00:00",
+    "pid": 18900,
+    "returncode": 0,
+    "wall_seconds": 1.0569617000001017,
+    "ended_utc": "2026-10-11T19:37:48.076241+00:00",
+    "stdout": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stdout.txt",
+      "bytes": 282,
+      "sha256": "b3a7186976a299faec52e28eff0c9d7196900079bb40d43991e5ba34db24aaab"
+    },
+    "stderr": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "actual_children": [
+    {
+      "name": "candidate",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\layer_candidate.py",
+        "--protocol",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\protocol.json",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\candidate"
+      ],
+      "started_utc": "2026-10-11T19:37:47.249509+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "actual_returncode": 0,
+      "terminal": "EXITED",
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stdout.txt",
+        "bytes": 1677,
+        "sha256": "89b0ef4f102688fedce7e9a3040244a1a9ded329327f676596646e7a599b6670"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T19:37:47.608611+00:00",
+      "elapsed_seconds": 0.35932219997630455
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\sql_baseline_v02.py",
+        "--protocol",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\protocol.json",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\baseline",
+        "--resource-check",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\RESOURCE_CHECK.json"
+      ],
+      "started_utc": "2026-10-11T19:37:47.609986+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "actual_returncode": 0,
+      "terminal": "EXITED",
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stdout.txt",
+        "bytes": 1741,
+        "sha256": "0a6f5a7a7cfc2dbb0cf42bbd5abd6e66f18fd17015ee73552de712dcabc53920"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T19:37:47.943017+00:00",
+      "elapsed_seconds": 0.33298359997570515
+    }
+  ],
+  "new_both_terminal_before_reference_read": true,
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER305_RELOCATION_QA_EXEC_PREFLIGHT_V01.json",
+    "sha256": "b2c260a851e8bc37c0b894a56c9280eceb42c27d78e473bfbbbaad78fcf0fe37"
+  },
+  "new_candidate": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/CANDIDATE_RESULT_V01.json",
+    "bytes": 264208,
+    "sha256": "1a97c907b59136e883ebb697391fc3a8ae1b30226f1560aae0385056b58d8204"
+  },
+  "new_baseline": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/baseline/BASELINE_RESULT_V02.json",
+    "bytes": 153224,
+    "sha256": "ae68fe3fccb79fc6453f254f335febdd0c9083a262232e5575fac203ff32e9d3"
+  },
+  "launcher_result": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESULT.json",
+    "bytes": 34772,
+    "sha256": "22f9d937f76cba0d52e780a551f3674c3b0aea40c05e8057333e771b1dae653a"
+  },
+  "candidate_execution": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/EXECUTION_V01.json",
+    "bytes": 683,
+    "sha256": "7639529aba6b154dd60cd5316d63d9a769d500c5756dad3be3b5c8bd4ada6ed7"
+  },
+  "certificate_reconstruction": [
+    {
+      "scenario": "v07",
+      "layer": "artifact_numeric",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "461de77c995d25a51787081dff567a505edaeb203e60db99854a32f3714c88f5",
+        "input_digest": "538c767e4c810e66c23f2e1c47577a909a3e4e1b98f25526ff16b4ae17f9355a",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "3568b314bd256ab3f508a066f92755d01ebc21cc0a35b5618c8f231d05bb14ef",
+        "input_digest": "e89554617d3a10c94bb3eb45e799885fa29a69af8ca94ef0de5e4293c0e80b94",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v07",
+      "layer": "selected_read_gate",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "e8bf7dbfd015e345697ea68508c84b5d7355272773e1500434c15764ad20e71f",
+        "input_digest": "2bbdc8e90cd44ca03f7a94e5a35042e81a09f9f3532cb5238e9de1a4920cca8a",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "7073ada37a0acc6e6ccc3524e4bee3465bf8af065b15917215e6a02c29049e65",
+        "input_digest": "81a7c029739a80ab97fa66c1fdf7ba973746e9706c2647f3ad6bca2f689d6a5a",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v07",
+      "layer": "retained_signed_identity",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "330b2ec630f127c58e72cb9740868188b78c51f833fcf0833f49429176688273",
+        "input_digest": "c5891c2fd138f11f869aec3d37f079b13adb52843698b57d3e998332da50bccd",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "1913f0a0701fe58dbb82aeb871a2247021883b2ba5c1cbbc60666a1238df7869",
+        "input_digest": "169beaf0e745460166fbcf61c1ab762e6bcd59da63cfde389da46f801a40e26a",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v07",
+      "layer": "joint_scoped_receipt",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "a6439d22ef6cc25456bd63b218c6b3de9d1decc809e819c2d2594a71f5b25cf7",
+        "input_digest": "f9d7fe4a0d031fe348ec4918226136eb910f1f47f13bc6b9c211b1309ba477dc",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "0bbef76ee9fe06733017f241790ed9d29aa94f34fa8e608e249c728b755655cc",
+        "input_digest": "ce60dd54ae4f36a668b2c7fdb6bb86a5bab38fab1eeb0362425447c6c6692b34",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v07",
+      "layer": "historical_2020_execution",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "05386db94cbaa15fc29b4e5f437be0a0bcbe0c3234732bdf5e54bed7f16aeb0f",
+        "input_digest": "31bc414316dbb47f861fff9bc870f78f9f9c89354506a0d6ed93fbed2106fc14",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "9e38400f3baff6a2456ff746935c49129a1c86abbb7e47a8e7b29a721cc1559e",
+        "input_digest": "7f2574f6a140c55131f71ba728b710eb0928d60318ab6464c4a8459584ca8db9",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v08",
+      "layer": "artifact_numeric",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "77df4e492667f64e8b7ffaddc02b493878e5616c5fcd19005292c6554efd8c67",
+        "input_digest": "15be99a44fa466806393ad2e16425e9b8ec63819beb5bde1daf9a8b3ee5f827d",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "0a22195c2d0ec9497cdf1f318c42edd0fdf897690ac257098d47c08c5ff0ed03",
+        "input_digest": "b5940af16c3c9aaf688ffde55c18b20edf9ead88af63cd6091835b145dc47dd0",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v08",
+      "layer": "selected_read_gate",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "8e37775f638dfd8d3c7eaf9f973509fdffd11aec5f46372ba9717b5017de6104",
+        "input_digest": "860668c07c095985a73210360fec91f05486a43395eb9305bd763e455e16398c",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "c0988e8b9dced6d9725e9a445e515528e83d88eba582ae0cdf3b771cbb4c57a5",
+        "input_digest": "cfeafe8e08d0778139b1b3964879be535707c0075813e350cbef14d02ce48f80",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v08",
+      "layer": "retained_signed_identity",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "9fc93c023f6dcb1fa349dbebff7c8c3e4180c4aca3ec1b6c07f3280f466a4166",
+        "input_digest": "67fb3fe00c3a96c670049bff292be53bb58144743fcb6b5a26dc424b6fa79dcf",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "8a361d348623e06bb2b388073f16d6bde1cace070e4b1cca45359d08c4b1fa9f",
+        "input_digest": "82f94b32e1fdb00c76c1692d4ec3bb71578185e45d51653cb798ff3393e9c64c",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v08",
+      "layer": "joint_scoped_receipt",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "2f0ff7ea669d6e5e690bf9084ddf9ca1580f6324763384cfe8a8f13c9c9387a6",
+        "input_digest": "39d966612d2731bf86a7460ffbc53390c02e1911f4409b7a681fc28ee89f984c",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "6be06ae2bd73d3628f4f06b5ea764d0188135f039befe6d91e6359caa2df1932",
+        "input_digest": "835184ea5dcb2b70c8f58838fa8fe083ce3baffdb977836eac8a85406a3289b9",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v08",
+      "layer": "historical_2020_execution",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "cdea90957bf7c4e6920ae6a7a8e94ca902e3bcee7472ae639ca7da515a816d86",
+        "input_digest": "620d2489be9cc959564518cce3171d7261d506564c7b902d92ccc5ef63a64532",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "cfdb998e0ed7f4ff3cbc35cd81b51a44fa0870c2edeeb0250b2703225de30a5a",
+        "input_digest": "2d85036aeb3cd3d36bfd16b55aac08638a6ce06c9b468d58ec85d7f0ffb61bc3",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v09",
+      "layer": "artifact_numeric",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "aef6c82be2e58127ed26175142b1e9aa45b8623484e2811837325eba8f260601",
+        "input_digest": "c39adfa8fecd53efacfbeae6342f2e5ab3704e99a91c1ec0414d55f10b822721",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "37fcec1615ae6ca03d7ac03aa5331e4d173dd8c0e84435be6a97654b01259220",
+        "input_digest": "8ca941c90a0c968035acaede648c5e7a91937a1118b9e38207b79b367dd95d4b",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v09",
+      "layer": "selected_read_gate",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "90df38a779b64cf66ef9aed93d2ecfb6b404a0af8d61721e23520aa7580de237",
+        "input_digest": "0f1222af79da0b924a3d079caaddb621a22a277aa9141386526772445aacc901",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "8699d054fbb6bb2acd65549955e461f9979c0c6a706ca9cc358b574baf4f4846",
+        "input_digest": "d06c491e6bccca3a1f27dab023026052ddac9b939eb98d4a70fa253151cafe5e",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v09",
+      "layer": "retained_signed_identity",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "d90489e2ecc59b8a09cef01b1b53778e1463c223946b4798dc334dad7b0cf3fb",
+        "input_digest": "fab5cfb121acc2ddf17f1a26d27ba5771db9402cf7875caf917b2ffbc1b07932",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "d3732aa690457ddb85f46dc394922dc522ab973adcc7a9d830fbbda27e706e09",
+        "input_digest": "244ee6eb92397fdae97de953bb1add6fc9926f4a6bc34bab0d2a7903ba5a2cb3",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v09",
+      "layer": "joint_scoped_receipt",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "000b7273dcb5798e85cf37651b3dcc5d888b99dcddefea1af8839fd504bef1b6",
+        "input_digest": "b0da2beae6a9579e494564cb590a106821954b5050a84420cab973404d4efbbb",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "9b3c08b8b777bf81c3ca85c0e879e5d7e0362842e597e1a85331e65b0780dced",
+        "input_digest": "fb4bfdf534f749b39cdbb9330f54a61edeb3398c4d08c68657d010e283cb0cac",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "v09",
+      "layer": "historical_2020_execution",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "20b637a1ec9fc4b533884807fa8593f8619903922c8786e61c4f0c57c1c396f9",
+        "input_digest": "2996d8863a2c9604c6331fad4daf25fbffc221a16f69d693ed377c452da6a635",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "5acb1170bbff539522de58263187747bdbcadea507573f85c7365e1143e1fcb1",
+        "input_digest": "cc2fbf8bb3fd367a07f1f48eec87da8e79d488763837e201a6184e14d973259e",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_identity",
+      "layer": "artifact_numeric",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "01b1145bd8c02d1c6677a051192c4a76508f90b1c73308f98526d5884e1d3023",
+        "input_digest": "c2f2b7f7d7247d1cf9f88c7759ab318c2a41dc898f65b1cbabcec8b95e22c46c",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "debcc87ed4e031f97ff8f1fe8b47275f6623b879e57f562f88a7a0a31bf08ae1",
+        "input_digest": "809ca78a84a7eec2564c99fc77ca112b583897f49e1bb7ba79780ff3d2b68bd4",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_identity",
+      "layer": "selected_read_gate",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "31ab1ff46582cf93187426e79c9465ce4eac1ccfdecc1397627490d30546694d",
+        "input_digest": "7752ec11c9c943361329bf21d0ac31e126e9d88d2174e1c5bbed5e1d2bd190e8",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "3cb26a96c45b9d38e795722fc085251e0caa618b56289e6d4b321f2406fe6097",
+        "input_digest": "bc7f24fb8deb24a3a8b9d36b4bff9b8d8090522adb6f209d2a0c49f370df3a2d",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_identity",
+      "layer": "retained_signed_identity",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "87e786c80351e3602522fdb5c01d66dbae3ab7b51407440e3848e0a660583711",
+        "input_digest": "fdd28aa617531578601e16f236efc42c710a4c04529991dff67bab437e9bcdce",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "5a8bb0f567ae66cde71c027039de86999840d9e1ed69adf6ffa1e7713ea49156",
+        "input_digest": "89a63e0e427155164db0b5af67575e91e62ba419e2cab0041dec67a29be199a9",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_identity",
+      "layer": "joint_scoped_receipt",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "413eb3d73a94c0ff9e572c7fd979a5a7f032b1d18ac8ee40156cd7f909c389cd",
+        "input_digest": "80b626963a2672a16ed58d8f6f7bec698bdb7b6dd1055d265c4c74995cc4eb55",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "00f069974731d6296266c203c96d28056cd58783927e27742cd1fd30ca619a0a",
+        "input_digest": "500f5d9c8129578161ab60d7656a7c8b0e3dfc1e97e3a54ab2b29847b40609b3",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_identity",
+      "layer": "historical_2020_execution",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "739485373c19922e4d3b6cb9f69d722b4322ea4f9f18f6a176f83aecf8bedb7f",
+        "input_digest": "edb47130023afa4094849c9226e646fdd66bbf49b546d37b2367de447e731d5a",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "be820e2127f5a7b1f34b5947b26bbf46abe65d57d20c98f23da4a0f0ac51cb55",
+        "input_digest": "cd74815be870521968d69ca5c02d43b5a5aca8672b29fcf666763cc25575adec",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_output",
+      "layer": "artifact_numeric",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "2ee31e3555645d2a76e03008bf3cb6272b20779a531e48d7fc1e304de814430b",
+        "input_digest": "e1f007c77b08f2407a9f81bf30d94fcc3f4e4ad4b5696675a242cc77746f7663",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "044642e0b30db34651e1b2b1e36767264eb8d8220535984cfa4e321fc61652d4",
+        "input_digest": "19fedc3aa9e471db67759396728345c729645f06fe34348dea3da714a74e307b",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_output",
+      "layer": "selected_read_gate",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "ecc0ca8a09a5111e2181edab18d659daa3714c19490b4e1e5e666e54bba41116",
+        "input_digest": "0461907b185cdf21ec872d3b1eeca6cf9dfb2a007be21d33a934e26de8268eda",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "adc63d2488e1e593f8816f283b5f13a80099b61e75f140776d6c945058d19252",
+        "input_digest": "6bfbe341f44f69deefad8c40ec456c9c378c1b0286dd96a8402c33a7bfad292f",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_output",
+      "layer": "retained_signed_identity",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "f4a444ccf7e7a5b5e80961769e532f9065e1783234d0b407401a017b0865b1b4",
+        "input_digest": "601b2a9cf1bc4a864298631d897bbb2546f80bb7c4800385a9cb8d312b4c7dbb",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "7bf8356cc21800409339060b666c49a945cee0aaf1e0879bd541647e87ad84f1",
+        "input_digest": "4d54f1a6dc72058b2a9dff0d778ed3cfb0da4647680b8918193f6042c5bc31bb",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_output",
+      "layer": "joint_scoped_receipt",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "c8ec4ee12259755b23f11d436089de4e91dc9db76f4f2be2dfb062ea5644e3e6",
+        "input_digest": "e274b938f81300c944924addafd1388edda9a25160729b9cb9393515c50f9676",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "70b78bbb18e56d54e57b291c49be9389cbf3c676d43c7833d72704b3255d0441",
+        "input_digest": "b4910f3f13ce2eeeb8afb253b2921428726b2e7cf5fad0dd17a25ee4d15c38d9",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "mixed_output",
+      "layer": "historical_2020_execution",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "84dc0c23ba50d7ed7b76a9ab39e5495a8bef4a73740441e914f76ba76c1ded42",
+        "input_digest": "86739f8feb3ec89a3c80a93678b7a1c7ca5234732cba55778cc14a9cd10645de",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "ebac2cdcf9af22c977ea95faacd915766fe6c7e8f87cce8fd268fc5a6279b606",
+        "input_digest": "4eb9dee53afd2f530775e0cf7444c8bf92e29fd082947de500a7714b6fb30099",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "duplicate_v09",
+      "layer": "artifact_numeric",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "c811d5cceef10272261f2ecac29c05815df3e1859d2055c0497bc60097b45218",
+        "input_digest": "4ba3a1654061ac6f28233e389ed2cf274e61cd7562542e2680a4aa48edc9a5e9",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "76ce41820daf9b7a20ce3957668aa22c3185e3d9d5acf40648ebec9c851e5389",
+        "input_digest": "9ea68b23147655d25768fcf5e3a161a98b7abe0b5063f2c9cf5a7d3701d8240f",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "duplicate_v09",
+      "layer": "selected_read_gate",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "5e6ef336901d7f031b0f63d6ad80e14e3862e3c78a8d34c7a316c9146308ce9d",
+        "input_digest": "89e2e2c2141b826531ff32d3a97652164539fcccf22ea312d97dbc86a8549006",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "7f2e1a2eca4deac5f904d355716eb266dde917757395a45f0e0a7fbca33f4de8",
+        "input_digest": "df506f07b3ed2bd7732d4708ceddef7bf623990b2e5e04f612f4c46693cc0769",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "duplicate_v09",
+      "layer": "retained_signed_identity",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "14ddcd7e586c30bd08895f0c74741b7ebcbbf056a7a0705427a3c63b925743e5",
+        "input_digest": "8d2de010ee3397be9ab6e97d988d0195a60147b04dc1931548b7865a2ca98798",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "6ae508331308425a3b2c2a1fdd71007c5d9f8ac63434ce1450275d8cdd9eee6b",
+        "input_digest": "3efde6f55386615b4dbce5c0e08a2ff68b7e17c6c0556cdb46ae14ca69277f95",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "duplicate_v09",
+      "layer": "joint_scoped_receipt",
+      "status": "MET",
+      "old": {
+        "certificate_digest": "35b6c8d487905cc34070541eb4059d1f73069d17467782ee230b1485cbd0d866",
+        "input_digest": "fad54a624de08c55821c6adb1142d258e216351b583c576d25a820b621b5c076",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "24d8828e136d9a359ba03f2af5b328ba62947a389390a090b146d98663405bea",
+        "input_digest": "f3fabc577f35796cbb9ce2e618e485073ce26a5e1b1b24818215db6ac54a2d5a",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    },
+    {
+      "scenario": "duplicate_v09",
+      "layer": "historical_2020_execution",
+      "status": "UNRESOLVED",
+      "old": {
+        "certificate_digest": "ca9d8d89cc8f1fcc1241b5ced8fc4a24dee6695dd3d28e9a61f197915a5e003f",
+        "input_digest": "e9bb245626c8b7e91e36b7010ca8d4e6a17f6aca9e6a9e06415c60fa66353abf",
+        "scope_digest": "e132f3acd614e17445ed318c809e20009bfc0f7e046e1578bef7ac5442add729",
+        "snapshot_digest": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+      },
+      "new": {
+        "certificate_digest": "2d15eac4eb779c5eff3504d4ddde411ef951cbc07def85b61536eb17c640367b",
+        "input_digest": "da784814fab82b6cbdd06aee3a6deb37f4e3a46552e5882653349dbd0f319d7c",
+        "scope_digest": "763ecaceab04a48f16e993bbec0b5ed02ad9d8dbc7fb701461131368a97a3615",
+        "snapshot_digest": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "independently_reconstructed_claim_records_worlds": true,
+      "all_21_certificate_fields_reconstructed": true
+    }
+  ],
+  "old_certificates_rebuilt": 30,
+  "new_certificates_rebuilt": 30,
+  "full_candidate_exact_after_only_protocol_and_four_digest_rebind": true,
+  "full_baseline_exact_after_path_and_administrative_whitelist": true,
+  "baseline_whitelist": [
+    "17 input path strings",
+    "protocol descriptor",
+    "script descriptor",
+    "old guard replaced by fresh resource_check descriptor",
+    "elapsed_seconds",
+    "completed_at_utc"
+  ],
+  "source_17_before_after_equal": true,
+  "relocated_17_before_after_equal": true,
+  "zip_and_all_25_package_members_unchanged": true,
+  "layer_label_count": 30,
+  "met_count": 12,
+  "unresolved_count": 18,
+  "scenarios": [
+    {
+      "id": "v07",
+      "layers": {
+        "artifact_numeric": "UNRESOLVED",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    {
+      "id": "v08",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    {
+      "id": "v09",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "MET",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 1
+    },
+    {
+      "id": "mixed_identity",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    {
+      "id": "mixed_output",
+      "layers": {
+        "artifact_numeric": "UNRESOLVED",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    {
+      "id": "duplicate_v09",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "MET",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 1
+    }
+  ],
+  "v07_no_csv_retained": true,
+  "independent_formula": {
+    "canonical": "UTF-8 JSON ensure_ascii=False, sort_keys=True, separators=(comma,colon), allow_nan=False, SHA256.",
+    "construction": "Reconstruct internal target key, target, shared unit, all copied records, claim, admitted world, complete singleton proof, request and certificate from the protocol and explicit admissions; no semantic-module or launcher comparison imports.",
+    "scope_change": "Only outer protocol raw digest changes snapshot and scope; each run internal protocol digest stays fixed.",
+    "checker_execution": "Unchanged certify_layer AST and byte-exact rules modules, actual candidate terminal and 30 valid checker outputs establish the declared per-certificate checker path; QA independently reconstructed without an extra scientific process."
+  },
+  "limits": [
+    "One software delivery replay of the same retrospective calibration; no added scientific samples.",
+    "Three real run archives, two constructed splice scenarios, one duplicate-reference scenario; 25 draws are not external independent runs.",
+    "Retained signature-output binding, not new cryptographic verification; no historical execution authentication.",
+    "SQL uses the same information and agrees; no method advantage or acquisition-cost study.",
+    "New paths and unchanged bytes establish relocation on this host, not an OS sandbox or proof that old files were inaccessible.",
+    "Private historical paths/public account identities remain inert in exact archived bytes; this is not anonymized publication approval."
+  ],
+  "ended_utc": "2026-10-11T19:37:48.340538+00:00",
+  "qa_total_wall_seconds": 2.2336148000031244,
+  "instrumented_qa_read_bytes": 27219595,
+  "instrumented_qa_read_calls": 130,
+  "qa_read_ledger": [
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER305_RELOCATION_QA_EXEC_PREFLIGHT_V01.json",
+      "purpose": "Fresh execution storage guard",
+      "bytes": 3194,
+      "sha256": "b2c260a851e8bc37c0b894a56c9280eceb42c27d78e473bfbbbaad78fcf0fe37",
+      "wall_seconds": 0.008189099986338988
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/PACKAGE_BUILD_V01.json",
+      "purpose": "Builder metadata only",
+      "bytes": 26743,
+      "sha256": "46b68384de1a0d021be8e91d9d896e939c89153fca9ace8ed64639f43678a011",
+      "wall_seconds": 0.027238400012720376
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01.zip",
+      "purpose": "ZIP preparation authentication",
+      "bytes": 1019047,
+      "sha256": "7c69e4d62437f25485cad2994c99936a8c74c9e456d7d839b483e6c4f7c70002",
+      "wall_seconds": 0.056247000000439584
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/MANIFEST.json",
+      "purpose": "Inventory metadata",
+      "bytes": 4588,
+      "sha256": "b16186eff87eb616975d84c91567f031bc4cdc5872a2f34e50c87f851c39c667",
+      "wall_seconds": 0.001270500011742115
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration302/PROTOCOL_V01.json",
+      "purpose": "Original scientific contract, not answers",
+      "bytes": 13268,
+      "sha256": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad",
+      "wall_seconds": 0.008262499992270023
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/protocol.json",
+      "purpose": "New relative scientific contract",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f",
+      "wall_seconds": 0.014783899998292327
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/receipt.tar",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "wall_seconds": 0.00846889999229461
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/receipt.tar",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "wall_seconds": 0.015232200006721541
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/CANDIDATE_REPORT.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "wall_seconds": 0.003903000004356727
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/CANDIDATE_REPORT.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "wall_seconds": 0.0015724000113550574
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "wall_seconds": 0.0004979000077582896
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "wall_seconds": 0.0013290000206325203
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "wall_seconds": 0.0004243000003043562
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "wall_seconds": 0.0009216000034939498
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/receipt.tar",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "wall_seconds": 0.019409700005780905
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/receipt.tar",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "wall_seconds": 0.018471900024451315
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/CANDIDATE_REPORT.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "wall_seconds": 0.014420899999095127
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/CANDIDATE_REPORT.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "wall_seconds": 0.0017846999980974942
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "wall_seconds": 0.0005393000028561801
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "wall_seconds": 0.0010897000029217452
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "wall_seconds": 0.00043200000072829425
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "wall_seconds": 0.0009135000000242144
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "wall_seconds": 0.02453560000867583
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/receipt.tar",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "wall_seconds": 0.019674700015457347
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "wall_seconds": 0.013776700012385845
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/CANDIDATE_REPORT.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "wall_seconds": 0.0015303000109270215
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "wall_seconds": 0.003690799989271909
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "wall_seconds": 0.001575700007379055
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "wall_seconds": 0.0013174999912735075
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "wall_seconds": 0.0015835000085644424
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "wall_seconds": 0.00530560000333935
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/ACCEPTANCE.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "wall_seconds": 0.0011329000117257237
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "wall_seconds": 0.0006576000014320016
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/verified.stdout.json",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "wall_seconds": 0.017019499995512888
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "wall_seconds": 0.015627199987648055
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "wall_seconds": 0.018905000004451722
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/code/rules_v2_core.py",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "wall_seconds": 0.0031138999911490828
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_core.py",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "wall_seconds": 0.017564000008860603
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/code/rules_v2_checker.py",
+      "purpose": "QA original input pre-authentication",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "wall_seconds": 0.0008453000045847148
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_checker.py",
+      "purpose": "QA relocated input pre-authentication",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "wall_seconds": 0.013762300019152462
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration302/candidate_v01/layer_candidate.py",
+      "purpose": "Frozen worker static source only",
+      "bytes": 21272,
+      "sha256": "50412f29910b082096bb4f394d2e4abe48b5be39221c1a55dafadee8447589f1",
+      "wall_seconds": 0.009896699979435652
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/layer_candidate.py",
+      "purpose": "Portable worker static source only",
+      "bytes": 22187,
+      "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b",
+      "wall_seconds": 0.017075899988412857
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration302/baseline_v02/sql_baseline_v02.py",
+      "purpose": "Frozen worker static source only",
+      "bytes": 28721,
+      "sha256": "487cc0a6f95fe0026edc05298765ac7608b693aea0e4473d84f4e8e1c0977312",
+      "wall_seconds": 0.016516500007128343
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/sql_baseline_v02.py",
+      "purpose": "Portable worker static source only",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488",
+      "wall_seconds": 0.02483010001014918
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stdout.txt",
+      "purpose": "Actual launcher stdout",
+      "bytes": 282,
+      "sha256": "b3a7186976a299faec52e28eff0c9d7196900079bb40d43991e5ba34db24aaab",
+      "wall_seconds": 0.007306999992579222
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stderr.txt",
+      "purpose": "Actual launcher stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 9.919999865815043e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESULT.json",
+      "purpose": "Terminal launcher result",
+      "bytes": 34772,
+      "sha256": "22f9d937f76cba0d52e780a551f3674c3b0aea40c05e8057333e771b1dae653a",
+      "wall_seconds": 0.0002179000002797693
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.process.json",
+      "purpose": "Saved terminal process receipt",
+      "bytes": 1292,
+      "sha256": "86d955c7ba2d9122b60d3f1749384c5b3c50ea15079d643fdaf690bd08a2ccf3",
+      "wall_seconds": 0.008739800017792732
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stdout.txt",
+      "purpose": "Actual child stdout",
+      "bytes": 1677,
+      "sha256": "89b0ef4f102688fedce7e9a3040244a1a9ded329327f676596646e7a599b6670",
+      "wall_seconds": 0.00040099999750964344
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stderr.txt",
+      "purpose": "Actual child stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.000139000010676682
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.process.json",
+      "purpose": "Saved terminal process receipt",
+      "bytes": 1430,
+      "sha256": "133cbf0a875e85abbc4b5c417c841c5443fdc21f39ebe18a5950f2fef6e06a23",
+      "wall_seconds": 0.016222600010223687
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stdout.txt",
+      "purpose": "Actual child stdout",
+      "bytes": 1741,
+      "sha256": "0a6f5a7a7cfc2dbb0cf42bbd5abd6e66f18fd17015ee73552de712dcabc53920",
+      "wall_seconds": 0.0003000000142492354
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stderr.txt",
+      "purpose": "Actual child stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.00017059998936019838
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration302/candidate_v01/CANDIDATE_RESULT_V01.json",
+      "purpose": "Original302 complete answer, after both new child terminals",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb",
+      "wall_seconds": 0.01562660001218319
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/references/CANDIDATE_RESULT_V01.json",
+      "purpose": "Packaged302 answer, after both new child terminals",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb",
+      "wall_seconds": 0.001737299986416474
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration302/baseline_v02/BASELINE_RESULT_V02.json",
+      "purpose": "Original302 complete answer, after both new child terminals",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7",
+      "wall_seconds": 0.001018500013742596
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/references/BASELINE_RESULT_V02.json",
+      "purpose": "Packaged302 answer, after both new child terminals",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7",
+      "wall_seconds": 0.000825700000859797
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/CANDIDATE_RESULT_V01.json",
+      "purpose": "New candidate complete report",
+      "bytes": 264208,
+      "sha256": "1a97c907b59136e883ebb697391fc3a8ae1b30226f1560aae0385056b58d8204",
+      "wall_seconds": 0.0015354999923147261
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/baseline/BASELINE_RESULT_V02.json",
+      "purpose": "New SQL complete report",
+      "bytes": 153224,
+      "sha256": "ae68fe3fccb79fc6453f254f335febdd0c9083a262232e5575fac203ff32e9d3",
+      "wall_seconds": 0.0011830999865196645
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/EXECUTION_V01.json",
+      "purpose": "Candidate requested-exit receipt, checked against actual parent exit",
+      "bytes": 683,
+      "sha256": "7639529aba6b154dd60cd5316d63d9a769d500c5756dad3be3b5c8bd4ada6ed7",
+      "wall_seconds": 0.008189800020772964
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/layer_candidate.py",
+      "purpose": "Candidate executed script hash",
+      "bytes": 22187,
+      "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b",
+      "wall_seconds": 0.0004301999870222062
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/CANDIDATE_RESULT_V01.json",
+      "purpose": "Candidate output receipt hash",
+      "bytes": 264208,
+      "sha256": "1a97c907b59136e883ebb697391fc3a8ae1b30226f1560aae0385056b58d8204",
+      "wall_seconds": 0.0008654999837744981
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESOURCE_CHECK.json",
+      "purpose": "Fresh resource check validation",
+      "bytes": 448,
+      "sha256": "462fe6179d15f51a1d61ad9fbeb6b9baa4fad51e000ed049ae92047a48c0dfc5",
+      "wall_seconds": 0.0004090000002179295
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESOURCE_CHECK.json",
+      "purpose": "Fresh resource descriptor",
+      "bytes": 448,
+      "sha256": "462fe6179d15f51a1d61ad9fbeb6b9baa4fad51e000ed049ae92047a48c0dfc5",
+      "wall_seconds": 0.0001666000171098858
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/protocol.json",
+      "purpose": "New baseline protocol descriptor",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f",
+      "wall_seconds": 0.00019760002032853663
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/sql_baseline_v02.py",
+      "purpose": "New baseline script descriptor",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488",
+      "wall_seconds": 0.00022649997845292091
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/receipt.tar",
+      "purpose": "Original input final authentication",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "wall_seconds": 0.0036121000011917204
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/receipt.tar",
+      "purpose": "Relocated input final authentication",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "wall_seconds": 0.0012347000010777265
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/CANDIDATE_REPORT.json",
+      "purpose": "Original input final authentication",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "wall_seconds": 0.0003958999877795577
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/CANDIDATE_REPORT.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "wall_seconds": 0.00012849998893216252
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Original input final authentication",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "wall_seconds": 0.00010460001067258418
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "wall_seconds": 0.00010590002057142556
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v07_failed_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Original input final authentication",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "wall_seconds": 9.429999045096338e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "wall_seconds": 0.0002666999935172498
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/receipt.tar",
+      "purpose": "Original input final authentication",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "wall_seconds": 0.007035999995423481
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/receipt.tar",
+      "purpose": "Relocated input final authentication",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "wall_seconds": 0.007303699996555224
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/CANDIDATE_REPORT.json",
+      "purpose": "Original input final authentication",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "wall_seconds": 0.00042329999268986285
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/CANDIDATE_REPORT.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "wall_seconds": 0.00017630000365898013
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Original input final authentication",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "wall_seconds": 0.0005096999811939895
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "wall_seconds": 0.0002859999949578196
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v08_failed_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Original input final authentication",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "wall_seconds": 0.0001666999887675047
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "wall_seconds": 0.00011490000179037452
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+      "purpose": "Original input final authentication",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "wall_seconds": 0.008792299980996177
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/receipt.tar",
+      "purpose": "Relocated input final authentication",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "wall_seconds": 0.006750400003511459
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+      "purpose": "Original input final authentication",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "wall_seconds": 0.000374700000975281
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/CANDIDATE_REPORT.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "wall_seconds": 0.00021349999587982893
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Original input final authentication",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "wall_seconds": 8.6499989265576e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "wall_seconds": 8.110000635497272e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Original input final authentication",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "wall_seconds": 7.110001752153039e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "wall_seconds": 7.090001599863172e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+      "purpose": "Original input final authentication",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "wall_seconds": 6.440002471208572e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/ACCEPTANCE.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "wall_seconds": 7.350000669248402e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+      "purpose": "Original input final authentication",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "wall_seconds": 9.770001634024084e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/verified.stdout.json",
+      "purpose": "Relocated input final authentication",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "wall_seconds": 9.71999834291637e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "purpose": "Original input final authentication",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "wall_seconds": 0.00017519999528303742
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "purpose": "Relocated input final authentication",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "wall_seconds": 0.00031980001949705184
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/code/rules_v2_core.py",
+      "purpose": "Original input final authentication",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "wall_seconds": 0.00029719999292865396
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_core.py",
+      "purpose": "Relocated input final authentication",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "wall_seconds": 0.00012250000145286322
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/code/rules_v2_checker.py",
+      "purpose": "Original input final authentication",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "wall_seconds": 0.00017370001296512783
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_checker.py",
+      "purpose": "Relocated input final authentication",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "wall_seconds": 0.00016979998326860368
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/ACCEPTANCE.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "wall_seconds": 0.00018100001034326851
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "wall_seconds": 0.0002052999916486442
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/verified.stdout.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "wall_seconds": 0.00010609999299049377
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/CANDIDATE_REPORT.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "wall_seconds": 6.479999865405262e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "wall_seconds": 5.9399986639618874e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "wall_seconds": 6.370001938194036e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/receipt.tar",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "wall_seconds": 0.0010811999964062124
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/CANDIDATE_REPORT.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "wall_seconds": 7.849998655728996e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "wall_seconds": 6.419999408535659e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "wall_seconds": 6.419999408535659e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/receipt.tar",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "wall_seconds": 0.008491699991282076
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/CANDIDATE_REPORT.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "wall_seconds": 0.00016510000568814576
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "wall_seconds": 7.660000119358301e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "wall_seconds": 7.320000440813601e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/receipt.tar",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "wall_seconds": 0.011049000022467226
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/layer_candidate.py",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 22187,
+      "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b",
+      "wall_seconds": 0.0004225000157020986
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/MANIFEST.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 4588,
+      "sha256": "b16186eff87eb616975d84c91567f031bc4cdc5872a2f34e50c87f851c39c667",
+      "wall_seconds": 0.00017250000382773578
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/protocol.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f",
+      "wall_seconds": 0.0001790999958757311
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/README.md",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 5424,
+      "sha256": "818cc458f60c2e565dfaf278260d3bb818c7371c3752f918cb233f449a8265b8",
+      "wall_seconds": 8.499997784383595e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/references/BASELINE_RESULT_V02.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7",
+      "wall_seconds": 0.0008566000033169985
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/references/CANDIDATE_RESULT_V01.json",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb",
+      "wall_seconds": 0.0009589000255800784
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/run.py",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 13571,
+      "sha256": "5dbe42e4b54998425bae78847bdd29c042087ad0e857cbb958d95b1cb13a5777",
+      "wall_seconds": 0.00011209998046979308
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_checker.py",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "wall_seconds": 0.0002741999924182892
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_core.py",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "wall_seconds": 0.0002822000242304057
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/sql_baseline_v02.py",
+      "purpose": "Final complete package byte inventory",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488",
+      "wall_seconds": 0.00047480000648647547
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01.zip",
+      "purpose": "Final ZIP authentication",
+      "bytes": 1019047,
+      "sha256": "7c69e4d62437f25485cad2994c99936a8c74c9e456d7d839b483e6c4f7c70002",
+      "wall_seconds": 0.00285210000583902
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/CANDIDATE_RESULT_V01.json",
+      "purpose": "Final candidate report binding",
+      "bytes": 264208,
+      "sha256": "1a97c907b59136e883ebb697391fc3a8ae1b30226f1560aae0385056b58d8204",
+      "wall_seconds": 0.0011354000016581267
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/baseline/BASELINE_RESULT_V02.json",
+      "purpose": "Final SQL report binding",
+      "bytes": 153224,
+      "sha256": "ae68fe3fccb79fc6453f254f335febdd0c9083a262232e5575fac203ff32e9d3",
+      "wall_seconds": 0.00044380000326782465
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESULT.json",
+      "purpose": "Terminal launcher result binding",
+      "bytes": 34772,
+      "sha256": "22f9d937f76cba0d52e780a551f3674c3b0aea40c05e8057333e771b1dae653a",
+      "wall_seconds": 0.00016570001025684178
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/EXECUTION_V01.json",
+      "purpose": "Candidate receipt binding",
+      "bytes": 683,
+      "sha256": "7639529aba6b154dd60cd5316d63d9a769d500c5756dad3be3b5c8bd4ada6ed7",
+      "wall_seconds": 0.0004140000091865659
+    }
+  ],
+  "read_scope": "Instrumented QA content reads; ZIP member extraction streaming bytes separately. Excludes interpreter/runtime/OS traffic and preliminary interactive code reads; no acquisition-cost claim.",
+  "script_sha256": "528a5732c5fc2622e421c08a20d13a2fcb44055e0036f6d9250e8ecf22117fa2"
+}

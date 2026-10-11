@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "status": "CURRENT_RETRIEVAL_NOT_SUFFICIENT_FOR_EXACT_FROZEN_ASSEMBLY",
+  "guard_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\ITER306_SOURCE_PROBE_GUARD_b79a420e_V01.json",
+  "guard_sha256": "db191a49a78bc4b6e48e5eb1d300da927963e4f410b2f2b123d8020cfea6534e",
+  "finished_utc": "2026-10-11T19:48:24.026241+00:00",
+  "scientific_replay_performed": false,
+  "published_payloads": false,
+  "old_source_files_modified": false,
+  "receipts": [
+    {
+      "source_key": "organizer",
+      "receipt": "organizer_GET_RECEIPT_V01.json",
+      "receipt_sha256": "0f14d2432ec22c228d6a33a3148fb1db5d9f3597f398dfa3aed59d9aae1c9701",
+      "status": 200,
+      "bytes": 83506,
+      "sha256": "5e4aeb32be5cad70eb841ca555496a9c950b0e6d329b361c0bf05c9f81fbf3d4",
+      "exact_frozen_snapshot_match": false,
+      "exception": null
+    },
+    {
+      "source_key": "archive",
+      "receipt": "archive_GET_RECEIPT_V01.json",
+      "receipt_sha256": "695c884f71d48fe57b6aae20162b5e6f41a423bbbd463684d868f696de897574",
+      "status": 200,
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "exact_frozen_snapshot_match": true,
+      "exception": null
+    }
+  ]
+}

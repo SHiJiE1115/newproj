@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "started_utc": "2026-10-11T19:37:47.391567+00:00",
+  "ended_utc": "2026-10-11T19:37:47.570476+00:00",
+  "elapsed_seconds": 0.17954159999499097,
+  "exit_code": 0,
+  "script_sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b",
+  "protocol_sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f",
+  "result_sha256": "1a97c907b59136e883ebb697391fc3a8ae1b30226f1560aae0385056b58d8204",
+  "result_bytes": 264208,
+  "new_experiment": false,
+  "network_access": false,
+  "baseline_302_output_read": false,
+  "process_exit_note": "Self-recorded requested exit; parent must additionally retain actual tool exit."
+}

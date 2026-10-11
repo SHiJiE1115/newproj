@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "started_utc": "2026-10-11T19:53:41.316748+00:00",
+  "mode": "exact_local_import",
+  "scientific_replay_executed": false,
+  "new_scientific_sample": false,
+  "bootstrap_acquisition_is_outside_scientific_budget": true,
+  "attempts_per_source_maximum": 1,
+  "output": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\rejected drift package",
+  "sources": [
+    {
+      "member": "sources/organizer_main.raw",
+      "expected_bytes": 83506,
+      "expected_sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "attempts": 1,
+      "mode": "exact_local_import",
+      "source_filename": "organizer_main.raw",
+      "observed_bytes_at_most_limit_plus_one": 83506,
+      "observed_sha256": "5e4aeb32be5cad70eb841ca555496a9c950b0e6d329b361c0bf05c9f81fbf3d4"
+    }
+  ],
+  "human_review": false,
+  "preserved_partial_directory": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\.rejected drift package.partial-33jt_lt0",
+  "error_type": "ValueError",
+  "error": "EXACT_SOURCE_PIN_MISMATCH:sources/organizer_main.raw",
+  "ended_utc": "2026-10-11T19:53:41.421178+00:00"
+}

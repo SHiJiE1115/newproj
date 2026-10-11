@@ -1,0 +1,4852 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_SQL_HASH_JOIN_BASELINE",
+  "human_review": false,
+  "protocol": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/protocol.json",
+    "bytes": 11979,
+    "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+  },
+  "resource_check": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESOURCE_CHECK.json",
+    "bytes": 448,
+    "sha256": "462fe6179d15f51a1d61ad9fbeb6b9baa4fad51e000ed049ae92047a48c0dfc5"
+  },
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/sql_baseline_v02.py",
+    "bytes": 30360,
+    "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+  },
+  "scenarios": [
+    {
+      "id": "v07",
+      "kind": "existing_real_run",
+      "layers": {
+        "artifact_numeric": "UNRESOLVED",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0,
+      "input_reference_copies": 1,
+      "diagnostics": {
+        "artifact_numeric": {
+          "positive": false,
+          "detail_status": "UNAVAILABLE",
+          "missing": [
+            "csv",
+            "summary",
+            "params"
+          ],
+          "evidence": [
+            {
+              "run": "v07",
+              "file": "receipt.tar",
+              "member": "results/ours.csv"
+            },
+            {
+              "run": "v07",
+              "file": "receipt.tar",
+              "member": "out/author_result_6bb9ffa0541d82442ee556c79d536320.json"
+            },
+            {
+              "run": "v07",
+              "file": "receipt.tar",
+              "member": "results/ours_exp_params.py"
+            },
+            {
+              "run": "v07",
+              "file": "receipt.tar",
+              "member": "host_run.json",
+              "json_pointer_or_field": "/run_nonce"
+            },
+            {
+              "run": "v07",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/target"
+            }
+          ],
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "cf3f87777bec7c748453124896db666a905ddd11",
+            "run_id": "38135533716",
+            "attempt": "1",
+            "protocol_sha256": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c",
+            "tar_sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+          },
+          "csv_donor_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "cf3f87777bec7c748453124896db666a905ddd11",
+            "run_id": "38135533716",
+            "attempt": "1",
+            "protocol_sha256": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c",
+            "tar_sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+          },
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": false
+        },
+        "selected_read_gate": {
+          "positive": false,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "cf3f87777bec7c748453124896db666a905ddd11",
+            "run_id": "38135533716",
+            "attempt": "1",
+            "protocol_sha256": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c",
+            "tar_sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+          },
+          "detail_status": "UNAVAILABLE",
+          "retained_statuses": [
+            "INVALID_OR_UNRUN",
+            "INVALID_OR_UNRUN",
+            "INVALID_OR_UNRUN"
+          ],
+          "flags": [
+            {
+              "report": "candidate",
+              "field": "author_execve_same_pid",
+              "value": null
+            },
+            {
+              "report": "candidate",
+              "field": "wine_open_observed",
+              "value": null
+            },
+            {
+              "report": "candidate",
+              "field": "wine_positive_read_observed",
+              "value": null
+            },
+            {
+              "report": "candidate",
+              "field": "execve_wine_order",
+              "value": null
+            },
+            {
+              "report": "direct",
+              "field": "author_execve_same_pid",
+              "value": null
+            },
+            {
+              "report": "direct",
+              "field": "wine_open_and_read",
+              "value": null
+            },
+            {
+              "report": "direct",
+              "field": "execve_wine_order",
+              "value": null
+            }
+          ],
+          "missing_flags": [
+            "candidate.author_execve_same_pid",
+            "candidate.wine_open_observed",
+            "candidate.wine_positive_read_observed",
+            "candidate.execve_wine_order",
+            "direct.author_execve_same_pid",
+            "direct.wine_open_and_read",
+            "direct.execve_wine_order"
+          ],
+          "false_flags": [],
+          "evidence": [
+            {
+              "run": "v07",
+              "file": "CANDIDATE_REPORT.json",
+              "json_pointer_or_field": "/receipt_audit/checks"
+            },
+            {
+              "run": "v07",
+              "file": "DIRECT_BASELINE_REPORT.json",
+              "json_pointer_or_field": "/checks"
+            },
+            {
+              "run": "v07",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/trace_rule"
+            }
+          ],
+          "fresh_trace_parsing": false,
+          "physical_nonreading_inferred_from_failed_gate": false,
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": false
+        },
+        "retained_signed_identity": {
+          "positive": false,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "cf3f87777bec7c748453124896db666a905ddd11",
+            "run_id": "38135533716",
+            "attempt": "1",
+            "protocol_sha256": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c",
+            "tar_sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+          },
+          "detail_status": "UNAVAILABLE",
+          "evidence": [
+            {
+              "run": "v07",
+              "file": "POSTRUN_RELEASE_GATE.json",
+              "json_pointer_or_field": "/attestation"
+            }
+          ],
+          "retained_attestation": {
+            "status": "NOT_ATTEMPTED_UPSTREAM_GATE_FAILED",
+            "verified": false
+          },
+          "fresh_cryptographic_verification": false,
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": false
+        },
+        "joint_scoped_receipt": {
+          "six_field_sql_join_rows": 0,
+          "target_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "cf3f87777bec7c748453124896db666a905ddd11",
+            "run_id": "38135533716",
+            "attempt": "1",
+            "protocol_sha256": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c",
+            "tar_sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+          },
+          "component_pair_mismatches": {
+            "numeric_to_read": [],
+            "numeric_to_signature": [],
+            "read_to_signature": []
+          },
+          "csv_donor_to_target_mismatches": [],
+          "evidence": {
+            "numeric": [
+              {
+                "run": "v07",
+                "file": "receipt.tar",
+                "member": "results/ours.csv"
+              },
+              {
+                "run": "v07",
+                "file": "receipt.tar",
+                "member": "out/author_result_6bb9ffa0541d82442ee556c79d536320.json"
+              },
+              {
+                "run": "v07",
+                "file": "receipt.tar",
+                "member": "results/ours_exp_params.py"
+              },
+              {
+                "run": "v07",
+                "file": "receipt.tar",
+                "member": "host_run.json",
+                "json_pointer_or_field": "/run_nonce"
+              },
+              {
+                "run": "v07",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/target"
+              }
+            ],
+            "read": [
+              {
+                "run": "v07",
+                "file": "CANDIDATE_REPORT.json",
+                "json_pointer_or_field": "/receipt_audit/checks"
+              },
+              {
+                "run": "v07",
+                "file": "DIRECT_BASELINE_REPORT.json",
+                "json_pointer_or_field": "/checks"
+              },
+              {
+                "run": "v07",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/trace_rule"
+              }
+            ],
+            "signature": [
+              {
+                "run": "v07",
+                "file": "POSTRUN_RELEASE_GATE.json",
+                "json_pointer_or_field": "/attestation"
+              }
+            ]
+          }
+        },
+        "historical_2020_execution": {
+          "reason": "No admitted object in this frozen packet attests the original historical execution; matching arithmetic and current prospective identity cannot supply it.",
+          "admitted_historical_evidence": []
+        }
+      }
+    },
+    {
+      "id": "v08",
+      "kind": "existing_real_run",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0,
+      "input_reference_copies": 1,
+      "diagnostics": {
+        "artifact_numeric": {
+          "positive": true,
+          "detail_status": "PASSED",
+          "evidence": [
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "results/ours.csv"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "out/author_result_dfdc14bb23467871d1e09c797b86e805.json"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "results/ours_exp_params.py"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "host_run.json",
+              "json_pointer_or_field": "/run_nonce"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/target"
+            }
+          ],
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "csv_donor_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "checks": [
+            {
+              "edge": "csv_donor_joint_key_to_summary_recipient",
+              "pass": true,
+              "observed": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+                "run_id": "38136079298",
+                "attempt": "1",
+                "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+                "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+              },
+              "expected": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+                "run_id": "38136079298",
+                "attempt": "1",
+                "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+                "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+              }
+            },
+            {
+              "edge": "csv_sha256_to_summary",
+              "pass": true,
+              "observed": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08",
+              "expected": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08"
+            },
+            {
+              "edge": "params_sha256_to_summary",
+              "pass": true,
+              "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+              "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+            },
+            {
+              "edge": "summary_nonce_to_host",
+              "pass": true,
+              "observed": "dfdc14bb23467871d1e09c797b86e805",
+              "expected": "dfdc14bb23467871d1e09c797b86e805"
+            },
+            {
+              "edge": "summary_status",
+              "pass": true,
+              "observed": "success",
+              "expected": "success"
+            },
+            {
+              "edge": "csv_rows_to_target",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "csv_first_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0023355484008789062"
+              },
+              "expected": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0023355484008789062"
+              }
+            },
+            {
+              "edge": "csv_last_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008804798126220703"
+              },
+              "expected": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008804798126220703"
+              }
+            },
+            {
+              "edge": "draw_seed_row_0",
+              "pass": true,
+              "observed": [
+                0,
+                1
+              ],
+              "expected": [
+                0,
+                1
+              ]
+            },
+            {
+              "edge": "draw_seed_row_1",
+              "pass": true,
+              "observed": [
+                1,
+                11
+              ],
+              "expected": [
+                1,
+                11
+              ]
+            },
+            {
+              "edge": "draw_seed_row_2",
+              "pass": true,
+              "observed": [
+                2,
+                21
+              ],
+              "expected": [
+                2,
+                21
+              ]
+            },
+            {
+              "edge": "draw_seed_row_3",
+              "pass": true,
+              "observed": [
+                3,
+                31
+              ],
+              "expected": [
+                3,
+                31
+              ]
+            },
+            {
+              "edge": "draw_seed_row_4",
+              "pass": true,
+              "observed": [
+                4,
+                41
+              ],
+              "expected": [
+                4,
+                41
+              ]
+            },
+            {
+              "edge": "draw_seed_row_5",
+              "pass": true,
+              "observed": [
+                5,
+                51
+              ],
+              "expected": [
+                5,
+                51
+              ]
+            },
+            {
+              "edge": "draw_seed_row_6",
+              "pass": true,
+              "observed": [
+                6,
+                61
+              ],
+              "expected": [
+                6,
+                61
+              ]
+            },
+            {
+              "edge": "draw_seed_row_7",
+              "pass": true,
+              "observed": [
+                7,
+                71
+              ],
+              "expected": [
+                7,
+                71
+              ]
+            },
+            {
+              "edge": "draw_seed_row_8",
+              "pass": true,
+              "observed": [
+                8,
+                81
+              ],
+              "expected": [
+                8,
+                81
+              ]
+            },
+            {
+              "edge": "draw_seed_row_9",
+              "pass": true,
+              "observed": [
+                9,
+                91
+              ],
+              "expected": [
+                9,
+                91
+              ]
+            },
+            {
+              "edge": "draw_seed_row_10",
+              "pass": true,
+              "observed": [
+                10,
+                101
+              ],
+              "expected": [
+                10,
+                101
+              ]
+            },
+            {
+              "edge": "draw_seed_row_11",
+              "pass": true,
+              "observed": [
+                11,
+                111
+              ],
+              "expected": [
+                11,
+                111
+              ]
+            },
+            {
+              "edge": "draw_seed_row_12",
+              "pass": true,
+              "observed": [
+                12,
+                121
+              ],
+              "expected": [
+                12,
+                121
+              ]
+            },
+            {
+              "edge": "draw_seed_row_13",
+              "pass": true,
+              "observed": [
+                13,
+                131
+              ],
+              "expected": [
+                13,
+                131
+              ]
+            },
+            {
+              "edge": "draw_seed_row_14",
+              "pass": true,
+              "observed": [
+                14,
+                141
+              ],
+              "expected": [
+                14,
+                141
+              ]
+            },
+            {
+              "edge": "draw_seed_row_15",
+              "pass": true,
+              "observed": [
+                15,
+                151
+              ],
+              "expected": [
+                15,
+                151
+              ]
+            },
+            {
+              "edge": "draw_seed_row_16",
+              "pass": true,
+              "observed": [
+                16,
+                161
+              ],
+              "expected": [
+                16,
+                161
+              ]
+            },
+            {
+              "edge": "draw_seed_row_17",
+              "pass": true,
+              "observed": [
+                17,
+                171
+              ],
+              "expected": [
+                17,
+                171
+              ]
+            },
+            {
+              "edge": "draw_seed_row_18",
+              "pass": true,
+              "observed": [
+                18,
+                181
+              ],
+              "expected": [
+                18,
+                181
+              ]
+            },
+            {
+              "edge": "draw_seed_row_19",
+              "pass": true,
+              "observed": [
+                19,
+                191
+              ],
+              "expected": [
+                19,
+                191
+              ]
+            },
+            {
+              "edge": "draw_seed_row_20",
+              "pass": true,
+              "observed": [
+                20,
+                201
+              ],
+              "expected": [
+                20,
+                201
+              ]
+            },
+            {
+              "edge": "draw_seed_row_21",
+              "pass": true,
+              "observed": [
+                21,
+                211
+              ],
+              "expected": [
+                21,
+                211
+              ]
+            },
+            {
+              "edge": "draw_seed_row_22",
+              "pass": true,
+              "observed": [
+                22,
+                221
+              ],
+              "expected": [
+                22,
+                221
+              ]
+            },
+            {
+              "edge": "draw_seed_row_23",
+              "pass": true,
+              "observed": [
+                23,
+                231
+              ],
+              "expected": [
+                23,
+                231
+              ]
+            },
+            {
+              "edge": "draw_seed_row_24",
+              "pass": true,
+              "observed": [
+                24,
+                241
+              ],
+              "expected": [
+                24,
+                241
+              ]
+            },
+            {
+              "edge": "mean_population_sd_to_target",
+              "pass": true,
+              "observed": [
+                "0.904",
+                "0.046"
+              ],
+              "expected": [
+                "0.904",
+                "0.046"
+              ]
+            },
+            {
+              "edge": "params_draws",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "params_prior_exponent",
+              "pass": true,
+              "observed": "13.7",
+              "expected": "13.7"
+            }
+          ],
+          "arithmetic": {
+            "mean_from_csv_lexemes_decimal80": "0.903999999999999972",
+            "population_sd_decimal80": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+            "rounded_mean_sd_3dp": [
+              "0.904",
+              "0.046"
+            ],
+            "rounding": "decimal ROUND_HALF_UP",
+            "rows": 25
+          },
+          "csv_summary_hash_join_rows": 1,
+          "params_literal": {
+            "exp_name": "ac25",
+            "test_split_ratio": 0.25,
+            "n_draws": 25,
+            "n_folds": 10,
+            "max_n_leaves": 40,
+            "error_prior_exponent": 13.7
+          },
+          "csv_member": {
+            "bytes": 2172,
+            "sha256": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08"
+          },
+          "summary_member": {
+            "bytes": 1449,
+            "sha256": "03ca57bb8174996aa32641cc1e4e8110b222c9e3fa1e86c8d2b8d21d4a1cb3e3"
+          },
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "selected_read_gate": {
+          "positive": false,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "detail_status": "NOT_PASSED",
+          "retained_statuses": [
+            "INVALID_OR_UNRUN",
+            "INVALID_OR_UNRUN",
+            "INVALID_OR_UNRUN"
+          ],
+          "flags": [
+            {
+              "report": "candidate",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_open_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_positive_read_observed",
+              "value": false
+            },
+            {
+              "report": "candidate",
+              "field": "execve_wine_order",
+              "value": false
+            },
+            {
+              "report": "direct",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "wine_open_and_read",
+              "value": false
+            },
+            {
+              "report": "direct",
+              "field": "execve_wine_order",
+              "value": false
+            }
+          ],
+          "missing_flags": [],
+          "false_flags": [
+            "candidate.wine_positive_read_observed",
+            "candidate.execve_wine_order",
+            "direct.wine_open_and_read",
+            "direct.execve_wine_order"
+          ],
+          "evidence": [
+            {
+              "run": "v08",
+              "file": "CANDIDATE_REPORT.json",
+              "json_pointer_or_field": "/receipt_audit/checks"
+            },
+            {
+              "run": "v08",
+              "file": "DIRECT_BASELINE_REPORT.json",
+              "json_pointer_or_field": "/checks"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/trace_rule"
+            }
+          ],
+          "fresh_trace_parsing": false,
+          "physical_nonreading_inferred_from_failed_gate": false,
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": false
+        },
+        "retained_signed_identity": {
+          "positive": false,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "detail_status": "UNAVAILABLE",
+          "evidence": [
+            {
+              "run": "v08",
+              "file": "POSTRUN_RELEASE_GATE.json",
+              "json_pointer_or_field": "/attestation"
+            }
+          ],
+          "retained_attestation": {
+            "status": "NOT_ATTEMPTED_UPSTREAM_GATE_FAILED",
+            "verified": false
+          },
+          "fresh_cryptographic_verification": false,
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": false
+        },
+        "joint_scoped_receipt": {
+          "six_field_sql_join_rows": 0,
+          "target_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "component_pair_mismatches": {
+            "numeric_to_read": [],
+            "numeric_to_signature": [],
+            "read_to_signature": []
+          },
+          "csv_donor_to_target_mismatches": [],
+          "evidence": {
+            "numeric": [
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "results/ours.csv"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "out/author_result_dfdc14bb23467871d1e09c797b86e805.json"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "results/ours_exp_params.py"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "host_run.json",
+                "json_pointer_or_field": "/run_nonce"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/target"
+              }
+            ],
+            "read": [
+              {
+                "run": "v08",
+                "file": "CANDIDATE_REPORT.json",
+                "json_pointer_or_field": "/receipt_audit/checks"
+              },
+              {
+                "run": "v08",
+                "file": "DIRECT_BASELINE_REPORT.json",
+                "json_pointer_or_field": "/checks"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/trace_rule"
+              }
+            ],
+            "signature": [
+              {
+                "run": "v08",
+                "file": "POSTRUN_RELEASE_GATE.json",
+                "json_pointer_or_field": "/attestation"
+              }
+            ]
+          }
+        },
+        "historical_2020_execution": {
+          "reason": "No admitted object in this frozen packet attests the original historical execution; matching arithmetic and current prospective identity cannot supply it.",
+          "admitted_historical_evidence": []
+        }
+      }
+    },
+    {
+      "id": "v09",
+      "kind": "existing_real_run",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "MET",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 1,
+      "input_reference_copies": 1,
+      "diagnostics": {
+        "artifact_numeric": {
+          "positive": true,
+          "detail_status": "PASSED",
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "results/ours.csv"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "results/ours_exp_params.py"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "host_run.json",
+              "json_pointer_or_field": "/run_nonce"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/target"
+            }
+          ],
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "csv_donor_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "checks": [
+            {
+              "edge": "csv_donor_joint_key_to_summary_recipient",
+              "pass": true,
+              "observed": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+                "run_id": "38136338509",
+                "attempt": "1",
+                "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+                "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              },
+              "expected": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+                "run_id": "38136338509",
+                "attempt": "1",
+                "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+                "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              }
+            },
+            {
+              "edge": "csv_sha256_to_summary",
+              "pass": true,
+              "observed": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+              "expected": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+            },
+            {
+              "edge": "params_sha256_to_summary",
+              "pass": true,
+              "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+              "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+            },
+            {
+              "edge": "summary_nonce_to_host",
+              "pass": true,
+              "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+              "expected": "175e5ecdd8e0857afa981d0c20e8ac59"
+            },
+            {
+              "edge": "summary_status",
+              "pass": true,
+              "observed": "success",
+              "expected": "success"
+            },
+            {
+              "edge": "csv_rows_to_target",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "csv_first_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0022284984588623047"
+              },
+              "expected": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0022284984588623047"
+              }
+            },
+            {
+              "edge": "csv_last_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008466243743896484"
+              },
+              "expected": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008466243743896484"
+              }
+            },
+            {
+              "edge": "draw_seed_row_0",
+              "pass": true,
+              "observed": [
+                0,
+                1
+              ],
+              "expected": [
+                0,
+                1
+              ]
+            },
+            {
+              "edge": "draw_seed_row_1",
+              "pass": true,
+              "observed": [
+                1,
+                11
+              ],
+              "expected": [
+                1,
+                11
+              ]
+            },
+            {
+              "edge": "draw_seed_row_2",
+              "pass": true,
+              "observed": [
+                2,
+                21
+              ],
+              "expected": [
+                2,
+                21
+              ]
+            },
+            {
+              "edge": "draw_seed_row_3",
+              "pass": true,
+              "observed": [
+                3,
+                31
+              ],
+              "expected": [
+                3,
+                31
+              ]
+            },
+            {
+              "edge": "draw_seed_row_4",
+              "pass": true,
+              "observed": [
+                4,
+                41
+              ],
+              "expected": [
+                4,
+                41
+              ]
+            },
+            {
+              "edge": "draw_seed_row_5",
+              "pass": true,
+              "observed": [
+                5,
+                51
+              ],
+              "expected": [
+                5,
+                51
+              ]
+            },
+            {
+              "edge": "draw_seed_row_6",
+              "pass": true,
+              "observed": [
+                6,
+                61
+              ],
+              "expected": [
+                6,
+                61
+              ]
+            },
+            {
+              "edge": "draw_seed_row_7",
+              "pass": true,
+              "observed": [
+                7,
+                71
+              ],
+              "expected": [
+                7,
+                71
+              ]
+            },
+            {
+              "edge": "draw_seed_row_8",
+              "pass": true,
+              "observed": [
+                8,
+                81
+              ],
+              "expected": [
+                8,
+                81
+              ]
+            },
+            {
+              "edge": "draw_seed_row_9",
+              "pass": true,
+              "observed": [
+                9,
+                91
+              ],
+              "expected": [
+                9,
+                91
+              ]
+            },
+            {
+              "edge": "draw_seed_row_10",
+              "pass": true,
+              "observed": [
+                10,
+                101
+              ],
+              "expected": [
+                10,
+                101
+              ]
+            },
+            {
+              "edge": "draw_seed_row_11",
+              "pass": true,
+              "observed": [
+                11,
+                111
+              ],
+              "expected": [
+                11,
+                111
+              ]
+            },
+            {
+              "edge": "draw_seed_row_12",
+              "pass": true,
+              "observed": [
+                12,
+                121
+              ],
+              "expected": [
+                12,
+                121
+              ]
+            },
+            {
+              "edge": "draw_seed_row_13",
+              "pass": true,
+              "observed": [
+                13,
+                131
+              ],
+              "expected": [
+                13,
+                131
+              ]
+            },
+            {
+              "edge": "draw_seed_row_14",
+              "pass": true,
+              "observed": [
+                14,
+                141
+              ],
+              "expected": [
+                14,
+                141
+              ]
+            },
+            {
+              "edge": "draw_seed_row_15",
+              "pass": true,
+              "observed": [
+                15,
+                151
+              ],
+              "expected": [
+                15,
+                151
+              ]
+            },
+            {
+              "edge": "draw_seed_row_16",
+              "pass": true,
+              "observed": [
+                16,
+                161
+              ],
+              "expected": [
+                16,
+                161
+              ]
+            },
+            {
+              "edge": "draw_seed_row_17",
+              "pass": true,
+              "observed": [
+                17,
+                171
+              ],
+              "expected": [
+                17,
+                171
+              ]
+            },
+            {
+              "edge": "draw_seed_row_18",
+              "pass": true,
+              "observed": [
+                18,
+                181
+              ],
+              "expected": [
+                18,
+                181
+              ]
+            },
+            {
+              "edge": "draw_seed_row_19",
+              "pass": true,
+              "observed": [
+                19,
+                191
+              ],
+              "expected": [
+                19,
+                191
+              ]
+            },
+            {
+              "edge": "draw_seed_row_20",
+              "pass": true,
+              "observed": [
+                20,
+                201
+              ],
+              "expected": [
+                20,
+                201
+              ]
+            },
+            {
+              "edge": "draw_seed_row_21",
+              "pass": true,
+              "observed": [
+                21,
+                211
+              ],
+              "expected": [
+                21,
+                211
+              ]
+            },
+            {
+              "edge": "draw_seed_row_22",
+              "pass": true,
+              "observed": [
+                22,
+                221
+              ],
+              "expected": [
+                22,
+                221
+              ]
+            },
+            {
+              "edge": "draw_seed_row_23",
+              "pass": true,
+              "observed": [
+                23,
+                231
+              ],
+              "expected": [
+                23,
+                231
+              ]
+            },
+            {
+              "edge": "draw_seed_row_24",
+              "pass": true,
+              "observed": [
+                24,
+                241
+              ],
+              "expected": [
+                24,
+                241
+              ]
+            },
+            {
+              "edge": "mean_population_sd_to_target",
+              "pass": true,
+              "observed": [
+                "0.904",
+                "0.046"
+              ],
+              "expected": [
+                "0.904",
+                "0.046"
+              ]
+            },
+            {
+              "edge": "params_draws",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "params_prior_exponent",
+              "pass": true,
+              "observed": "13.7",
+              "expected": "13.7"
+            }
+          ],
+          "arithmetic": {
+            "mean_from_csv_lexemes_decimal80": "0.903999999999999972",
+            "population_sd_decimal80": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+            "rounded_mean_sd_3dp": [
+              "0.904",
+              "0.046"
+            ],
+            "rounding": "decimal ROUND_HALF_UP",
+            "rows": 25
+          },
+          "csv_summary_hash_join_rows": 1,
+          "params_literal": {
+            "exp_name": "ac25",
+            "test_split_ratio": 0.25,
+            "n_draws": 25,
+            "n_folds": 10,
+            "max_n_leaves": 40,
+            "error_prior_exponent": 13.7
+          },
+          "csv_member": {
+            "bytes": 2172,
+            "sha256": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+          },
+          "summary_member": {
+            "bytes": 1449,
+            "sha256": "4ae6fbc0722e79c8e23b8935423a4d06e86bee5d2aab8f0e8c1c500625c1a364"
+          },
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "selected_read_gate": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED",
+          "retained_statuses": [
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+          ],
+          "flags": [
+            {
+              "report": "candidate",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_open_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_positive_read_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "execve_wine_order",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "wine_open_and_read",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "execve_wine_order",
+              "value": true
+            }
+          ],
+          "missing_flags": [],
+          "false_flags": [],
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "CANDIDATE_REPORT.json",
+              "json_pointer_or_field": "/receipt_audit/checks"
+            },
+            {
+              "run": "v09",
+              "file": "DIRECT_BASELINE_REPORT.json",
+              "json_pointer_or_field": "/checks"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/trace_rule"
+            }
+          ],
+          "fresh_trace_parsing": false,
+          "physical_nonreading_inferred_from_failed_gate": false,
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "retained_signed_identity": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED_RETAINED_BINDINGS_ONLY",
+          "checks": {
+            "acceptance_status": true,
+            "retained_exit_zero": true,
+            "acceptance_run": true,
+            "acceptance_commit_tar": true,
+            "acceptance_bundle_hash": true,
+            "acceptance_stdout_hash": true,
+            "gate_retained_verified": true,
+            "gate_retained_exit_hash": true,
+            "subject_exact": true,
+            "statement_types": true,
+            "workflow_repository_ref_path": true,
+            "resolved_dependency": true,
+            "invocation_run_attempt": true,
+            "builder_workflow": true,
+            "certificate_repo_commit_ref": true,
+            "certificate_invocation": true,
+            "certificate_workflow_uri": true,
+            "certificate_issuer": true
+          },
+          "fresh_cryptographic_verification": false,
+          "trust_root_refresh": false,
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "ACCEPTANCE.json"
+            },
+            {
+              "run": "v09",
+              "file": "verified.stdout.json",
+              "json_pointer_or_field": "/0/verificationResult"
+            },
+            {
+              "run": "v09",
+              "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+              "json_pointer_or_field": "/dsseEnvelope/payload"
+            },
+            {
+              "run": "v09",
+              "file": "POSTRUN_RELEASE_GATE.json",
+              "json_pointer_or_field": "/attestation"
+            }
+          ],
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "joint_scoped_receipt": {
+          "six_field_sql_join_rows": 1,
+          "target_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "component_pair_mismatches": {
+            "numeric_to_read": [],
+            "numeric_to_signature": [],
+            "read_to_signature": []
+          },
+          "csv_donor_to_target_mismatches": [],
+          "evidence": {
+            "numeric": [
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "results/ours.csv"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "results/ours_exp_params.py"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "host_run.json",
+                "json_pointer_or_field": "/run_nonce"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/target"
+              }
+            ],
+            "read": [
+              {
+                "run": "v09",
+                "file": "CANDIDATE_REPORT.json",
+                "json_pointer_or_field": "/receipt_audit/checks"
+              },
+              {
+                "run": "v09",
+                "file": "DIRECT_BASELINE_REPORT.json",
+                "json_pointer_or_field": "/checks"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/trace_rule"
+              }
+            ],
+            "signature": [
+              {
+                "run": "v09",
+                "file": "ACCEPTANCE.json"
+              },
+              {
+                "run": "v09",
+                "file": "verified.stdout.json",
+                "json_pointer_or_field": "/0/verificationResult"
+              },
+              {
+                "run": "v09",
+                "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+                "json_pointer_or_field": "/dsseEnvelope/payload"
+              },
+              {
+                "run": "v09",
+                "file": "POSTRUN_RELEASE_GATE.json",
+                "json_pointer_or_field": "/attestation"
+              }
+            ]
+          }
+        },
+        "historical_2020_execution": {
+          "reason": "No admitted object in this frozen packet attests the original historical execution; matching arithmetic and current prospective identity cannot supply it.",
+          "admitted_historical_evidence": []
+        }
+      }
+    },
+    {
+      "id": "mixed_identity",
+      "kind": "constructed_control",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0,
+      "input_reference_copies": 1,
+      "diagnostics": {
+        "artifact_numeric": {
+          "positive": true,
+          "detail_status": "PASSED",
+          "evidence": [
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "results/ours.csv"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "out/author_result_dfdc14bb23467871d1e09c797b86e805.json"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "results/ours_exp_params.py"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "host_run.json",
+              "json_pointer_or_field": "/run_nonce"
+            },
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/target"
+            }
+          ],
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "csv_donor_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "checks": [
+            {
+              "edge": "csv_donor_joint_key_to_summary_recipient",
+              "pass": true,
+              "observed": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+                "run_id": "38136079298",
+                "attempt": "1",
+                "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+                "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+              },
+              "expected": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+                "run_id": "38136079298",
+                "attempt": "1",
+                "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+                "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+              }
+            },
+            {
+              "edge": "csv_sha256_to_summary",
+              "pass": true,
+              "observed": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08",
+              "expected": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08"
+            },
+            {
+              "edge": "params_sha256_to_summary",
+              "pass": true,
+              "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+              "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+            },
+            {
+              "edge": "summary_nonce_to_host",
+              "pass": true,
+              "observed": "dfdc14bb23467871d1e09c797b86e805",
+              "expected": "dfdc14bb23467871d1e09c797b86e805"
+            },
+            {
+              "edge": "summary_status",
+              "pass": true,
+              "observed": "success",
+              "expected": "success"
+            },
+            {
+              "edge": "csv_rows_to_target",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "csv_first_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0023355484008789062"
+              },
+              "expected": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0023355484008789062"
+              }
+            },
+            {
+              "edge": "csv_last_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008804798126220703"
+              },
+              "expected": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008804798126220703"
+              }
+            },
+            {
+              "edge": "draw_seed_row_0",
+              "pass": true,
+              "observed": [
+                0,
+                1
+              ],
+              "expected": [
+                0,
+                1
+              ]
+            },
+            {
+              "edge": "draw_seed_row_1",
+              "pass": true,
+              "observed": [
+                1,
+                11
+              ],
+              "expected": [
+                1,
+                11
+              ]
+            },
+            {
+              "edge": "draw_seed_row_2",
+              "pass": true,
+              "observed": [
+                2,
+                21
+              ],
+              "expected": [
+                2,
+                21
+              ]
+            },
+            {
+              "edge": "draw_seed_row_3",
+              "pass": true,
+              "observed": [
+                3,
+                31
+              ],
+              "expected": [
+                3,
+                31
+              ]
+            },
+            {
+              "edge": "draw_seed_row_4",
+              "pass": true,
+              "observed": [
+                4,
+                41
+              ],
+              "expected": [
+                4,
+                41
+              ]
+            },
+            {
+              "edge": "draw_seed_row_5",
+              "pass": true,
+              "observed": [
+                5,
+                51
+              ],
+              "expected": [
+                5,
+                51
+              ]
+            },
+            {
+              "edge": "draw_seed_row_6",
+              "pass": true,
+              "observed": [
+                6,
+                61
+              ],
+              "expected": [
+                6,
+                61
+              ]
+            },
+            {
+              "edge": "draw_seed_row_7",
+              "pass": true,
+              "observed": [
+                7,
+                71
+              ],
+              "expected": [
+                7,
+                71
+              ]
+            },
+            {
+              "edge": "draw_seed_row_8",
+              "pass": true,
+              "observed": [
+                8,
+                81
+              ],
+              "expected": [
+                8,
+                81
+              ]
+            },
+            {
+              "edge": "draw_seed_row_9",
+              "pass": true,
+              "observed": [
+                9,
+                91
+              ],
+              "expected": [
+                9,
+                91
+              ]
+            },
+            {
+              "edge": "draw_seed_row_10",
+              "pass": true,
+              "observed": [
+                10,
+                101
+              ],
+              "expected": [
+                10,
+                101
+              ]
+            },
+            {
+              "edge": "draw_seed_row_11",
+              "pass": true,
+              "observed": [
+                11,
+                111
+              ],
+              "expected": [
+                11,
+                111
+              ]
+            },
+            {
+              "edge": "draw_seed_row_12",
+              "pass": true,
+              "observed": [
+                12,
+                121
+              ],
+              "expected": [
+                12,
+                121
+              ]
+            },
+            {
+              "edge": "draw_seed_row_13",
+              "pass": true,
+              "observed": [
+                13,
+                131
+              ],
+              "expected": [
+                13,
+                131
+              ]
+            },
+            {
+              "edge": "draw_seed_row_14",
+              "pass": true,
+              "observed": [
+                14,
+                141
+              ],
+              "expected": [
+                14,
+                141
+              ]
+            },
+            {
+              "edge": "draw_seed_row_15",
+              "pass": true,
+              "observed": [
+                15,
+                151
+              ],
+              "expected": [
+                15,
+                151
+              ]
+            },
+            {
+              "edge": "draw_seed_row_16",
+              "pass": true,
+              "observed": [
+                16,
+                161
+              ],
+              "expected": [
+                16,
+                161
+              ]
+            },
+            {
+              "edge": "draw_seed_row_17",
+              "pass": true,
+              "observed": [
+                17,
+                171
+              ],
+              "expected": [
+                17,
+                171
+              ]
+            },
+            {
+              "edge": "draw_seed_row_18",
+              "pass": true,
+              "observed": [
+                18,
+                181
+              ],
+              "expected": [
+                18,
+                181
+              ]
+            },
+            {
+              "edge": "draw_seed_row_19",
+              "pass": true,
+              "observed": [
+                19,
+                191
+              ],
+              "expected": [
+                19,
+                191
+              ]
+            },
+            {
+              "edge": "draw_seed_row_20",
+              "pass": true,
+              "observed": [
+                20,
+                201
+              ],
+              "expected": [
+                20,
+                201
+              ]
+            },
+            {
+              "edge": "draw_seed_row_21",
+              "pass": true,
+              "observed": [
+                21,
+                211
+              ],
+              "expected": [
+                21,
+                211
+              ]
+            },
+            {
+              "edge": "draw_seed_row_22",
+              "pass": true,
+              "observed": [
+                22,
+                221
+              ],
+              "expected": [
+                22,
+                221
+              ]
+            },
+            {
+              "edge": "draw_seed_row_23",
+              "pass": true,
+              "observed": [
+                23,
+                231
+              ],
+              "expected": [
+                23,
+                231
+              ]
+            },
+            {
+              "edge": "draw_seed_row_24",
+              "pass": true,
+              "observed": [
+                24,
+                241
+              ],
+              "expected": [
+                24,
+                241
+              ]
+            },
+            {
+              "edge": "mean_population_sd_to_target",
+              "pass": true,
+              "observed": [
+                "0.904",
+                "0.046"
+              ],
+              "expected": [
+                "0.904",
+                "0.046"
+              ]
+            },
+            {
+              "edge": "params_draws",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "params_prior_exponent",
+              "pass": true,
+              "observed": "13.7",
+              "expected": "13.7"
+            }
+          ],
+          "arithmetic": {
+            "mean_from_csv_lexemes_decimal80": "0.903999999999999972",
+            "population_sd_decimal80": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+            "rounded_mean_sd_3dp": [
+              "0.904",
+              "0.046"
+            ],
+            "rounding": "decimal ROUND_HALF_UP",
+            "rows": 25
+          },
+          "csv_summary_hash_join_rows": 1,
+          "params_literal": {
+            "exp_name": "ac25",
+            "test_split_ratio": 0.25,
+            "n_draws": 25,
+            "n_folds": 10,
+            "max_n_leaves": 40,
+            "error_prior_exponent": 13.7
+          },
+          "csv_member": {
+            "bytes": 2172,
+            "sha256": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08"
+          },
+          "summary_member": {
+            "bytes": 1449,
+            "sha256": "03ca57bb8174996aa32641cc1e4e8110b222c9e3fa1e86c8d2b8d21d4a1cb3e3"
+          },
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "selected_read_gate": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED",
+          "retained_statuses": [
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+          ],
+          "flags": [
+            {
+              "report": "candidate",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_open_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_positive_read_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "execve_wine_order",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "wine_open_and_read",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "execve_wine_order",
+              "value": true
+            }
+          ],
+          "missing_flags": [],
+          "false_flags": [],
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "CANDIDATE_REPORT.json",
+              "json_pointer_or_field": "/receipt_audit/checks"
+            },
+            {
+              "run": "v09",
+              "file": "DIRECT_BASELINE_REPORT.json",
+              "json_pointer_or_field": "/checks"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/trace_rule"
+            }
+          ],
+          "fresh_trace_parsing": false,
+          "physical_nonreading_inferred_from_failed_gate": false,
+          "target_key_mismatches": [
+            {
+              "field": "source_commit",
+              "actual": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+              "expected": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba"
+            },
+            {
+              "field": "run_id",
+              "actual": "38136338509",
+              "expected": "38136079298"
+            },
+            {
+              "field": "protocol_sha256",
+              "actual": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+              "expected": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb"
+            },
+            {
+              "field": "tar_sha256",
+              "actual": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+              "expected": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+            }
+          ],
+          "component_positive_before_target_join": true
+        },
+        "retained_signed_identity": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED_RETAINED_BINDINGS_ONLY",
+          "checks": {
+            "acceptance_status": true,
+            "retained_exit_zero": true,
+            "acceptance_run": true,
+            "acceptance_commit_tar": true,
+            "acceptance_bundle_hash": true,
+            "acceptance_stdout_hash": true,
+            "gate_retained_verified": true,
+            "gate_retained_exit_hash": true,
+            "subject_exact": true,
+            "statement_types": true,
+            "workflow_repository_ref_path": true,
+            "resolved_dependency": true,
+            "invocation_run_attempt": true,
+            "builder_workflow": true,
+            "certificate_repo_commit_ref": true,
+            "certificate_invocation": true,
+            "certificate_workflow_uri": true,
+            "certificate_issuer": true
+          },
+          "fresh_cryptographic_verification": false,
+          "trust_root_refresh": false,
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "ACCEPTANCE.json"
+            },
+            {
+              "run": "v09",
+              "file": "verified.stdout.json",
+              "json_pointer_or_field": "/0/verificationResult"
+            },
+            {
+              "run": "v09",
+              "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+              "json_pointer_or_field": "/dsseEnvelope/payload"
+            },
+            {
+              "run": "v09",
+              "file": "POSTRUN_RELEASE_GATE.json",
+              "json_pointer_or_field": "/attestation"
+            }
+          ],
+          "target_key_mismatches": [
+            {
+              "field": "source_commit",
+              "actual": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+              "expected": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba"
+            },
+            {
+              "field": "run_id",
+              "actual": "38136338509",
+              "expected": "38136079298"
+            },
+            {
+              "field": "protocol_sha256",
+              "actual": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+              "expected": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb"
+            },
+            {
+              "field": "tar_sha256",
+              "actual": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+              "expected": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+            }
+          ],
+          "component_positive_before_target_join": true
+        },
+        "joint_scoped_receipt": {
+          "six_field_sql_join_rows": 0,
+          "target_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "component_pair_mismatches": {
+            "numeric_to_read": [
+              {
+                "field": "source_commit",
+                "actual": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+                "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+              },
+              {
+                "field": "run_id",
+                "actual": "38136079298",
+                "expected": "38136338509"
+              },
+              {
+                "field": "protocol_sha256",
+                "actual": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+                "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5"
+              },
+              {
+                "field": "tar_sha256",
+                "actual": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+                "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              }
+            ],
+            "numeric_to_signature": [
+              {
+                "field": "source_commit",
+                "actual": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+                "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+              },
+              {
+                "field": "run_id",
+                "actual": "38136079298",
+                "expected": "38136338509"
+              },
+              {
+                "field": "protocol_sha256",
+                "actual": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+                "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5"
+              },
+              {
+                "field": "tar_sha256",
+                "actual": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+                "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              }
+            ],
+            "read_to_signature": []
+          },
+          "csv_donor_to_target_mismatches": [],
+          "evidence": {
+            "numeric": [
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "results/ours.csv"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "out/author_result_dfdc14bb23467871d1e09c797b86e805.json"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "results/ours_exp_params.py"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "host_run.json",
+                "json_pointer_or_field": "/run_nonce"
+              },
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/target"
+              }
+            ],
+            "read": [
+              {
+                "run": "v09",
+                "file": "CANDIDATE_REPORT.json",
+                "json_pointer_or_field": "/receipt_audit/checks"
+              },
+              {
+                "run": "v09",
+                "file": "DIRECT_BASELINE_REPORT.json",
+                "json_pointer_or_field": "/checks"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/trace_rule"
+              }
+            ],
+            "signature": [
+              {
+                "run": "v09",
+                "file": "ACCEPTANCE.json"
+              },
+              {
+                "run": "v09",
+                "file": "verified.stdout.json",
+                "json_pointer_or_field": "/0/verificationResult"
+              },
+              {
+                "run": "v09",
+                "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+                "json_pointer_or_field": "/dsseEnvelope/payload"
+              },
+              {
+                "run": "v09",
+                "file": "POSTRUN_RELEASE_GATE.json",
+                "json_pointer_or_field": "/attestation"
+              }
+            ]
+          }
+        },
+        "historical_2020_execution": {
+          "reason": "No admitted object in this frozen packet attests the original historical execution; matching arithmetic and current prospective identity cannot supply it.",
+          "admitted_historical_evidence": []
+        }
+      }
+    },
+    {
+      "id": "mixed_output",
+      "kind": "constructed_control",
+      "layers": {
+        "artifact_numeric": "UNRESOLVED",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0,
+      "input_reference_copies": 1,
+      "diagnostics": {
+        "artifact_numeric": {
+          "positive": false,
+          "detail_status": "BINDING_MISMATCH",
+          "evidence": [
+            {
+              "run": "v08",
+              "file": "receipt.tar",
+              "member": "results/ours.csv"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "results/ours_exp_params.py"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "host_run.json",
+              "json_pointer_or_field": "/run_nonce"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/target"
+            }
+          ],
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "csv_donor_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+            "run_id": "38136079298",
+            "attempt": "1",
+            "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+            "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+          },
+          "checks": [
+            {
+              "edge": "csv_donor_joint_key_to_summary_recipient",
+              "pass": false,
+              "observed": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+                "run_id": "38136079298",
+                "attempt": "1",
+                "protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+                "tar_sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+              },
+              "expected": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+                "run_id": "38136338509",
+                "attempt": "1",
+                "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+                "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              }
+            },
+            {
+              "edge": "csv_sha256_to_summary",
+              "pass": false,
+              "observed": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08",
+              "expected": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+            },
+            {
+              "edge": "params_sha256_to_summary",
+              "pass": true,
+              "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+              "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+            },
+            {
+              "edge": "summary_nonce_to_host",
+              "pass": true,
+              "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+              "expected": "175e5ecdd8e0857afa981d0c20e8ac59"
+            },
+            {
+              "edge": "summary_status",
+              "pass": true,
+              "observed": "success",
+              "expected": "success"
+            },
+            {
+              "edge": "csv_rows_to_target",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "csv_first_row_to_summary",
+              "pass": false,
+              "observed": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0023355484008789062"
+              },
+              "expected": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0022284984588623047"
+              }
+            },
+            {
+              "edge": "csv_last_row_to_summary",
+              "pass": false,
+              "observed": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008804798126220703"
+              },
+              "expected": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008466243743896484"
+              }
+            },
+            {
+              "edge": "draw_seed_row_0",
+              "pass": true,
+              "observed": [
+                0,
+                1
+              ],
+              "expected": [
+                0,
+                1
+              ]
+            },
+            {
+              "edge": "draw_seed_row_1",
+              "pass": true,
+              "observed": [
+                1,
+                11
+              ],
+              "expected": [
+                1,
+                11
+              ]
+            },
+            {
+              "edge": "draw_seed_row_2",
+              "pass": true,
+              "observed": [
+                2,
+                21
+              ],
+              "expected": [
+                2,
+                21
+              ]
+            },
+            {
+              "edge": "draw_seed_row_3",
+              "pass": true,
+              "observed": [
+                3,
+                31
+              ],
+              "expected": [
+                3,
+                31
+              ]
+            },
+            {
+              "edge": "draw_seed_row_4",
+              "pass": true,
+              "observed": [
+                4,
+                41
+              ],
+              "expected": [
+                4,
+                41
+              ]
+            },
+            {
+              "edge": "draw_seed_row_5",
+              "pass": true,
+              "observed": [
+                5,
+                51
+              ],
+              "expected": [
+                5,
+                51
+              ]
+            },
+            {
+              "edge": "draw_seed_row_6",
+              "pass": true,
+              "observed": [
+                6,
+                61
+              ],
+              "expected": [
+                6,
+                61
+              ]
+            },
+            {
+              "edge": "draw_seed_row_7",
+              "pass": true,
+              "observed": [
+                7,
+                71
+              ],
+              "expected": [
+                7,
+                71
+              ]
+            },
+            {
+              "edge": "draw_seed_row_8",
+              "pass": true,
+              "observed": [
+                8,
+                81
+              ],
+              "expected": [
+                8,
+                81
+              ]
+            },
+            {
+              "edge": "draw_seed_row_9",
+              "pass": true,
+              "observed": [
+                9,
+                91
+              ],
+              "expected": [
+                9,
+                91
+              ]
+            },
+            {
+              "edge": "draw_seed_row_10",
+              "pass": true,
+              "observed": [
+                10,
+                101
+              ],
+              "expected": [
+                10,
+                101
+              ]
+            },
+            {
+              "edge": "draw_seed_row_11",
+              "pass": true,
+              "observed": [
+                11,
+                111
+              ],
+              "expected": [
+                11,
+                111
+              ]
+            },
+            {
+              "edge": "draw_seed_row_12",
+              "pass": true,
+              "observed": [
+                12,
+                121
+              ],
+              "expected": [
+                12,
+                121
+              ]
+            },
+            {
+              "edge": "draw_seed_row_13",
+              "pass": true,
+              "observed": [
+                13,
+                131
+              ],
+              "expected": [
+                13,
+                131
+              ]
+            },
+            {
+              "edge": "draw_seed_row_14",
+              "pass": true,
+              "observed": [
+                14,
+                141
+              ],
+              "expected": [
+                14,
+                141
+              ]
+            },
+            {
+              "edge": "draw_seed_row_15",
+              "pass": true,
+              "observed": [
+                15,
+                151
+              ],
+              "expected": [
+                15,
+                151
+              ]
+            },
+            {
+              "edge": "draw_seed_row_16",
+              "pass": true,
+              "observed": [
+                16,
+                161
+              ],
+              "expected": [
+                16,
+                161
+              ]
+            },
+            {
+              "edge": "draw_seed_row_17",
+              "pass": true,
+              "observed": [
+                17,
+                171
+              ],
+              "expected": [
+                17,
+                171
+              ]
+            },
+            {
+              "edge": "draw_seed_row_18",
+              "pass": true,
+              "observed": [
+                18,
+                181
+              ],
+              "expected": [
+                18,
+                181
+              ]
+            },
+            {
+              "edge": "draw_seed_row_19",
+              "pass": true,
+              "observed": [
+                19,
+                191
+              ],
+              "expected": [
+                19,
+                191
+              ]
+            },
+            {
+              "edge": "draw_seed_row_20",
+              "pass": true,
+              "observed": [
+                20,
+                201
+              ],
+              "expected": [
+                20,
+                201
+              ]
+            },
+            {
+              "edge": "draw_seed_row_21",
+              "pass": true,
+              "observed": [
+                21,
+                211
+              ],
+              "expected": [
+                21,
+                211
+              ]
+            },
+            {
+              "edge": "draw_seed_row_22",
+              "pass": true,
+              "observed": [
+                22,
+                221
+              ],
+              "expected": [
+                22,
+                221
+              ]
+            },
+            {
+              "edge": "draw_seed_row_23",
+              "pass": true,
+              "observed": [
+                23,
+                231
+              ],
+              "expected": [
+                23,
+                231
+              ]
+            },
+            {
+              "edge": "draw_seed_row_24",
+              "pass": true,
+              "observed": [
+                24,
+                241
+              ],
+              "expected": [
+                24,
+                241
+              ]
+            },
+            {
+              "edge": "mean_population_sd_to_target",
+              "pass": true,
+              "observed": [
+                "0.904",
+                "0.046"
+              ],
+              "expected": [
+                "0.904",
+                "0.046"
+              ]
+            },
+            {
+              "edge": "params_draws",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "params_prior_exponent",
+              "pass": true,
+              "observed": "13.7",
+              "expected": "13.7"
+            }
+          ],
+          "arithmetic": {
+            "mean_from_csv_lexemes_decimal80": "0.903999999999999972",
+            "population_sd_decimal80": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+            "rounded_mean_sd_3dp": [
+              "0.904",
+              "0.046"
+            ],
+            "rounding": "decimal ROUND_HALF_UP",
+            "rows": 25
+          },
+          "csv_summary_hash_join_rows": 0,
+          "params_literal": {
+            "exp_name": "ac25",
+            "test_split_ratio": 0.25,
+            "n_draws": 25,
+            "n_folds": 10,
+            "max_n_leaves": 40,
+            "error_prior_exponent": 13.7
+          },
+          "csv_member": {
+            "bytes": 2172,
+            "sha256": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08"
+          },
+          "summary_member": {
+            "bytes": 1449,
+            "sha256": "4ae6fbc0722e79c8e23b8935423a4d06e86bee5d2aab8f0e8c1c500625c1a364"
+          },
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": false
+        },
+        "selected_read_gate": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED",
+          "retained_statuses": [
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+          ],
+          "flags": [
+            {
+              "report": "candidate",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_open_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_positive_read_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "execve_wine_order",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "wine_open_and_read",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "execve_wine_order",
+              "value": true
+            }
+          ],
+          "missing_flags": [],
+          "false_flags": [],
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "CANDIDATE_REPORT.json",
+              "json_pointer_or_field": "/receipt_audit/checks"
+            },
+            {
+              "run": "v09",
+              "file": "DIRECT_BASELINE_REPORT.json",
+              "json_pointer_or_field": "/checks"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/trace_rule"
+            }
+          ],
+          "fresh_trace_parsing": false,
+          "physical_nonreading_inferred_from_failed_gate": false,
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "retained_signed_identity": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED_RETAINED_BINDINGS_ONLY",
+          "checks": {
+            "acceptance_status": true,
+            "retained_exit_zero": true,
+            "acceptance_run": true,
+            "acceptance_commit_tar": true,
+            "acceptance_bundle_hash": true,
+            "acceptance_stdout_hash": true,
+            "gate_retained_verified": true,
+            "gate_retained_exit_hash": true,
+            "subject_exact": true,
+            "statement_types": true,
+            "workflow_repository_ref_path": true,
+            "resolved_dependency": true,
+            "invocation_run_attempt": true,
+            "builder_workflow": true,
+            "certificate_repo_commit_ref": true,
+            "certificate_invocation": true,
+            "certificate_workflow_uri": true,
+            "certificate_issuer": true
+          },
+          "fresh_cryptographic_verification": false,
+          "trust_root_refresh": false,
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "ACCEPTANCE.json"
+            },
+            {
+              "run": "v09",
+              "file": "verified.stdout.json",
+              "json_pointer_or_field": "/0/verificationResult"
+            },
+            {
+              "run": "v09",
+              "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+              "json_pointer_or_field": "/dsseEnvelope/payload"
+            },
+            {
+              "run": "v09",
+              "file": "POSTRUN_RELEASE_GATE.json",
+              "json_pointer_or_field": "/attestation"
+            }
+          ],
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "joint_scoped_receipt": {
+          "six_field_sql_join_rows": 0,
+          "target_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "component_pair_mismatches": {
+            "numeric_to_read": [],
+            "numeric_to_signature": [],
+            "read_to_signature": []
+          },
+          "csv_donor_to_target_mismatches": [
+            {
+              "field": "source_commit",
+              "actual": "3cbe6ba365cb6ebdf0414885c64e746cc36445ba",
+              "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+            },
+            {
+              "field": "run_id",
+              "actual": "38136079298",
+              "expected": "38136338509"
+            },
+            {
+              "field": "protocol_sha256",
+              "actual": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+              "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5"
+            },
+            {
+              "field": "tar_sha256",
+              "actual": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+              "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+            }
+          ],
+          "evidence": {
+            "numeric": [
+              {
+                "run": "v08",
+                "file": "receipt.tar",
+                "member": "results/ours.csv"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "results/ours_exp_params.py"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "host_run.json",
+                "json_pointer_or_field": "/run_nonce"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/target"
+              }
+            ],
+            "read": [
+              {
+                "run": "v09",
+                "file": "CANDIDATE_REPORT.json",
+                "json_pointer_or_field": "/receipt_audit/checks"
+              },
+              {
+                "run": "v09",
+                "file": "DIRECT_BASELINE_REPORT.json",
+                "json_pointer_or_field": "/checks"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/trace_rule"
+              }
+            ],
+            "signature": [
+              {
+                "run": "v09",
+                "file": "ACCEPTANCE.json"
+              },
+              {
+                "run": "v09",
+                "file": "verified.stdout.json",
+                "json_pointer_or_field": "/0/verificationResult"
+              },
+              {
+                "run": "v09",
+                "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+                "json_pointer_or_field": "/dsseEnvelope/payload"
+              },
+              {
+                "run": "v09",
+                "file": "POSTRUN_RELEASE_GATE.json",
+                "json_pointer_or_field": "/attestation"
+              }
+            ]
+          }
+        },
+        "historical_2020_execution": {
+          "reason": "No admitted object in this frozen packet attests the original historical execution; matching arithmetic and current prospective identity cannot supply it.",
+          "admitted_historical_evidence": []
+        }
+      }
+    },
+    {
+      "id": "duplicate_v09",
+      "kind": "constructed_control",
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "MET",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 1,
+      "input_reference_copies": 2,
+      "diagnostics": {
+        "artifact_numeric": {
+          "positive": true,
+          "detail_status": "PASSED",
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "results/ours.csv"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "results/ours_exp_params.py"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "host_run.json",
+              "json_pointer_or_field": "/run_nonce"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/target"
+            }
+          ],
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "csv_donor_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "checks": [
+            {
+              "edge": "csv_donor_joint_key_to_summary_recipient",
+              "pass": true,
+              "observed": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+                "run_id": "38136338509",
+                "attempt": "1",
+                "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+                "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              },
+              "expected": {
+                "repository": "SHiJiE1115/newproj",
+                "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+                "run_id": "38136338509",
+                "attempt": "1",
+                "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+                "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              }
+            },
+            {
+              "edge": "csv_sha256_to_summary",
+              "pass": true,
+              "observed": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+              "expected": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+            },
+            {
+              "edge": "params_sha256_to_summary",
+              "pass": true,
+              "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+              "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+            },
+            {
+              "edge": "summary_nonce_to_host",
+              "pass": true,
+              "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+              "expected": "175e5ecdd8e0857afa981d0c20e8ac59"
+            },
+            {
+              "edge": "summary_status",
+              "pass": true,
+              "observed": "success",
+              "expected": "success"
+            },
+            {
+              "edge": "csv_rows_to_target",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "csv_first_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0022284984588623047"
+              },
+              "expected": {
+                "draw": "0",
+                "seed": "1",
+                "train_accuracy": "1.0",
+                "test_accuracy": "0.9555555555555556",
+                "n_leaves": "5",
+                "height": "3",
+                "bound": "1.4162629280872547",
+                "time": "0.0022284984588623047"
+              }
+            },
+            {
+              "edge": "csv_last_row_to_summary",
+              "pass": true,
+              "observed": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008466243743896484"
+              },
+              "expected": {
+                "draw": "24",
+                "seed": "241",
+                "train_accuracy": "0.9774436090225563",
+                "test_accuracy": "0.8666666666666667",
+                "n_leaves": "6",
+                "height": "4",
+                "bound": "2.668632064704625",
+                "time": "0.008466243743896484"
+              }
+            },
+            {
+              "edge": "draw_seed_row_0",
+              "pass": true,
+              "observed": [
+                0,
+                1
+              ],
+              "expected": [
+                0,
+                1
+              ]
+            },
+            {
+              "edge": "draw_seed_row_1",
+              "pass": true,
+              "observed": [
+                1,
+                11
+              ],
+              "expected": [
+                1,
+                11
+              ]
+            },
+            {
+              "edge": "draw_seed_row_2",
+              "pass": true,
+              "observed": [
+                2,
+                21
+              ],
+              "expected": [
+                2,
+                21
+              ]
+            },
+            {
+              "edge": "draw_seed_row_3",
+              "pass": true,
+              "observed": [
+                3,
+                31
+              ],
+              "expected": [
+                3,
+                31
+              ]
+            },
+            {
+              "edge": "draw_seed_row_4",
+              "pass": true,
+              "observed": [
+                4,
+                41
+              ],
+              "expected": [
+                4,
+                41
+              ]
+            },
+            {
+              "edge": "draw_seed_row_5",
+              "pass": true,
+              "observed": [
+                5,
+                51
+              ],
+              "expected": [
+                5,
+                51
+              ]
+            },
+            {
+              "edge": "draw_seed_row_6",
+              "pass": true,
+              "observed": [
+                6,
+                61
+              ],
+              "expected": [
+                6,
+                61
+              ]
+            },
+            {
+              "edge": "draw_seed_row_7",
+              "pass": true,
+              "observed": [
+                7,
+                71
+              ],
+              "expected": [
+                7,
+                71
+              ]
+            },
+            {
+              "edge": "draw_seed_row_8",
+              "pass": true,
+              "observed": [
+                8,
+                81
+              ],
+              "expected": [
+                8,
+                81
+              ]
+            },
+            {
+              "edge": "draw_seed_row_9",
+              "pass": true,
+              "observed": [
+                9,
+                91
+              ],
+              "expected": [
+                9,
+                91
+              ]
+            },
+            {
+              "edge": "draw_seed_row_10",
+              "pass": true,
+              "observed": [
+                10,
+                101
+              ],
+              "expected": [
+                10,
+                101
+              ]
+            },
+            {
+              "edge": "draw_seed_row_11",
+              "pass": true,
+              "observed": [
+                11,
+                111
+              ],
+              "expected": [
+                11,
+                111
+              ]
+            },
+            {
+              "edge": "draw_seed_row_12",
+              "pass": true,
+              "observed": [
+                12,
+                121
+              ],
+              "expected": [
+                12,
+                121
+              ]
+            },
+            {
+              "edge": "draw_seed_row_13",
+              "pass": true,
+              "observed": [
+                13,
+                131
+              ],
+              "expected": [
+                13,
+                131
+              ]
+            },
+            {
+              "edge": "draw_seed_row_14",
+              "pass": true,
+              "observed": [
+                14,
+                141
+              ],
+              "expected": [
+                14,
+                141
+              ]
+            },
+            {
+              "edge": "draw_seed_row_15",
+              "pass": true,
+              "observed": [
+                15,
+                151
+              ],
+              "expected": [
+                15,
+                151
+              ]
+            },
+            {
+              "edge": "draw_seed_row_16",
+              "pass": true,
+              "observed": [
+                16,
+                161
+              ],
+              "expected": [
+                16,
+                161
+              ]
+            },
+            {
+              "edge": "draw_seed_row_17",
+              "pass": true,
+              "observed": [
+                17,
+                171
+              ],
+              "expected": [
+                17,
+                171
+              ]
+            },
+            {
+              "edge": "draw_seed_row_18",
+              "pass": true,
+              "observed": [
+                18,
+                181
+              ],
+              "expected": [
+                18,
+                181
+              ]
+            },
+            {
+              "edge": "draw_seed_row_19",
+              "pass": true,
+              "observed": [
+                19,
+                191
+              ],
+              "expected": [
+                19,
+                191
+              ]
+            },
+            {
+              "edge": "draw_seed_row_20",
+              "pass": true,
+              "observed": [
+                20,
+                201
+              ],
+              "expected": [
+                20,
+                201
+              ]
+            },
+            {
+              "edge": "draw_seed_row_21",
+              "pass": true,
+              "observed": [
+                21,
+                211
+              ],
+              "expected": [
+                21,
+                211
+              ]
+            },
+            {
+              "edge": "draw_seed_row_22",
+              "pass": true,
+              "observed": [
+                22,
+                221
+              ],
+              "expected": [
+                22,
+                221
+              ]
+            },
+            {
+              "edge": "draw_seed_row_23",
+              "pass": true,
+              "observed": [
+                23,
+                231
+              ],
+              "expected": [
+                23,
+                231
+              ]
+            },
+            {
+              "edge": "draw_seed_row_24",
+              "pass": true,
+              "observed": [
+                24,
+                241
+              ],
+              "expected": [
+                24,
+                241
+              ]
+            },
+            {
+              "edge": "mean_population_sd_to_target",
+              "pass": true,
+              "observed": [
+                "0.904",
+                "0.046"
+              ],
+              "expected": [
+                "0.904",
+                "0.046"
+              ]
+            },
+            {
+              "edge": "params_draws",
+              "pass": true,
+              "observed": 25,
+              "expected": 25
+            },
+            {
+              "edge": "params_prior_exponent",
+              "pass": true,
+              "observed": "13.7",
+              "expected": "13.7"
+            }
+          ],
+          "arithmetic": {
+            "mean_from_csv_lexemes_decimal80": "0.903999999999999972",
+            "population_sd_decimal80": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+            "rounded_mean_sd_3dp": [
+              "0.904",
+              "0.046"
+            ],
+            "rounding": "decimal ROUND_HALF_UP",
+            "rows": 25
+          },
+          "csv_summary_hash_join_rows": 1,
+          "params_literal": {
+            "exp_name": "ac25",
+            "test_split_ratio": 0.25,
+            "n_draws": 25,
+            "n_folds": 10,
+            "max_n_leaves": 40,
+            "error_prior_exponent": 13.7
+          },
+          "csv_member": {
+            "bytes": 2172,
+            "sha256": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+          },
+          "summary_member": {
+            "bytes": 1449,
+            "sha256": "4ae6fbc0722e79c8e23b8935423a4d06e86bee5d2aab8f0e8c1c500625c1a364"
+          },
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "selected_read_gate": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED",
+          "retained_statuses": [
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+          ],
+          "flags": [
+            {
+              "report": "candidate",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_open_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "wine_positive_read_observed",
+              "value": true
+            },
+            {
+              "report": "candidate",
+              "field": "execve_wine_order",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "author_execve_same_pid",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "wine_open_and_read",
+              "value": true
+            },
+            {
+              "report": "direct",
+              "field": "execve_wine_order",
+              "value": true
+            }
+          ],
+          "missing_flags": [],
+          "false_flags": [],
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "CANDIDATE_REPORT.json",
+              "json_pointer_or_field": "/receipt_audit/checks"
+            },
+            {
+              "run": "v09",
+              "file": "DIRECT_BASELINE_REPORT.json",
+              "json_pointer_or_field": "/checks"
+            },
+            {
+              "run": "v09",
+              "file": "receipt.tar",
+              "member": "source/experiment/PROTOCOL.json",
+              "json_pointer_or_field": "/trace_rule"
+            }
+          ],
+          "fresh_trace_parsing": false,
+          "physical_nonreading_inferred_from_failed_gate": false,
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "retained_signed_identity": {
+          "positive": true,
+          "key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "detail_status": "PASSED_RETAINED_BINDINGS_ONLY",
+          "checks": {
+            "acceptance_status": true,
+            "retained_exit_zero": true,
+            "acceptance_run": true,
+            "acceptance_commit_tar": true,
+            "acceptance_bundle_hash": true,
+            "acceptance_stdout_hash": true,
+            "gate_retained_verified": true,
+            "gate_retained_exit_hash": true,
+            "subject_exact": true,
+            "statement_types": true,
+            "workflow_repository_ref_path": true,
+            "resolved_dependency": true,
+            "invocation_run_attempt": true,
+            "builder_workflow": true,
+            "certificate_repo_commit_ref": true,
+            "certificate_invocation": true,
+            "certificate_workflow_uri": true,
+            "certificate_issuer": true
+          },
+          "fresh_cryptographic_verification": false,
+          "trust_root_refresh": false,
+          "evidence": [
+            {
+              "run": "v09",
+              "file": "ACCEPTANCE.json"
+            },
+            {
+              "run": "v09",
+              "file": "verified.stdout.json",
+              "json_pointer_or_field": "/0/verificationResult"
+            },
+            {
+              "run": "v09",
+              "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+              "json_pointer_or_field": "/dsseEnvelope/payload"
+            },
+            {
+              "run": "v09",
+              "file": "POSTRUN_RELEASE_GATE.json",
+              "json_pointer_or_field": "/attestation"
+            }
+          ],
+          "target_key_mismatches": [],
+          "component_positive_before_target_join": true
+        },
+        "joint_scoped_receipt": {
+          "six_field_sql_join_rows": 1,
+          "target_key": {
+            "repository": "SHiJiE1115/newproj",
+            "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "run_id": "38136338509",
+            "attempt": "1",
+            "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          "component_pair_mismatches": {
+            "numeric_to_read": [],
+            "numeric_to_signature": [],
+            "read_to_signature": []
+          },
+          "csv_donor_to_target_mismatches": [],
+          "evidence": {
+            "numeric": [
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "results/ours.csv"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "results/ours_exp_params.py"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "host_run.json",
+                "json_pointer_or_field": "/run_nonce"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/target"
+              }
+            ],
+            "read": [
+              {
+                "run": "v09",
+                "file": "CANDIDATE_REPORT.json",
+                "json_pointer_or_field": "/receipt_audit/checks"
+              },
+              {
+                "run": "v09",
+                "file": "DIRECT_BASELINE_REPORT.json",
+                "json_pointer_or_field": "/checks"
+              },
+              {
+                "run": "v09",
+                "file": "receipt.tar",
+                "member": "source/experiment/PROTOCOL.json",
+                "json_pointer_or_field": "/trace_rule"
+              }
+            ],
+            "signature": [
+              {
+                "run": "v09",
+                "file": "ACCEPTANCE.json"
+              },
+              {
+                "run": "v09",
+                "file": "verified.stdout.json",
+                "json_pointer_or_field": "/0/verificationResult"
+              },
+              {
+                "run": "v09",
+                "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+                "json_pointer_or_field": "/dsseEnvelope/payload"
+              },
+              {
+                "run": "v09",
+                "file": "POSTRUN_RELEASE_GATE.json",
+                "json_pointer_or_field": "/attestation"
+              }
+            ]
+          }
+        },
+        "historical_2020_execution": {
+          "reason": "No admitted object in this frozen packet attests the original historical execution; matching arithmetic and current prospective identity cannot supply it.",
+          "admitted_historical_evidence": []
+        }
+      }
+    }
+  ],
+  "layer_label_count": 30,
+  "expected_calibration_checks": [
+    {
+      "id": "v07",
+      "labels_agree_with_frozen_calibration": true
+    },
+    {
+      "id": "v08",
+      "labels_agree_with_frozen_calibration": true
+    },
+    {
+      "id": "v09",
+      "labels_agree_with_frozen_calibration": true
+    },
+    {
+      "id": "mixed_identity",
+      "labels_agree_with_frozen_calibration": true
+    },
+    {
+      "id": "mixed_output",
+      "labels_agree_with_frozen_calibration": true
+    },
+    {
+      "id": "duplicate_v09",
+      "labels_agree_with_frozen_calibration": true
+    }
+  ],
+  "original_input_bindings": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/receipt.tar",
+      "bytes": 245760,
+      "sha256_before": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "sha256_after": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/CANDIDATE_REPORT.json",
+      "bytes": 1325,
+      "sha256_before": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "sha256_after": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "bytes": 742,
+      "sha256_before": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "sha256_after": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2012,
+      "sha256_before": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "sha256_after": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/receipt.tar",
+      "bytes": 1853440,
+      "sha256_before": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "sha256_after": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/CANDIDATE_REPORT.json",
+      "bytes": 1829,
+      "sha256_before": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "sha256_after": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1183,
+      "sha256_before": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "sha256_after": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2007,
+      "sha256_before": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "sha256_after": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/receipt.tar",
+      "bytes": 2314240,
+      "sha256_before": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "sha256_after": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256_before": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "sha256_after": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256_before": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "sha256_after": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256_before": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "sha256_after": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256_before": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "sha256_after": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/verified.stdout.json",
+      "bytes": 15110,
+      "sha256_before": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "sha256_after": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256_before": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "sha256_after": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_core.py",
+      "bytes": 20969,
+      "sha256_before": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "sha256_after": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "unchanged": true
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/clean wine package with spaces/semantic/rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256_before": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "sha256_after": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "unchanged": true
+    }
+  ],
+  "all_original_bytes_unchanged": true,
+  "tar_member_inventory": [
+    {
+      "run": "v07",
+      "member": "docker_build.stderr.bin",
+      "bytes": 24186,
+      "sha256": "96938e7f3034a318bc17ce25748d26d210233abac9815808ed1e9f1939ccd1a3"
+    },
+    {
+      "run": "v07",
+      "member": "docker_build.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v07",
+      "member": "docker_cleanup.stderr.bin",
+      "bytes": 78,
+      "sha256": "314d956d53ec1489e7a97f32d933aa5d340641ceadf3eb1c7303cf6baa46956f"
+    },
+    {
+      "run": "v07",
+      "member": "docker_cleanup.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v07",
+      "member": "docker_inspect.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v07",
+      "member": "docker_inspect.stdout.bin",
+      "bytes": 72,
+      "sha256": "adaab090f8715fd030d862500fceafec936ae3e7d6e17d996d8d566c419fff29"
+    },
+    {
+      "run": "v07",
+      "member": "docker_run.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v07",
+      "member": "docker_run.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v07",
+      "member": "host_run.json",
+      "bytes": 3843,
+      "sha256": "a3ed17df293e9db9e0b22beff48b0cd6cafec4d93e94002a94dff6e06e9c8d61"
+    },
+    {
+      "run": "v07",
+      "member": "input_pin.json",
+      "bytes": 791,
+      "sha256": "2a946174a3587ab09172f6e5cdb4c559878f9bf52293bda5c3b5c4741f89c0b6"
+    },
+    {
+      "run": "v07",
+      "member": "inputs/author.zip",
+      "bytes": 95119,
+      "sha256": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+    },
+    {
+      "run": "v07",
+      "member": "inputs/wine.raw",
+      "bytes": 10782,
+      "sha256": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+    },
+    {
+      "run": "v07",
+      "member": "out/author_stderr.txt",
+      "bytes": 39,
+      "sha256": "5fb2caf0deff7497c66bf8a79ab6819ff522ab0953de0a90e2bb79e782d5f7ef"
+    },
+    {
+      "run": "v07",
+      "member": "out/author_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v07",
+      "member": "out/observer_pre_mode.txt",
+      "bytes": 8,
+      "sha256": "5f10e5b00dc89de1996a0d5e8e12dc5c5618929ab297ce1e4b80112c71a13efd"
+    },
+    {
+      "run": "v07",
+      "member": "out/package_versions.txt",
+      "bytes": 222,
+      "sha256": "f804ced718f78b6f8e72a090583cb6d4cbe12b25a24562358dd77bd8192928c7"
+    },
+    {
+      "run": "v07",
+      "member": "out/python_version.txt",
+      "bytes": 14,
+      "sha256": "5b3e43dc38ca01e3f5a7854ba50d4330864b0c1e0f646650b2c78cf072acc366"
+    },
+    {
+      "run": "v07",
+      "member": "out/strace_version.txt",
+      "bytes": 326,
+      "sha256": "9cbcd41c9492f2188db6a3fae935c7211b826b655fed03b41259cfdd22725da4"
+    },
+    {
+      "run": "v07",
+      "member": "out/trace_exit_code.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "run": "v07",
+      "member": "source/.gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "run": "v07",
+      "member": "source/.github/workflows/rrnc-wine-strace.yml",
+      "bytes": 2011,
+      "sha256": "ac687fa4c84ab93f2fecc571db1953c148e2863ddc74dc6e164d79b4ee4a202c"
+    },
+    {
+      "run": "v07",
+      "member": "source/README.md",
+      "bytes": 5680,
+      "sha256": "abe0b41a6df8dd1743a6db0ae7f635e5c5cc5f5284bb7280023f20a00a82d49f"
+    },
+    {
+      "run": "v07",
+      "member": "source/experiment/Dockerfile",
+      "bytes": 1084,
+      "sha256": "3c21f0c56c0f519ba93722bf3a2b81e3f0a876ce96f708a88f0a30529f5be7a2"
+    },
+    {
+      "run": "v07",
+      "member": "source/experiment/FREEZE.json",
+      "bytes": 1052,
+      "sha256": "2c27405fada22294b5fa77c502cd878c20dd178498941718ccc8fb0e9b31192c"
+    },
+    {
+      "run": "v07",
+      "member": "source/experiment/PROTOCOL.json",
+      "bytes": 3324,
+      "sha256": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c"
+    },
+    {
+      "run": "v07",
+      "member": "source/experiment/author_25.py",
+      "bytes": 5568,
+      "sha256": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11"
+    },
+    {
+      "run": "v07",
+      "member": "source/experiment/entrypoint.sh",
+      "bytes": 845,
+      "sha256": "36b8ed4c2f1245322f2fa51669afb47abdef4245ebf0f8ee7954358ecd396168"
+    },
+    {
+      "run": "v07",
+      "member": "source/experiment/run_hosted.py",
+      "bytes": 11013,
+      "sha256": "b8356cbf176dc2a188903ddb02b4bfaa4d29afd4ce3c9a721bd2330c684b2194"
+    },
+    {
+      "run": "v07",
+      "member": "source/experiment/verify_receipt.py",
+      "bytes": 16711,
+      "sha256": "3ef00390ab31c68e9037b60d8bc311f5d77331641568241310e55a5a28e538c2"
+    },
+    {
+      "run": "v08",
+      "member": "docker_build.stderr.bin",
+      "bytes": 24185,
+      "sha256": "bd950a30f5705a69b61568a35b0be6c926065f973e3dc41810e2553f838258fe"
+    },
+    {
+      "run": "v08",
+      "member": "docker_build.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v08",
+      "member": "docker_cleanup.stderr.bin",
+      "bytes": 78,
+      "sha256": "3b8a428e37c9ac34659fd46cf5abca2187c8f7b1c69b9921f6a044aa494748d2"
+    },
+    {
+      "run": "v08",
+      "member": "docker_cleanup.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v08",
+      "member": "docker_inspect.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v08",
+      "member": "docker_inspect.stdout.bin",
+      "bytes": 72,
+      "sha256": "4181ba841984c233540c532b17c132da1765b56c2570207aaa1b570814d1cb78"
+    },
+    {
+      "run": "v08",
+      "member": "docker_run.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v08",
+      "member": "docker_run.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v08",
+      "member": "first_job_verification.json",
+      "bytes": 1204,
+      "sha256": "c4383d3d2bbd59e7c7c8013fb0ff37e6bc9a261304a6c929933cc600858ed824"
+    },
+    {
+      "run": "v08",
+      "member": "host_run.json",
+      "bytes": 4245,
+      "sha256": "832effc38d8950390734d2e9fb580db2d80fe6474a18b17c4218d418ec802e0e"
+    },
+    {
+      "run": "v08",
+      "member": "input_pin.json",
+      "bytes": 792,
+      "sha256": "4e7e7a052ebc5c3c9cd05d7f8ae06347f83f7cd3a0a97fbb545f2fd84922aef7"
+    },
+    {
+      "run": "v08",
+      "member": "inputs/author.zip",
+      "bytes": 95119,
+      "sha256": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+    },
+    {
+      "run": "v08",
+      "member": "inputs/wine.raw",
+      "bytes": 10782,
+      "sha256": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+    },
+    {
+      "run": "v08",
+      "member": "out/author_result_dfdc14bb23467871d1e09c797b86e805.json",
+      "bytes": 1449,
+      "sha256": "03ca57bb8174996aa32641cc1e4e8110b222c9e3fa1e86c8d2b8d21d4a1cb3e3"
+    },
+    {
+      "run": "v08",
+      "member": "out/author_stderr.txt",
+      "bytes": 1394,
+      "sha256": "7fccc2991b316242ac6fb124425b0a313693d6cc74b0eea845e8183e0a5dcc2d"
+    },
+    {
+      "run": "v08",
+      "member": "out/author_stdout.txt",
+      "bytes": 1197,
+      "sha256": "0815ecd10786c50ff6805b90a26443a4e10c530ef7ad7b051b0d5494331736a0"
+    },
+    {
+      "run": "v08",
+      "member": "out/observer/trace.16",
+      "bytes": 1560233,
+      "sha256": "833c40c2357ec5480929accb05a45362ac92e66bd954c22fa3067a31c7c0c8dd"
+    },
+    {
+      "run": "v08",
+      "member": "out/observer/trace.17",
+      "bytes": 1908,
+      "sha256": "5074f03406239272640e4846028c872d30aefaa6488db0287556204b65e4d2cc"
+    },
+    {
+      "run": "v08",
+      "member": "out/observer/trace.18",
+      "bytes": 29283,
+      "sha256": "d40d3693979e224047b41b2fcd7ca2ca68d2b71cfc8b848112046c83eb04aa47"
+    },
+    {
+      "run": "v08",
+      "member": "out/observer_pre_mode.txt",
+      "bytes": 8,
+      "sha256": "5f10e5b00dc89de1996a0d5e8e12dc5c5618929ab297ce1e4b80112c71a13efd"
+    },
+    {
+      "run": "v08",
+      "member": "out/package_versions.txt",
+      "bytes": 251,
+      "sha256": "9e3ce7022e2804c35ddb36a6eca9b763a82cc7964088209b162eaa4d698c3017"
+    },
+    {
+      "run": "v08",
+      "member": "out/python_version.txt",
+      "bytes": 14,
+      "sha256": "5b3e43dc38ca01e3f5a7854ba50d4330864b0c1e0f646650b2c78cf072acc366"
+    },
+    {
+      "run": "v08",
+      "member": "out/strace_version.txt",
+      "bytes": 326,
+      "sha256": "9cbcd41c9492f2188db6a3fae935c7211b826b655fed03b41259cfdd22725da4"
+    },
+    {
+      "run": "v08",
+      "member": "out/trace_exit_code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "run": "v08",
+      "member": "results/ours.csv",
+      "bytes": 2172,
+      "sha256": "8b0573d4d488bce0a0b08be78910fef587894efc595a4dbc7872b7167a324c08"
+    },
+    {
+      "run": "v08",
+      "member": "results/ours_exp_params.py",
+      "bytes": 139,
+      "sha256": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+    },
+    {
+      "run": "v08",
+      "member": "source/.gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "run": "v08",
+      "member": "source/.github/workflows/rrnc-wine-strace.yml",
+      "bytes": 2011,
+      "sha256": "ac687fa4c84ab93f2fecc571db1953c148e2863ddc74dc6e164d79b4ee4a202c"
+    },
+    {
+      "run": "v08",
+      "member": "source/README.md",
+      "bytes": 6745,
+      "sha256": "539ca74950e56c9be377c30191ea885f6424e4dad84cf6a633aa63a83f3b1b98"
+    },
+    {
+      "run": "v08",
+      "member": "source/experiment/Dockerfile",
+      "bytes": 1095,
+      "sha256": "94bbf1928131aa3bf4a31f9559ce344b027f510ec4b4e9318a337367b5103cea"
+    },
+    {
+      "run": "v08",
+      "member": "source/experiment/FREEZE.json",
+      "bytes": 1043,
+      "sha256": "ff2c172f5d8e3ec1d11d61494f1d176ac5167ff0c8107772a9c8631464a4f225"
+    },
+    {
+      "run": "v08",
+      "member": "source/experiment/PROTOCOL.json",
+      "bytes": 3808,
+      "sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb"
+    },
+    {
+      "run": "v08",
+      "member": "source/experiment/author_25.py",
+      "bytes": 5568,
+      "sha256": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11"
+    },
+    {
+      "run": "v08",
+      "member": "source/experiment/entrypoint.sh",
+      "bytes": 941,
+      "sha256": "93a760d4e27338fe109c07457d34dcacdf587f5c669ace48313d534efb83283a"
+    },
+    {
+      "run": "v08",
+      "member": "source/experiment/run_hosted.py",
+      "bytes": 11013,
+      "sha256": "b8356cbf176dc2a188903ddb02b4bfaa4d29afd4ce3c9a721bd2330c684b2194"
+    },
+    {
+      "run": "v08",
+      "member": "source/experiment/verify_receipt.py",
+      "bytes": 16711,
+      "sha256": "3ef00390ab31c68e9037b60d8bc311f5d77331641568241310e55a5a28e538c2"
+    },
+    {
+      "run": "v09",
+      "member": "docker_build.stderr.bin",
+      "bytes": 24180,
+      "sha256": "712c63b0e43ca92ed27562cdc253b22c1cc76945470a3ed1b05d5f3bda3c3f7e"
+    },
+    {
+      "run": "v09",
+      "member": "docker_build.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v09",
+      "member": "docker_cleanup.stderr.bin",
+      "bytes": 78,
+      "sha256": "111628d60825c47f12f6ec9c3730cf5dd5630c7111fe57c6320802f119283b85"
+    },
+    {
+      "run": "v09",
+      "member": "docker_cleanup.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v09",
+      "member": "docker_inspect.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v09",
+      "member": "docker_inspect.stdout.bin",
+      "bytes": 72,
+      "sha256": "adad7f245b22e2dc6a99675d92dc72cefc8c513c5350eb91ea8ac0bbe6a8309f"
+    },
+    {
+      "run": "v09",
+      "member": "docker_run.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v09",
+      "member": "docker_run.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "v09",
+      "member": "first_job_verification.json",
+      "bytes": 1226,
+      "sha256": "5cd6f210a850d07f1efcc40693d6a04617e42a456c83a07c0fcf39a2b41bb108"
+    },
+    {
+      "run": "v09",
+      "member": "host_run.json",
+      "bytes": 4309,
+      "sha256": "567f03db72102c2a6c0297cd89cebb7eb686e95284cf8ef58523948fdd15e2d7"
+    },
+    {
+      "run": "v09",
+      "member": "input_pin.json",
+      "bytes": 792,
+      "sha256": "181ca06b33f8b3547da5e6ac9bde087cf7f6b6c8da3c6683471cba44b2f4a8da"
+    },
+    {
+      "run": "v09",
+      "member": "inputs/author.zip",
+      "bytes": 95119,
+      "sha256": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+    },
+    {
+      "run": "v09",
+      "member": "inputs/wine.raw",
+      "bytes": 10782,
+      "sha256": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+    },
+    {
+      "run": "v09",
+      "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json",
+      "bytes": 1449,
+      "sha256": "4ae6fbc0722e79c8e23b8935423a4d06e86bee5d2aab8f0e8c1c500625c1a364"
+    },
+    {
+      "run": "v09",
+      "member": "out/author_stderr.txt",
+      "bytes": 1394,
+      "sha256": "7fccc2991b316242ac6fb124425b0a313693d6cc74b0eea845e8183e0a5dcc2d"
+    },
+    {
+      "run": "v09",
+      "member": "out/author_stdout.txt",
+      "bytes": 1197,
+      "sha256": "06168f9346637733d5d04133759bb7b2a1d3650f1521a5411b98a9509514e0f6"
+    },
+    {
+      "run": "v09",
+      "member": "out/observer/trace.16",
+      "bytes": 2001050,
+      "sha256": "eab415ba79192e5918d4595475d7716c4a74e25a98a720823f3efb3a56a0978d"
+    },
+    {
+      "run": "v09",
+      "member": "out/observer/trace.17",
+      "bytes": 2090,
+      "sha256": "7f5a6c163c331998d6d3af371bbefc16c307b5b508ed896e20df620815b00085"
+    },
+    {
+      "run": "v09",
+      "member": "out/observer/trace.18",
+      "bytes": 49899,
+      "sha256": "975f78f0b514c17b92ac9aedc265cb584e2282fa238a91bc713981714be86d33"
+    },
+    {
+      "run": "v09",
+      "member": "out/observer_pre_mode.txt",
+      "bytes": 8,
+      "sha256": "5f10e5b00dc89de1996a0d5e8e12dc5c5618929ab297ce1e4b80112c71a13efd"
+    },
+    {
+      "run": "v09",
+      "member": "out/package_versions.txt",
+      "bytes": 251,
+      "sha256": "9e3ce7022e2804c35ddb36a6eca9b763a82cc7964088209b162eaa4d698c3017"
+    },
+    {
+      "run": "v09",
+      "member": "out/python_version.txt",
+      "bytes": 14,
+      "sha256": "5b3e43dc38ca01e3f5a7854ba50d4330864b0c1e0f646650b2c78cf072acc366"
+    },
+    {
+      "run": "v09",
+      "member": "out/strace_version.txt",
+      "bytes": 326,
+      "sha256": "9cbcd41c9492f2188db6a3fae935c7211b826b655fed03b41259cfdd22725da4"
+    },
+    {
+      "run": "v09",
+      "member": "out/trace_exit_code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "run": "v09",
+      "member": "results/ours.csv",
+      "bytes": 2172,
+      "sha256": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+    },
+    {
+      "run": "v09",
+      "member": "results/ours_exp_params.py",
+      "bytes": 139,
+      "sha256": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+    },
+    {
+      "run": "v09",
+      "member": "source/.gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "run": "v09",
+      "member": "source/.github/workflows/rrnc-wine-strace.yml",
+      "bytes": 2011,
+      "sha256": "ac687fa4c84ab93f2fecc571db1953c148e2863ddc74dc6e164d79b4ee4a202c"
+    },
+    {
+      "run": "v09",
+      "member": "source/README.md",
+      "bytes": 7819,
+      "sha256": "998e761212e7eba7f5fed4317e296060f53b9fb5037135905000ec1b47006069"
+    },
+    {
+      "run": "v09",
+      "member": "source/experiment/Dockerfile",
+      "bytes": 1095,
+      "sha256": "94bbf1928131aa3bf4a31f9559ce344b027f510ec4b4e9318a337367b5103cea"
+    },
+    {
+      "run": "v09",
+      "member": "source/experiment/FREEZE.json",
+      "bytes": 1050,
+      "sha256": "8a17f6264bfce4a0c561be1c9b10179a1734beefc5b6d9cbd78f3691e4b72d85"
+    },
+    {
+      "run": "v09",
+      "member": "source/experiment/PROTOCOL.json",
+      "bytes": 4370,
+      "sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5"
+    },
+    {
+      "run": "v09",
+      "member": "source/experiment/author_25.py",
+      "bytes": 5568,
+      "sha256": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11"
+    },
+    {
+      "run": "v09",
+      "member": "source/experiment/entrypoint.sh",
+      "bytes": 941,
+      "sha256": "93a760d4e27338fe109c07457d34dcacdf587f5c669ace48313d534efb83283a"
+    },
+    {
+      "run": "v09",
+      "member": "source/experiment/run_hosted.py",
+      "bytes": 11065,
+      "sha256": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7"
+    },
+    {
+      "run": "v09",
+      "member": "source/experiment/verify_receipt.py",
+      "bytes": 16730,
+      "sha256": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae"
+    }
+  ],
+  "sql": {
+    "joint_query": "SELECT COUNT(*) FROM admissions n JOIN admissions r ON n.scenario=r.scenario\n          AND n.repository=r.repository AND n.source_commit=r.source_commit AND n.run_id=r.run_id\n          AND n.attempt=r.attempt AND n.protocol_sha256=r.protocol_sha256 AND n.tar_sha256=r.tar_sha256\n          JOIN admissions s ON n.scenario=s.scenario AND n.repository=s.repository AND n.source_commit=s.source_commit\n          AND n.run_id=s.run_id AND n.attempt=s.attempt AND n.protocol_sha256=s.protocol_sha256 AND n.tar_sha256=s.tar_sha256\n          WHERE n.scenario=? AND n.layer='artifact_numeric' AND r.layer='selected_read_gate' AND s.layer='retained_signed_identity'\n          AND n.ok=1 AND r.ok=1 AND s.ok=1",
+    "tables": [
+      "tar_members",
+      "run_identity",
+      "csv_rows",
+      "output_edges",
+      "admissions",
+      "references_to_identity"
+    ],
+    "input_reference_copies_among_accepted_scenarios": 3,
+    "global_distinct_joint_identities": 1
+  },
+  "information_contract": "Direct fixed extraction from all the same protocol-pinned original bytes; retained 276 reports are evidence inputs. No iteration302 candidate code/results imported or read.",
+  "computed_now": [
+    "CSV decimal arithmetic and draw/seed sequence",
+    "summary/params/nonce and CSV hash edges",
+    "retained gate fields and identity joins",
+    "retained verification-output and raw-statement binding",
+    "whole-joint-identity DISTINCT"
+  ],
+  "not_computed_now": [
+    "new author execution",
+    "trace rerun or complete consumed-byte certification",
+    "new cryptographic signature verification or refreshed trust root",
+    "historical 2020 execution",
+    "new human gold or independent scientific sample",
+    "method superiority"
+  ],
+  "status_interpretation": "MET means the stated scoped positive layer is supported. UNRESOLVED includes unavailable evidence, a retained gate not passed, or a failed binding; it does not assert that the scientific claim or physical read is false.",
+  "semantic_modules_used": "Protocol-pinned module files were hashed only; neither imported nor executed.",
+  "elapsed_seconds": 0.10742279997793958,
+  "completed_at_utc": "2026-10-11T19:37:47.903881+00:00"
+}

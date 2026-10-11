@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "status": "PASS_KNOWN_PRICE_SEVEN_FILE_BUDGET_CALIBRATION_BRANCH_CLOSED",
+  "created_utc": "2026-10-11T19:07:27.331842+00:00",
+  "protocol": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\PROTOCOL_V01.json",
+    "bytes": 8900,
+    "sha256": "1932812e49eb5c4456038bb8c5f471ce2739072f29e3d3ba3d37dfe9a56b97bf"
+  },
+  "replay": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\RESULT_V01.json",
+    "bytes": 22310,
+    "sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff"
+  },
+  "execution": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\EXECUTION_V01.json",
+    "bytes": 1573,
+    "sha256": "16a62fca2418a3e15beb045e9ad66aa867fd738f8aca60f2c6cf8e569aa0e99c"
+  },
+  "qa": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\qa_v01\\QA_RESULT_V01.json",
+    "bytes": 24630,
+    "sha256": "86cf6ab818d39f9c0a62dde4d42eaaf9dfc0e09bceec1b70ac86999f0ecd60db"
+  },
+  "root_review": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_budget_20261012\\ROOT_REVIEW_V01.json",
+    "bytes": 3489,
+    "sha256": "1133ec58919c67b2451d5ffbd65e65a4bc9439932fe24043e8d3a87aca5ab57a"
+  },
+  "frontier": [
+    {
+      "coverage": 1,
+      "bytes": 637064,
+      "last_source": "paper_35"
+    },
+    {
+      "coverage": 2,
+      "bytes": 920962,
+      "last_source": "paper_16"
+    },
+    {
+      "coverage": 3,
+      "bytes": 1214497,
+      "last_source": "paper_41"
+    },
+    {
+      "coverage": 4,
+      "bytes": 1721954,
+      "last_source": "paper_3"
+    },
+    {
+      "coverage": 5,
+      "bytes": 2415058,
+      "last_source": "paper_13"
+    }
+  ],
+  "baseline_attains_contract_optimum": true,
+  "new_method_or_theorem": false,
+  "new_network_runs": 0,
+  "LLM_API_calls": 0,
+  "human_gold": false,
+  "P1_hash_only": "1d74a539c62fe5dad4438f561416cca5b18a87d3e597b10e71a1cf2cc1538b8e",
+  "original_seven_inputs_unchanged": true,
+  "unchanged_manuscript": [
+    {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\paper\\ccf_bc_20261011\\journal_draft_v08\\paper.tex",
+      "bytes": 76298,
+      "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+    },
+    {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\paper\\ccf_bc_20261011\\journal_draft_v08\\paper.pdf",
+      "bytes": 588609,
+      "sha256": "4fcce94f4692289d3a44987cc616b3ed917237d057d385a7bcbabb686888ca31"
+    },
+    {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\paper\\ccf_bc_20261011\\journal_draft_v08\\references.bib",
+      "bytes": 9733,
+      "sha256": "0b15e13a0c724d4442aa5ae4d17abdc6ae48b0a2bae07d58493ef8d242dcc91b"
+    }
+  ],
+  "guard": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\ITER303_FINAL_GUARD_V01.json",
+    "bytes": 3193,
+    "sha256": "e57de641ed1e082c851d75b7d7a2edd585b77b4afe73d0c7f9438b5492449751"
+  },
+  "finalizer": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\finalize_iter303_v01.py",
+    "bytes": 12915,
+    "sha256": "292de22271d49b2b744378351aed9008dcbe16711b616f1d3d12befcab519bb7"
+  },
+  "dependency_frontier": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_budget_20261012\\DEPENDENCY_FRONTIER_V01.json",
+    "bytes": 1634,
+    "sha256": "2a9a6747df9baed8399f2ad40640e926bb4a4c2b29499709fdbbb9522a86b0ac"
+  },
+  "report": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\RESEARCH_ITERATION_303_ZH.md",
+    "bytes": 3257,
+    "sha256": "0febef334b6ca6edd6d9629530dcc13307f3b4d199753682008d75922d25b028"
+  },
+  "direction_after": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\CURRENT_RESEARCH_DIRECTION.json",
+    "bytes": 32927,
+    "sha256": "44a30b49dd97626ae5d103e258493b065ce2ffd5679d9fc8848e39ac5ea411cc"
+  },
+  "index_after": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\README.md",
+    "bytes": 160759,
+    "sha256": "29b15c190660282de19f3a551ee9858f908d7a7221c41127d7316a348b7ba10a"
+  },
+  "external_files": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\budget_replay.py",
+      "bytes": 11906,
+      "sha256": "8e3b5432df71e00e6ab3cb35758f625c35d0fef28deac6e31e1a89826624e876"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\EXECUTION_V01.json",
+      "bytes": 1573,
+      "sha256": "16a62fca2418a3e15beb045e9ad66aa867fd738f8aca60f2c6cf8e569aa0e99c"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_13_pdf.txt",
+      "bytes": 42965,
+      "sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_13_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_16_pdf.txt",
+      "bytes": 56008,
+      "sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_16_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_35_pdf.txt",
+      "bytes": 26859,
+      "sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_35_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_3_pdf.txt",
+      "bytes": 32533,
+      "sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_3_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_41_pdf.txt",
+      "bytes": 27756,
+      "sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\paper_41_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\process.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\process.stdout.txt",
+      "bytes": 287,
+      "sha256": "c42f152e5ded38ed2a5d755274b36120bde3341c1e69f7a998d6e287b1e3c520"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\RESULT_V01.json",
+      "bytes": 22310,
+      "sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\qa_v01\\EXECUTION_V01.json",
+      "bytes": 6061,
+      "sha256": "533f5d420df9eea068025bb9b7d649129aca0919e5f5f2fc9bf00ed8567900f1"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\qa_v01\\independent_qa_v01.py",
+      "bytes": 19861,
+      "sha256": "f308043ab6664ad490fed396843ee4db92333c1c78242ac9196a68622798bc71"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\qa_v01\\QA_RESULT_V01.json",
+      "bytes": 24630,
+      "sha256": "86cf6ab818d39f9c0a62dde4d42eaaf9dfc0e09bceec1b70ac86999f0ecd60db"
+    }
+  ],
+  "final_C_free_GiB": 11.374984741210938,
+  "goal": "ACTIVE_ORDINARY_CCF_RESEARCH_NOT_SUBMITTED"
+}

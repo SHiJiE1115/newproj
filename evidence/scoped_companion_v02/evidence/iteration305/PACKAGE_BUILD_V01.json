@@ -1,0 +1,401 @@
+{
+  "schema": 1,
+  "status": "PASS_BUILD_ONLY_NOT_EXECUTED",
+  "human_review": false,
+  "scientific_execution_count": 0,
+  "original_protocol": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\PROTOCOL_V01.json",
+    "bytes": 13268,
+    "sha256": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+  },
+  "relative_protocol": {
+    "path": "protocol.json",
+    "bytes": 11979,
+    "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+  },
+  "scientific_protocol_exact_inverse_check": true,
+  "copied_fixed_inputs": [
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v07_failed_release_gate_v01\\receipt.tar",
+      "package": "evidence/v07/receipt.tar",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v07_failed_release_gate_v01\\CANDIDATE_REPORT.json",
+      "package": "evidence/v07/CANDIDATE_REPORT.json",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v07_failed_release_gate_v01\\DIRECT_BASELINE_REPORT.json",
+      "package": "evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v07_failed_release_gate_v01\\POSTRUN_RELEASE_GATE.json",
+      "package": "evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v08_failed_release_gate_v01\\receipt.tar",
+      "package": "evidence/v08/receipt.tar",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v08_failed_release_gate_v01\\CANDIDATE_REPORT.json",
+      "package": "evidence/v08/CANDIDATE_REPORT.json",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v08_failed_release_gate_v01\\DIRECT_BASELINE_REPORT.json",
+      "package": "evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v08_failed_release_gate_v01\\POSTRUN_RELEASE_GATE.json",
+      "package": "evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v09_release_gate_v01\\receipt.tar",
+      "package": "evidence/v09/receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v09_release_gate_v01\\CANDIDATE_REPORT.json",
+      "package": "evidence/v09/CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v09_release_gate_v01\\DIRECT_BASELINE_REPORT.json",
+      "package": "evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v09_release_gate_v01\\POSTRUN_RELEASE_GATE.json",
+      "package": "evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v09_signed_bundle_v01\\ACCEPTANCE.json",
+      "package": "evidence/signature/ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v09_signed_bundle_v01\\verified.stdout.json",
+      "package": "evidence/signature/verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration276\\v09_signed_bundle_v01\\sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "package": "evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+    },
+    {
+      "original": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\code\\rules_v2_core.py",
+      "package": "semantic/rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    {
+      "original": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\code\\rules_v2_checker.py",
+      "package": "semantic/rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    }
+  ],
+  "copied_input_count": 17,
+  "copied_input_total_bytes": 4487577,
+  "complete_original_references": [
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\candidate_v01\\CANDIDATE_RESULT_V01.json",
+      "package": "references/CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+    },
+    {
+      "original": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v02\\BASELINE_RESULT_V02.json",
+      "package": "references/BASELINE_RESULT_V02.json",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+    }
+  ],
+  "code_changes": [
+    {
+      "file": "layer_candidate.py",
+      "original": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\candidate_v01\\layer_candidate.py",
+        "bytes": 21272,
+        "sha256": "50412f29910b082096bb4f394d2e4abe48b5be39221c1a55dafadee8447589f1"
+      },
+      "adapted": {
+        "path": "layer_candidate.py",
+        "bytes": 22187,
+        "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b"
+      },
+      "exact_inverse_replacements_pass": true,
+      "replacements": [
+        {
+          "old": "PROTOCOL_SHA256 = 'f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad'",
+          "new": "PROTOCOL_SHA256 = '3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f'"
+        },
+        {
+          "old": "\n\ndef run(protocol_path):",
+          "new": "\n\ndef resolve_inputs(p, root):\n    \"\"\"Resolve only the 17 explicit protocol input descriptors inside this bundle.\"\"\"\n    root = root.resolve()\n    specs = [d for r in p['runs'].values() for d in r['files'].values()]\n    specs += list(p['v09_retained_signature_files'].values())\n    specs += list(p['existing_semantic_modules'].values())\n    if len(specs) != 17:\n        raise ValueError('EXPECTED_17_INPUTS')\n    for d in specs:\n        text = d['path']\n        rel = PurePosixPath(text)\n        if rel.is_absolute() or '..' in rel.parts or '\\\\' in text or ':' in text or str(rel) != text:\n            raise ValueError('INVALID_RELATIVE_INPUT_PATH')\n        path = (root / text).resolve()\n        if not path.is_relative_to(root) or not path.is_file():\n            raise ValueError('INPUT_OUTSIDE_BUNDLE_OR_MISSING')\n        d['path'] = str(path)\n    return p\n\n\ndef run(protocol_path):"
+        },
+        {
+          "old": ";p=json.loads(pb)\n    runs=",
+          "new": ";p=json.loads(pb)\n    p=resolve_inputs(p,protocol_path.resolve().parent)\n    runs="
+        }
+      ],
+      "unchanged_original_function_AST": [
+        "sha",
+        "require",
+        "plain",
+        "pinned",
+        "edge",
+        "all_edges",
+        "compare_keys",
+        "load_run",
+        "numeric",
+        "selected_read",
+        "retained_signature",
+        "load_semantics",
+        "certify_layer",
+        "main"
+      ],
+      "changed_original_functions": [
+        "run"
+      ],
+      "added_functions": [
+        "resolve_inputs"
+      ],
+      "unified_diff": "--- original/layer_candidate.py\n+++ portable/layer_candidate.py\n@@ -18,7 +18,7 @@\n import tarfile\n import time\n \n-PROTOCOL_SHA256 = 'f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad'\n+PROTOCOL_SHA256 = '3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f'\n PASS = 'PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY'\n FIELDS = ('repository', 'source_commit', 'run_id', 'attempt', 'protocol_sha256', 'tar_sha256')\n CSV_FIELDS = ['draw','seed','train_accuracy','test_accuracy','n_leaves','height','bound','time']\n@@ -248,8 +248,29 @@\n             'checker':{'valid':checked.valid,'errors':list(checked.errors)}}\n \n \n+def resolve_inputs(p, root):\n+    \"\"\"Resolve only the 17 explicit protocol input descriptors inside this bundle.\"\"\"\n+    root = root.resolve()\n+    specs = [d for r in p['runs'].values() for d in r['files'].values()]\n+    specs += list(p['v09_retained_signature_files'].values())\n+    specs += list(p['existing_semantic_modules'].values())\n+    if len(specs) != 17:\n+        raise ValueError('EXPECTED_17_INPUTS')\n+    for d in specs:\n+        text = d['path']\n+        rel = PurePosixPath(text)\n+        if rel.is_absolute() or '..' in rel.parts or '\\\\' in text or ':' in text or str(rel) != text:\n+            raise ValueError('INVALID_RELATIVE_INPUT_PATH')\n+        path = (root / text).resolve()\n+        if not path.is_relative_to(root) or not path.is_file():\n+            raise ValueError('INPUT_OUTSIDE_BUNDLE_OR_MISSING')\n+        d['path'] = str(path)\n+    return p\n+\n+\n def run(protocol_path):\n     pb=protocol_path.read_bytes();require(sha(pb)==PROTOCOL_SHA256,'PROTOCOL_PIN_MISMATCH');p=json.loads(pb)\n+    p=resolve_inputs(p,protocol_path.resolve().parent)\n     runs={n:load_run(n,s) for n,s in p['runs'].items()}\n     signature={n:pinned(s) for n,s in p['v09_retained_signature_files'].items()}\n     core,checker=load_semantics(p['existing_semantic_modules'])\n"
+    },
+    {
+      "file": "sql_baseline_v02.py",
+      "original": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v02\\sql_baseline_v02.py",
+        "bytes": 28721,
+        "sha256": "487cc0a6f95fe0026edc05298765ac7608b693aea0e4473d84f4e8e1c0977312"
+      },
+      "adapted": {
+        "path": "sql_baseline_v02.py",
+        "bytes": 30360,
+        "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+      },
+      "exact_inverse_replacements_pass": true,
+      "replacements": [
+        {
+          "old": "import ast\n",
+          "new": "import ast\nimport argparse\n"
+        },
+        {
+          "old": "ROOT = Path('C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa')\nART = Path('D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration302')\nHERE = ART / 'baseline_v02'\nPROTOCOL = ART / 'PROTOCOL_V01.json'\nPROTOCOL_SHA = 'f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad'\nGUARD = ROOT / 'maintenance/storage_resume_20261010/ITER302_BASELINE_V02_PREFLIGHT_V01.json'\n",
+          "new": "HERE = None\nPROTOCOL = None\nRESOURCE_CHECK = None\nPROTOCOL_SHA = '3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f'\n"
+        },
+        {
+          "old": "\ndef run():",
+          "new": "\n\ndef resolve_inputs(p, root):\n    \"\"\"Resolve only the 17 explicit protocol input descriptors inside this bundle.\"\"\"\n    root = root.resolve()\n    specs = [d for r in p['runs'].values() for d in r['files'].values()]\n    specs += list(p['v09_retained_signature_files'].values())\n    specs += list(p['existing_semantic_modules'].values())\n    if len(specs) != 17:\n        raise ValueError('EXPECTED_17_INPUTS')\n    for d in specs:\n        text = d['path']\n        rel = PurePosixPath(text)\n        if rel.is_absolute() or '..' in rel.parts or '\\\\' in text or ':' in text or str(rel) != text:\n            raise ValueError('INVALID_RELATIVE_INPUT_PATH')\n        path = (root / text).resolve()\n        if not path.is_relative_to(root) or not path.is_file():\n            raise ValueError('INPUT_OUTSIDE_BUNDLE_OR_MISSING')\n        d['path'] = str(path)\n    return p\n\ndef run():"
+        },
+        {
+          "old": "        guard = parse(GUARD.read_bytes())\n        need(guard['status'] == 'PASS' and guard['external_after']['volume_guid'] == '24e3d2ec-f154-46da-95c6-924f89aa02d0', 'Guard failed.')\n        need((datetime.now(timezone.utc) - datetime.fromisoformat(guard['checked_at_utc'])).total_seconds() < 1800, 'Guard stale.')\n",
+          "new": "        resource = parse(RESOURCE_CHECK.read_bytes())\n        need(resource['status'] == 'PASS' and resource['output_directory'] == HERE.as_posix(), 'Resource check target differs.')\n        need(resource['minimum_free_bytes'] >= 64*1024*1024 and resource['free_bytes'] >= resource['minimum_free_bytes'], 'Resource check capacity failed.')\n        age = (datetime.now(timezone.utc) - datetime.fromisoformat(resource['checked_at_utc'])).total_seconds()\n        need(0 <= age < 1800 and resource['original_guard_replayed'] is False, 'Resource check stale or historical guard replayed.')\n"
+        },
+        {
+          "old": "        p = parse(protocol_bytes)\n",
+          "new": "        p = parse(protocol_bytes)\n        p = resolve_inputs(p, PROTOCOL.parent)\n"
+        },
+        {
+          "old": "'guard': descriptor(GUARD)",
+          "new": "'resource_check': descriptor(RESOURCE_CHECK)"
+        },
+        {
+          "old": "if __name__ == '__main__':\n    raise SystemExit(run())\n",
+          "new": "def main():\n    global HERE, PROTOCOL, RESOURCE_CHECK\n    ap = argparse.ArgumentParser(description=__doc__)\n    ap.add_argument('--protocol', required=True, type=Path)\n    ap.add_argument('--output', required=True, type=Path)\n    ap.add_argument('--resource-check', required=True, type=Path)\n    args = ap.parse_args()\n    HERE, PROTOCOL, RESOURCE_CHECK = args.output.resolve(), args.protocol.resolve(), args.resource_check.resolve()\n    need(HERE.is_dir() and not (HERE/'BASELINE_RESULT_V02.json').exists(), 'Output must exist without a previous result.')\n    need(not HERE.is_relative_to(Path(__file__).resolve().parent), 'Output must be outside bundle.')\n    return run()\n\nif __name__ == '__main__':\n    raise SystemExit(main())\n"
+        }
+      ],
+      "unchanged_original_function_AST": [
+        "need",
+        "digest",
+        "parse",
+        "descriptor",
+        "key_for",
+        "difference",
+        "source_locator",
+        "inspect_run",
+        "numeric",
+        "retained_read_gate",
+        "retained_signature"
+      ],
+      "changed_original_functions": [
+        "run"
+      ],
+      "added_functions": [
+        "main",
+        "resolve_inputs"
+      ],
+      "unified_diff": "--- original/sql_baseline_v02.py\n+++ portable/sql_baseline_v02.py\n@@ -5,6 +5,7 @@\n from datetime import datetime, timezone\n from decimal import Decimal, localcontext, ROUND_HALF_UP\n import ast\n+import argparse\n import base64\n import csv\n import hashlib\n@@ -14,12 +15,10 @@\n import tarfile\n import time\n \n-ROOT = Path('C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa')\n-ART = Path('D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration302')\n-HERE = ART / 'baseline_v02'\n-PROTOCOL = ART / 'PROTOCOL_V01.json'\n-PROTOCOL_SHA = 'f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad'\n-GUARD = ROOT / 'maintenance/storage_resume_20261010/ITER302_BASELINE_V02_PREFLIGHT_V01.json'\n+HERE = None\n+PROTOCOL = None\n+RESOURCE_CHECK = None\n+PROTOCOL_SHA = '3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f'\n KEYS = ['repository', 'source_commit', 'run_id', 'attempt', 'protocol_sha256', 'tar_sha256']\n PASS_OLD = 'PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY'\n CSV_MEMBER = 'results/ours.csv'\n@@ -253,16 +252,39 @@\n             'evidence': [source_locator('v09', 'ACCEPTANCE.json'), source_locator('v09', 'verified.stdout.json', pointer='/0/verificationResult'),\n                          source_locator('v09', bundle_name, pointer='/dsseEnvelope/payload'), source_locator('v09', 'POSTRUN_RELEASE_GATE.json', pointer='/attestation')]}\n \n+\n+def resolve_inputs(p, root):\n+    \"\"\"Resolve only the 17 explicit protocol input descriptors inside this bundle.\"\"\"\n+    root = root.resolve()\n+    specs = [d for r in p['runs'].values() for d in r['files'].values()]\n+    specs += list(p['v09_retained_signature_files'].values())\n+    specs += list(p['existing_semantic_modules'].values())\n+    if len(specs) != 17:\n+        raise ValueError('EXPECTED_17_INPUTS')\n+    for d in specs:\n+        text = d['path']\n+        rel = PurePosixPath(text)\n+        if rel.is_absolute() or '..' in rel.parts or '\\\\' in text or ':' in text or str(rel) != text:\n+            raise ValueError('INVALID_RELATIVE_INPUT_PATH')\n+        path = (root / text).resolve()\n+        if not path.is_relative_to(root) or not path.is_file():\n+            raise ValueError('INPUT_OUTSIDE_BUNDLE_OR_MISSING')\n+        d['path'] = str(path)\n+    return p\n+\n def run():\n     begin = time.perf_counter()\n     result = {'schema': 1, 'status': 'FAIL', 'human_review': False}\n     try:\n-        guard = parse(GUARD.read_bytes())\n-        need(guard['status'] == 'PASS' and guard['external_after']['volume_guid'] == '24e3d2ec-f154-46da-95c6-924f89aa02d0', 'Guard failed.')\n-        need((datetime.now(timezone.utc) - datetime.fromisoformat(guard['checked_at_utc'])).total_seconds() < 1800, 'Guard stale.')\n+        resource = parse(RESOURCE_CHECK.read_bytes())\n+        need(resource['status'] == 'PASS' and resource['output_directory'] == HERE.as_posix(), 'Resource check target differs.')\n+        need(resource['minimum_free_bytes'] >= 64*1024*1024 and resource['free_bytes'] >= resource['minimum_free_bytes'], 'Resource check capacity failed.')\n+        age = (datetime.now(timezone.utc) - datetime.fromisoformat(resource['checked_at_utc'])).total_seconds()\n+        need(0 <= age < 1800 and resource['original_guard_replayed'] is False, 'Resource check stale or historical guard replayed.')\n         protocol_bytes = PROTOCOL.read_bytes()\n         need(digest(protocol_bytes) == PROTOCOL_SHA, 'Protocol pin differs.')\n         p = parse(protocol_bytes)\n+        p = resolve_inputs(p, PROTOCOL.parent)\n         need(p['joint_key'] == KEYS and len(p['scenarios']) == 6, 'Frozen scenario contract differs.')\n         descriptors = [d for r in p['runs'].values() for d in r['files'].values()] + list(p['v09_retained_signature_files'].values()) + list(p['existing_semantic_modules'].values())\n         blobs, pins = {}, []\n@@ -339,7 +361,7 @@\n         need(PROTOCOL.read_bytes() == protocol_bytes, 'Protocol mutated.')\n         need(time.perf_counter() - begin < 60, 'Cooperative 60-second computation cap.')\n         result.update({'status': 'PASS_INDEPENDENT_SQL_HASH_JOIN_BASELINE', 'protocol': descriptor(PROTOCOL),\n-            'guard': descriptor(GUARD), 'script': descriptor(Path(__file__)), 'scenarios': scenarios,\n+            'resource_check': descriptor(RESOURCE_CHECK), 'script': descriptor(Path(__file__)), 'scenarios': scenarios,\n             'layer_label_count': sum(len(x['layers']) for x in scenarios), 'expected_calibration_checks': expected_check,\n             'original_input_bindings': pins, 'all_original_bytes_unchanged': all(x['unchanged'] for x in pins),\n             'tar_member_inventory': [dict(zip(['run', 'member', 'bytes', 'sha256'], row)) for row in con.execute('SELECT * FROM tar_members ORDER BY run,member')],\n@@ -365,5 +387,17 @@\n                       'result_bytes': len(b), 'result_sha256': digest(b), 'error': result.get('error')}))\n     return 0 if result['status'] == 'PASS_INDEPENDENT_SQL_HASH_JOIN_BASELINE' else 1\n \n+def main():\n+    global HERE, PROTOCOL, RESOURCE_CHECK\n+    ap = argparse.ArgumentParser(description=__doc__)\n+    ap.add_argument('--protocol', required=True, type=Path)\n+    ap.add_argument('--output', required=True, type=Path)\n+    ap.add_argument('--resource-check', required=True, type=Path)\n+    args = ap.parse_args()\n+    HERE, PROTOCOL, RESOURCE_CHECK = args.output.resolve(), args.protocol.resolve(), args.resource_check.resolve()\n+    need(HERE.is_dir() and not (HERE/'BASELINE_RESULT_V02.json').exists(), 'Output must exist without a previous result.')\n+    need(not HERE.is_relative_to(Path(__file__).resolve().parent), 'Output must be outside bundle.')\n+    return run()\n+\n if __name__ == '__main__':\n-    raise SystemExit(run())\n+    raise SystemExit(main())\n"
+    }
+  ],
+  "files": [
+    {
+      "path": "evidence/signature/ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+    },
+    {
+      "path": "evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+    },
+    {
+      "path": "evidence/signature/verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+    },
+    {
+      "path": "evidence/v07/CANDIDATE_REPORT.json",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41"
+    },
+    {
+      "path": "evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673"
+    },
+    {
+      "path": "evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f"
+    },
+    {
+      "path": "evidence/v07/receipt.tar",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+    },
+    {
+      "path": "evidence/v08/CANDIDATE_REPORT.json",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24"
+    },
+    {
+      "path": "evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a"
+    },
+    {
+      "path": "evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0"
+    },
+    {
+      "path": "evidence/v08/receipt.tar",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+    },
+    {
+      "path": "evidence/v09/CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+    },
+    {
+      "path": "evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+    },
+    {
+      "path": "evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+    },
+    {
+      "path": "evidence/v09/receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+    },
+    {
+      "path": "layer_candidate.py",
+      "bytes": 22187,
+      "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 4588,
+      "sha256": "b16186eff87eb616975d84c91567f031bc4cdc5872a2f34e50c87f851c39c667"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5424,
+      "sha256": "818cc458f60c2e565dfaf278260d3bb818c7371c3752f918cb233f449a8265b8"
+    },
+    {
+      "path": "references/BASELINE_RESULT_V02.json",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+    },
+    {
+      "path": "references/CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+    },
+    {
+      "path": "run.py",
+      "bytes": 13571,
+      "sha256": "5dbe42e4b54998425bae78847bdd29c042087ad0e857cbb958d95b1cb13a5777"
+    },
+    {
+      "path": "semantic/rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    },
+    {
+      "path": "semantic/rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    {
+      "path": "sql_baseline_v02.py",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+    }
+  ],
+  "file_count": 25,
+  "package_bytes": 4992809,
+  "zip": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01.zip",
+    "bytes": 1019047,
+    "sha256": "7c69e4d62437f25485cad2994c99936a8c74c9e456d7d839b483e6c4f7c70002"
+  },
+  "zip_exact_member_bytes_readback": true,
+  "zip_readback_is_not_scientific_execution": true,
+  "builder": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\build_package_v01.py",
+    "bytes": 32357,
+    "sha256": "960cb0dd3f765a536316f96a1933882a8bf509640875a199cb8f5b5ee07d8a0d"
+  },
+  "limitations": [
+    "Prepared only; independent relocated execution is still required.",
+    "No current cryptographic verification, new author execution, or new scientific sample.",
+    "Exact historical files retain inert historical paths; not an anonymous package."
+  ]
+}

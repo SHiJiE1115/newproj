@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "status": "PASS_REGISTER_DERIVED_FROM_FROZEN_RESULTS",
+  "created_utc": "2026-10-11T19:14:22.073706+00:00",
+  "operation": "Read and reconcile existing outputs only; no scientific replay or new ground truth.",
+  "source_seals": {
+    "wine": {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\wine_layer_calibration_20261012\\DELIVERY_VALIDATION_V01.json",
+      "bytes": 8350,
+      "sha256": "bed105fcdf4b894b8186b079f73fe92a195645bbb1f9762d61b3d6e44bf9749d"
+    },
+    "valueeval": {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_budget_20261012\\DELIVERY_VALIDATION_V01.json",
+      "bytes": 8849,
+      "sha256": "a2ea0d5e3329e274f9d5b69dda35db914301107763114f80bf01ddcf2b8e1f48"
+    }
+  },
+  "source_result_bindings": {
+    "wine_candidate": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\candidate_v01\\CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+    },
+    "wine_sql_v02": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v02\\BASELINE_RESULT_V02.json",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+    },
+    "valueeval_replay": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\RESULT_V01.json",
+      "bytes": 22310,
+      "sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff"
+    },
+    "valueeval_execution": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\EXECUTION_V01.json",
+      "bytes": 1573,
+      "sha256": "16a62fca2418a3e15beb045e9ad66aa867fd738f8aca60f2c6cf8e569aa0e99c"
+    },
+    "valueeval_qa": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\qa_v01\\QA_RESULT_V01.json",
+      "bytes": 24630,
+      "sha256": "86cf6ab818d39f9c0a62dde4d42eaaf9dfc0e09bceec1b70ac86999f0ecd60db"
+    }
+  },
+  "wine": {
+    "layer_matrix": [
+      {
+        "id": "v07",
+        "kind": "existing_real_run",
+        "layers": {
+          "artifact_numeric": "UNRESOLVED",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "v08",
+        "kind": "existing_real_run",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "v09",
+        "kind": "existing_real_run",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "MET",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 1
+      },
+      {
+        "id": "mixed_identity",
+        "kind": "constructed_control",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "mixed_output",
+        "kind": "constructed_control",
+        "layers": {
+          "artifact_numeric": "UNRESOLVED",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "duplicate_v09",
+        "kind": "constructed_control",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "MET",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 1
+      }
+    ],
+    "real_archives": 3,
+    "constructed_splices": 2,
+    "constructed_duplicate": 1,
+    "layer_labels": 30,
+    "met_labels": 12,
+    "unresolved_labels": 18,
+    "same_information_sql_agreement": true,
+    "method_advantage_established": false,
+    "new_author_execution": false,
+    "new_cryptographic_verification": false,
+    "current_delivery_relocation": "Not tested for the Wine calibration in iteration304"
+  },
+  "valueeval": {
+    "source_objects": 7,
+    "source_bytes": 2415058,
+    "certificates": 5,
+    "budget_denials": 5,
+    "coverage_frontier_bytes": [
+      637064,
+      920962,
+      1214497,
+      1721954,
+      2415058
+    ],
+    "metadata_subsets": 128,
+    "original_child_wall_seconds": 3.099386100017,
+    "source_selection": "Five post-hoc known positives from 29 development papers",
+    "cost_scope": "Logical unique payload bytes in the replay; excludes preparation, QA and runtime bootstrap",
+    "fixed_baseline_attains_dependency_optimum": true,
+    "method_advantage_established": false
+  },
+  "theory_binding": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\paper\\ccf_bc_20261011\\journal_draft_v08\\paper.tex",
+    "bytes": 76298,
+    "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+  },
+  "theory_transfer": {
+    "complete_native_world_model_established": false,
+    "equality_query_menu_matches_file_menu": false,
+    "application_adaptive_gain_established": false
+  },
+  "companion_scope": "A separate empirical technical companion; no change to the frozen theory contribution.",
+  "human_gold": false,
+  "human_technical_prerequisite": false,
+  "guard": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\ITER304_REGISTER_GUARD_V01.json",
+    "bytes": 3185,
+    "sha256": "c01e22a5a15b4711aae93048bf1e51ad38da6907e75d4c8f1493ec2c550ec607"
+  },
+  "generator": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\build_iter304_evidence_register_v01.py",
+    "bytes": 5439,
+    "sha256": "03ce8f141462782359fc7537dca17fb2f3bfa0e70863fb661b75e9233d93b12c"
+  }
+}

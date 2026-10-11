@@ -1,0 +1,368 @@
+    PAI at SemEval-2023 Task 4: A general multi-label classification system
+            with class-balanced loss function and ensemble module
+
+                         Long Ma, Zeye Sun, Jiawei Jiang, Xuan Li
+            {malong633,sunzeye273,jiangjiawei358,lixuan208}@pingan.com.cn
+                       Ping An Life Insurance Company of China, Ltd.
+
+
+
+                       Abstract                              Transformer-based models have demonstrated re-
+                                                             markable performance across a variety of NLP
+     The Human Value Detection shared task                   tasks in recent years. As a result, we adopt these
+     (Kiesel et al., 2023) aims to classify whether
+                                                             models as encoder in our work. To select the best
+     or not the argument draws on a set of 20 value
+     categories, given a textual argument. This is a
+                                                             encoder model, we evaluate 4 candidates, includ-
+     difficult task as the discrimination of human val-      ing BERT (Devlin et al., 2018), ALBERT (Lan
+     ues behind arguments is often implicit. More-           et al., 2019), RoBERTa (Liu et al., 2019), De-
+     over, the number of label categories can be             BERTa (He et al., 2020) and etc. The sentence
+     up to 20 and the distribution of data is highly         vector computed by the encoder is used as input
+     imbalanced. To address these issues, we em-             for the multi-label classifier. We select Sigmoid
+     ploy a multi-label classification model and uti-        function as the activation function for the classi-
+     lize a class-balanced loss function. Our system
+                                                             fier. Given the highly imbalanced nature of the
+     wins 5 first places, 2 second places, and 6 third
+     places out of 20 categories of the Human Value          data, we experiment with 5 loss functions that are
+     Detection shared task, and our overall average          specifically designed for such case, including focal
+     score of 0.54 also places third. The code is pub-       loss, distribution-balanced loss and etc., and se-
+     licly available at https://www.github.com/              lect CB-NTR loss (Huang et al., 2021) as our final
+     diqiuzhuanzhuan/semeval2023.                            loss function. In terms of data preprocessing, we
+                                                             conduct rewriting and data augmentation to solve
+1    Introduction                                            the weaknesses in the data and the model. In the
+The Human Value Detection shared task (Kiesel                end, we conduct 8-fold cross-validation and use
+et al., 2023) aims at building a system to identify          a weighted voting ensemble based on evaluation
+human values behind a textual argument. Though               scores of each class to get the final prediction.
+human values have been considered in formal argu-               Besides the system description, we also have
+mentation for about 20 years (Bench-Capon, 2003),            some interesting findings: (1) setting individual
+it is the first task to draw values from arguments           threshold for each classifier in a multi-label classi-
+computationally. The organizers provide the first            fication model may not be an effective approach,
+dataset Touché23-ValueEval Dataset (Mirzakhme-               (2) concatenating data that does not conform to hu-
+dova et al., 2023) for studying human values behind          man language can have a negative impact on model
+arguments. It contains 5270 arguments extracted              performance.
+from four different cultural backgrounds: Africa,
+                                                             2    Background
+China, India, and USA. All arguments are written
+in English. Every argument consists of three parts:          Despite many years of research on the relationship
+a premise, a conclusion, and a stance indicating             between human values and arguments, identifying
+whether the premise is in favor of or against the            human values from argumentative texts computa-
+conclusion. Table 1 demonstrates examples from               tionally is a novel approach. In this task, the heart
+the dataset.                                                 of value-based argumentation framework has been
+   In this paper, we propose a general multi-label           determined as a value taxonomy(or a set of values)
+classification system for the Human Value De-                that is both accepted and relevant by the organiz-
+tection shared task. To handle imbalanced data,              ers. The organizers extend the refined theory of
+we apply a class-balanced loss function and per-             (Schwartz et al., 2012) by adding and integrating
+form data augmentation for classes with fewer data.          nine values and building multi-level taxonomy in
+                                                          256
+        Proceedings of the The 17th International Workshop on Semantic Evaluation (SemEval-2023), pages 256–261
+                            July 13-14, 2023 ©2023 Association for Computational Linguistics
+                  conclusion                        stance           premise
+                                                                     we should ban human cloning
+                                                                     as it will only cause huge issues
+        We should ban human cloning               in favor of        when you have a bunch of the
+                                                                     same humans running around all
+                                                                     acting the same.
+                                                                     if you start legalizing drugs it
+                                                                     could open up the floodgates for
+         We should legalize cannabis               against
+                                                                     more legalization of dangerous
+                                                                     drugs.
+
+                                        Table 1: examples of argument.
+
+
+line with psychological research and publish the           pretrained models. We rewrite all the arguments by
+Touché23-ValueEval Dataset, in which there are a           modifying the positive or negative attitude in the
+total of 54 values and 20 value categories. However,       conclusion and use the premise and the modified
+in this task, we only care about the classification of     conclusion to build new input data. We also provide
+20 value categories. It’s worth mentioning that the        an illustration in Figure 2.
+organizers have already conducted experiments on              AugmentArgumentDataset The label distribu-
+Touché23-ValueEval Dataset and obtained results            tion is highly imbalanced, to mitigate data imbal-
+with an average F1 score of 0.25.                          ance issue, we concatenate ordinary samples with
+                                                           sparse-label samples to augment the sparse-label
+3   Our System                                             samples. Concretely, for each sparse sample, we
+                                                           randomly sample from the remaining samples, per-
+In this section, we will illustrate how our sys-
+                                                           form data concatenation, and merge the label of
+tem works. We use Transformer-based model as
+                                                           these two samples. The iteration continues until
+our encoder model. We build four kinds of data
+                                                           the number of samples in each category can reach
+modules: BaselineArgumentDataset, PremiseArgu-
+                                                           15% of the overall proportion.
+mentDataset, RewriteArgumentDataset and Aug-
+mentArgumentDataset, apply the best loss function,         3.2   Multi-label Classification Module
+and finally integrate the results from multiple data
+                                                           We approach Human Value Detection task as a
+modules. We also provide an overview of the sys-
+                                                           multi-label classification problem. We employ a
+tem in Figure 1.
+                                                           transformer-based model as our encoder and derive
+3.1 Data Module                                            a representation vector V ∈ RH from the [CLS]
+                                                           token’s embedding in the output of the encoder.
+Based on the characteristics of these data, we con-
+                                                           Then we learn |L|(the number of labels) binary
+struct four different datasets.
+                                                           classifiers Hl : X → {l, ¬l}, one for each different
+   BaselineArgumentDataset As mentioned in                 label l in L. We use the Sigmoid function as the
+previous section, each argument contains a premise,        activation function and set the activation threshold
+a conclusion, and a stance. We simply concatenate          to 0.5.
+the three part with a special separator token [SEP],
+make it work as our baseline data set.                               ȳ i = sigmoid(WiT ∗ V + bi )          (1)
+   PremiseArgumentDataset As shown in Table 1,
+the premise field obviously holds the richest infor-                     y i ∈ li   if {ȳ i < 0.5}
+mation. Only using the premise part is also a good
+                                                                       y i ∈ ¬li    if {ȳ i ≥ 0.5}
+option, so we build a new data module (named
+after PremiseArgumentDataset) that only uses the           where W T ∈ RH∗|L| denotes a logic matrix, b
+premise field.                                             denotes a bias, and i is the index of the matrix and
+   RewriteArgumentDataset The simple way of                the bias.
+concatenating data in BaselineArgumentDataset                 We also attempt to set different classification
+is not in line with natural language and therefore         thresholds for each label based on its frequency but
+is also inconsistent with the input data used by           find that it does not improve the performance.
+                                                         257
+Figure 1: The overall architecture of our proposed system. Data Module generates several different kinds of input
+data, then feds them into a multi-label classification model individually. In the end, the ensemble module obtains
+results by weight voting.
+
+
+
+
+              Figure 2: We modify the content of conclusion by inserting or removing some words.
+
+
+
+
+                                                       258
+                                                                                                                                                                                                                                                                                                               Benevolence: dependability
+                                                                                                                                                                                                                                                  Conformity: interpersonal
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                     Universalism: objectivity
+                                                                                                                                                                                                                                                                                                                                                                                           Universalism: tolerance
+                                 Self-direction: thought
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                            Universalism: concern
+                                                                                                                                                                                                                                                                                                                                                                    Universalism: nature
+                                                           Self-direction: action
+
+
+
+
+                                                                                                                                                                                                                                                                                         Benevolence: caring
+                                                                                                                           Power: dominance
+
+
+
+
+                                                                                                                                                                        Security: personal
+
+
+
+
+                                                                                                                                                                                                                              Conformity: rules
+                                                                                                                                                                                             Security: societal
+                                                                                                                                              Power: resources
+                                                                                                             Achievement
+                                                                                    Stimulation
+                                                                                                  Hedonism
+
+
+
+
+                                                                                                                                                                                                                  Tradition
+
+
+
+
+                                                                                                                                                                                                                                                                              Humility
+                                                                                                                                                                 Face
+   Test set / Approach     All
+   Main
+    Best per category      .59 .61 .71 .39 .39 .66 .50 .57 .39 .80 .68 .65 .61 .69 .39 .60 .43 .78 .87 .46 .58
+    Best approach          .56 .57 .71 .32 .25 .66 .47 .53 .38 .76 .64 .63 .60 .65 .32 .57 .43 .73 .82 .46 .52
+    BERT                   .42 .44 .55 .05 .20 .56 .29 .44 .13 .74 .59 .43 .47 .23 .07 .46 .14 .67 .71 .32 .33
+    1-Baseline             .26 .17 .40 .09 .03 .41 .13 .12 .12 .51 .40 .19 .31 .07 .09 .35 .19 .54 .17 .22 .46
+    2023-01-11-08-14-46    .54 .58 .71 .35 .34 .62 .43 .49 .31 .80 .68 .55 .61 .56 .16 .57 .34 .77 .83 .40 .42
+    2023-01-27-04-05-18    .54 .59 .71 .29 .32 .61 .45 .49 .36 .79 .67 .55 .59 .58 .12 .58 .34 .76 .85 .42 .48
+
+Table 2: Achieved F1 -score of our team PAI(theodor-zwinger) over test dataset, from macro-precision and macro-
+recall (All) and for each of the 20 value categories. Approaches marked with * were not part of the official evaluation.
+Approaches in gray are shown for comparison: an ensemble using the best participant approach for each individual
+category; the best participant approach; and the organizer’s BERT and 1-Baseline.
+
+
+3.3 Loss function                                                                                                                                                4           Experimental Setup
+                                                                                                                                                                 The implementation is based on PyTorch Light-
+Binary Cross Entropy(BCE) (Bengio et al., 2013),
+                                                                                                                                                                 ning1 , Transformers2 , and AllenNLP3 . During
+widely used for multi-label classification, is our
+                                                                                                                                                                 training, we set the batch size as 16, random seed
+baseline loss function. The main challenge lies in
+                                                                                                                                                                 as 42, learning rate as 1e-5, and warmup steps as
+the imbalance of label distribution and the com-
+                                                                                                                                                                 1000. We use the AdamW optimizer (Loshchilov
+plex dependencies between labels. A lot of work
+                                                                                                                                                                 and Hutter, 2017) and the polynomial decay sched-
+has been published on the design of loss function.
+                                                                                                                                                                 uler with the power of 0.01. We set a maximum
+Focal loss(FL) (Lin et al., 2017) places a higher
+                                                                                                                                                                 epoch of 25 and set patience of 3 for early stop.
+weight on samples with low probability to emerge.
+                                                                                                                                                                 All experiments are run on one single Tesla V100
+Class-balanced loss(CB) (Cui et al., 2019) design a
+                                                                                                                                                                 GPU.
+re-weighting scheme that uses the effective number
+of samples for each class. Distributed-balanced                                                                                                                     The macro F1 is our metric. As for data splits,
+loss(DB) (Wu et al., 2020) takes into account the                                                                                                                we directly use the official train and development
+impact caused by label co-occurrence and adds a                                                                                                                  set. But for the test set, we conduct 8-fold cross-
+negative tolerant regularization(NTR) to mitigate                                                                                                                validation and ensemble 8 results to one.
+the over-suppression of negative labels. CB-NTR
+loss (Huang et al., 2021) integrates NTR with CB.                                                                                                                5           Results and Analysis
+
+   We experiment with all the mentioned loss func-                                                                                                               In this section, we display our results and analyze
+tions and find that the CB-NTR loss function per-                                                                                                                the impact of each component through ablation
+forms the best in this task.                                                                                                                                     studies.
+
+                                                                                                                                                                 5.1                    Results
+3.4 Ensemble                                                                                                                                                     In this competition with a total of 47 teams, we
+                                                                                                                                                                 achieve the third place with a macro F1 score of
+When submitting the results of the final test set, we                                                                                                            0.54. We outperform the official baseline by 0.28
+apply the model ensemble. Given the m predictions                                                                                                                and the official BERT by 0.12. The result is shown
+{yθ1 , ..., yθ3 } generated by m models, following                                                                                                               in Table 2.
+(Ma et al., 2022), we form the final results by voting                                                                                                                  1
+                                                                                                                                                                          https://www.pytorchlightning.ai
+based on the F1 score of each value category on                                                                                                                         2
+                                                                                                                                                                          https://huggingface.co/docs/transformers/index
+validation set.                                                                                                                                                         3
+                                                                                                                                                                          https://allenai.org/allennlp
+
+                                                                                                                                                259
+        Prerained-model       dev macro F1                              loss         dev macro F1
+        BERTbase                  0.362                                 BCE              0.460
+        BERTlarge                 0.423                                 FL               0.469
+        RoBERTabase               0.422                                 CB               0.478
+        RoBERTalarge              0.460                                 DB               0.469
+        DeBERTav3_base            0.395                                 CB-NTR           0.492
+        DeBERTav3_large           0.443
+        ALBERTbase                0.332                    Table 5: Dev macro F1 score of different loss functions.
+        ALBERTlarge               0.361
+                                                                approach     dev macro F1        test macro F1
+Table 3: Dev macro F1 score of different Transformer-          no ensemble       0.492                0.498
+based models.                                                   ensemble         0.512                0.538
+
+                                                           Table 6: macro F1 score over dev and test data with
+   data module                     dev macro F1            ensemble or no ensemble
+   BaselineArgumentDataset             0.460
+   PremiseArgumentDataset              0.462
+   RewriteArgumentDataset              0.468               6     Conclusion
+   AugmentArgumentDataset              0.463               In this paper, we describe our system on how to
+                                                           use multi-label classification model to handle Hu-
+Table 4: Dev macro F1 score of different data modules.
+                                                           man Value Detection task (Kiesel et al., 2023). We
+                                                           win 5 first places, 2 second places, and 6 third
+                                                           places on the leaderboard. We analyze both the
+5.2 Ablation Study
+                                                           data and model characteristics in-depth and imple-
+We also conduct ablation experiments to validate           ment modifications on data processing and loss
+our designs, including encoder model, data mod-            function design. These adjustments are verified
+ules, loss function, and ensemble. Due to limited          through extensive evaluations. Nevertheless, we
+space, we only compare the macro F1 of all cate-           don’t leverage information contained within the la-
+gories.                                                    bels. For future research, how to incorporate the
+   Encoder Model We build our baseline model               information of individual labels into a multi-label
+with BaselineArgumentDataset and BCE loss and              classification model is also a promising direction
+run experiments to find out the best encoder model         for us.
+among RoBERTa (Liu et al., 2019), BERT (Devlin
+et al., 2018), ALBERT (Lan et al., 2019), DeBERTa          References
+(He et al., 2020), etc. As shown in Table 3, the large
+                                                           Trevor JM Bench-Capon. 2003. Persuasion in prac-
+version of RoBERTa achieves the best score.
+                                                             tical argument using value-based argumentation
+   Data Module We use the best encoder model to              frameworks. Journal of Logic and Computation,
+conduct ablation experiments on the data module.             13(3):429–448.
+The results are shown in Table 4                           Yoshua Bengio, Aaron Courville, and Pascal Vincent.
+   Loss Function We further evaluate different loss          2013. Representation learning: A review and new
+functions by average F1 scores, including BCE                perspectives. IEEE transactions on pattern analysis
+                                                             and machine intelligence, 35(8):1798–1828.
+(Bench-Capon, 2003), FL (Lin et al., 2017), CB
+(Cui et al., 2019), DB (Wu et al., 2020), and CB-          Yin Cui, Menglin Jia, Tsung-Yi Lin, Yang Song, and
+NTR (Huang et al., 2021). As shown in Table 5,               Serge Belongie. 2019. Class-balanced loss based
+                                                             on effective number of samples. In Proceedings of
+CB-NTR loss achieves the best score.                         the IEEE/CVF conference on computer vision and
+   Ensemble Our ensemble approach can signif-                pattern recognition, pages 9268–9277.
+icantly improve performance. We integrate the              Jacob Devlin, Ming-Wei Chang, Kenton Lee, and
+results of different data modules based on their per-         Kristina Toutanova. 2018. Bert: Pre-training of deep
+formance on the development set. The result is                bidirectional transformers for language understand-
+shown in Table 6, where we can see our ensem-                 ing. arXiv preprint arXiv:1810.04805.
+ble approach outperforms the best single-model by          Pengcheng He, Xiaodong Liu, Jianfeng Gao, and
+0.04 F1 score over test set.                                 Weizhu Chen. 2020. Deberta: Decoding-enhanced
+
+                                                         260
+  bert with disentangled attention.       arXiv preprint      A   Appendix
+  arXiv:2006.03654.
+                                                              The team name of us in TIRA system: theodor-
+Yi Huang, Buse Giledereli, Abdullatif Köksal, Arzucan
+                                                              zwinger
+   Özgür, and Elif Ozkirimli. 2021. Balancing meth-
+   ods for multi-label text classification with long-tailed
+   class distribution. arXiv preprint arXiv:2109.04712.
+Johannes Kiesel, Milad Alshomary, Nailia Mirzakhme-
+  dova, Maximilian Heinrich, Nicolas Handke, Hen-
+  ning Wachsmuth, and Benno Stein. 2023. Semeval-
+  2023 task 4: Valueeval: Identification of human
+  values behind arguments. In Proceedings of the
+  17th International Workshop on Semantic Evaluation,
+  Toronto, Canada. Association for Computational Lin-
+  guistics.
+Zhenzhong Lan, Mingda Chen, Sebastian Goodman,
+  Kevin Gimpel, Piyush Sharma, and Radu Soricut.
+  2019. Albert: A lite bert for self-supervised learn-
+  ing of language representations. arXiv preprint
+  arXiv:1909.11942.
+Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He,
+  and Piotr Dollár. 2017. Focal loss for dense object
+  detection. In Proceedings of the IEEE international
+  conference on computer vision, pages 2980–2988.
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Man-
+  dar Joshi, Danqi Chen, Omer Levy, Mike Lewis,
+  Luke Zettlemoyer, and Veselin Stoyanov. 2019.
+  Roberta: A robustly optimized bert pretraining ap-
+  proach. arXiv preprint arXiv:1907.11692.
+Ilya Loshchilov and Frank Hutter. 2017. Decou-
+   pled weight decay regularization. arXiv preprint
+   arXiv:1711.05101.
+Long Ma, Xiaorong Jian, and Xuan Li. 2022. Pai at
+  semeval-2022 task 11: Name entity recognition with
+  contextualized entity representations and robust loss
+  functions. In Proceedings of the 16th International
+  Workshop on Semantic Evaluation (SemEval-2022),
+  pages 1665–1670.
+Nailia Mirzakhmedova, Johannes Kiesel, Milad Al-
+  shomary, Maximilian Heinrich, Nicolas Handke, Xi-
+  aoni Cai, Barriere Valentin, Doratossadat Dastgheib,
+  Omid Ghahroodi, Mohammad Ali Sadraei, Ehsaned-
+  din Asgari, Lea Kawaletz, Henning Wachsmuth, and
+  Benno Stein. 2023. The Touché23-ValueEval Dataset
+  for Identifying Human Values behind Arguments.
+  CoRR, abs/2301.13771.
+Shalom H Schwartz, Jan Cieciuch, Michele Vecchione,
+  Eldad Davidov, Ronald Fischer, Constanze Beierlein,
+  Alice Ramos, Markku Verkasalo, Jan-Erik Lönnqvist,
+  Kursad Demirutku, et al. 2012. Refining the theory
+  of basic individual values. Journal of personality and
+  social psychology, 103(4):663.
+Tong Wu, Qingqiu Huang, Ziwei Liu, Yu Wang, and
+  Dahua Lin. 2020. Distribution-balanced loss for
+  multi-label classification in long-tailed datasets. In
+  Computer Vision–ECCV 2020: 16th European Con-
+  ference, Glasgow, UK, August 23–28, 2020, Proceed-
+  ings, Part IV 16, pages 162–178. Springer.
+
+                                                           261
+

@@ -1,0 +1,34 @@
+{
+  "name": "baseline",
+  "command": [
+    "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\sql_baseline_v02.py",
+    "--protocol",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\protocol.json",
+    "--output",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\baseline",
+    "--resource-check",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\RESOURCE_CHECK.json"
+  ],
+  "started_utc": "2026-10-11T19:37:47.609986+00:00",
+  "attempts": 1,
+  "automatic_retry": false,
+  "actual_returncode": 0,
+  "terminal": "EXITED",
+  "stdout": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stdout.txt",
+    "bytes": 1741,
+    "sha256": "0a6f5a7a7cfc2dbb0cf42bbd5abd6e66f18fd17015ee73552de712dcabc53920"
+  },
+  "stderr": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "ended_utc": "2026-10-11T19:37:47.943017+00:00",
+  "elapsed_seconds": 0.33298359997570515
+}

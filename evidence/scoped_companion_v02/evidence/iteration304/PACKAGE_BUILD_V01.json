@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "status": "PACKAGE_PREPARED_NOT_EXECUTED",
+  "created_utc": "2026-10-11T19:13:04.729375+00:00",
+  "package_directory": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01",
+  "files": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+    },
+    {
+      "path": "budget_replay.py",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+    },
+    {
+      "path": "expected_scientific.json",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+    },
+    {
+      "path": "parser/verify_exact_id_five.py",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    {
+      "path": "run.py",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+    },
+    {
+      "path": "sources/archive_evaluations.raw",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+    },
+    {
+      "path": "sources/organizer_main.raw",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+    },
+    {
+      "path": "sources/paper_13.pdf",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+    },
+    {
+      "path": "sources/paper_16.pdf",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+    },
+    {
+      "path": "sources/paper_3.pdf",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+    },
+    {
+      "path": "sources/paper_35.pdf",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+    },
+    {
+      "path": "sources/paper_41.pdf",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+    }
+  ],
+  "file_count": 14,
+  "total_payload_bytes": 2481173,
+  "zip": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01.zip",
+    "bytes": 1767911,
+    "sha256": "7c9144643b8ec9e2779cff5cf259dd334972a565264eb7c3d053c52b7fd709a7",
+    "exact_member_readback": true
+  },
+  "original_protocol_sha256": "1932812e49eb5c4456038bb8c5f471ce2739072f29e3d3ba3d37dfe9a56b97bf",
+  "portable_protocol_sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a",
+  "original_code_sha256": "8e3b5432df71e00e6ab3cb35758f625c35d0fef28deac6e31e1a89826624e876",
+  "portable_code_sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91",
+  "parser_sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15",
+  "parser_byte_identical": true,
+  "seven_sources_byte_identical": true,
+  "unchanged_ast_definitions": [
+    "sha",
+    "require",
+    "measure",
+    "pinned_bootstrap",
+    "Meter"
+  ],
+  "exact_code_replacements": [
+    {
+      "label": "pin relative protocol",
+      "old": "PROTOCOL_SHA256='1932812e49eb5c4456038bb8c5f471ce2739072f29e3d3ba3d37dfe9a56b97bf'",
+      "new": "PROTOCOL_SHA256='b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a'"
+    },
+    {
+      "label": "external dependency argument and absolute runtime resolution",
+      "old": "    args=ap.parse_args();start=time.perf_counter();cpu_start=time.process_time()",
+      "new": "    ap.add_argument('--pdftotext',type=Path,required=True)\n    args=ap.parse_args();start=time.perf_counter();cpu_start=time.process_time()\n    args.protocol=args.protocol.resolve();args.output=args.output.resolve()\n    args.pdftotext=args.pdftotext.resolve(strict=True)"
+    },
+    {
+      "label": "resolve bundle data without reading it",
+      "old": "        p=json.loads(pb);result['protocol_sha256']=sha(pb)",
+      "new": "        p=json.loads(pb);result['protocol_sha256']=sha(pb)\n        bundle=args.protocol.parent\n        def local_member(relative):\n            require(isinstance(relative,str) and not Path(relative).is_absolute()\n                    and '\\\\' not in relative and ':' not in relative\n                    and '..' not in relative.split('/'),'UNSAFE_BUNDLE_PATH')\n            resolved=(bundle/relative).resolve(strict=True)\n            require(bundle in resolved.parents,'BUNDLE_PATH_ESCAPE')\n            return str(resolved)\n        for spec in p['sources'].values():spec['path']=local_member(spec['path'])\n        p['parser']['path']=local_member(p['parser']['path'])\n        p['pdf_executable']['path']=str(args.pdftotext)"
+    },
+    {
+      "label": "portable runtime path description",
+      "old": "'working_directory_and_TEMP':'replay_v01/temp_on_D_for_TEMP;replay_v01_for_cwd'",
+      "new": "'working_directory_and_TEMP':'output/temp_for_TEMP;output_for_cwd'"
+    }
+  ],
+  "code_unified_diff": "--- iteration303/budget_replay.py\n+++ package/budget_replay.py\n@@ -11,7 +11,7 @@\n import time\n import types\n \n-PROTOCOL_SHA256='1932812e49eb5c4456038bb8c5f471ce2739072f29e3d3ba3d37dfe9a56b97bf'\n+PROTOCOL_SHA256='b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a'\n \n \n def sha(b):\n@@ -68,7 +68,10 @@\n def main():\n     ap=argparse.ArgumentParser(description=__doc__)\n     ap.add_argument('--protocol',type=Path,required=True);ap.add_argument('--output',type=Path,required=True)\n+    ap.add_argument('--pdftotext',type=Path,required=True)\n     args=ap.parse_args();start=time.perf_counter();cpu_start=time.process_time()\n+    args.protocol=args.protocol.resolve();args.output=args.output.resolve()\n+    args.pdftotext=args.pdftotext.resolve(strict=True)\n     require(args.output.is_dir(),'OUTPUT_DIRECTORY_REQUIRED')\n     require(not (args.output/'RESULT_V01.json').exists(),'REFUSE_OVERWRITE')\n     result={'schema':1,'status':'FAIL_INCOMPLETE','started_utc':datetime.now(timezone.utc).isoformat(),\n@@ -78,6 +81,17 @@\n         bootstrap_start=time.perf_counter();bootstrap_cpu=time.process_time()\n         pb=args.protocol.read_bytes();require(sha(pb)==PROTOCOL_SHA256,'PROTOCOL_PIN_MISMATCH')\n         p=json.loads(pb);result['protocol_sha256']=sha(pb)\n+        bundle=args.protocol.parent\n+        def local_member(relative):\n+            require(isinstance(relative,str) and not Path(relative).is_absolute()\n+                    and '\\\\' not in relative and ':' not in relative\n+                    and '..' not in relative.split('/'),'UNSAFE_BUNDLE_PATH')\n+            resolved=(bundle/relative).resolve(strict=True)\n+            require(bundle in resolved.parents,'BUNDLE_PATH_ESCAPE')\n+            return str(resolved)\n+        for spec in p['sources'].values():spec['path']=local_member(spec['path'])\n+        p['parser']['path']=local_member(p['parser']['path'])\n+        p['pdf_executable']['path']=str(args.pdftotext)\n         parser_bytes=pinned_bootstrap(p['parser']);pinned_bootstrap(p['pdf_executable'])\n         # Import only definitions from the pinned module; its main and mutation controls are not called.\n         parser_module=types.ModuleType('iteration303_frozen_pure_parser')\n@@ -132,7 +146,7 @@\n                     'returncode':returncode,'timed_out':timed_out,'timing':timing,\n                     'stdout':{'path':txt_name,'bytes':len(stdout),'sha256':sha(stdout)},\n                     'stderr':{'path':err_name,'bytes':len(stderr),'sha256':sha(stderr)},\n-                    'working_directory_and_TEMP':'replay_v01/temp_on_D_for_TEMP;replay_v01_for_cwd'}\n+                    'working_directory_and_TEMP':'output/temp_for_TEMP;output_for_cwd'}\n             result['pdf_subprocesses'].append(record)\n             require(not timed_out and returncode==0,'PDF_STDIN_EXTRACTION_FAILED:'+key)\n             text=stdout.decode('utf-8')\n",
+  "protocol_changes": {
+    "source_paths": {
+      "organizer": "sources/organizer_main.raw",
+      "archive": "sources/archive_evaluations.raw",
+      "paper_3": "sources/paper_3.pdf",
+      "paper_13": "sources/paper_13.pdf",
+      "paper_16": "sources/paper_16.pdf",
+      "paper_35": "sources/paper_35.pdf",
+      "paper_41": "sources/paper_41.pdf"
+    },
+    "parser_path": "parser/verify_exact_id_five.py",
+    "external_pdf_cli_argument": true,
+    "removed_local_administrative_keys": [
+      "guard",
+      "preparer",
+      "P1_hash_only"
+    ],
+    "evidence_io_path_wording_only": true,
+    "added_portability_provenance": true
+  },
+  "scientific_configuration_equal": true,
+  "expected_projection_source_sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff",
+  "expected_projection_exclusions": {
+    "top_level": [
+      "started_utc",
+      "ended_utc",
+      "timings",
+      "protocol_sha256",
+      "timing_scope"
+    ],
+    "acquisition_events": [
+      "wall_seconds",
+      "python_parent_cpu_seconds"
+    ],
+    "checkpoints": [
+      "certificate_verification_timing"
+    ],
+    "pdf_subprocesses": [
+      "timing",
+      "working_directory_and_TEMP"
+    ]
+  },
+  "expected_answer_read_by_launcher_only_after_child_terminal": true,
+  "manifest_raw_hashes_checked_during_meter_only": true,
+  "build_ast_parse_only": true,
+  "replay_executed": false,
+  "zip_readback_is_not_scientific_execution": true,
+  "human_review": false,
+  "guard_path": "maintenance/storage_resume_20261010/ITER304_PACKAGE_BUILD_GUARD_V01.json",
+  "guard_actual_tool_chunk": "2c959e",
+  "guard_actual_exit_code": 0
+}

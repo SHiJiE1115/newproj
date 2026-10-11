@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "status": "PASS_LAYERED_RECEIPT_CALIBRATION_WITH_EQUAL_STRONG_BASELINE",
+  "created_utc": "2026-10-11T18:52:54.076894+00:00",
+  "protocol": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\PROTOCOL_V01.json",
+    "bytes": 13268,
+    "sha256": "f66524b4d3736035079cf1feb89ab46ca6979b1b755e5491a092ebaf0af748ad"
+  },
+  "candidate": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\candidate_v01\\CANDIDATE_RESULT_V01.json",
+    "bytes": 264208,
+    "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+  },
+  "baseline": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v02\\BASELINE_RESULT_V02.json",
+    "bytes": 152915,
+    "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+  },
+  "root_review": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\wine_layer_calibration_20261012\\ROOT_IMPLEMENTATION_REVIEW_V01.json",
+    "bytes": 4687,
+    "sha256": "7fc5a5f5f1b67cd80efaed854c03cfd156d93197548ece3341d69548e90a20b7"
+  },
+  "same_information_layer_outputs": {
+    "v07": {
+      "layers": {
+        "artifact_numeric": "UNRESOLVED",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    "v08": {
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    "v09": {
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "MET",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 1
+    },
+    "mixed_identity": {
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "UNRESOLVED",
+        "retained_signed_identity": "UNRESOLVED",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    "mixed_output": {
+      "layers": {
+        "artifact_numeric": "UNRESOLVED",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "UNRESOLVED",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 0
+    },
+    "duplicate_v09": {
+      "layers": {
+        "artifact_numeric": "MET",
+        "selected_read_gate": "MET",
+        "retained_signed_identity": "MET",
+        "joint_scoped_receipt": "MET",
+        "historical_2020_execution": "UNRESOLVED"
+      },
+      "joint_distinct_identity_count": 1
+    }
+  },
+  "real_archives": 3,
+  "constructed_splice_controls": 2,
+  "constructed_duplicate_controls": 1,
+  "layer_labels_compared": 30,
+  "independent_implementation_agreement": true,
+  "new_author_executions": 0,
+  "new_cryptographic_verifications": 0,
+  "API_calls": 0,
+  "Actions_dispatches": 0,
+  "method_advantage_established": false,
+  "human_gold_created": false,
+  "historical_authentication_established": false,
+  "P1_hash_only": "1d74a539c62fe5dad4438f561416cca5b18a87d3e597b10e71a1cf2cc1538b8e",
+  "unchanged_manuscript": [
+    {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\paper\\ccf_bc_20261011\\journal_draft_v08\\paper.tex",
+      "bytes": 76298,
+      "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+    },
+    {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\paper\\ccf_bc_20261011\\journal_draft_v08\\paper.pdf",
+      "bytes": 588609,
+      "sha256": "4fcce94f4692289d3a44987cc616b3ed917237d057d385a7bcbabb686888ca31"
+    },
+    {
+      "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\paper\\ccf_bc_20261011\\journal_draft_v08\\references.bib",
+      "bytes": 9733,
+      "sha256": "0b15e13a0c724d4442aa5ae4d17abdc6ae48b0a2bae07d58493ef8d242dcc91b"
+    }
+  ],
+  "original_input_files_unchanged": true,
+  "guard": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\ITER302_FINAL_GUARD_V01.json",
+    "bytes": 3193,
+    "sha256": "cc64c460db3ed2e61fd5122c122171e30a84eae3727353d23d0b1f19a0d963b6"
+  },
+  "finalizer": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\finalize_iter302_v01.py",
+    "bytes": 12962,
+    "sha256": "20146f7abdb65f3f466dca3559123b68db57ee7a90feadbb9cf2a2e891cd3bf8"
+  },
+  "scope_decision": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\wine_layer_calibration_20261012\\SCOPE_DECISION_V01.json",
+    "bytes": 1884,
+    "sha256": "682fd6d094a92977678bcb492e699df3f26bc8fdea275b2a945ad60ec848d36f"
+  },
+  "report": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\RESEARCH_ITERATION_302_ZH.md",
+    "bytes": 3918,
+    "sha256": "562741badc1010ab9faca29ce22469af2debaf663db7de047eec46862b906648"
+  },
+  "direction_after": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\CURRENT_RESEARCH_DIRECTION.json",
+    "bytes": 32679,
+    "sha256": "3f01eba5ca29098b06984e5ecd39140ea0d848d85c8d366ad45a6a1d99993c6a"
+  },
+  "index_after": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\README.md",
+    "bytes": 160490,
+    "sha256": "9f67d56a79b9e81aebcb889f5a80b123b87b7eaa6b168fcbdaaf2e147bf8a1cb"
+  },
+  "implementation_files": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\candidate_v01\\CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\candidate_v01\\EXECUTION_V01.json",
+      "bytes": 683,
+      "sha256": "0f99a7745248d92236b56bbf7af983c132c61d1ac4938df29adef8636b35b53d"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\candidate_v01\\layer_candidate.py",
+      "bytes": 21272,
+      "sha256": "50412f29910b082096bb4f394d2e4abe48b5be39221c1a55dafadee8447589f1"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v01\\BASELINE_RESULT_V01.json",
+      "bytes": 147846,
+      "sha256": "d49e9b7d90d48555c82b502c92edc39ebbe52dbb5df7b3924a2563d5690b2da1"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v01\\EXECUTION_V01.json",
+      "bytes": 2058,
+      "sha256": "efc38351189679623cb613cd0f4178f75b1dab1d3009fae80980e7867e108bea"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v01\\sql_baseline_v01.py",
+      "bytes": 28352,
+      "sha256": "430f2ed8703d8b207435c4c3c44e7a6c8daca036baeb7bc5b993cd4005e95cc1"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v02\\BASELINE_RESULT_V02.json",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v02\\EXECUTION_V02.json",
+      "bytes": 6112,
+      "sha256": "50f6b35ee76c05af52f8ba9e40096ce740d8431cbc98140d9ccd45b12c859923"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration302\\baseline_v02\\sql_baseline_v02.py",
+      "bytes": 28721,
+      "sha256": "487cc0a6f95fe0026edc05298765ac7608b693aea0e4473d84f4e8e1c0977312"
+    }
+  ],
+  "final_C_free_GiB": 11.416996002197266,
+  "goal": "ACTIVE_ORDINARY_CCF_RESEARCH_NOT_SUBMITTED"
+}

@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "status": "PASS_EXACT_FOURTEEN_FILE_ASSEMBLY",
+  "started_utc": "2026-10-11T19:53:39.288137+00:00",
+  "mode": "exact_local_import",
+  "scientific_replay_executed": false,
+  "new_scientific_sample": false,
+  "bootstrap_acquisition_is_outside_scientific_budget": true,
+  "attempts_per_source_maximum": 1,
+  "output": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\exact assembled package",
+  "sources": [
+    {
+      "member": "sources/organizer_main.raw",
+      "expected_bytes": 83506,
+      "expected_sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "attempts": 1,
+      "mode": "exact_local_import",
+      "source_filename": "organizer_main.raw",
+      "observed_bytes_at_most_limit_plus_one": 83506,
+      "observed_sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "exact_pin_match": true
+    },
+    {
+      "member": "sources/archive_evaluations.raw",
+      "expected_bytes": 410492,
+      "expected_sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "attempts": 1,
+      "mode": "exact_local_import",
+      "source_filename": "archive_evaluations.raw",
+      "observed_bytes_at_most_limit_plus_one": 410492,
+      "observed_sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "exact_pin_match": true
+    }
+  ],
+  "human_review": false,
+  "files": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+    },
+    {
+      "path": "budget_replay.py",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+    },
+    {
+      "path": "expected_scientific.json",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+    },
+    {
+      "path": "parser/verify_exact_id_five.py",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    {
+      "path": "run.py",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+    },
+    {
+      "path": "sources/archive_evaluations.raw",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+    },
+    {
+      "path": "sources/organizer_main.raw",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+    },
+    {
+      "path": "sources/paper_13.pdf",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+    },
+    {
+      "path": "sources/paper_16.pdf",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+    },
+    {
+      "path": "sources/paper_3.pdf",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+    },
+    {
+      "path": "sources/paper_35.pdf",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+    },
+    {
+      "path": "sources/paper_41.pdf",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+    }
+  ],
+  "original_manifest_sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f",
+  "scientific_contract_unchanged": true,
+  "instruction": "Run the unchanged run.py separately with its required external pdftotext; assembly does not execute the replay.",
+  "ended_utc": "2026-10-11T19:53:41.021376+00:00"
+}

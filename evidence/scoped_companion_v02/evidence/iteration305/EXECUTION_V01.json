@@ -1,0 +1,294 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_SINGLE_RELOCATION_QA",
+  "human_review": false,
+  "created_utc": "2026-10-11T19:38:32.641038+00:00",
+  "provenance": "Agent transcription of actual tool results and persisted subprocess receipts; not an OS-signed attestation.",
+  "actual_tool_execution": {
+    "chunk_id": "c13c54",
+    "exit_code": 0,
+    "wall_time_seconds": 2.5860377,
+    "session_id": null,
+    "command": [
+      "C:/Users/dongs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\accept_wine_relocated_v01.py"
+    ]
+  },
+  "observed_preflights": [
+    {
+      "chunk_id": "1e0bd8",
+      "exit_code": 0,
+      "receipt": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER305_RELOCATION_QA_PREFLIGHT_V01.json",
+        "bytes": 3194,
+        "sha256": "2051f6628966e7d6481357a9b37f083a466e6ea6fbf45ecfcfaa9fa8a77bf9ca"
+      }
+    },
+    {
+      "chunk_id": "d0edd4",
+      "exit_code": 0,
+      "wall_time_seconds": 0.6496825,
+      "receipt": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER305_RELOCATION_QA_EXEC_PREFLIGHT_V01.json",
+        "bytes": 3194,
+        "sha256": "b2c260a851e8bc37c0b894a56c9280eceb42c27d78e473bfbbbaad78fcf0fe37"
+      }
+    },
+    {
+      "chunk_id": "ce9bcb",
+      "exit_code": 0,
+      "wall_time_seconds": 0.404413,
+      "receipt": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER305_RELOCATION_QA_RECEIPT_PREFLIGHT_V01.json",
+        "bytes": 3193,
+        "sha256": "12f854b3de0960b3e0496f91a22133c356e4daa7751fbf84c120e6d89b3a4fef"
+      }
+    }
+  ],
+  "syntax_check": {
+    "chunk_id": "33557a",
+    "exit_code": 0,
+    "scope": "AST parse only; no scientific execution"
+  },
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/accept_wine_relocated_v01.py",
+    "bytes": 26885,
+    "sha256": "528a5732c5fc2622e421c08a20d13a2fcb44055e0036f6d9250e8ecf22117fa2"
+  },
+  "acceptance": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/PACKAGE_ACCEPTANCE_V01.json",
+    "bytes": 102858,
+    "sha256": "d6fe9f257f07661468246d7acf58e0438c6c5b1cf653e4edec1f4f68e7fea932"
+  },
+  "actual_launcher": {
+    "command": [
+      "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\run.py",
+      "--output",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output"
+    ],
+    "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration305/unrelated working directory",
+    "started_utc": "2026-10-11T19:37:47.018964+00:00",
+    "pid": 18900,
+    "returncode": 0,
+    "wall_seconds": 1.0569617000001017,
+    "ended_utc": "2026-10-11T19:37:48.076241+00:00",
+    "stdout": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stdout.txt",
+      "bytes": 282,
+      "sha256": "b3a7186976a299faec52e28eff0c9d7196900079bb40d43991e5ba34db24aaab"
+    },
+    "stderr": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "actual_children": [
+    {
+      "name": "candidate",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\layer_candidate.py",
+        "--protocol",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\protocol.json",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\candidate"
+      ],
+      "started_utc": "2026-10-11T19:37:47.249509+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "actual_returncode": 0,
+      "terminal": "EXITED",
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stdout.txt",
+        "bytes": 1677,
+        "sha256": "89b0ef4f102688fedce7e9a3040244a1a9ded329327f676596646e7a599b6670"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T19:37:47.608611+00:00",
+      "elapsed_seconds": 0.35932219997630455
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\sql_baseline_v02.py",
+        "--protocol",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\protocol.json",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\baseline",
+        "--resource-check",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\RESOURCE_CHECK.json"
+      ],
+      "started_utc": "2026-10-11T19:37:47.609986+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "actual_returncode": 0,
+      "terminal": "EXITED",
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stdout.txt",
+        "bytes": 1741,
+        "sha256": "0a6f5a7a7cfc2dbb0cf42bbd5abd6e66f18fd17015ee73552de712dcabc53920"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T19:37:47.943017+00:00",
+      "elapsed_seconds": 0.33298359997570515
+    }
+  ],
+  "launcher_invocations": 1,
+  "candidate_invocations": 1,
+  "baseline_invocations": 1,
+  "automatic_retries": 0,
+  "qa_total_wall_seconds": 2.2336148000031244,
+  "instrumented_qa_read_bytes": 27219595,
+  "instrumented_qa_read_calls": 130,
+  "zip_extraction_decompressed_bytes": 4992809,
+  "read_scope": "Instrumented QA content reads; ZIP member extraction streaming bytes separately. Excludes interpreter/runtime/OS traffic and preliminary interactive code reads; no acquisition-cost claim.",
+  "old_references_opened_after_both_child_terminals": true,
+  "new_candidate": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/CANDIDATE_RESULT_V01.json",
+    "bytes": 264208,
+    "sha256": "1a97c907b59136e883ebb697391fc3a8ae1b30226f1560aae0385056b58d8204"
+  },
+  "new_baseline": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/baseline/BASELINE_RESULT_V02.json",
+    "bytes": 153224,
+    "sha256": "ae68fe3fccb79fc6453f254f335febdd0c9083a262232e5575fac203ff32e9d3"
+  },
+  "launcher_result": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESULT.json",
+    "bytes": 34772,
+    "sha256": "22f9d937f76cba0d52e780a551f3674c3b0aea40c05e8057333e771b1dae653a"
+  },
+  "candidate_execution": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/EXECUTION_V01.json",
+    "bytes": 683,
+    "sha256": "7639529aba6b154dd60cd5316d63d9a769d500c5756dad3be3b5c8bd4ada6ed7"
+  },
+  "delivery_zip": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01.zip",
+    "bytes": 1019047,
+    "sha256": "7c69e4d62437f25485cad2994c99936a8c74c9e456d7d839b483e6c4f7c70002"
+  },
+  "output_inventory_before_this_receipt": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/accept_wine_relocated_v01.py",
+      "bytes": 26885,
+      "sha256": "528a5732c5fc2622e421c08a20d13a2fcb44055e0036f6d9250e8ecf22117fa2"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/launcher.stdout.txt",
+      "bytes": 282,
+      "sha256": "b3a7186976a299faec52e28eff0c9d7196900079bb40d43991e5ba34db24aaab"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/PACKAGE_ACCEPTANCE_V01.json",
+      "bytes": 102858,
+      "sha256": "d6fe9f257f07661468246d7acf58e0438c6c5b1cf653e4edec1f4f68e7fea932"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/baseline/BASELINE_RESULT_V02.json",
+      "bytes": 153224,
+      "sha256": "ae68fe3fccb79fc6453f254f335febdd0c9083a262232e5575fac203ff32e9d3"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "1a97c907b59136e883ebb697391fc3a8ae1b30226f1560aae0385056b58d8204"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/candidate/EXECUTION_V01.json",
+      "bytes": 683,
+      "sha256": "7639529aba6b154dd60cd5316d63d9a769d500c5756dad3be3b5c8bd4ada6ed7"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.process.json",
+      "bytes": 1430,
+      "sha256": "133cbf0a875e85abbc4b5c417c841c5443fdc21f39ebe18a5950f2fef6e06a23"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/baseline.stdout.txt",
+      "bytes": 1741,
+      "sha256": "0a6f5a7a7cfc2dbb0cf42bbd5abd6e66f18fd17015ee73552de712dcabc53920"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.process.json",
+      "bytes": 1292,
+      "sha256": "86d955c7ba2d9122b60d3f1749384c5b3c50ea15079d643fdaf690bd08a2ccf3"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stdout.txt",
+      "bytes": 1677,
+      "sha256": "89b0ef4f102688fedce7e9a3040244a1a9ded329327f676596646e7a599b6670"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESOURCE_CHECK.json",
+      "bytes": 448,
+      "sha256": "462fe6179d15f51a1d61ad9fbeb6b9baa4fad51e000ed049ae92047a48c0dfc5"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESULT.json",
+      "bytes": 34772,
+      "sha256": "22f9d937f76cba0d52e780a551f3674c3b0aea40c05e8057333e771b1dae653a"
+    }
+  ],
+  "outcomes": {
+    "old_certificates_reconstructed": 30,
+    "new_certificates_reconstructed": 30,
+    "layer_labels": 30,
+    "MET": 12,
+    "UNRESOLVED": 18,
+    "full_candidate_exact_rebind": true,
+    "full_baseline_exact_administrative_whitelist": true,
+    "17_original_and_relocated_inputs_unchanged": true,
+    "25_package_members_and_zip_unchanged": true
+  },
+  "limits": [
+    "One software delivery replay of the original iteration302 finite calibration; no new scientific samples or method advantage.",
+    "Both new worker processes completed before old answer comparison; package reference bytes were hashed/copied earlier only as opaque payload.",
+    "Timing is a local execution on already available files, not a network/cold-cache performance result.",
+    "Old directories remained OS-accessible; no sandbox/inaccessibility claim.",
+    "Private paths in this QA receipt and inherited archived metadata make it an internal receipt, not an anonymized public release."
+  ],
+  "final_write_scope": "Only this new EXECUTION_V01.json after successful QA; no scientific rerun."
+}

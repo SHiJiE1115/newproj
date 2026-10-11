@@ -1,0 +1,554 @@
+Andronicus of Rhodes at SemEval-2023 Task 4: Transformer-Based Human
+  Value Detection using Four Different Neural Network Architectures
+                 Georgios Papadopoulos                                Marko Kokol
+                   University of Piraeus,                  Semantika Research, Semantika d.o.o.,
+                 Dept. of Digital Systems,                 Zagrebška 40a, 2000 Maribor, Slovenia
+                  Piraeus, 18435, Greece                       marko.kokol@semantika.eu
+                  georgepap@unipi.gr
+
+                      Maria Dagioglou                                    Georgios Petasis
+       Inst. of Informatics & Telecommunications, Inst. of Informatics & Telecommunications,
+        National Centre for Scientific Research National Centre for Scientific Research
+              (N.C.S.R.) “Demokritos”                 (N.C.S.R.) “Demokritos”
+           Aghia Paraskevi, Attica, Greece         Aghia Paraskevi, Attica, Greece
+           mdagiogl@iit.demokritos.gr               petasis@iit.demokritos.gr
+                      Abstract                              machine learning (ML)/artificial intelligence (AI)
+                                                            systems (Brown et al., 2021) with human values.
+    This paper presents our participation to the “Hu-
+                                                               However, high-quality datasets and novel
+    man Value Detection” shared task (Kiesel et al.,
+    2023), as “Andronicus of Rhodes”. We de-                (moral) value recognition methods are needed to
+    scribe the approaches behind each entry in the          further develop this area. Some existing initiatives
+    official evaluation, along with the motivation          presenting datasets for human value detection are
+    behind each approach. Our best-performing               based: either on specific types of texts, such as the
+    approach has been based on BERT large, with             SemEval argument annotation task (Mirzakhme-
+    4 classification heads, implementing two dif-           dova et al., 2023), or on broader over-arching stud-
+    ferent classification approaches (with different
+                                                            ies of values and their analysis in different spa-
+    activation and loss functions), and two different
+    partitioning of the training data, to handle class      tiotemporal contexts, such as the VAST Project
+    imbalance. Classification is performed through          approach (Castano et al., 2021). Nevertheless,
+    majority voting. The proposed approach out-             since human value recognition in texts is a problem
+    performs the BERT baseline, ranking in the              that can be challenging even for humans, let alone
+    upper half of the competition.                          for machines (Haas, 2020), despite the existing
+                                                            datasets, additional methods need to be developed
+1   Introduction                                            to detect values in various scenarios.
+The “Human Value Detection” shared task (Kiesel                In order to approach the challenge, several differ-
+et al., 2023) relates to the identification of values       ent natural language processing (NLP) and ML/AI
+that can be associated with an argument. In the             approaches have been previously proposed and
+context of the shared task, a single argument is            tested (Kiesel et al., 2022; Yu et al., 2020; Cor-
+represented by a single premise, a conclusion, and          tiz, 2021; Brown et al., 2021). Several modern
+information on what the stance of the premise is            and well-performing techniques for text classifica-
+towards the conclusion. Each argument can be clas-          tion (of shorter text sequences) are based on artifi-
+sified into one or more value categories, among             cial neural networks (ANN), commonly based on
+the 20 value categories, based on Schwartz (1994).          LSTM, GRU, CNNs, and RNNs (Yu et al., 2020),
+The shared task covers a single language, English,          and frequently using the so-called transformer ar-
+providing 5393 examples for training, 1896 exam-            chitectures (Cortiz, 2021; Devlin et al., 2018), and
+ples for validation, while participating systems are        attention (Vaswani et al., 2017).
+evaluated on 1576 test examples (Mirzakhmedova                 To that effect, we focused on building upon
+et al., 2023).                                              the previously described successful approaches.
+   With the ever-increasing ubiquity of artificial in-      Specifically, we designed different ANN architec-
+telligence in real-world usage scenarios, the aware-        tures building upon BERT (Devlin et al., 2018) and
+ness of the so-called alignment problem (Christian,         RoBERTa (Liu et al., 2019) pre-trained models for
+2020) is increasing, as is the need to develop novel        the English language and fine-tuning them using
+strategies to measure and verify the alignment of           the SemEval 2023 human values dataset (Mirza-
+                                                         542
+       Proceedings of the The 17th International Workshop on Semantic Evaluation (SemEval-2023), pages 542–548
+                           July 13-14, 2023 ©2023 Association for Computational Linguistics
+khmedova et al., 2023). Additionally, we utilized                                                                                                             1,200
+                                                                                                                                                                                       1261
+
+
+approaches that have proven successful in short                                                                                                                                 1107
+
+                                                                                                                                                              1,000
+text feature extraction and classification, such as
+
+
+
+
+                                                                                                                                        Number of Arguments
+siamese networks (Yan et al., 2018), and train-                                                                                                                800
+                                                                                                                                                                                              676
+ing the networks by treating the under-represented                                                                                                             600
+classes separately (Kokol et al., 2022) by providing                                                                                                           400
+                                                                                                                                                                          411
+
+a specialised classification head.                                                                                                                                                                  302
+
+                                                                                                                                                               200
+                                                                                                                                                                                                          101
+
+2                   Background
+                                                                                                                                                                                                                34
+                                                                                                                                                                      1                                              5
+                                                                                                                                                                 0
+                                                                                                                                                                      0   1      2      4     5     6     7     8    9
+                                                                                                                                                                          Number of Assigned Value Categories
+As mentioned in the introduction, our approach
+was built upon BERT and RoBERTa models, with                                                                                        Figure 2: Number of value categories per argument.
+the models incorporated into a wider ANN with
+three different approaches (additional details are                                                                                 Our first attempt was based on the observation
+provided in the System Overview):                                                                                               that after a few training epochs on a simple multi-
+• A single classifier with 1 classification head out-                                                                           label BERT-based classifier with BCE (binary cross
+  putting 20 scalars, each of which corresponds                                                                                 entropy) loss, the validation F1 score was either in-
+  to a value category; the sigmoidF1 loss function                                                                              creasing or remaining stable, while the validation
+  (Bénédict et al., 2021) was used to train this clas-                                                                          loss was also increasing. This motivated us to seek
+  sifier.                                                                                                                       an objective function that better estimates the F1
+• A single multi-label classifier for all 20 values                                                                             metric; a suitable differentiable candidate is the sig-
+  and 4 decision heads; 2 for the majority and 2 for                                                                            moidF1 loss (Bénédict et al., 2021). This approach
+  the minority classes, with 2 different loss func-                                                                             is further detailed in section 3.1, and constitutes
+  tions per class. Final classification is performed                                                                            our first entry to the shared task (entry “2023-01-
+  through majority voting.                                                                                                      28-03-02-04” in Table 2).
+• A siamese network classifier for all 20 values and                                                                               Despite the fact that we have not observed a sig-
+  4 decision heads; 2 for the majority and 2 for the                                                                            nificant correlation among the value categories, we
+  minority classes, with 2 different loss functions                                                                             opted to design a multi-label approach. Initially
+  per class.                                                                                                                    seeking to exploit multi-task learning (using stance
+   Having as a starting point a simple multi-label                                                                              prediction between premise and conclusion as a sec-
+classifier based on BERT, we explored the training                                                                              ondary task), we ended up using slightly different
+part of the shared task dataset. As evident from                                                                                ways in performing the same multi-label classifica-
+the initial classification results on the validation                                                                            tion problem: A classification head that involves a
+dataset and Figures 1 and 2, class imbalance has a                                                                              sigmoid layer (a typical approach for multi-label
+significant impact on performance. Thus, handling                                                                               classification), and a classification head that in-
+the class imbalance in the dataset was the main                                                                                 volves a softmax layer (typically used in multi-class
+motive for the approaches that we have applied on                                                                               classification), following (Mahajan et al., 2018).
+the shared task.                                                                                                                The two classification heads are combined through
+                     Self-direction: thought                                     988
+                                                                                                                                voting, to produce the final classification, selecting
+                      Self-direction: action
+                                 Stimulation          247
+                                                                                               1395
+                                                                                                                                only the value categories that both heads agree.
+                                  Hedonism
+                               Achievement
+                                                    172
+                                                                                                     1512                          Returning to the problem of class imbalance,
+                         Power: dominance                           610
+                           Power: resources                         625                                                         we tried to “sub-sample” the dataset, through the
+                                        Face                382
+                                                                                                                                removal of associations with the majority classes
+Argument Value
+
+
+
+
+                          Security: personal                                                                       2000
+                           Security: societal                                                               1728
+                                    Tradition
+                          Conformity: rules
+                                                                   568
+                                                                                       1177
+                                                                                                                                from training examples that are associated with
+                  Conformity: interpersonal
+                                    Humility
+                                                    207
+                                                            395                                                                 more than 3 value categories, including any major-
+                       Benevolence: caring                                                    1332
+                 Benevolence: dependability                                806                                                  ity class. The motivation behind this removal of
+                     Universalism: concern                                                                             2081
+                       Universalism: nature
+                    Universalism: tolerance
+                                                             427
+                                                                     664
+                                                                                                                                assignments was the hypothesis that there may have
+                   Universalism: objectivity                                      1054
+                                                                                                                                been an annotation bias towards some values (like
+                                                                                                                                “Universalism: concern”, “Security: personal”, and
+                                                0           500              1,000             1,500           2,000
+
+                                                                           Number of Arguments
+
+                                                                                                                                “Security: societal”), either due to annotators’ per-
+Figure 1: Number of arguments classified in each value                                                                          sonal biases, or due to the presence of values in
+category.                                                                                                                       the selected arguments. Despite the fact that the
+                                                                                                                              543
+                                  Positive Weighting                             Subsampling: Minority Classes Only
+                     A     Sigmoid            B          Softmax           C        Sigmoid                D        Softmax
+                            Linear                   Linear                          Linear                        Linear
+                         (out size: 20)           (out size: 20)                  (out size: 20)                (out size: 20)
+                           Dropout                       Dropout                    Dropout                         Dropout
+
+
+
+                           Tanh
+
+                          Linear
+                      (out size: 768)
+
+
+                                                                        Transformer Block
+                                                                                ...
+
+                                                                        Transformer Block
+
+
+                          [CLS]      P1     P2     ...      Pk     S1       S2       ...       Sl     C1       C2     ...     Cm   [SEP]
+
+
+                  Figure 3: The high-level architecture of the single multi-label classification ANN.
+
+
+three majority classes were significantly reduced                                               Value Category                     Initial   Sub-sampling
+                                                                                                Universalism: concern               2081         1171
+(as shown in Table 1), this sub-sampling did not                                                Security: personal                  2000         916
+have any significant effect in the performance of the                                           Security: societal                  1728         544
+baseline BERT classifier (F1 has not significantly
+changed on the validation dataset). As a result, we                                  Table 1: Reduction in the association of argument ex-
+                                                                                     amples (training dataset) with majority classes, after
+opted to apply up-sampling and sub-sampling si-                                      removing associations from examples having more than
+multaneously: we used positive weighting in both                                     3 associated value categories.
+classification heads, that try to balance positive
+and negative examples within value categories, and
+we added two more (identical) classification heads,
+                                                                                     3         System Overview
+which are trained only on argument examples that
+are assigned to minority classes1 . Again the final
+classification is performed through majority voting                                  Overall, all approaches were based on the Hugging-
+among the 4 classification heads. The architecture                                   face library (Wolf et al., 2019), utilising a PyTorch
+of this approach is shown in Figure 3, and consti-                                   backend (Paszke et al., 2019), and a custom dat-
+tutes our second and third entries to the shared task                                aloader that was created for the task, described in
+(entries “2023-01-28-03-07-13” and “2023-01-28-                                      more detail in the Experimental Setup2 .
+10-02-00” in Table 2). The third entry is the best
+performing approach (as evaluated on the test set)
+                                                                                     3.1            Single Multi-label Classifier with
+of our team.
+                                                                                                    SigmoidF1 Loss
+   Finally, we designed an approach which com-
+bines the idea of the end-to-end ensemble and                                        This multi-label classifier employs a very simple
+simultaneous upsampling/subsampling, with a                                          approach: the BERT English base uncased model
+siamese network architecture (Figure 4), exploiting                                  (Devlin et al., 2018) representations of [CLS] to-
+different pre-trained models, BERT and RoBERTa.                                      ken is fed into a classification head with a single
+This approach constitutes our fourth entry (entry                                    dense layer and dropout (0.5 probability) which
+“2023-01-30-16-39-54”), which is not part of the                                     produces 20 scalars; followed by a sigmoid acti-
+official evaluation, as it was submitted after the sub-                              vation function. The output, denoted by ŷŷ, is a
+mission deadline (but before the evaluation results                                  two-dimensional matrix of shape [batch size, 20].
+were made public).                                                                   The labels, y , are also given in a two-dimensional
+                                                                                     matrix, thus we compute the sigmoidF1 loss as
+
+
+   1                                                                                       2
+     Minority classes have been defined as the value categories                          The source code is publicly available through
+that have a frequency lower than 850 in the combined training                        GitHub:    https://github.com/DimitrisPatiniotis/
+and validation datasets.                                                             Human-Value-Detection.
+
+                                                                               544
+                                                       Positive Weighting                            Subsampling: Minority Classes Only
+                                         A       Sigmoid            B         Softmax           C        Sigmoid              D      Softmax
+                                                  Linear                    Linear                       Linear                       Linear
+                                               (out size: 20)            (out size: 20)               (out size: 20)               (out size: 20)
+                                                 Dropout                      Dropout                    Dropout                     Dropout
+
+
+           SiLU                                                                         SiLU
+          Linear                                                                     Linear
+       (out size: 64)                                                             (out size: 64)
+           Tanh                                                                         Tanh
+          Linear                                                                     Linear
+      (out size: 768)                                                            (out size: 768)
+
+                                Transformer Block                                                             Transformer Block
+                                        ...                                                                           ...
+                                Transformer Block                                                             Transformer Block
+
+           [CLS]    P1   ...   Pk   S1   ...   Sl   C1     ... Cm   [SEP]               [CLS]   P1     ...   Pk    S1   ...   Sl   C1    ... Cm     [SEP]
+
+
+                   Figure 4: The high-level architecture of the siamese multi-label classification ANN.
+
+
+follows:                                                                          the simple approach (as measured by the validation
+                            1 Xf                                                  F1), thus we stuck with the single dense layer head.
+                   LFf1 = 1 −      F1                                   (1)       We have also performed experiments where we aug-
+                            C
+                               ˜
+                             2tp                                                  mented the training dataset with the unlabeled test
+                   f1 =
+                   F                                                    (2)       samples, applying the GAN-BERT method (Croce
+                          ˜ + f˜n + f˜p
+                        2tp
+                                                                                  et al., 2020). Unfortunately, the results were infe-
+where C = 20, tp,  ˜ f˜p, and f˜n are rough surro-                                rior, probably due to the small number of unlabeled
+gates of the true positives, false positives, and false                           samples compared to the labeled ones.
+negatives, respectively, calculated as:                                           3.2       Single Multi-label Classifier
+                       X
+                 ˜ = 1
+                tp       ŷ ⊙ y                                         (3)       The multi-label classifier utilises BERT (Devlin
+                     N                                                            et al., 2018) as its backbone. Two versions were
+                     1 X                                                          tested: one using the BERT base uncased English
+               f˜p =     ŷ ⊙ (1 − y )                                  (4)
+                     N                                                            model (Devlin et al., 2018), and one using the
+                     1 X
+               f˜n =     (1 − ŷŷ) ⊙ y                                 (5)       BERT large uncased English model (Devlin et al.,
+                     N                                                            2018) (Figure 3). Finally, the model feeds into 4
+Note that the sign ⊙ represents the element-wise                                  separate heads, all connected via a fully connected
+multiplication and 1 is a two-dimensional matrix                                  layer with dropout (with 0.1 probability), trained
+of the same shape as ŷ and y , filled with ones.                                 on 4 different tasks:
+We should mention that in the original sigmoidF1                                  • Positively weighted classes, where under-
+loss, the sum over the batch samples is calculated                                  represented classes are weighted to try equalizing
+in Equations (3), (4), and (5), but we replaced it                                  the importance of classes, using two different ac-
+with the average over the batch samples since we                                    tivation functions: a) Sigmoid activation (Figure
+discovered that this way yields higher performance.                                 3 (A)); b) Softmax activation (Figure 3 (B));
+Similarly, we added the average over the classes in                               • Subsampling using minority classes only, using
+Equation (1), where neither the sum nor the average                                 two different activation functions: a) Sigmoid
+was utilized.                                                                       activation (Figure 3 (C)); b) Softmax activation
+   Furthermore, we have experimented with replac-                                   (Figure 3 (D));
+ing the single dense layer head with a GRU head                                      The layer stacking is shown on the Figure 3,
+which takes as input the entire sequence of BERT-                                 after the BERT (Devlin et al., 2018) Tanh activation
+representations, i.e., the representations of all the                             layer, there is a dropout layer, followed by a Linear
+words in the argument. In another trial, we replaced                              layer. The function for the dropout layer is:
+the single dense layer head with 20 concrete heads
+                                                                                                                  hdrop = r ⊙ h                             (6)
+(each with its own dense layer), one for each value
+category. None of these yielded better results than                               where h is the input vector, r is a binary mask vec-
+                                                                              545
+tor of the same shape as h, and ⊙ represents the             where z is the input to the SiLU function and
+element-wise multiplication operation. The mask           σ(z) = 1+e1−z is the sigmoid function. The output
+vector r is generated by drawing each element in-         of the SiLU layer is then fed into the same heads as
+dependently from a Bernoulli distribution with pa-        already described for the Single Multi-label Classi-
+rameter p, where p is the probability of keeping          fier.
+each element.
+   The function for the linear layer is the standard      4     Experimental Setup
+fully connected layer:
+                                                          The three different models also used different se-
+                   z = Wx + b                     (7)     tups, and full details are available in GitHub3 , con-
+                                                          taining the full source code used for the task.
+where x is the input vector, W is the weight matrix,
+b is the bias vector, and z is the output vector This
+                                                          4.1    Single Multi-label Classifier with
+is then fed into the Sigmoid activation function for
+                                                                 SigmoidF1 Loss
+heads (A) and (C) with the equation:
+                                                          The experimental setup for this classifier included
+                           1
+                 σ(z) =                           (8)     the:
+                        1 + e−z
+                                                          • Example representation starts with the [CLS] to-
+where z is the input to the sigmoid function. The           ken, followed by the conclusion, the special to-
+sigmoid function outputs a value between 0 and 1,           ken [SEP], the premise, and another [SEP] at the
+which can be interpreted as a probability or as an          end.
+activation value for a neuron in the neural network.      • A custom training loop was used, with a batch
+   The heads (B) and (D) use the Softmax activation         size of 8 and a learning rate of 0.00002.
+function with the equation:                               • We exploited early stopping with patience of 5
+                                                            epochs to avoid overfitting and reduce training
+                              e zi
+              softmax(zi ) = P zj                 (9)       time. After determining the epoch at which train-
+                              je                            ing should stop (based on the validation loss), we
+where zi is the input to the softmax function for the       combined training and validation sets and trained
+i-th output neuron.                                         the model again for the same number of epochs.
+
+3.3 Siamese Network Classifier                            4.2    Single Multi-label Classifier
+The multi-value classifier utilised the BERT and          The experimental setup for the Single Multi-label
+BERT-based models as its backbone, combining              classifier consisted of the following steps:
+the BERT base uncased English pre-trained model
+                                                          • Example representation starts with the special
+(Devlin et al., 2018), and the RoBERTa base un-
+                                                            [CLS] token, followed by the premise, stance,
+cased English language model (Liu et al., 2019), as
+                                                            conclusion, and finally, the special [SEP] token;
+shown in Figure 4.
+                                                            as shown in Figure 3.
+   Both models are then attached to a 64 neuron
+                                                          • The training dataset is augmented using the NL-
+fully connected layers utilising the SiLU function
+                                                            PAUG library (Ma, 2019); specifically, for each
+(Elfwing et al., 2018), and combined using simple
+                                                            input, an additional input is generated using the
+addition (summation). The PyTorch autograd (Py-
+                                                            Word2Vec augmentation function for the English
+Torch, 2023) functionality is used during training
+                                                            language.
+for back-propagation.
+                                                          • Minority classes are determined, and a special
+   The model feeds into the same 4 heads, as al-
+                                                            subsample of only minority classes is created
+ready mentioned in the description of the Single
+                                                            to be used with classification heads (C) and (D)
+Multi-label Classifier, and shown on Figure 4.
+                                                            (Figure 3).
+   The Siamese network utilises the output of
+                                                          • The Huggingface (Wolf et al., 2019) built-in
+BERT (Devlin et al., 2018) and feeds it into a lin-
+                                                            trainer was used for training, using a batch size
+ear layer (eq. 7), after which the SiLU function
+                                                            of 16 and a learning rate of 0.00005.
+(Elfwing et al., 2018) is used, which is calculated
+by:                                                          3
+                                                               https://github.com/DimitrisPatiniotis/
+                SiLU(z) = z · σ(z)             (10)       Human-Value-Detection/
+
+                                                        546
+                                                                                                                                                                                                                                                                                                                    Benevolence: dependability
+                                                                                                                                                                                                                                                       Conformity: interpersonal
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                          Universalism: objectivity
+                                                                                                                                                                                                                                                                                                                                                                                                Universalism: tolerance
+                                      Self-direction: thought
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                 Universalism: concern
+                                                                                                                                                                                                                                                                                                                                                                         Universalism: nature
+                                                                Self-direction: action
+
+
+
+
+                                                                                                                                                                                                                                                                                              Benevolence: caring
+                                                                                                                                Power: dominance
+
+
+
+
+                                                                                                                                                                             Security: personal
+
+
+
+
+                                                                                                                                                                                                                                   Conformity: rules
+                                                                                                                                                                                                  Security: societal
+                                                                                                                                                   Power: resources
+                                                                                                                  Achievement
+                                                                                         Stimulation
+                                                                                                       Hedonism
+
+
+
+
+                                                                                                                                                                                                                       Tradition
+
+
+
+
+                                                                                                                                                                                                                                                                                   Humility
+                                                                                                                                                                      Face
+    Test set / Approach         All
+    Main
+     Best per category          .59 .61 .71 .39 .39 .66 .50 .57 .39 .80 .68 .65 .61 .69 .39 .60 .43 .78 .87 .46 .58
+     Best approach              .56 .57 .71 .32 .25 .66 .47 .53 .38 .76 .64 .63 .60 .65 .32 .57 .43 .73 .82 .46 .52
+     BERT                       .42 .44 .55 .05 .20 .56 .29 .44 .13 .74 .59 .43 .47 .23 .07 .46 .14 .67 .71 .32 .33
+     1-Baseline                 .26 .17 .40 .09 .03 .41 .13 .12 .12 .51 .40 .19 .31 .07 .09 .35 .19 .54 .17 .22 .46
+     2023-01-28-03-02-04        .47 .51 .62 .20 .23 .61 .37 .50 .24 .71 .58 .45 .57 .45 .13 .51 .25 .69 .75 .38 .49
+     2023-01-28-03-07-13        .47 .49 .58 .23 .13 .58 .36 .48 .21 .70 .59 .46 .53 .26 .18 .47 .26 .67 .74 .39 .47
+     2023-01-28-10-02-00        .48 .47 .65 .25 .29 .58 .35 .54 .30 .71 .60 .51 .54 .27 .14 .52 .31 .69 .76 .39 .48
+     2023-01-30-16-39-54∗       .46 .51 .61 .20 .23 .55 .45 .47 .28 .71 .59 .50 .52 .34 .17 .54 .23 .71 .77 .36 .40
+
+Table 2: Achieved F1 -score of team Andronicus-of-Rhodes per test dataset, from macro-precision and macro-recall
+(All) and for each of the 20 value categories. Approaches marked with * were not part of the official evaluation.
+Approaches in gray are shown for comparison: an ensemble using the best participant approach for each individual
+category, the best participant approach, and the organizer’s BERT and 1-Baseline.
+
+
+4.3 Siamese Network Classifier                                                                                                                                        all utilising transformer- and attention-based lan-
+The Siamese Network Classifier mostly used the                                                                                                                        guage models.
+same experimental setup as the Single Multi-label                                                                                                                        An increased performance over baseline was
+classifier, using the same pre-processing and train-                                                                                                                  achieved by combining multi-task learning with
+ing approach. However, after performing the ini-                                                                                                                      heads that: a) implement the classification task dif-
+tial training, the training and validation sets were                                                                                                                  ferently, and b) are trained on different partitions of
+combined, and 3% of the combined dataset was                                                                                                                          the data that simultaneously upsample/subsample
+randomly selected as the validation set for final                                                                                                                     the training examples.
+fine-tuning, before running the model on the test                                                                                                                        Since different models showed different perfor-
+set.                                                                                                                                                                  mance characteristics for some of the classes, an
+                                                                                                                                                                      expansion of the idea would be the use of ensemble-
+5       Results                                                                                                                                                       based methods, potentially combined with Auto-
+                                                                                                                                                                      mated ML approaches, to further improve the re-
+Our best approach ranked in the upper half of the                                                                                                                     sults.
+competition, and achieved a result above the BERT
+baseline of the shared task. As seen in Table 2,                                                                                                                      7        Acknowledgments
+our best model (based on BERT large with 4 clas-
+                                                                                                                                                                      The research leading to these results has received
+sification heads) achieved an overall F1 score of
+                                                                                                                                                                      funding from the European Union’s Horizon 2020
+0.48, with the single multi-label models following
+                                                                                                                                                                      research and innovation programme, in the con-
+with 0.47, and the siamese network reaching 0.46.
+                                                                                                                                                                      text of VAST project, under grant agreement No
+We have not used any datasets beyond the official
+                                                                                                                                                                      101004949. This paper reflects only the view of
+competition dataset for training4 . There is a broad
+                                                                                                                                                                      the authors and the European Commission is not
+variability of per-category results: both within our
+                                                                                                                                                                      responsible for any use that may be made of the
+models, as well as within all submitted models on
+                                                                                                                                                                      information it contains.
+the leaderboard.
+
+6       Conclusion                                                                                                                                                    References
+Our approach ranks in the upper half of the compe-                                                                                                                    Gabriel Bénédict, Vincent Koops, Daan Odijk, and
+tition. We have tested a few different approaches,                                                                                                                      Maarten de Rijke. 2021. sigmoidf1: A smooth
+                                                                                                                                                                        F1 score surrogate loss for multilabel classification.
+    4
+        We have used data augmentation and pre-trained models.                                                                                                          CoRR, abs/2108.10566.
+
+                                                                                                                                                   547
+Daniel S. Brown, Jordan Schneider, Anca Dragan, and        Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Man-
+  Scott Niekum. 2021. Value Alignment Verification.          dar Joshi, Danqi Chen, Omer Levy, Mike Lewis,
+  In Proceedings of the 38th International Conference        Luke Zettlemoyer, and Veselin Stoyanov. 2019.
+  on Machine Learning, pages 1105–1115. PMLR.                Roberta: A robustly optimized bert pretraining ap-
+  ISSN: 2640-3498.                                           proach. arXiv preprint arXiv:1907.11692.
+
+Silvana Castano, Alfio Ferrara, Stefano Montanelli, and    Edward Ma. 2019.              Nlp augmentation.
+   Francesco Periti. 2021. From Digital to Computa-          https://github.com/makcedward/nlpaug.
+   tional Humanities: The VAST Project Vision. Pub-
+                                                           Dhruv Mahajan, Ross Girshick, Vignesh Ramanathan,
+   lisher: Zenodo.
+                                                             Kaiming He, Manohar Paluri, Yixuan Li, Ashwin
+                                                             Bharambe, and Laurens van der Maaten. 2018. Ex-
+Brian Christian. 2020. The Alignment Problem: Ma-            ploring the limits of weakly supervised pretraining.
+  chine Learning and Human Values. W. W. Norton &            In Computer Vision – ECCV 2018, pages 185–201,
+  Company. Google-Books-ID: Lh_WDwAAQBAJ.                    Cham. Springer International Publishing.
+Diogo Cortiz. 2021.    Exploring Transformers in           Nailia Mirzakhmedova, Johannes Kiesel, Milad Al-
+  Emotion Recognition: a comparison of BERT,                 shomary, Maximilian Heinrich, Nicolas Handke, Xi-
+  DistillBERT, RoBERTa, XLNet and ELECTRA.                   aoni Cai, Barriere Valentin, Doratossadat Dastgheib,
+  ArXiv:2104.02041 [cs].                                     Omid Ghahroodi, Mohammad Ali Sadraei, Ehsaned-
+                                                             din Asgari, Lea Kawaletz, Henning Wachsmuth, and
+Danilo Croce, Giuseppe Castellucci, and Roberto Basili.      Benno Stein. 2023. The Touché23-ValueEval Dataset
+  2020. GAN-BERT: Generative adversarial learning            for Identifying Human Values behind Arguments.
+  for robust text classification with a bunch of labeled     CoRR, abs/2301.13771. Publisher: arXiv.
+  examples. In Proceedings of the 58th Annual Meet-
+  ing of the Association for Computational Linguistics,    Adam Paszke, Sam Gross, Francisco Massa, Adam
+  pages 2114–2119, Online. Association for Computa-          Lerer, James Bradbury, Gregory Chanan, Trevor
+  tional Linguistics.                                        Killeen, Zeming Lin, Natalia Gimelshein, Luca
+                                                             Antiga, Alban Desmaison, Andreas Kopf, Edward
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and                Yang, Zachary DeVito, Martin Raison, Alykhan Te-
+   Kristina Toutanova. 2018. Bert: Pre-training of deep      jani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang,
+   bidirectional transformers for language understand-       Junjie Bai, and Soumith Chintala. 2019. Pytorch:
+   ing. arXiv preprint arXiv:1810.04805.                     An imperative style, high-performance deep learning
+                                                             library. In Advances in Neural Information Process-
+Stefan Elfwing, Eiji Uchibe, and Kenji Doya. 2018.           ing Systems 32, pages 8024–8035. Curran Associates,
+   Sigmoid-weighted linear units for neural network          Inc.
+   function approximation in reinforcement learning.
+                                                           PyTorch. 2023. Autograd mechanics¶.
+  Neural Networks, 107:3–11.
+                                                           Shalom H. Schwartz. 1994. Are There Universal As-
+Julia Haas. 2020. Moral Gridworlds: A Theoretical            pects in the Structure and Contents of Human Values?
+   Proposal for Modeling Artificial Moral Cognition.         Journal of Social Issues, 50(4):19–45.
+   Minds and Machines, 30(2):219–246.
+                                                           Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob
+Johannes Kiesel, Milad Alshomary, Nicolas Handke,            Uszkoreit, Llion Jones, Aidan N Gomez, \Lukasz
+  Xiaoni Cai, Henning Wachsmuth, and Benno Stein.            Kaiser, and Illia Polosukhin. 2017. Attention is all
+  2022. Identifying the Human Values behind Argu-            you need. Advances in neural information processing
+  ments. In Proceedings of the 60th Annual Meeting of        systems, 30.
+  the Association for Computational Linguistics (Vol-
+  ume 1: Long Papers), pages 4459–4471, Dublin,            Thomas Wolf, Lysandre Debut, Victor Sanh, Julien
+  Ireland. Association for Computational Linguistics.        Chaumond, Clement Delangue, Anthony Moi, Pier-
+                                                             ric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz,
+Johannes Kiesel, Milad Alshomary, Nailia Mirzakhme-          et al. 2019. Huggingface’s transformers: State-of-
+  dova, Maximilian Heinrich, Nicolas Handke, Hen-            the-art natural language processing. arXiv preprint
+  ning Wachsmuth, and Benno Stein. 2023. Semeval-            arXiv:1910.03771.
+  2023 task 4: Valueeval: Identification of human          Leiming Yan, Yuhui Zheng, and Jie Cao. 2018. Few-
+  values behind arguments. In Proceedings of the             shot learning for short text classification. Multimedia
+  17th International Workshop on Semantic Evaluation,        Tools and Applications, 77(22):29799–29810.
+  Toronto, Canada. Association for Computational Lin-
+  guistics.                                                Shujuan Yu, Danlei Liu, Wenfeng Zhu, Yun Zhang, and
+                                                             Shengmei Zhao. 2020. Attention-based LSTM, GRU
+Peter Kokol, Marko Kokol, and Sašo Zagoranski.               and CNN for short text classification. Journal of In-
+  2022. Machine learning on small size samples: A            telligent & Fuzzy Systems, 39(1):333–340. Publisher:
+  synthetic knowledge synthesis. Science Progress,           IOS Press.
+  105(1):00368504211029777.
+
+                                                       548
+

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "status": "OBSERVED_OFFLINE_CHILD",
+  "command": [
+    "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\restore_valueeval_local.py",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_probe_v01\\organizer_response.raw",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_probe_v01\\archive_response.raw",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\restored_sources"
+  ],
+  "started_utc": "2026-10-11T20:03:25.539610+00:00",
+  "finished_utc": "2026-10-11T20:03:25.765956+00:00",
+  "wall_seconds": 0.22530030002235435,
+  "actual_exit_code": 0,
+  "stdout": "{\"schema\": 1, \"status\": \"PASS_EXACT_LOCAL_RESTORATION\", \"finished_utc\": \"2026-10-11T20:03:25.750169+00:00\", \"script_sha256\": \"c51d104c592906e16296236621fe1427c16f7b438846c6485c3eec0de6bc281b\", \"inputs\": [{\"path\": \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\artifacts\\\\iteration306\\\\source_probe_v01\\\\organizer_response.raw\", \"bytes\": 83506, \"sha256\": \"5e4aeb32be5cad70eb841ca555496a9c950b0e6d329b361c0bf05c9f81fbf3d4\"}, {\"path\": \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\artifacts\\\\iteration306\\\\source_probe_v01\\\\archive_response.raw\", \"bytes\": 410492, \"sha256\": \"57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea\"}], \"outputs\": [{\"name\": \"organizer_main.raw\", \"bytes\": 83506, \"sha256\": \"f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8\"}, {\"name\": \"archive_evaluations.raw\", \"bytes\": 410492, \"sha256\": \"57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea\"}], \"output_directory\": \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\artifacts\\\\iteration306\\\\source_restore_v01\\\\restored_sources\", \"transformation\": {\"kind\": \"explicit_offline_CSS_cache_parameter_restoration\", \"zero_based_span_end_exclusive\": [543, 553], \"incoming_token\": \"1791724246\", \"frozen_token\": \"1790154639\", \"changed_byte_offsets\": [546, 547, 548, 550, 551, 552], \"archive_transformation\": \"none\"}, \"inputs_unchanged\": true, \"network_access\": false, \"scientific_execution\": false, \"historical_HTTP_authentication\": false, \"scope\": \"Derived local bytes match an earlier frozen package. Acquisition provenance is separate; this does not prove historical execution or a new historical HTTP response.\"}\r\n",
+  "stderr": "",
+  "script": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\restore_valueeval_local.py",
+    "bytes": 5427,
+    "sha256": "c51d104c592906e16296236621fe1427c16f7b438846c6485c3eec0de6bc281b"
+  },
+  "automatic_retry": false,
+  "network_requests": 0,
+  "scientific_executions": 0
+}

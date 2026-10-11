@@ -1,0 +1,455 @@
+Søren Kierkegaard at SemEval-2023 Task 4: Label-aware text classification
+                  using Natural Language Inference
+
+            Ignacio Talavera Cepeda and Amalie Brogaard Pauli and Ira Assent
+                 Department of Computer Science, Aarhus University, Denmark
+                   ignacio@post.au.dk, ampa@cs.au.dk, ira@cs.au.dk
+
+
+
+                      Abstract                              favour of" or "against". Kiesel et al. (2023) provide
+                                                            a dataset with the challenges of identifying a subset
+    In this paper, we describe our approach to Task
+    4 in SemEval 2023. Our pipeline tries to solve          of fundamental values behind written arguments.
+    the problem of multi-label text classification          The task is a multi-label text classification.
+    of human values in English-written arguments.              We propose to address the task by reframing
+    We propose a label-aware system where we                the task from a multi-label task to a binary task
+    reframe the multi-label task into a binary task         which includes the textual semantic information
+    resembling an NLI task. We propose to include
+                                                            of the labels. We reformulated the task to resem-
+    the semantic description of the human values by
+    comparing each description to each argument
+                                                            ble a Natural Language Inference (NLI) task. The
+    and ask whether there is entailment or not.             structure of NLI tasks is given a tuple with premise-
+                                                            hypothesis to decide if there is entailment, neu-
+1   Introduction                                            trality or contradiction between the premise and
+Shared tasks are competitions organized by dif-             hypothesis (MacCartney and Manning, 2008). We
+ferent academic institutions that put the scope on          propose a similar structure to our task at hand; we
+specific research problems that are challenging for         generate pairs of each argument with a textual de-
+the community, typically because of low data avail-         scription of each human-value. We then set the
+ability. Natural Language Processing (NLP) has              training label to whether or not the pairs entail each
+many shared tasks annually (Palmer et al., 2021;            other or not. The motivation is 1) this generates
+May et al., 2019; Rodríguez-Sánchez et al., 2022).          more training examples for a model to learn from
+In these tasks, a problem that currently concerns           and 2) this makes the system label-aware, and 3)
+the community is stated, and datasets are provided          it makes the opportunity to leverage on large-scale
+to the participants, which then have to try to solve        pre-trained NLI models.
+that problem to get the highest score possible, and
+to contribute to establishing and comparing state-          2    Background
+of-the-art approaches. SemEval 2023 is the 17th
+                                                            The task The task is a multi-label text classifi-
+edition of the workshop, and it features 12 different
+                                                            cation task on identifying values behind written
+NLP shared tasks, divided in several categories that
+                                                            arguments in English. The aim is to predict any
+include semantic structure, discourse and argumen-
+                                                            subset of human-values a written argument is build-
+tation, medical application and social attitudes.
+                                                            ing on. There are in total 20 categories of values,
+   This paper addressed Task 4 which is in the field
+                                                            which are generated from a social science study
+of discourse and argumentation mining. The task
+                                                            (Kiesel et al., 2022). The provided dataset consists
+is a text classification task where participants have
+                                                            of approximately 9000 arguments based on several
+to classify whether or not an argument belongs to
+                                                            sources. The dataset has a structure of premise,
+certain human value categories (Kiesel et al., 2023).
+                                                            conclusion and stance, which together create the
+The categories are compiled from a Social Science
+                                                            whole textual input. An input example from the
+study by Kiesel et. al. (Kiesel et al., 2022). The par-
+                                                            dataset is:
+ticipants are able to submit runs that detect either a
+subset of the seven most common categories or all
+                                                                • Conclusion: We should limit judicial ac-
+of them. Each argument is divided into a premise
+                                                                  tivism.
+text, a conclusion text and a binary stance of the
+premise to the conclusion, which can be either "in              • Stance: against.
+                                                       1871
+      Proceedings of the The 17th International Workshop on Semantic Evaluation (SemEval-2023), pages 1871–1877
+                            July 13-14, 2023 ©2023 Association for Computational Linguistics
+   • Premise: Each case has different circum-               one-hot encoded vector or indices, but the language
+     stances and certain things need to be taken            model does not process any information present in
+     into consideration for each one. Judicial ac-          the label name, even though there is usually useful
+     tivism allows the court to consider the circum-        information encoded in the label names, and some-
+     stances of each crime.                                 times even a description about the label can provide
+                                                            information to the model. However, a recent stream
+   In the dataset, the ’conclusion’ and ’stance’
+                                                            of work has indeed worked on including the seman-
+appear multiple times as templates, whereas the
+                                                            tic information from the labels in the models, eg.
+’premise’ is a human-written text to support the
+                                                            (Mueller et al., 2022; Zhu et al., 2023).
+conclusion of a given stance. Hence, it is in the
+’premise’, we want to look for the values underly-
+ing the argument.                                           Natural Language Inference We follow a mod-
+   The annotation of the dataset happen in an               elling approach resembling a Natural Language
+open-source process (Mirzakhmedova et al., 2023),           Inference task (NLI). In an NLI, the task is to pre-
+where the annotators did not use the 20 value cate-         dict given two sentences if the sentences entail,
+gories directly. Instead, they were asked to identify       contradict or are neutral regarding each other (Mac-
+54 more "direct/simpler values" (first-level values)        Cartney and Manning, 2008). On this task, there ex-
+which later are translated into the 20 value cate-          ists a large Standford Natural Language Inference
+gories ( second-level values). If any of the 54 first-      (SNLI) corpus which is a collection of 570.000
+level values are present in the argument then the           human-written English sentence pairs (Bowman
+corresponding second value is marked as present             et al., 2015). We want to conduct experiments uti-
+in the argument as well. This is supposed to be an          lizing this by using a pre-trained NLI model as a
+easier/faster task for annotators to reply yes/no to        backbone model for our training.
+whether each simpler value is present or not in an
+argument. Hence, we also hypothesise it might be
+                                                            3     Our approach
+easier for a model to use how the dataset originally
+where annotated by including this information in
+                                                            3.1    Reframming
+the system.
+   The training dataset contains a class imbalance          We propose to reframe the task from a multi-label
+which can be seen in Figure 1.                              task to a binary task resembling an NLI structure;
+                                                            We ask whether or not the value is entailing the
+                                                            premise of the argument or not. We, therefore, re-
+                                                            formulate each data instance in the dataset to pairs
+                                                            of two sentences, and a binary label of zero or one.
+                                                            The first sentence in each pair is the premise of the
+                                                            argument from the dataset. We chose to only work
+                                                            with the premise since from our analysis of the
+                                                            dataset, we believe this is the user-generated input
+                                                            which is presenting the underlying values from a
+                                                            given conclusion and stance. The second sentence
+                                                            in our reformulated dataset, consists of a textual
+                                                            description of a value category. The descriptions
+                                                            are handcrafted for each of the 20 value classes
+                                                            using the information from the level 1 values with
+                                                            the intention to help the model understand what
+                                                            the level 2 values are (see section 2). We set the
+   Figure 1: Label distribution in the training split.
+                                                            label for the training to indicate whether or not the
+                                                            value is in fact present in the argument or not. This
+Label-aware modelling In our system, we                     restructuring gives a training set enlarged by a fac-
+wanted to include the semantic information from             tor 20 corresponding to the number of classes. An
+the labels. Hence, we look to label-aware models.           example of this reframing of the training data is
+In classic text classification, labels are treated as a     presented in Table 1.
+                                                         1872
+                         Premise                                                          Hypothesis                                 Entailment
+                   payday loans create                                      This sentence is about being creative,
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                curious or having freedom of thought.
+                   payday loans create                                    This sentence is about choosing own goals,
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.    being independent, having freedom of action or having privacy.
+                   payday loans create                                    This sentence is about having an exciting,
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                        varied life or be daring.
+                   payday loans create
+                                                                            This sentence is about having pleasure.                  Contradiction
+ a more impoverished society with their crazy payback rates.
+                   payday loans create                              This sentence is about being ambitious, having success,
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                  being capable or being intellectual.
+                   payday loans create                                     This sentence is about having influence or
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                     having the right to command.
+                   payday loans create
+                                                                             This sentence is about having wealth.                   Contradiction
+ a more impoverished society with their crazy payback rates.
+                   payday loans create                                 This sentence is about having social recognition
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                       or having good reputation.
+                                                                      This sentence is about having a sense of belonging,
+                   payday loans create
+                                                                            having good healt, being neat and tidy                    Entailment
+ a more impoverished society with their crazy payback rates.
+                                                                                 and having a comfortable life.
+                   payday loans create                                       This sentence is about having a safe
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                        country or a safe society.
+                   payday loans create                                    This sentence is about respecting traditions
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                       or holding religious faith.
+                   payday loans create                                      This sentence is about being compliant,
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.            being self-disciplined or be behaving properly.
+                   payday loans create                                        This sentence is about being polite
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                         and be honoring elders.
+                   payday loans create                                     This sentence is about being humble and
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                      having life accepted as it is.
+                   payday loans create                                This sentence is about being helpful, being honest,
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.          being forgiving or having the own family secured.
+                   payday loans create                                    This sentence is about being responsible or
+                                                                                                                                     Contradiction
+ a more impoverished society with their crazy payback rates.                    having loyalty towards friends.
+                   payday loans create
+                                                               This sentence is about having equality, being just or having peace.    Entailment
+ a more impoverished society with their crazy payback rates.
+                   payday loans create
+                                                               This sentence is about protecting the environment or about nature.    Contradiction
+ a more impoverished society with their crazy payback rates.
+                   payday loans create
+                                                                This sentence is about being broadminded or accepting others.        Contradiction
+ a more impoverished society with their crazy payback rates.
+                   payday loans create
+                                                                       This sentence is about being logical and objective.           Contradiction
+ a more impoverished society with their crazy payback rates.
+
+              Table 1: Example of the 20 entailment data instances produced from a multi-label instance.
+
+
+3.2 Model pipeline                                                         4     Experimental Setup
+
+
+After reframing the dataset into a binary task where                       We use the HuggingFace implementation of train-
+each argument is compared to a textual written                             ing transformer-based models (Wolf et al., 2020).
+description of each value class, we are ready to                           Instead of focusing on the base model of RoBERTa,
+start the training. In the training, we fine-tune pre-                     we explore different Transformer models pretrained
+train Transformer-based models (Vaswani et al.,                            over NLI datasets, like SNLI, to fine-tune a model
+2017) which take two sentences as inputs. More                             already good at an NLI task. However, we avoid
+concretely, we experiment with models based on                             really large models, to be mindful of computational
+the RoBERTa architecture (Liu et al., 2019), and                           resources and to be able to train in a manageable
+with RoBERta models which are already once fine-                           amount of time. We chose to experiment with the
+tuned on the SNLI corpus (Bowman et al., 2015).                            available model pepa/roberta-base-snli1 which is
+We fine-tune further on our tasks dataset. If the                          a version of RoBERTa base, fine-tuned over the
+model predicts an entailment between the argu-                             SNLI dataset.
+ment and the value category, we considered that
+the premise belongs to the category. At the end of
+the training or the inference phase, the instances are                        1
+                                                                                https://huggingface.co/pepa/
+translated back to the original multi-label structure.                     roberta-base-snli
+
+                                                                     1873
+                                                                                                                                                                                                                                                                                                              Benevolence: dependability
+                                                                                                                                                                                                                                                 Conformity: interpersonal
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                    Universalism: objectivity
+                                                                                                                                                                                                                                                                                                                                                                                          Universalism: tolerance
+                                Self-direction: thought
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                           Universalism: concern
+                                                                                                                                                                                                                                                                                                                                                                   Universalism: nature
+                                                          Self-direction: action
+
+
+
+
+                                                                                                                                                                                                                                                                                        Benevolence: caring
+                                                                                                                          Power: dominance
+
+
+
+
+                                                                                                                                                                       Security: personal
+
+
+
+
+                                                                                                                                                                                                                             Conformity: rules
+                                                                                                                                                                                            Security: societal
+                                                                                                                                             Power: resources
+                                                                                                            Achievement
+                                                                                   Stimulation
+                                                                                                 Hedonism
+
+
+
+
+                                                                                                                                                                                                                 Tradition
+
+
+
+
+                                                                                                                                                                                                                                                                             Humility
+                                                                                                                                                                Face
+   Test set / Approach    All
+   Main
+    Best per category     .59 .61 .71 .39 .39 .66 .50 .57 .39 .80 .68 .65 .61 .69 .39 .60 .43 .78 .87 .46 .58
+    Best approach         .56 .57 .71 .32 .25 .66 .47 .53 .38 .76 .64 .63 .60 .65 .32 .57 .43 .73 .82 .46 .52
+    BERT                  .42 .44 .55 .05 .20 .56 .29 .44 .13 .74 .59 .43 .47 .23 .07 .46 .14 .67 .71 .32 .33
+    1-Baseline            .26 .17 .40 .09 .03 .41 .13 .12 .12 .51 .40 .19 .31 .07 .09 .35 .19 .54 .17 .22 .46
+    2023-01-25-15-47-28   .49 .53 .58 .19 .30 .58 .35 .50 .27 .75 .62 .59 .53 .58 .18 .54 .15 .73 .77 .38 .39
+
+Table 2: Achieved F1 -score of team soren-kierkegaard per test dataset, from macro-precision and macro-recall (All)
+and for each of the 20 value categories. Approaches in grey are shown for comparison: an ensemble using the best
+participant approach for each individual category; the best participant approach; and the organizer’s BERT and
+1-Baseline.
+
+
+4.1 Data splits                                                                                                                                                 value as a new attribute of the HPO to further ex-
+                                                                                                                                                                plore the parameter space. The two best models
+The main data splits provided by the competition
+                                                                                                                                                                (according to the micro-averaged F1 score) are fully
+consist of a total of 8865 instances, divided into
+                                                                                                                                                                trained in the third phase, including the translation
+a training split (publicly annotated, 61%), a vali-
+                                                                                                                                                                of the predictions to the one-hot multi-label vector.
+dation split (publicly annotated, 21%) and a test
+                                                                                                                                                                The two first steps of this process are summarized
+split (labels were not published, 18%). In order
+                                                                                                                                                                in Table 4. The first HPO process consisted of 90
+to effectively have a test split that could be used
+                                                                                                                                                                runs, and the second consisted of 50. The values
+during the training phases (as the one that the or-
+                                                                                                                                                                for the hyperparameters were chosen following a
+ganization provided was unlabelled and it was the
+                                                                                                                                                                normal distribution between the values in the in-
+one that the predictions should be inferred over and
+                                                                                                                                                                tervals, and those values were manually narrowed
+sent as the submission) and the hyper-parameter
+                                                                                                                                                                from the first to the second HPO.
+optimization, we merge all the instances again and
+develop our own splits. The total number of in-                                                                                                                    At the end of the second HPO, the two runs
+stances available consists of both the training and                                                                                                             with the highest accuracy scores are the ones seen
+the validation split combined (all the labelled data),                                                                                                          in Table 5. Those two best runs are retrained, as
+a total of 7289. Our training dataset has 55% of the                                                                                                            shown in Figure 2. We can see that the training
+instances (4008), our validation dataset has 25% of                                                                                                             behavior is very similar, and the hyperparameters
+the instances (1820), and the development dataset                                                                                                               that define these runs are also similar, but run 1
+has 20% of the instances (1461).                                                                                                                                outperforms run 2 by a small margin. Therefore,
+                                                                                                                                                                the hyperparameters of run 1 are chosen for the
+4.2 Hyper-Parameter Optimization                                                                                                                                final model.
+                                                                                                                                                                   The best run of our HPO process obtain the re-
+Our experiment setup gives promising results dur-                                                                                                               sults over the development dataset that can be seen
+ing the initial testing, where it obtained a micro-                                                                                                             in Table 3. There have been a significant improve-
+averaged F1-score of around 0.5 over all classes                                                                                                                ment from the original testing using the entailment
+on our split in the development set. We there-                                                                                                                  approach.
+for continue with the entailment approach us-
+ing pepa/roberta-base-snli, and perform a Hyper-                                                                                                                5           Results
+Parameter Optimization (HPO) (Yu and Zhu, 2020)
+process in three phases. Firstly, we focus on large                                                                                                             We submitted our system to the official leader-
+ranges of hyper-parameters, and then we narrowed                                                                                                                board. It achieves an overall F1 score of 0.49, being
+the random search values to lower intervals, focus-                                                                                                             the 13th best-performing model over the main test
+ing on the results obtained, and added the dropout                                                                                                              dataset. The results per category, and also the com-
+                                                                                                                                             1874
+                      Precision     Recall    F1-Score        ume 1: Long Papers), pages 4459–4471, Dublin,
+    Micro-averaged      0.70         0.46       0.55          Ireland. Association for Computational Linguistics.
+    Macro-averaged      0.63         0.37       0.45
+                                                           Johannes Kiesel, Milad Alshomary, Nailia Mirza-
+                                                             khmedova, Maximilian Heinrich, Nicolas Handke,
+Table 3: Results of the best run of the HPO process over
+                                                             and Henning Wachsmuth and Benno Stein. 2023.
+the development set                                          Semeval-2023 task 4: Valueeval: Identification of hu-
+                                                             man values behind arguments. In Proceedings of the
+                                                             17th International Workshop on Semantic Evaluation,
+parison between our model and some of the best               Toronto, Canada. Association for Computational Lin-
+models and baselines can be seen in Table 2.                 guistics.
+   The model performs better in the categories that        Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Man-
+have more instances, as there is a class imbalance in        dar Joshi, Danqi Chen, Omer Levy, Mike Lewis,
+the dataset (see Figure 1). Therefore, we conclude           Luke Zettlemoyer, and Veselin Stoyanov. 2019.
+that the critical factor in the model performance            Roberta: A robustly optimized bert pretraining ap-
+                                                             proach. arXiv preprint arXiv:1907.11692.
+is the number of instances per category, especially
+due to the high number of classes and their multi-         Bill MacCartney and Christopher D. Manning. 2008.
+label aspect.                                                Modeling semantic containment and exclusion in nat-
+                                                             ural language inference. In Proceedings of the 22nd
+6     Conclusion                                             International Conference on Computational Linguis-
+                                                             tics (Coling 2008), pages 521–528, Manchester, UK.
+                                                             Coling 2008 Organizing Committee.
+We have submitted predictions to all value cate-
+gories in Task 4 SemEval 2023. We have proposed            Jonathan May, Ekaterina Shutova, Aurelie Herbelot,
+reforming the multi-label task into a binary task            Xiaodan Zhu, Marianna Apidianaki, and Saif M. Mo-
+and making the system label-aware. We have cast              hammad, editors. 2019. Proceedings of the 13th In-
+                                                             ternational Workshop on Semantic Evaluation. Asso-
+the problem to resemble an NLI task and thereby              ciation for Computational Linguistics, Minneapolis,
+be able to transfer abilities from already pre-trained       Minnesota, USA.
+backbone models for this task. We have performed
+hyper-parameter tuning to find the best set for our        Nailia Mirzakhmedova, Johannes Kiesel, Milad Al-
+                                                             shomary, Maximilian Heinrich, Nicolas Handke, Xi-
+system. Our submission rank above the standard               aoni Cai, Barriere Valentin, Doratossadat Dastgheib,
+BERT baseline and is also in the best half of all            Omid Ghahroodi, Mohammad Ali Sadraei, Ehsaned-
+submission in terms of overall macro f1. However,            din Asgari, Lea Kawaletz, Henning Wachsmuth, and
+we notice some limitations in our system and set             Benno Stein. 2023. The Touché23-ValueEval Dataset
+                                                             for Identifying Human Values behind Arguments.
+of experiments: First 1) we notice a class imbal-            CoRR, abs/2301.13771.
+ance in the training data which we do not mitigate
+well. We expect different sampling strategies might        Aaron Mueller, Jason Krone, Salvatore Romeo, Saab
+help. Second, 2) we do not report ablation stud-             Mansour, Elman Mansimov, Yi Zhang, and Dan Roth.
+                                                             2022. Label semantic aware pre-training for few-shot
+ies. It could be relevant to examine how much e.g            text classification.
+the reframing improves the performance and what
+performance boost comes from using a pre-trained           Alexis Palmer, Nathan Schneider, Natalie Schluter, Guy
+                                                             Emerson, Aurelie Herbelot, and Xiaodan Zhu, ed-
+NLI model as a backbone.
+                                                             itors. 2021. Proceedings of the 15th International
+                                                             Workshop on Semantic Evaluation (SemEval-2021).
+                                                             Association for Computational Linguistics, Online.
+References
+                                                           Francisco Rodríguez-Sánchez, Jorge Carrillo-de Al-
+Samuel R. Bowman, Gabor Angeli, Christopher Potts,           bornoz, Laura Plaza, Adrián Mendieta-Aragón,
+  and Christopher D. Manning. 2015. A large anno-            Guillermo Marco-Remón, Maryna Makeienko, María
+  tated corpus for learning natural language inference.      Plaza, Julio Gonzalo, Damiano Spina, and Paolo
+  In Proceedings of the 2015 Conference on Empirical         Rosso. 2022. Overview of exist 2022: sexism iden-
+  Methods in Natural Language Processing (EMNLP).            tification in social networks. Procesamiento de
+  Association for Computational Linguistics.                 Lenguaje Natural, 69:229–240.
+
+Johannes Kiesel, Milad Alshomary, Nicolas Handke,          Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob
+  Xiaoni Cai, Henning Wachsmuth, and Benno Stein.            Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz
+  2022. Identifying the human values behind argu-            Kaiser, and Illia Polosukhin. 2017. Attention is all
+  ments. In Proceedings of the 60th Annual Meeting of        you need. Advances in neural information processing
+  the Association for Computational Linguistics (Vol-        systems, 30.
+
+                                                       1875
+Thomas Wolf, Lysandre Debut, Victor Sanh, Julien
+  Chaumond, Clement Delangue, Anthony Moi, Pier-
+  ric Cistac, Tim Rault, Remi Louf, Morgan Funtow-
+  icz, Joe Davison, Sam Shleifer, Patrick von Platen,
+  Clara Ma, Yacine Jernite, Julien Plu, Canwen Xu,
+  Teven Le Scao, Sylvain Gugger, Mariama Drame,
+  Quentin Lhoest, and Alexander Rush. 2020. Trans-
+  formers: State-of-the-art natural language processing.
+  In Proceedings of the 2020 Conference on Empirical
+  Methods in Natural Language Processing: System
+  Demonstrations, pages 38–45, Online. Association
+  for Computational Linguistics.
+
+Tong Yu and Hong Zhu. 2020. Hyper-parameter opti-
+  mization: A review of algorithms and applications.
+
+Xiaofei Zhu, Zhanwang Peng, Jiafeng Guo, and Stefan
+  Dietze. 2023. Generating effective label description
+  for label-aware sentiment classification. Expert Syst.
+  Appl., 213(PC).
+
+
+
+
+                                                       1876
+A    Appendix A: Hyper-Parameters
+
+  Parameter         Learning            Weight              Batch         Warmup                   Best Validation
+                                                                                      Dropout
+ Search Space          Rate             Decay                Size           Steps                 Accuracy (Binary)
+   First HPO       [1e-5 - 5e-5]       [0 - 0.03]       [8, 16, 32, 64]   [0 - 500]       -             0.859
+ Second HPO            4e-5          [0.01 - 0.03]            32          [0 - 300]   [0 - 0.3]        0.8718
+
+Table 4: Search space and best results of the first two steps of the HPO process. Note that we are using validation
+accuracy because the validation was made with the data in the entailment format, so it is either entailment or
+contradiction. There is no difference between using accuracy or F1.
+
+
+                             Parameters               Run 1                    Run 2
+                            Learning Rate              4e-5                     4e-5
+                            Weight Decay               0.01                     0.02
+                            Warmup Steps               100                      100
+                              Batch Size                32                       32
+                               Dropout                  0.2                      0.2
+                               Best F1           0.8712 at epoch 3        0.8718 at epoch 6
+
+       Table 5: Best two runs after the second step of the HPO. Note that the epoch number is zero-based.
+
+
+
+
+        (a) Training and evaluation loss between runs                (b) Evaluation accuracy compared between runs
+
+Figure 2: Training loss, evaluation loss and evaluation accuracy compared between two best runs after the second
+HPO process
+
+
+
+
+                                                            1877
+

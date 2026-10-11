@@ -1,0 +1,1 @@
+{"status": "PASS_PORTABLE_RETAINED_WINE_CALIBRATION", "result": {"path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/RESULT.json", "bytes": 34772, "sha256": "22f9d937f76cba0d52e780a551f3674c3b0aea40c05e8057333e771b1dae653a"}, "error": null}

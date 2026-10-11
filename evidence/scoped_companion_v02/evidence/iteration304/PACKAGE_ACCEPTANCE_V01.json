@@ -1,0 +1,1032 @@
+{
+  "schema": 1,
+  "status": "PASS_RELOCATED_BYTE_EXACT_REPLAY_AND_INDEPENDENT_SCIENTIFIC_PROJECTION",
+  "human_review": false,
+  "started_utc": "2026-10-11T19:17:59.927843+00:00",
+  "new_scientific_samples": 0,
+  "launcher_invocations": 1,
+  "old_answers_opened_before_new_terminal": false,
+  "delivery_zip": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01.zip",
+    "bytes": 1767911,
+    "sha256": "7c9144643b8ec9e2779cff5cf259dd334972a565264eb7c3d053c52b7fd709a7"
+  },
+  "build_receipt": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/PACKAGE_BUILD_V01.json",
+    "bytes": 9874,
+    "sha256": "c7989b3dab3123c975434624e360e3bd544fb967863a7b5cc050cc888ea12fe4"
+  },
+  "extracted_package": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces",
+  "extraction_members": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+    },
+    {
+      "path": "budget_replay.py",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+    },
+    {
+      "path": "expected_scientific.json",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+    },
+    {
+      "path": "parser/verify_exact_id_five.py",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    {
+      "path": "run.py",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+    },
+    {
+      "path": "sources/archive_evaluations.raw",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+    },
+    {
+      "path": "sources/organizer_main.raw",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+    },
+    {
+      "path": "sources/paper_13.pdf",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+    },
+    {
+      "path": "sources/paper_16.pdf",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+    },
+    {
+      "path": "sources/paper_3.pdf",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+    },
+    {
+      "path": "sources/paper_35.pdf",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+    },
+    {
+      "path": "sources/paper_41.pdf",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+    }
+  ],
+  "extraction_raw_bytes_separate_from_replay": 2481173,
+  "expected_member_before_terminal": "Copied and hashed as opaque archive bytes only; JSON not parsed or used as an answer.",
+  "static_review": {
+    "exact_four_worker_text_replacements_verified": true,
+    "unchanged_non_main_ast_definitions": [
+      "sha",
+      "require",
+      "measure",
+      "pinned_bootstrap",
+      "Meter"
+    ],
+    "scientific_protocol_equal_after_declared_path_administration_projection": true,
+    "parser_byte_identical": true,
+    "seven_original_and_relocated_sources_exact": true,
+    "external_pdf_executable": {
+      "path": "C:/Users/dongs/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdftotext.exe",
+      "bytes": 343552,
+      "sha256": "640b9a93fa31fc093860c635cd410a3e30f7d1e6166cb1130993fb1985f474ff"
+    },
+    "inert_parser_globals": "Repository-relative historical paths only constructed; pure verify_case takes text/HTML/JSON arguments, calls no read or subprocess. Parser main remains uncalled.",
+    "launcher_expected_read": "Static control flow opens expected_scientific only after subprocess.run returns zero and result is loaded.",
+    "path_boundary": "Worker resolves seven members and parser beneath protocol.parent; runtime uses new output TEMP/cwd. Existing old directories remain OS-accessible; no sandbox isolation claim.",
+    "prior_static_display_failure": {
+      "tool_chunk": "95a454",
+      "exit_code": 1,
+      "reason": "Console cp932 could not render Unicode in protocol; static UTF-8 reread 5a77da/0. No replay had started."
+    }
+  },
+  "sources_before": {
+    "original": {
+      "organizer": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/organizer_main.raw",
+        "bytes": 83506,
+        "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+      },
+      "archive": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/archive_evaluations.raw",
+        "bytes": 410492,
+        "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+      },
+      "paper_3": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_first3_paper_bridge_v01/pai_pdf.raw",
+        "bytes": 507457,
+        "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+      },
+      "paper_13": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p13_pdf.raw",
+        "bytes": 693104,
+        "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+      },
+      "paper_16": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p16_pdf.raw",
+        "bytes": 283898,
+        "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+      },
+      "paper_35": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p35_pdf.raw",
+        "bytes": 143066,
+        "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+      },
+      "paper_41": {
+        "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p41_pdf.raw",
+        "bytes": 293535,
+        "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+      }
+    },
+    "relocated": {
+      "organizer": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/organizer_main.raw",
+        "bytes": 83506,
+        "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+      },
+      "archive": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/archive_evaluations.raw",
+        "bytes": 410492,
+        "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+      },
+      "paper_3": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_3.pdf",
+        "bytes": 507457,
+        "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+      },
+      "paper_13": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_13.pdf",
+        "bytes": 693104,
+        "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+      },
+      "paper_16": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_16.pdf",
+        "bytes": 283898,
+        "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+      },
+      "paper_35": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_35.pdf",
+        "bytes": 143066,
+        "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+      },
+      "paper_41": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_41.pdf",
+        "bytes": 293535,
+        "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+      }
+    }
+  },
+  "actual_launcher": {
+    "command": [
+      "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration304\\clean package with spaces\\run.py",
+      "--pdftotext",
+      "C:\\Users\\dongs\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdftotext.exe",
+      "--output",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\qa_v01\\relocated output"
+    ],
+    "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/unrelated working directory",
+    "started_utc": "2026-10-11T19:18:01.748978+00:00",
+    "pid": 29208,
+    "returncode": 0,
+    "wall_seconds": 2.8247341999958735,
+    "ended_utc": "2026-10-11T19:18:04.574062+00:00",
+    "stdout": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stdout.txt",
+      "bytes": 246,
+      "sha256": "3823dd16a5df66d80a4787e9b5d35eac684c5cccdce45187d122328478d06f1e"
+    },
+    "stderr": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "new_launcher_terminal_before_reference_read": true,
+  "independent_scientific_projection": {
+    "all_nonexcluded_top_fields_compared": [
+      "acquisition_events",
+      "adaptive_advantage_claimed",
+      "bootstrap_bindings",
+      "budget_denials",
+      "certificates",
+      "certified_reported_rows",
+      "checkpoints",
+      "historical_execution_certified",
+      "human_gold",
+      "lineage_independence_certified",
+      "network_access",
+      "observed_meter_state",
+      "old_controls_executed",
+      "old_txt_or_certificate_read",
+      "optimality_scope",
+      "original_payload_bytes",
+      "original_reads",
+      "pdf_extraction_from_paid_bytes_only",
+      "pdf_subprocesses",
+      "pricing",
+      "schema",
+      "selection",
+      "shared_sources_parsed_once",
+      "status"
+    ],
+    "top_level_excluded": [
+      "ended_utc",
+      "protocol_sha256",
+      "started_utc",
+      "timing_scope",
+      "timings"
+    ],
+    "nested_excluded": {
+      "acquisition_events": [
+        "python_parent_cpu_seconds",
+        "wall_seconds"
+      ],
+      "checkpoints": [
+        "certificate_verification_timing"
+      ],
+      "pdf_subprocesses": [
+        "timing",
+        "working_directory_and_TEMP"
+      ]
+    },
+    "package_projection_function_imported": false,
+    "launcher_matches_flag_used_as_proof": false,
+    "every_certificate_exact_equal": true
+  },
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER304_RELOCATION_QA_EXEC_PREFLIGHT_V01.json",
+    "sha256": "abb3072796a96cabaaa02614f6f01b9d79e9d2731a1ee12364291d200b041fac"
+  },
+  "new_execution": {
+    "schema": 1,
+    "status": "PASS_RELOCATED_REPLAY_AND_POSTPROCESS",
+    "started_utc": "2026-10-11T19:18:01.901821+00:00",
+    "replay_invocations": 1,
+    "raw_sources_pre_read_by_launcher": false,
+    "expected_read_before_child_terminal": false,
+    "actual_child_returncode": 0,
+    "whole_child_process_wall_seconds": 2.6176106999919284,
+    "command": [
+      "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration304\\clean package with spaces\\budget_replay.py",
+      "--protocol",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration304\\clean package with spaces\\protocol.json",
+      "--output",
+      "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\qa_v01\\relocated output",
+      "--pdftotext",
+      "C:\\Users\\dongs\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdftotext.exe"
+    ],
+    "stdout": {
+      "path": "process.stdout.txt",
+      "bytes": 287,
+      "sha256": "43afe33189ddd11a6426353ea3ac8b865619822f9afa53b770ddf0ad0dbccfd8"
+    },
+    "stderr": {
+      "path": "process.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "result": {
+      "path": "RESULT_V01.json",
+      "bytes": 22264,
+      "sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27"
+    },
+    "postprocess_qa": {
+      "path": "POSTPROCESS_QA_V01.json",
+      "bytes": 917,
+      "sha256": "39fe20d7f691a7619eb040c45b3e4b89a08ee1b6890c290524990f4193c914dc"
+    },
+    "ended_utc": "2026-10-11T19:18:04.551242+00:00",
+    "launcher_total_wall_seconds": 2.649304899998242,
+    "launcher_exit_code": 0,
+    "process_tree_cpu_measured": false,
+    "network_access": false,
+    "scope": "Relocated replay and subsequent output comparison; no new scientific samples or method advantage."
+  },
+  "new_result_descriptor": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/RESULT_V01.json",
+    "bytes": 22264,
+    "sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27"
+  },
+  "source303_result_sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff",
+  "original_source_hashes_unchanged": true,
+  "relocated_source_hashes_unchanged": true,
+  "package_bytes_and_inventory_unchanged": true,
+  "original_reads": 7,
+  "original_payload_bytes": 2415058,
+  "budget_denials": 5,
+  "certificate_count": 5,
+  "derived_frontier_bytes": [
+    637064,
+    920962,
+    1214497,
+    1721954,
+    2415058
+  ],
+  "pdf_output_bindings": [
+    {
+      "path": "paper_35_pdf.txt",
+      "bytes": 26859,
+      "sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_35_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_16_pdf.txt",
+      "bytes": 56008,
+      "sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_16_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_41_pdf.txt",
+      "bytes": 27756,
+      "sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_41_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_3_pdf.txt",
+      "bytes": 32533,
+      "sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_3_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_13_pdf.txt",
+      "bytes": 42965,
+      "sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a",
+      "old_bytes_equal": true
+    },
+    {
+      "path": "paper_13_pdftotext.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_bytes_equal": true
+    }
+  ],
+  "checkpoints_checked": 11,
+  "events_checked": 12,
+  "full_certificate_dicts_equal": true,
+  "read_scope": {
+    "replay": "Exactly seven logical content acquisitions within child; excludes ZIP preparation, authentication and all QA reads.",
+    "qa": "Instrumented content reads below include before/after and terminal answer checks. ZIP extraction decompression bytes recorded separately. Not OS/disk-bus reads.",
+    "older_answers": "No original303 result/TXT opened by this script until observed new launcher returncode zero.",
+    "timing": "One local software-delivery replay using installed executable and already-present possibly hot-cache source bytes. No network/cold-cache/performance claim."
+  },
+  "scope_limits": [
+    "No new scientific sample, accuracy estimate, human review or historical authentication.",
+    "Relocation of files/configuration under this Windows dependency; not cross-platform portability.",
+    "Fixed direct baseline already attains all five dependency-contract frontiers; no method advantage.",
+    "Old workspace is still OS-accessible; relative path static review and new data bindings are not an OS sandbox proof.",
+    "Third-party source rights and publication are not authorized or certified by this software acceptance."
+  ],
+  "ended_utc": "2026-10-11T19:18:04.886140+00:00",
+  "qa_total_wall_seconds": 4.958333999995375,
+  "qa_content_read_calls": 85,
+  "qa_content_read_bytes": 16585579,
+  "qa_read_ledger": [
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER304_RELOCATION_QA_EXEC_PREFLIGHT_V01.json",
+      "purpose": "Fresh pre-execution storage receipt",
+      "bytes": 3192,
+      "sha256": "abb3072796a96cabaaa02614f6f01b9d79e9d2731a1ee12364291d200b041fac",
+      "wall_seconds": 0.007761199987726286
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/PACKAGE_BUILD_V01.json",
+      "purpose": "Pinned builder receipt; not a replay answer",
+      "bytes": 9874,
+      "sha256": "c7989b3dab3123c975434624e360e3bd544fb967863a7b5cc050cc888ea12fe4",
+      "wall_seconds": 0.009293800016166642
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01.zip",
+      "purpose": "ZIP byte integrity preparation; outside charged replay",
+      "bytes": 1767911,
+      "sha256": "7c9144643b8ec9e2779cff5cf259dd334972a565264eb7c3d053c52b7fd709a7",
+      "wall_seconds": 0.049117500020656735
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/MANIFEST.json",
+      "purpose": "Package inventory metadata",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f",
+      "wall_seconds": 0.006083300017053261
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/PROTOCOL_V01.json",
+      "purpose": "Original configuration, not original answers",
+      "bytes": 8900,
+      "sha256": "1932812e49eb5c4456038bb8c5f471ce2739072f29e3d3ba3d37dfe9a56b97bf",
+      "wall_seconds": 0.0007944000244606286
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/protocol.json",
+      "purpose": "Portable configuration",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a",
+      "wall_seconds": 0.0024095000117085874
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/budget_replay.py",
+      "purpose": "Original worker source; not executed",
+      "bytes": 11906,
+      "sha256": "8e3b5432df71e00e6ab3cb35758f625c35d0fef28deac6e31e1a89826624e876",
+      "wall_seconds": 0.06511049999971874
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/budget_replay.py",
+      "purpose": "Portable worker static review",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91",
+      "wall_seconds": 0.03586090001044795
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_exact_id_five_v01/verify_exact_id_five.py",
+      "purpose": "Original parser equality authentication",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15",
+      "wall_seconds": 0.0010405000066384673
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/parser/verify_exact_id_five.py",
+      "purpose": "Relocated parser equality authentication",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15",
+      "wall_seconds": 0.022641300020040944
+    },
+    {
+      "path": "C:/Users/dongs/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdftotext.exe",
+      "purpose": "External installed pdftotext byte binding, not executed yet",
+      "bytes": 343552,
+      "sha256": "640b9a93fa31fc093860c635cd410a3e30f7d1e6166cb1130993fb1985f474ff",
+      "wall_seconds": 0.003480399987893179
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/organizer_main.raw",
+      "purpose": "QA preparation original source hash organizer",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "wall_seconds": 0.0021018999977968633
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/organizer_main.raw",
+      "purpose": "QA preparation relocated source hash organizer",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "wall_seconds": 0.14490810001734644
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/archive_evaluations.raw",
+      "purpose": "QA preparation original source hash archive",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "wall_seconds": 0.004701400001067668
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/archive_evaluations.raw",
+      "purpose": "QA preparation relocated source hash archive",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "wall_seconds": 0.014980199979618192
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_first3_paper_bridge_v01/pai_pdf.raw",
+      "purpose": "QA preparation original source hash paper_3",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "wall_seconds": 0.007378199981758371
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_3.pdf",
+      "purpose": "QA preparation relocated source hash paper_3",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "wall_seconds": 0.017882299987832084
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p13_pdf.raw",
+      "purpose": "QA preparation original source hash paper_13",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "wall_seconds": 0.007333800022024661
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_13.pdf",
+      "purpose": "QA preparation relocated source hash paper_13",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "wall_seconds": 0.01900149998255074
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p16_pdf.raw",
+      "purpose": "QA preparation original source hash paper_16",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "wall_seconds": 0.003535700001521036
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_16.pdf",
+      "purpose": "QA preparation relocated source hash paper_16",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "wall_seconds": 0.015445299999555573
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p35_pdf.raw",
+      "purpose": "QA preparation original source hash paper_35",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "wall_seconds": 0.00511749999714084
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_35.pdf",
+      "purpose": "QA preparation relocated source hash paper_35",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "wall_seconds": 0.015496399981202558
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p41_pdf.raw",
+      "purpose": "QA preparation original source hash paper_41",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "wall_seconds": 0.003646099998150021
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_41.pdf",
+      "purpose": "QA preparation relocated source hash paper_41",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "wall_seconds": 0.01389750000089407
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stdout.txt",
+      "purpose": "Terminal launcher stdout",
+      "bytes": 246,
+      "sha256": "3823dd16a5df66d80a4787e9b5d35eac684c5cccdce45187d122328478d06f1e",
+      "wall_seconds": 0.007736700004898012
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/launcher.stderr.txt",
+      "purpose": "Terminal launcher stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.00030670000705868006
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/EXECUTION_V01.json",
+      "purpose": "New terminal execution receipt",
+      "bytes": 1938,
+      "sha256": "2028f6ceea15f69305f82f4432a31523fc424df6061d9546b4fafcd58cd2997d",
+      "wall_seconds": 0.00014030002057552338
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/process.stdout.txt",
+      "purpose": "New terminal receipt artifact stdout",
+      "bytes": 287,
+      "sha256": "43afe33189ddd11a6426353ea3ac8b865619822f9afa53b770ddf0ad0dbccfd8",
+      "wall_seconds": 7.179999374784529e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/process.stderr.txt",
+      "purpose": "New terminal receipt artifact stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 4.759998410008848e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/RESULT_V01.json",
+      "purpose": "New terminal receipt artifact result",
+      "bytes": 22264,
+      "sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27",
+      "wall_seconds": 0.0001236999814864248
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/POSTPROCESS_QA_V01.json",
+      "purpose": "New terminal receipt artifact postprocess_qa",
+      "bytes": 917,
+      "sha256": "39fe20d7f691a7619eb040c45b3e4b89a08ee1b6890c290524990f4193c914dc",
+      "wall_seconds": 5.740000051446259e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/RESULT_V01.json",
+      "purpose": "New scientific result after terminal",
+      "bytes": 22264,
+      "sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27",
+      "wall_seconds": 0.00011570000788196921
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/RESULT_V01.json",
+      "purpose": "Original303 answer opened only after new terminal",
+      "bytes": 22310,
+      "sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff",
+      "wall_seconds": 0.005054500012192875
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/expected_scientific.json",
+      "purpose": "Packaged answer semantic audit only after new terminal",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d",
+      "wall_seconds": 0.0005088000034447759
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_35_pdf.txt",
+      "purpose": "New PDF stdout independent binding",
+      "bytes": 26859,
+      "sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590",
+      "wall_seconds": 0.007746599992970005
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_35_pdf.txt",
+      "purpose": "Old303 PDF stdout answer after new terminal",
+      "bytes": 26859,
+      "sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590",
+      "wall_seconds": 0.011712900013662875
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_35_pdftotext.stderr.bin",
+      "purpose": "New PDF stderr independent binding",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.0002282000205013901
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_35_pdftotext.stderr.bin",
+      "purpose": "Old303 PDF stderr answer after new terminal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 6.890000076964498e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_16_pdf.txt",
+      "purpose": "New PDF stdout independent binding",
+      "bytes": 56008,
+      "sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9",
+      "wall_seconds": 0.010244599980069324
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_16_pdf.txt",
+      "purpose": "Old303 PDF stdout answer after new terminal",
+      "bytes": 56008,
+      "sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9",
+      "wall_seconds": 0.01963409999734722
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_16_pdftotext.stderr.bin",
+      "purpose": "New PDF stderr independent binding",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.0005084000003989786
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_16_pdftotext.stderr.bin",
+      "purpose": "Old303 PDF stderr answer after new terminal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.00020680000307038426
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_41_pdf.txt",
+      "purpose": "New PDF stdout independent binding",
+      "bytes": 27756,
+      "sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6",
+      "wall_seconds": 0.017509299999801442
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_41_pdf.txt",
+      "purpose": "Old303 PDF stdout answer after new terminal",
+      "bytes": 27756,
+      "sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6",
+      "wall_seconds": 0.013137799978721887
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_41_pdftotext.stderr.bin",
+      "purpose": "New PDF stderr independent binding",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.000658300006762147
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_41_pdftotext.stderr.bin",
+      "purpose": "Old303 PDF stderr answer after new terminal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.0002111000067088753
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_3_pdf.txt",
+      "purpose": "New PDF stdout independent binding",
+      "bytes": 32533,
+      "sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0",
+      "wall_seconds": 0.016065399977378547
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_3_pdf.txt",
+      "purpose": "Old303 PDF stdout answer after new terminal",
+      "bytes": 32533,
+      "sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0",
+      "wall_seconds": 0.016577100002905354
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_3_pdftotext.stderr.bin",
+      "purpose": "New PDF stderr independent binding",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.0005458999949041754
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_3_pdftotext.stderr.bin",
+      "purpose": "Old303 PDF stderr answer after new terminal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.0011049000022467226
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_13_pdf.txt",
+      "purpose": "New PDF stdout independent binding",
+      "bytes": 42965,
+      "sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a",
+      "wall_seconds": 0.024485700007062405
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_13_pdf.txt",
+      "purpose": "Old303 PDF stdout answer after new terminal",
+      "bytes": 42965,
+      "sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a",
+      "wall_seconds": 0.0424592999916058
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/paper_13_pdftotext.stderr.bin",
+      "purpose": "New PDF stderr independent binding",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.0008675999997649342
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_13_pdftotext.stderr.bin",
+      "purpose": "Old303 PDF stderr answer after new terminal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 0.0009417999826837331
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/organizer_main.raw",
+      "purpose": "QA original hash after organizer",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "wall_seconds": 0.0020093999919481575
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/organizer_main.raw",
+      "purpose": "QA relocated hash after organizer",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "wall_seconds": 0.001935300009790808
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/archive_evaluations.raw",
+      "purpose": "QA original hash after archive",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "wall_seconds": 0.004446699982509017
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/archive_evaluations.raw",
+      "purpose": "QA relocated hash after archive",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "wall_seconds": 0.004199599992716685
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_first3_paper_bridge_v01/pai_pdf.raw",
+      "purpose": "QA original hash after paper_3",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "wall_seconds": 0.004360799997812137
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_3.pdf",
+      "purpose": "QA relocated hash after paper_3",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "wall_seconds": 0.003325900004711002
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p13_pdf.raw",
+      "purpose": "QA original hash after paper_13",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "wall_seconds": 0.005454099999042228
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_13.pdf",
+      "purpose": "QA relocated hash after paper_13",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "wall_seconds": 0.0035841000208165497
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p16_pdf.raw",
+      "purpose": "QA original hash after paper_16",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "wall_seconds": 0.001289999985601753
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_16.pdf",
+      "purpose": "QA relocated hash after paper_16",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "wall_seconds": 0.0017654999974183738
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p35_pdf.raw",
+      "purpose": "QA original hash after paper_35",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "wall_seconds": 0.0008567000040784478
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_35.pdf",
+      "purpose": "QA relocated hash after paper_35",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "wall_seconds": 0.0006196000031195581
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p41_pdf.raw",
+      "purpose": "QA original hash after paper_41",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "wall_seconds": 0.0010961000225506723
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_41.pdf",
+      "purpose": "QA relocated hash after paper_41",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "wall_seconds": 0.0010248999751638621
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/MANIFEST.json",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f",
+      "wall_seconds": 0.00012889999197795987
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/README.md",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996",
+      "wall_seconds": 0.00010910001583397388
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/budget_replay.py",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91",
+      "wall_seconds": 0.0001272000081371516
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/expected_scientific.json",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d",
+      "wall_seconds": 0.00014899999951012433
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/parser/verify_exact_id_five.py",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15",
+      "wall_seconds": 0.00011389999417588115
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/protocol.json",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a",
+      "wall_seconds": 9.940000018104911e-05
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/run.py",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46",
+      "wall_seconds": 0.00010829998063854873
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/archive_evaluations.raw",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "wall_seconds": 0.0012869000202044845
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/organizer_main.raw",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "wall_seconds": 0.000541799992788583
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_13.pdf",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "wall_seconds": 0.003169999981764704
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_16.pdf",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "wall_seconds": 0.0012974000128451735
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_3.pdf",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "wall_seconds": 0.001934400002937764
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_35.pdf",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "wall_seconds": 0.0006467999774031341
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration304/clean package with spaces/sources/paper_41.pdf",
+      "purpose": "Extracted package final unchanged inventory",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "wall_seconds": 0.001203199994051829
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01.zip",
+      "purpose": "Final ZIP unchanged",
+      "bytes": 1767911,
+      "sha256": "7c9144643b8ec9e2779cff5cf259dd334972a565264eb7c3d053c52b7fd709a7",
+      "wall_seconds": 0.007899199990788475
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/qa_v01/relocated output/RESULT_V01.json",
+      "purpose": "Final new result binding",
+      "bytes": 22264,
+      "sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27",
+      "wall_seconds": 0.00022999997599981725
+    }
+  ],
+  "script_sha256": "96f1631bc1284d818715b454d10a83aa62c0b4a0c9a29ab4d03afade5271e2c8"
+}

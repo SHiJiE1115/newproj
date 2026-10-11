@@ -1,0 +1,631 @@
+{
+  "schema": 1,
+  "status": "PASS_INDEPENDENT_DEPENDENCY_LEDGER_AND_CERTIFICATE_QA",
+  "human_review": false,
+  "qa_started_utc": "2026-10-11T19:03:01.772367+00:00",
+  "protocol_sha256": "1932812e49eb5c4456038bb8c5f471ce2739072f29e3d3ba3d37dfe9a56b97bf",
+  "replay_result_sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff",
+  "replay_execution_sha256": "16a62fca2418a3e15beb045e9ad66aa867fd738f8aca60f2c6cf8e569aa0e99c",
+  "replay_actual_tool_observation": {
+    "reported_by_owner": "4b1e23/exit0",
+    "child_returncode": 0,
+    "whole_child_wall_seconds": 3.099386100017,
+    "scope": "Owner-reported tool observation plus pinned terminal receipt; not OS-signed."
+  },
+  "dependency_subset_count": 128,
+  "subset_enumeration_kind": "128 metadata dependency alternatives, not 128 real acquisition experiments",
+  "subset_table_sha256": "c91ba89692955d1bf088df30cf5f6fe5c9171e14247e8659c58765c7755542ec",
+  "metadata_bit_order": [
+    "archive",
+    "organizer",
+    "paper_13",
+    "paper_16",
+    "paper_3",
+    "paper_35",
+    "paper_41"
+  ],
+  "derived_frontier": [
+    {
+      "coverage": 1,
+      "minimum_payload_budget_bytes": 637064,
+      "last_source": "paper_35"
+    },
+    {
+      "coverage": 2,
+      "minimum_payload_budget_bytes": 920962,
+      "last_source": "paper_16"
+    },
+    {
+      "coverage": 3,
+      "minimum_payload_budget_bytes": 1214497,
+      "last_source": "paper_41"
+    },
+    {
+      "coverage": 4,
+      "minimum_payload_budget_bytes": 1721954,
+      "last_source": "paper_3"
+    },
+    {
+      "coverage": 5,
+      "minimum_payload_budget_bytes": 2415058,
+      "last_source": "paper_13"
+    }
+  ],
+  "zero_coverage_minimum_bytes": 0,
+  "minimum_subset_masks": {
+    "0": [
+      0
+    ],
+    "1": [
+      35
+    ],
+    "2": [
+      43
+    ],
+    "3": [
+      107
+    ],
+    "4": [
+      123
+    ],
+    "5": [
+      127
+    ]
+  },
+  "analytic_bound": "Any positive coverage requires both common objects. Each additional distinct certificate requires its distinct whole PDF. Nonnegative fixed lengths imply common plus the k cheapest PDFs; the fixed size order attains each bound.",
+  "prefix_event_checks": [
+    {
+      "sequence": 1,
+      "paid_bytes": 83506,
+      "raw_read_count": 1,
+      "acquired": [
+        "organizer"
+      ]
+    },
+    {
+      "sequence": 2,
+      "paid_bytes": 493998,
+      "raw_read_count": 2,
+      "acquired": [
+        "organizer",
+        "archive"
+      ]
+    },
+    {
+      "sequence": 3,
+      "paid_bytes": 493998,
+      "raw_read_count": 2,
+      "acquired": [
+        "organizer",
+        "archive"
+      ]
+    },
+    {
+      "sequence": 4,
+      "paid_bytes": 637064,
+      "raw_read_count": 3,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35"
+      ]
+    },
+    {
+      "sequence": 5,
+      "paid_bytes": 637064,
+      "raw_read_count": 3,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35"
+      ]
+    },
+    {
+      "sequence": 6,
+      "paid_bytes": 920962,
+      "raw_read_count": 4,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35",
+        "paper_16"
+      ]
+    },
+    {
+      "sequence": 7,
+      "paid_bytes": 920962,
+      "raw_read_count": 4,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35",
+        "paper_16"
+      ]
+    },
+    {
+      "sequence": 8,
+      "paid_bytes": 1214497,
+      "raw_read_count": 5,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35",
+        "paper_16",
+        "paper_41"
+      ]
+    },
+    {
+      "sequence": 9,
+      "paid_bytes": 1214497,
+      "raw_read_count": 5,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35",
+        "paper_16",
+        "paper_41"
+      ]
+    },
+    {
+      "sequence": 10,
+      "paid_bytes": 1721954,
+      "raw_read_count": 6,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35",
+        "paper_16",
+        "paper_41",
+        "paper_3"
+      ]
+    },
+    {
+      "sequence": 11,
+      "paid_bytes": 1721954,
+      "raw_read_count": 6,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35",
+        "paper_16",
+        "paper_41",
+        "paper_3"
+      ]
+    },
+    {
+      "sequence": 12,
+      "paid_bytes": 2415058,
+      "raw_read_count": 7,
+      "acquired": [
+        "organizer",
+        "archive",
+        "paper_35",
+        "paper_16",
+        "paper_41",
+        "paper_3",
+        "paper_13"
+      ]
+    }
+  ],
+  "acquisition_count": 7,
+  "denial_count": 5,
+  "checkpoint_count": 11,
+  "final_paid_bytes": 2415058,
+  "five_denials_preserve_paid_bytes_and_raw_read_count": true,
+  "all_certificate_dependencies_prepaid": true,
+  "certificate_count": 5,
+  "certificate_checks": [
+    {
+      "ordinal": 3,
+      "source_key": "paper_3",
+      "text_bytes": 32533,
+      "new_and_old_text_sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0",
+      "old_certificate_exact": true,
+      "independent_table_archive_row_join": true,
+      "required_sources": [
+        "archive",
+        "organizer",
+        "paper_3"
+      ],
+      "historical_execution_certified": false
+    },
+    {
+      "ordinal": 13,
+      "source_key": "paper_13",
+      "text_bytes": 42965,
+      "new_and_old_text_sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a",
+      "old_certificate_exact": true,
+      "independent_table_archive_row_join": true,
+      "required_sources": [
+        "archive",
+        "organizer",
+        "paper_13"
+      ],
+      "historical_execution_certified": false
+    },
+    {
+      "ordinal": 16,
+      "source_key": "paper_16",
+      "text_bytes": 56008,
+      "new_and_old_text_sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9",
+      "old_certificate_exact": true,
+      "independent_table_archive_row_join": true,
+      "required_sources": [
+        "archive",
+        "organizer",
+        "paper_16"
+      ],
+      "historical_execution_certified": false
+    },
+    {
+      "ordinal": 35,
+      "source_key": "paper_35",
+      "text_bytes": 26859,
+      "new_and_old_text_sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590",
+      "old_certificate_exact": true,
+      "independent_table_archive_row_join": true,
+      "required_sources": [
+        "archive",
+        "organizer",
+        "paper_35"
+      ],
+      "historical_execution_certified": false
+    },
+    {
+      "ordinal": 41,
+      "source_key": "paper_41",
+      "text_bytes": 27756,
+      "new_and_old_text_sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6",
+      "old_certificate_exact": true,
+      "independent_table_archive_row_join": true,
+      "required_sources": [
+        "archive",
+        "organizer",
+        "paper_41"
+      ],
+      "historical_execution_certified": false
+    }
+  ],
+  "all_originals_unchanged": [
+    {
+      "source_key": "organizer",
+      "bytes": 83506,
+      "sha256_before": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "sha256_after": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "unchanged": true
+    },
+    {
+      "source_key": "archive",
+      "bytes": 410492,
+      "sha256_before": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "sha256_after": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "unchanged": true
+    },
+    {
+      "source_key": "paper_3",
+      "bytes": 507457,
+      "sha256_before": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "sha256_after": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "unchanged": true
+    },
+    {
+      "source_key": "paper_13",
+      "bytes": 693104,
+      "sha256_before": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "sha256_after": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "unchanged": true
+    },
+    {
+      "source_key": "paper_16",
+      "bytes": 283898,
+      "sha256_before": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "sha256_after": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "unchanged": true
+    },
+    {
+      "source_key": "paper_35",
+      "bytes": 143066,
+      "sha256_before": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "sha256_after": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "unchanged": true
+    },
+    {
+      "source_key": "paper_41",
+      "bytes": 293535,
+      "sha256_before": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "sha256_after": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "unchanged": true
+    }
+  ],
+  "common_parse_once_field_checked": true,
+  "existing_common_cache_is_not_new_algorithm": true,
+  "scope_limits": [
+    "Known-positive post-hoc five of the original 29 development papers; no accuracy estimate or blind evaluation.",
+    "Only fixed whole-file dependency-contract optimality, not a universal information lower bound or HTTP/discovery cost claim.",
+    "QA checks ledger/byte/certificate consistency; it does not independently observe OS reads or process syscalls. Root owns replay implementation review.",
+    "No PDF subprocess, old seven negative controls, network acquisition, physical experiment or policy replay was executed by QA.",
+    "No method superiority, historical execution, lineage independence or human-gold claim."
+  ],
+  "qa_answer_reads_after_replay_termination": true,
+  "qa_elapsed_seconds_before_serialization": 0.4373077999916859,
+  "qa_read_ledger": [
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER303_QA_EXEC_PREFLIGHT_V01.json",
+      "purpose": "QA storage preflight",
+      "bytes": 3192,
+      "sha256": "76ad05f0bf1f95150d082343850a5147adcee170901e1571f899e98c37153fd1",
+      "read_and_hash_wall_seconds": 0.008639399980893359
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/PROTOCOL_V01.json",
+      "purpose": "Frozen protocol metadata",
+      "bytes": 8900,
+      "sha256": "1932812e49eb5c4456038bb8c5f471ce2739072f29e3d3ba3d37dfe9a56b97bf",
+      "read_and_hash_wall_seconds": 0.01580860000103712
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/EXECUTION_V01.json",
+      "purpose": "Observed replay terminal receipt",
+      "bytes": 1573,
+      "sha256": "16a62fca2418a3e15beb045e9ad66aa867fd738f8aca60f2c6cf8e569aa0e99c",
+      "read_and_hash_wall_seconds": 0.007472500001313165
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/RESULT_V01.json",
+      "purpose": "Quiescent replay evidence ledger",
+      "bytes": 22310,
+      "sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff",
+      "read_and_hash_wall_seconds": 0.008556500019039959
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/budget_replay.py",
+      "purpose": "Replay script byte binding only",
+      "bytes": 11906,
+      "sha256": "8e3b5432df71e00e6ab3cb35758f625c35d0fef28deac6e31e1a89826624e876",
+      "read_and_hash_wall_seconds": 0.013307899993378669
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/process.stdout.txt",
+      "purpose": "Replay stdout byte binding only",
+      "bytes": 287,
+      "sha256": "c42f152e5ded38ed2a5d755274b36120bde3341c1e69f7a998d6e287b1e3c520",
+      "read_and_hash_wall_seconds": 0.000614099990343675
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/process.stderr.txt",
+      "purpose": "Replay stderr byte binding only",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_and_hash_wall_seconds": 0.00017010001465678215
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_exact_id_five_v01/verify_exact_id_five.py",
+      "purpose": "Frozen parser byte binding only; not executed",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15",
+      "read_and_hash_wall_seconds": 0.0074028999952133745
+    },
+    {
+      "path": "C:/Users/dongs/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdftotext.exe",
+      "purpose": "Frozen pdf_executable byte binding only; not executed",
+      "bytes": 343552,
+      "sha256": "640b9a93fa31fc093860c635cd410a3e30f7d1e6166cb1130993fb1985f474ff",
+      "read_and_hash_wall_seconds": 0.0038898000202607363
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/organizer_main.raw",
+      "purpose": "QA original hash-before and independent certificate inputs",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "read_and_hash_wall_seconds": 0.0018468000052962452
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/archive_evaluations.raw",
+      "purpose": "QA original hash-before and independent certificate inputs",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "read_and_hash_wall_seconds": 0.004288900003302842
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_first3_paper_bridge_v01/pai_pdf.raw",
+      "purpose": "QA original hash-before and independent certificate inputs",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "read_and_hash_wall_seconds": 0.006564600014826283
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p13_pdf.raw",
+      "purpose": "QA original hash-before and independent certificate inputs",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "read_and_hash_wall_seconds": 0.006354899989673868
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p16_pdf.raw",
+      "purpose": "QA original hash-before and independent certificate inputs",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "read_and_hash_wall_seconds": 0.004574100021272898
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p35_pdf.raw",
+      "purpose": "QA original hash-before and independent certificate inputs",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "read_and_hash_wall_seconds": 0.002501499984646216
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p41_pdf.raw",
+      "purpose": "QA original hash-before and independent certificate inputs",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "read_and_hash_wall_seconds": 0.0028159999928902835
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_exact_id_five_v01/EXACT_ID_FIVE_CERTIFICATE.json",
+      "purpose": "Post-termination old certificate answer comparison",
+      "bytes": 6262,
+      "sha256": "064c5043f2c2ef7a723027c0d7184f11d8a7c03b0e417f4f797b237ffd4fab34",
+      "read_and_hash_wall_seconds": 0.001209699985338375
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_3_pdf.txt",
+      "purpose": "New paid-byte PDF extraction output QA",
+      "bytes": 32533,
+      "sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0",
+      "read_and_hash_wall_seconds": 0.02290569999604486
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_3_pdftotext.stderr.bin",
+      "purpose": "PDF stderr binding only",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_and_hash_wall_seconds": 0.000437700015027076
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_first3_paper_bridge_v01/pai_pdf.txt",
+      "purpose": "Post-termination old text comparison",
+      "bytes": 32533,
+      "sha256": "b663580e490c9941e8183520d4e19afa84845b9acb4d64c7099d8f3de74423f0",
+      "read_and_hash_wall_seconds": 0.014428599999519065
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_13_pdf.txt",
+      "purpose": "New paid-byte PDF extraction output QA",
+      "bytes": 42965,
+      "sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a",
+      "read_and_hash_wall_seconds": 0.03555749999941327
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_13_pdftotext.stderr.bin",
+      "purpose": "PDF stderr binding only",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_and_hash_wall_seconds": 0.000538099993718788
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p13_pdf.txt",
+      "purpose": "Post-termination old text comparison",
+      "bytes": 42965,
+      "sha256": "24118b24478cb99811e2873f0a7902202d1182868aee9701b4a0c26848263e7a",
+      "read_and_hash_wall_seconds": 0.0194134000048507
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_16_pdf.txt",
+      "purpose": "New paid-byte PDF extraction output QA",
+      "bytes": 56008,
+      "sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9",
+      "read_and_hash_wall_seconds": 0.02154109999537468
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_16_pdftotext.stderr.bin",
+      "purpose": "PDF stderr binding only",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_and_hash_wall_seconds": 0.0004226999881211668
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p16_pdf.txt",
+      "purpose": "Post-termination old text comparison",
+      "bytes": 56008,
+      "sha256": "be518a2c13fa3e20330564ee836af5c63bc2a0255504bf7f014ee0997e39c5a9",
+      "read_and_hash_wall_seconds": 0.011024200008250773
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_35_pdf.txt",
+      "purpose": "New paid-byte PDF extraction output QA",
+      "bytes": 26859,
+      "sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590",
+      "read_and_hash_wall_seconds": 0.04020479999599047
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_35_pdftotext.stderr.bin",
+      "purpose": "PDF stderr binding only",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_and_hash_wall_seconds": 0.00033320000511594117
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p35_pdf.txt",
+      "purpose": "Post-termination old text comparison",
+      "bytes": 26859,
+      "sha256": "de9b3464928c830aed106e32ca336baa17259b45fbe6c12cecb0d887cc757590",
+      "read_and_hash_wall_seconds": 0.017834500002209097
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_41_pdf.txt",
+      "purpose": "New paid-byte PDF extraction output QA",
+      "bytes": 27756,
+      "sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6",
+      "read_and_hash_wall_seconds": 0.034550200012745336
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration303/replay_v01/paper_41_pdftotext.stderr.bin",
+      "purpose": "PDF stderr binding only",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_and_hash_wall_seconds": 0.0004619000246748328
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p41_pdf.txt",
+      "purpose": "Post-termination old text comparison",
+      "bytes": 27756,
+      "sha256": "7e7b5e38c5857a9497a63cfa364ba1076f61174d30cf49d43858c09cb81be1e6",
+      "read_and_hash_wall_seconds": 0.01781479999772273
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/organizer_main.raw",
+      "purpose": "QA original hash-after",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+      "read_and_hash_wall_seconds": 0.0010771999950520694
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/archive_evaluations.raw",
+      "purpose": "QA original hash-after",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+      "read_and_hash_wall_seconds": 0.0061178999894764274
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_first3_paper_bridge_v01/pai_pdf.raw",
+      "purpose": "QA original hash-after",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+      "read_and_hash_wall_seconds": 0.0035930000012740493
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p13_pdf.raw",
+      "purpose": "QA original hash-after",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+      "read_and_hash_wall_seconds": 0.0035577999951783568
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p16_pdf.raw",
+      "purpose": "QA original hash-after",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+      "read_and_hash_wall_seconds": 0.001711399992927909
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p35_pdf.raw",
+      "purpose": "QA original hash-after",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+      "read_and_hash_wall_seconds": 0.0023153999936766922
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p41_pdf.raw",
+      "purpose": "QA original hash-after",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+      "read_and_hash_wall_seconds": 0.0017137999820988625
+    }
+  ],
+  "qa_logical_read_bytes": 5612089,
+  "qa_read_call_count": 39,
+  "qa_read_and_hash_wall_seconds": 0.353573200001847,
+  "qa_read_scope": "Instrumented script content reads only, including before/after rereads; separate from replay charges. Not OS/disk-bus bytes or interpreter/runtime startup IO. Earlier interactive preparation reads are listed separately in QA execution receipt.",
+  "completed_utc": "2026-10-11T19:03:02.210065+00:00"
+}

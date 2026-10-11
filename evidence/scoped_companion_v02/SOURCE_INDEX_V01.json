@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "status": "PASS_RETAINED_SOURCE_INDEX_NO_NETWORK_NO_NEW_EXPERIMENT",
+  "created_utc": "2026-10-11T19:34:30.127968+00:00",
+  "operation": "Read existing GET receipts, actual package payloads, ZIP members, nested Wine notice, and retained publication record; write a separate reviewer source index.",
+  "original_zips_modified": false,
+  "new_index_already_inside_original_zips": false,
+  "new_network_requests": 0,
+  "new_scientific_experiments": 0,
+  "human_gold": false,
+  "blanket_licence_asserted": false,
+  "guard": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\ITER305_SOURCE_INDEX_GUARD_7f9d2c1a_V01.json",
+    "bytes": 3191,
+    "sha256": "6bac808b386bc507ab297261391328872db6988bc8c0b0ffe24f84b8436cdc10"
+  },
+  "packages": {
+    "valueeval": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01.zip",
+      "bytes": 1767911,
+      "sha256": "7c9144643b8ec9e2779cff5cf259dd334972a565264eb7c3d053c52b7fd709a7",
+      "reviewer_filename": "valueeval_budget_v01.zip",
+      "protocol_sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    "wine": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01.zip",
+      "bytes": 1019047,
+      "sha256": "7c69e4d62437f25485cad2994c99936a8c74c9e456d7d839b483e6c4f7c70002",
+      "reviewer_filename": "wine_layer_calibration_v01.zip",
+      "protocol_sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    }
+  },
+  "valueeval": {
+    "entries": [
+      {
+        "source_key": "organizer",
+        "package_relative_path": "sources/organizer_main.raw",
+        "zip_member": "sources/organizer_main.raw",
+        "bytes": 83506,
+        "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+        "request_url": "https://touche.webis.de/semeval23/touche23-web/",
+        "final_url": "https://touche.webis.de/semeval23/touche23-web/",
+        "retained_get": {
+          "method": "GET",
+          "status": 200,
+          "start_utc": "2026-09-25T12:41:59.158774+00:00",
+          "end_utc": "2026-09-25T12:41:59.932606+00:00",
+          "content_type": "text/html; charset=utf-8",
+          "content_length": "83506",
+          "complete_body": true
+        },
+        "receipt": {
+          "audit_local_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\tira_valueeval_full_cohort_frame_v01\\organizer_main_RECEIPT.json",
+          "project_relative_path": "outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/organizer_main_RECEIPT.json",
+          "bytes": 600,
+          "sha256": "69847d63591de1aa8a7dd69895a79c247b79c2d97072c3dacda8bd4a22bb4f0b"
+        },
+        "notice_scope": "No licensing inference from this GET receipt; source-specific notices in the original payload remain unchanged."
+      },
+      {
+        "source_key": "archive",
+        "package_relative_path": "sources/archive_evaluations.raw",
+        "zip_member": "sources/archive_evaluations.raw",
+        "bytes": 410492,
+        "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+        "request_url": "https://archive.tira.io/api/evaluations/valueeval-at-semeval-2023-human-value-detection/arguments-test-20221205-test",
+        "final_url": "https://archive.tira.io/api/evaluations/valueeval-at-semeval-2023-human-value-detection/arguments-test-20221205-test",
+        "retained_get": {
+          "method": "GET",
+          "status": 200,
+          "start_utc": "2026-09-25T12:44:45.954196+00:00",
+          "end_utc": "2026-09-25T12:45:45.384755+00:00",
+          "content_type": "application/octet-stream",
+          "content_length": "410492",
+          "complete_body": true
+        },
+        "receipt": {
+          "audit_local_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\tira_valueeval_full_cohort_frame_v01\\archive_evaluations_RECEIPT.json",
+          "project_relative_path": "outputs/review_evidence_not_copies/diagnostics/tira_valueeval_full_cohort_frame_v01/archive_evaluations_RECEIPT.json",
+          "bytes": 718,
+          "sha256": "d337c57a7e812b0cc9b3a61acd7ff91aa9a26ce19fbc92cbd118ca64ce05a2bf"
+        },
+        "notice_scope": "No licensing inference from this GET receipt; source-specific notices in the original payload remain unchanged."
+      },
+      {
+        "source_key": "paper_3",
+        "package_relative_path": "sources/paper_3.pdf",
+        "zip_member": "sources/paper_3.pdf",
+        "bytes": 507457,
+        "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+        "request_url": "https://aclanthology.org/2023.semeval-1.34.pdf",
+        "final_url": "https://aclanthology.org/2023.semeval-1.34.pdf",
+        "retained_get": {
+          "method": "GET",
+          "status": 200,
+          "start_utc": "2026-09-25T13:00:52.519984+00:00",
+          "end_utc": "2026-09-25T13:00:57.458021+00:00",
+          "content_type": "application/pdf",
+          "content_length": "507457",
+          "complete_body": true
+        },
+        "receipt": {
+          "audit_local_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_first3_paper_bridge_v01\\pai_pdf_RECEIPT.json",
+          "project_relative_path": "outputs/review_evidence_not_copies/diagnostics/valueeval_first3_paper_bridge_v01/pai_pdf_RECEIPT.json",
+          "bytes": 590,
+          "sha256": "c367fe1aa1e67c17a413ffed99e9251e604b499b92ea30a7e0b05736008c3a6f"
+        },
+        "notice_scope": "No licensing inference from this GET receipt; source-specific notices in the original payload remain unchanged."
+      },
+      {
+        "source_key": "paper_13",
+        "package_relative_path": "sources/paper_13.pdf",
+        "zip_member": "sources/paper_13.pdf",
+        "bytes": 693104,
+        "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+        "request_url": "https://aclanthology.org/2023.semeval-1.258.pdf",
+        "final_url": "https://aclanthology.org/2023.semeval-1.258.pdf",
+        "retained_get": {
+          "method": "GET",
+          "status": 200,
+          "start_utc": "2026-09-25T13:21:16.303774+00:00",
+          "end_utc": "2026-09-25T13:21:22.470209+00:00",
+          "content_type": "application/pdf",
+          "content_length": "693104",
+          "complete_body": true
+        },
+        "receipt": {
+          "audit_local_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_cited29_stagec_v01\\p13_pdf_RECEIPT.json",
+          "project_relative_path": "outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p13_pdf_RECEIPT.json",
+          "bytes": 592,
+          "sha256": "51f51c5f0b49ab4cc1f1b5216a0936e61ac9e81f680bbe898373eaa9e2b2dff8"
+        },
+        "notice_scope": "No licensing inference from this GET receipt; source-specific notices in the original payload remain unchanged."
+      },
+      {
+        "source_key": "paper_16",
+        "package_relative_path": "sources/paper_16.pdf",
+        "zip_member": "sources/paper_16.pdf",
+        "bytes": 283898,
+        "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+        "request_url": "https://aclanthology.org/2023.semeval-1.75.pdf",
+        "final_url": "https://aclanthology.org/2023.semeval-1.75.pdf",
+        "retained_get": {
+          "method": "GET",
+          "status": 200,
+          "start_utc": "2026-09-25T13:21:53.493877+00:00",
+          "end_utc": "2026-09-25T13:21:58.535779+00:00",
+          "content_type": "application/pdf",
+          "content_length": "283898",
+          "complete_body": true
+        },
+        "receipt": {
+          "audit_local_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_cited29_stagec_v01\\p16_pdf_RECEIPT.json",
+          "project_relative_path": "outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p16_pdf_RECEIPT.json",
+          "bytes": 590,
+          "sha256": "05b9bc313200e872e2c7a5b12287af6cc59653050bc9dd2c18575a1319308e8b"
+        },
+        "notice_scope": "No licensing inference from this GET receipt; source-specific notices in the original payload remain unchanged."
+      },
+      {
+        "source_key": "paper_35",
+        "package_relative_path": "sources/paper_35.pdf",
+        "zip_member": "sources/paper_35.pdf",
+        "bytes": 143066,
+        "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+        "request_url": "https://aclanthology.org/2023.semeval-1.222.pdf",
+        "final_url": "https://aclanthology.org/2023.semeval-1.222.pdf",
+        "retained_get": {
+          "method": "GET",
+          "status": 200,
+          "start_utc": "2026-09-25T13:27:07.692991+00:00",
+          "end_utc": "2026-09-25T13:27:21.241911+00:00",
+          "content_type": "application/pdf",
+          "content_length": "143066",
+          "complete_body": true
+        },
+        "receipt": {
+          "audit_local_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_cited29_stagec_v01\\p35_pdf_RECEIPT.json",
+          "project_relative_path": "outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p35_pdf_RECEIPT.json",
+          "bytes": 593,
+          "sha256": "a666b409003f698251191f9ddde0927c957b75821acb7ba6216fda169b1ed812"
+        },
+        "notice_scope": "No licensing inference from this GET receipt; source-specific notices in the original payload remain unchanged."
+      },
+      {
+        "source_key": "paper_41",
+        "package_relative_path": "sources/paper_41.pdf",
+        "zip_member": "sources/paper_41.pdf",
+        "bytes": 293535,
+        "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+        "request_url": "https://aclanthology.org/2023.semeval-1.302.pdf",
+        "final_url": "https://aclanthology.org/2023.semeval-1.302.pdf",
+        "retained_get": {
+          "method": "GET",
+          "status": 200,
+          "start_utc": "2026-09-25T13:27:22.713042+00:00",
+          "end_utc": "2026-09-25T13:27:28.288134+00:00",
+          "content_type": "application/pdf",
+          "content_length": "293535",
+          "complete_body": true
+        },
+        "receipt": {
+          "audit_local_path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\valueeval_cited29_stagec_v01\\p41_pdf_RECEIPT.json",
+          "project_relative_path": "outputs/review_evidence_not_copies/diagnostics/valueeval_cited29_stagec_v01/p41_pdf_RECEIPT.json",
+          "bytes": 592,
+          "sha256": "67dbf92dfbf8229e1ba95ff53b6fb983769f864e3e7bea7fa5dbdf72a9dc1419"
+        },
+        "notice_scope": "No licensing inference from this GET receipt; source-specific notices in the original payload remain unchanged."
+      }
+    ],
+    "total_retained_payload_bytes": 2415058,
+    "receipt_meaning": "Retained GET URL/status/body bindings only; no new retrieval, no retrospective online-known-price claim, and no source-wide licensing conclusion."
+  },
+  "wine": {
+    "runs": [
+      {
+        "run_revision": "v07",
+        "package_relative_path": "evidence/v07/receipt.tar",
+        "zip_member": "evidence/v07/receipt.tar",
+        "bytes": 245760,
+        "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+        "internal_protocol_member": "source/experiment/PROTOCOL.json",
+        "internal_protocol_sha256": "65e90a1a1cf45b618ebadaa2024b87ca8e31b83d9a6926671869e809c18bdd1c",
+        "author_zip_member": "inputs/author.zip",
+        "wine_data_member": "inputs/wine.raw"
+      },
+      {
+        "run_revision": "v08",
+        "package_relative_path": "evidence/v08/receipt.tar",
+        "zip_member": "evidence/v08/receipt.tar",
+        "bytes": 1853440,
+        "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+        "internal_protocol_member": "source/experiment/PROTOCOL.json",
+        "internal_protocol_sha256": "6af0265726b022c1d6230047d11e104e1b00bb3610832d2e5cd6f24fa0b168cb",
+        "author_zip_member": "inputs/author.zip",
+        "wine_data_member": "inputs/wine.raw"
+      },
+      {
+        "run_revision": "v09",
+        "package_relative_path": "evidence/v09/receipt.tar",
+        "zip_member": "evidence/v09/receipt.tar",
+        "bytes": 2314240,
+        "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+        "internal_protocol_member": "source/experiment/PROTOCOL.json",
+        "internal_protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "author_zip_member": "inputs/author.zip",
+        "wine_data_member": "inputs/wine.raw"
+      }
+    ],
+    "author_code": {
+      "url": "https://codeload.github.com/jsleb333/paper-decision-trees-as-partitioning-machines/zip/0f354dac486a9845a9504419e31c84c7eb39507f",
+      "bytes": 95119,
+      "sha256": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db",
+      "embedded_member": "inputs/author.zip",
+      "retained_notice": {
+        "zip_member": "paper-decision-trees-as-partitioning-machines-0f354dac486a9845a9504419e31c84c7eb39507f/LICENSE",
+        "bytes": 1076,
+        "sha256": "cf58267874c44327801c74e02a6fd7a861b5c9bb37ac077fc22089dd8d17d7e1",
+        "observed_title": "MIT License",
+        "observed_copyright": "Copyright (c) 2020 Jean-Samuel Leboeuf",
+        "observation": "Read retained LICENSE bytes inside the unchanged author ZIP; no blanket licence for the companion is inferred."
+      }
+    },
+    "wine_data": {
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data",
+      "bytes": 10782,
+      "sha256": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659",
+      "embedded_member": "inputs/wine.raw",
+      "existing_notice": {
+        "source": "Existing fixed-commit WINE_HOSTED_RUNS.md, read from retained preparation literal whose exact hash matches retained remote publication acceptance.",
+        "doi": "10.24432/C5PC7J",
+        "attributed_creators": "Aeberhard and Forina",
+        "recorded_source_notice": "CC BY 4.0",
+        "landing_url": "https://archive.ics.uci.edu/dataset/109/wine",
+        "current_terms_freshly_checked": false
+      }
+    },
+    "public_guide": {
+      "url": "https://github.com/SHiJiE1115/newproj/blob/ae2ba2d6bd62dd7e7152f519d49569b91d235a1d/WINE_HOSTED_RUNS.md",
+      "archive_commit": "ae2ba2d6bd62dd7e7152f519d49569b91d235a1d",
+      "bytes": 4648,
+      "sha256": "a93e3bac5b7232dce1af2c5650725656d413443437cedd2b442236f0186d6c6f",
+      "retained_remote_acceptance": {
+        "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\outputs\\review_evidence_not_copies\\diagnostics\\wine_v07_hosted_execution_20261011\\PUBLIC_ARCHIVE_REMOTE_ACCEPTANCE_V01.json",
+        "bytes": 3576,
+        "sha256": "7ae263d72a4ecf4a1681ee4905e547af9479e5122d872dc75da67ad3eb68dc3b"
+      },
+      "retained_preparation_source": {
+        "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\prepare_iter276_public_archive_v01.py",
+        "bytes": 10811,
+        "sha256": "440f8bb35db4cb09405f60933a04ff457683696260f475cabe6cf8243b4e68da"
+      },
+      "literal_matches_recorded_remote_blob": true
+    }
+  },
+  "reviewer_mapping": {
+    "package_root_convention": "Each relative path is inside the correspondingly named extracted ZIP root, regardless of installation directory.",
+    "valueeval": [
+      {
+        "package": "valueeval_budget_v01.zip",
+        "relative_path": "sources/organizer_main.raw",
+        "bytes": 83506,
+        "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8",
+        "source_url": "https://touche.webis.de/semeval23/touche23-web/",
+        "receipt_sha256": "69847d63591de1aa8a7dd69895a79c247b79c2d97072c3dacda8bd4a22bb4f0b"
+      },
+      {
+        "package": "valueeval_budget_v01.zip",
+        "relative_path": "sources/archive_evaluations.raw",
+        "bytes": 410492,
+        "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea",
+        "source_url": "https://archive.tira.io/api/evaluations/valueeval-at-semeval-2023-human-value-detection/arguments-test-20221205-test",
+        "receipt_sha256": "d337c57a7e812b0cc9b3a61acd7ff91aa9a26ce19fbc92cbd118ca64ce05a2bf"
+      },
+      {
+        "package": "valueeval_budget_v01.zip",
+        "relative_path": "sources/paper_3.pdf",
+        "bytes": 507457,
+        "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb",
+        "source_url": "https://aclanthology.org/2023.semeval-1.34.pdf",
+        "receipt_sha256": "c367fe1aa1e67c17a413ffed99e9251e604b499b92ea30a7e0b05736008c3a6f"
+      },
+      {
+        "package": "valueeval_budget_v01.zip",
+        "relative_path": "sources/paper_13.pdf",
+        "bytes": 693104,
+        "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1",
+        "source_url": "https://aclanthology.org/2023.semeval-1.258.pdf",
+        "receipt_sha256": "51f51c5f0b49ab4cc1f1b5216a0936e61ac9e81f680bbe898373eaa9e2b2dff8"
+      },
+      {
+        "package": "valueeval_budget_v01.zip",
+        "relative_path": "sources/paper_16.pdf",
+        "bytes": 283898,
+        "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29",
+        "source_url": "https://aclanthology.org/2023.semeval-1.75.pdf",
+        "receipt_sha256": "05b9bc313200e872e2c7a5b12287af6cc59653050bc9dd2c18575a1319308e8b"
+      },
+      {
+        "package": "valueeval_budget_v01.zip",
+        "relative_path": "sources/paper_35.pdf",
+        "bytes": 143066,
+        "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce",
+        "source_url": "https://aclanthology.org/2023.semeval-1.222.pdf",
+        "receipt_sha256": "a666b409003f698251191f9ddde0927c957b75821acb7ba6216fda169b1ed812"
+      },
+      {
+        "package": "valueeval_budget_v01.zip",
+        "relative_path": "sources/paper_41.pdf",
+        "bytes": 293535,
+        "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375",
+        "source_url": "https://aclanthology.org/2023.semeval-1.302.pdf",
+        "receipt_sha256": "67dbf92dfbf8229e1ba95ff53b6fb983769f864e3e7bea7fa5dbdf72a9dc1419"
+      }
+    ],
+    "wine": {
+      "package": "wine_layer_calibration_v01.zip",
+      "receipt_relative_paths": [
+        "evidence/v07/receipt.tar",
+        "evidence/v08/receipt.tar",
+        "evidence/v09/receipt.tar"
+      ],
+      "author_source_url": "https://codeload.github.com/jsleb333/paper-decision-trees-as-partitioning-machines/zip/0f354dac486a9845a9504419e31c84c7eb39507f",
+      "data_source_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data",
+      "fixed_public_guide_url": "https://github.com/SHiJiE1115/newproj/blob/ae2ba2d6bd62dd7e7152f519d49569b91d235a1d/WINE_HOSTED_RUNS.md"
+    }
+  },
+  "historical_path_scope": {
+    "anonymized": false,
+    "known_retained_private_fields": [
+      {
+        "material": "Wine references/BASELINE_RESULT_V02.json",
+        "fields": [
+          "protocol.path",
+          "guard.path",
+          "script.path",
+          "original_input_bindings[0..16].path"
+        ]
+      },
+      {
+        "material": "Wine evidence/{v07,v08,v09}/POSTRUN_RELEASE_GATE.json",
+        "fields": [
+          "candidate_report_path",
+          "direct_baseline_report_path"
+        ]
+      },
+      {
+        "material": "Wine evidence/v07/CANDIDATE_REPORT.json",
+        "fields": [
+          "receipt_audit.error_code (embedded historical local path)"
+        ]
+      }
+    ],
+    "index_local_paths_retained_for_audit": true,
+    "is_exhaustive_scan_of_all_binary_contents": false
+  },
+  "markdown_companion": {
+    "filename": "SOURCES_AND_NOTICES.md",
+    "bytes": 5863,
+    "sha256": "4e2263d7d652b53c0e6465103069c4b53faad843d1b38aa1591fe6847190f51a"
+  },
+  "verification": {
+    "seven_payload_receipt_and_protocol_and_zip_matches": 7,
+    "wine_tars_protocol_and_zip_matches": 3,
+    "same_author_zip_and_data_and_notice_across_three_tars": true,
+    "guide_literal_matches_recorded_published_sha": true,
+    "originals_unchanged_checked_after_writes": true
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_OFFLINE_RESTORATION_AND_INDEPENDENT_BYTE_CHECK",
+  "created_utc": "2026-10-11T20:03:25.807009+00:00",
+  "execution": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\EXECUTION_V01.json",
+    "bytes": 2936,
+    "sha256": "4a283156ece623413d25338ac5ed60f0f4383eecf606f0bc86ae625f704f5861"
+  },
+  "restoration_receipt": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\restored_sources\\RESTORATION_RECEIPT_V01.json",
+    "bytes": 1836,
+    "sha256": "71c30012e545f434aaa3b1ef2b90111fbfa57c22c7c923fc6438cf3aad00b382"
+  },
+  "script": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\restore_valueeval_local.py",
+    "bytes": 5427,
+    "sha256": "c51d104c592906e16296236621fe1427c16f7b438846c6485c3eec0de6bc281b"
+  },
+  "checks": [
+    {
+      "restored": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\restored_sources\\organizer_main.raw",
+        "bytes": 83506,
+        "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+      },
+      "original_frozen": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources\\organizer_main.raw",
+        "bytes": 83506,
+        "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+      },
+      "actual_GET_input": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_probe_v01\\organizer_response.raw",
+        "bytes": 83506,
+        "sha256": "5e4aeb32be5cad70eb841ca555496a9c950b0e6d329b361c0bf05c9f81fbf3d4"
+      },
+      "whole_file_byte_equal": true,
+      "GET_input_unchanged": true
+    },
+    {
+      "restored": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_restore_v01\\restored_sources\\archive_evaluations.raw",
+        "bytes": 410492,
+        "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+      },
+      "original_frozen": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources\\archive_evaluations.raw",
+        "bytes": 410492,
+        "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+      },
+      "actual_GET_input": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\source_probe_v01\\archive_response.raw",
+        "bytes": 410492,
+        "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+      },
+      "whole_file_byte_equal": true,
+      "GET_input_unchanged": true
+    }
+  ],
+  "independent_changed_byte_offsets": [
+    546,
+    547,
+    548,
+    550,
+    551,
+    552
+  ],
+  "network_requests_by_restorer": 0,
+  "scientific_executions": 0,
+  "historical_HTTP_authentication": false,
+  "limitation": "The two output raw files are private, derived reconstruction and identity copy respectively. Equality against original frozen bytes is a byte check, not a new scientific replay or historical execution authentication."
+}

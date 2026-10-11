@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "status": "PASS_SCIENTIFIC_PROJECTION_EQUAL",
+  "expected_opened_after_child_termination": true,
+  "expected_sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d",
+  "result_sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27",
+  "excluded_fields": {
+    "top_level": [
+      "started_utc",
+      "ended_utc",
+      "timings",
+      "protocol_sha256",
+      "timing_scope"
+    ],
+    "acquisition_events": [
+      "wall_seconds",
+      "python_parent_cpu_seconds"
+    ],
+    "checkpoints": [
+      "certificate_verification_timing"
+    ],
+    "pdf_subprocesses": [
+      "timing",
+      "working_directory_and_TEMP"
+    ]
+  },
+  "timing": {
+    "wall_seconds": 0.00680500001180917,
+    "python_parent_cpu_seconds": 0.0
+  },
+  "fresh_sample": false,
+  "fresh_historical_authentication": false,
+  "human_review": false
+}

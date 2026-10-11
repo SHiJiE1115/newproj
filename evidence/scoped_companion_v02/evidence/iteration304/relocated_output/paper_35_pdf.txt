@@ -1,0 +1,295 @@
+        Quintilian at SemEval-2023 Task 4: Grouped BERT for Multi-Label
+                                  classification
+
+                  Ajay Narasimha Mopidevi                                  Hemanth Chenna
+                University of Colorado, Boulder                      University of Colorado, Boulder
+                Ajay.Mopidevi@colorado.edu                          Hemanth.Chenna@colorado.edu
+
+
+
+                          Abstract                              have freedom of thought or to be broadminded. Val-
+                                                                ues are commonly accepted answers to why some
+        In this paper, we initially discuss about the           options are desirable in the ethical sense and are
+        ValueEval (Kiesel et al., 2023) task and the            thus essential both in real-world argumentation and
+        challenges involved in multi-label classifica-
+                                                                theoretical argumentation frameworks. However,
+        tion tasks. We tried to approach this task using
+        Natural Language Inference and proposed a
+                                                                their large variety has been a major obstacle to
+        Grouped-BERT 1 architecture which leverages             modeling them in argument mining.
+        commonality between the classes for a multi-               In their dataset, Mirzakhmedova et al. (2023)
+        label classification task.                              also provided each argument with a set of human
+                                                                values in the form of labels that are closely aligned
+1       Introduction                                            with psychological research. For each argument,
+                                                                these 20 labels provide greater detail about which
+Everyone has a perspective on how they approach a               human values are inferred for making the decision.
+problem and make a decision, from the simplest de-
+cisions such as choosing to lend a pen to a friend to           2    Background
+decisions that affect their life and everyone around
+them. These decisions are made consciously based                This classification task becomes much more chal-
+on some of the values that they strongly believe in.            lenging as it is a multi-label classification problem.
+The task 4 of SemEval-2023 - ValueEval (Kiesel                  In classification problems, deep learning architec-
+et al., 2023), is to understand which of these human            tures try to update their layer weights to emphasize
+values form the basis for someone’s decision in a               the output of softmax layer of the correct class by
+textual argument.                                               making it closer to 1, while also making the out-
+   ValueEval (Kiesel et al., 2023) presents the task            puts of the other classes closer to 0. In a multi-label
+of understanding human values as a Natural Lan-                 classification problem, that’s not possible as each
+guage Processing problem, by proposing an an-                   input may have multiple labels. Tsoumakas and
+notated dataset of textual arguments, with the la-              Katakis (2007) provides a list of approaches used
+bels being the human values that would be drawn                 to tackle multi-label classification problems and
+to make that decision. Each argument in this                    provides a comparison of the performance of these
+dataset is provided with a Premise, Conclusion and              approaches. They showed that PT3 transformation
+Stance. Lets consider this example argument from                (Boutell et al., 2004) provides better results com-
+the dataset with premise "marriage is the ultimate              pared to other transformations. If an input belongs
+commitment to someone, if people want it they                   to both the classes A and B, then PT3 transforma-
+should be allowed", the conclusion "We should                   tion generates a new class C, such that input has
+abandon marriage" and the stance "against". The                 belonged to only class C (which represents both
+task is to figure out why someone takes a particu-              A & B). Considering that each argument has 20
+lar stance (in favor of/ against) for the conclusion,           labels, a PT3 transformation generates many more
+given the premise - "What human values led to                   classes, and also reduces the number of samples
+someone taking this particular stance?"                         per class, making the data very sparse. In such
+   The task studies the (often implicit) human val-             tasks with more labels, PT4 transformation (Lauser
+ues behind natural language arguments, such as to               and Hotho, 2003) is preferred as it uses L binary
+                                                                classifiers, with each binary classifier predicting
+    1
+        https://github.com/ajaymopidevi/Grouped-BERT            1/0 for each class.
+                                                           1609
+          Proceedings of the The 17th International Workshop on Semantic Evaluation (SemEval-2023), pages 1609–1612
+                                July 13-14, 2023 ©2023 Association for Computational Linguistics
+   Zhang and Zhou (2013) mentions that extracting         mation of the conclusion tokens. This contextual
+high-level relations among the classes can improve        information in the form of embeddings are trans-
+the performance of multi-label classification tasks.      ferred to the classification network.
+Ji et al. (2008) tries to illustrate relations on how a
+                                                             In this paper, we propose a Grouped-BERT archi-
+class influences the other classes, while Read et al.
+                                                          tecture to handle different multi-label classification
+(2008) establishes relations among a random subset
+                                                          challenges. As each argument can belong to multi-
+of classes.
+                                                          ple classes, we tried to group some of the classes
+   Label Cardinality(LC) is computed as the av-
+                                                          that often have the same representation. This group-
+erage of the true labels in the input data. Label
+                                                          ing can generalize some of the core reasoning be-
+Density(LD) is similar to Label Cardinality, but
+                                                          hind the arguments, that is common in all its output
+is also divided by the total number of labels in
+                                                          classes. Instead of approaching a random group-
+the input data (Venkatesan and Er, 2014). We use
+                                                          ing, we group a subset of labels in each category
+this information to draw further insights about our
+                                                          based on the similarities. For finding these simi-
+dataset. These values help us identify how sparse
+                                                          larities, we extract the embeddings of the classes
+the labels are for each argument in our dataset. For
+                                                          and perform a k-Means clustering. We used a con-
+the training dataset, we have observed the LC and
+                                                          strained k-Means algorithm proposed by Bradley
+LD values in Table 1.
+                                                          et al. (2000) to exactly model each group with 4
+             Label Cardinality     3.406                  classes. We combined 4 classes in a group, as our
+              Label Density         0.17                  label cardinality, i.e average number of labels per
+                                                          argument is around 3.4
+Table 1: Label Cardinality and Label Density for train-
+ing and validation datasets
+
+   Along with the dataset, Mirzakhmedova et al.
+(2023) provides a few baseline models for compar-
+ison. We have the following 2 baseline models:
+a 20-label classifier network that uses contextual
+embeddings from a pretrained BERT model and
+a 1-Baseline which predicts the label 1 for all the
+classes. While their initial results look promising,
+they only considered the premise for their classi-
+fication, ignoring the conclusion and stance. As
+they ignore this information, these models don’t
+properly infer which human values are the reasons
+behind making a stance in an argument.
+
+3   System Overview
+                                                          Figure 1: Grouped BERT Architecture, L(=4) represents
+We model this problem as a Natural Language Infer-        the number of classes in each group, G(=5) represents
+ence (NLI) model, to predict the human values that        the number of groups
+led to the stance being taken based on the premise
+and the conclusion. NLI typically has only two
+inputs i.e premise and conclusion and the output             The last hidden state of the pre-trained BERT
+is stance. We modified our conclusion to have the         model is initially fed into group classifier, to iden-
+stance followed by the actual conclusion. From            tify the group of classes it belongs to. Then the
+here, the use of the term conclusion includes the         output of each group classifier is forwarded to the
+stance appended to the beginning of the original          hidden layers and subsequently the L binary clas-
+conclusion. The premise and this new conclusion           sifiers for each group class, and also to a separate
+pair are jointly encoded using BERT to obtain the         classifier layer to predict whether the final set of
+contextual information between the premise and            labels belongs to that group. We need to create
+the conclusion along with the contextual informa-         extra labels for these groups for loss calculation,
+tion of the premise tokens and the contextual infor-      by evaluating its member labels in that group.
+                                                      1610
+4    Experimental Setup                                  This added more constraints to the original set of la-
+                                                         bels, rather than identifying the core representation
+For the input embeddings, we used embeddings             in the grouped labels.
+generated from pre-trained ’bert-base-uncased’              The F1 -scores by our model for the
+model. We trained our models for 200 epochs with         classes Stimulation, Hedonism, Face, Con-
+an AdamW optimizer with a variable learning rate,        formity:Interpersonal, Humility is 0. Each of
+linearly rising to peak(1e−4 ) at 40 epochs and then     these value categories have the lowest distribution
+linearly declining back to 0 by the 200th epoch. For     in their respective groups. We suspect that this
+the loss function, we considered a local loss(sum        uneven distribution of labels could be one reason
+of CrossEntropyLoss for each group) and a group          why our model couldn’t predict any of these
+loss(crossEntropyLoss for the group predictions)         categories correctly.
+and the group is weighted 4 times that of local loss.       As we were only able to train our model on 5
+   We have grouped the classes as follows:               year old hardware, we were limited in our ability
+                                                         to train BERT layers and instead had to rely on
+    • ’Achievement’, ’Face’, ’Power: dominance’,
+                                                         pre-trained BERT layers with the weights frozen.
+      ’Power: resources’
+                                                         This could be another contributing factor because
+    • ’Benevolence: caring’, ’Benevolence: depend-       of which we could not achieve a better performance
+      ability’, ’Humility’, ’Universalism: concern’      with this model.
+
+    • ’Stimulation’, ’Tradition’, ’Self-direction: ac-   6   Conclusion
+      tion’, ’Self-direction: thought’                   We would like to test our GroupedBERT with a part
+                                                         of the dataset, having even distribution of all the
+    • ’Conformity: interpersonal’, ’Conformity:
+                                                         classes and verify the label cardinality stays close
+      rules’, ’Security: personal’, ’Security: soci-
+                                                         to 1. These approaches might provides insights
+      etal’
+                                                         whether GroupedBERT architecture can be used
+    • ’Hedonism, Universalism: nature’, ’Universal-      for multi-label classification tasks.
+      ism: objectivity’, ’Universalism: tolerance’
+                                                         References
+   The Feed-forward network layer which takes as
+input the CLS token from the BERT output is a            Matthew R Boutell, Jiebo Luo, Xipeng Shen, and
+                                                          Christopher M Brown. 2004. Learning multi-label
+linear layer with 512 output channels. Each of
+                                                          scene classification. Pattern recognition, 37(9):1757–
+the group classifiers shown in Figure 1 have 64           1771.
+output channels. The outputs from this hidden layer
+                                                         Paul S Bradley, Kristin P Bennett, and Ayhan Demiriz.
+of 5 group classifiers are then fed into separate
+                                                           2000. Constrained k-means clustering. Microsoft
+networks, each having a single linear layer with           Research, Redmond, 20(0):0.
+32 output channels. These outputs are finally fed
+                                                         Shuiwang Ji, Lei Tang, Shipeng Yu, and Jieping Ye.
+into classifiers, each of which predicts one of the
+                                                           2008. Extracting shared subspace for multi-label
+20 classes.                                                classification. In Proceedings of the 14th ACM
+   We trained the model on a laptop with an Nvidia         SIGKDD international conference on Knowledge dis-
+GTX 1070 GPU and Intel 7700HQ CPU.                         covery and data mining, pages 381–389.
+                                                         Johannes Kiesel, Milad Alshomary, Nailia Mirzakhme-
+5    Results                                               dova, Maximilian Heinrich, Nicolas Handke, Hen-
+                                                           ning Wachsmuth, and Benno Stein. 2023. Semeval-
+For the main test dataset, our GroupedBERT                 2023 task 4: Valueeval: Identification of human
+achieved F1 -score of 0.38, which is less than the         values behind arguments. In Proceedings of the
+baseline BERT model (0.40).                                17th International Workshop on Semantic Evaluation,
+                                                           Toronto, Canada. Association for Computational Lin-
+  By grouping the classes, we expected that the            guistics.
+groups would be independent i.e each argument
+can have only the values from that group. However,       Boris Lauser and Andreas Hotho. 2003. Automatic
+                                                           multi-label subject indexing in a multilingual envi-
+each argument in the training set still belongs to         ronment. In International Conference on Theory
+multiple groups, with the label cardinality being          and Practice of Digital Libraries, pages 140–151.
+2.54, which is not a much improvement from 3.4.            Springer.
+
+                                                     1611
+                                                                                                                                                                                                                                                                                                             Benevolence: dependability
+                                                                                                                                                                                                                                                Conformity: interpersonal
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                   Universalism: objectivity
+                                                                                                                                                                                                                                                                                                                                                                                         Universalism: tolerance
+                               Self-direction: thought
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                          Universalism: concern
+
+                                                                                                                                                                                                                                                                                                                                                                  Universalism: nature
+                                                         Self-direction: action
+
+
+
+
+                                                                                                                                                                                                                                                                                       Benevolence: caring
+                                                                                                                         Power: dominance
+
+
+
+
+                                                                                                                                                                      Security: personal
+
+
+
+
+                                                                                                                                                                                                                            Conformity: rules
+                                                                                                                                                                                           Security: societal
+                                                                                                                                            Power: resources
+                                                                                                           Achievement
+                                                                                  Stimulation
+                                                                                                Hedonism
+
+
+
+
+                                                                                                                                                                                                                Tradition
+
+
+
+
+                                                                                                                                                                                                                                                                            Humility
+                                                                                                                                                               Face
+ Test set / Approach     All
+ Main
+  Best per category      .59 .61 .71 .39 .39 .66 .50 .57 .39 .80 .68 .65 .61                                                                                                                                                                     .69                        .39 .60 .43 .78                                                                       .87                    .46 .58
+  Best approach          .56 .57 .71 .32 .25 .66 .47 .53 .38 .76 .64 .63 .60                                                                                                                                                                     .65                        .32 .57 .43 .73                                                                       .82                    .46 .52
+  BERT                   .42 .44 .55 .05 .20 .56 .29 .44 .13 .74 .59 .43 .47                                                                                                                                                                     .23                        .07 .46 .14 .67                                                                       .71                    .32 .33
+  1-Baseline             .26 .17 .40 .09 .03 .41 .13 .12 .12 .51 .40 .19 .31                                                                                                                                                                     .07                        .09 .35 .19 .54                                                                       .17                    .22 .46
+  2023-01-22-02-01-11    .38 .49 .58 .00 .00 .58 .23 .44 .00 .66 .52 .47 .49                                                                                                                                                                     .00                        .00 .41 .30 .65                                                                       .64                    .38 .45
+ Nahj al-Balagha
+  Best per category      .48 .18 .49 .50 .67 .66 .29 .33 .62 .51 .37 .55 .36                                                                                                                                                                     .27                        .33 .41 .38 .33                                                                       .67                    .20 .44
+  Best approach          .40 .13 .49 .40 .50 .65 .25 .00 .58 .50 .30 .51 .28                                                                                                                                                                     .24                        .29 .33 .38 .26                                                                       .67                    .00 .36
+  BERT                   .28 .14 .09 .00 .67 .41 .00 .00 .28 .28 .23 .38 .18                                                                                                                                                                     .15                        .17 .35 .22 .21                                                                       .00                    .20 .35
+  1-Baseline             .13 .04 .09 .01 .03 .41 .04 .03 .23 .38 .06 .18 .13                                                                                                                                                                     .06                        .13 .17 .12 .12                                                                       .01                    .04 .14
+ New York Times
+  Best per category      .50 .50 .22 .00 .03 .54 .40 .00 .50 .59 .52 .22 .33 1.00 .57 .33 .40 .62 1.00 .03 .46
+  Best approach          .34 .22 .22 .00 .00 .48 .40 .00 .00 .53 .44 .00 .18 1.00 .20 .12 .29 .55 .33 .00 .36
+  BERT                   .24 .00 .00 .00 .00 .29 .00 .00 .00 .53 .43 .00 .00 .00 .57 .26 .27 .36 .50 .00 .32
+  1-Baseline             .15 .05 .03 .00 .03 .28 .03 .00 .05 .51 .20 .00 .07 .03 .12 .12 .26 .24 .03 .03 .33
+
+Table 2: Achieved F1 -score of team quintilian per test dataset, from macro-precision and macro-recall (All) and for
+each of the 20 value categories. Approaches marked with * were not part of the official evaluation. Approaches in
+gray are shown for comparison: an ensemble using the best participant approach for each individual category; the
+best participant approach; and the organizer’s BERT and 1-Baseline.
+
+
+Nailia Mirzakhmedova, Johannes Kiesel, Milad Al-
+  shomary, Maximilian Heinrich, Nicolas Handke, Xi-
+  aoni Cai, Barriere Valentin, Doratossadat Dastgheib,
+  Omid Ghahroodi, Mohammad Ali Sadraei, Ehsaned-
+  din Asgari, Lea Kawaletz, Henning Wachsmuth, and
+  Benno Stein. 2023. The Touché23-ValueEval Dataset
+  for Identifying Human Values behind Arguments.
+  CoRR, abs/2301.13771.
+Jesse Read, Bernhard Pfahringer, and Geoff Holmes.
+   2008. Multi-label classification using ensembles of
+   pruned sets. In 2008 eighth IEEE international con-
+   ference on data mining, pages 995–1000. IEEE.
+Grigorios Tsoumakas and Ioannis Katakis. 2007. Multi-
+  label classification: An overview. International
+  Journal of Data Warehousing and Mining (IJDWM),
+  3(3):1–13.
+Rajasekar Venkatesan and Meng Joo Er. 2014. Multi-
+  label classification method based on extreme learning
+  machines. In 2014 13th International Conference on
+  Control Automation Robotics & Vision (ICARCV),
+  pages 619–624. IEEE.
+Min-Ling Zhang and Zhi-Hua Zhou. 2013. A review on
+  multi-label learning algorithms. IEEE transactions
+  on knowledge and data engineering, 26(8):1819–
+  1837.
+
+
+
+                                                                                                                                                 1612
+

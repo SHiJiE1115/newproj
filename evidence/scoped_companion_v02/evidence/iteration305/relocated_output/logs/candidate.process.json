@@ -1,0 +1,32 @@
+{
+  "name": "candidate",
+  "command": [
+    "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\layer_candidate.py",
+    "--protocol",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration305\\clean wine package with spaces\\protocol.json",
+    "--output",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\qa_v01\\relocated output\\candidate"
+  ],
+  "started_utc": "2026-10-11T19:37:47.249509+00:00",
+  "attempts": 1,
+  "automatic_retry": false,
+  "actual_returncode": 0,
+  "terminal": "EXITED",
+  "stdout": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stdout.txt",
+    "bytes": 1677,
+    "sha256": "89b0ef4f102688fedce7e9a3040244a1a9ded329327f676596646e7a599b6670"
+  },
+  "stderr": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/qa_v01/relocated output/logs/candidate.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "ended_utc": "2026-10-11T19:37:47.608611+00:00",
+  "elapsed_seconds": 0.35932219997630455
+}

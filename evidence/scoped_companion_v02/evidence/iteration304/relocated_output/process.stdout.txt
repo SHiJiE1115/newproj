@@ -1,0 +1,1 @@
+{"status": "PASS_SCOPED_SEVEN_ORIGINAL_BUDGET_REPLAY", "result_sha256": "1c14bcd0f3282873a5bfb80ff50f5d3ad773b2186d5b51c27b63f611cc078f27", "result_bytes": 22264, "original_reads": 7, "original_payload_bytes": 2415058, "budget_denials": 5, "certified_reported_rows": 5, "exit_code": 0}

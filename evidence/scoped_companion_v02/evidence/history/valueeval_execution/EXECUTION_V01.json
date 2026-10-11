@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "started_utc": "2026-10-11T18:59:42.847510+00:00",
+  "ended_utc": "2026-10-11T18:59:45.951350+00:00",
+  "actual_child_returncode": 0,
+  "whole_child_process_wall_seconds": 3.099386100017,
+  "command": [
+    "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01\\budget_replay.py",
+    "--protocol",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\PROTOCOL_V01.json",
+    "--output",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration303\\replay_v01"
+  ],
+  "script": {
+    "path": "budget_replay.py",
+    "bytes": 11906,
+    "sha256": "8e3b5432df71e00e6ab3cb35758f625c35d0fef28deac6e31e1a89826624e876"
+  },
+  "stdout": {
+    "path": "process.stdout.txt",
+    "bytes": 287,
+    "sha256": "c42f152e5ded38ed2a5d755274b36120bde3341c1e69f7a998d6e287b1e3c520"
+  },
+  "stderr": {
+    "path": "process.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "result": {
+    "path": "RESULT_V01.json",
+    "bytes": 22310,
+    "sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff"
+  },
+  "invocation_count": 1,
+  "process_tree_cpu_measured": false,
+  "launcher_TEMP_on_D": true,
+  "scope": "One recorded local replay process. Child result separates bootstrap, acquisition/hash, parsing, PDF subprocess wall and Python-parent CPU."
+}

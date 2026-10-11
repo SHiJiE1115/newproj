@@ -1,0 +1,388 @@
+{
+  "schema": 1,
+  "status": "PASS_EXACT_LOCAL_ASSEMBLY_AND_REAL_SAME_SIZE_DRIFT_REJECTION",
+  "human_review": false,
+  "scientific_executions": 0,
+  "new_scientific_samples": 0,
+  "network_requests_by_this_QA": 0,
+  "children": [
+    {
+      "name": "exact_local_import",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\unpacked bootstrap\\hydrate.py",
+        "--source-directory",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration304\\valueeval_budget_v01\\sources",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\exact assembled package",
+        "--receipt",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\bootstrap_qa_v01\\EXACT_ASSEMBLY_RECEIPT_V01.json"
+      ],
+      "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unrelated cwd",
+      "started_utc": "2026-10-11T19:53:39.033305+00:00",
+      "attempts": 1,
+      "automatic_retries": false,
+      "pid": 25696,
+      "actual_returncode": 0,
+      "ended_utc": "2026-10-11T19:53:41.063049+00:00",
+      "wall_seconds": 2.0275078999984544,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/exact_local_import.stdout.txt",
+        "bytes": 192,
+        "sha256": "8fa255cb578ff16fc4da1c4b6f1fbfffabc502ac7100ae3e9a1c8abc5e796488"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/exact_local_import.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "receipt": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/EXACT_ASSEMBLY_RECEIPT_V01.json",
+        "bytes": 3946,
+        "sha256": "92a943edaaf249cdbc770c68dfd53f49d29b16d676285b4fe48c6577c3db962e"
+      }
+    },
+    {
+      "name": "real_same_size_drift",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\unpacked bootstrap\\hydrate.py",
+        "--source-directory",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\real changed source import",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration306\\bootstrap QA with spaces\\rejected drift package",
+        "--receipt",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration306\\bootstrap_qa_v01\\DRIFT_REJECTION_RECEIPT_V01.json"
+      ],
+      "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unrelated cwd",
+      "started_utc": "2026-10-11T19:53:41.124140+00:00",
+      "attempts": 1,
+      "automatic_retries": false,
+      "pid": 19452,
+      "actual_returncode": 1,
+      "ended_utc": "2026-10-11T19:53:41.437814+00:00",
+      "wall_seconds": 0.31329070002539083,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/real_same_size_drift.stdout.txt",
+        "bytes": 214,
+        "sha256": "bdc349506c6ec7ae5f919d1037c807180d3ee5f7b3e72d0370b256ad69c5321d"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/real_same_size_drift.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "receipt": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/DRIFT_REJECTION_RECEIPT_V01.json",
+        "bytes": 1210,
+        "sha256": "fa99aaf68d5b30ae778cb027b8fb7f4cdbe4b0dc86507a46deef1fd758138a7f"
+      }
+    }
+  ],
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER306_BOOTSTRAP_QA_EXEC_PREFLIGHT_V01.json",
+    "bytes": 3195,
+    "sha256": "4e6d44adab01c1b9996d61f2649c3b1944e4d54c690ba37fe6891a6de2c360be"
+  },
+  "build": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/BOOTSTRAP_BUILD_V01.json",
+    "bytes": 9492,
+    "sha256": "60730216dd6a8aa785ed380a54db87fa39759199f269f745b32654129862b5ea"
+  },
+  "exact_14_files": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/README.md",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/budget_replay.py",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/expected_scientific.json",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/parser/verify_exact_id_five.py",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/protocol.json",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/run.py",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/sources/archive_evaluations.raw",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/sources/organizer_main.raw",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/sources/paper_13.pdf",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/sources/paper_16.pdf",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/sources/paper_3.pdf",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/sources/paper_35.pdf",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/exact assembled package/sources/paper_41.pdf",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+    }
+  ],
+  "assembly_receipt": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/EXACT_ASSEMBLY_RECEIPT_V01.json",
+    "bytes": 3946,
+    "sha256": "92a943edaaf249cdbc770c68dfd53f49d29b16d676285b4fe48c6577c3db962e"
+  },
+  "fourteen_original_bytes_equal": true,
+  "delivery_zip": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/valueeval_bootstrap_v01.zip",
+    "bytes": 1717835,
+    "sha256": "f5e805effc6ed28a9360ac9fd107f6a1922016c9efee1babaec0c52ddfee5a7c"
+  },
+  "bootstrap_directory": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap",
+  "bootstrap_files": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/MANIFEST.json",
+      "bytes": 2777,
+      "sha256": "3aff9461a025f489026cf2bf03cd646c197a388bf59cbc645f4f58ec83838d7f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/README.md",
+      "bytes": 4545,
+      "sha256": "bd72eaf1532e011010b14e0b7972307ea81ab2122f30d452792e5fe0322df40f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/SOURCE_NOTICE.md",
+      "bytes": 9211,
+      "sha256": "f26718a7051f3c0d87f57287bfeb31082f3e56216511f8aff9311059406a6078"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/hydrate.py",
+      "bytes": 8527,
+      "sha256": "d2f67acadf8630b1a4dbd95bfbef1d1965a2a448ab0c8f794d6093bf1aa3b634"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/README.md",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/budget_replay.py",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/expected_scientific.json",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/parser/verify_exact_id_five.py",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/protocol.json",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/run.py",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/sources/paper_13.pdf",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/sources/paper_16.pdf",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/sources/paper_3.pdf",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/sources/paper_35.pdf",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/skeleton/sources/paper_41.pdf",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+    }
+  ],
+  "original_14": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/budget_replay.py",
+      "bytes": 12746,
+      "sha256": "c4ff8fbd6c78bb6286db54f9e4b76f4a03e4daabd0fa30afb727a4dc9dbe6e91"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/expected_scientific.json",
+      "bytes": 19930,
+      "sha256": "5e6baec82e7d1b3b3e68d33baf55fb9d3adb2754b81060e7235ffd8cc54b4b2d"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/MANIFEST.json",
+      "bytes": 2179,
+      "sha256": "6dcc1b6062bffde1456a528f6b73cac51f3a2addde30d061ce2e0171db393b8f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/parser/verify_exact_id_five.py",
+      "bytes": 11749,
+      "sha256": "4e901fef2f376dfc9d970c7ea8177c95ad3e3032383fe9310fecaa8aac39fe15"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/protocol.json",
+      "bytes": 7843,
+      "sha256": "b434e14cc404afec3193ffc40c73184d95959b0493d7621ec3b4091045036c1a"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/README.md",
+      "bytes": 4992,
+      "sha256": "b9c97e5673a124cdd54a26a4060578fe0ea03b17620935bedf999baedc62c996"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/run.py",
+      "bytes": 6676,
+      "sha256": "3b472f60fba9b5605b5f36e30a9187e1ab5693c2c51f9d3317be91493afd7e46"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/sources/archive_evaluations.raw",
+      "bytes": 410492,
+      "sha256": "57c14d4055b28c52f0e644a5ff8a965a06c624d1a8987b79fe6b2be5074616ea"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/sources/organizer_main.raw",
+      "bytes": 83506,
+      "sha256": "f048152d2579be4d8fefa4c807221831233455de935d4ecb1b57f4a96e651fc8"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/sources/paper_13.pdf",
+      "bytes": 693104,
+      "sha256": "71e13b29f83eec1af659670370d8ccf6ca7d7d9cd041f35b5b9dfe0a586fc8d1"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/sources/paper_16.pdf",
+      "bytes": 283898,
+      "sha256": "854b19cd82e0bb159df13833cb5213cb7c33342dca28b24468a03fd159446a29"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/sources/paper_3.pdf",
+      "bytes": 507457,
+      "sha256": "e7bbfaeceb1b1f8b4b3405130ed947eb60b368fc59552167bef5e91fbf34bdfb"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/sources/paper_35.pdf",
+      "bytes": 143066,
+      "sha256": "2024c639c24de7bf285cbdec14de4e6dfef4c071e68b21480b3e02a26fa3ccce"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration304/valueeval_budget_v01/sources/paper_41.pdf",
+      "bytes": 293535,
+      "sha256": "f63bfb85abc690d1a1bfdf5b9a7e5e95f74b26567969bfc8257046a10e783375"
+    }
+  ],
+  "original_and_bootstrap_unchanged": true,
+  "drift_source": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/source_probe_v01/organizer_response.raw",
+    "bytes": 83506,
+    "sha256": "5e4aeb32be5cad70eb841ca555496a9c950b0e6d329b361c0bf05c9f81fbf3d4"
+  },
+  "drift_source_receipt": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/source_probe_v01/organizer_GET_RECEIPT_V01.json",
+    "bytes": 1559,
+    "sha256": "0f14d2432ec22c228d6a33a3148fb1db5d9f3597f398dfa3aed59d9aae1c9701"
+  },
+  "drift_rejection_receipt": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/DRIFT_REJECTION_RECEIPT_V01.json",
+    "bytes": 1210,
+    "sha256": "fa99aaf68d5b30ae778cb027b8fb7f4cdbe4b0dc86507a46deef1fd758138a7f"
+  },
+  "drift_expected_failure_preserved": true,
+  "science_workers_started": 0,
+  "exact_assembly_executions": 1,
+  "drift_failure_executions": 1,
+  "static_review": {
+    "reviewed_hydrate": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration306/bootstrap QA with spaces/unpacked bootstrap/hydrate.py",
+      "bytes": 8527,
+      "sha256": "d2f67acadf8630b1a4dbd95bfbef1d1965a2a448ab0c8f794d6093bf1aa3b634"
+    },
+    "source_paths_checked": true,
+    "refuses_existing_output": true,
+    "temporary_partial_preserved_on_failure": true,
+    "local_import_has_no_network_calls": true,
+    "original_manifest_and_all14_exact": true,
+    "static_read_tools": [
+      "9d0f39",
+      "90bbee"
+    ]
+  },
+  "limits": [
+    "Software assembly/rejection validation only; no new scientific replay or sample.",
+    "Local exact source cache was supplied; this is not a clean-cache or successful live-network reconstruction.",
+    "The actual organizer response has the same byte count but a different digest and is correctly rejected.",
+    "Scientific raw-byte budget is unchanged; acquiring/materializing missing inputs is outside that replay budget.",
+    "No code from the nested author source and no package run.py was executed."
+  ],
+  "ended_utc": "2026-10-11T19:53:41.551598+00:00",
+  "elapsed_seconds": 4.2042738999880385,
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration306/bootstrap_qa_v01/accept_bootstrap_v01.py",
+    "bytes": 10585,
+    "sha256": "d981137e12ca151b7acdd373f880f44ab1fd23dc78460a9ca001a36cc29688a4"
+  }
+}

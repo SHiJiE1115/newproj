@@ -1,0 +1,264 @@
+{
+  "schema": 2,
+  "status": "PASS_REGISTER_OF_COMPLETED_RELOCATION_RECEIPTS",
+  "created_utc": "2026-10-11T19:39:30.672704+00:00",
+  "operation": "Read and integrate completed calibration and software relocation receipts only; no new scientific execution, truth labels or samples.",
+  "source_seals": {
+    "wine": {
+      "path": "evidence/history/WINE_DELIVERY_VALIDATION_V01.json",
+      "bytes": 8350,
+      "sha256": "bed105fcdf4b894b8186b079f73fe92a195645bbb1f9762d61b3d6e44bf9749d"
+    },
+    "valueeval": {
+      "path": "evidence/history/VALUEEVAL_DELIVERY_VALIDATION_V01.json",
+      "bytes": 8849,
+      "sha256": "a2ea0d5e3329e274f9d5b69dda35db914301107763114f80bf01ddcf2b8e1f48"
+    }
+  },
+  "source_result_bindings": {
+    "wine_candidate": {
+      "path": "evidence/history/wine_candidate/CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+    },
+    "wine_sql_v02": {
+      "path": "evidence/history/wine_sql_v02/BASELINE_RESULT_V02.json",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+    },
+    "valueeval_replay": {
+      "path": "evidence/history/valueeval_replay/RESULT_V01.json",
+      "bytes": 22310,
+      "sha256": "92cdf6516937cec4fe4f620af71edd89801c68a867dd89be875836ceeb6f1fff"
+    },
+    "valueeval_execution": {
+      "path": "evidence/history/valueeval_execution/EXECUTION_V01.json",
+      "bytes": 1573,
+      "sha256": "16a62fca2418a3e15beb045e9ad66aa867fd738f8aca60f2c6cf8e569aa0e99c"
+    },
+    "valueeval_qa": {
+      "path": "evidence/history/valueeval_qa/QA_RESULT_V01.json",
+      "bytes": 24630,
+      "sha256": "86cf6ab818d39f9c0a62dde4d42eaaf9dfc0e09bceec1b70ac86999f0ecd60db"
+    }
+  },
+  "wine": {
+    "layer_matrix": [
+      {
+        "id": "v07",
+        "kind": "existing_real_run",
+        "layers": {
+          "artifact_numeric": "UNRESOLVED",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "v08",
+        "kind": "existing_real_run",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "v09",
+        "kind": "existing_real_run",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "MET",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 1
+      },
+      {
+        "id": "mixed_identity",
+        "kind": "constructed_control",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "mixed_output",
+        "kind": "constructed_control",
+        "layers": {
+          "artifact_numeric": "UNRESOLVED",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "duplicate_v09",
+        "kind": "constructed_control",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "MET",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 1
+      }
+    ],
+    "real_archives": 3,
+    "constructed_splices": 2,
+    "constructed_duplicate": 1,
+    "layer_labels": 30,
+    "met_labels": 12,
+    "unresolved_labels": 18,
+    "same_information_sql_agreement": true,
+    "method_advantage_established": false,
+    "new_author_execution": false,
+    "new_cryptographic_verification": false,
+    "current_delivery_relocation": "Actual single ZIP-relocated Windows replay; candidate and final SQL V02 each exited zero once. Thirty certificates explicitly rebound to the relative protocol; no byte-identical-certificate claim."
+  },
+  "valueeval": {
+    "source_objects": 7,
+    "source_bytes": 2415058,
+    "certificates": 5,
+    "budget_denials": 5,
+    "coverage_frontier_bytes": [
+      637064,
+      920962,
+      1214497,
+      1721954,
+      2415058
+    ],
+    "metadata_subsets": 128,
+    "original_child_wall_seconds": 3.099386100017,
+    "source_selection": "Five post-hoc known positives from 29 development papers",
+    "cost_scope": "Logical unique payload bytes in the replay; excludes preparation, QA and runtime bootstrap",
+    "fixed_baseline_attains_dependency_optimum": true,
+    "method_advantage_established": false,
+    "current_delivery_relocation": "Actual single ZIP-relocated Windows replay using the externally installed hash-pinned MiKTeX pdftotext; unchanged scientific projection. Other platforms/dependencies untested."
+  },
+  "theory_binding": {
+    "path": "evidence/theory/paper.tex",
+    "bytes": 76298,
+    "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+  },
+  "theory_transfer": {
+    "complete_native_world_model_established": false,
+    "equality_query_menu_matches_file_menu": false,
+    "application_adaptive_gain_established": false
+  },
+  "companion_scope": "A separate empirical technical companion; no change to the frozen theory contribution.",
+  "human_gold": false,
+  "human_technical_prerequisite": false,
+  "software_delivery": {
+    "packages": [
+      {
+        "path": "packages/valueeval_bootstrap_v01.zip",
+        "bytes": 1717835,
+        "sha256": "f5e805effc6ed28a9360ac9fd107f6a1922016c9efee1babaec0c52ddfee5a7c",
+        "members": 16,
+        "edition": "public bootstrap; reconstruct exact14 before scientific replay",
+        "original_complete_zip_byte_identical": false,
+        "actual_assembly_mode": "exact_local_import",
+        "unmodified_current_official_responses_restore_complete_frozen_package": false,
+        "separate_offline_reconstruction_entry": "SOURCE_RECOVERY.md"
+      },
+      {
+        "path": "packages/wine_layer_calibration_v01.zip",
+        "bytes": 1019047,
+        "sha256": "7c69e4d62437f25485cad2994c99936a8c74c9e456d7d839b483e6c4f7c70002",
+        "members": 25,
+        "manifest_inventory_and_member_pins": true
+      }
+    ],
+    "valueeval_qa": {
+      "path": "evidence/iteration304/PACKAGE_ACCEPTANCE_V01.json",
+      "bytes": 47262,
+      "sha256": "ab8d53a6278c88a9c4133cc763ca12922fc2648f2f5165c7c9ba6449dc7ba113"
+    },
+    "valueeval_execution": {
+      "path": "evidence/iteration304/EXECUTION_V01.json",
+      "bytes": 8982,
+      "sha256": "4e87133b2861595c58e14f6c621a70b1d098f57bfb6af3b0c9c938734ee727fb"
+    },
+    "wine_qa": {
+      "path": "evidence/iteration305/PACKAGE_ACCEPTANCE_V01.json",
+      "bytes": 102858,
+      "sha256": "d6fe9f257f07661468246d7acf58e0438c6c5b1cf653e4edec1f4f68e7fea932"
+    },
+    "wine_execution": {
+      "path": "evidence/iteration305/EXECUTION_V01.json",
+      "bytes": 13144,
+      "sha256": "bd9958ec6b822eb97b813fb60d54cd7c704643904a5bb804399cc0445c73d4ce"
+    },
+    "wine_launcher_result": {
+      "path": "evidence/iteration305/relocated_output/RESULT.json",
+      "bytes": 34772,
+      "sha256": "22f9d937f76cba0d52e780a551f3674c3b0aea40c05e8057333e771b1dae653a"
+    },
+    "new_scientific_samples": 0,
+    "old_workspace_OS_accessible": true,
+    "OS_isolation_proved": false,
+    "cross_machine_or_cross_platform_execution": false,
+    "human_review": false,
+    "certificate_rebinding_fields": [
+      "certificate_digest",
+      "input_digest",
+      "scope_digest",
+      "snapshot_digest"
+    ],
+    "historical_receipts_anonymized": false,
+    "all_ancestor_dependencies_bundled": false
+  },
+  "provenance": {
+    "original_register": {
+      "path": "evidence/history/EVIDENCE_REGISTER_V01.json",
+      "bytes": 6724,
+      "sha256": "2f31b30543aa02917fe31efd1764d1f9400785a54d578366bd63f79d6d43b066"
+    },
+    "changes": "Relative entry bindings, completed relocation status, and explicit administrative/software scope only."
+  },
+  "public_distribution_edition": {
+    "version": "iteration306-v01",
+    "scientific_results_unchanged": true,
+    "private_original_manifest": {
+      "path": "provenance/PRIVATE_COMPANION_MANIFEST_V02.json",
+      "bytes": 10254,
+      "sha256": "023abe92df7365b5cbee73767eed93f938f1201277fa3bc68abe259d5f220d25"
+    },
+    "private_original_full_valueeval_zip": {
+      "bytes": 1767911,
+      "sha256": "7c9144643b8ec9e2779cff5cf259dd334972a565264eb7c3d053c52b7fd709a7",
+      "included": false
+    },
+    "bootstrap_assembly_qa": {
+      "path": "evidence/bootstrap/BOOTSTRAP_ACCEPTANCE_V01.json",
+      "bytes": 18846,
+      "sha256": "dea5e736b3d29bf207962e1a85401b6a81e8453a24e1a86f52130abd7b1f6126"
+    },
+    "exact_local_import_assembled_14_files": true,
+    "new_scientific_replay": false,
+    "unmodified_current_HTTP_matches_frozen_organizer": false,
+    "declared_offline_reconstruction_verified": true,
+    "integrated_online_restorer_executed": false,
+    "reason": "Actual GET organizer response differed only in one CSS parameter; a separate disclosed offline reconstruction matched the full old pin. Future source drift may fail.",
+    "recovery_entry": "SOURCE_RECOVERY.md",
+    "source_notice": {
+      "path": "VALUEEVAL_PUBLIC_NOTICE_V02.md",
+      "bytes": 9211,
+      "sha256": "f26718a7051f3c0d87f57287bfeb31082f3e56216511f8aff9311059406a6078"
+    }
+  }
+}
