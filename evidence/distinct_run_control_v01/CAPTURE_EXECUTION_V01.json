@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_verify_new_run_v01.py",
+    "bytes": 21119,
+    "sha256": "a36a6a06915e35612d9be14e550f6c34be671f08c88a9195dc2893ee34382997"
+  },
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER311_CAPTURE_EXECUTION_GUARD_V01.json",
+    "bytes": 3183,
+    "sha256": "b87d077ab1a023475c4c7e4bfb1d73e5f4581f21e0e22281abf794ec5fbe8f98"
+  },
+  "started_utc": "2026-10-11T21:23:09.558131+00:00",
+  "ended_utc": "2026-10-11T21:23:32.116643+00:00",
+  "elapsed_seconds": 22.558435500017367,
+  "processes": [
+    {
+      "name": "artifact_zip_download",
+      "started_utc": "2026-10-11T21:23:10.486559+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "command": [
+        "C:\\Users\\dongs\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin\\gh.exe",
+        "api",
+        "repos/SHiJiE1115/newproj/actions/artifacts/11714854838/zip"
+      ],
+      "cwd": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa",
+      "timeout_seconds": 120,
+      "terminal": "EXITED",
+      "actual_returncode": 0,
+      "stdout_observed_bytes": 833183,
+      "stderr_observed_bytes": 0,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_artifact.zip",
+        "bytes": 833183,
+        "sha256": "83649090a8e733fb2f1f342fdf6638c5e9de75a0fcc344081e6b5769728141ba"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/artifact_zip_download.stderr.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:23:15.053905+00:00",
+      "elapsed_seconds": 4.523623799992492
+    },
+    {
+      "name": "gate_native_verifier",
+      "started_utc": "2026-10-11T21:23:15.202353+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration276_wine_v09\\experiment\\verify_receipt.py",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_release_gate\\receipt.tar",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_release_gate\\CANDIDATE_REPORT.json",
+        "SHiJiE1115/newproj",
+        "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "38175966754",
+        "1"
+      ],
+      "cwd": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa",
+      "timeout_seconds": 120,
+      "terminal": "EXITED",
+      "actual_returncode": 0,
+      "stdout_observed_bytes": 138,
+      "stderr_observed_bytes": 0,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/gate_native_verifier.stdout.bin",
+        "bytes": 138,
+        "sha256": "9c92596c40caaa7a2469d78cb2608a7fadbde3493a3081de6018f9dfd2b6aad1"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/gate_native_verifier.stderr.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:23:17.719738+00:00",
+      "elapsed_seconds": 2.5124809999833815
+    },
+    {
+      "name": "gate_checkout_identity",
+      "started_utc": "2026-10-11T21:23:17.794064+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\git\\cmd\\git.exe",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09",
+      "timeout_seconds": 15,
+      "terminal": "EXITED",
+      "actual_returncode": 0,
+      "stdout_observed_bytes": 41,
+      "stderr_observed_bytes": 0,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/gate_checkout_identity.stdout.bin",
+        "bytes": 41,
+        "sha256": "13a28527006269f8bd05fb1354dfd55f61d799e88abed23e01e8d898e1c9d06d"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/gate_checkout_identity.stderr.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:23:17.891572+00:00",
+      "elapsed_seconds": 0.0955060999840498
+    },
+    {
+      "name": "gate_live_attestation_verify",
+      "started_utc": "2026-10-11T21:23:18.395043+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "command": [
+        "C:\\Users\\dongs\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin\\gh.exe",
+        "attestation",
+        "verify",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_release_gate\\receipt.tar",
+        "--repo",
+        "SHiJiE1115/newproj",
+        "--signer-workflow",
+        "SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml",
+        "--source-digest",
+        "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "--source-ref",
+        "refs/heads/trace-isolation-v09-fd-observation",
+        "--deny-self-hosted-runners",
+        "--format",
+        "json"
+      ],
+      "cwd": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa",
+      "timeout_seconds": 120,
+      "terminal": "EXITED",
+      "actual_returncode": 0,
+      "stdout_observed_bytes": 14965,
+      "stderr_observed_bytes": 0,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/gate_live_attestation_verify.stdout.bin",
+        "bytes": 14965,
+        "sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/gate_live_attestation_verify.stderr.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:23:25.620317+00:00",
+      "elapsed_seconds": 7.223424499999965
+    },
+    {
+      "name": "signature_bundle_download",
+      "started_utc": "2026-10-11T21:23:25.684110+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "command": [
+        "C:\\Users\\dongs\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin\\gh.exe",
+        "attestation",
+        "download",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_release_gate\\receipt.tar",
+        "--repo",
+        "SHiJiE1115/newproj",
+        "--limit",
+        "1"
+      ],
+      "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature",
+      "timeout_seconds": 120,
+      "terminal": "EXITED",
+      "actual_returncode": 0,
+      "stdout_observed_bytes": 268,
+      "stderr_observed_bytes": 0,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/download.stdout.txt",
+        "bytes": 268,
+        "sha256": "d7c52d09be780c06ef5401914d429f3adaafd8d0d65d3da3de0676e61947394e"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/signature_bundle_download.stderr.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:23:27.566236+00:00",
+      "elapsed_seconds": 1.8809598999796435
+    },
+    {
+      "name": "retained_signature_verify",
+      "started_utc": "2026-10-11T21:23:27.573436+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "command": [
+        "C:\\Users\\dongs\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin\\gh.exe",
+        "attestation",
+        "verify",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_release_gate\\receipt.tar",
+        "--bundle",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_signature\\sha256-e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7.jsonl",
+        "--repo",
+        "SHiJiE1115/newproj",
+        "--signer-workflow",
+        "SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml",
+        "--source-digest",
+        "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "--source-ref",
+        "refs/heads/trace-isolation-v09-fd-observation",
+        "--deny-self-hosted-runners",
+        "--format",
+        "json"
+      ],
+      "cwd": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa",
+      "timeout_seconds": 120,
+      "terminal": "EXITED",
+      "actual_returncode": 0,
+      "stdout_observed_bytes": 14965,
+      "stderr_observed_bytes": 0,
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/verified.stdout.json",
+        "bytes": 14965,
+        "sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_process_logs/retained_signature_verify.stderr.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:23:31.586909+00:00",
+      "elapsed_seconds": 4.011808100010967
+    }
+  ],
+  "automatic_retry": false,
+  "stdout_stderr_scope": "Retained child output only after controller credential-output checks; timeout partial GH output is withheld.",
+  "output_cap_limitation": "Provider ZIP size checked before download and all returned buffers capped before persistence; controller gh_call internally captures output in memory.",
+  "scope": "Actual local capture/verification subprocess observations, not an OS-signed execution receipt or a repeat of author training."
+}

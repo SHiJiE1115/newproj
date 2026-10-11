@@ -1,0 +1,53 @@
+{
+  "schema": "rrnc-v09-postrun-release-gate-v01",
+  "expected_external_identity": {
+    "repository": "SHiJiE1115/newproj",
+    "head_sha": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+    "head_branch": "trace-isolation-v09-fd-observation",
+    "run_id": 38175966754,
+    "attempt": 1
+  },
+  "checks": {
+    "provider_url_binding": true,
+    "run_external_identity": true,
+    "run_completed_success": true,
+    "exact_two_attempt_jobs": true,
+    "author_job_success": true,
+    "second_job_success": true,
+    "github_hosted_linux_jobs": true,
+    "second_job_verifier_and_attest_steps": true,
+    "artifact_run_and_digest_binding": true,
+    "candidate_and_direct_same_tar_pass": true,
+    "cryptographic_attestation_verified": true
+  },
+  "release_authorized": true,
+  "status": "RELEASE_PROSPECTIVE_SELECTED_SYSCALL_OBSERVATION_ONLY",
+  "zip_sha256": "83649090a8e733fb2f1f342fdf6638c5e9de75a0fcc344081e6b5769728141ba",
+  "receipt_tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+  "zip_member_count": 35,
+  "provider_observed": {
+    "run_html_url": "https://github.com/SHiJiE1115/newproj/actions/runs/38175966754",
+    "head_sha": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+    "run_conclusion": "success",
+    "job_conclusions": {
+      "run_author": "success",
+      "attest_verified_author_run": "success"
+    },
+    "artifact_id": 11714854838,
+    "artifact_provider_digest": "sha256:83649090a8e733fb2f1f342fdf6638c5e9de75a0fcc344081e6b5769728141ba"
+  },
+  "candidate_status": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+  "direct_baseline_status": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+  "candidate_report_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_release_gate\\CANDIDATE_REPORT.json",
+  "direct_baseline_report_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration311\\new_run_release_gate\\DIRECT_BASELINE_REPORT.json",
+  "attestation": {
+    "status": "CRYPTO_VERIFIED",
+    "verified": true,
+    "gh_exit_code": 0,
+    "gh_stdout_sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5",
+    "gh_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verified_entry_count": 1,
+    "matching_subject_count": 1,
+    "matching_signed_run_identity_count": 1
+  }
+}

@@ -1,0 +1,4731 @@
+{
+  "schema": 1,
+  "status": "PASS_THREE_FROZEN_ROWS_TWO_ACTUAL_ADMITTED_EVENTS",
+  "started_utc": "2026-10-11T21:25:00.863389+00:00",
+  "storage_guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER311_COMPARISON_GUARD_V01.json",
+    "bytes": 3191,
+    "sha256": "d3a4329eb690e4ade313dd24168e0267417ce37e16004bfb215fbd82e2e53e4e"
+  },
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/compare_distinct_events_v01.py",
+    "bytes": 34116,
+    "sha256": "3819ea5296f993bba35b73866ca36c189d70798857e702d496749aa777048495"
+  },
+  "rows": [
+    {
+      "id": "two_references_one_event",
+      "candidate_status": "UNRESOLVED",
+      "baseline_status": "UNRESOLVED",
+      "candidate_distinct": 1,
+      "baseline_distinct": 1,
+      "agree": true,
+      "frozen_success_branch_status": "UNRESOLVED"
+    },
+    {
+      "id": "two_actual_events",
+      "candidate_status": "MET",
+      "baseline_status": "MET",
+      "candidate_distinct": 2,
+      "baseline_distinct": 2,
+      "agree": true,
+      "frozen_success_branch_status": "MET"
+    },
+    {
+      "id": "shared_input_and_implementation",
+      "candidate_status": "UNRESOLVED",
+      "baseline_status": "UNRESOLVED",
+      "candidate_distinct": 2,
+      "baseline_distinct": 2,
+      "agree": true,
+      "frozen_success_branch_status": "UNRESOLVED"
+    }
+  ],
+  "offline_only": true,
+  "new_author_execution_by_this_program": false,
+  "fresh_cryptographic_verification_by_this_program": false,
+  "semantic_checker_authenticates_external_truth": false,
+  "historical_authentication": false,
+  "human_gold": false,
+  "advantage_claim": false,
+  "plan": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/PLAN_V01.json",
+    "bytes": 10812,
+    "sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100"
+  },
+  "source_pin_scope": "Frozen plan source paths are historical descriptions, not followed here. Both intake modules verify the native source/protocol bytes retained in each tar.",
+  "module_descriptors": {
+    "candidate": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/layer_candidate.py",
+      "bytes": 22554,
+      "sha256": "7d86bd4ede7e089a8325d7d57c89b7135f86f290eabd4b15bd149a64470e4918"
+    },
+    "baseline": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/sql_baseline_v02.py",
+      "bytes": 30388,
+      "sha256": "347816748a8e5bbb63e50bf68557f581fdd385da67f0cd57bd67f2da3820d57a"
+    },
+    "protocol": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/protocol.json",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    },
+    "core": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/semantic/rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    "checker": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/semantic/rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    }
+  },
+  "candidate_events": {
+    "old": {
+      "label": "old",
+      "mode": "candidate",
+      "admitted": true,
+      "event": [
+        "SHiJiE1115/newproj",
+        38136338509,
+        1
+      ],
+      "status": "ADMITTED",
+      "input_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+          "bytes": 2314240,
+          "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+          "bytes": 1874,
+          "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+          "bytes": 1204,
+          "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+          "bytes": 2373,
+          "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+          "bytes": 741,
+          "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+          "bytes": 15110,
+          "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+          "bytes": 11909,
+          "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+        }
+      ],
+      "provider_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/INITIAL_PROVIDER_STATE_V01.json",
+          "bytes": 62029,
+          "sha256": "f09c23f7758f469afd413e1819dbb1c6d545cb03d50c2f448becf66b31f564ca"
+        }
+      ],
+      "provider_source_kind": "pre-dispatch retained provider state",
+      "schema_alias": "v09; the actual identity is in event and spec.identity",
+      "source_binding_checks": [
+        {
+          "edge": "host.GITHUB_REPOSITORY",
+          "observed": "SHiJiE1115/newproj",
+          "expected": "SHiJiE1115/newproj",
+          "passed": true
+        },
+        {
+          "edge": "host.GITHUB_SHA",
+          "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "passed": true
+        },
+        {
+          "edge": "host.GITHUB_RUN_ID",
+          "observed": "38136338509",
+          "expected": "38136338509",
+          "passed": true
+        },
+        {
+          "edge": "host.GITHUB_RUN_ATTEMPT",
+          "observed": "1",
+          "expected": "1",
+          "passed": true
+        },
+        {
+          "edge": "protocol_sha256",
+          "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "passed": true
+        },
+        {
+          "edge": "host_protocol_sha256",
+          "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "passed": true
+        },
+        {
+          "edge": "protocol_schema",
+          "observed": "rrnc-prospective-wine-author-strace-v09-development",
+          "expected": "rrnc-prospective-wine-author-strace-v09-development",
+          "passed": true
+        },
+        {
+          "edge": "frozen_nonce",
+          "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+          "expected": "175e5ecdd8e0857afa981d0c20e8ac59",
+          "passed": true
+        },
+        {
+          "edge": "host_nonce",
+          "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+          "expected": "175e5ecdd8e0857afa981d0c20e8ac59",
+          "passed": true
+        },
+        {
+          "edge": "container_command_nonce",
+          "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+          "expected": "175e5ecdd8e0857afa981d0c20e8ac59",
+          "passed": true
+        },
+        {
+          "edge": "member.source/experiment/author_25.py",
+          "observed": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "expected": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "passed": true
+        },
+        {
+          "edge": "host_source.source/experiment/author_25.py",
+          "observed": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "expected": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "passed": true
+        },
+        {
+          "edge": "member.source/experiment/run_hosted.py",
+          "observed": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "expected": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "passed": true
+        },
+        {
+          "edge": "host_source.source/experiment/run_hosted.py",
+          "observed": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "expected": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "passed": true
+        },
+        {
+          "edge": "member.source/experiment/verify_receipt.py",
+          "observed": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "expected": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "passed": true
+        },
+        {
+          "edge": "host_source.source/experiment/verify_receipt.py",
+          "observed": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "expected": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "passed": true
+        },
+        {
+          "edge": "input_sha.author",
+          "observed": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db",
+          "expected": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db",
+          "passed": true
+        },
+        {
+          "edge": "input_bytes.author",
+          "observed": 95119,
+          "expected": 95119,
+          "passed": true
+        },
+        {
+          "edge": "input_sha.data",
+          "observed": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659",
+          "expected": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659",
+          "passed": true
+        },
+        {
+          "edge": "input_bytes.data",
+          "observed": 10782,
+          "expected": 10782,
+          "passed": true
+        },
+        {
+          "edge": "candidate_tar",
+          "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+          "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+          "passed": true
+        },
+        {
+          "edge": "direct_tar",
+          "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+          "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+          "passed": true
+        },
+        {
+          "edge": "gate_tar",
+          "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+          "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+          "passed": true
+        },
+        {
+          "edge": "candidate_caller_identity",
+          "observed": {
+            "GITHUB_REPOSITORY": "SHiJiE1115/newproj",
+            "GITHUB_RUN_ATTEMPT": "1",
+            "GITHUB_RUN_ID": "38136338509",
+            "GITHUB_SHA": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+          },
+          "expected": {
+            "GITHUB_REPOSITORY": "SHiJiE1115/newproj",
+            "GITHUB_SHA": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "GITHUB_RUN_ID": "38136338509",
+            "GITHUB_RUN_ATTEMPT": "1"
+          },
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.repository",
+          "observed": "SHiJiE1115/newproj",
+          "expected": "SHiJiE1115/newproj",
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.source_commit",
+          "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.run_id",
+          "observed": "38136338509",
+          "expected": "38136338509",
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.attempt",
+          "observed": "1",
+          "expected": "1",
+          "passed": true
+        }
+      ],
+      "joint_key": {
+        "repository": "SHiJiE1115/newproj",
+        "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "run_id": "38136338509",
+        "attempt": "1",
+        "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+      },
+      "numeric": {
+        "csv_source": "v09",
+        "summary_source": "v09",
+        "summary_member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json",
+        "checks": [
+          {
+            "edge": "csv_donor_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "present.csv",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "present.summary",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "present.params",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "csv_fields",
+            "observed": [
+              "draw",
+              "seed",
+              "train_accuracy",
+              "test_accuracy",
+              "n_leaves",
+              "height",
+              "bound",
+              "time"
+            ],
+            "expected": [
+              "draw",
+              "seed",
+              "train_accuracy",
+              "test_accuracy",
+              "n_leaves",
+              "height",
+              "bound",
+              "time"
+            ],
+            "passed": true
+          },
+          {
+            "edge": "row_count",
+            "observed": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "edge": "summary_csv_rows",
+            "observed": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "edge": "csv_to_recipient_summary_sha256",
+            "observed": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+            "expected": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+            "passed": true
+          },
+          {
+            "edge": "summary_first_row",
+            "observed": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0022284984588623047"
+            },
+            "expected": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0022284984588623047"
+            },
+            "passed": true
+          },
+          {
+            "edge": "summary_last_row",
+            "observed": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.008466243743896484"
+            },
+            "expected": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.008466243743896484"
+            },
+            "passed": true
+          },
+          {
+            "edge": "draw_sequence",
+            "observed": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "expected": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "passed": true
+          },
+          {
+            "edge": "seed_sequence",
+            "observed": [
+              1,
+              11,
+              21,
+              31,
+              41,
+              51,
+              61,
+              71,
+              81,
+              91,
+              101,
+              111,
+              121,
+              131,
+              141,
+              151,
+              161,
+              171,
+              181,
+              191,
+              201,
+              211,
+              221,
+              231,
+              241
+            ],
+            "expected": [
+              1,
+              11,
+              21,
+              31,
+              41,
+              51,
+              61,
+              71,
+              81,
+              91,
+              101,
+              111,
+              121,
+              131,
+              141,
+              151,
+              161,
+              171,
+              181,
+              191,
+              201,
+              211,
+              221,
+              231,
+              241
+            ],
+            "passed": true
+          },
+          {
+            "edge": "summary_status",
+            "observed": "success",
+            "expected": "success",
+            "passed": true
+          },
+          {
+            "edge": "summary_nonce_to_host",
+            "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+            "expected": "175e5ecdd8e0857afa981d0c20e8ac59",
+            "passed": true
+          },
+          {
+            "edge": "summary_nonce_to_target",
+            "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+            "expected": "175e5ecdd8e0857afa981d0c20e8ac59",
+            "passed": true
+          },
+          {
+            "edge": "params_to_summary_sha256",
+            "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "passed": true
+          },
+          {
+            "edge": "params_to_target_sha256",
+            "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "passed": true
+          },
+          {
+            "edge": "summary_shape",
+            "observed": [
+              178,
+              13,
+              3
+            ],
+            "expected": [
+              178,
+              13,
+              3
+            ],
+            "passed": true
+          },
+          {
+            "edge": "finite_accuracy",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "accuracy_grid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "rounded_protocol_target",
+            "observed": [
+              "0.904",
+              "0.046"
+            ],
+            "expected": [
+              "0.904",
+              "0.046"
+            ],
+            "passed": true
+          }
+        ],
+        "observations": {
+          "rows": 25,
+          "mean_decimal": "0.903999999999999972",
+          "population_sd_decimal": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+          "rounded_mean_sd": [
+            "0.904",
+            "0.046"
+          ],
+          "csv_sha256": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+          "summary_sha256": "4ae6fbc0722e79c8e23b8935423a4d06e86bee5d2aab8f0e8c1c500625c1a364",
+          "params_sha256": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+          "nonce": "175e5ecdd8e0857afa981d0c20e8ac59"
+        },
+        "admitted": true,
+        "diagnostic": "ADMITTED_ARTIFACT_ARITHMETIC"
+      },
+      "selected_read": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_read_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "candidate.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate_audit.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "direct.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_open_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_positive_read_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.trace_isolation_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.frozen_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.source_hashes",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.wine_open_and_read",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.receipt_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.local_frozen_protocol",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "retained_native_gate": "OBSERVED",
+        "limitation": "Recorded version-specific predicate only; NOT_PASSED or missing flags do not establish absence of a physical read."
+      },
+      "retained_signature": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_signature_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "retained_verification_entry_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "retained_bundle_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "bundle_to_saved_verified_bundle",
+            "observed": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "expected": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "passed": true
+          },
+          {
+            "edge": "decoded_signed_statement",
+            "observed": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "expected": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "passed": true
+          },
+          {
+            "edge": "acceptance_status",
+            "observed": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "expected": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "observed": 0,
+            "expected": 0,
+            "required_type": "integer",
+            "observed_type": "int",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "observed": 0,
+            "expected": 0,
+            "required_type": "integer",
+            "observed_type": "int",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_bundle_hash",
+            "observed": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "expected": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_verified_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.receipt_tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.run_id",
+            "observed": 38136338509,
+            "expected": 38136338509,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.attempt",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_verified",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_crypto_exit",
+            "observed": 0,
+            "expected": 0,
+            "required_type": "integer",
+            "observed_type": "int",
+            "passed": true
+          },
+          {
+            "edge": "gate_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "statement_type",
+            "observed": "https://in-toto.io/Statement/v1",
+            "expected": "https://in-toto.io/Statement/v1",
+            "passed": true
+          },
+          {
+            "edge": "predicate_type",
+            "observed": "https://slsa.dev/provenance/v1",
+            "expected": "https://slsa.dev/provenance/v1",
+            "passed": true
+          },
+          {
+            "edge": "subject",
+            "observed": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "expected": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_workflow",
+            "observed": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "expected": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "passed": true
+          },
+          {
+            "edge": "statement_dependency",
+            "observed": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "expected": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_invocation",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "statement_builder",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRepository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowSHA",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryURI",
+            "observed": "https://github.com/SHiJiE1115/newproj",
+            "expected": "https://github.com/SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runInvocationURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.subjectAlternativeName",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.issuer",
+            "observed": "https://token.actions.githubusercontent.com",
+            "expected": "https://token.actions.githubusercontent.com",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runnerEnvironment",
+            "observed": "github-hosted",
+            "expected": "github-hosted",
+            "passed": true
+          }
+        ],
+        "retained_status": "RETAINED_CRYPTO_VERIFIED_RESULT",
+        "fresh_cryptographic_verification": false,
+        "trust_root_refreshed": false
+      },
+      "additional_admission": {
+        "admitted": true,
+        "checks": {
+          "release_authorized": true,
+          "release_status": true,
+          "required_gate_checks": true,
+          "all_recorded_gate_checks": true,
+          "candidate_status": true,
+          "direct_status": true,
+          "source_branch": true,
+          "common_author": true,
+          "common_data": true,
+          "common_numeric_target": true,
+          "actual_event": true,
+          "acceptance_strict_exit_types": true,
+          "acceptance_match_counts": true,
+          "gate_crypto_status": true
+        }
+      }
+    },
+    "new": {
+      "label": "new",
+      "mode": "candidate",
+      "admitted": true,
+      "event": [
+        "SHiJiE1115/newproj",
+        38175966754,
+        1
+      ],
+      "status": "ADMITTED",
+      "input_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/receipt.tar",
+          "bytes": 2314240,
+          "sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/CANDIDATE_REPORT.json",
+          "bytes": 1874,
+          "sha256": "7d638936a2e79acb1c9cb9f0e83c8506381fb8e730b3e04445264644a2ac97fe"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/DIRECT_BASELINE_REPORT.json",
+          "bytes": 1204,
+          "sha256": "30e9e87373f57e60a2eb5f02686804bed3ea70ef677536c2fbb160eee437eeb8"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/POSTRUN_RELEASE_GATE.json",
+          "bytes": 2320,
+          "sha256": "a4304d2b706d164192d6e25fef7af748666400b852d6d5eacb0f06a46b49f81f"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/ACCEPTANCE.json",
+          "bytes": 724,
+          "sha256": "31712bfaa6db3777544869c5fd465384729d3790cfba1aef6960cdc515a6b188"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/verified.stdout.json",
+          "bytes": 14965,
+          "sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/sha256-e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7.jsonl",
+          "bytes": 11764,
+          "sha256": "9653e3ca169b37ba5db89ceed25b87bbe326797e18bfe261a17c6fd7bc5968b7"
+        }
+      ],
+      "provider_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/NEW_RUN_IDENTITY_V01.json",
+          "bytes": 263,
+          "sha256": "5a98c882417c59a6ff06126c22db52e536edb23368edf48fcf8daac1775f7b5b"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/DISPATCH_INTENT_V01.json",
+          "bytes": 790,
+          "sha256": "c309ea5b1939c301083485b29a3694d02f3fce87f8e2d158400ba5f518533d0c"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/polls/POLL_002.json",
+          "bytes": 100131,
+          "sha256": "3b10990a7e32a61a3208f8fbf7738167d141326290da9e49977c104dd8dc35de"
+        }
+      ],
+      "provider_source_kind": "retained terminal provider observation",
+      "schema_alias": "v09; the actual identity is in event and spec.identity",
+      "source_binding_checks": [
+        {
+          "edge": "host.GITHUB_REPOSITORY",
+          "observed": "SHiJiE1115/newproj",
+          "expected": "SHiJiE1115/newproj",
+          "passed": true
+        },
+        {
+          "edge": "host.GITHUB_SHA",
+          "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "passed": true
+        },
+        {
+          "edge": "host.GITHUB_RUN_ID",
+          "observed": "38175966754",
+          "expected": "38175966754",
+          "passed": true
+        },
+        {
+          "edge": "host.GITHUB_RUN_ATTEMPT",
+          "observed": "1",
+          "expected": "1",
+          "passed": true
+        },
+        {
+          "edge": "protocol_sha256",
+          "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "passed": true
+        },
+        {
+          "edge": "host_protocol_sha256",
+          "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "passed": true
+        },
+        {
+          "edge": "protocol_schema",
+          "observed": "rrnc-prospective-wine-author-strace-v09-development",
+          "expected": "rrnc-prospective-wine-author-strace-v09-development",
+          "passed": true
+        },
+        {
+          "edge": "frozen_nonce",
+          "observed": "f64b2affdf6be1db37a839d7cd87309c",
+          "expected": "f64b2affdf6be1db37a839d7cd87309c",
+          "passed": true
+        },
+        {
+          "edge": "host_nonce",
+          "observed": "f64b2affdf6be1db37a839d7cd87309c",
+          "expected": "f64b2affdf6be1db37a839d7cd87309c",
+          "passed": true
+        },
+        {
+          "edge": "container_command_nonce",
+          "observed": "f64b2affdf6be1db37a839d7cd87309c",
+          "expected": "f64b2affdf6be1db37a839d7cd87309c",
+          "passed": true
+        },
+        {
+          "edge": "member.source/experiment/author_25.py",
+          "observed": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "expected": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "passed": true
+        },
+        {
+          "edge": "host_source.source/experiment/author_25.py",
+          "observed": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "expected": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11",
+          "passed": true
+        },
+        {
+          "edge": "member.source/experiment/run_hosted.py",
+          "observed": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "expected": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "passed": true
+        },
+        {
+          "edge": "host_source.source/experiment/run_hosted.py",
+          "observed": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "expected": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7",
+          "passed": true
+        },
+        {
+          "edge": "member.source/experiment/verify_receipt.py",
+          "observed": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "expected": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "passed": true
+        },
+        {
+          "edge": "host_source.source/experiment/verify_receipt.py",
+          "observed": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "expected": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae",
+          "passed": true
+        },
+        {
+          "edge": "input_sha.author",
+          "observed": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db",
+          "expected": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db",
+          "passed": true
+        },
+        {
+          "edge": "input_bytes.author",
+          "observed": 95119,
+          "expected": 95119,
+          "passed": true
+        },
+        {
+          "edge": "input_sha.data",
+          "observed": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659",
+          "expected": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659",
+          "passed": true
+        },
+        {
+          "edge": "input_bytes.data",
+          "observed": 10782,
+          "expected": 10782,
+          "passed": true
+        },
+        {
+          "edge": "candidate_tar",
+          "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+          "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+          "passed": true
+        },
+        {
+          "edge": "direct_tar",
+          "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+          "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+          "passed": true
+        },
+        {
+          "edge": "gate_tar",
+          "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+          "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+          "passed": true
+        },
+        {
+          "edge": "candidate_caller_identity",
+          "observed": {
+            "GITHUB_REPOSITORY": "SHiJiE1115/newproj",
+            "GITHUB_RUN_ATTEMPT": "1",
+            "GITHUB_RUN_ID": "38175966754",
+            "GITHUB_SHA": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+          },
+          "expected": {
+            "GITHUB_REPOSITORY": "SHiJiE1115/newproj",
+            "GITHUB_SHA": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "GITHUB_RUN_ID": "38175966754",
+            "GITHUB_RUN_ATTEMPT": "1"
+          },
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.repository",
+          "observed": "SHiJiE1115/newproj",
+          "expected": "SHiJiE1115/newproj",
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.source_commit",
+          "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.run_id",
+          "observed": "38175966754",
+          "expected": "38175966754",
+          "passed": true
+        },
+        {
+          "edge": "gate_identity.attempt",
+          "observed": "1",
+          "expected": "1",
+          "passed": true
+        }
+      ],
+      "joint_key": {
+        "repository": "SHiJiE1115/newproj",
+        "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "run_id": "38175966754",
+        "attempt": "1",
+        "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+      },
+      "numeric": {
+        "csv_source": "v09",
+        "summary_source": "v09",
+        "summary_member": "out/author_result_f64b2affdf6be1db37a839d7cd87309c.json",
+        "checks": [
+          {
+            "edge": "csv_donor_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.run_id",
+            "observed": "38175966754",
+            "expected": "38175966754",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "csv_donor_to_target.tar_sha256",
+            "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.run_id",
+            "observed": "38175966754",
+            "expected": "38175966754",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "summary_to_target.tar_sha256",
+            "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "passed": true
+          },
+          {
+            "edge": "present.csv",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "present.summary",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "present.params",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "csv_fields",
+            "observed": [
+              "draw",
+              "seed",
+              "train_accuracy",
+              "test_accuracy",
+              "n_leaves",
+              "height",
+              "bound",
+              "time"
+            ],
+            "expected": [
+              "draw",
+              "seed",
+              "train_accuracy",
+              "test_accuracy",
+              "n_leaves",
+              "height",
+              "bound",
+              "time"
+            ],
+            "passed": true
+          },
+          {
+            "edge": "row_count",
+            "observed": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "edge": "summary_csv_rows",
+            "observed": 25,
+            "expected": 25,
+            "passed": true
+          },
+          {
+            "edge": "csv_to_recipient_summary_sha256",
+            "observed": "ed006335b68d4a03b289294f0fe039e576e490a897aa95e8a666112595a68d85",
+            "expected": "ed006335b68d4a03b289294f0fe039e576e490a897aa95e8a666112595a68d85",
+            "passed": true
+          },
+          {
+            "edge": "summary_first_row",
+            "observed": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0013973712921142578"
+            },
+            "expected": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0013973712921142578"
+            },
+            "passed": true
+          },
+          {
+            "edge": "summary_last_row",
+            "observed": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.004244327545166016"
+            },
+            "expected": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.004244327545166016"
+            },
+            "passed": true
+          },
+          {
+            "edge": "draw_sequence",
+            "observed": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "expected": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "passed": true
+          },
+          {
+            "edge": "seed_sequence",
+            "observed": [
+              1,
+              11,
+              21,
+              31,
+              41,
+              51,
+              61,
+              71,
+              81,
+              91,
+              101,
+              111,
+              121,
+              131,
+              141,
+              151,
+              161,
+              171,
+              181,
+              191,
+              201,
+              211,
+              221,
+              231,
+              241
+            ],
+            "expected": [
+              1,
+              11,
+              21,
+              31,
+              41,
+              51,
+              61,
+              71,
+              81,
+              91,
+              101,
+              111,
+              121,
+              131,
+              141,
+              151,
+              161,
+              171,
+              181,
+              191,
+              201,
+              211,
+              221,
+              231,
+              241
+            ],
+            "passed": true
+          },
+          {
+            "edge": "summary_status",
+            "observed": "success",
+            "expected": "success",
+            "passed": true
+          },
+          {
+            "edge": "summary_nonce_to_host",
+            "observed": "f64b2affdf6be1db37a839d7cd87309c",
+            "expected": "f64b2affdf6be1db37a839d7cd87309c",
+            "passed": true
+          },
+          {
+            "edge": "summary_nonce_to_target",
+            "observed": "f64b2affdf6be1db37a839d7cd87309c",
+            "expected": "f64b2affdf6be1db37a839d7cd87309c",
+            "passed": true
+          },
+          {
+            "edge": "params_to_summary_sha256",
+            "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "passed": true
+          },
+          {
+            "edge": "params_to_target_sha256",
+            "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "passed": true
+          },
+          {
+            "edge": "summary_shape",
+            "observed": [
+              178,
+              13,
+              3
+            ],
+            "expected": [
+              178,
+              13,
+              3
+            ],
+            "passed": true
+          },
+          {
+            "edge": "finite_accuracy",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "accuracy_grid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "rounded_protocol_target",
+            "observed": [
+              "0.904",
+              "0.046"
+            ],
+            "expected": [
+              "0.904",
+              "0.046"
+            ],
+            "passed": true
+          }
+        ],
+        "observations": {
+          "rows": 25,
+          "mean_decimal": "0.903999999999999972",
+          "population_sd_decimal": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+          "rounded_mean_sd": [
+            "0.904",
+            "0.046"
+          ],
+          "csv_sha256": "ed006335b68d4a03b289294f0fe039e576e490a897aa95e8a666112595a68d85",
+          "summary_sha256": "a00ef6f0ec162d4ccab21e9ba09dbf3411a8969ffe4ee6b810dcdc6fa4a70fd4",
+          "params_sha256": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+          "nonce": "f64b2affdf6be1db37a839d7cd87309c"
+        },
+        "admitted": true,
+        "diagnostic": "ADMITTED_ARTIFACT_ARITHMETIC"
+      },
+      "selected_read": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_read_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.run_id",
+            "observed": "38175966754",
+            "expected": "38175966754",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.tar_sha256",
+            "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "passed": true
+          },
+          {
+            "edge": "candidate.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate_audit.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "direct.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_open_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_positive_read_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.trace_isolation_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.frozen_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.source_hashes",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.wine_open_and_read",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.receipt_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.local_frozen_protocol",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "retained_native_gate": "OBSERVED",
+        "limitation": "Recorded version-specific predicate only; NOT_PASSED or missing flags do not establish absence of a physical read."
+      },
+      "retained_signature": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_signature_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.run_id",
+            "observed": "38175966754",
+            "expected": "38175966754",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.tar_sha256",
+            "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "passed": true
+          },
+          {
+            "edge": "retained_verification_entry_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "retained_bundle_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "bundle_to_saved_verified_bundle",
+            "observed": {
+              "canonical_sha256": "81d5690786a5e35cefed9cc4af8c48a99cf3f8f156a18b2207e4d00ae73b8a63"
+            },
+            "expected": {
+              "canonical_sha256": "81d5690786a5e35cefed9cc4af8c48a99cf3f8f156a18b2207e4d00ae73b8a63"
+            },
+            "passed": true
+          },
+          {
+            "edge": "decoded_signed_statement",
+            "observed": {
+              "canonical_sha256": "3ec8c76a5f00edcc57b8212a27089a217039b1633baf5c4308355099e26e290a"
+            },
+            "expected": {
+              "canonical_sha256": "3ec8c76a5f00edcc57b8212a27089a217039b1633baf5c4308355099e26e290a"
+            },
+            "passed": true
+          },
+          {
+            "edge": "acceptance_status",
+            "observed": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "expected": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "observed": 0,
+            "expected": 0,
+            "required_type": "integer",
+            "observed_type": "int",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "observed": 0,
+            "expected": 0,
+            "required_type": "integer",
+            "observed_type": "int",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_bundle_hash",
+            "observed": "9653e3ca169b37ba5db89ceed25b87bbe326797e18bfe261a17c6fd7bc5968b7",
+            "expected": "9653e3ca169b37ba5db89ceed25b87bbe326797e18bfe261a17c6fd7bc5968b7",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_verified_stdout_hash",
+            "observed": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5",
+            "expected": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.receipt_tar_sha256",
+            "observed": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "expected": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.run_id",
+            "observed": 38175966754,
+            "expected": 38175966754,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.attempt",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_verified",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_crypto_exit",
+            "observed": 0,
+            "expected": 0,
+            "required_type": "integer",
+            "observed_type": "int",
+            "passed": true
+          },
+          {
+            "edge": "gate_stdout_hash",
+            "observed": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5",
+            "expected": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5",
+            "passed": true
+          },
+          {
+            "edge": "statement_type",
+            "observed": "https://in-toto.io/Statement/v1",
+            "expected": "https://in-toto.io/Statement/v1",
+            "passed": true
+          },
+          {
+            "edge": "predicate_type",
+            "observed": "https://slsa.dev/provenance/v1",
+            "expected": "https://slsa.dev/provenance/v1",
+            "passed": true
+          },
+          {
+            "edge": "subject",
+            "observed": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+                }
+              }
+            ],
+            "expected": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+                }
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_workflow",
+            "observed": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "expected": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "passed": true
+          },
+          {
+            "edge": "statement_dependency",
+            "observed": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "expected": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_invocation",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38175966754/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38175966754/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "statement_builder",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRepository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowSHA",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryURI",
+            "observed": "https://github.com/SHiJiE1115/newproj",
+            "expected": "https://github.com/SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runInvocationURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38175966754/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38175966754/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.subjectAlternativeName",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.issuer",
+            "observed": "https://token.actions.githubusercontent.com",
+            "expected": "https://token.actions.githubusercontent.com",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runnerEnvironment",
+            "observed": "github-hosted",
+            "expected": "github-hosted",
+            "passed": true
+          }
+        ],
+        "retained_status": "RETAINED_CRYPTO_VERIFIED_RESULT",
+        "fresh_cryptographic_verification": false,
+        "trust_root_refreshed": false
+      },
+      "additional_admission": {
+        "admitted": true,
+        "checks": {
+          "release_authorized": true,
+          "release_status": true,
+          "required_gate_checks": true,
+          "all_recorded_gate_checks": true,
+          "candidate_status": true,
+          "direct_status": true,
+          "source_branch": true,
+          "common_author": true,
+          "common_data": true,
+          "common_numeric_target": true,
+          "actual_event": true,
+          "acceptance_strict_exit_types": true,
+          "acceptance_match_counts": true,
+          "gate_crypto_status": true,
+          "provider_artifact_digest": true,
+          "provider_run_url": true
+        }
+      }
+    }
+  },
+  "baseline_events": {
+    "old": {
+      "label": "old",
+      "mode": "baseline",
+      "admitted": true,
+      "event": [
+        "SHiJiE1115/newproj",
+        38136338509,
+        1
+      ],
+      "status": "ADMITTED",
+      "input_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+          "bytes": 2314240,
+          "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+          "bytes": 1874,
+          "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+          "bytes": 1204,
+          "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+          "bytes": 2373,
+          "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+          "bytes": 741,
+          "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+          "bytes": 15110,
+          "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+          "bytes": 11909,
+          "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+        }
+      ],
+      "provider_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/INITIAL_PROVIDER_STATE_V01.json",
+          "bytes": 62029,
+          "sha256": "f09c23f7758f469afd413e1819dbb1c6d545cb03d50c2f448becf66b31f564ca"
+        }
+      ],
+      "provider_source_kind": "pre-dispatch retained provider state",
+      "schema_alias": "v09; the actual identity is in event and spec.identity",
+      "source_binding_checks": "Independent inspect_run completed without error.",
+      "joint_key": {
+        "repository": "SHiJiE1115/newproj",
+        "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "run_id": "38136338509",
+        "attempt": "1",
+        "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+      },
+      "numeric": {
+        "positive": true,
+        "detail_status": "PASSED",
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "results/ours.csv"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "results/ours_exp_params.py"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "host_run.json",
+            "json_pointer_or_field": "/run_nonce"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "source/experiment/PROTOCOL.json",
+            "json_pointer_or_field": "/target"
+          }
+        ],
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "csv_donor_key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "checks": [
+          {
+            "edge": "csv_donor_joint_key_to_summary_recipient",
+            "pass": true,
+            "observed": {
+              "repository": "SHiJiE1115/newproj",
+              "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+              "run_id": "38136338509",
+              "attempt": "1",
+              "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+              "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+            },
+            "expected": {
+              "repository": "SHiJiE1115/newproj",
+              "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+              "run_id": "38136338509",
+              "attempt": "1",
+              "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+              "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+            }
+          },
+          {
+            "edge": "csv_sha256_to_summary",
+            "pass": true,
+            "observed": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+            "expected": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+          },
+          {
+            "edge": "params_sha256_to_summary",
+            "pass": true,
+            "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+          },
+          {
+            "edge": "summary_nonce_to_host",
+            "pass": true,
+            "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+            "expected": "175e5ecdd8e0857afa981d0c20e8ac59"
+          },
+          {
+            "edge": "summary_status",
+            "pass": true,
+            "observed": "success",
+            "expected": "success"
+          },
+          {
+            "edge": "csv_rows_to_target",
+            "pass": true,
+            "observed": 25,
+            "expected": 25
+          },
+          {
+            "edge": "csv_first_row_to_summary",
+            "pass": true,
+            "observed": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0022284984588623047"
+            },
+            "expected": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0022284984588623047"
+            }
+          },
+          {
+            "edge": "csv_last_row_to_summary",
+            "pass": true,
+            "observed": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.008466243743896484"
+            },
+            "expected": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.008466243743896484"
+            }
+          },
+          {
+            "edge": "draw_seed_row_0",
+            "pass": true,
+            "observed": [
+              0,
+              1
+            ],
+            "expected": [
+              0,
+              1
+            ]
+          },
+          {
+            "edge": "draw_seed_row_1",
+            "pass": true,
+            "observed": [
+              1,
+              11
+            ],
+            "expected": [
+              1,
+              11
+            ]
+          },
+          {
+            "edge": "draw_seed_row_2",
+            "pass": true,
+            "observed": [
+              2,
+              21
+            ],
+            "expected": [
+              2,
+              21
+            ]
+          },
+          {
+            "edge": "draw_seed_row_3",
+            "pass": true,
+            "observed": [
+              3,
+              31
+            ],
+            "expected": [
+              3,
+              31
+            ]
+          },
+          {
+            "edge": "draw_seed_row_4",
+            "pass": true,
+            "observed": [
+              4,
+              41
+            ],
+            "expected": [
+              4,
+              41
+            ]
+          },
+          {
+            "edge": "draw_seed_row_5",
+            "pass": true,
+            "observed": [
+              5,
+              51
+            ],
+            "expected": [
+              5,
+              51
+            ]
+          },
+          {
+            "edge": "draw_seed_row_6",
+            "pass": true,
+            "observed": [
+              6,
+              61
+            ],
+            "expected": [
+              6,
+              61
+            ]
+          },
+          {
+            "edge": "draw_seed_row_7",
+            "pass": true,
+            "observed": [
+              7,
+              71
+            ],
+            "expected": [
+              7,
+              71
+            ]
+          },
+          {
+            "edge": "draw_seed_row_8",
+            "pass": true,
+            "observed": [
+              8,
+              81
+            ],
+            "expected": [
+              8,
+              81
+            ]
+          },
+          {
+            "edge": "draw_seed_row_9",
+            "pass": true,
+            "observed": [
+              9,
+              91
+            ],
+            "expected": [
+              9,
+              91
+            ]
+          },
+          {
+            "edge": "draw_seed_row_10",
+            "pass": true,
+            "observed": [
+              10,
+              101
+            ],
+            "expected": [
+              10,
+              101
+            ]
+          },
+          {
+            "edge": "draw_seed_row_11",
+            "pass": true,
+            "observed": [
+              11,
+              111
+            ],
+            "expected": [
+              11,
+              111
+            ]
+          },
+          {
+            "edge": "draw_seed_row_12",
+            "pass": true,
+            "observed": [
+              12,
+              121
+            ],
+            "expected": [
+              12,
+              121
+            ]
+          },
+          {
+            "edge": "draw_seed_row_13",
+            "pass": true,
+            "observed": [
+              13,
+              131
+            ],
+            "expected": [
+              13,
+              131
+            ]
+          },
+          {
+            "edge": "draw_seed_row_14",
+            "pass": true,
+            "observed": [
+              14,
+              141
+            ],
+            "expected": [
+              14,
+              141
+            ]
+          },
+          {
+            "edge": "draw_seed_row_15",
+            "pass": true,
+            "observed": [
+              15,
+              151
+            ],
+            "expected": [
+              15,
+              151
+            ]
+          },
+          {
+            "edge": "draw_seed_row_16",
+            "pass": true,
+            "observed": [
+              16,
+              161
+            ],
+            "expected": [
+              16,
+              161
+            ]
+          },
+          {
+            "edge": "draw_seed_row_17",
+            "pass": true,
+            "observed": [
+              17,
+              171
+            ],
+            "expected": [
+              17,
+              171
+            ]
+          },
+          {
+            "edge": "draw_seed_row_18",
+            "pass": true,
+            "observed": [
+              18,
+              181
+            ],
+            "expected": [
+              18,
+              181
+            ]
+          },
+          {
+            "edge": "draw_seed_row_19",
+            "pass": true,
+            "observed": [
+              19,
+              191
+            ],
+            "expected": [
+              19,
+              191
+            ]
+          },
+          {
+            "edge": "draw_seed_row_20",
+            "pass": true,
+            "observed": [
+              20,
+              201
+            ],
+            "expected": [
+              20,
+              201
+            ]
+          },
+          {
+            "edge": "draw_seed_row_21",
+            "pass": true,
+            "observed": [
+              21,
+              211
+            ],
+            "expected": [
+              21,
+              211
+            ]
+          },
+          {
+            "edge": "draw_seed_row_22",
+            "pass": true,
+            "observed": [
+              22,
+              221
+            ],
+            "expected": [
+              22,
+              221
+            ]
+          },
+          {
+            "edge": "draw_seed_row_23",
+            "pass": true,
+            "observed": [
+              23,
+              231
+            ],
+            "expected": [
+              23,
+              231
+            ]
+          },
+          {
+            "edge": "draw_seed_row_24",
+            "pass": true,
+            "observed": [
+              24,
+              241
+            ],
+            "expected": [
+              24,
+              241
+            ]
+          },
+          {
+            "edge": "mean_population_sd_to_target",
+            "pass": true,
+            "observed": [
+              "0.904",
+              "0.046"
+            ],
+            "expected": [
+              "0.904",
+              "0.046"
+            ]
+          },
+          {
+            "edge": "params_draws",
+            "pass": true,
+            "observed": 25,
+            "expected": 25
+          },
+          {
+            "edge": "params_prior_exponent",
+            "pass": true,
+            "observed": "13.7",
+            "expected": "13.7"
+          }
+        ],
+        "arithmetic": {
+          "mean_from_csv_lexemes_decimal80": "0.903999999999999972",
+          "population_sd_decimal80": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+          "rounded_mean_sd_3dp": [
+            "0.904",
+            "0.046"
+          ],
+          "rounding": "decimal ROUND_HALF_UP",
+          "rows": 25
+        },
+        "csv_summary_hash_join_rows": 1,
+        "params_literal": {
+          "exp_name": "ac25",
+          "test_split_ratio": 0.25,
+          "n_draws": 25,
+          "n_folds": 10,
+          "max_n_leaves": 40,
+          "error_prior_exponent": 13.7
+        },
+        "csv_member": {
+          "bytes": 2172,
+          "sha256": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888"
+        },
+        "summary_member": {
+          "bytes": 1449,
+          "sha256": "4ae6fbc0722e79c8e23b8935423a4d06e86bee5d2aab8f0e8c1c500625c1a364"
+        }
+      },
+      "selected_read": {
+        "positive": true,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "PASSED",
+        "retained_statuses": [
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+        ],
+        "flags": [
+          {
+            "report": "candidate",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_open_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_positive_read_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "execve_wine_order",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "trace_isolation_observed",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "wine_open_and_read",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "execve_wine_order",
+            "value": true
+          }
+        ],
+        "missing_flags": [],
+        "false_flags": [],
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "CANDIDATE_REPORT.json",
+            "json_pointer_or_field": "/receipt_audit/checks"
+          },
+          {
+            "run": "v09",
+            "file": "DIRECT_BASELINE_REPORT.json",
+            "json_pointer_or_field": "/checks"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "source/experiment/PROTOCOL.json",
+            "json_pointer_or_field": "/trace_rule"
+          }
+        ],
+        "fresh_trace_parsing": false,
+        "physical_nonreading_inferred_from_failed_gate": false
+      },
+      "retained_signature": {
+        "positive": true,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "PASSED_RETAINED_BINDINGS_ONLY",
+        "checks": {
+          "acceptance_status": true,
+          "retained_exit_zero": true,
+          "acceptance_run": true,
+          "acceptance_commit_tar": true,
+          "acceptance_bundle_hash": true,
+          "acceptance_stdout_hash": true,
+          "gate_retained_verified": true,
+          "gate_retained_exit_hash": true,
+          "subject_exact": true,
+          "statement_types": true,
+          "workflow_repository_ref_path": true,
+          "resolved_dependency": true,
+          "invocation_run_attempt": true,
+          "builder_workflow": true,
+          "certificate_repo_commit_ref": true,
+          "certificate_invocation": true,
+          "certificate_workflow_uri": true,
+          "certificate_issuer": true
+        },
+        "fresh_cryptographic_verification": false,
+        "trust_root_refresh": false,
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "ACCEPTANCE.json"
+          },
+          {
+            "run": "v09",
+            "file": "verified.stdout.json",
+            "json_pointer_or_field": "/0/verificationResult"
+          },
+          {
+            "run": "v09",
+            "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+            "json_pointer_or_field": "/dsseEnvelope/payload"
+          },
+          {
+            "run": "v09",
+            "file": "POSTRUN_RELEASE_GATE.json",
+            "json_pointer_or_field": "/attestation"
+          }
+        ]
+      },
+      "additional_admission": {
+        "positive": true,
+        "checks": [
+          {
+            "edge": "authorized_exactly_true",
+            "pass": true
+          },
+          {
+            "edge": "released_scoped_layer",
+            "pass": true
+          },
+          {
+            "edge": "gate.provider_url_binding",
+            "pass": true
+          },
+          {
+            "edge": "gate.run_external_identity",
+            "pass": true
+          },
+          {
+            "edge": "gate.run_completed_success",
+            "pass": true
+          },
+          {
+            "edge": "gate.exact_two_attempt_jobs",
+            "pass": true
+          },
+          {
+            "edge": "gate.author_job_success",
+            "pass": true
+          },
+          {
+            "edge": "gate.second_job_success",
+            "pass": true
+          },
+          {
+            "edge": "gate.github_hosted_linux_jobs",
+            "pass": true
+          },
+          {
+            "edge": "gate.second_job_verifier_and_attest_steps",
+            "pass": true
+          },
+          {
+            "edge": "gate.artifact_run_and_digest_binding",
+            "pass": true
+          },
+          {
+            "edge": "gate.candidate_and_direct_same_tar_pass",
+            "pass": true
+          },
+          {
+            "edge": "gate.cryptographic_attestation_verified",
+            "pass": true
+          },
+          {
+            "edge": "no_failed_extra_gate_flag",
+            "pass": true
+          },
+          {
+            "edge": "native_report_statuses",
+            "pass": true
+          },
+          {
+            "edge": "branch",
+            "pass": true
+          },
+          {
+            "edge": "common_author",
+            "pass": true
+          },
+          {
+            "edge": "common_data",
+            "pass": true
+          },
+          {
+            "edge": "common_target",
+            "pass": true
+          },
+          {
+            "edge": "event_identity",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.match.matching_subject_count",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.match.matching_signed_run_identity_count",
+            "pass": true
+          },
+          {
+            "edge": "crypto_verified_status",
+            "pass": true
+          }
+        ]
+      }
+    },
+    "new": {
+      "label": "new",
+      "mode": "baseline",
+      "admitted": true,
+      "event": [
+        "SHiJiE1115/newproj",
+        38175966754,
+        1
+      ],
+      "status": "ADMITTED",
+      "input_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/receipt.tar",
+          "bytes": 2314240,
+          "sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/CANDIDATE_REPORT.json",
+          "bytes": 1874,
+          "sha256": "7d638936a2e79acb1c9cb9f0e83c8506381fb8e730b3e04445264644a2ac97fe"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/DIRECT_BASELINE_REPORT.json",
+          "bytes": 1204,
+          "sha256": "30e9e87373f57e60a2eb5f02686804bed3ea70ef677536c2fbb160eee437eeb8"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/POSTRUN_RELEASE_GATE.json",
+          "bytes": 2320,
+          "sha256": "a4304d2b706d164192d6e25fef7af748666400b852d6d5eacb0f06a46b49f81f"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/ACCEPTANCE.json",
+          "bytes": 724,
+          "sha256": "31712bfaa6db3777544869c5fd465384729d3790cfba1aef6960cdc515a6b188"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/verified.stdout.json",
+          "bytes": 14965,
+          "sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/sha256-e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7.jsonl",
+          "bytes": 11764,
+          "sha256": "9653e3ca169b37ba5db89ceed25b87bbe326797e18bfe261a17c6fd7bc5968b7"
+        }
+      ],
+      "provider_descriptors": [
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/NEW_RUN_IDENTITY_V01.json",
+          "bytes": 263,
+          "sha256": "5a98c882417c59a6ff06126c22db52e536edb23368edf48fcf8daac1775f7b5b"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/DISPATCH_INTENT_V01.json",
+          "bytes": 790,
+          "sha256": "c309ea5b1939c301083485b29a3694d02f3fce87f8e2d158400ba5f518533d0c"
+        },
+        {
+          "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/polls/POLL_002.json",
+          "bytes": 100131,
+          "sha256": "3b10990a7e32a61a3208f8fbf7738167d141326290da9e49977c104dd8dc35de"
+        }
+      ],
+      "provider_source_kind": "retained terminal provider observation",
+      "schema_alias": "v09; the actual identity is in event and spec.identity",
+      "source_binding_checks": "Independent inspect_run completed without error.",
+      "joint_key": {
+        "repository": "SHiJiE1115/newproj",
+        "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "run_id": "38175966754",
+        "attempt": "1",
+        "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+      },
+      "numeric": {
+        "positive": true,
+        "detail_status": "PASSED",
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "results/ours.csv"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "out/author_result_f64b2affdf6be1db37a839d7cd87309c.json"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "results/ours_exp_params.py"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "host_run.json",
+            "json_pointer_or_field": "/run_nonce"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "source/experiment/PROTOCOL.json",
+            "json_pointer_or_field": "/target"
+          }
+        ],
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38175966754",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+        },
+        "csv_donor_key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38175966754",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+        },
+        "checks": [
+          {
+            "edge": "csv_donor_joint_key_to_summary_recipient",
+            "pass": true,
+            "observed": {
+              "repository": "SHiJiE1115/newproj",
+              "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+              "run_id": "38175966754",
+              "attempt": "1",
+              "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+              "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+            },
+            "expected": {
+              "repository": "SHiJiE1115/newproj",
+              "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+              "run_id": "38175966754",
+              "attempt": "1",
+              "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+              "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+            }
+          },
+          {
+            "edge": "csv_sha256_to_summary",
+            "pass": true,
+            "observed": "ed006335b68d4a03b289294f0fe039e576e490a897aa95e8a666112595a68d85",
+            "expected": "ed006335b68d4a03b289294f0fe039e576e490a897aa95e8a666112595a68d85"
+          },
+          {
+            "edge": "params_sha256_to_summary",
+            "pass": true,
+            "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+            "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a"
+          },
+          {
+            "edge": "summary_nonce_to_host",
+            "pass": true,
+            "observed": "f64b2affdf6be1db37a839d7cd87309c",
+            "expected": "f64b2affdf6be1db37a839d7cd87309c"
+          },
+          {
+            "edge": "summary_status",
+            "pass": true,
+            "observed": "success",
+            "expected": "success"
+          },
+          {
+            "edge": "csv_rows_to_target",
+            "pass": true,
+            "observed": 25,
+            "expected": 25
+          },
+          {
+            "edge": "csv_first_row_to_summary",
+            "pass": true,
+            "observed": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0013973712921142578"
+            },
+            "expected": {
+              "draw": "0",
+              "seed": "1",
+              "train_accuracy": "1.0",
+              "test_accuracy": "0.9555555555555556",
+              "n_leaves": "5",
+              "height": "3",
+              "bound": "1.4162629280872547",
+              "time": "0.0013973712921142578"
+            }
+          },
+          {
+            "edge": "csv_last_row_to_summary",
+            "pass": true,
+            "observed": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.004244327545166016"
+            },
+            "expected": {
+              "draw": "24",
+              "seed": "241",
+              "train_accuracy": "0.9774436090225563",
+              "test_accuracy": "0.8666666666666667",
+              "n_leaves": "6",
+              "height": "4",
+              "bound": "2.668632064704625",
+              "time": "0.004244327545166016"
+            }
+          },
+          {
+            "edge": "draw_seed_row_0",
+            "pass": true,
+            "observed": [
+              0,
+              1
+            ],
+            "expected": [
+              0,
+              1
+            ]
+          },
+          {
+            "edge": "draw_seed_row_1",
+            "pass": true,
+            "observed": [
+              1,
+              11
+            ],
+            "expected": [
+              1,
+              11
+            ]
+          },
+          {
+            "edge": "draw_seed_row_2",
+            "pass": true,
+            "observed": [
+              2,
+              21
+            ],
+            "expected": [
+              2,
+              21
+            ]
+          },
+          {
+            "edge": "draw_seed_row_3",
+            "pass": true,
+            "observed": [
+              3,
+              31
+            ],
+            "expected": [
+              3,
+              31
+            ]
+          },
+          {
+            "edge": "draw_seed_row_4",
+            "pass": true,
+            "observed": [
+              4,
+              41
+            ],
+            "expected": [
+              4,
+              41
+            ]
+          },
+          {
+            "edge": "draw_seed_row_5",
+            "pass": true,
+            "observed": [
+              5,
+              51
+            ],
+            "expected": [
+              5,
+              51
+            ]
+          },
+          {
+            "edge": "draw_seed_row_6",
+            "pass": true,
+            "observed": [
+              6,
+              61
+            ],
+            "expected": [
+              6,
+              61
+            ]
+          },
+          {
+            "edge": "draw_seed_row_7",
+            "pass": true,
+            "observed": [
+              7,
+              71
+            ],
+            "expected": [
+              7,
+              71
+            ]
+          },
+          {
+            "edge": "draw_seed_row_8",
+            "pass": true,
+            "observed": [
+              8,
+              81
+            ],
+            "expected": [
+              8,
+              81
+            ]
+          },
+          {
+            "edge": "draw_seed_row_9",
+            "pass": true,
+            "observed": [
+              9,
+              91
+            ],
+            "expected": [
+              9,
+              91
+            ]
+          },
+          {
+            "edge": "draw_seed_row_10",
+            "pass": true,
+            "observed": [
+              10,
+              101
+            ],
+            "expected": [
+              10,
+              101
+            ]
+          },
+          {
+            "edge": "draw_seed_row_11",
+            "pass": true,
+            "observed": [
+              11,
+              111
+            ],
+            "expected": [
+              11,
+              111
+            ]
+          },
+          {
+            "edge": "draw_seed_row_12",
+            "pass": true,
+            "observed": [
+              12,
+              121
+            ],
+            "expected": [
+              12,
+              121
+            ]
+          },
+          {
+            "edge": "draw_seed_row_13",
+            "pass": true,
+            "observed": [
+              13,
+              131
+            ],
+            "expected": [
+              13,
+              131
+            ]
+          },
+          {
+            "edge": "draw_seed_row_14",
+            "pass": true,
+            "observed": [
+              14,
+              141
+            ],
+            "expected": [
+              14,
+              141
+            ]
+          },
+          {
+            "edge": "draw_seed_row_15",
+            "pass": true,
+            "observed": [
+              15,
+              151
+            ],
+            "expected": [
+              15,
+              151
+            ]
+          },
+          {
+            "edge": "draw_seed_row_16",
+            "pass": true,
+            "observed": [
+              16,
+              161
+            ],
+            "expected": [
+              16,
+              161
+            ]
+          },
+          {
+            "edge": "draw_seed_row_17",
+            "pass": true,
+            "observed": [
+              17,
+              171
+            ],
+            "expected": [
+              17,
+              171
+            ]
+          },
+          {
+            "edge": "draw_seed_row_18",
+            "pass": true,
+            "observed": [
+              18,
+              181
+            ],
+            "expected": [
+              18,
+              181
+            ]
+          },
+          {
+            "edge": "draw_seed_row_19",
+            "pass": true,
+            "observed": [
+              19,
+              191
+            ],
+            "expected": [
+              19,
+              191
+            ]
+          },
+          {
+            "edge": "draw_seed_row_20",
+            "pass": true,
+            "observed": [
+              20,
+              201
+            ],
+            "expected": [
+              20,
+              201
+            ]
+          },
+          {
+            "edge": "draw_seed_row_21",
+            "pass": true,
+            "observed": [
+              21,
+              211
+            ],
+            "expected": [
+              21,
+              211
+            ]
+          },
+          {
+            "edge": "draw_seed_row_22",
+            "pass": true,
+            "observed": [
+              22,
+              221
+            ],
+            "expected": [
+              22,
+              221
+            ]
+          },
+          {
+            "edge": "draw_seed_row_23",
+            "pass": true,
+            "observed": [
+              23,
+              231
+            ],
+            "expected": [
+              23,
+              231
+            ]
+          },
+          {
+            "edge": "draw_seed_row_24",
+            "pass": true,
+            "observed": [
+              24,
+              241
+            ],
+            "expected": [
+              24,
+              241
+            ]
+          },
+          {
+            "edge": "mean_population_sd_to_target",
+            "pass": true,
+            "observed": [
+              "0.904",
+              "0.046"
+            ],
+            "expected": [
+              "0.904",
+              "0.046"
+            ]
+          },
+          {
+            "edge": "params_draws",
+            "pass": true,
+            "observed": 25,
+            "expected": 25
+          },
+          {
+            "edge": "params_prior_exponent",
+            "pass": true,
+            "observed": "13.7",
+            "expected": "13.7"
+          }
+        ],
+        "arithmetic": {
+          "mean_from_csv_lexemes_decimal80": "0.903999999999999972",
+          "population_sd_decimal80": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+          "rounded_mean_sd_3dp": [
+            "0.904",
+            "0.046"
+          ],
+          "rounding": "decimal ROUND_HALF_UP",
+          "rows": 25
+        },
+        "csv_summary_hash_join_rows": 1,
+        "params_literal": {
+          "exp_name": "ac25",
+          "test_split_ratio": 0.25,
+          "n_draws": 25,
+          "n_folds": 10,
+          "max_n_leaves": 40,
+          "error_prior_exponent": 13.7
+        },
+        "csv_member": {
+          "bytes": 2180,
+          "sha256": "ed006335b68d4a03b289294f0fe039e576e490a897aa95e8a666112595a68d85"
+        },
+        "summary_member": {
+          "bytes": 1449,
+          "sha256": "a00ef6f0ec162d4ccab21e9ba09dbf3411a8969ffe4ee6b810dcdc6fa4a70fd4"
+        }
+      },
+      "selected_read": {
+        "positive": true,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38175966754",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+        },
+        "detail_status": "PASSED",
+        "retained_statuses": [
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+        ],
+        "flags": [
+          {
+            "report": "candidate",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_open_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_positive_read_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "execve_wine_order",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "trace_isolation_observed",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "wine_open_and_read",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "execve_wine_order",
+            "value": true
+          }
+        ],
+        "missing_flags": [],
+        "false_flags": [],
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "CANDIDATE_REPORT.json",
+            "json_pointer_or_field": "/receipt_audit/checks"
+          },
+          {
+            "run": "v09",
+            "file": "DIRECT_BASELINE_REPORT.json",
+            "json_pointer_or_field": "/checks"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "source/experiment/PROTOCOL.json",
+            "json_pointer_or_field": "/trace_rule"
+          }
+        ],
+        "fresh_trace_parsing": false,
+        "physical_nonreading_inferred_from_failed_gate": false
+      },
+      "retained_signature": {
+        "positive": true,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38175966754",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+        },
+        "detail_status": "PASSED_RETAINED_BINDINGS_ONLY",
+        "checks": {
+          "acceptance_status": true,
+          "retained_exit_zero": true,
+          "acceptance_run": true,
+          "acceptance_commit_tar": true,
+          "acceptance_bundle_hash": true,
+          "acceptance_stdout_hash": true,
+          "gate_retained_verified": true,
+          "gate_retained_exit_hash": true,
+          "subject_exact": true,
+          "statement_types": true,
+          "workflow_repository_ref_path": true,
+          "resolved_dependency": true,
+          "invocation_run_attempt": true,
+          "builder_workflow": true,
+          "certificate_repo_commit_ref": true,
+          "certificate_invocation": true,
+          "certificate_workflow_uri": true,
+          "certificate_issuer": true
+        },
+        "fresh_cryptographic_verification": false,
+        "trust_root_refresh": false,
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "ACCEPTANCE.json"
+          },
+          {
+            "run": "v09",
+            "file": "verified.stdout.json",
+            "json_pointer_or_field": "/0/verificationResult"
+          },
+          {
+            "run": "v09",
+            "file": "sha256-e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7.jsonl",
+            "json_pointer_or_field": "/dsseEnvelope/payload"
+          },
+          {
+            "run": "v09",
+            "file": "POSTRUN_RELEASE_GATE.json",
+            "json_pointer_or_field": "/attestation"
+          }
+        ]
+      },
+      "additional_admission": {
+        "positive": true,
+        "checks": [
+          {
+            "edge": "authorized_exactly_true",
+            "pass": true
+          },
+          {
+            "edge": "released_scoped_layer",
+            "pass": true
+          },
+          {
+            "edge": "gate.provider_url_binding",
+            "pass": true
+          },
+          {
+            "edge": "gate.run_external_identity",
+            "pass": true
+          },
+          {
+            "edge": "gate.run_completed_success",
+            "pass": true
+          },
+          {
+            "edge": "gate.exact_two_attempt_jobs",
+            "pass": true
+          },
+          {
+            "edge": "gate.author_job_success",
+            "pass": true
+          },
+          {
+            "edge": "gate.second_job_success",
+            "pass": true
+          },
+          {
+            "edge": "gate.github_hosted_linux_jobs",
+            "pass": true
+          },
+          {
+            "edge": "gate.second_job_verifier_and_attest_steps",
+            "pass": true
+          },
+          {
+            "edge": "gate.artifact_run_and_digest_binding",
+            "pass": true
+          },
+          {
+            "edge": "gate.candidate_and_direct_same_tar_pass",
+            "pass": true
+          },
+          {
+            "edge": "gate.cryptographic_attestation_verified",
+            "pass": true
+          },
+          {
+            "edge": "no_failed_extra_gate_flag",
+            "pass": true
+          },
+          {
+            "edge": "native_report_statuses",
+            "pass": true
+          },
+          {
+            "edge": "branch",
+            "pass": true
+          },
+          {
+            "edge": "common_author",
+            "pass": true
+          },
+          {
+            "edge": "common_data",
+            "pass": true
+          },
+          {
+            "edge": "common_target",
+            "pass": true
+          },
+          {
+            "edge": "event_identity",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.match.matching_subject_count",
+            "pass": true
+          },
+          {
+            "edge": "acceptance.match.matching_signed_run_identity_count",
+            "pass": true
+          },
+          {
+            "edge": "crypto_verified_status",
+            "pass": true
+          },
+          {
+            "edge": "provider_artifact_digest",
+            "pass": true
+          },
+          {
+            "edge": "provider_run_url",
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "snapshot": {
+    "plan": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/PLAN_V01.json",
+      "bytes": 10812,
+      "sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100"
+    },
+    "modules": {
+      "candidate": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/layer_candidate.py",
+        "bytes": 22554,
+        "sha256": "7d86bd4ede7e089a8325d7d57c89b7135f86f290eabd4b15bd149a64470e4918"
+      },
+      "baseline": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/sql_baseline_v02.py",
+        "bytes": 30388,
+        "sha256": "347816748a8e5bbb63e50bf68557f581fdd385da67f0cd57bd67f2da3820d57a"
+      },
+      "protocol": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/protocol.json",
+        "bytes": 11979,
+        "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+      },
+      "core": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/semantic/rules_v2_core.py",
+        "bytes": 20969,
+        "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+      },
+      "checker": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/semantic/rules_v2_checker.py",
+        "bytes": 10859,
+        "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+      }
+    },
+    "script": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/compare_distinct_events_v01.py",
+      "bytes": 34116,
+      "sha256": "3819ea5296f993bba35b73866ca36c189d70798857e702d496749aa777048495"
+    },
+    "candidate_inputs": {
+      "old": {
+        "event": [
+          "SHiJiE1115/newproj",
+          38136338509,
+          1
+        ],
+        "files": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+            "bytes": 2314240,
+            "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+            "bytes": 1874,
+            "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+            "bytes": 1204,
+            "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+            "bytes": 2373,
+            "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+            "bytes": 741,
+            "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+            "bytes": 15110,
+            "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+            "bytes": 11909,
+            "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+          }
+        ],
+        "provider": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/INITIAL_PROVIDER_STATE_V01.json",
+            "bytes": 62029,
+            "sha256": "f09c23f7758f469afd413e1819dbb1c6d545cb03d50c2f448becf66b31f564ca"
+          }
+        ]
+      },
+      "new": {
+        "event": [
+          "SHiJiE1115/newproj",
+          38175966754,
+          1
+        ],
+        "files": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/receipt.tar",
+            "bytes": 2314240,
+            "sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/CANDIDATE_REPORT.json",
+            "bytes": 1874,
+            "sha256": "7d638936a2e79acb1c9cb9f0e83c8506381fb8e730b3e04445264644a2ac97fe"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/DIRECT_BASELINE_REPORT.json",
+            "bytes": 1204,
+            "sha256": "30e9e87373f57e60a2eb5f02686804bed3ea70ef677536c2fbb160eee437eeb8"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/POSTRUN_RELEASE_GATE.json",
+            "bytes": 2320,
+            "sha256": "a4304d2b706d164192d6e25fef7af748666400b852d6d5eacb0f06a46b49f81f"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/ACCEPTANCE.json",
+            "bytes": 724,
+            "sha256": "31712bfaa6db3777544869c5fd465384729d3790cfba1aef6960cdc515a6b188"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/verified.stdout.json",
+            "bytes": 14965,
+            "sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/sha256-e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7.jsonl",
+            "bytes": 11764,
+            "sha256": "9653e3ca169b37ba5db89ceed25b87bbe326797e18bfe261a17c6fd7bc5968b7"
+          }
+        ],
+        "provider": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/NEW_RUN_IDENTITY_V01.json",
+            "bytes": 263,
+            "sha256": "5a98c882417c59a6ff06126c22db52e536edb23368edf48fcf8daac1775f7b5b"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/DISPATCH_INTENT_V01.json",
+            "bytes": 790,
+            "sha256": "c309ea5b1939c301083485b29a3694d02f3fce87f8e2d158400ba5f518533d0c"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/polls/POLL_002.json",
+            "bytes": 100131,
+            "sha256": "3b10990a7e32a61a3208f8fbf7738167d141326290da9e49977c104dd8dc35de"
+          }
+        ]
+      }
+    },
+    "baseline_inputs": {
+      "old": {
+        "event": [
+          "SHiJiE1115/newproj",
+          38136338509,
+          1
+        ],
+        "files": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+            "bytes": 2314240,
+            "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+            "bytes": 1874,
+            "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+            "bytes": 1204,
+            "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+            "bytes": 2373,
+            "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+            "bytes": 741,
+            "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+            "bytes": 15110,
+            "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+            "bytes": 11909,
+            "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+          }
+        ],
+        "provider": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/INITIAL_PROVIDER_STATE_V01.json",
+            "bytes": 62029,
+            "sha256": "f09c23f7758f469afd413e1819dbb1c6d545cb03d50c2f448becf66b31f564ca"
+          }
+        ]
+      },
+      "new": {
+        "event": [
+          "SHiJiE1115/newproj",
+          38175966754,
+          1
+        ],
+        "files": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/receipt.tar",
+            "bytes": 2314240,
+            "sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/CANDIDATE_REPORT.json",
+            "bytes": 1874,
+            "sha256": "7d638936a2e79acb1c9cb9f0e83c8506381fb8e730b3e04445264644a2ac97fe"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/DIRECT_BASELINE_REPORT.json",
+            "bytes": 1204,
+            "sha256": "30e9e87373f57e60a2eb5f02686804bed3ea70ef677536c2fbb160eee437eeb8"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/POSTRUN_RELEASE_GATE.json",
+            "bytes": 2320,
+            "sha256": "a4304d2b706d164192d6e25fef7af748666400b852d6d5eacb0f06a46b49f81f"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/ACCEPTANCE.json",
+            "bytes": 724,
+            "sha256": "31712bfaa6db3777544869c5fd465384729d3790cfba1aef6960cdc515a6b188"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/verified.stdout.json",
+            "bytes": 14965,
+            "sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/sha256-e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7.jsonl",
+            "bytes": 11764,
+            "sha256": "9653e3ca169b37ba5db89ceed25b87bbe326797e18bfe261a17c6fd7bc5968b7"
+          }
+        ],
+        "provider": [
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/NEW_RUN_IDENTITY_V01.json",
+            "bytes": 263,
+            "sha256": "5a98c882417c59a6ff06126c22db52e536edb23368edf48fcf8daac1775f7b5b"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/DISPATCH_INTENT_V01.json",
+            "bytes": 790,
+            "sha256": "c309ea5b1939c301083485b29a3694d02f3fce87f8e2d158400ba5f518533d0c"
+          },
+          {
+            "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/polls/POLL_002.json",
+            "bytes": 100131,
+            "sha256": "3b10990a7e32a61a3208f8fbf7738167d141326290da9e49977c104dd8dc35de"
+          }
+        ]
+      }
+    }
+  },
+  "snapshot_sha256": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82",
+  "candidate_rows": [
+    {
+      "id": "two_references_one_event",
+      "dimensions": [
+        "run"
+      ],
+      "status": "UNRESOLVED",
+      "admitted_distinct_event_count": 1,
+      "requested_references": 2,
+      "omitted_unidentified_references": [],
+      "claim": {
+        "admissible_bases": [
+          "HASHED_ARTIFACT"
+        ],
+        "claim_id": "two_references_one_event",
+        "closed_scope": false,
+        "required_level": "reported",
+        "separation_dimensions": [
+          "run"
+        ],
+        "target": {
+          "kind": "ARTIFACT_VERSION",
+          "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+        }
+      },
+      "study": {
+        "records": [
+          {
+            "experiment_design_id": "shared-wine-code-data-design",
+            "locator": "retained-prospective-event/old",
+            "record_id": "two_references_one_event:reference:0",
+            "source_unit_id": "[\"SHiJiE1115/newproj\",38136338509,1]",
+            "target": {
+              "kind": "ARTIFACT_VERSION",
+              "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+            }
+          },
+          {
+            "experiment_design_id": "shared-wine-code-data-design",
+            "locator": "retained-prospective-event/old",
+            "record_id": "two_references_one_event:reference:1",
+            "source_unit_id": "[\"SHiJiE1115/newproj\",38136338509,1]",
+            "target": {
+              "kind": "ARTIFACT_VERSION",
+              "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+            }
+          }
+        ],
+        "rule_version": "rules-v2.1",
+        "scope": {
+          "assumptions": [
+            "One retained evidence projection; not an exhaustive physical history.",
+            "Actual provider event identities supply the run dimension.",
+            "Dataset and implementation are shared pinned artifacts.",
+            "Semantic checking does not authenticate adapter facts.",
+            "Missing identities are omitted, not invented as new events."
+          ],
+          "scope_id": "wine-distinct-prospective-events",
+          "scope_version": "iteration311-v01",
+          "snapshot_digest": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82"
+        },
+        "worlds": [
+          {
+            "facts": {
+              "two_references_one_event:reference:0": {
+                "applicable": true,
+                "basis": "HASHED_ARTIFACT",
+                "direction": "support",
+                "level": "reported"
+              },
+              "two_references_one_event:reference:1": {
+                "applicable": true,
+                "basis": "HASHED_ARTIFACT",
+                "direction": "support",
+                "level": "reported"
+              }
+            },
+            "origins": {
+              "[\"SHiJiE1115/newproj\",38136338509,1]": {
+                "dataset": [
+                  "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+                ],
+                "implementation": [
+                  "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+                ],
+                "run": [
+                  "[\"SHiJiE1115/newproj\",38136338509,1]"
+                ]
+              }
+            },
+            "world_id": "retained-admitted-event-projection"
+          }
+        ]
+      },
+      "certificate": {
+        "blocking_world_by_group": [
+          [
+            [
+              "two_references_one_event:reference:0",
+              "two_references_one_event:reference:1"
+            ],
+            "retained-admitted-event-projection"
+          ]
+        ],
+        "certificate_digest": "4531c6de7544a7c25f4f124779359603ce50a51a528eb84fa65d7519b775997d",
+        "checked_worlds": 1,
+        "claim_digest": "0b308557a28abc876dcc37363a2f1c9201e2620989a50c2b5fe0ee525985127a",
+        "conditional_groups": [],
+        "fixed_group": null,
+        "input_digest": "db7429c3a557db1ea1983b259ec53b787c36cf6de452216b4d1e64272a43b561",
+        "max_group_candidates": null,
+        "max_world_checks": null,
+        "predicate": "replication",
+        "quantifier": "EXISTS_GROUP_FOR_ALL_WORLDS",
+        "records_digest": "8c3122e8a49996141dc06e6d057a02407448ec04fde296aae3f3267aa8f3faaf",
+        "replication_r": 2,
+        "rule_version": "rules-v2.1",
+        "scope_digest": "b7cc31e53c735910e0616a694375f4301695f49deda1c3a46c2e5cb06f0d4241",
+        "snapshot_digest": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82",
+        "status": "UNRESOLVED",
+        "target": {
+          "kind": "ARTIFACT_VERSION",
+          "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+        },
+        "world_consensus_status": "UNRESOLVED",
+        "world_proofs": [
+          {
+            "groups": [],
+            "world_id": "retained-admitted-event-projection"
+          }
+        ],
+        "worlds_digest": "6c6c1fa81943ce5569f3bd35d91e6396ab55ee1c1f9f8cf954f402b05bb5334f"
+      },
+      "checker": {
+        "valid": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "two_actual_events",
+      "dimensions": [
+        "run"
+      ],
+      "status": "MET",
+      "admitted_distinct_event_count": 2,
+      "requested_references": 2,
+      "omitted_unidentified_references": [],
+      "claim": {
+        "admissible_bases": [
+          "HASHED_ARTIFACT"
+        ],
+        "claim_id": "two_actual_events",
+        "closed_scope": false,
+        "required_level": "reported",
+        "separation_dimensions": [
+          "run"
+        ],
+        "target": {
+          "kind": "ARTIFACT_VERSION",
+          "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+        }
+      },
+      "study": {
+        "records": [
+          {
+            "experiment_design_id": "shared-wine-code-data-design",
+            "locator": "retained-prospective-event/old",
+            "record_id": "two_actual_events:reference:0",
+            "source_unit_id": "[\"SHiJiE1115/newproj\",38136338509,1]",
+            "target": {
+              "kind": "ARTIFACT_VERSION",
+              "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+            }
+          },
+          {
+            "experiment_design_id": "shared-wine-code-data-design",
+            "locator": "retained-prospective-event/new",
+            "record_id": "two_actual_events:reference:1",
+            "source_unit_id": "[\"SHiJiE1115/newproj\",38175966754,1]",
+            "target": {
+              "kind": "ARTIFACT_VERSION",
+              "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+            }
+          }
+        ],
+        "rule_version": "rules-v2.1",
+        "scope": {
+          "assumptions": [
+            "One retained evidence projection; not an exhaustive physical history.",
+            "Actual provider event identities supply the run dimension.",
+            "Dataset and implementation are shared pinned artifacts.",
+            "Semantic checking does not authenticate adapter facts.",
+            "Missing identities are omitted, not invented as new events."
+          ],
+          "scope_id": "wine-distinct-prospective-events",
+          "scope_version": "iteration311-v01",
+          "snapshot_digest": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82"
+        },
+        "worlds": [
+          {
+            "facts": {
+              "two_actual_events:reference:0": {
+                "applicable": true,
+                "basis": "HASHED_ARTIFACT",
+                "direction": "support",
+                "level": "reported"
+              },
+              "two_actual_events:reference:1": {
+                "applicable": true,
+                "basis": "HASHED_ARTIFACT",
+                "direction": "support",
+                "level": "reported"
+              }
+            },
+            "origins": {
+              "[\"SHiJiE1115/newproj\",38136338509,1]": {
+                "dataset": [
+                  "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+                ],
+                "implementation": [
+                  "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+                ],
+                "run": [
+                  "[\"SHiJiE1115/newproj\",38136338509,1]"
+                ]
+              },
+              "[\"SHiJiE1115/newproj\",38175966754,1]": {
+                "dataset": [
+                  "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+                ],
+                "implementation": [
+                  "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+                ],
+                "run": [
+                  "[\"SHiJiE1115/newproj\",38175966754,1]"
+                ]
+              }
+            },
+            "world_id": "retained-admitted-event-projection"
+          }
+        ]
+      },
+      "certificate": {
+        "blocking_world_by_group": [],
+        "certificate_digest": "119fc84c907f2e79ee0fbf8506f4908bc38efda0f9b38b6cd3ea98f19f4ed3f3",
+        "checked_worlds": 1,
+        "claim_digest": "b0dcf24c1432ca74d835cc44f9249c204d362e55d8aece588d81e00eb78ab674",
+        "conditional_groups": [
+          [
+            "retained-admitted-event-projection",
+            [
+              "two_actual_events:reference:0",
+              "two_actual_events:reference:1"
+            ]
+          ]
+        ],
+        "fixed_group": [
+          "two_actual_events:reference:0",
+          "two_actual_events:reference:1"
+        ],
+        "input_digest": "f32cee19f7cd810a2dbeb9a09024e70d8b5d41ce05f76519d268f6f4c72cd29d",
+        "max_group_candidates": null,
+        "max_world_checks": null,
+        "predicate": "replication",
+        "quantifier": "EXISTS_GROUP_FOR_ALL_WORLDS",
+        "records_digest": "fd6124c8cdcb431d5ee5d9315d8103ed8dd4f7567c3c86ee27d5fe2f7ffcd469",
+        "replication_r": 2,
+        "rule_version": "rules-v2.1",
+        "scope_digest": "b7cc31e53c735910e0616a694375f4301695f49deda1c3a46c2e5cb06f0d4241",
+        "snapshot_digest": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82",
+        "status": "MET",
+        "target": {
+          "kind": "ARTIFACT_VERSION",
+          "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+        },
+        "world_consensus_status": "MET",
+        "world_proofs": [
+          {
+            "groups": [
+              [
+                "two_actual_events:reference:0",
+                "two_actual_events:reference:1"
+              ]
+            ],
+            "world_id": "retained-admitted-event-projection"
+          }
+        ],
+        "worlds_digest": "ff35919bec28e215980e0a24ecc23a82167188e783bbbe6a479de45716dc562d"
+      },
+      "checker": {
+        "valid": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "shared_input_and_implementation",
+      "dimensions": [
+        "run",
+        "dataset",
+        "implementation"
+      ],
+      "status": "UNRESOLVED",
+      "admitted_distinct_event_count": 2,
+      "requested_references": 2,
+      "omitted_unidentified_references": [],
+      "claim": {
+        "admissible_bases": [
+          "HASHED_ARTIFACT"
+        ],
+        "claim_id": "shared_input_and_implementation",
+        "closed_scope": false,
+        "required_level": "reported",
+        "separation_dimensions": [
+          "run",
+          "dataset",
+          "implementation"
+        ],
+        "target": {
+          "kind": "ARTIFACT_VERSION",
+          "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+        }
+      },
+      "study": {
+        "records": [
+          {
+            "experiment_design_id": "shared-wine-code-data-design",
+            "locator": "retained-prospective-event/old",
+            "record_id": "shared_input_and_implementation:reference:0",
+            "source_unit_id": "[\"SHiJiE1115/newproj\",38136338509,1]",
+            "target": {
+              "kind": "ARTIFACT_VERSION",
+              "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+            }
+          },
+          {
+            "experiment_design_id": "shared-wine-code-data-design",
+            "locator": "retained-prospective-event/new",
+            "record_id": "shared_input_and_implementation:reference:1",
+            "source_unit_id": "[\"SHiJiE1115/newproj\",38175966754,1]",
+            "target": {
+              "kind": "ARTIFACT_VERSION",
+              "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+            }
+          }
+        ],
+        "rule_version": "rules-v2.1",
+        "scope": {
+          "assumptions": [
+            "One retained evidence projection; not an exhaustive physical history.",
+            "Actual provider event identities supply the run dimension.",
+            "Dataset and implementation are shared pinned artifacts.",
+            "Semantic checking does not authenticate adapter facts.",
+            "Missing identities are omitted, not invented as new events."
+          ],
+          "scope_id": "wine-distinct-prospective-events",
+          "scope_version": "iteration311-v01",
+          "snapshot_digest": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82"
+        },
+        "worlds": [
+          {
+            "facts": {
+              "shared_input_and_implementation:reference:0": {
+                "applicable": true,
+                "basis": "HASHED_ARTIFACT",
+                "direction": "support",
+                "level": "reported"
+              },
+              "shared_input_and_implementation:reference:1": {
+                "applicable": true,
+                "basis": "HASHED_ARTIFACT",
+                "direction": "support",
+                "level": "reported"
+              }
+            },
+            "origins": {
+              "[\"SHiJiE1115/newproj\",38136338509,1]": {
+                "dataset": [
+                  "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+                ],
+                "implementation": [
+                  "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+                ],
+                "run": [
+                  "[\"SHiJiE1115/newproj\",38136338509,1]"
+                ]
+              },
+              "[\"SHiJiE1115/newproj\",38175966754,1]": {
+                "dataset": [
+                  "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+                ],
+                "implementation": [
+                  "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+                ],
+                "run": [
+                  "[\"SHiJiE1115/newproj\",38175966754,1]"
+                ]
+              }
+            },
+            "world_id": "retained-admitted-event-projection"
+          }
+        ]
+      },
+      "certificate": {
+        "blocking_world_by_group": [
+          [
+            [
+              "shared_input_and_implementation:reference:0",
+              "shared_input_and_implementation:reference:1"
+            ],
+            "retained-admitted-event-projection"
+          ]
+        ],
+        "certificate_digest": "a28d010fa511741f685f1dc4a385159a5450d80b69abe0ecfdf09e31c95d8f84",
+        "checked_worlds": 1,
+        "claim_digest": "3252675ffb593991fd39db43de1e1940c3bf4e7585da16b0559ce015f0d90b35",
+        "conditional_groups": [],
+        "fixed_group": null,
+        "input_digest": "edf2ee3217d7c56b6f055ce88949131550b5f11f392ddbf8071c1c3f5c7d4ff6",
+        "max_group_candidates": null,
+        "max_world_checks": null,
+        "predicate": "replication",
+        "quantifier": "EXISTS_GROUP_FOR_ALL_WORLDS",
+        "records_digest": "af79d9b1ed58129f77b6d6bac444664a66416e062e0b754019f7afcbc489c2b6",
+        "replication_r": 2,
+        "rule_version": "rules-v2.1",
+        "scope_digest": "b7cc31e53c735910e0616a694375f4301695f49deda1c3a46c2e5cb06f0d4241",
+        "snapshot_digest": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82",
+        "status": "UNRESOLVED",
+        "target": {
+          "kind": "ARTIFACT_VERSION",
+          "target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871"
+        },
+        "world_consensus_status": "UNRESOLVED",
+        "world_proofs": [
+          {
+            "groups": [],
+            "world_id": "retained-admitted-event-projection"
+          }
+        ],
+        "worlds_digest": "2a94ed4d7b284b1afcbf7d56ca69f2ea61bf574ce7ffe86b5c7729c04d6a6d10"
+      },
+      "checker": {
+        "valid": true,
+        "errors": []
+      }
+    }
+  ],
+  "baseline_rows": [
+    {
+      "id": "two_references_one_event",
+      "dimensions": [
+        "run"
+      ],
+      "status": "UNRESOLVED",
+      "admitted_distinct_event_count": 1,
+      "valid_reference_pairs": []
+    },
+    {
+      "id": "two_actual_events",
+      "dimensions": [
+        "run"
+      ],
+      "status": "MET",
+      "admitted_distinct_event_count": 2,
+      "valid_reference_pairs": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "shared_input_and_implementation",
+      "dimensions": [
+        "run",
+        "dataset",
+        "implementation"
+      ],
+      "status": "UNRESOLVED",
+      "admitted_distinct_event_count": 2,
+      "valid_reference_pairs": []
+    }
+  ],
+  "sql": {
+    "pair_query": "SELECT a.ref,b.ref FROM refs a JOIN refs b ON a.scenario=b.scenario AND a.ref<b.ref\n      WHERE a.scenario=? AND a.admitted=1 AND b.admitted=1\n        AND (a.repository<>b.repository OR a.run_id<>b.run_id OR a.attempt<>b.attempt)\n        AND NOT EXISTS (SELECT 1 FROM requested d WHERE d.scenario=a.scenario AND\n          ((d.dimension='run' AND a.repository=b.repository AND a.run_id=b.run_id AND a.attempt=b.attempt)\n           OR (d.dimension='dataset' AND a.dataset=b.dataset)\n           OR (d.dimension='implementation' AND a.implementation=b.implementation)))\n      ORDER BY a.ref,b.ref",
+    "count_query": "SELECT COUNT(*) FROM (SELECT DISTINCT repository,run_id,attempt\n      FROM refs WHERE scenario=? AND admitted=1)",
+    "source": "Only independently extracted baseline admission and event identities."
+  },
+  "same_information": {
+    "old": true,
+    "new": true
+  },
+  "all_observed_inputs_unchanged": true,
+  "limits": [
+    "One newly requested execution, not a new independent dataset/team/design, scientific replication study or natural-label accuracy benchmark.",
+    "Environment is not fully locked: apt versions are not pinned. Same code/data/contract does not imply identical environments or CSV bytes.",
+    "No historical-authentication, application-superiority, statistical independence or theoretical novelty claim.",
+    "No P1 release, human labels, LLM calls, journal submission or manuscript revision.",
+    "Provider selection and descriptor assembly are shared input-contract plumbing, not independent implementations.",
+    "Candidate and baseline independently parse originals and compute their numerical/provenance predicates.",
+    "Saved fresh-verification evidence is inspected offline; this comparison does not perform cryptography.",
+    "Text is not a merge key. Run identities, not code/data/text similarity, determine run separation.",
+    "No measurement/team dimension is certified; dataset means only the pinned raw artifact identity."
+  ],
+  "completed_utc": "2026-10-11T21:25:02.787709+00:00"
+}

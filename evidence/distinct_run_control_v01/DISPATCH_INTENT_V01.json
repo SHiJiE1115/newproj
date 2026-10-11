@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-11T21:20:33.049609+00:00",
+  "plan": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/PLAN_V01.json",
+    "bytes": 10812,
+    "sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100"
+  },
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER311_DISPATCH_GUARD_V01.json",
+    "bytes": 3191,
+    "sha256": "aa99c9a51ce8b8082d62ea0352a3097d4a15151a4d1c78b3f77a72c7dab6d58f"
+  },
+  "repository": "SHiJiE1115/newproj",
+  "branch": "trace-isolation-v09-fd-observation",
+  "commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+  "prior_run_ids": [
+    36583899749,
+    38135533716,
+    38136079298,
+    38136338509
+  ],
+  "single_post": true
+}

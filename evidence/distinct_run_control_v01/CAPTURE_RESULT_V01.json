@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "status": "PASS_CAPTURED_NEW_RUN_AND_RETAINED_SIGNATURE",
+  "human_review": false,
+  "release_authorized": true,
+  "automatic_retry": false,
+  "workflow_posts_by_this_script": 0,
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER311_CAPTURE_EXECUTION_GUARD_V01.json",
+    "bytes": 3183,
+    "sha256": "b87d077ab1a023475c4c7e4bfb1d73e5f4581f21e0e22281abf794ec5fbe8f98"
+  },
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/capture_verify_new_run_v01.py",
+    "bytes": 21119,
+    "sha256": "a36a6a06915e35612d9be14e550f6c34be671f08c88a9195dc2893ee34382997"
+  },
+  "started_utc": "2026-10-11T21:23:09.558131+00:00",
+  "scope": "One provider-identified new prospective execution and selected-syscall/arithmetic evidence. No historical execution, complete byte-read set, statistical independence or method advantage.",
+  "plan": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/PLAN_V01.json",
+    "bytes": 10812,
+    "sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100"
+  },
+  "controller": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/control_iter311_distinct_run_v01.py",
+    "bytes": 15086,
+    "sha256": "7f643d09a48da417b316c444ca51042c0431db75d54377e8ca4b3643ace9977a"
+  },
+  "common_target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871",
+  "identity": {
+    "repository": "SHiJiE1115/newproj",
+    "run_id": 38175966754,
+    "attempt": 1,
+    "commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+    "branch": "trace-isolation-v09-fd-observation",
+    "url": "https://github.com/SHiJiE1115/newproj/actions/runs/38175966754"
+  },
+  "provider_snapshot": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_provider_snapshot_v01.json",
+    "bytes": 24290,
+    "sha256": "4feac3c92704a40d498f64ff0684870490ba6c7779416d68e541c8688b5d39f9"
+  },
+  "provider_conclusion": "success",
+  "artifact_metadata": {
+    "id": 11714854838,
+    "node_id": "MDg6QXJ0aWZhY3QxMTcxNDg1NDgzOA==",
+    "name": "rrnc-wine-strace-38175966754-1",
+    "size_in_bytes": 833183,
+    "url": "https://api.github.com/repos/SHiJiE1115/newproj/actions/artifacts/11714854838",
+    "archive_download_url": "https://api.github.com/repos/SHiJiE1115/newproj/actions/artifacts/11714854838/zip",
+    "expired": false,
+    "digest": "sha256:83649090a8e733fb2f1f342fdf6638c5e9de75a0fcc344081e6b5769728141ba",
+    "created_at": "2026-10-11T21:21:10Z",
+    "updated_at": "2026-10-11T21:21:10Z",
+    "expires_at": "2026-11-10T21:21:09Z",
+    "workflow_run": {
+      "id": 38175966754,
+      "repository_id": 1395582336,
+      "head_repository_id": 1395582336,
+      "head_branch": "trace-isolation-v09-fd-observation",
+      "head_sha": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+    }
+  },
+  "artifact_zip": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_artifact.zip",
+    "bytes": 833183,
+    "sha256": "83649090a8e733fb2f1f342fdf6638c5e9de75a0fcc344081e6b5769728141ba"
+  },
+  "release_gate": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/POSTRUN_RELEASE_GATE.json",
+    "bytes": 2320,
+    "sha256": "a4304d2b706d164192d6e25fef7af748666400b852d6d5eacb0f06a46b49f81f"
+  },
+  "release_gate_status": "RELEASE_PROSPECTIVE_SELECTED_SYSCALL_OBSERVATION_ONLY",
+  "signature_acceptance": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_signature/ACCEPTANCE.json",
+    "bytes": 724,
+    "sha256": "31712bfaa6db3777544869c5fd465384729d3790cfba1aef6960cdc515a6b188"
+  },
+  "receipt_tar": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/receipt.tar",
+    "bytes": 2314240,
+    "sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+  },
+  "candidate": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/CANDIDATE_REPORT.json",
+    "bytes": 1874,
+    "sha256": "7d638936a2e79acb1c9cb9f0e83c8506381fb8e730b3e04445264644a2ac97fe"
+  },
+  "direct_baseline": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/new_run_release_gate/DIRECT_BASELINE_REPORT.json",
+    "bytes": 1204,
+    "sha256": "30e9e87373f57e60a2eb5f02686804bed3ea70ef677536c2fbb160eee437eeb8"
+  },
+  "inputs_rehashed_unchanged": true,
+  "ended_utc": "2026-10-11T21:23:32.116643+00:00",
+  "elapsed_seconds": 22.558435500017367,
+  "execution": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/CAPTURE_EXECUTION_V01.json",
+    "bytes": 10293,
+    "sha256": "f4170542558bd589d74c3b4e74586cced1e448c363e8516d8b92bf304d0cb582"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "expected_github_identity_from_caller": {
+    "GITHUB_REPOSITORY": "SHiJiE1115/newproj",
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_RUN_ID": "38175966754",
+    "GITHUB_SHA": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+  },
+  "receipt_audit": {
+    "checks": {
+      "accuracy_grid_and_paper_cell": true,
+      "author_execve_same_pid": true,
+      "author_status": true,
+      "author_unprivileged_and_write_denied": true,
+      "compatibility_runner_pin": true,
+      "container_policy": true,
+      "csv_identity_and_rows": true,
+      "execve_wine_order": true,
+      "frozen_source_snapshot": true,
+      "github_run_identity_context": true,
+      "github_run_identity_shape": true,
+      "host_schema_and_scope": true,
+      "input_pins": true,
+      "main_trace_clean_exit": true,
+      "nonce_binding": true,
+      "params_hash": true,
+      "retained_download_bytes": true,
+      "source_hashes": true,
+      "trace_exit_zero": true,
+      "trace_file_owner_not_subject": true,
+      "trace_file_set_bounded": true,
+      "trace_isolation_observed": true,
+      "wine_open_observed": true,
+      "wine_positive_read_observed": true
+    },
+    "observations": {
+      "author_main_pid": 16,
+      "mean": 0.904,
+      "population_sd": 0.04606811918168868,
+      "rounded_mean_sd": [
+        "0.904",
+        "0.046"
+      ],
+      "trace_files": 3
+    },
+    "schema": "rrnc-wine-strace-verification-v01",
+    "scope": "Prospective selected syscall and arithmetic evidence only",
+    "status": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+  },
+  "schema": "rrnc-wine-strace-bundle-verification-v01",
+  "scope": "Prospective selected syscall and arithmetic evidence only",
+  "status": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+  "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7"
+}

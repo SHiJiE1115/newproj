@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "status": "FROZEN_BEFORE_NEW_RUN_DEVELOPMENT_CONTROL",
+  "created_utc": "2026-10-11T21:17:56.352000+00:00",
+  "authority": "Continuing direct user authorization 持续授权全部授权; ordinary CCF B/C direction controls current research.",
+  "controller": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/control_iter311_distinct_run_v01.py",
+    "bytes": 15086,
+    "sha256": "7f643d09a48da417b316c444ca51042c0431db75d54377e8ca4b3643ace9977a"
+  },
+  "source_pins": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/.gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/.github/workflows/rrnc-wine-strace.yml",
+      "bytes": 2011,
+      "sha256": "ac687fa4c84ab93f2fecc571db1953c148e2863ddc74dc6e164d79b4ee4a202c"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/.gitignore",
+      "bytes": 27,
+      "sha256": "e8c7be849191d587e76e5a6fd35665a6e0d18f536a8f90e73b02dfb7c3b0d510"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/README.md",
+      "bytes": 7819,
+      "sha256": "998e761212e7eba7f5fed4317e296060f53b9fb5037135905000ec1b47006069"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/experiment/Dockerfile",
+      "bytes": 1095,
+      "sha256": "94bbf1928131aa3bf4a31f9559ce344b027f510ec4b4e9318a337367b5103cea"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/experiment/FREEZE.json",
+      "bytes": 1050,
+      "sha256": "8a17f6264bfce4a0c561be1c9b10179a1734beefc5b6d9cbd78f3691e4b72d85"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/experiment/PROTOCOL.json",
+      "bytes": 4370,
+      "sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/experiment/author_25.py",
+      "bytes": 5568,
+      "sha256": "9af729bf946615158377691350552c351cbe8a037c398bd2cefca8d17173fe11"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/experiment/entrypoint.sh",
+      "bytes": 941,
+      "sha256": "93a760d4e27338fe109c07457d34dcacdf587f5c669ace48313d534efb83283a"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/experiment/run_hosted.py",
+      "bytes": 11065,
+      "sha256": "16d5007755421678eb5362983edbfe8085ef320af27084b6b24bc65410eecad7"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration276_wine_v09/experiment/verify_receipt.py",
+      "bytes": 16730,
+      "sha256": "75e078a9c182753e0708aedebf1b6388d9197a7268a835ee4bc0ead99ce60cae"
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/wine_v07_hosted_execution_20261011/postrun_v09_release_gate.py",
+      "bytes": 16471,
+      "sha256": "721d1e28e0c279ff274f915f30acb637b46461d563fbfc65e3823784a996e783"
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/wine_v07_hosted_execution_20261011/direct_fixed_baseline_v09.py",
+      "bytes": 15706,
+      "sha256": "fb8234f9caafd1ae7a3b7008e914ce33b38f52e9e0e02c3b2de41e4eee210ec3"
+    },
+    {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/outputs/review_evidence_not_copies/diagnostics/wine_v07_hosted_execution_20261011/dispatch_v09_once.py",
+      "bytes": 7537,
+      "sha256": "18b4c090682bc7c29a71e1374a1415315986f591a7385d3e6cd1faa8812f42c0"
+    }
+  ],
+  "old_evidence": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration276/v09_signed_bundle_v01/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+    }
+  ],
+  "initial_provider_state": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/INITIAL_PROVIDER_STATE_V01.json",
+    "bytes": 62029,
+    "sha256": "f09c23f7758f469afd413e1819dbb1c6d545cb03d50c2f448becf66b31f564ca"
+  },
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER311_PREPARE_GUARD_V01.json",
+    "bytes": 3191,
+    "sha256": "e1cf3d2acbf0877e45c0038828351dcf551a024ef33b764832419250689a4f30"
+  },
+  "repository": "SHiJiE1115/newproj",
+  "branch": "trace-isolation-v09-fd-observation",
+  "commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+  "workflow_id": 370241915,
+  "prior_run_ids": [
+    36583899749,
+    38135533716,
+    38136079298,
+    38136338509
+  ],
+  "old_event": [
+    "SHiJiE1115/newproj",
+    38136338509,
+    1
+  ],
+  "common_target": {
+    "kind": "ARTIFACT_VERSION",
+    "repository": "SHiJiE1115/newproj",
+    "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+    "native_protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+    "author": {
+      "url": "https://codeload.github.com/jsleb333/paper-decision-trees-as-partitioning-machines/zip/0f354dac486a9845a9504419e31c84c7eb39507f",
+      "bytes": 95119,
+      "sha256": "1e20fd01e194bc974a64c92130d3cee3367abe5351aaf4d9f1953009620650db"
+    },
+    "data": {
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data",
+      "bytes": 10782,
+      "sha256": "6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659"
+    },
+    "target": {
+      "draws": 25,
+      "seeds": "1,11,...,241",
+      "prior_exponent": 13.7,
+      "reported_mean_sd_3dp": [
+        "0.904",
+        "0.046"
+      ]
+    },
+    "meaning": "Specified pinned Wine artifact/protocol numerical cell supported by scoped selected-syscall observations from admitted prospective executions."
+  },
+  "common_target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871",
+  "support_conditions": [
+    "Exact pre-frozen source and author/data hashes; no tolerance or target edits after observing output.",
+    "Native candidate and independent direct v09 verifier pass on exactly the same newly downloaded tar with independently supplied provider identity.",
+    "Both provider jobs complete successfully; artifact digest matches download; new run identity is absent from pre-dispatch IDs, matches branch/commit, workflow_dispatch and attempt 1.",
+    "Fresh cryptographic verification matches tar SHA, pinned signer/source/ref and the new run invocation URI; retain the signature bundle and verification stdout.",
+    "Arithmetic matches frozen 25 draws/seeds and reported 3dp target, within existing native verifier rules."
+  ],
+  "matrix": [
+    {
+      "id": "two_references_one_event",
+      "events": [
+        "old",
+        "old"
+      ],
+      "dimensions": [
+        "run"
+      ],
+      "expected_r2_if_new_admitted": "UNRESOLVED",
+      "expected_distinct_runs": 1
+    },
+    {
+      "id": "two_actual_events",
+      "events": [
+        "old",
+        "new"
+      ],
+      "dimensions": [
+        "run"
+      ],
+      "expected_r2_if_new_admitted": "MET",
+      "expected_distinct_runs": 2
+    },
+    {
+      "id": "shared_input_and_implementation",
+      "events": [
+        "old",
+        "new"
+      ],
+      "dimensions": [
+        "run",
+        "dataset",
+        "implementation"
+      ],
+      "expected_r2_if_new_admitted": "UNRESOLVED",
+      "expected_distinct_runs": 2
+    }
+  ],
+  "semantics": {
+    "predicate": "replication",
+    "r": 2,
+    "quantifier": "EXISTS_GROUP_FOR_ALL_WORLDS",
+    "closed_scope": false,
+    "source_unit": "Actual (repository,run_id,attempt) event; never file name, tar hash, text similarity or source commit alone.",
+    "experiment_design_id": "One shared fixed design for both events.",
+    "dataset_dimension": "Identity of the pinned Wine raw input artifact, not a claim about new underlying measurements.",
+    "implementation_dimension": "Identity of the pinned author code artifact.",
+    "failure": "Keep failed/missing new evidence in retained output; do not admit it. The two-event r2 request remains UNRESOLVED."
+  },
+  "same_information_baseline": "Independent parsing and numeric/provenance checks of the same old/new originals, exact SQL identity joins and distinct event count/pair intersection. No candidate fact-table or certificate input.",
+  "execution_limit": {
+    "workflow_posts": 1,
+    "automatic_retries": 0,
+    "existing_workflow_job_limits_minutes": [
+      25,
+      5
+    ]
+  },
+  "limits": [
+    "One newly requested execution, not a new independent dataset/team/design, scientific replication study or natural-label accuracy benchmark.",
+    "Environment is not fully locked: apt versions are not pinned. Same code/data/contract does not imply identical environments or CSV bytes.",
+    "No historical-authentication, application-superiority, statistical independence or theoretical novelty claim.",
+    "No P1 release, human labels, LLM calls, journal submission or manuscript revision."
+  ],
+  "old_outcome_known_before_plan": true,
+  "new_outcome_unknown_before_dispatch": true
+}

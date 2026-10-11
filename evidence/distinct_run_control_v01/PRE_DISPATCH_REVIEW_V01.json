@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "status": "PASS_SCOPED_PRE_DISPATCH_TECHNICAL_REVIEW",
+  "human_review": false,
+  "created_utc": "2026-10-11T21:20:08.817290+00:00",
+  "plan_sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100",
+  "controller_sha256": "7f643d09a48da417b316c444ca51042c0431db75d54377e8ca4b3643ace9977a",
+  "plan": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/PLAN_V01.json",
+    "bytes": 10812,
+    "sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100"
+  },
+  "controller": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/control_iter311_distinct_run_v01.py",
+    "bytes": 15086,
+    "sha256": "7f643d09a48da417b316c444ca51042c0431db75d54377e8ca4b3643ace9977a"
+  },
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER311_PRE_DISPATCH_REVIEW_GUARD_V01.json",
+    "bytes": 3189,
+    "sha256": "2a8250391f42fba9f0cd608f6ebde19179612362340916362d652f89edef43c8"
+  },
+  "scope": "Read-only pre-dispatch review of frozen plan, complete controller source, local pinned inputs, native workflow/protocol, and retained initial public-provider observation. The reviewer performed no network call, credential-helper call, dispatch, poll, scientific replay, Git mutation or author approval.",
+  "blocking_findings": [],
+  "scientific_target_review": {
+    "common_target_id_recomputed": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871",
+    "target_kind": "ARTIFACT_VERSION",
+    "common_target_binding": "Pinned repository/source commit/native protocol plus exact author ZIP, Wine data and 25-draw numerical cell. All common author/data/target fields equal the actual pinned native protocol.",
+    "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+    "branch": "trace-isolation-v09-fd-observation",
+    "native_protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+    "event_unit": "(repository, run_id, attempt), distinguished from archive identity, repeated reference and source commit.",
+    "two_references_one_event": "Duplicating the retained v09 reference gives one admitted event, so the open-scope r=2 request remains UNRESOLVED.",
+    "two_actual_events": "If the one newly dispatched event satisfies every pre-frozen admission condition, old+new provide two distinct run identities for the run-only dimension and can support the fixed r=2 request.",
+    "shared_input_and_implementation": "The two events use identical pinned dataset and author implementation. Adding these dimensions prevents a disjoint pair; the declared result remains UNRESOLVED. This is not an independent-dataset/team/design claim.",
+    "semantic_boundary": "The new common artifact-version target is explicit and shared before dispatch; individual run identity remains source metadata. Predicate replication, r=2, EXISTS_GROUP_FOR_ALL_WORLDS, and closed_scope=False are fixed. This is a bounded semantics/identity calibration, not a change to the proof core or a statistical replication claim.",
+    "same_information_baseline": "The plan requires independent parsing/arithmetic/provenance and SQL event/dimension joins from the same old/new originals, with no candidate fact table or certificate supplied to the baseline. That later implementation still needs review.",
+    "failure_rule": "Failure or missing new evidence remains retained but unadmitted; no outcome target adjustment or repeat-until-pass. Open scope yields UNRESOLVED rather than global negative evidence.",
+    "environment_limit": "Same source/data/protocol does not fix apt versions or guarantee identical CSV bytes. This limitation is explicit."
+  },
+  "input_binding_review": {
+    "source_pins_rehashed": 14,
+    "old_evidence_pins_rehashed": 7,
+    "all_bytes_and_sha_match": true,
+    "controller_descriptor_exact": true,
+    "initial_provider_state": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311/INITIAL_PROVIDER_STATE_V01.json",
+      "bytes": 62029,
+      "sha256": "f09c23f7758f469afd413e1819dbb1c6d545cb03d50c2f448becf66b31f564ca"
+    },
+    "initial_provider_state_hash_verified": true,
+    "initial_workflow_id": 370241915,
+    "initial_workflow_active": true,
+    "complete_prior_run_count": 4,
+    "prior_run_ids": [
+      36583899749,
+      38135533716,
+      38136079298,
+      38136338509
+    ],
+    "retained_old_event": [
+      "SHiJiE1115/newproj",
+      38136338509,
+      1
+    ],
+    "old_event_in_initial_list_matches_commit_success_attempt1": true,
+    "local_checkout_clean_and_head_exact": true,
+    "local_origin_url_exact": "https://github.com/SHiJiE1115/newproj.git",
+    "reviewer_did_not_refresh_remote_state": true,
+    "controller_will_repeat_preflight_before_post": true,
+    "native_workflow": "manual workflow_dispatch only; same fixed workflow file; run_author timeout25min and attest job5min; pinned actions; checkout persist-credentials=false. Attestation permissions are confined to the existing success-dependent second job."
+  },
+  "controller_review": {
+    "plan_pin_chain": "validate_plan compares the exact controller descriptor and all14 source plus7 old-evidence descriptors. dispatch additionally requires a PASS review with this exact plan SHA; controller SHA is transitively frozen inside that reviewed plan.",
+    "pre_post_remote_binding": "preflight requires a clean local HEAD at the frozen commit and exact git ls-remote origin refs/heads/trace-isolation-v09-fd-observation equality. The local origin was independently checked to be the intended public repository. Fixed-repository GitHub metadata must show the exact active workflow and complete terminal prior-run list; dispatch rejects any newly observed run or changed workflow ID before posting.",
+    "single_post": "dispatch first rejects any existing DISPATCH_INTENT_V01.json. It creates the intent with exclusive open, flush and fsync before obtaining credentials or issuing the sole gh api POST. No loop, retry, alternate branch or rerun endpoint exists.",
+    "post_endpoint": "repos/SHiJiE1115/newproj/actions/workflows/370241915/dispatches; POST field ref=trace-isolation-v09-fd-observation. No user-supplied route, hostname or additional flags.",
+    "uncertain_outcome": "Nonzero and exceptions preserve a result with no_retry=true. The durable intent blocks another dispatch invocation even after an ambiguous result. Recovery is read-only poll/inspection; never a second POST.",
+    "poll_identity": "Poll selects only IDs absent from the frozen prior list with the exact commit, branch, workflow_dispatch event, attempt1 and creation time no earlier than the intent. It independently reads run/jobs/artifacts for the selected ID. Zero matches wait; multiple matches are ambiguous and do not assign identity. Once NEW_RUN_IDENTITY_V01.json exists, any different identity is rejected.",
+    "terminal_is_not_acceptance": "The poll status TERMINAL means completed; failure conclusions remain visible. It neither admits a receipt nor establishes the plan support conditions. Exact provider/tar/artifact/native/direct/fresh-signature binding must be validated in the later acceptance phase.",
+    "credential_handling": "Uses the ordinary Git credential helper for protocol=https and host=github.com, with noninteractive options. The returned password stays in memory and is passed as GH_TOKEN only through the gh child environment, with fixed GH_HOST. Helper output is never printed/stored; child output containing the exact secret is withheld. Dispatch receipts retain only exit/lengths/exception class, never token, environment or credential stdout/stderr.",
+    "write_scope": "New iteration311 state and uniquely named maintenance guard receipts only. Git calls are read-only; there is no commit, push, main edit, workflow edit or submission API."
+  },
+  "required_later_acceptance": [
+    "Keep this plan, source, numerical target and once-only limit fixed regardless of outcome.",
+    "Bind the selected new provider identity to the exact artifact bytes and the same tar supplied to both native and independent direct verifiers.",
+    "Require both jobs success and fresh cryptographic verification of tar subject, signer/source/ref and new invocation URI before admitting the new event.",
+    "Evaluate fixed three-row matrix from independently admitted old/new evidence; a returned HTTP/gh success or completed job alone is insufficient."
+  ],
+  "limits": [
+    "Pre-dispatch PASS is permission-gate technical review of this exact code/plan, not a prediction of runtime success.",
+    "No new run has been dispatched or observed by this reviewer.",
+    "Initial metadata is a retained provider observation, not an independently refreshed network observation.",
+    "No human review, author factual approval, historical authenticity, independent dataset/team/design, method superiority or novelty certification."
+  ],
+  "actual_tool_observations": [
+    {
+      "chunk_id": "fae40c",
+      "exit_code": 0,
+      "purpose": "Read full frozen plan/controller and compute their current hashes."
+    },
+    {
+      "chunk_id": "a84485",
+      "exit_code": 0,
+      "purpose": "Rehash14 source/7 old-evidence pins and metadata; recompute common target; read native protocol/workflow; read-only local Git HEAD/clean/origin checks. No network."
+    },
+    {
+      "chunk_id": "e5b6e5",
+      "exit_code": 0,
+      "purpose": "Fresh mandatory pre-write storage guard,64KiB local/1MiB external."
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "schema": 1,
+  "status": "PASS_SCOPED_INDEPENDENT_EXECUTION_AND_R2_CALIBRATION_QA",
+  "human_review": false,
+  "scope": "Independent static source review and read-only examination of closed provider, capture, signature and three-row comparison evidence. No dispatch, network, poll, producer import, SQL execution, scientific replay or cryptographic re-verification by this reviewer.",
+  "blocking_findings": [],
+  "plan_sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100",
+  "controller_sha256": "7f643d09a48da417b316c444ca51042c0431db75d54377e8ca4b3643ace9977a",
+  "collector_sha256": "a36a6a06915e35612d9be14e550f6c34be671f08c88a9195dc2893ee34382997",
+  "comparison_script_sha256": "3819ea5296f993bba35b73866ca36c189d70798857e702d496749aa777048495",
+  "capture_result_sha256": "cfe9db5840c4d1e3fa8f401d7d8be016fad9ed720a289f4ca179b290cde04327",
+  "capture_execution_sha256": "f4170542558bd589d74c3b4e74586cced1e448c363e8516d8b92bf304d0cb582",
+  "comparison_result_sha256": "7497dffef5493d7c1f5efb83db77b9f982c55c12164fd4b6cc8f9035d01f44f1",
+  "pin_evidence": {
+    "unique_files_read_and_bound": 55,
+    "root": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration311",
+    "references": [
+      {
+        "file": "PLAN_V01.json",
+        "bytes": 10812,
+        "sha256": "069db47ddf868a6927839fd4cffa1a19c9ac8d2093d647cdae794b39f7cd5100",
+        "fields": [
+          "source_pins",
+          "old_evidence",
+          "controller",
+          "initial_provider_state"
+        ]
+      },
+      {
+        "file": "CAPTURE_RESULT_V01.json",
+        "bytes": 4802,
+        "sha256": "cfe9db5840c4d1e3fa8f401d7d8be016fad9ed720a289f4ca179b290cde04327",
+        "fields": [
+          "all top-level path/bytes/sha256 descriptors"
+        ]
+      },
+      {
+        "file": "CAPTURE_EXECUTION_V01.json",
+        "bytes": 10293,
+        "sha256": "f4170542558bd589d74c3b4e74586cced1e448c363e8516d8b92bf304d0cb582",
+        "fields": [
+          "processes[].stdout",
+          "processes[].stderr"
+        ]
+      },
+      {
+        "file": "comparison_v01/RESULT_V01.json",
+        "bytes": 159479,
+        "sha256": "7497dffef5493d7c1f5efb83db77b9f982c55c12164fd4b6cc8f9035d01f44f1",
+        "fields": [
+          "script",
+          "module_descriptors",
+          "candidate_events.*.input_descriptors",
+          "candidate_events.*.provider_descriptors",
+          "baseline_events.*.input_descriptors",
+          "baseline_events.*.provider_descriptors"
+        ]
+      }
+    ],
+    "frozen_source_pins_unchanged": 14,
+    "old_evidence_pins_unchanged": 7,
+    "native_FREEZE_members_inside_new_tar_equal_source": 9,
+    "exact_retained_author_and_Wine_input_pins": true
+  },
+  "new_event_binding": {
+    "old_event": [
+      "SHiJiE1115/newproj",
+      38136338509,
+      1
+    ],
+    "new_event": [
+      "SHiJiE1115/newproj",
+      38175966754,
+      1
+    ],
+    "new_id_absent_from_frozen_prior_ids": true,
+    "commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+    "branch": "trace-isolation-v09-fd-observation",
+    "workflow_id": 370241915,
+    "provider_snapshot_equals_terminal_poll_records": true,
+    "both_exact_attempt_jobs_success": true,
+    "artifact_id": 11714854838,
+    "zip_bytes": 833183,
+    "zip_sha256": "83649090a8e733fb2f1f342fdf6638c5e9de75a0fcc344081e6b5769728141ba",
+    "zip_digest_equals_provider_digest": true,
+    "zip_receipt_member_equals_verified_tar_bytes": true,
+    "tar_sha256": "e13c59a72aa48619d02e068d47743f81ae630d4a935ab43c7a4939063c99a7e7",
+    "new_nonce": "f64b2affdf6be1db37a839d7cd87309c",
+    "old_nonce": "175e5ecdd8e0857afa981d0c20e8ac59",
+    "nonce_host_container_summary_exec_binding": true,
+    "csv_sha256": "ed006335b68d4a03b289294f0fe039e576e490a897aa95e8a666112595a68d85",
+    "params_sha256": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+    "csv_and_params_match_retained_summary": true,
+    "all_boolean_true_gate_counts": {
+      "postrun": 11,
+      "native": 24,
+      "direct": 22
+    },
+    "trace_member": "out/observer/trace.16",
+    "selected_same_PID_exec_open_positive_read_lines": [
+      30,
+      6065,
+      6066
+    ],
+    "positive_read_return_bytes": 10782,
+    "retained_subject_identity": "UID/EUID/GID/EGID65534; groups[]; effective capabilities0; write/rename canaries denied; observer FD absent.",
+    "six_capture_processes_each_once_exit0": true,
+    "signature_stdout_sha256": "69be93ea2a6601de21573cfd72b215294b00a13363e68009aaca56f7565b83d5",
+    "bundle_sha256": "9653e3ca169b37ba5db89ceed25b87bbe326797e18bfe261a17c6fd7bc5968b7",
+    "live_and_retained_verification_stdout_equal": true,
+    "stored_DSSE_statement_equals_verified_statement": true,
+    "signed_subject_equals_tar": true,
+    "signed_invocation_URI": "https://github.com/SHiJiE1115/newproj/actions/runs/38175966754/attempts/1",
+    "signed_commit_ref_signer_and_hosted_environment_match": true,
+    "signature_and_gate_exit_fields_are_integer_zero": true
+  },
+  "comparison_review": {
+    "common_target_kind": "ARTIFACT_VERSION",
+    "common_target_id": "4dac7f7b6348f0d3933a113ca2e78488e7571cb6ae136b6cff20436da0dd3871",
+    "snapshot_sha256": "a3778b197e022b722a1193f4429b1758c7f60002435229e8ed7a323369eade82",
+    "predicate": "replication",
+    "r": 2,
+    "quantifier": "EXISTS_GROUP_FOR_ALL_WORLDS",
+    "closed_scope": false,
+    "declared_world_count": 1,
+    "same_information": {
+      "old": true,
+      "new": true
+    },
+    "independent_intake": "Candidate load_run and baseline inspect_run independently read/parse original bytes and evaluate numeric/read/signature predicates. Shared provider selection and descriptor assembly are acknowledged input-contract plumbing. No candidate facts, returned intake or certificate is supplied to baseline.",
+    "actual_SQL": "Stored source lines389-424 execute a baseline-only self-join requiring distinct repository/run/attempt and no requested-origin intersection, plus SELECT DISTINCT event count. Stored query results were inspected; SQL was not rerun by reviewer.",
+    "rows": [
+      {
+        "id": "two_references_one_event",
+        "candidate": "UNRESOLVED",
+        "baseline": "UNRESOLVED",
+        "distinct_events": 1,
+        "SQL_pairs": [],
+        "certificate_digest": "4531c6de7544a7c25f4f124779359603ce50a51a528eb84fa65d7519b775997d"
+      },
+      {
+        "id": "two_actual_events",
+        "candidate": "MET",
+        "baseline": "MET",
+        "distinct_events": 2,
+        "SQL_pairs": [
+          [
+            0,
+            1
+          ]
+        ],
+        "certificate_digest": "119fc84c907f2e79ee0fbf8506f4908bc38efda0f9b38b6cd3ea98f19f4ed3f3"
+      },
+      {
+        "id": "shared_input_and_implementation",
+        "candidate": "UNRESOLVED",
+        "baseline": "UNRESOLVED",
+        "distinct_events": 2,
+        "SQL_pairs": [],
+        "certificate_digest": "a28d010fa511741f685f1dc4a385159a5450d80b69abe0ecfdf09e31c95d8f84"
+      }
+    ],
+    "all_three_full_claim_study_certificate_objects_read": true,
+    "seven_digest_bindings_recomputed_per_certificate": true,
+    "seven_bindings": [
+      "scope",
+      "claim",
+      "records",
+      "worlds",
+      "snapshot",
+      "request",
+      "certificate_self"
+    ],
+    "stored_three_independent_checker_results": "All valid=true, errors=[]; request/target/headers, proof group or blocker and explicit origin sets independently inspected.",
+    "interpretation": "Duplicate references remain one event; common code/data/target do not merge two actual provider events; two events do not create distinct dataset or implementation origins. The one declared projection does not enumerate all physical histories."
+  },
+  "reviewer_issue_and_resolution": {
+    "failed_tool_chunk": "fda0a2",
+    "exit_code": 1,
+    "kind": "Read-only reviewer line-selection error, not a source/capture failure",
+    "cause": "Inspection expected a line to start with read( but actual strace lines have timestamp prefixes.",
+    "diagnostic_chunks": [
+      "b68a88",
+      "971e6e"
+    ],
+    "corrected_tool_chunk": "702277",
+    "corrected_exit_code": 0,
+    "corrected_result": "55 unique file bindings, actual exec30/open6065/read6066, same signed tar and all three full certificate digest bindings passed. No evidence or scientific code changed."
+  },
+  "reviewer_tool_observations": [
+    {
+      "chunk_id": "987f61",
+      "exit_code": 0,
+      "scope": "collector source"
+    },
+    {
+      "chunk_id": "5be774",
+      "exit_code": 0,
+      "scope": "frozen gate source"
+    },
+    {
+      "chunk_id": "6178fc",
+      "exit_code": 0,
+      "scope": "closed acquisition receipts"
+    },
+    {
+      "chunk_id": "1392b8",
+      "exit_code": 0,
+      "scope": "provider/tar/signed fields"
+    },
+    {
+      "chunk_id": "889355",
+      "exit_code": 0,
+      "scope": "comparison source first part"
+    },
+    {
+      "chunk_id": "fce65a",
+      "exit_code": 0,
+      "scope": "comparison source remainder"
+    },
+    {
+      "chunk_id": "842fd4",
+      "exit_code": 0,
+      "scope": "full certificate/SQL/snapshot objects"
+    },
+    {
+      "chunk_id": "97d9f4",
+      "exit_code": 0,
+      "scope": "core/checker formula inspection"
+    },
+    {
+      "chunk_id": "702277",
+      "exit_code": 0,
+      "scope": "final read-only bindings"
+    },
+    {
+      "chunk_id": "8c260c",
+      "exit_code": 0,
+      "scope": "64KiB local/1MiB external storage guard"
+    }
+  ],
+  "report_write_observation": "Long exec-based report write was rejected before process start with only blocked by policy; no report was written and that command was not retried. This JSON is a pure-data handoff for root review and a narrower authorized file-edit operation.",
+  "limits": [
+    "AI technical review, not human author signoff.",
+    "One new actual prospective run; not an independent dataset/team/design or statistical replication study.",
+    "No historical2020 authentication, complete byte-read set, application advantage or new theory claim.",
+    "Fresh cryptographic verification was performed by the actual capture process; this reviewer inspected its retained evidence without re-verifying cryptography.",
+    "Semantic validity is conditional on admitted facts and the explicitly declared projection, not external truth or all execution histories.",
+    "No general malformed-input guarantee, new experiment, network observation or publication by this reviewer."
+  ],
+  "recording_provenance": {
+    "reviewer": "/root/iter266_referee",
+    "recorder": "/root",
+    "mechanism": "Pure-data collaboration handoff transcribed with the file-edit tool after review; no executable reviewer report-writing command retried.",
+    "root_storage_guard": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER311_ROOT_RECORD_PREFLIGHT_V01.json"
+  }
+}
