@@ -1,0 +1,155 @@
+{
+  "schema": 2,
+  "status": "UNFILLED_AUTHOR_FACTS_NOT_APPROVAL",
+  "purpose": "A bounded human author review of the identified journal V03 and author-supplied facts; this prepared form is not a completed review.",
+  "proposed_title": "Adaptivity versus Global Query Orders under Complete Equivalence Constraints",
+  "manuscript": {
+    "version": "journal_draft_v03",
+    "pdf": {
+      "path": "../paper.pdf",
+      "bytes": 534352,
+      "sha256": "d69674ce5139e4556c79a25527484f8186e6014cfcd944652f3d57f36ff1e1c7"
+    },
+    "source": {
+      "path": "../paper.tex",
+      "bytes": 56497,
+      "sha256": "72c111da7b392bd32f32658d217b43932cf9217e83a9f9f8ea678cb23921b23b"
+    },
+    "pages": 22
+  },
+  "locator_basis": {
+    "basis": "Actual V03 printed PDF pages, read-back PDF text and build_01 aux; pages 15-22 additionally viewed as rendered PNGs.",
+    "aux_sha256": "68c4e8fbaf16a1db00bd0d7eea138421b36401d10ff5d3ba3a1c9f9da9ac5046",
+    "pdf_text_sha256": "d36fa6fc9a274b8c7668310f0723fa06a7cc6c892eeb816fa84ac6e274bb1ca6",
+    "build_receipt_sha256": "f47bf424ba7fa4c8a45f59be106d5aa9456d4f57691f64f3f145eb7b3e746f89",
+    "theorem_locations": {
+      "thm:boundary": {"number": 3, "page": 5},
+      "thm:price": {"number": 5, "page": 10},
+      "thm:submodular": {"number": 6, "page": 12}
+    },
+    "case_page_note": "Appendix E starts on page 21; Wine continues onto page 22; VPS3 starts on page 22."
+  },
+  "migration": {
+    "previous_form_version": "reproduction_v19/AUTHOR_FACTS_TO_CONFIRM_V01.json",
+    "previous_task_version": "reproduction_v19/author_review/HUMAN_AUTHOR_REVIEW_TASK_V01.json",
+    "old_files_modified": false,
+    "note": "Previous V08 page references are historical. This form uses actual journal V03 locations. No earlier blank response becomes assent; old submission-authorization fields are not current operational barriers."
+  },
+  "proposed_route": "Appropriate CCF B/C regular/full theory paper. Algorithmica remains a candidate. This form does not select a venue, assert journal-rule compliance, submit, or predict acceptance.",
+  "authors_in_order": null,
+  "affiliations": null,
+  "corresponding_author": null,
+  "corresponding_author_email": null,
+  "optional_orcids": null,
+  "actual_author_contributions": null,
+  "funding_statement": null,
+  "competing_interests_statement": null,
+  "prior_publication_or_overlapping_submissions": null,
+  "required_institutional_permissions_if_applicable": null,
+  "actual_included_code_and_data_rights_confirmed": null,
+  "code_licence_choice": null,
+  "data_and_certificate_licence_choice": null,
+  "other_ethics_or_consent_declarations_if_applicable": null,
+  "named_review_reader": null,
+  "review_reader_role": null,
+  "review_completion_date": null,
+  "all_authors_approve_final_identified_manuscript": null,
+  "all_authors_accept_responsibility_for_content": null,
+  "ai_disclosure_confirmed_accurate": null,
+  "operational_authority": {
+    "continuing_project_user_authorization_already_recorded": true,
+    "scope_note": "Continuing user authorization covers project operations, including relevant uploads and runs. This form neither seeks it again nor revokes it. Historical journal_submission_authorized=false and submission_authorized=false fields are not carried forward as current operational-permission barriers.",
+    "distinction": "Operational authorization does not supply author identities, factual declarations, appropriate distribution terms, or all authors' approval of an actual final manuscript."
+  },
+  "public_access": {
+    "complete_six_review_archive": "https://github.com/SHiJiE1115/newproj/releases/tag/complete-six-review-20261011-v01",
+    "fixed_delivery_record": "https://github.com/SHiJiE1115/newproj/blob/57ed5b69243fec06c2a7a58f062f3793f6557738/theory/complete_six/PUBLIC_DELIVERY_RECEIPT_V01.json",
+    "iteration281_delivery_summary_sha256": "94f79cc47f6644edd673f2b4b35015e436a7c10c8d3a650589dcd9e2568787ed",
+    "access_arrangement_no_longer_pending": true,
+    "distribution_terms_not_inferred_from_public_access": true
+  },
+  "required_author_checks": [
+    {
+      "id": "A_MODEL_AND_COMPARATOR",
+      "pages": [3, 4, 18],
+      "locations": ["Sections 2.1-2.4", "Appendices A/A.1; Appendix B representation qualification only"],
+      "review_minutes": [35, 50],
+      "focus_zh": "完整来源、物理坐标身份、共同已付上下文、同一全序与因果永久SKIP、兼容完成成本桥。",
+      "state": "PENDING_HUMAN_AUTHOR",
+      "reviewer_response": null
+    },
+    {
+      "id": "B_SIX_QUERY_ANALYTIC_BRIDGE",
+      "pages": [4, 5, 6, 7, 18, 19, 20],
+      "locations": ["Lemma 2", "Theorem 3; Sections 3.1-3.2; Lemma 4; singleton and shared-constant arguments", "Appendix A paid context", "Appendix D evidence allocation"],
+      "review_minutes": [55, 80],
+      "focus_zh": "端点归约与完整支持、共同重标及费用运输、前沿包含关系、51,048单例及61,923共享常量解析组；无需重验数百万证书。",
+      "state": "PENDING_HUMAN_AUTHOR",
+      "reviewer_response": null
+    },
+    {
+      "id": "C_COMPLETE_SEVEN_WITNESS_AND_SKIP_OBSTRUCTION",
+      "pages": [7, 8, 9, 10],
+      "locations": ["Sections 3.3-3.4"],
+      "review_minutes": [35, 50],
+      "focus_zh": "完整来源实现、免费探针仍共同全序、所有首购情形与提前永久SKIP、整数费用下界。",
+      "state": "PENDING_HUMAN_AUTHOR",
+      "reviewer_response": null
+    },
+    {
+      "id": "D_FIXED_SOURCE_COST_CLAIMS",
+      "pages": [10, 11, 12, 13, 14, 19],
+      "locations": ["Theorem 5 and Section 4; Table 3", "Theorem 6 and Section 5", "Section 6", "Appendix C corroboration scope"],
+      "review_minutes": [55, 80],
+      "focus_zh": "固定来源5/4与4/3；A=0；达到、严格类别不达到与上确界；一般子模证明不由coverage枚举替代；一般单调无界非子模。",
+      "state": "PENDING_HUMAN_AUTHOR",
+      "reviewer_response": null
+    },
+    {
+      "id": "E_AUTHOR_CLAIM_AND_DISCLOSURE_DECISION",
+      "pages": [1, 2, 14, 15, 16, 17, 19, 20, 21, 22],
+      "locations": ["Abstract and Introduction", "Scope and declarations", "Relevant references only", "Appendices D/E"],
+      "review_minutes": [20, 40],
+      "focus_zh": "有限贡献及具体先例冲突、原执行/候选/公开访问的版本区别、Wine与VPS3无实际适应性收益、AI披露、真实作者责任。",
+      "state": "PENDING_HUMAN_AUTHOR",
+      "reviewer_response": null
+    }
+  ],
+  "single_reader_plan": {
+    "number_for_this_directed_first_pass": 1,
+    "profile": "Actual author or suitable collaborator familiar with deterministic decision trees/ordered diagrams and monotone/submodular set-cost proofs.",
+    "person_assigned": null,
+    "extra_external_reviewer_mandatory": false,
+    "collaborator_review_replaces_all_authors_final_responsibility": false
+  },
+  "work_planning": {
+    "status": "PLANNING_ESTIMATE_NOT_MEASURED_HUMAN_PILOT",
+    "directed_reading_minutes": [200, 300],
+    "record_and_clarification_buffer_minutes": [40, 60],
+    "planning_hours": [4, 6],
+    "basis": "Five bounded overlapping reading tasks, three main theorems and three lemmas, selected proof and evidence-scope appendices in a 22-page journal layout. No per-certificate manual work; no new full run or exhaustive literature search.",
+    "limits": "Experienced-reader planning only; excludes learning prerequisites and repairing discovered flaws. Page ranges overlap. Actual time is unmeasured and no deadline forces approval.",
+    "actual_human_elapsed_minutes": null
+  },
+  "known_process_facts": {
+    "AI_assistance": ["research exploration", "proof development assistance", "program implementation", "verification orchestration", "internal agent cross-checks", "drafting and formatting"],
+    "AI_platform": "OpenAI Codex",
+    "exact_assistant_model_versions": "Not reconstructed; no invented version history.",
+    "human_author_review_recorded": false,
+    "external_human_gold_labels_created_for_this_theory_paper": false,
+    "original_V03_full_executable_layers_closed": true,
+    "explicit_six_records": 2747725,
+    "priority_witnesses": 4074031,
+    "analytic_cases_requiring_written_arguments": 112971,
+    "candidate_fresh_full_executed": false,
+    "analytic_premises_machine_proved": false,
+    "real_academic_evaluation_advantage_established": false
+  },
+  "completion_rule": "A-D read and accepted by an actual author, or concrete issues repaired and then accepted; E accepts the bounded claims and disclosures and addresses specific known conflicts. All actual authors must supply applicable facts and approve the identified final version. No universal absence-of-prior-art proof is required.",
+  "response_privacy_zh": "填写后的姓名、联系方式、资助等请私下回传项目负责人，不要直接公开到仓库。公开阅读包只包含未填写模板，回填内容不自动公开。",
+  "new_human_review_obtained": false,
+  "human_gold_annotation_needed_for_these_theory_claims": false,
+  "scientific_correctness_guaranteed": false,
+  "submission_ready_certified": false,
+  "blank_interpretation": "Null means unknown/unprovided. It never means no funding/conflict, denied authorization, licence grant, or approval. Statements of none or not applicable must come from an actual author."
+}

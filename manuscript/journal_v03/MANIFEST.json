@@ -1,0 +1,50 @@
+{
+  "schema": "journal-v03-reading-packet-v1",
+  "status": "PREPARED_READING_COPY_NOT_SUBMISSION",
+  "files": [
+    {
+      "path": "author_review/AUTHOR_FACTS_TO_CONFIRM_V02.json",
+      "bytes": 9336,
+      "sha256": "687e5ddd9604c9239f693ac03a1462ae55a995dfd333bca010f577403da1a388"
+    },
+    {
+      "path": "author_review/AUTHOR_REVIEW_BRIEF_ZH.md",
+      "bytes": 7500,
+      "sha256": "66b856dd86df90be92c74b4b20928e226d1f9f314c452ff59f343af954188ace"
+    },
+    {
+      "path": "author_review/REVIEW_RESPONSE_TEMPLATE_ZH.md",
+      "bytes": 4338,
+      "sha256": "7f2ce044de9559d25b3893bd726cf5f9e0ee0d517a1b01cf2ec5df9e7fcaaebf"
+    },
+    {
+      "path": "paper.pdf",
+      "bytes": 534352,
+      "sha256": "d69674ce5139e4556c79a25527484f8186e6014cfcd944652f3d57f36ff1e1c7"
+    },
+    {
+      "path": "paper.tex",
+      "bytes": 56497,
+      "sha256": "72c111da7b392bd32f32658d217b43932cf9217e83a9f9f8ea678cb23921b23b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2454,
+      "sha256": "533884e546f49b57a2404591075e56363736df9a9b3279557c5ac5e75d18d8a7"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 9022,
+      "sha256": "58ff52b8d4422353499f58788d7d53ca64a90a7dc4d563230ca2e145040929c0"
+    }
+  ],
+  "pdf_pages": 22,
+  "human_author_review_completed": false,
+  "source_generation": "Substantive AI assistance disclosed in the manuscript",
+  "mathematical_body_unchanged_from_journal_v02": true,
+  "new_scientific_execution": false,
+  "publisher_typesetting_dependencies_bundled": false,
+  "author_identity_form_publicly_included": "UNFILLED_TEMPLATE_ONLY",
+  "new_blanket_licence_selected": false,
+  "self_hash_excluded": true
+}
