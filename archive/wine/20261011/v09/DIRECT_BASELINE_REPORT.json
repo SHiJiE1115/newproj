@@ -1,0 +1,37 @@
+{
+  "schema": "rrnc_direct_fixed_baseline_v06",
+  "status": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+  "checks": {
+    "local_frozen_protocol": true,
+    "local_source_freeze": true,
+    "receipt_source_snapshot": true,
+    "reported_input_pins": true,
+    "retained_input_bytes": true,
+    "host_status_and_source": true,
+    "caller_identity": true,
+    "provider_identity_shape": true,
+    "nonce_and_container_policy": true,
+    "author_summary": true,
+    "author_subject_permissions": true,
+    "trace_exit_code": true,
+    "csv_rows_and_hash": true,
+    "accuracy_grid_and_paper_cell": true,
+    "params_hash": true,
+    "bounded_trace_files": true,
+    "observer_directory_and_sticky_parent": true,
+    "tar_trace_owner_not_subject": true,
+    "main_trace_exit": true,
+    "author_execve_same_pid": true,
+    "wine_open_and_read": true,
+    "execve_wine_order": true
+  },
+  "observations": {
+    "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+    "rounded_mean_sd": [
+      "0.904",
+      "0.046"
+    ],
+    "trace_files": 3
+  },
+  "scope": "Same receipt and caller identity; selected syscall and retained inputs only"
+}
