@@ -1,6 +1,6 @@
 {
-  "schema": "rrnc-prospective-wine-author-strace-v08-development",
-  "status": "PRE_EXECUTION_SETPRIV_REPAIR_CANDIDATE",
+  "schema": "rrnc-prospective-wine-author-strace-v09-development",
+  "status": "PRE_EXECUTION_FD_OBSERVATION_REPAIR_CANDIDATE",
   "supersedes_failed_run": "https://github.com/SHiJiE1115/newproj/actions/runs/36583899749",
   "v02_unrun_commit": "bf1fc84de02eec53b0afacedc49425364265440d",
   "identity_rule": "The second VM must compare the tar's reported GitHub repository, commit, run ID, and attempt to its own environment before requesting artifact attestation; standalone callers must supply independently trusted expected values.",
@@ -31,7 +31,7 @@
   "container_policy": [
     "network=none",
     "read-only rootfs",
-    "all capabilities dropped then only SETUID, SETGID and SYS_PTRACE added for the tracer",
+    "all capabilities dropped then only SETUID, SETGID, SYS_PTRACE and DAC_READ_SEARCH added for the root tracer",
     "no-new-privileges",
     "root tracer and UID/GID 65534 author process",
     "sticky writable result directory and initially private root-owned trace directory",
@@ -46,5 +46,7 @@
   "p1_real_replay_authorized": false,
   "reserved_local_evaluation_opened": false,
   "supersedes_failed_v07_run": "https://github.com/SHiJiE1115/newproj/actions/runs/38135533716",
-  "tracee_launch_rule": "Root strace traces setpriv, which sets real/effective UID/GID 65534, clears supplementary groups, and clears inheritable/ambient capabilities before same-PID execve of the unchanged author caller. Author and both verifiers still require UID/GID 65534, supplementary groups [], effective capabilities 0, denied observer write/rename, and no observer descriptor."
+  "tracee_launch_rule": "Root strace traces setpriv, which sets real/effective UID/GID 65534, clears supplementary groups, and clears inheritable/ambient capabilities before same-PID execve of the unchanged author caller. Author and both verifiers still require UID/GID 65534, supplementary groups [], effective capabilities 0, denied observer write/rename, and no observer descriptor.",
+  "supersedes_failed_v08_run": "https://github.com/SHiJiE1115/newproj/actions/runs/38136079298",
+  "fd_observation_repair": "v08 author output and isolation passed, but strace -yy emitted bare file descriptors after UID transition. Add DAC_READ_SEARCH to the observer to traverse the other-UID /proc/PID/fd directory. This is a prospective runtime hypothesis until tested. The author must still report effective capabilities 0 and pass all existing isolation canaries. Positive read path and same-PID ordering gates are unchanged."
 }

@@ -130,7 +130,7 @@ def audit_tree(directory: Path, *, require_source_snapshot: bool = True,
                 "--security-opt", "no-new-privileges"))
             and flag_values(command, "--user") == ["0:0"]
             and flag_values(command, "--cap-add") == [
-                "SETUID", "SETGID", "SYS_PTRACE"]
+                "SETUID", "SETGID", "SYS_PTRACE", "DAC_READ_SEARCH"]
             and any(arg.startswith("type=bind,") and
                     "dst=/out" in arg.split(",") and
                     not any(opt in ("readonly", "ro") for opt in arg.split(","))
