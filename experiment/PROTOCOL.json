@@ -1,6 +1,6 @@
 {
-  "schema": "rrnc-prospective-wine-author-strace-v05-development",
-  "status": "OFFLINE_TRACE_ISOLATION_CANDIDATE_UNRUN",
+  "schema": "rrnc-prospective-wine-author-strace-v08-development",
+  "status": "PRE_EXECUTION_SETPRIV_REPAIR_CANDIDATE",
   "supersedes_failed_run": "https://github.com/SHiJiE1115/newproj/actions/runs/36583899749",
   "v02_unrun_commit": "bf1fc84de02eec53b0afacedc49425364265440d",
   "identity_rule": "The second VM must compare the tar's reported GitHub repository, commit, run ID, and attempt to its own environment before requesting artifact attestation; standalone callers must supply independently trusted expected values.",
@@ -44,5 +44,7 @@
   "release_rule": "Only a successful second-VM verifier may request a GitHub artifact attestation for the tar digest; that identifies a new workflow run, not the 2020 experiment.",
   "source_redistribution": "The repository does not contain the author archive or UCI data; a future run's artifact would retain both public downloaded originals for independent byte verification.",
   "p1_real_replay_authorized": false,
-  "reserved_local_evaluation_opened": false
+  "reserved_local_evaluation_opened": false,
+  "supersedes_failed_v07_run": "https://github.com/SHiJiE1115/newproj/actions/runs/38135533716",
+  "tracee_launch_rule": "Root strace traces setpriv, which sets real/effective UID/GID 65534, clears supplementary groups, and clears inheritable/ambient capabilities before same-PID execve of the unchanged author caller. Author and both verifiers still require UID/GID 65534, supplementary groups [], effective capabilities 0, denied observer write/rename, and no observer descriptor."
 }
