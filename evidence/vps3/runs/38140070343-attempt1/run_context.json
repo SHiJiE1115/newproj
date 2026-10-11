@@ -1,0 +1,25 @@
+{
+  "bundle_sha256": "eca3ee145c0299b002bc973cd8e43c2b07350e5ebd24e5212c4d353766ae05f3",
+  "exit_code": 0,
+  "execution_error": null,
+  "python": "3.12.3",
+  "platform": "Linux",
+  "verifier_status": "PASS_CURRENT_BYTES_TYPED_PORTS_AND_NUMERICAL_COMPATIBILITY",
+  "summary": {
+    "parameters": 12,
+    "energy_cases": 48,
+    "objects": 93,
+    "source_nodes": 49,
+    "native_float_matches": 12,
+    "native_dict_matches": 12,
+    "printed_interval_matches": 12,
+    "small_json_matches": 0,
+    "exact_List_slot_matches": 48,
+    "lists_without_CREATE_parent": 12,
+    "floats_without_CalcJob_typed_ancestor": 12
+  },
+  "github_sha": "3f39c2055f81a18513871101d2bedcbb091ea812",
+  "github_run_id": "38140070343",
+  "github_run_attempt": "1",
+  "scope": "Fresh offline audit of retained source bytes; no new VASP or historical execution."
+}

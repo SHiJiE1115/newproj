@@ -1,0 +1,51 @@
+{
+  "schema": "vps3-hosted-archive-v1",
+  "source_commit": "3f39c2055f81a18513871101d2bedcbb091ea812",
+  "run_id": 38140070343,
+  "run_attempt": 1,
+  "artifact_api_digest_checked": true,
+  "windows_linux_scientific_json_equal_except_times": true,
+  "scope": "Hosted offline verification of retained bytes; not historical execution or adaptive advantage.",
+  "files": [
+    {
+      "path": "github_artifacts.json",
+      "bytes": 713,
+      "sha256": "cf60c8022cfd3a30844410f63fa6f553f7a1b347ce0a27dbea46798aa216c301"
+    },
+    {
+      "path": "github_jobs.json",
+      "bytes": 2019,
+      "sha256": "cd5114296066787e6cdb59a8f7a8f5e49bdd89a0c5ed41425756060109b2ff3e"
+    },
+    {
+      "path": "github_run.json",
+      "bytes": 12095,
+      "sha256": "d08487e0268d1f0147364a244edede0cc1b4bb91d2cdc41216195ce8cbb3c4fe"
+    },
+    {
+      "path": "original_artifact.zip",
+      "bytes": 12441,
+      "sha256": "0b70156f2df92e2b90be7150aab191b684345e50c00fcb7b8e3ec55770679f85"
+    },
+    {
+      "path": "run_context.json",
+      "bytes": 842,
+      "sha256": "e77b073092f5ebcc9b3b003ff134cfa0b0c59114f4d885fafb7df690bd47ed4e"
+    },
+    {
+      "path": "stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stdout.txt",
+      "bytes": 356,
+      "sha256": "8b7a1627c6dbf6f2fc569713e00dfbd56289a581e5cbd4c6ef925bd0dbd9ed0c"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 77133,
+      "sha256": "22c2e19748ae05939a1f74127a9471949808a672f52551e54a398838d7a28447"
+    }
+  ]
+}

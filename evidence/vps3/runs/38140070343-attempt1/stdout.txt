@@ -1,0 +1,1 @@
+PASS_CURRENT_BYTES_TYPED_PORTS_AND_NUMERICAL_COMPATIBILITY {"parameters": 12, "energy_cases": 48, "objects": 93, "source_nodes": 49, "native_float_matches": 12, "native_dict_matches": 12, "printed_interval_matches": 12, "small_json_matches": 0, "exact_List_slot_matches": 48, "lists_without_CREATE_parent": 12, "floats_without_CalcJob_typed_ancestor": 12}
