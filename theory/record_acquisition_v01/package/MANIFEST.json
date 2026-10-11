@@ -1,0 +1,26 @@
+{
+  "schema": "RECORD_ACQUISITION_PACKAGE_MANIFEST_V01",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4252,
+      "sha256": "92d1caa1368f4b86b2ad3648fc93a4203e0b01a29e60f388d8e42c00cd981401"
+    },
+    {
+      "path": "budget15_policy.json",
+      "bytes": 21706,
+      "sha256": "ffad6d25138cc63f614bc3d1556b3f20853abdcbf20581004fd8db11c18ff795"
+    },
+    {
+      "path": "source.json",
+      "bytes": 2735,
+      "sha256": "87734e80539d8f60a26477c3acf8a760cdafa35f3cb4a27f78802be564d0b62e"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 18843,
+      "sha256": "f05facd3b662e6be6d87a2fd369ad35515f6bccb1e9410666df822f5c8dc4c6d"
+    }
+  ],
+  "scope": "Byte-integrity manifest for the four scientific/package files; no signature or general licence grant."
+}

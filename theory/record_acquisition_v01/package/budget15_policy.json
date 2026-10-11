@@ -1,0 +1,555 @@
+{
+  "record": 8,
+  "branches": [
+    {
+      "matches_record": -1,
+      "next": {
+        "record": 7,
+        "branches": [
+          {
+            "matches_record": 8,
+            "next": {
+              "record": 5,
+              "branches": [
+                {
+                  "matches_record": 7,
+                  "next": {
+                    "record": 4,
+                    "branches": [
+                      {
+                        "matches_record": 5,
+                        "next": {
+                          "label": "A"
+                        }
+                      },
+                      {
+                        "matches_record": -1,
+                        "next": {
+                          "label": "B"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "matches_record": -1,
+                  "next": {
+                    "record": 9,
+                    "branches": [
+                      {
+                        "matches_record": 5,
+                        "next": {
+                          "record": 11,
+                          "branches": [
+                            {
+                              "matches_record": 5,
+                              "next": {
+                                "record": 13,
+                                "branches": [
+                                  {
+                                    "matches_record": 5,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 7,
+                                    "next": {
+                                      "label": "B"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "matches_record": 7,
+                              "next": {
+                                "label": "A"
+                              }
+                            },
+                            {
+                              "matches_record": -1,
+                              "next": {
+                                "label": "A"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "matches_record": 7,
+                        "next": {
+                          "label": "B"
+                        }
+                      },
+                      {
+                        "matches_record": -1,
+                        "next": {
+                          "label": "B"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "matches_record": -1,
+            "next": {
+              "record": 1,
+              "branches": [
+                {
+                  "matches_record": 7,
+                  "next": {
+                    "record": 2,
+                    "branches": [
+                      {
+                        "matches_record": 1,
+                        "next": {
+                          "record": 0,
+                          "branches": [
+                            {
+                              "matches_record": 1,
+                              "next": {
+                                "label": "B"
+                              }
+                            },
+                            {
+                              "matches_record": 8,
+                              "next": {
+                                "label": "A"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "matches_record": 8,
+                        "next": {
+                          "record": 3,
+                          "branches": [
+                            {
+                              "matches_record": 1,
+                              "next": {
+                                "label": "B"
+                              }
+                            },
+                            {
+                              "matches_record": 2,
+                              "next": {
+                                "label": "A"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "matches_record": -1,
+                        "next": {
+                          "record": 0,
+                          "branches": [
+                            {
+                              "matches_record": 2,
+                              "next": {
+                                "label": "B"
+                              }
+                            },
+                            {
+                              "matches_record": 8,
+                              "next": {
+                                "label": "A"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "matches_record": 8,
+                  "next": {
+                    "record": 9,
+                    "branches": [
+                      {
+                        "matches_record": 1,
+                        "next": {
+                          "record": 6,
+                          "branches": [
+                            {
+                              "matches_record": 1,
+                              "next": {
+                                "record": 11,
+                                "branches": [
+                                  {
+                                    "matches_record": 1,
+                                    "next": {
+                                      "record": 13,
+                                      "branches": [
+                                        {
+                                          "matches_record": 1,
+                                          "next": {
+                                            "label": "A"
+                                          }
+                                        },
+                                        {
+                                          "matches_record": 7,
+                                          "next": {
+                                            "label": "B"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 7,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": -1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "matches_record": 7,
+                              "next": {
+                                "record": 10,
+                                "branches": [
+                                  {
+                                    "matches_record": 1,
+                                    "next": {
+                                      "record": 12,
+                                      "branches": [
+                                        {
+                                          "matches_record": 1,
+                                          "next": {
+                                            "label": "A"
+                                          }
+                                        },
+                                        {
+                                          "matches_record": 6,
+                                          "next": {
+                                            "label": "B"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 6,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": -1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "matches_record": -1,
+                              "next": {
+                                "record": 10,
+                                "branches": [
+                                  {
+                                    "matches_record": 1,
+                                    "next": {
+                                      "record": 12,
+                                      "branches": [
+                                        {
+                                          "matches_record": 1,
+                                          "next": {
+                                            "label": "A"
+                                          }
+                                        },
+                                        {
+                                          "matches_record": 6,
+                                          "next": {
+                                            "label": "B"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 6,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 7,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": -1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "matches_record": 7,
+                        "next": {
+                          "label": "B"
+                        }
+                      },
+                      {
+                        "matches_record": -1,
+                        "next": {
+                          "label": "B"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "matches_record": -1,
+                  "next": {
+                    "record": 9,
+                    "branches": [
+                      {
+                        "matches_record": 1,
+                        "next": {
+                          "record": 6,
+                          "branches": [
+                            {
+                              "matches_record": 1,
+                              "next": {
+                                "record": 10,
+                                "branches": [
+                                  {
+                                    "matches_record": 1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 7,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 8,
+                                    "next": {
+                                      "record": 12,
+                                      "branches": [
+                                        {
+                                          "matches_record": 1,
+                                          "next": {
+                                            "label": "B"
+                                          }
+                                        },
+                                        {
+                                          "matches_record": 8,
+                                          "next": {
+                                            "label": "A"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "matches_record": -1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "matches_record": 7,
+                              "next": {
+                                "record": 10,
+                                "branches": [
+                                  {
+                                    "matches_record": 1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 6,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 8,
+                                    "next": {
+                                      "record": 12,
+                                      "branches": [
+                                        {
+                                          "matches_record": 6,
+                                          "next": {
+                                            "label": "B"
+                                          }
+                                        },
+                                        {
+                                          "matches_record": 8,
+                                          "next": {
+                                            "label": "A"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "matches_record": -1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "matches_record": 8,
+                              "next": {
+                                "record": 11,
+                                "branches": [
+                                  {
+                                    "matches_record": 1,
+                                    "next": {
+                                      "record": 13,
+                                      "branches": [
+                                        {
+                                          "matches_record": 1,
+                                          "next": {
+                                            "label": "A"
+                                          }
+                                        },
+                                        {
+                                          "matches_record": 7,
+                                          "next": {
+                                            "label": "B"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 6,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 7,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": -1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "matches_record": -1,
+                              "next": {
+                                "record": 10,
+                                "branches": [
+                                  {
+                                    "matches_record": 1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 6,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 7,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  },
+                                  {
+                                    "matches_record": 8,
+                                    "next": {
+                                      "record": 12,
+                                      "branches": [
+                                        {
+                                          "matches_record": 6,
+                                          "next": {
+                                            "label": "B"
+                                          }
+                                        },
+                                        {
+                                          "matches_record": 8,
+                                          "next": {
+                                            "label": "A"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "matches_record": -1,
+                                    "next": {
+                                      "label": "A"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "matches_record": 7,
+                        "next": {
+                          "label": "B"
+                        }
+                      },
+                      {
+                        "matches_record": 8,
+                        "next": {
+                          "label": "B"
+                        }
+                      },
+                      {
+                        "matches_record": -1,
+                        "next": {
+                          "label": "B"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

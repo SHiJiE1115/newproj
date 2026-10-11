@@ -1,0 +1,42 @@
+{
+  "schema": "journal-v07-reading-packet-v1",
+  "status": "PREPARATION_NOT_SUBMISSION",
+  "files": [
+    {
+      "path": "CHANGES.md",
+      "bytes": 1726,
+      "sha256": "b7ffd79db02efe00f537e437d7ba7c1ef25b3fe8d053ecf68451b0f99d2db051"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1885,
+      "sha256": "66079eded85f1e1fb0961c304224980f01d3feb095362840a3bb4d76191ec144"
+    },
+    {
+      "path": "paper.pdf",
+      "bytes": 559669,
+      "sha256": "38a816edf36196e70bf1c13cf0a203824153b1247edb3fe214a96461c2146235"
+    },
+    {
+      "path": "paper.tex",
+      "bytes": 68426,
+      "sha256": "90930833c85044920686e70ebcfebcd17ba5a0c17527e7f074699b400b84ae86"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 9733,
+      "sha256": "0b15e13a0c724d4442aa5ae4d17abdc6ae48b0a2bae07d58493ef8d242dcc91b"
+    }
+  ],
+  "self_hash_excluded": true,
+  "pdf_pages": 26,
+  "old_core_statement_count_unchanged": 6,
+  "old_explicit_proof_count_unchanged": 3,
+  "bibliography_entries": 15,
+  "new_separate_finite_claim": "Record acquisition, two fixed price contracts only.",
+  "original_boundary_and_pair_menu_premises_unchanged": true,
+  "human_review": false,
+  "private_author_forms_included": false,
+  "publisher_dependencies_included": false,
+  "new_blanket_licence_selected": false
+}

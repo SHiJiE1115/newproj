@@ -1,0 +1,174 @@
+{
+  "schema": "COMPLETE_SOURCE_RECORD_ACQUISITION_V01",
+  "record_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "A_same_blocks": [
+    [
+      0,
+      4,
+      8
+    ],
+    [
+      1,
+      5,
+      9
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "A_different": [],
+  "B_same_blocks": [
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      7,
+      13
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ]
+  ],
+  "B_different": [
+    [
+      4,
+      5
+    ]
+  ],
+  "world_semantics": "All equivalence partitions satisfying the SAME blocks and DIFFERENT pairs; every legal cross-block merge is retained.",
+  "response_semantics": "A newly acquired record reveals only its equality class relative to already acquired records. The first acquisition has one uninformative response. Record identifiers carry no label-specific side channel.",
+  "cost_semantics": "Each record has a fixed nonnegative additive price and is paid for at most once. Comparisons between acquired records are free.",
+  "matched_prices": {
+    "integer_weights": [
+      4,
+      4,
+      4,
+      4,
+      6,
+      6,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "denominator": 4
+  },
+  "unit_control": {
+    "integer_weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "denominator": 1
+  },
+  "matched_priority_order": [
+    8,
+    7,
+    5,
+    4,
+    1,
+    2,
+    0,
+    3,
+    9,
+    6,
+    10,
+    12,
+    11,
+    13
+  ],
+  "unit_priority_order": [
+    0,
+    1,
+    4,
+    5,
+    2,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "expected_results": {
+    "matched_adaptive": "15/4",
+    "matched_strong_priority": "15/4",
+    "unit_adaptive": 4,
+    "unit_strong_priority": 4
+  },
+  "provenance": {
+    "source_manuscript_version": "journal V06",
+    "source_manuscript_sha256": "732c2f137dba6c2a11c10ee4c2b212efde535f4801e582ee1ee96b7b0adadf76",
+    "frozen_iteration294_protocol_sha256": "100e6c033058a737113712ca9e5dceda83077a2061ca1c2fd79ec0ab69e073be",
+    "unchanged_iteration294_policy_sha256": "ffad6d25138cc63f614bc3d1556b3f20853abdcbf20581004fd8db11c18ff795"
+  },
+  "scope": "Synthetic model-boundary reproduction. This portable verification repeats already established results; it is not natural academic data, a blinded experiment, human review, historical authentication or an application advantage."
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "RECORD_ACQUISITION_VERIFICATION_V01",
+  "status": "PASS_RECORD_ACQUISITION_VERIFICATION",
+  "human_review": false,
+  "python_version": "3.12.14",
+  "caps": {
+    "cooperative_seconds": 120,
+    "feasibility_states": 300000
+  },
+  "full_world_enumeration": false,
+  "producer_or_repository_imports": false,
+  "all_order_enumeration": false,
+  "network_used": false,
+  "scope": "Portable replay of the existing finite synthetic record-acquisition result. No natural-data, historical-provenance, practical-benefit or novelty claim.",
+  "inputs": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 782,
+      "sha256": "a1cec4e1268d0eef1ade00e0f5bfeb857db782e1c1d91c987bf8dbf152be264a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4252,
+      "sha256": "92d1caa1368f4b86b2ad3648fc93a4203e0b01a29e60f388d8e42c00cd981401"
+    },
+    {
+      "path": "budget15_policy.json",
+      "bytes": 21706,
+      "sha256": "ffad6d25138cc63f614bc3d1556b3f20853abdcbf20581004fd8db11c18ff795"
+    },
+    {
+      "path": "source.json",
+      "bytes": 2735,
+      "sha256": "87734e80539d8f60a26477c3acf8a760cdafa35f3cb4a27f78802be564d0b62e"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 18843,
+      "sha256": "f05facd3b662e6be6d87a2fd369ad35515f6bccb1e9410666df822f5c8dc4c6d"
+    }
+  ],
+  "unit_control": {
+    "first_pairs": 91,
+    "third_cases": 1092,
+    "candidate_response_checks": 1124,
+    "all_third_choices_have_both_label_completions": true,
+    "constructed_witness_stream_sha256": "a06e01ad12512e7fb2e20ac2d49a537f2137e801f2089798e564a82e7314da4a",
+    "upper_reachable_states": 17,
+    "upper_terminal_states": 8,
+    "upper_leaf_stream_sha256": "a62fb9825961894aed227385c6583a8abaaaa6b8abc8297155693114be6ff9d8",
+    "upper_max_cost": 4,
+    "all_upper_leaves_correct_and_ordered": true,
+    "adaptive": 4,
+    "strong_priority": 4,
+    "lower_argument": "The first read has no information. Each first unordered pair has a fixed mixed answer, and every possible third record retains both labels. Thus some path needs at least four reads."
+  },
+  "matched_prices": {
+    "budget14_feasible": false,
+    "budget14_states": 3233,
+    "budget14_cache": {
+      "hits": 9479,
+      "misses": 3233,
+      "maxsize": null,
+      "currsize": 3233
+    },
+    "liveness_cache": {
+      "hits": 13390,
+      "misses": 15752,
+      "maxsize": 300000,
+      "currsize": 15752
+    },
+    "policy_nodes": 83,
+    "policy_terminal_states": 53,
+    "policy_leaf_stream_sha256": "937bce7ef142b0efd8a7c482037cac18a569250fb0fa4f6879d67b50f9a4a5e9",
+    "policy_max_integer_cost": 15,
+    "all_feasible_policy_branches_covered": true,
+    "all_terminals_pure_and_correct": true,
+    "all_paths_increase_in_global_order": true,
+    "fixed_order": [
+      8,
+      7,
+      5,
+      4,
+      1,
+      2,
+      0,
+      3,
+      9,
+      6,
+      10,
+      12,
+      11,
+      13
+    ],
+    "denominator": 4,
+    "adaptive": "15/4",
+    "strong_priority": "15/4",
+    "lower_argument": "The recurrence allows every affordable unacquired record and all DSU-feasible responses. With integer acquisition costs, infeasible budget14 implies minimum cost at least15.",
+    "priority_argument": "The next purchased record depends only on purchased answers. Increasing paths in one global order allow causal permanent skips without revealing skipped answers."
+  },
+  "inputs_unchanged": true,
+  "elapsed_seconds_before_output": 1.2122463999839965,
+  "completed_at_utc": "2026-10-11T16:57:11.340428+00:00"
+}
