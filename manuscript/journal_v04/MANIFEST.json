@@ -1,0 +1,41 @@
+{
+  "schema": "journal-v04-reading-packet-v1",
+  "status": "REVIEWED_PREPARATION_COPY_NOT_SUBMISSION",
+  "files": [
+    {
+      "path": "CHANGES.md",
+      "bytes": 1705,
+      "sha256": "51f97b5008d47fb4b2b9fab0435206e7afe7606988200206d80318adfbf3116f"
+    },
+    {
+      "path": "paper.pdf",
+      "bytes": 535513,
+      "sha256": "015f8a4e453429d9812645b436feb37ceec9fb10a0b1e74b560cb5e8689d7a98"
+    },
+    {
+      "path": "paper.tex",
+      "bytes": 57639,
+      "sha256": "d29197ce71c47a85171a888ef7798213e6b1ecae9a0bc1352bef2d02914a584b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2490,
+      "sha256": "79909a563e64b0a13d42f3b27510a6e0349ac6a38f3cd22baa963f2d88fa69fd"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 9022,
+      "sha256": "58ff52b8d4422353499f58788d7d53ca64a90a7dc4d563230ca2e145040929c0"
+    }
+  ],
+  "pdf_pages": 22,
+  "exact_source_changes_from_v03": 4,
+  "human_author_review_completed": false,
+  "new_scientific_execution": false,
+  "publisher_typesetting_dependencies_bundled": false,
+  "private_author_forms_included": false,
+  "whole_mathematical_blocks_byte_identical_to_v03": false,
+  "mathematical_statements_and_bibliography_byte_identical_to_v03": true,
+  "new_blanket_licence_selected": false,
+  "self_hash_excluded": true
+}
