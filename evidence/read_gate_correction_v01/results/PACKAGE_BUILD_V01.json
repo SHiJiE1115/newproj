@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "status": "PASS_BUILD_ONLY_NOT_YET_EXECUTED",
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER310_WINE_V03_BUILD_PREFLIGHT_V01.json",
+    "bytes": 3193,
+    "sha256": "86684fc36396437fd921aedc876df8e4beb306658aef9cb35541c3953951f03a"
+  },
+  "builder": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/build_package_v01.py",
+    "bytes": 14452,
+    "sha256": "41e2491dc74dece3a5d70c81a96821c02f58842408f5a40fcabe860b4e16b0f6"
+  },
+  "original_manifest": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/MANIFEST.json",
+    "bytes": 4968,
+    "sha256": "5c7d44112c976ea6f7cac211401d96c5b4a8c890f46a121f8fbfe2d8bbf30613"
+  },
+  "new_manifest": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/MANIFEST.json",
+    "bytes": 5034,
+    "sha256": "d70d90f0cfaa55e6d635831eb14a7d00f3e502926bcd201d74bf96292c02043c"
+  },
+  "delivery_zip": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/wine_layer_calibration_v03.zip",
+    "bytes": 999804,
+    "sha256": "c9a3c34a9a5fe412454d9f53818157e3af20cfedd4bb6517bdec880d962903df"
+  },
+  "package_directory": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03",
+  "files": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/MANIFEST.json",
+      "bytes": 5034,
+      "sha256": "d70d90f0cfaa55e6d635831eb14a7d00f3e502926bcd201d74bf96292c02043c"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/README.md",
+      "bytes": 4746,
+      "sha256": "067143dcd41bb2350d1576026171ed4be0acec38854a0f938a15414f41b14f95"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/signature/ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/signature/verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v07/CANDIDATE_REPORT.json",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v07/receipt.tar",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v08/CANDIDATE_REPORT.json",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v08/receipt.tar",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v09/CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/evidence/v09/receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/layer_candidate.py",
+      "bytes": 22554,
+      "sha256": "7d86bd4ede7e089a8325d7d57c89b7135f86f290eabd4b15bd149a64470e4918"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/protocol.json",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/references/BASELINE_RESULT_V02.json",
+      "bytes": 152915,
+      "sha256": "83883834826a0557814ca8b548cbc3ceb41970e41f255f71460ead298c90aee7"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/references/CANDIDATE_RESULT_V01.json",
+      "bytes": 264208,
+      "sha256": "b963857510a25ec6eaa2d0d5ccebc78b43ce844a15d763fcb6cf4fe230f0d7eb"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/run.py",
+      "bytes": 17647,
+      "sha256": "eb9932f6084b972f1b5ab5daf5c173d69adb65def7167c5bd1420260c3cc43ca"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/semantic/rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/semantic/rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03/sql_baseline_v02.py",
+      "bytes": 30388,
+      "sha256": "347816748a8e5bbb63e50bf68557f581fdd385da67f0cd57bd67f2da3820d57a"
+    }
+  ],
+  "changed_payloads_excluding_manifest": [
+    "README.md",
+    "run.py",
+    "sql_baseline_v02.py"
+  ],
+  "byte_exact_unchanged": [
+    "evidence/signature/ACCEPTANCE.json",
+    "evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+    "evidence/signature/verified.stdout.json",
+    "evidence/v07/CANDIDATE_REPORT.json",
+    "evidence/v07/DIRECT_BASELINE_REPORT.json",
+    "evidence/v07/POSTRUN_RELEASE_GATE.json",
+    "evidence/v07/receipt.tar",
+    "evidence/v08/CANDIDATE_REPORT.json",
+    "evidence/v08/DIRECT_BASELINE_REPORT.json",
+    "evidence/v08/POSTRUN_RELEASE_GATE.json",
+    "evidence/v08/receipt.tar",
+    "evidence/v09/CANDIDATE_REPORT.json",
+    "evidence/v09/DIRECT_BASELINE_REPORT.json",
+    "evidence/v09/POSTRUN_RELEASE_GATE.json",
+    "evidence/v09/receipt.tar",
+    "layer_candidate.py",
+    "protocol.json",
+    "references/BASELINE_RESULT_V02.json",
+    "references/CANDIDATE_RESULT_V01.json",
+    "semantic/rules_v2_checker.py",
+    "semantic/rules_v2_core.py"
+  ],
+  "unchanged_input_count": 17,
+  "unchanged_reference_count": 2,
+  "candidate_and_compare_candidate_unchanged": true,
+  "original_v02_unchanged": true,
+  "zip_members_byte_exact": true,
+  "scientific_execution_count": 0,
+  "retained_isolation_flags": {
+    "v07": {
+      "present": false,
+      "value": null
+    },
+    "v08": {
+      "present": true,
+      "value": true
+    },
+    "v09": {
+      "present": true,
+      "value": true
+    }
+  },
+  "source_diffs": {
+    "README.md": "--- v02/README.md\n+++ v03/README.md\n@@ -1,107 +1,78 @@\n-# Portable retained Wine evidence calibration: typed-exit fix v02\n+# Portable retained Wine evidence calibration: v03\n \n-This offline Python 3.10+ package replays the finite iteration302 calibration.\n-It contains three actual retained run archives, two constructed splice scenarios,\n-and one duplicate-reference scenario. v07 has no retained CSV or author summary;\n-the three archives jointly supply the needed evidence, not three complete outputs.\n+This Python 3.10+ standard-library package preserves the six retrospective\n+iteration302 scenarios and their thirty layer labels. It derives from v02 and\n+repairs one omitted mandatory premise in the independent SQL read-gate adapter.\n+It is a software correctness regression, not a new scientific sample.\n \n-## Run once in a relocated directory\n+## Run from a new directory\n \n-Extract the ZIP to a new directory, including one containing spaces if desired.\n-With standard-library Python (including sqlite3), use:\n+Extract the ZIP, including to a directory with spaces if desired, and run:\n \n ```text\n python -I -X utf8 -B run.py --output \"../new wine replay output\"\n ```\n \n-The output must not exist, must be outside the bundle, and its parent must exist.\n-No installation, network, training, downloaded-source execution, shell command,\n-or cryptographic verification is performed. Each of the candidate and independent\n-SQL baseline runs once in its own process, sequentially, with a 120-second parent\n-timeout. The baseline retains its original cooperative 60-second cap. Temporary\n-files and process logs go under the output directory. A timeout or nonzero exit is\n-preserved as a failure, without retries. Neither implementation reads the other\n-implementation's output or the old result references.\n+The output must be new, outside this package, and have an existing parent.\n+`run.py` checks the complete 25-file inventory and every source pin. It runs the\n+candidate and SQL baseline once each in separate sequential processes with\n+120-second timeouts, retaining stdout, stderr and actual return codes. The SQL\n+baseline keeps its 60-second cooperative cap. No automatic retries occur.\n+Neither worker reads the other output or old result references. References are\n+parsed by the launcher only after both workers terminate. Temporary files use\n+the output directory. At least 64 MiB of output-volume free space is required;\n+this administrative check is not a scientific premise or acquisition charge.\n \n-`run.py` requires at least 64 MiB free on the output volume and records a fresh\n-`RESOURCE_CHECK.json`. This administrative check replaces the baseline's old\n-machine-specific guard; it is not a replayed PASS and is not a scientific premise.\n-The project operator still applies its external storage policy for local runs.\n-Manifest and source-pin checks are bootstrap, not measured scientific acquisition\n-costs. The package makes no timing or memory superiority claim.\n+## Exact fix and preserved evidence\n \n-## What is checked\n+The retained native Wine protocol requires observer isolation as well as the\n+selected exec/read/order events. In the pinned native verifier,\n+`trace_isolation_observed` records observer-directory and trace-file ownership\n+and permissions. The candidate already required this field. The SQL adapter now\n+also requires it to be present and exactly Boolean `true`; absence is UNAVAILABLE\n+and any other value is NOT_PASSED. A missing flag does not prove that physical\n+isolation or reading did not occur. This adapter consumes retained verification\n+reports; it does not reparse syscall traces or rerun the original experiment.\n \n-The 17 fixed inputs retain their original bytes and SHA-256: three tar archives,\n-nine retained gate/report files, three retained signature-related files, and two\n-rules-v2.1 semantic modules. Tar members are read in memory, never extracted or\n-executed. Archived absolute paths and public account/run identities may remain\n-inside exact historical inputs and complete old result references. They are\n-inert historical text; the adapters resolve only the explicit relative protocol\n-descriptors. This is a portable evidence package, not an anonymized export.\n+Only `sql_baseline_v02.py`, `run.py` and this README change relative to v02 among\n+the 24 manifest-listed payloads. The baseline filename is retained for compatibility\n+but its new digest is in this package's manifest. The protocol, all 17 original\n+evidence/semantic inputs, both old complete result references, and the typed-exit\n+candidate from v02 remain byte-identical. A new manifest binds the derived package;\n+the original v01/v02 packages are not overwritten.\n \n-Both implementations use the same protocol and pinned evidence. They independently\n-recompute the retained CSV arithmetic and validate the retained summary, parameter,\n-nonce, digest and identity joins. The selected-read layer means the retained,\n-version-specific candidate and direct reports passed. A failed or absent flag is\n-not proof of no physical read. Only v09 has the matching successful retained\n-signature-verification evidence. Those saved bytes and embedded identities are\n-checked; no fresh cryptographic verification or trust-root refresh is claimed.\n+The launcher derives the expected new isolation flag from each scenario's pinned\n+read-source candidate report, placing it after the four existing candidate flags\n+and before direct flags. It adds a missing/false diagnostic only for this field,\n+also before direct entries. In the retained data, v07 lacks the flag; v08 and v09\n+have Boolean `true`. The original layer labels, component admission statuses and\n+identity counts must remain unchanged. All other SQL scientific and diagnostic\n+fields remain exact; only known administrative paths, descriptors and clocks are\n+treated as administrative differences. No arbitrary diagnostic fields are dropped.\n \n-The five layers are artifact arithmetic, selected-read gate, retained signed\n-identity, the same-identity joint receipt, and original historical execution.\n-All historical-execution labels remain UNRESOLVED. A v08 numerical component\n-spliced with v09 gate/signature is not a joint v08 receipt. The v08 CSV spliced\n-into the v09 summary fails its digest binding. Repeating the v09 reference twice\n-still counts as one accepted run identity. Twenty-five draws are not twenty-five\n-independent runs. Expected output is six scenarios / thirty labels, and exact\n-agreement with the independent SQL baseline; equality is not method superiority.\n+The v02 candidate comparison is preserved exactly: thirty semantic certificates\n+are checked against the original four-field snapshot/scope/request/self-digest\n+rebinding, and twelve named exit-check diagnostics receive only the declared\n+`required_type=\"integer\"`, `observed_type=\"int\"` additions. Both full reports are\n+then compared exactly under these explicit transformations.\n \n-The candidate uses the unchanged rules-v2.1 support semantics with open scope\n-and its unchanged independent certificate checker. These check the explicit\n-admitted fact model, not the truth of the extractor or all possible histories.\n-The relative protocol has a new digest, which is actually supplied to the\n-semantic Scope snapshot. Consequently its certificates are not byte-identical\n-to the old certificates. After both children terminate, the launcher independently\n-checks the hash formula for each old certificate and its new binding: exactly\n-snapshot_digest, scope_digest, input_digest and certificate_digest change. The\n-entire candidate result must then match the explicitly rebound old result plus\n-only the twelve declared typed-exit diagnostic additions described below; it\n-does not drop arbitrary digests. Internal run protocol hashes stay unchanged.\n-All baseline scientific fields and diagnostics must match its original V02\n-result; only relocated paths, protocol/script descriptors, fresh resource-check\n-metadata and clocks are treated as administrative changes.\n+## Interpretation and limits\n \n-## Version and limits\n+The three retained runs are v07, v08 and v09; v07 has no CSV or author summary.\n+Two constructed splices and a duplicate reference are implementation controls,\n+not independent research runs. Identical run references count as one joint\n+identity; 25 draws are not 25 independent replications. The accepted current\n+prospective receipt is v09. Historical 2020 execution remains UNRESOLVED.\n+The same-information fixed SQL baseline and candidate agree on the original\n+scenarios. No method superiority or adaptive acquisition advantage follows.\n \n-`protocol.json` preserves the original scientific contract and its 17 source\n-pins. It replaces input paths and removes the original guard/preparer/P1\n-administrative metadata, recording the original protocol digest and this version\n-change. This v02 is a software repair of the retained v01 package. The candidate now\n-requires `type(value) is int and value == 0` at the retained download exit,\n-verification exit, and gate cryptographic exit. JSON `false` and `0.0` no longer\n-satisfy those integer-success checks. This does not perform fresh cryptographic\n-verification. The independent SQL baseline, protocol, 17 evidence/semantic inputs\n-and both complete old reference reports retain their exact original bytes.\n-\n-The launcher adds `required_type=\"integer\"` and `observed_type=\"int\"` to exactly\n-three named diagnostic edges in each of the four existing v09-signature scenarios\n-when constructing the expected report. It first checks that each original value\n-is integer zero. All other report fields, all 30 certificate checks, and the\n-original four-digest rebinding comparison remain exact. This is an explicit\n-diagnostic-schema extension, not deletion or normalization of arbitrary fields.\n-\n-Only `layer_candidate.py`, `run.py`, and this README change among the original\n-24 manifest-listed files; a new `MANIFEST.json` identifies this derived version.\n-The original v01 files and manifest are not overwritten. This package's one\n-delivery replay is a regression check of the same six scenarios, not new science,\n-fresh signing, a new learning run, or an additional sample. Four separately\n-recorded helper-level interventions on `verify_exit` motivated the repair;\n-they are not rerun by this launcher, and do not test every malformed field.\n-`MANIFEST.json` is an integrity inventory, not a signature or trust anchor.\n-\n-This is a relocation of an already observed engineering regression, not a new\n-scientific sample, natural-error-rate evaluation, human gold, independent\n-replication, adaptive-cost advantage, historical execution certificate, or\n-complete consumed-byte proof. It does not establish a whole-project license or\n-ownership grant. Original notices and provenance in the retained inputs remain.\n+Rules-v2.1 and its independent checker verify an explicit admitted fact model,\n+not the truth of the adapter facts or complete possible histories. The retained\n+signature material is not freshly cryptographically verified. No trust roots are\n+refreshed, no network is used, no author code is executed, and no training occurs.\n+The earlier typed-exit and this isolation-erasure helper controls motivate the\n+repairs; they are not rerun by this launcher and do not establish general\n+malformed-input robustness. Original archive paths and public provenance IDs\n+remain inert text. This is portable evidence, not an anonymized export or OS\n+isolation claim. Original rights/notices remain; the manifest is an integrity\n+inventory, not a signature, ownership grant or whole-project open-source license.\n",
+    "run.py": "--- v02/run.py\n+++ v03/run.py\n@@ -175,13 +175,47 @@\n         need(prior['bytes'] == spec['bytes'] and prior['sha256_before'] == spec['sha256']\n              and prior['sha256_after'] == spec['sha256'] and prior['unchanged'] is True, 'OLD_BASELINE_INPUT_PIN')\n         prior['path'] = now['path']\n+    # V03: derive only the added read-gate diagnostic from the pinned original reports.\n+    # Existing flags, missing/false entries, statuses and scientific conclusions are retained.\n+    scenario_contract = {s['id']: s for s in p['scenarios']}\n+    need(len(scenario_contract) == 6 and len(expected['scenarios']) == 6, 'READ_EXTENSION_SCENARIOS')\n+    read_extensions = []\n+    old_flag_order = [('candidate', k) for k in ['author_execve_same_pid', 'wine_open_observed',\n+        'wine_positive_read_observed', 'execve_wine_order']] + [('direct', k) for k in\n+        ['author_execve_same_pid', 'wine_open_and_read', 'execve_wine_order']]\n+    extra = 'candidate.trace_isolation_observed'\n+    for row in expected['scenarios']:\n+        source = scenario_contract[row['id']]['read']\n+        retained = read_json(safe_path(p['runs'][source]['files']['CANDIDATE_REPORT.json']['path']))\n+        checks = retained['receipt_audit']['checks']\n+        present = 'trace_isolation_observed' in checks\n+        value = checks.get('trace_isolation_observed')\n+        diag = row['diagnostics']['selected_read_gate']\n+        need([(f['report'], f['field']) for f in diag['flags']] == old_flag_order,\n+             'OLD_READ_FLAG_ORDER')\n+        need(extra not in diag['missing_flags'] and extra not in diag['false_flags'],\n+             'READ_FLAG_NOT_PREVIOUSLY_PRESENT')\n+        diag['flags'].insert(4, {'report': 'candidate', 'field': 'trace_isolation_observed', 'value': value})\n+        destination = 'missing_flags' if not present else ('false_flags' if value is not True else None)\n+        if destination:\n+            entries = diag[destination]\n+            cut = next((i for i, name in enumerate(entries) if name.startswith('direct.')), len(entries))\n+            entries.insert(cut, extra)\n+        positive = not diag['missing_flags'] and not diag['false_flags'] and all(\n+            s == 'PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY' for s in diag['retained_statuses'])\n+        detail = 'PASSED' if positive else ('UNAVAILABLE' if diag['missing_flags'] else 'NOT_PASSED')\n+        need(diag['positive'] is positive and diag['component_positive_before_target_join'] is positive\n+             and diag['detail_status'] == detail, 'ORIGINAL_READ_OUTCOME_CHANGED')\n+        read_extensions.append({'scenario': row['id'], 'retained_source': source, 'present': present,\n+            'value': value, 'added_diagnostic': destination})\n     del expected['guard']\n     del actual['resource_check']\n     for key in ['protocol', 'script', 'elapsed_seconds', 'completed_at_utc']:\n         del expected[key]\n         del actual[key]\n     need(expected == actual, 'BASELINE_ALL_SCIENTIFIC_AND_DIAGNOSTIC_FIELDS_EQUAL')\n-    return {'status': 'PASS', 'all_scientific_and_diagnostic_fields_equal': True, 'input_path_relocations': 17,\n+    return {'status': 'PASS', 'all_fields_equal_after_explicit_read_gate_extension': True,\n+        'read_gate_diagnostic_extensions': read_extensions, 'input_path_relocations': 17,\n         'administrative_changes': ['protocol/script descriptors', 'guard replaced by fresh output-volume resource_check',\n                                    'input descriptor path resolution', 'elapsed_seconds and completed_at_utc'],\n         'old_guard_not_reused_as_current_permission': True}\n@@ -238,7 +272,7 @@\n             layer_label_count=sum(len(s['layers']) for s in new_c['scenarios']),\n             output_files={'candidate': desc(new_c_path), 'baseline': desc(new_b_path)},\n             manifest_sha256=sha(manifest_bytes), protocol_sha256=protocol_sha,\n-            bundle_unchanged_after_children=True, reference_comparison='Exact scientific result and diagnostics; candidate scope explicitly rebound.',\n+            bundle_unchanged_after_children=True, reference_comparison='Exact full reports after declared candidate digest/type diagnostics and SQL isolation-flag extension.',\n             bootstrap_scope='Inventory, input/code hashes and output-volume checks are administrative bootstrap; no acquisition-cost study or performance advantage is claimed.')\n     except Exception as e:\n         result.update(error_type=type(e).__name__, error=str(e))\n",
+    "sql_baseline_v02.py": "--- v02/sql_baseline_v02.py\n+++ v03/sql_baseline_v02.py\n@@ -184,7 +184,7 @@\n     r = loaded[run_id]\n     cand = r['candidate']['receipt_audit']['checks']\n     direct = r['direct']['checks']\n-    requested = {'candidate': ['author_execve_same_pid', 'wine_open_observed', 'wine_positive_read_observed', 'execve_wine_order'],\n+    requested = {'candidate': ['author_execve_same_pid', 'wine_open_observed', 'wine_positive_read_observed', 'execve_wine_order', 'trace_isolation_observed'],\n                  'direct': ['author_execve_same_pid', 'wine_open_and_read', 'execve_wine_order']}\n     flags, absent, failed = [], [], []\n     for kind, keys in requested.items():\n"
+  },
+  "contract_findings": "Native v09 PROTOCOL trace_rule requires isolation; its verifier computes trace_isolation_observed and requires all checks for PASS. Existing SQL helper had no equivalent implemented substitute. This derived package adds only that mandatory candidate flag."
+}

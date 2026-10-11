@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "status": "EXITED",
+  "command": [
+    "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\extracted wine package\\run.py",
+    "--output",
+    "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\independent replay output"
+  ],
+  "cwd": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/unrelated cwd",
+  "started_utc": "2026-10-11T21:07:40.122146+00:00",
+  "automatic_retry": false,
+  "attempts": 1,
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER310_WINE_V03_REPLAY_PREFLIGHT_V01.json",
+    "bytes": 3193,
+    "sha256": "e9eda8e57d2fc6a7d8b8efd6ff18ec35081b39c33bbb43c0ebb981b793484896"
+  },
+  "interpreter": {
+    "path": "C:/Users/dongs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "bytes": 106448,
+    "sha256": "aa59a7bd87f247d58169dfd968e6d484f6d3858ddf0fd8b01b1f95da40b74242"
+  },
+  "script": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/accept_package_v01.py",
+    "bytes": 18639,
+    "sha256": "06c61c9a74b8b851dccb715804802f9268cd93fd196c937b30d7b868e6102e5e"
+  },
+  "pid": 30336,
+  "actual_returncode": 0,
+  "ended_utc": "2026-10-11T21:07:42.167210+00:00",
+  "elapsed_seconds": 1.8566936000133865,
+  "stdout": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/launcher.stdout.txt",
+    "bytes": 301,
+    "sha256": "64ef6f41c6d66c0b4767116ac36ab11d9a7af89f69a66722d34c3e3b5c0242b7"
+  },
+  "stderr": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/launcher.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "acceptance_status": "PASS_EXTRACTED_V03_PATCH_REGRESSION_SAME_SIX_SCENARIOS"
+}

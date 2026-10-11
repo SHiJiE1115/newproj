@@ -12,6 +12,8 @@ scoped application evidence. Publication is not journal submission or acceptance
 
 ## Application evidence
 
+- [Required trace-isolation correction and executable v03 package](evidence/read_gate_correction_v01/README.md): one synthetic field erasure exposed a missing baseline premise; the corrected baseline withdraws support while the original 30 layer results remain unchanged. This package retains the v02 typed-exit fix.
+
 - [Typed receipt-admission correction and executable v02 package](evidence/typed_admission_correction_v01/README.md): four synthetic type/value controls exposed and fixed an adapter exit-code defect. Semantic certificate validity alone does not authenticate admitted facts. The original six-scene results and frozen v01 evidence remain unchanged.
 
 - [Scoped Wine/ValueEval companion](evidence/scoped_companion_v02/README.md): three retained Wine runs with two splices and a duplicate control, plus five post hoc exact-ID ValueEval report examples. Strong same-information baselines agree; no application advantage is established.

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "scope": "Bounded software correction and retained execution receipts",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "PLAN_V01.json",
+      "bytes": 3026,
+      "sha256": "7ddb9c63ae4966c91246d1c3b81879d64bc34d9319ee759be690fcd990df9c34"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4774,
+      "sha256": "2a2b53781f376018f932213202b5672f7168b6fc9e5c5908b7aa4f7f1adaa9df"
+    },
+    {
+      "path": "reproduce_read_erasure.py",
+      "bytes": 12873,
+      "sha256": "5be1aa975e0e86cb2f7c97fe476a6bb4fbe2c48afb8f161303f1d77c3015b955"
+    },
+    {
+      "path": "results/INDEPENDENT_ERASURE_QA_V01.json",
+      "bytes": 16266,
+      "sha256": "c2d2d80970e64a9681a266a51354353e204a497102f6ab1bc5b18e5d1ac0568a"
+    },
+    {
+      "path": "results/original_probe.json",
+      "bytes": 48519,
+      "sha256": "5bb774c8c10f82fb561b2e3b5a528078f85daaf3ce1bc61c4d3ac7a2aada94dc"
+    },
+    {
+      "path": "results/PACKAGE_ACCEPTANCE_V01.json",
+      "bytes": 20899,
+      "sha256": "88ef59021e95e11407a3e77ccbc5d49b9ca515cae5257b55cda5a1d0cbc6650d"
+    },
+    {
+      "path": "results/PACKAGE_BUILD_V01.json",
+      "bytes": 27167,
+      "sha256": "47d102584142f64c70de6f2be6b53b6bb9f3b58e567af569a9823f0ddb014278"
+    },
+    {
+      "path": "results/PACKAGE_EXECUTION_V01.json",
+      "bytes": 2059,
+      "sha256": "3f02b2bc5267e57f49b511ed36533e73ad995191cdf09713ecddda573720a47f"
+    },
+    {
+      "path": "results/patched_probe.json",
+      "bytes": 48538,
+      "sha256": "5d120e81ae197b6d292812e94f15cf823bc4b1347a91b9f6c73f0239f611a95b"
+    },
+    {
+      "path": "results/portable_original_probe.json",
+      "bytes": 48561,
+      "sha256": "1b90acb3478d26745f700b4cd7587febe93d9f2b1bf06cbdfa53c03cf03734e6"
+    },
+    {
+      "path": "results/portable_patched_probe.json",
+      "bytes": 48602,
+      "sha256": "90bf2b97002241bdf16f9c1f827459c115e2b2b9de3f052afcabe7adac59b34d"
+    },
+    {
+      "path": "trace_isolation.patch",
+      "bytes": 675,
+      "sha256": "1cc052da544a012086a2b9c58ba1376719ca3c3e3cd51524b370a021f536cce6"
+    },
+    {
+      "path": "wine_layer_calibration_v03.zip",
+      "bytes": 999804,
+      "sha256": "c9a3c34a9a5fe412454d9f53818157e3af20cfedd4bb6517bdec880d962903df"
+    }
+  ]
+}

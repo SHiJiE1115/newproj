@@ -1,0 +1,603 @@
+{
+  "schema": 1,
+  "status": "PASS_EXTRACTED_V03_PATCH_REGRESSION_SAME_SIX_SCENARIOS",
+  "human_review": false,
+  "scientific_sample_increase": 0,
+  "new_cryptographic_verification": false,
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER310_WINE_V03_REPLAY_PREFLIGHT_V01.json",
+    "bytes": 3193,
+    "sha256": "e9eda8e57d2fc6a7d8b8efd6ff18ec35081b39c33bbb43c0ebb981b793484896"
+  },
+  "builder_receipt": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/PACKAGE_BUILD_V01.json",
+    "bytes": 27167,
+    "sha256": "47d102584142f64c70de6f2be6b53b6bb9f3b58e567af569a9823f0ddb014278"
+  },
+  "delivery_zip": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/wine_layer_calibration_v03.zip",
+    "bytes": 999804,
+    "sha256": "c9a3c34a9a5fe412454d9f53818157e3af20cfedd4bb6517bdec880d962903df"
+  },
+  "original_manifest": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/MANIFEST.json",
+    "bytes": 4968,
+    "sha256": "5c7d44112c976ea6f7cac211401d96c5b4a8c890f46a121f8fbfe2d8bbf30613"
+  },
+  "derived_manifest": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/extracted wine package/MANIFEST.json",
+    "bytes": 5034,
+    "sha256": "d70d90f0cfaa55e6d635831eb14a7d00f3e502926bcd201d74bf96292c02043c"
+  },
+  "package_directory": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/wine_layer_calibration_v03",
+  "relocated_bundle": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/extracted wine package",
+  "output_directory": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output",
+  "launcher_result": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output/RESULT.json",
+    "bytes": 36268,
+    "sha256": "b9c898f94359be6a6dd4bb570c672b6aa708c02dd6ec5674c202206d11826788"
+  },
+  "children": [
+    {
+      "name": "candidate",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\extracted wine package\\layer_candidate.py",
+        "--protocol",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\extracted wine package\\protocol.json",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\independent replay output\\candidate"
+      ],
+      "started_utc": "2026-10-11T21:07:40.370941+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "actual_returncode": 0,
+      "terminal": "EXITED",
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output/logs/candidate.stdout.txt",
+        "bytes": 1677,
+        "sha256": "33aa27333ad78bed2d502a4c38a79f3bc5e0b787e4a4b6bb8341e24cacfba372"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output/logs/candidate.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:07:41.049377+00:00",
+      "elapsed_seconds": 0.6787465999950655
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "C:\\Users\\dongs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\extracted wine package\\sql_baseline_v02.py",
+        "--protocol",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\extracted wine package\\protocol.json",
+        "--output",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\independent replay output\\baseline",
+        "--resource-check",
+        "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\scratch\\iteration310\\relocated_wine_v03\\independent replay output\\RESOURCE_CHECK.json"
+      ],
+      "started_utc": "2026-10-11T21:07:41.117163+00:00",
+      "attempts": 1,
+      "automatic_retry": false,
+      "actual_returncode": 0,
+      "terminal": "EXITED",
+      "stdout": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output/logs/baseline.stdout.txt",
+        "bytes": 1740,
+        "sha256": "5739fb21d7c23f2e1d5229c0acd6b15e9639a145ba4ea0a001fedbfea9b4903a"
+      },
+      "stderr": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output/logs/baseline.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ended_utc": "2026-10-11T21:07:41.667937+00:00",
+      "elapsed_seconds": 0.550696499994956
+    }
+  ],
+  "comparison": {
+    "candidate_full_report_exact_after_whitelist": true,
+    "typed_exit_diagnostic_edges": 12,
+    "typed_exit_new_fields": 24,
+    "certificate_count": 30,
+    "certificate_changes": [
+      {
+        "scenario": "v07",
+        "layer": "artifact_numeric",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "3568b314bd256ab3f508a066f92755d01ebc21cc0a35b5618c8f231d05bb14ef"
+      },
+      {
+        "scenario": "v07",
+        "layer": "selected_read_gate",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "7073ada37a0acc6e6ccc3524e4bee3465bf8af065b15917215e6a02c29049e65"
+      },
+      {
+        "scenario": "v07",
+        "layer": "retained_signed_identity",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "1913f0a0701fe58dbb82aeb871a2247021883b2ba5c1cbbc60666a1238df7869"
+      },
+      {
+        "scenario": "v07",
+        "layer": "joint_scoped_receipt",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "0bbef76ee9fe06733017f241790ed9d29aa94f34fa8e608e249c728b755655cc"
+      },
+      {
+        "scenario": "v07",
+        "layer": "historical_2020_execution",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "9e38400f3baff6a2456ff746935c49129a1c86abbb7e47a8e7b29a721cc1559e"
+      },
+      {
+        "scenario": "v08",
+        "layer": "artifact_numeric",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "0a22195c2d0ec9497cdf1f318c42edd0fdf897690ac257098d47c08c5ff0ed03"
+      },
+      {
+        "scenario": "v08",
+        "layer": "selected_read_gate",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "c0988e8b9dced6d9725e9a445e515528e83d88eba582ae0cdf3b771cbb4c57a5"
+      },
+      {
+        "scenario": "v08",
+        "layer": "retained_signed_identity",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "8a361d348623e06bb2b388073f16d6bde1cace070e4b1cca45359d08c4b1fa9f"
+      },
+      {
+        "scenario": "v08",
+        "layer": "joint_scoped_receipt",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "6be06ae2bd73d3628f4f06b5ea764d0188135f039befe6d91e6359caa2df1932"
+      },
+      {
+        "scenario": "v08",
+        "layer": "historical_2020_execution",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "cfdb998e0ed7f4ff3cbc35cd81b51a44fa0870c2edeeb0250b2703225de30a5a"
+      },
+      {
+        "scenario": "v09",
+        "layer": "artifact_numeric",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "37fcec1615ae6ca03d7ac03aa5331e4d173dd8c0e84435be6a97654b01259220"
+      },
+      {
+        "scenario": "v09",
+        "layer": "selected_read_gate",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "8699d054fbb6bb2acd65549955e461f9979c0c6a706ca9cc358b574baf4f4846"
+      },
+      {
+        "scenario": "v09",
+        "layer": "retained_signed_identity",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "d3732aa690457ddb85f46dc394922dc522ab973adcc7a9d830fbbda27e706e09"
+      },
+      {
+        "scenario": "v09",
+        "layer": "joint_scoped_receipt",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "9b3c08b8b777bf81c3ca85c0e879e5d7e0362842e597e1a85331e65b0780dced"
+      },
+      {
+        "scenario": "v09",
+        "layer": "historical_2020_execution",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "5acb1170bbff539522de58263187747bdbcadea507573f85c7365e1143e1fcb1"
+      },
+      {
+        "scenario": "mixed_identity",
+        "layer": "artifact_numeric",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "debcc87ed4e031f97ff8f1fe8b47275f6623b879e57f562f88a7a0a31bf08ae1"
+      },
+      {
+        "scenario": "mixed_identity",
+        "layer": "selected_read_gate",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "3cb26a96c45b9d38e795722fc085251e0caa618b56289e6d4b321f2406fe6097"
+      },
+      {
+        "scenario": "mixed_identity",
+        "layer": "retained_signed_identity",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "5a8bb0f567ae66cde71c027039de86999840d9e1ed69adf6ffa1e7713ea49156"
+      },
+      {
+        "scenario": "mixed_identity",
+        "layer": "joint_scoped_receipt",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "00f069974731d6296266c203c96d28056cd58783927e27742cd1fd30ca619a0a"
+      },
+      {
+        "scenario": "mixed_identity",
+        "layer": "historical_2020_execution",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "be820e2127f5a7b1f34b5947b26bbf46abe65d57d20c98f23da4a0f0ac51cb55"
+      },
+      {
+        "scenario": "mixed_output",
+        "layer": "artifact_numeric",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "044642e0b30db34651e1b2b1e36767264eb8d8220535984cfa4e321fc61652d4"
+      },
+      {
+        "scenario": "mixed_output",
+        "layer": "selected_read_gate",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "adc63d2488e1e593f8816f283b5f13a80099b61e75f140776d6c945058d19252"
+      },
+      {
+        "scenario": "mixed_output",
+        "layer": "retained_signed_identity",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "7bf8356cc21800409339060b666c49a945cee0aaf1e0879bd541647e87ad84f1"
+      },
+      {
+        "scenario": "mixed_output",
+        "layer": "joint_scoped_receipt",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "70b78bbb18e56d54e57b291c49be9389cbf3c676d43c7833d72704b3255d0441"
+      },
+      {
+        "scenario": "mixed_output",
+        "layer": "historical_2020_execution",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "ebac2cdcf9af22c977ea95faacd915766fe6c7e8f87cce8fd268fc5a6279b606"
+      },
+      {
+        "scenario": "duplicate_v09",
+        "layer": "artifact_numeric",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "76ce41820daf9b7a20ce3957668aa22c3185e3d9d5acf40648ebec9c851e5389"
+      },
+      {
+        "scenario": "duplicate_v09",
+        "layer": "selected_read_gate",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "7f2e1a2eca4deac5f904d355716eb266dde917757395a45f0e0a7fbca33f4de8"
+      },
+      {
+        "scenario": "duplicate_v09",
+        "layer": "retained_signed_identity",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "6ae508331308425a3b2c2a1fdd71007c5d9f8ac63434ce1450275d8cdd9eee6b"
+      },
+      {
+        "scenario": "duplicate_v09",
+        "layer": "joint_scoped_receipt",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "24d8828e136d9a359ba03f2af5b328ba62947a389390a090b146d98663405bea"
+      },
+      {
+        "scenario": "duplicate_v09",
+        "layer": "historical_2020_execution",
+        "changed_fields": [
+          "certificate_digest",
+          "input_digest",
+          "scope_digest",
+          "snapshot_digest"
+        ],
+        "new_certificate_sha256": "2d15eac4eb779c5eff3504d4ddde411ef951cbc07def85b61536eb17c640367b"
+      }
+    ],
+    "baseline_full_report_equal_after_explicit_added_diagnostic": true,
+    "read_gate_extensions": [
+      {
+        "scenario": "v07",
+        "source": "v07",
+        "present": false,
+        "value": null,
+        "added_diagnostic": "missing_flags",
+        "detail_status": "UNAVAILABLE",
+        "positive": false
+      },
+      {
+        "scenario": "v08",
+        "source": "v08",
+        "present": true,
+        "value": true,
+        "added_diagnostic": null,
+        "detail_status": "NOT_PASSED",
+        "positive": false
+      },
+      {
+        "scenario": "v09",
+        "source": "v09",
+        "present": true,
+        "value": true,
+        "added_diagnostic": null,
+        "detail_status": "PASSED",
+        "positive": true
+      },
+      {
+        "scenario": "mixed_identity",
+        "source": "v09",
+        "present": true,
+        "value": true,
+        "added_diagnostic": null,
+        "detail_status": "PASSED",
+        "positive": true
+      },
+      {
+        "scenario": "mixed_output",
+        "source": "v09",
+        "present": true,
+        "value": true,
+        "added_diagnostic": null,
+        "detail_status": "PASSED",
+        "positive": true
+      },
+      {
+        "scenario": "duplicate_v09",
+        "source": "v09",
+        "present": true,
+        "value": true,
+        "added_diagnostic": null,
+        "detail_status": "PASSED",
+        "positive": true
+      }
+    ],
+    "input_path_administrative_relocations": 17,
+    "all_original_layer_labels_and_identity_counts_unchanged": true,
+    "scenarios": [
+      {
+        "id": "v07",
+        "layers": {
+          "artifact_numeric": "UNRESOLVED",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "v08",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "v09",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "MET",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 1
+      },
+      {
+        "id": "mixed_identity",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "UNRESOLVED",
+          "retained_signed_identity": "UNRESOLVED",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "mixed_output",
+        "layers": {
+          "artifact_numeric": "UNRESOLVED",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "UNRESOLVED",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 0
+      },
+      {
+        "id": "duplicate_v09",
+        "layers": {
+          "artifact_numeric": "MET",
+          "selected_read_gate": "MET",
+          "retained_signed_identity": "MET",
+          "joint_scoped_receipt": "MET",
+          "historical_2020_execution": "UNRESOLVED"
+        },
+        "joint_distinct_identity_count": 1
+      }
+    ],
+    "new_candidate_result": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output/candidate/CANDIDATE_RESULT_V01.json",
+      "bytes": 265120,
+      "sha256": "5382eeb2f745c9b60f6ecf569cd5bd1e8f7527f161796eef0d73dadbd630cd3a"
+    },
+    "new_baseline_result": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/scratch/iteration310/relocated_wine_v03/independent replay output/baseline/BASELINE_RESULT_V02.json",
+      "bytes": 154371,
+      "sha256": "2ad06548aaeaf0f224aa51b82df51abe2881c1837186de8a41baca4001fb48ca"
+    }
+  },
+  "package_member_count": 25,
+  "byte_exact_unchanged_input_count": 17,
+  "byte_exact_unchanged_reference_count": 2,
+  "protocol_byte_exact_unchanged": true,
+  "changed_files": [
+    "MANIFEST.json",
+    "README.md",
+    "run.py",
+    "sql_baseline_v02.py"
+  ],
+  "original_and_derived_packages_and_zip_unchanged_after": true,
+  "old_reference_objects_parsed_only_after_terminal": true,
+  "scope": "One software repair regression of retained six scenarios; not a new scientific sample, fresh signing, historical authentication, OS isolation or a general malformed-input guarantee.",
+  "helper_intervention_repeated": false,
+  "execution": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/package_build_v01/EXECUTION_V01.json",
+    "bytes": 2059,
+    "sha256": "3f02b2bc5267e57f49b511ed36533e73ad995191cdf09713ecddda573720a47f"
+  },
+  "elapsed_seconds": 4.175804500002414
+}

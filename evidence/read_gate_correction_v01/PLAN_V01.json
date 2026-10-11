@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "status": "FROZEN_BEFORE_CONTROL_EXECUTION",
+  "created_utc": "2026-10-11T21:02:16.013333+00:00",
+  "control_kind": "One retained positive report and one synthetic single-field erasure",
+  "required_contract": "Selected-read support requires the explicitly required trace isolation flag to be present and true; retained summary PASS is not a substitute.",
+  "pointer": "/receipt_audit/checks/trace_isolation_observed",
+  "sources": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/layer_candidate.py",
+      "bytes": 22554,
+      "sha256": "7d86bd4ede7e089a8325d7d57c89b7135f86f290eabd4b15bd149a64470e4918"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/sql_baseline_v02.py",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/protocol.json",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    }
+  ],
+  "harness": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/probe_iter310_read_erasure_v01.py",
+    "bytes": 12670,
+    "sha256": "dd1dfc11246cd8380dce2a97c4dd9188b3102eebee65cdb38c7c030bd3b14d7e"
+  },
+  "fixtures": [
+    {
+      "id": "intact",
+      "descriptor": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/fixtures/intact.json",
+        "bytes": 1874,
+        "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+      },
+      "expected_admission": true
+    },
+    {
+      "id": "isolation_erased",
+      "descriptor": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/fixtures/isolation_erased.json",
+        "bytes": 1833,
+        "sha256": "d0e3a1dad14242b1440d89e1f751008f4c8c3c2016af0f912cf804c09a96bfb2"
+      },
+      "expected_admission": false
+    }
+  ],
+  "prediction_not_result": {
+    "candidate": [
+      true,
+      false
+    ],
+    "original_baseline": [
+      true,
+      true
+    ]
+  },
+  "conditional_repair": "If the original baseline admits the erased fixture, add only trace_isolation_observed to its candidate required-field list; preserve all other source bytes.",
+  "scope": {
+    "original_frozen_cli_invoked": false,
+    "original_pin_bypassed": false,
+    "new_physical_run": false,
+    "fresh_crypto_verification": false,
+    "human_gold": false,
+    "same_input_bytes_for_both_adapters": true,
+    "derived_fixtures_have_new_pins": true,
+    "not_general_adapter_equivalence_or_natural_error_rate": true
+  },
+  "stop_rule": "Run each of the two fixtures once per original and corrected baseline mode. One full-package regression only if delivering corrected code. No additional mutations without a concrete new failure."
+}

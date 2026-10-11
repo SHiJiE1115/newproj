@@ -1,0 +1,1293 @@
+{
+  "schema": 1,
+  "status": "PASS_BOUNDED_CONTROL_OBSERVED",
+  "mode": "patched",
+  "plan": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/PLAN_V01.json",
+    "bytes": 3026,
+    "sha256": "7ddb9c63ae4966c91246d1c3b81879d64bc34d9319ee759be690fcd990df9c34"
+  },
+  "harness": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/probe_iter310_read_erasure_v01.py",
+    "bytes": 12670,
+    "sha256": "dd1dfc11246cd8380dce2a97c4dd9188b3102eebee65cdb38c7c030bd3b14d7e"
+  },
+  "candidate_source": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/layer_candidate.py",
+    "bytes": 22554,
+    "sha256": "7d86bd4ede7e089a8325d7d57c89b7135f86f290eabd4b15bd149a64470e4918"
+  },
+  "baseline_source": {
+    "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/patched/sql_baseline_v02.py",
+    "bytes": 30388,
+    "sha256": "347816748a8e5bbb63e50bf68557f581fdd385da67f0cd57bd67f2da3820d57a"
+  },
+  "cases": [
+    {
+      "id": "intact",
+      "input": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/fixtures/intact.json",
+        "bytes": 1874,
+        "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+      },
+      "expected_admission": true,
+      "candidate": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_read_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "candidate.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate_audit.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "direct.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_open_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_positive_read_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.trace_isolation_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.frozen_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.source_hashes",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.wine_open_and_read",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.receipt_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.local_frozen_protocol",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "retained_native_gate": "OBSERVED",
+        "limitation": "Recorded version-specific predicate only; NOT_PASSED or missing flags do not establish absence of a physical read."
+      },
+      "baseline": {
+        "positive": true,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "PASSED",
+        "retained_statuses": [
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+        ],
+        "flags": [
+          {
+            "report": "candidate",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_open_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_positive_read_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "execve_wine_order",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "trace_isolation_observed",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "wine_open_and_read",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "execve_wine_order",
+            "value": true
+          }
+        ],
+        "missing_flags": [],
+        "false_flags": [],
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "CANDIDATE_REPORT.json",
+            "json_pointer_or_field": "/receipt_audit/checks"
+          },
+          {
+            "run": "v09",
+            "file": "DIRECT_BASELINE_REPORT.json",
+            "json_pointer_or_field": "/checks"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "source/experiment/PROTOCOL.json",
+            "json_pointer_or_field": "/trace_rule"
+          }
+        ],
+        "fresh_trace_parsing": false,
+        "physical_nonreading_inferred_from_failed_gate": false
+      },
+      "baseline_sql_joint_rows": 1,
+      "retained_numeric_and_signature_positive_both": true,
+      "scope_digest_input": "002d76889074f1189f4ae2338cf312fb0b4710fa0db4d166450ba4c5c87163b3",
+      "semantic_certificates": {
+        "candidate": {
+          "selected_read_gate": {
+            "status": "MET",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "intact:selected_read_gate",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": true,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "support",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [],
+              "certificate_digest": "322ad6eb8f4d0ee6dedc052b871125bfd722602be92b063fbdf92ba611336573",
+              "checked_worlds": 1,
+              "claim_digest": "c5750fffebfbe88d22005e2bfd557b1ea20f531772256521337ac434845f0d11",
+              "conditional_groups": [
+                [
+                  "retained-evidence-projection",
+                  [
+                    "evidence-reference-0"
+                  ]
+                ]
+              ],
+              "fixed_group": [
+                "evidence-reference-0"
+              ],
+              "input_digest": "8286e12bb20f1ee668f32676f9c0dd49c3cf1f3685343a75a3f7e6ef3db9e563",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "cda06080da81edaf5aac247384d84f63ae81dfff2f24d1e7e6389b34d1c4eb62",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "7aca038c2fa5b9cd3e2bee2d275aa80e71421b21f4ca5a57620b1f49ed89467a",
+              "snapshot_digest": "002d76889074f1189f4ae2338cf312fb0b4710fa0db4d166450ba4c5c87163b3",
+              "status": "MET",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              },
+              "world_consensus_status": "MET",
+              "world_proofs": [
+                {
+                  "groups": [
+                    [
+                      "evidence-reference-0"
+                    ]
+                  ],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          },
+          "joint_scoped_receipt": {
+            "status": "MET",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "intact:joint_scoped_receipt",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": true,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "support",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [],
+              "certificate_digest": "14955e13addc0398ddd75048e08ebb44d9f8ab0dc0ab2c66e79696ca8aba7cb0",
+              "checked_worlds": 1,
+              "claim_digest": "cd1716d001a04f67750f41eda51a38ca3f749fb1c7b3f0649fd5fc00c4b3d3f7",
+              "conditional_groups": [
+                [
+                  "retained-evidence-projection",
+                  [
+                    "evidence-reference-0"
+                  ]
+                ]
+              ],
+              "fixed_group": [
+                "evidence-reference-0"
+              ],
+              "input_digest": "afd3350c4c229ee3acbcdd77afea01f2540abaa559d59946b87005b6dcc316aa",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "01e49fb9c01d663c5c70ea3a897698d1d5253cfb911c06b52659a14b9692d6cd",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "7aca038c2fa5b9cd3e2bee2d275aa80e71421b21f4ca5a57620b1f49ed89467a",
+              "snapshot_digest": "002d76889074f1189f4ae2338cf312fb0b4710fa0db4d166450ba4c5c87163b3",
+              "status": "MET",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              },
+              "world_consensus_status": "MET",
+              "world_proofs": [
+                {
+                  "groups": [
+                    [
+                      "evidence-reference-0"
+                    ]
+                  ],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          }
+        },
+        "baseline_fact_projection": {
+          "selected_read_gate": {
+            "status": "MET",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "intact:selected_read_gate",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": true,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "support",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [],
+              "certificate_digest": "322ad6eb8f4d0ee6dedc052b871125bfd722602be92b063fbdf92ba611336573",
+              "checked_worlds": 1,
+              "claim_digest": "c5750fffebfbe88d22005e2bfd557b1ea20f531772256521337ac434845f0d11",
+              "conditional_groups": [
+                [
+                  "retained-evidence-projection",
+                  [
+                    "evidence-reference-0"
+                  ]
+                ]
+              ],
+              "fixed_group": [
+                "evidence-reference-0"
+              ],
+              "input_digest": "8286e12bb20f1ee668f32676f9c0dd49c3cf1f3685343a75a3f7e6ef3db9e563",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "cda06080da81edaf5aac247384d84f63ae81dfff2f24d1e7e6389b34d1c4eb62",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "7aca038c2fa5b9cd3e2bee2d275aa80e71421b21f4ca5a57620b1f49ed89467a",
+              "snapshot_digest": "002d76889074f1189f4ae2338cf312fb0b4710fa0db4d166450ba4c5c87163b3",
+              "status": "MET",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              },
+              "world_consensus_status": "MET",
+              "world_proofs": [
+                {
+                  "groups": [
+                    [
+                      "evidence-reference-0"
+                    ]
+                  ],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          },
+          "joint_scoped_receipt": {
+            "status": "MET",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "intact:joint_scoped_receipt",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": true,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "support",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [],
+              "certificate_digest": "14955e13addc0398ddd75048e08ebb44d9f8ab0dc0ab2c66e79696ca8aba7cb0",
+              "checked_worlds": 1,
+              "claim_digest": "cd1716d001a04f67750f41eda51a38ca3f749fb1c7b3f0649fd5fc00c4b3d3f7",
+              "conditional_groups": [
+                [
+                  "retained-evidence-projection",
+                  [
+                    "evidence-reference-0"
+                  ]
+                ]
+              ],
+              "fixed_group": [
+                "evidence-reference-0"
+              ],
+              "input_digest": "afd3350c4c229ee3acbcdd77afea01f2540abaa559d59946b87005b6dcc316aa",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "01e49fb9c01d663c5c70ea3a897698d1d5253cfb911c06b52659a14b9692d6cd",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "7aca038c2fa5b9cd3e2bee2d275aa80e71421b21f4ca5a57620b1f49ed89467a",
+              "snapshot_digest": "002d76889074f1189f4ae2338cf312fb0b4710fa0db4d166450ba4c5c87163b3",
+              "status": "MET",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              },
+              "world_consensus_status": "MET",
+              "world_proofs": [
+                {
+                  "groups": [
+                    [
+                      "evidence-reference-0"
+                    ]
+                  ],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "isolation_erased",
+      "input": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/fixtures/isolation_erased.json",
+        "bytes": 1833,
+        "sha256": "d0e3a1dad14242b1440d89e1f751008f4c8c3c2016af0f912cf804c09a96bfb2"
+      },
+      "expected_admission": false,
+      "candidate": {
+        "source": "v09",
+        "admitted": false,
+        "checks": [
+          {
+            "edge": "retained_read_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_read_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "candidate.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate_audit.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "direct.status",
+            "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+            "passed": true
+          },
+          {
+            "edge": "candidate.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.all_recorded_checks_pass",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_open_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.wine_positive_read_observed",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.trace_isolation_observed",
+            "observed": null,
+            "expected": true,
+            "passed": false
+          },
+          {
+            "edge": "candidate.frozen_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "candidate.source_hashes",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.author_execve_same_pid",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.wine_open_and_read",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.execve_wine_order",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.receipt_source_snapshot",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "direct.local_frozen_protocol",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          }
+        ],
+        "retained_native_gate": "OBSERVED",
+        "limitation": "Recorded version-specific predicate only; NOT_PASSED or missing flags do not establish absence of a physical read."
+      },
+      "baseline": {
+        "positive": false,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "UNAVAILABLE",
+        "retained_statuses": [
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+          "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY"
+        ],
+        "flags": [
+          {
+            "report": "candidate",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_open_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "wine_positive_read_observed",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "execve_wine_order",
+            "value": true
+          },
+          {
+            "report": "candidate",
+            "field": "trace_isolation_observed",
+            "value": null
+          },
+          {
+            "report": "direct",
+            "field": "author_execve_same_pid",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "wine_open_and_read",
+            "value": true
+          },
+          {
+            "report": "direct",
+            "field": "execve_wine_order",
+            "value": true
+          }
+        ],
+        "missing_flags": [
+          "candidate.trace_isolation_observed"
+        ],
+        "false_flags": [],
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "CANDIDATE_REPORT.json",
+            "json_pointer_or_field": "/receipt_audit/checks"
+          },
+          {
+            "run": "v09",
+            "file": "DIRECT_BASELINE_REPORT.json",
+            "json_pointer_or_field": "/checks"
+          },
+          {
+            "run": "v09",
+            "file": "receipt.tar",
+            "member": "source/experiment/PROTOCOL.json",
+            "json_pointer_or_field": "/trace_rule"
+          }
+        ],
+        "fresh_trace_parsing": false,
+        "physical_nonreading_inferred_from_failed_gate": false
+      },
+      "baseline_sql_joint_rows": 0,
+      "retained_numeric_and_signature_positive_both": true,
+      "scope_digest_input": "b0137cfdf18b200100f5332827ae3bc22b6bd2172af9f173c277e6f8a2437a4e",
+      "semantic_certificates": {
+        "candidate": {
+          "selected_read_gate": {
+            "status": "UNRESOLVED",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "isolation_erased:selected_read_gate",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": false,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "neutral",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [
+                [
+                  [
+                    "evidence-reference-0"
+                  ],
+                  "retained-evidence-projection"
+                ]
+              ],
+              "certificate_digest": "f6503d0d96176fdf65131bcfcb1fd12b6fbc911717bd61b1c1bd2e2d3f98ef0b",
+              "checked_worlds": 1,
+              "claim_digest": "b27a76154dd09e8d56d1e95bf403fb5d4a373a2fb1b46a600ca0982ecdb566e3",
+              "conditional_groups": [],
+              "fixed_group": null,
+              "input_digest": "147e8ec43a3f71e4f42c316dc3c49273c3dc97e52b4e61b2190385241b26dd91",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "6fa86b761dd65544e647c9bf7be60a284c266d9b44d6e892378ca43ce75ecfb9",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "21ac690d345840d7c80adf4663a526d003b5e3fec1052a7cedb1173fd6dd0ae0",
+              "snapshot_digest": "b0137cfdf18b200100f5332827ae3bc22b6bd2172af9f173c277e6f8a2437a4e",
+              "status": "UNRESOLVED",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              },
+              "world_consensus_status": "UNRESOLVED",
+              "world_proofs": [
+                {
+                  "groups": [],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "5bd2caf10f261cfbec09863d096d21052d0a908e8995c79c8f5af825f66a3433"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          },
+          "joint_scoped_receipt": {
+            "status": "UNRESOLVED",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "isolation_erased:joint_scoped_receipt",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": false,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "neutral",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [
+                [
+                  [
+                    "evidence-reference-0"
+                  ],
+                  "retained-evidence-projection"
+                ]
+              ],
+              "certificate_digest": "c923d13f686c65737b68cb9b5bdffd356f8ecf291da7f073dbc1ca3d024a1ddf",
+              "checked_worlds": 1,
+              "claim_digest": "d0511e8964eec2bf406d3c5f8dd5808f2eb759ea2895a127a9a1764966476b7d",
+              "conditional_groups": [],
+              "fixed_group": null,
+              "input_digest": "8424f9ab9d331b11ecda792c268f4c61168631b195ab1a1bfad50984cc750a11",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "7775534eb12f4e592697e7d6aa788fa873f639ecb5b9f51bc8e7fad8ea0fac43",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "21ac690d345840d7c80adf4663a526d003b5e3fec1052a7cedb1173fd6dd0ae0",
+              "snapshot_digest": "b0137cfdf18b200100f5332827ae3bc22b6bd2172af9f173c277e6f8a2437a4e",
+              "status": "UNRESOLVED",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              },
+              "world_consensus_status": "UNRESOLVED",
+              "world_proofs": [
+                {
+                  "groups": [],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "5bd2caf10f261cfbec09863d096d21052d0a908e8995c79c8f5af825f66a3433"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          }
+        },
+        "baseline_fact_projection": {
+          "selected_read_gate": {
+            "status": "UNRESOLVED",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "isolation_erased:selected_read_gate",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": false,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "neutral",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [
+                [
+                  [
+                    "evidence-reference-0"
+                  ],
+                  "retained-evidence-projection"
+                ]
+              ],
+              "certificate_digest": "f6503d0d96176fdf65131bcfcb1fd12b6fbc911717bd61b1c1bd2e2d3f98ef0b",
+              "checked_worlds": 1,
+              "claim_digest": "b27a76154dd09e8d56d1e95bf403fb5d4a373a2fb1b46a600ca0982ecdb566e3",
+              "conditional_groups": [],
+              "fixed_group": null,
+              "input_digest": "147e8ec43a3f71e4f42c316dc3c49273c3dc97e52b4e61b2190385241b26dd91",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "6fa86b761dd65544e647c9bf7be60a284c266d9b44d6e892378ca43ce75ecfb9",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "21ac690d345840d7c80adf4663a526d003b5e3fec1052a7cedb1173fd6dd0ae0",
+              "snapshot_digest": "b0137cfdf18b200100f5332827ae3bc22b6bd2172af9f173c277e6f8a2437a4e",
+              "status": "UNRESOLVED",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "b1946b4ffe50b4fd67539ebebf24c9c7a622599d9cedfcf0f2aef2a6ffb4adeb"
+              },
+              "world_consensus_status": "UNRESOLVED",
+              "world_proofs": [
+                {
+                  "groups": [],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "5bd2caf10f261cfbec09863d096d21052d0a908e8995c79c8f5af825f66a3433"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          },
+          "joint_scoped_receipt": {
+            "status": "UNRESOLVED",
+            "claim": {
+              "admissible_bases": [
+                "HASHED_ARTIFACT"
+              ],
+              "claim_id": "isolation_erased:joint_scoped_receipt",
+              "closed_scope": false,
+              "required_level": "reported",
+              "separation_dimensions": [
+                "run"
+              ],
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              }
+            },
+            "admitted_fact_table": {
+              "facts": {
+                "evidence-reference-0": {
+                  "applicable": false,
+                  "basis": "HASHED_ARTIFACT",
+                  "direction": "neutral",
+                  "level": "reported"
+                }
+              },
+              "origins": {
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+                  "run": [
+                    "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+                  ]
+                }
+              },
+              "world_id": "retained-evidence-projection"
+            },
+            "certificate": {
+              "blocking_world_by_group": [
+                [
+                  [
+                    "evidence-reference-0"
+                  ],
+                  "retained-evidence-projection"
+                ]
+              ],
+              "certificate_digest": "c923d13f686c65737b68cb9b5bdffd356f8ecf291da7f073dbc1ca3d024a1ddf",
+              "checked_worlds": 1,
+              "claim_digest": "d0511e8964eec2bf406d3c5f8dd5808f2eb759ea2895a127a9a1764966476b7d",
+              "conditional_groups": [],
+              "fixed_group": null,
+              "input_digest": "8424f9ab9d331b11ecda792c268f4c61168631b195ab1a1bfad50984cc750a11",
+              "max_group_candidates": null,
+              "max_world_checks": null,
+              "predicate": "support",
+              "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+              "records_digest": "7775534eb12f4e592697e7d6aa788fa873f639ecb5b9f51bc8e7fad8ea0fac43",
+              "replication_r": 2,
+              "rule_version": "rules-v2.1",
+              "scope_digest": "21ac690d345840d7c80adf4663a526d003b5e3fec1052a7cedb1173fd6dd0ae0",
+              "snapshot_digest": "b0137cfdf18b200100f5332827ae3bc22b6bd2172af9f173c277e6f8a2437a4e",
+              "status": "UNRESOLVED",
+              "target": {
+                "kind": "PROSPECTIVE_RUN",
+                "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+              },
+              "world_consensus_status": "UNRESOLVED",
+              "world_proofs": [
+                {
+                  "groups": [],
+                  "world_id": "retained-evidence-projection"
+                }
+              ],
+              "worlds_digest": "5bd2caf10f261cfbec09863d096d21052d0a908e8995c79c8f5af825f66a3433"
+            },
+            "checker": {
+              "valid": true,
+              "errors": []
+            }
+          }
+        }
+      }
+    }
+  ],
+  "observed_candidate_baseline": [
+    [
+      true,
+      true
+    ],
+    [
+      false,
+      false
+    ]
+  ],
+  "all_17_original_inputs_unchanged": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v07\\receipt.tar",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v07\\CANDIDATE_REPORT.json",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v07\\DIRECT_BASELINE_REPORT.json",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v07\\POSTRUN_RELEASE_GATE.json",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v08\\receipt.tar",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v08\\CANDIDATE_REPORT.json",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v08\\DIRECT_BASELINE_REPORT.json",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v08\\POSTRUN_RELEASE_GATE.json",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v09\\receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v09\\CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v09\\DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\v09\\POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\signature\\ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\signature\\verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\evidence\\signature\\sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\semantic\\rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\package_build_v01\\wine_layer_calibration_v02\\semantic\\rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b",
+      "unchanged": true
+    }
+  ],
+  "scope": {
+    "original_frozen_cli_invoked": false,
+    "original_pin_bypassed": false,
+    "new_physical_run": false,
+    "fresh_crypto_verification": false,
+    "human_gold": false,
+    "same_input_bytes_for_both_adapters": true,
+    "derived_fixtures_have_new_pins": true,
+    "not_general_adapter_equivalence_or_natural_error_rate": true
+  },
+  "completed_utc": "2026-10-11T21:02:33.130296+00:00",
+  "certificate_scope_note": "The existing semantic scope label is retained by the library; snapshot digest binds this new derived fixture and code scope. A valid checker verifies the admitted fact model, not the missing external fact."
+}

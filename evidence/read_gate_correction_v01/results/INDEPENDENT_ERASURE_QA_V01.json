@@ -1,0 +1,305 @@
+{
+  "schema": 1,
+  "status": "PASS_SCOPED_INDEPENDENT_TRACE_ISOLATION_ERASURE_QA",
+  "created_utc": "2026-10-11T21:05:06.125726+00:00",
+  "human_review": false,
+  "independent_probe_replay": false,
+  "scope": "Read-only independent review of two frozen interface fixtures, actual original/corrected results, production loader/admission functions, SQL join harness and the one-field baseline repair. No probe or scientific replay executed by this reviewer.",
+  "inputs": {
+    "plan": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/PLAN_V01.json",
+      "bytes": 3026,
+      "sha256": "7ddb9c63ae4966c91246d1c3b81879d64bc34d9319ee759be690fcd990df9c34"
+    },
+    "original_result": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/original_probe/RESULT_V01.json",
+      "bytes": 48519,
+      "sha256": "5bb774c8c10f82fb561b2e3b5a528078f85daaf3ce1bc61c4d3ac7a2aada94dc"
+    },
+    "patched_result": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/patched_probe/RESULT_V01.json",
+      "bytes": 48538,
+      "sha256": "5d120e81ae197b6d292812e94f15cf823bc4b1347a91b9f6c73f0239f611a95b"
+    },
+    "patch_preparation": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/PATCH_V01.json",
+      "bytes": 1221,
+      "sha256": "50cd6e156499c87a85b38e809a4350b5b1cec7b17bd8143b5a87d8cb44d5ca47"
+    },
+    "original_baseline": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/sql_baseline_v02.py",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+    },
+    "patched_baseline": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/patched/sql_baseline_v02.py",
+      "bytes": 30388,
+      "sha256": "347816748a8e5bbb63e50bf68557f581fdd385da67f0cd57bd67f2da3820d57a"
+    },
+    "patch_diff": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/patched/trace_isolation.patch",
+      "bytes": 675,
+      "sha256": "1cc052da544a012086a2b9c58ba1376719ca3c3e3cd51524b370a021f536cce6"
+    },
+    "candidate": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/layer_candidate.py",
+      "bytes": 22554,
+      "sha256": "7d86bd4ede7e089a8325d7d57c89b7135f86f290eabd4b15bd149a64470e4918"
+    },
+    "protocol": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/protocol.json",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    },
+    "harness": {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/probe_iter310_read_erasure_v01.py",
+      "bytes": 12670,
+      "sha256": "dd1dfc11246cd8380dce2a97c4dd9188b3102eebee65cdb38c7c030bd3b14d7e"
+    }
+  },
+  "fixtures": [
+    {
+      "id": "intact",
+      "artifact": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/fixtures/intact.json",
+        "bytes": 1874,
+        "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+      },
+      "expected_admission": true
+    },
+    {
+      "id": "isolation_erased",
+      "artifact": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration310/fixtures/isolation_erased.json",
+        "bytes": 1833,
+        "sha256": "d0e3a1dad14242b1440d89e1f751008f4c8c3c2016af0f912cf804c09a96bfb2"
+      },
+      "expected_admission": false
+    }
+  ],
+  "actual_outcomes": [
+    {
+      "mode": "original",
+      "case": "intact",
+      "candidate_admitted": true,
+      "baseline_admitted": true,
+      "sql_joint_rows": 1,
+      "candidate_selected_and_joint_status": "MET",
+      "baseline_fact_selected_and_joint_status": "MET",
+      "all_four_actual_checker_results_valid": true,
+      "snapshot_digest_recomputed_from_declared_fixture_and_code_scope": true
+    },
+    {
+      "mode": "original",
+      "case": "isolation_erased",
+      "candidate_admitted": false,
+      "baseline_admitted": true,
+      "sql_joint_rows": 1,
+      "candidate_selected_and_joint_status": "UNRESOLVED",
+      "baseline_fact_selected_and_joint_status": "MET",
+      "all_four_actual_checker_results_valid": true,
+      "snapshot_digest_recomputed_from_declared_fixture_and_code_scope": true
+    },
+    {
+      "mode": "patched",
+      "case": "intact",
+      "candidate_admitted": true,
+      "baseline_admitted": true,
+      "sql_joint_rows": 1,
+      "candidate_selected_and_joint_status": "MET",
+      "baseline_fact_selected_and_joint_status": "MET",
+      "all_four_actual_checker_results_valid": true,
+      "snapshot_digest_recomputed_from_declared_fixture_and_code_scope": true
+    },
+    {
+      "mode": "patched",
+      "case": "isolation_erased",
+      "candidate_admitted": false,
+      "baseline_admitted": false,
+      "sql_joint_rows": 0,
+      "candidate_selected_and_joint_status": "UNRESOLVED",
+      "baseline_fact_selected_and_joint_status": "UNRESOLVED",
+      "all_four_actual_checker_results_valid": true,
+      "snapshot_digest_recomputed_from_declared_fixture_and_code_scope": true
+    }
+  ],
+  "checks": {
+    "plan_timestamp_precedes_retained_result_completion_timestamps": true,
+    "intact_fixture_is_original_v09_report_byte_exact": true,
+    "erased_fixture_is_exactly_one_unique_41_byte_line_deleted": true,
+    "only_JSON_field_removed": "/receipt_audit/checks/trace_isolation_observed",
+    "summary_PASS_identity_and_other_fields_unchanged": true,
+    "same_derived_descriptor_delivered_to_candidate_load_run_and_independent_baseline_inspect_run": true,
+    "both_loaders_receive_same_tar_direct_gate_identity_and_source_objects": true,
+    "baseline_inspect_run_performs_independent_native_and_report_binding_checks": true,
+    "baseline_joint_is_actual_SQL_query_over_its_own_three_admissions": true,
+    "fresh_in_memory_SQL_database_per_fixture": true,
+    "numeric_and_signature_positive_controls_for_both_implementations_held": true,
+    "candidate_observations_identical_between_original_and_patched_modes": true,
+    "all_17_original_source_input_pins_rehashed_now_and_unchanged": true,
+    "baseline_patch_inverse_recovers_every_original_byte": true,
+    "baseline_AST_only_changed_function": [
+      "retained_read_gate"
+    ],
+    "baseline_required_list_only_addition": "candidate.trace_isolation_observed",
+    "all_other_baseline_function_ASTs_unchanged": true,
+    "candidate_and_semantic_modules_unmodified": true,
+    "new_certificate_snapshot_digests_recomputed_from_plan_fixture_and_baseline_source_pin": true,
+    "no_original_frozen_CLI_invocation_or_hash_pin_bypass": true
+  },
+  "source_locations": {
+    "harness_same_input_loading": "probe_iter310_read_erasure_v01.py:118-129; derived descriptor replaces only the in-memory v09 candidate-report descriptor; both loaders independently read/parse those same pinned bytes.",
+    "independent_baseline_loader": "sql_baseline_v02.py:65-106; validates native protocol/source/input/host identities and candidate/direct/gate tar bindings, then inserts its own tar_members/run_identity rows.",
+    "actual_SQL_joint": "probe_iter310_read_erasure_v01.py:138-145; INSERT independent numeric/read/signature results, six-field JOIN with all three ok=1, fetch actual count, close per-fixture database.",
+    "conditional_certificate_projection": "probe_iter310_read_erasure_v01.py:146-154; candidate and baseline_fact_projection facts separately receive actual admissions/join rows; both use the unchanged semantic support checker.",
+    "one_field_fix": "patched/sql_baseline_v02.py:187 adds trace_isolation_observed to the explicit candidate flag list; existing missing/false detection at lines195-198 then applies."
+  },
+  "original_input_descriptors": [
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v07/receipt.tar",
+      "bytes": 245760,
+      "sha256": "f170b1ea7049aebb88edf37b6d6d8e88c1db5e23a77f3a44d845820f9cdfdc22"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v07/CANDIDATE_REPORT.json",
+      "bytes": 1325,
+      "sha256": "1765dd911ce2cb36fa30bad672d15c32d95eb015ba2e2ef171fb5f2cccb99b41"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v07/DIRECT_BASELINE_REPORT.json",
+      "bytes": 742,
+      "sha256": "9777b22a73e84b8964fea22172c0a9b0b71146dcde8554b0dc30fbad25c64673"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v07/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2012,
+      "sha256": "b10d4eb7d2e165bae32c2ffc59358e6513a207eba3a6f281e0d9962b6e615e1f"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v08/receipt.tar",
+      "bytes": 1853440,
+      "sha256": "f0f67991658d0e9dfe37760866cd13bc94f74202795821e60436b824fa854d0c"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v08/CANDIDATE_REPORT.json",
+      "bytes": 1829,
+      "sha256": "52f80a90cf135e448a5d285f3f000f73fd794d284eb5a12d3b0c933513023f24"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v08/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1183,
+      "sha256": "dbbca0696109e0cefc09b7196ce8e1aa7738c6cd18b2971b6699cd45d860ac4a"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v08/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2007,
+      "sha256": "fdd18bf4c0759e99cfccd578f949d2f79cda5942d7c45fa9dabfb54e959d89b0"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v09/receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v09/CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v09/DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/v09/POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/signature/ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/signature/verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/evidence/signature/sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/semantic/rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/package_build_v01/wine_layer_calibration_v02/semantic/rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    }
+  ],
+  "interpretation": [
+    "Original baseline summary-pass and selected predicates were insufficient for the explicit trace-isolation requirement: the erased fixture retained PASS summaries and produced baseline read admission plus a SQL joint row, while the candidate rejected the missing required field.",
+    "After the single-list insertion, the intact positive remains admitted by both adapters; the erased fixture is rejected by both, the baseline marks the required field missing/UNAVAILABLE, and its SQL joint count becomes zero.",
+    "The baseline_fact_projection certificates in the harness are newly generated semantic projections of baseline outputs. They are not certificates natively produced by the SQL baseline.",
+    "All supplied semantic certificates pass the checker, including the original baseline mistaken admission. This demonstrates conditional checking of admitted facts, not independent authentication of the erased external premise.",
+    "The retained semantic scope label is historical library metadata; each actual certificate snapshot binds the new plan, full derived-fixture descriptor and baseline-code digest. Original internal run identity remains unchanged."
+  ],
+  "limits": [
+    "Exactly two unique fixtures: one intact retained report and one single-field erasure, each evaluated under original and patched baseline modes. No natural error rate, general adapter equivalence or complete malformed-input assurance follows.",
+    "This review did not rerun either probe, either full calibration, SQL, semantic certificate checking or cryptography. It independently read results/source, compared bytes and ASTs, checked hash pins and recomputed the declared fixture-scope digest only.",
+    "There is no new physical Wine execution, historical execution authentication, trust-root refresh, human gold or new scientific replication.",
+    "Missing evidence produces UNRESOLVED support and does not establish that trace isolation or physical reading did not occur.",
+    "The synthetic external candidate report is transparently derived; it is not claimed to be newly authenticated historical evidence or to pass the unmodified frozen CLI.",
+    "Actual root process exits below are direct root observations; this reviewer read their result artifacts and did not own or poll those execution sessions.",
+    "Corrected full-package regression and public delivery are separate tasks and are not certified by this bounded probe QA."
+  ],
+  "root_reported_actual_executions": [
+    {
+      "mode": "original",
+      "chunk_id": "593854",
+      "exit_code": 0
+    },
+    {
+      "mode": "patched",
+      "chunk_id": "84385e",
+      "exit_code": 0
+    }
+  ],
+  "independent_read_tools": [
+    {
+      "chunk_id": "ba4ce5",
+      "exit_code": 0,
+      "scope": "plan, patch and bounded artifact inventory"
+    },
+    {
+      "chunk_id": "867223",
+      "exit_code": 0,
+      "scope": "entire frozen harness"
+    },
+    {
+      "chunk_id": "51e1d1",
+      "exit_code": 0,
+      "scope": "independent loader, selected-gate function and exact patch"
+    },
+    {
+      "chunk_id": "cb17a3",
+      "exit_code": 0,
+      "scope": "actual two result reports, selected observations and certificates"
+    },
+    {
+      "chunk_id": "554d70",
+      "exit_code": 0,
+      "scope": "canonical hash codec source; no module import"
+    }
+  ],
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER310_INDEPENDENT_ERASURE_QA_GUARD_V01.json",
+    "bytes": 3192,
+    "sha256": "0023efb98e6781aef95ded727eb6e5e1327cb3c0c953a36eadf26b5d1b26539f"
+  },
+  "blocking_findings": []
+}

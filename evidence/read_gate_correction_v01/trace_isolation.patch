@@ -1,0 +1,11 @@
+--- wine_v02/sql_baseline_v02.py
++++ wine_v03/sql_baseline_v02.py
+@@ -184,7 +184,7 @@
+     r = loaded[run_id]
+     cand = r['candidate']['receipt_audit']['checks']
+     direct = r['direct']['checks']
+-    requested = {'candidate': ['author_execve_same_pid', 'wine_open_observed', 'wine_positive_read_observed', 'execve_wine_order'],
++    requested = {'candidate': ['author_execve_same_pid', 'wine_open_observed', 'wine_positive_read_observed', 'execve_wine_order', 'trace_isolation_observed'],
+                  'direct': ['author_execve_same_pid', 'wine_open_and_read', 'execve_wine_order']}
+     flags, absent, failed = [], [], []
+     for kind, keys in requested.items():
