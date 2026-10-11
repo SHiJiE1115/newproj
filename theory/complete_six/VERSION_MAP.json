@@ -1,0 +1,107 @@
+{
+  "schema": "complete-six-public-version-map-v1",
+  "created_utc": "2026-10-11T13:05:20.032348+00:00",
+  "all_public_paths_relative_to": "publication root",
+  "inner_candidate_preserved": true,
+  "versions": [
+    {
+      "version": "original_v03",
+      "manifest_sha256": "1a0732bff1831ead2d9c79b1b0162072a0926a91f157a8b7b7f4c919483c0f3e",
+      "contract": {
+        "source_id": "original_v03/boundary_contract",
+        "original_bytes": 15387,
+        "original_sha256": "057d908ebdf20230893f87e910d1d635fd75c1197cfd9851229e5c9f16df754c"
+      },
+      "driver": {
+        "source_id": "original_v03/aggregate_driver",
+        "original_bytes": 18693,
+        "original_sha256": "0949c491df61e080040860132f404ee209a700c988fa5b398836669f2d9fa074"
+      },
+      "fresh_full_completed": true,
+      "attempt_id": "a17281c6fd304811b8163e869dcd57a4",
+      "status": "PASS_BOUNDARY_EXECUTABLE_LAYERS_WITH_ANALYTIC_PREMISES",
+      "observer_elapsed_seconds": 11199.117218999978,
+      "stage_elapsed_seconds": {
+        "catalogue": 229.4529999999795,
+        "orbits": 17.25,
+        "five": 98.71900000001187,
+        "six": 10833.703000000009
+      },
+      "explicit_records": 2747725,
+      "priority_witnesses": 4074031,
+      "analytic_cases_not_machine_reproved": 112971
+    },
+    {
+      "version": "candidate_v01_v08",
+      "public_root": "candidate",
+      "outer_manifest_sha256": "d863b8d0f090091620dfb61e4094b9803ae3871d698a682166d5060469fba929",
+      "boundary_manifest_sha256": "821f0838278132c08330e129a28e6e9204a4674edfd322faca840b1cb0d6e2df",
+      "contract": {
+        "source_id": "candidate/boundary_contract",
+        "original_bytes": 15251,
+        "original_sha256": "2ae522f22224068c27cd8593ccf28295610d6ca09aff7436c05ce76edbef0eb9"
+      },
+      "driver": {
+        "source_id": "candidate/aggregate_driver",
+        "original_bytes": 18693,
+        "original_sha256": "2d280157fd7897019b9f7c33c23cb1ad63dff483cbd0589973020b3e99283f06"
+      },
+      "fresh_full_completed": false,
+      "completed_scopes": [
+        "byte inventory",
+        "boundary plan",
+        "fixed-seven supplement"
+      ],
+      "original_full_is_not_candidate_fresh_full": true
+    }
+  ],
+  "scientific_mapping": {
+    "path": "execution_evidence/SCIENTIFIC_FILE_MAPPING_V01.json",
+    "bytes": 1359318,
+    "sha256": "1961383cfabce09a878b71084600ae662abd60d2a41777b651bbf54df3170cc7"
+  },
+  "manuscript_correspondence": {
+    "path": "execution_evidence/MANUSCRIPT_CORRESPONDENCE_V01.json",
+    "bytes": 1411,
+    "sha256": "341ffcdb5ac00fff45d826967c2e18f09d5a192b16dca5a4f75c3e3c3e25d83a"
+  },
+  "boundary_contract_changed_fields": [
+    "proof_bindings"
+  ],
+  "old_proof_bindings": [
+    {
+      "path": "paper/paper.tex",
+      "sha256": "17b9262634bb297cf9e5b23c8cc047f933a91ca2fd1897f8e7342a4f71d8d611"
+    },
+    {
+      "path": "proof/ANALYTIC_OBLIGATIONS_V01.md",
+      "sha256": "3c528932bc569286453247b7f100b8f327324aab7182ee9df68587f5dd481b3c"
+    },
+    {
+      "path": "history/INDEX_V01.json",
+      "sha256": "0293d12384b3334e5c8a66a476276c3dc4902656fce5fcbf4cab1b74071419f4"
+    }
+  ],
+  "candidate_proof_bindings": [
+    {
+      "path": "paper/paper.tex",
+      "sha256": "a6853c0bb42d3bfa22f0760d72248133b40152beded28e7dceaff63624f9fd8f"
+    },
+    {
+      "path": "proof/ANALYTIC_OBLIGATIONS_V01.md",
+      "sha256": "13a94dd2d85f6c5e4241cc3464bc2571ee3c5a090382a746411eeed9b435e3f3"
+    }
+  ],
+  "proof_binding_paths_relative_to": "respective boundary root",
+  "boundary_driver_change": "CONTRACT_SHA256 literal only",
+  "verify_bundle_entry_byte_identical": true,
+  "execution_evidence_index": "execution_evidence/INDEX_V01.json",
+  "historical_state_note": "Inner candidate release/licence flags and iteration270 running-state statements are preserved historical observations. Current publication wrapper describes access; it does not rewrite those observations or supply author approval.",
+  "new_candidate_fresh_full_execution": false,
+  "analytic_premises_computer_reproved": false,
+  "full_six_query_theorem_reverified": false,
+  "new_mathematical_execution": false,
+  "OS_signed_attestation": false,
+  "human_author_review_completed": false,
+  "scope": "Original closed V03 execution plus explicitly scoped candidate scientific correspondence. Publication is not a new full execution, formal proof, human review, or certification of original producer history."
+}

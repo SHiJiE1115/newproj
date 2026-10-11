@@ -1,0 +1,38 @@
+{
+  "schema": "complete-six-release-assets-v1",
+  "status": "PREPARED_PINNED_REVIEW_ARCHIVE",
+  "repo": "SHiJiE1115/newproj",
+  "tag": "complete-six-review-20261011-v01",
+  "release_url": "https://github.com/SHiJiE1115/newproj/releases/tag/complete-six-review-20261011-v01",
+  "assets": [
+    {
+      "name": "complete_six_review_v01.zip",
+      "bytes": 1253960690,
+      "sha256": "6d67d683e6b1df885df2c20f4157a11d7f71765ea219f06f9d32d4017b1693e8"
+    },
+    {
+      "name": "verify_download.py",
+      "bytes": 15225,
+      "sha256": "b4715714add5d5e14fbb5bca07871b71fda536877d28544d184b8cff0752ecad"
+    },
+    {
+      "name": "DOWNLOAD_GUIDE.md",
+      "bytes": 2632,
+      "sha256": "7f9b6766fc3e0e37b7027c30e2af9f4f82ff789662341db52ba1157a937775aa"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 263,
+      "sha256": "9d8b65aaea264c02dc1f6e1dde55df3af9ee67787b50a727626a8e56d62b5b9f"
+    }
+  ],
+  "candidate_manifest_sha256": "d863b8d0f090091620dfb61e4094b9803ae3871d698a682166d5060469fba929",
+  "outer_manifest_sha256": "92636a122d81855b28d61761a353ee402b872440eaf6df96b09afae37919089d",
+  "candidate_files": 5569,
+  "candidate_bytes": 1491310855,
+  "archive_entries": 5636,
+  "fresh_candidate_full_execution": false,
+  "new_blanket_licence_selected": false,
+  "human_author_review_completed": false,
+  "publication_is_formal_submission": false
+}
