@@ -1,0 +1,279 @@
+{
+  "schema": 1,
+  "status": "PASS_SCOPED_INDEPENDENT_TYPED_ADMISSION_QA",
+  "created_utc": "2026-10-11T20:47:46.821694+00:00",
+  "human_review": false,
+  "independent_rerun": false,
+  "question": "Typed integer-zero admission at the retained verify_exit interface and propagation of admitted facts through the existing semantic checker.",
+  "inputs": {
+    "plan": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/PLAN_V01.json",
+      "bytes": 5040,
+      "sha256": "62cd41fb4e97074574f1798c84c6156d2c4fc6a31e11543818f99b5a3cad67af"
+    },
+    "original_result": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/original_probe/RESULT_V01.json",
+      "bytes": 105640,
+      "sha256": "e44ebc27bf1dcea1940438e79ae6f5c6b8c00e58a24a5cc7acdb2d2acdbe8b18"
+    },
+    "patched_result": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/patched_probe/RESULT_V01.json",
+      "bytes": 106032,
+      "sha256": "f47cdc5bb7ada473dfeec5f98a103afe7e5b90a83c770227ec3c1e18ebf9f793"
+    },
+    "patch_preparation": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/PATCH_PREPARATION_V01.json",
+      "bytes": 1033,
+      "sha256": "7e82979c2f6b11e4a3edeece82b32e4e969bab784b2c9386dbd6b1df57fd9571"
+    },
+    "patch": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/patched/typed_exit.patch",
+      "bytes": 2281,
+      "sha256": "e08c083a6aa303f97b9c8a429d8e402c2650d4e9cdcebd85fdda4a906079ac6d"
+    },
+    "original_candidate": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01/layer_candidate.py",
+      "bytes": 22187,
+      "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b"
+    },
+    "patched_candidate": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/patched/layer_candidate.py",
+      "bytes": 22554,
+      "sha256": "7d86bd4ede7e089a8325d7d57c89b7135f86f290eabd4b15bd149a64470e4918"
+    },
+    "baseline": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01/sql_baseline_v02.py",
+      "bytes": 30360,
+      "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+    },
+    "protocol": {
+      "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01/protocol.json",
+      "bytes": 11979,
+      "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+    },
+    "harness": {
+      "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/probe_iter309_typed_admission_v01.py",
+      "bytes": 11761,
+      "sha256": "7cb31d4775af853bdf269db214debd705ee89a1451c6c9a45273531edf5dc462"
+    },
+    "semantic_modules": [
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01/semantic/rules_v2_core.py",
+        "bytes": 20969,
+        "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+      },
+      {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration305/wine_layer_calibration_v01/semantic/rules_v2_checker.py",
+        "bytes": 10859,
+        "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "id": "integer_zero",
+      "artifact": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/fixtures/integer_zero/ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+      },
+      "json_literal": "0",
+      "parsed_type": "int",
+      "expected_admitted": true,
+      "outside_verify_exit_token_byte_identical": true,
+      "original_control_exact": true
+    },
+    {
+      "id": "boolean_false",
+      "artifact": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/fixtures/boolean_false/ACCEPTANCE.json",
+        "bytes": 745,
+        "sha256": "3437f1414ed88e5b7eafceaba2b1ce4ac02be5ad055b238d994f6cd5a58f5f3d"
+      },
+      "json_literal": "false",
+      "parsed_type": "bool",
+      "expected_admitted": false,
+      "outside_verify_exit_token_byte_identical": true,
+      "original_control_exact": false
+    },
+    {
+      "id": "floating_zero",
+      "artifact": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/fixtures/floating_zero/ACCEPTANCE.json",
+        "bytes": 743,
+        "sha256": "a0c8653e1521e7b99dc1cdae9b8e91432dbef73f6d993cd92aadf2236514d3af"
+      },
+      "json_literal": "0.0",
+      "parsed_type": "float",
+      "expected_admitted": false,
+      "outside_verify_exit_token_byte_identical": true,
+      "original_control_exact": false
+    },
+    {
+      "id": "integer_one",
+      "artifact": {
+        "path": "D:/CodexResearch/ccfa-ccfa-01a0ce5d/artifacts/iteration309/fixtures/integer_one/ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "e2264f5c9ee5c2f1ceabd6d02412a0d2f4238d75dd5cf6b5b91e2a8935f911be"
+      },
+      "json_literal": "1",
+      "parsed_type": "int",
+      "expected_admitted": false,
+      "outside_verify_exit_token_byte_identical": true,
+      "original_control_exact": false
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "integer_zero",
+      "expected_admitted": true,
+      "original_candidate_admitted": true,
+      "patched_candidate_admitted": true,
+      "baseline_admitted_both_runs": true,
+      "original_signature_and_joint_status": "MET",
+      "patched_signature_and_joint_status": "MET",
+      "all_reported_semantic_checker_results_valid": true,
+      "both_helpers_same_fixture_bytes": true
+    },
+    {
+      "id": "boolean_false",
+      "expected_admitted": false,
+      "original_candidate_admitted": true,
+      "patched_candidate_admitted": false,
+      "baseline_admitted_both_runs": false,
+      "original_signature_and_joint_status": "MET",
+      "patched_signature_and_joint_status": "UNRESOLVED",
+      "all_reported_semantic_checker_results_valid": true,
+      "both_helpers_same_fixture_bytes": true
+    },
+    {
+      "id": "floating_zero",
+      "expected_admitted": false,
+      "original_candidate_admitted": true,
+      "patched_candidate_admitted": false,
+      "baseline_admitted_both_runs": false,
+      "original_signature_and_joint_status": "MET",
+      "patched_signature_and_joint_status": "UNRESOLVED",
+      "all_reported_semantic_checker_results_valid": true,
+      "both_helpers_same_fixture_bytes": true
+    },
+    {
+      "id": "integer_one",
+      "expected_admitted": false,
+      "original_candidate_admitted": false,
+      "patched_candidate_admitted": false,
+      "baseline_admitted_both_runs": false,
+      "original_signature_and_joint_status": "UNRESOLVED",
+      "patched_signature_and_joint_status": "UNRESOLVED",
+      "all_reported_semantic_checker_results_valid": true,
+      "both_helpers_same_fixture_bytes": true
+    }
+  ],
+  "checks": {
+    "all_four_fixture_bytes_and_pins_match_frozen_plan": true,
+    "three_mutants_change_only_the_single_verify_exit_token": true,
+    "integer_zero_control_is_byte_identical_to_original_acceptance": true,
+    "original_and_patch_results_bind_same_plan_harness_and_baseline": true,
+    "harness_passes_same_acceptance_bytes_to_both_actual_signature_helpers": true,
+    "harness_checks_original_pins_before_and_after_interface_calls": true,
+    "nine_original_v09_input_descriptors_rehashed_now_and_match": true,
+    "patch_inverse_recovers_every_original_candidate_byte": true,
+    "three_source_edits_only": true,
+    "added_function": [
+      "zero_exit_edge"
+    ],
+    "changed_existing_functions": [
+      "retained_signature"
+    ],
+    "all_other_function_ASTs_unchanged": true,
+    "unchanged_function_names": [
+      "all_edges",
+      "certify_layer",
+      "compare_keys",
+      "edge",
+      "load_run",
+      "load_semantics",
+      "main",
+      "numeric",
+      "pinned",
+      "plain",
+      "require",
+      "resolve_inputs",
+      "run",
+      "selected_read",
+      "sha"
+    ],
+    "candidate_numeric_and_read_positive_control_reports_unchanged": true,
+    "baseline_details_identical_between_original_and_patched_probes": true,
+    "candidate_non_exit_checks_unchanged_per_fixture": true,
+    "patched_integer_zero_positive_control_preserved": true,
+    "patch_rejects_false_float_zero_and_integer_one_in_actual_report": true,
+    "semantic_certificate_snapshot_binds_new_fixture_scope": true,
+    "no_scope_reuse_of_original_frozen_certificate": true
+  },
+  "interpretation": [
+    "The old candidate admitted JSON false and 0.0 at verify_exit and produced MET signature/joint certificates with checker.valid=true; the independently implemented baseline signature helper rejected both. This is observed in the retained actual probe results.",
+    "The new derived candidate requires exact int type and zero at the three process-exit checks. Actual four-case reports now agree with the fixed typed-exit contract.",
+    "The semantic checker correctly checks a support claim conditional on the supplied explicit fact table. It does not authenticate the external adapter; the old false admission propagating to a valid semantic certificate illustrates this boundary rather than a demonstrated semantic-kernel error.",
+    "The new fixtures were delivered to production helper functions in a declared derived scope. The frozen original CLI was not invoked and its fixed hash pin was not bypassed.",
+    "The independent baseline function here is retained_signature, not a fresh invocation of its complete SQLite calibration. No equivalence of every adapter check is inferred."
+  ],
+  "limits": [
+    "This QA reads, hashes and statically compares existing artifacts. It does not repeat the four probes or the closed six-scenario calibration.",
+    "Only verify_exit was dynamically varied. download_exit and gate gh_exit_code were statically confirmed to use the same strict helper and retained their integer-zero positive controls; no malformed-value probe at those two locations is claimed.",
+    "The executed plan contains exactly 0, false, 0.0 and 1. Null, string zero and missing-key cases were discussed but not executed and are not counted as evidence.",
+    "The patch adds required_type/observed_type diagnostic fields, so patched details and new-scope certificates are not claimed byte-identical to old reports.",
+    "No new cryptographic verification, trust-root refresh, author execution, independent scientific replication, natural error-rate estimate, novelty proof, performance advantage or human gold is established.",
+    "Probe terminal chunk/exit observations below were reported directly by root; this agent independently inspected their resultant files, not the original process sessions."
+  ],
+  "root_reported_actual_tools": [
+    {
+      "action": "plan preparation",
+      "chunk_id": "e3ef59",
+      "exit_code": 0
+    },
+    {
+      "action": "original four-case probe",
+      "chunk_id": "d5cf31",
+      "exit_code": 0
+    },
+    {
+      "action": "patch preparation",
+      "chunk_id": "092c7c",
+      "exit_code": 0
+    },
+    {
+      "action": "patched four-case probe",
+      "chunk_id": "d62e7b",
+      "exit_code": 0
+    }
+  ],
+  "independent_read_tools": [
+    {
+      "chunk_id": "7e8566",
+      "exit_code": 0,
+      "scope": "bounded iteration309 inventory"
+    },
+    {
+      "chunk_id": "0f27a5",
+      "exit_code": 0,
+      "scope": "plan and source patch"
+    },
+    {
+      "chunk_id": "9d0236",
+      "exit_code": 0,
+      "scope": "entire harness and patch preparation receipt"
+    },
+    {
+      "chunk_id": "9e198d",
+      "exit_code": 0,
+      "scope": "both reports selected admission, exit-edge, scope, fact and certificate fields"
+    }
+  ],
+  "guard": {
+    "path": "C:/Users/dongs/Documents/Codex/2026-09-23/ccfa-ccfa/maintenance/storage_resume_20261010/ITER309_INDEPENDENT_TYPED_QA_GUARD_V01.json",
+    "bytes": 3192,
+    "sha256": "f72909a9c9ab6d77b95fe89755d305833c0915608c8c9618791b8413ab9f6770"
+  },
+  "blocking_findings": []
+}

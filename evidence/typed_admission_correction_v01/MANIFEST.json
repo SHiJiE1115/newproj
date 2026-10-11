@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "status": "REVIEW_CANDIDATE_AFTER_ACTUAL_PROBES_AND_PACKAGE_REGRESSION",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "PLAN_V01.json",
+      "bytes": 5040,
+      "sha256": "62cd41fb4e97074574f1798c84c6156d2c4fc6a31e11543818f99b5a3cad67af"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5902,
+      "sha256": "2a7dcfa01075c99291b84e5767e038e62b4142e11434ecc2204d2d3987673688"
+    },
+    {
+      "path": "reproduce_typed_exit.py",
+      "bytes": 5904,
+      "sha256": "b3bc39830d560d6a6c93b7e84c55554c9b77e5e53db4aa86ce9427cc39b786c9"
+    },
+    {
+      "path": "results/INDEPENDENT_TYPED_ADMISSION_QA_V01.json",
+      "bytes": 12105,
+      "sha256": "d6a1a9e3122f36b6679c78d55e63f4be1ec19d2a4b79341768c3cba5a2fd2737"
+    },
+    {
+      "path": "results/original_probe.json",
+      "bytes": 105640,
+      "sha256": "e44ebc27bf1dcea1940438e79ae6f5c6b8c00e58a24a5cc7acdb2d2acdbe8b18"
+    },
+    {
+      "path": "results/PACKAGE_ACCEPTANCE_V01.json",
+      "bytes": 19531,
+      "sha256": "9534b38a7b390f922c3fc5028de719435e029749a1f6d2ac4d7014e684167ee1"
+    },
+    {
+      "path": "results/PACKAGE_BUILD_V01.json",
+      "bytes": 18142,
+      "sha256": "c7bd4841d559d74b1883f9fdf6ad6060c2d90eece4951134ec8c3969011ddc0b"
+    },
+    {
+      "path": "results/PACKAGE_EXECUTION_V01.json",
+      "bytes": 2059,
+      "sha256": "e5fe4745afa407ba65c95f029f4cf5505fb8653098168802e7001cb0d7e4cc6a"
+    },
+    {
+      "path": "results/patched_probe.json",
+      "bytes": 106032,
+      "sha256": "f47cdc5bb7ada473dfeec5f98a103afe7e5b90a83c770227ec3c1e18ebf9f793"
+    },
+    {
+      "path": "results/portable_probe.json",
+      "bytes": 3798,
+      "sha256": "719bf6024eb53f708a3fca0ba5178f20764c4cb3d3ae09595923e84eeb1e498f"
+    },
+    {
+      "path": "typed_exit.patch",
+      "bytes": 2281,
+      "sha256": "e08c083a6aa303f97b9c8a429d8e402c2650d4e9cdcebd85fdda4a906079ac6d"
+    },
+    {
+      "path": "wine_layer_calibration_v02.zip",
+      "bytes": 999672,
+      "sha256": "15ddc558509b0153c7105449fb490fb0ccbb759eedda0e01bd01b2424729518d"
+    }
+  ],
+  "scope": "Separate additive correction; no overwrite of frozen v01 artifacts.",
+  "actual_local_tools": {
+    "original_probe": "d5cf31/exit0",
+    "patched_probe": "d62e7b/exit0",
+    "portable_probe": "c64343/exit0",
+    "package_regression": "db3b20/exit0"
+  },
+  "byte_preservation": "Scoped * -text prevents Git newline conversion of original receipts and mixed-newline patch. Current root research index is explicitly LF."
+}

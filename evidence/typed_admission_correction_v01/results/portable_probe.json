@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "status": "PASS_FOUR_CASE_DIFFERENTIAL_AND_CORRECTION_REPRODUCED",
+  "cases": [
+    {
+      "id": "integer_zero",
+      "input_sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+      "parsed_type": "int",
+      "baseline_admitted": true,
+      "original": {
+        "admitted": true,
+        "signature_status": "MET",
+        "joint_status": "MET",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "corrected": {
+        "admitted": true,
+        "signature_status": "MET",
+        "joint_status": "MET",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "boolean_false",
+      "input_sha256": "3437f1414ed88e5b7eafceaba2b1ce4ac02be5ad055b238d994f6cd5a58f5f3d",
+      "parsed_type": "bool",
+      "baseline_admitted": false,
+      "original": {
+        "admitted": true,
+        "signature_status": "MET",
+        "joint_status": "MET",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "corrected": {
+        "admitted": false,
+        "signature_status": "UNRESOLVED",
+        "joint_status": "UNRESOLVED",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "floating_zero",
+      "input_sha256": "a0c8653e1521e7b99dc1cdae9b8e91432dbef73f6d993cd92aadf2236514d3af",
+      "parsed_type": "float",
+      "baseline_admitted": false,
+      "original": {
+        "admitted": true,
+        "signature_status": "MET",
+        "joint_status": "MET",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "corrected": {
+        "admitted": false,
+        "signature_status": "UNRESOLVED",
+        "joint_status": "UNRESOLVED",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "integer_one",
+      "input_sha256": "e2264f5c9ee5c2f1ceabd6d02412a0d2f4238d75dd5cf6b5b91e2a8935f911be",
+      "parsed_type": "int",
+      "baseline_admitted": false,
+      "original": {
+        "admitted": false,
+        "signature_status": "UNRESOLVED",
+        "joint_status": "UNRESOLVED",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "corrected": {
+        "admitted": false,
+        "signature_status": "UNRESOLVED",
+        "joint_status": "UNRESOLVED",
+        "signature_checker": {
+          "valid": true,
+          "errors": []
+        },
+        "joint_checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    }
+  ],
+  "four_unique_interface_interventions": true,
+  "fresh_crypto_verification": false,
+  "new_author_execution": false,
+  "original_cli_invoked": false,
+  "old_pin_bypassed": false,
+  "scope": "Helper-level synthetic regression; valid semantic certificates do not authenticate adapter facts. No natural-material accuracy or theoretical novelty claim."
+}

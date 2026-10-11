@@ -1,0 +1,2845 @@
+{
+  "schema": 1,
+  "status": "COMPLETED_BOUNDED_ADMISSION_INTERVENTION",
+  "created_utc": "2026-10-11T20:44:48.690957+00:00",
+  "mode": "original",
+  "plan": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\PLAN_V01.json",
+    "bytes": 5040,
+    "sha256": "62cd41fb4e97074574f1798c84c6156d2c4fc6a31e11543818f99b5a3cad67af"
+  },
+  "harness": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\probe_iter309_typed_admission_v01.py",
+    "bytes": 11761,
+    "sha256": "7cb31d4775af853bdf269db214debd705ee89a1451c6c9a45273531edf5dc462"
+  },
+  "candidate_source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\layer_candidate.py",
+    "bytes": 22187,
+    "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b"
+  },
+  "baseline_source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\sql_baseline_v02.py",
+    "bytes": 30360,
+    "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+  },
+  "cases": [
+    {
+      "id": "integer_zero",
+      "fixture": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\integer_zero\\ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+      },
+      "observed_value": 0,
+      "observed_python_type": "int",
+      "expected_admitted": true,
+      "candidate_admitted": true,
+      "baseline_admitted": true,
+      "candidate_contract_matches": true,
+      "baseline_contract_matches": true,
+      "same_derived_acceptance_bytes": true,
+      "candidate_details": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_signature_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "retained_verification_entry_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "retained_bundle_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "bundle_to_saved_verified_bundle",
+            "observed": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "expected": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "passed": true
+          },
+          {
+            "edge": "decoded_signed_statement",
+            "observed": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "expected": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "passed": true
+          },
+          {
+            "edge": "acceptance_status",
+            "observed": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "expected": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "acceptance_bundle_hash",
+            "observed": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "expected": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_verified_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.receipt_tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.run_id",
+            "observed": 38136338509,
+            "expected": 38136338509,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.attempt",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_verified",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_crypto_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "gate_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "statement_type",
+            "observed": "https://in-toto.io/Statement/v1",
+            "expected": "https://in-toto.io/Statement/v1",
+            "passed": true
+          },
+          {
+            "edge": "predicate_type",
+            "observed": "https://slsa.dev/provenance/v1",
+            "expected": "https://slsa.dev/provenance/v1",
+            "passed": true
+          },
+          {
+            "edge": "subject",
+            "observed": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "expected": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_workflow",
+            "observed": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "expected": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "passed": true
+          },
+          {
+            "edge": "statement_dependency",
+            "observed": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "expected": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_invocation",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "statement_builder",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRepository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowSHA",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryURI",
+            "observed": "https://github.com/SHiJiE1115/newproj",
+            "expected": "https://github.com/SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runInvocationURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.subjectAlternativeName",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.issuer",
+            "observed": "https://token.actions.githubusercontent.com",
+            "expected": "https://token.actions.githubusercontent.com",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runnerEnvironment",
+            "observed": "github-hosted",
+            "expected": "github-hosted",
+            "passed": true
+          }
+        ],
+        "retained_status": "RETAINED_CRYPTO_VERIFIED_RESULT",
+        "fresh_cryptographic_verification": false,
+        "trust_root_refreshed": false
+      },
+      "baseline_details": {
+        "positive": true,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "PASSED_RETAINED_BINDINGS_ONLY",
+        "checks": {
+          "acceptance_status": true,
+          "retained_exit_zero": true,
+          "acceptance_run": true,
+          "acceptance_commit_tar": true,
+          "acceptance_bundle_hash": true,
+          "acceptance_stdout_hash": true,
+          "gate_retained_verified": true,
+          "gate_retained_exit_hash": true,
+          "subject_exact": true,
+          "statement_types": true,
+          "workflow_repository_ref_path": true,
+          "resolved_dependency": true,
+          "invocation_run_attempt": true,
+          "builder_workflow": true,
+          "certificate_repo_commit_ref": true,
+          "certificate_invocation": true,
+          "certificate_workflow_uri": true,
+          "certificate_issuer": true
+        },
+        "fresh_cryptographic_verification": false,
+        "trust_root_refresh": false,
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "ACCEPTANCE.json"
+          },
+          {
+            "run": "v09",
+            "file": "verified.stdout.json",
+            "json_pointer_or_field": "/0/verificationResult"
+          },
+          {
+            "run": "v09",
+            "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+            "json_pointer_or_field": "/dsseEnvelope/payload"
+          },
+          {
+            "run": "v09",
+            "file": "POSTRUN_RELEASE_GATE.json",
+            "json_pointer_or_field": "/attestation"
+          }
+        ]
+      },
+      "numeric_admitted_unchanged": true,
+      "selected_read_admitted_unchanged": true,
+      "scope": {
+        "plan": "62cd41fb4e97074574f1798c84c6156d2c4fc6a31e11543818f99b5a3cad67af",
+        "fixture": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2",
+        "operation": "typed_verify_exit_intervention",
+        "source_mode": "original"
+      },
+      "scope_sha256": "338efa807e113891087a4cfc1b67a862bdcad827366eccc3862f4937ef38bfde",
+      "signature_certificate": {
+        "status": "MET",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_integer_zero:retained_signed_identity",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": true,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "support",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [],
+          "certificate_digest": "05ca4eac8b10e84d9af7a0586ad3e1c6670cdc6b6d02390e96d77858f6738c24",
+          "checked_worlds": 1,
+          "claim_digest": "5da7837db2b4c5ff64444248cfb59be4d4c8028e1098b2f7010cd32803ee862a",
+          "conditional_groups": [
+            [
+              "retained-evidence-projection",
+              [
+                "evidence-reference-0"
+              ]
+            ]
+          ],
+          "fixed_group": [
+            "evidence-reference-0"
+          ],
+          "input_digest": "33a6cf3ac189452635f5a6e891cab3dafa14c4f6d1a10fd6d827c109f6e31c1a",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "c46dc1feedcdfe65712993ec372f8789d4b51e1b4faaeb9ea3fce941066840ed",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "b3e62a7eba426e23ceed7d218a46637c29b03486fc59d1e4eb29b1d35dffd9ef",
+          "snapshot_digest": "338efa807e113891087a4cfc1b67a862bdcad827366eccc3862f4937ef38bfde",
+          "status": "MET",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          },
+          "world_consensus_status": "MET",
+          "world_proofs": [
+            {
+              "groups": [
+                [
+                  "evidence-reference-0"
+                ]
+              ],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "joint_certificate": {
+        "status": "MET",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_integer_zero:joint_scoped_receipt",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": true,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "support",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [],
+          "certificate_digest": "d4e2322672acf6df782389e343a9ad55e9a344af245d3e1c8c14ab69e38ac41d",
+          "checked_worlds": 1,
+          "claim_digest": "d30085b28e92f6609a5d3b04c0d6c9b6ff40c4f2dec6d74e64725ccfe33ce11e",
+          "conditional_groups": [
+            [
+              "retained-evidence-projection",
+              [
+                "evidence-reference-0"
+              ]
+            ]
+          ],
+          "fixed_group": [
+            "evidence-reference-0"
+          ],
+          "input_digest": "5a2d59ea4154729f7df2698d73bce24c92b2fc8a27e306a63cf42169bb5a30bb",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "0f50590e4afd755591550a8563e4937d0ad342505dd4460ede36748b2aea42aa",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "b3e62a7eba426e23ceed7d218a46637c29b03486fc59d1e4eb29b1d35dffd9ef",
+          "snapshot_digest": "338efa807e113891087a4cfc1b67a862bdcad827366eccc3862f4937ef38bfde",
+          "status": "MET",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          },
+          "world_consensus_status": "MET",
+          "world_proofs": [
+            {
+              "groups": [
+                [
+                  "evidence-reference-0"
+                ]
+              ],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "boolean_false",
+      "fixture": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\boolean_false\\ACCEPTANCE.json",
+        "bytes": 745,
+        "sha256": "3437f1414ed88e5b7eafceaba2b1ce4ac02be5ad055b238d994f6cd5a58f5f3d"
+      },
+      "observed_value": false,
+      "observed_python_type": "bool",
+      "expected_admitted": false,
+      "candidate_admitted": true,
+      "baseline_admitted": false,
+      "candidate_contract_matches": false,
+      "baseline_contract_matches": true,
+      "same_derived_acceptance_bytes": true,
+      "candidate_details": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_signature_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "retained_verification_entry_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "retained_bundle_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "bundle_to_saved_verified_bundle",
+            "observed": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "expected": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "passed": true
+          },
+          {
+            "edge": "decoded_signed_statement",
+            "observed": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "expected": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "passed": true
+          },
+          {
+            "edge": "acceptance_status",
+            "observed": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "expected": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "observed": false,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "acceptance_bundle_hash",
+            "observed": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "expected": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_verified_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.receipt_tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.run_id",
+            "observed": 38136338509,
+            "expected": 38136338509,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.attempt",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_verified",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_crypto_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "gate_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "statement_type",
+            "observed": "https://in-toto.io/Statement/v1",
+            "expected": "https://in-toto.io/Statement/v1",
+            "passed": true
+          },
+          {
+            "edge": "predicate_type",
+            "observed": "https://slsa.dev/provenance/v1",
+            "expected": "https://slsa.dev/provenance/v1",
+            "passed": true
+          },
+          {
+            "edge": "subject",
+            "observed": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "expected": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_workflow",
+            "observed": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "expected": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "passed": true
+          },
+          {
+            "edge": "statement_dependency",
+            "observed": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "expected": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_invocation",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "statement_builder",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRepository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowSHA",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryURI",
+            "observed": "https://github.com/SHiJiE1115/newproj",
+            "expected": "https://github.com/SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runInvocationURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.subjectAlternativeName",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.issuer",
+            "observed": "https://token.actions.githubusercontent.com",
+            "expected": "https://token.actions.githubusercontent.com",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runnerEnvironment",
+            "observed": "github-hosted",
+            "expected": "github-hosted",
+            "passed": true
+          }
+        ],
+        "retained_status": "RETAINED_CRYPTO_VERIFIED_RESULT",
+        "fresh_cryptographic_verification": false,
+        "trust_root_refreshed": false
+      },
+      "baseline_details": {
+        "positive": false,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "BINDING_MISMATCH",
+        "checks": {
+          "acceptance_status": true,
+          "retained_exit_zero": false,
+          "acceptance_run": true,
+          "acceptance_commit_tar": true,
+          "acceptance_bundle_hash": true,
+          "acceptance_stdout_hash": true,
+          "gate_retained_verified": true,
+          "gate_retained_exit_hash": true,
+          "subject_exact": true,
+          "statement_types": true,
+          "workflow_repository_ref_path": true,
+          "resolved_dependency": true,
+          "invocation_run_attempt": true,
+          "builder_workflow": true,
+          "certificate_repo_commit_ref": true,
+          "certificate_invocation": true,
+          "certificate_workflow_uri": true,
+          "certificate_issuer": true
+        },
+        "fresh_cryptographic_verification": false,
+        "trust_root_refresh": false,
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "ACCEPTANCE.json"
+          },
+          {
+            "run": "v09",
+            "file": "verified.stdout.json",
+            "json_pointer_or_field": "/0/verificationResult"
+          },
+          {
+            "run": "v09",
+            "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+            "json_pointer_or_field": "/dsseEnvelope/payload"
+          },
+          {
+            "run": "v09",
+            "file": "POSTRUN_RELEASE_GATE.json",
+            "json_pointer_or_field": "/attestation"
+          }
+        ]
+      },
+      "numeric_admitted_unchanged": true,
+      "selected_read_admitted_unchanged": true,
+      "scope": {
+        "plan": "62cd41fb4e97074574f1798c84c6156d2c4fc6a31e11543818f99b5a3cad67af",
+        "fixture": "3437f1414ed88e5b7eafceaba2b1ce4ac02be5ad055b238d994f6cd5a58f5f3d",
+        "operation": "typed_verify_exit_intervention",
+        "source_mode": "original"
+      },
+      "scope_sha256": "873ad0c2af05681120a76ca3dc655785dc32bfb9f97662b7af657a0819fa0a4b",
+      "signature_certificate": {
+        "status": "MET",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_boolean_false:retained_signed_identity",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": true,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "support",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [],
+          "certificate_digest": "4c9ad184fdb4709a438a29e09436119c60d0ee7061f9d7757b02ebf0c67a3670",
+          "checked_worlds": 1,
+          "claim_digest": "147689fb0a7d05abf71ed6c4178686a94e73d1fd5413ef256acb373acac31ca3",
+          "conditional_groups": [
+            [
+              "retained-evidence-projection",
+              [
+                "evidence-reference-0"
+              ]
+            ]
+          ],
+          "fixed_group": [
+            "evidence-reference-0"
+          ],
+          "input_digest": "f4d8a5bd93e104851852efc49eabf15a052f8582a6484de6116c8d7478455927",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "06281e6f7b5a1e05f2a0cff4af4c428a5f0b878c12c9cac18c4f06a08811d2a0",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "905e60299a2afcdf0f0214bf68a67ed401af41a3c754290a52391e29192b0622",
+          "snapshot_digest": "873ad0c2af05681120a76ca3dc655785dc32bfb9f97662b7af657a0819fa0a4b",
+          "status": "MET",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          },
+          "world_consensus_status": "MET",
+          "world_proofs": [
+            {
+              "groups": [
+                [
+                  "evidence-reference-0"
+                ]
+              ],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "joint_certificate": {
+        "status": "MET",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_boolean_false:joint_scoped_receipt",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": true,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "support",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [],
+          "certificate_digest": "7decf35c457e13ad52f191a8ca15d1bdd539c65e49c49f09bfa3846a3aec29bc",
+          "checked_worlds": 1,
+          "claim_digest": "1f5c3aa4c8be3fd37e3c6d111d8937c38ba5f6c83c08aabaf9dcee1c2cf57e28",
+          "conditional_groups": [
+            [
+              "retained-evidence-projection",
+              [
+                "evidence-reference-0"
+              ]
+            ]
+          ],
+          "fixed_group": [
+            "evidence-reference-0"
+          ],
+          "input_digest": "1d5f5cb99ead7b971d726b4265cb8b0214e09dd29ffd6134a8ee46761f296599",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "3c06db9da45e41fdbc6239374ce9cd13ca487d433298f7eab9efa86810ab2ff7",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "905e60299a2afcdf0f0214bf68a67ed401af41a3c754290a52391e29192b0622",
+          "snapshot_digest": "873ad0c2af05681120a76ca3dc655785dc32bfb9f97662b7af657a0819fa0a4b",
+          "status": "MET",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          },
+          "world_consensus_status": "MET",
+          "world_proofs": [
+            {
+              "groups": [
+                [
+                  "evidence-reference-0"
+                ]
+              ],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "floating_zero",
+      "fixture": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\floating_zero\\ACCEPTANCE.json",
+        "bytes": 743,
+        "sha256": "a0c8653e1521e7b99dc1cdae9b8e91432dbef73f6d993cd92aadf2236514d3af"
+      },
+      "observed_value": 0.0,
+      "observed_python_type": "float",
+      "expected_admitted": false,
+      "candidate_admitted": true,
+      "baseline_admitted": false,
+      "candidate_contract_matches": false,
+      "baseline_contract_matches": true,
+      "same_derived_acceptance_bytes": true,
+      "candidate_details": {
+        "source": "v09",
+        "admitted": true,
+        "checks": [
+          {
+            "edge": "retained_signature_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "retained_verification_entry_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "retained_bundle_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "bundle_to_saved_verified_bundle",
+            "observed": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "expected": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "passed": true
+          },
+          {
+            "edge": "decoded_signed_statement",
+            "observed": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "expected": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "passed": true
+          },
+          {
+            "edge": "acceptance_status",
+            "observed": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "expected": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "observed": 0.0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "acceptance_bundle_hash",
+            "observed": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "expected": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_verified_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.receipt_tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.run_id",
+            "observed": 38136338509,
+            "expected": 38136338509,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.attempt",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_verified",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_crypto_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "gate_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "statement_type",
+            "observed": "https://in-toto.io/Statement/v1",
+            "expected": "https://in-toto.io/Statement/v1",
+            "passed": true
+          },
+          {
+            "edge": "predicate_type",
+            "observed": "https://slsa.dev/provenance/v1",
+            "expected": "https://slsa.dev/provenance/v1",
+            "passed": true
+          },
+          {
+            "edge": "subject",
+            "observed": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "expected": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_workflow",
+            "observed": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "expected": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "passed": true
+          },
+          {
+            "edge": "statement_dependency",
+            "observed": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "expected": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_invocation",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "statement_builder",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRepository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowSHA",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryURI",
+            "observed": "https://github.com/SHiJiE1115/newproj",
+            "expected": "https://github.com/SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runInvocationURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.subjectAlternativeName",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.issuer",
+            "observed": "https://token.actions.githubusercontent.com",
+            "expected": "https://token.actions.githubusercontent.com",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runnerEnvironment",
+            "observed": "github-hosted",
+            "expected": "github-hosted",
+            "passed": true
+          }
+        ],
+        "retained_status": "RETAINED_CRYPTO_VERIFIED_RESULT",
+        "fresh_cryptographic_verification": false,
+        "trust_root_refreshed": false
+      },
+      "baseline_details": {
+        "positive": false,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "BINDING_MISMATCH",
+        "checks": {
+          "acceptance_status": true,
+          "retained_exit_zero": false,
+          "acceptance_run": true,
+          "acceptance_commit_tar": true,
+          "acceptance_bundle_hash": true,
+          "acceptance_stdout_hash": true,
+          "gate_retained_verified": true,
+          "gate_retained_exit_hash": true,
+          "subject_exact": true,
+          "statement_types": true,
+          "workflow_repository_ref_path": true,
+          "resolved_dependency": true,
+          "invocation_run_attempt": true,
+          "builder_workflow": true,
+          "certificate_repo_commit_ref": true,
+          "certificate_invocation": true,
+          "certificate_workflow_uri": true,
+          "certificate_issuer": true
+        },
+        "fresh_cryptographic_verification": false,
+        "trust_root_refresh": false,
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "ACCEPTANCE.json"
+          },
+          {
+            "run": "v09",
+            "file": "verified.stdout.json",
+            "json_pointer_or_field": "/0/verificationResult"
+          },
+          {
+            "run": "v09",
+            "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+            "json_pointer_or_field": "/dsseEnvelope/payload"
+          },
+          {
+            "run": "v09",
+            "file": "POSTRUN_RELEASE_GATE.json",
+            "json_pointer_or_field": "/attestation"
+          }
+        ]
+      },
+      "numeric_admitted_unchanged": true,
+      "selected_read_admitted_unchanged": true,
+      "scope": {
+        "plan": "62cd41fb4e97074574f1798c84c6156d2c4fc6a31e11543818f99b5a3cad67af",
+        "fixture": "a0c8653e1521e7b99dc1cdae9b8e91432dbef73f6d993cd92aadf2236514d3af",
+        "operation": "typed_verify_exit_intervention",
+        "source_mode": "original"
+      },
+      "scope_sha256": "661f4d219a5532cf71e87e4f61b57120192ae7ff4c091ad7fc76a42f5afd64eb",
+      "signature_certificate": {
+        "status": "MET",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_floating_zero:retained_signed_identity",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": true,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "support",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [],
+          "certificate_digest": "c63a92cc0b8a175d89897ae5abfbb302da8a72eeaef68d39a1ddc7eecc617c69",
+          "checked_worlds": 1,
+          "claim_digest": "2f91148a7ecf8d4af1da14f85f7c58a80ce2d871c9b59066dbe3e0d2950bb856",
+          "conditional_groups": [
+            [
+              "retained-evidence-projection",
+              [
+                "evidence-reference-0"
+              ]
+            ]
+          ],
+          "fixed_group": [
+            "evidence-reference-0"
+          ],
+          "input_digest": "5671c7870be3db5dfd2380000b9ade725fae745d9ca1ce46b9b10c9a004c5975",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "6a74cf50fecb4fc526b4d69d7109d99b641092f071d2b8655c3cb0ff179d3f8b",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "5daab0315a251a6c7ddeeb6c565818de2c39e23dcf1ed58b1dc1abefbd5be1ce",
+          "snapshot_digest": "661f4d219a5532cf71e87e4f61b57120192ae7ff4c091ad7fc76a42f5afd64eb",
+          "status": "MET",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          },
+          "world_consensus_status": "MET",
+          "world_proofs": [
+            {
+              "groups": [
+                [
+                  "evidence-reference-0"
+                ]
+              ],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "joint_certificate": {
+        "status": "MET",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_floating_zero:joint_scoped_receipt",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": true,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "support",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [],
+          "certificate_digest": "0b73b189788ac1fae0b7949525b84b27a12cd5d082e28e8f882d937d3c2276bb",
+          "checked_worlds": 1,
+          "claim_digest": "f6220d61df27cee5f3ba4e3d0ce5257abf814c54e7dfd4ad891ebe83bebe2103",
+          "conditional_groups": [
+            [
+              "retained-evidence-projection",
+              [
+                "evidence-reference-0"
+              ]
+            ]
+          ],
+          "fixed_group": [
+            "evidence-reference-0"
+          ],
+          "input_digest": "42cd51c699d697a4c779c755f8febb0e1fe3de92eb56c40150b73b4ed98b5b39",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "dc2a9f8b265619e9884ff2ed8c11409b20a48a522db8e88ae2cff11bee4ae28a",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "5daab0315a251a6c7ddeeb6c565818de2c39e23dcf1ed58b1dc1abefbd5be1ce",
+          "snapshot_digest": "661f4d219a5532cf71e87e4f61b57120192ae7ff4c091ad7fc76a42f5afd64eb",
+          "status": "MET",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          },
+          "world_consensus_status": "MET",
+          "world_proofs": [
+            {
+              "groups": [
+                [
+                  "evidence-reference-0"
+                ]
+              ],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "0b02cc7b46dfd1081db8e6b6a8d2480cf942b0041b78ae9a3741951bac2aafab"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "integer_one",
+      "fixture": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\integer_one\\ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "e2264f5c9ee5c2f1ceabd6d02412a0d2f4238d75dd5cf6b5b91e2a8935f911be"
+      },
+      "observed_value": 1,
+      "observed_python_type": "int",
+      "expected_admitted": false,
+      "candidate_admitted": false,
+      "baseline_admitted": false,
+      "candidate_contract_matches": true,
+      "baseline_contract_matches": true,
+      "same_derived_acceptance_bytes": true,
+      "candidate_details": {
+        "source": "v09",
+        "admitted": false,
+        "checks": [
+          {
+            "edge": "retained_signature_to_target.repository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.run_id",
+            "observed": "38136338509",
+            "expected": "38136338509",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.attempt",
+            "observed": "1",
+            "expected": "1",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.protocol_sha256",
+            "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+            "passed": true
+          },
+          {
+            "edge": "retained_signature_to_target.tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "retained_verification_entry_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "retained_bundle_count",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "bundle_to_saved_verified_bundle",
+            "observed": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "expected": {
+              "canonical_sha256": "07ea8bc8cd9a745a252e5fc77875eb999f9285a5b9736a78f6aa0f36c00adc13"
+            },
+            "passed": true
+          },
+          {
+            "edge": "decoded_signed_statement",
+            "observed": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "expected": {
+              "canonical_sha256": "ac0dd954359658eaf241aced0cc2c227e9c6735aae35244417b226c718aca36c"
+            },
+            "passed": true
+          },
+          {
+            "edge": "acceptance_status",
+            "observed": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "expected": "PASS_RETAINED_SIGNATURE_BUNDLE",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.download_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.verify_exit",
+            "observed": 1,
+            "expected": 0,
+            "passed": false
+          },
+          {
+            "edge": "acceptance_bundle_hash",
+            "observed": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "expected": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5",
+            "passed": true
+          },
+          {
+            "edge": "acceptance_verified_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.receipt_tar_sha256",
+            "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.source_commit",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "acceptance.run_id",
+            "observed": 38136338509,
+            "expected": 38136338509,
+            "passed": true
+          },
+          {
+            "edge": "acceptance.attempt",
+            "observed": 1,
+            "expected": 1,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_verified",
+            "observed": true,
+            "expected": true,
+            "passed": true
+          },
+          {
+            "edge": "gate_retained_crypto_exit",
+            "observed": 0,
+            "expected": 0,
+            "passed": true
+          },
+          {
+            "edge": "gate_stdout_hash",
+            "observed": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "expected": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc",
+            "passed": true
+          },
+          {
+            "edge": "statement_type",
+            "observed": "https://in-toto.io/Statement/v1",
+            "expected": "https://in-toto.io/Statement/v1",
+            "passed": true
+          },
+          {
+            "edge": "predicate_type",
+            "observed": "https://slsa.dev/provenance/v1",
+            "expected": "https://slsa.dev/provenance/v1",
+            "passed": true
+          },
+          {
+            "edge": "subject",
+            "observed": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "expected": [
+              {
+                "name": "receipt.tar",
+                "digest": {
+                  "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+                }
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_workflow",
+            "observed": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "expected": {
+              "path": ".github/workflows/rrnc-wine-strace.yml",
+              "ref": "refs/heads/trace-isolation-v09-fd-observation",
+              "repository": "https://github.com/SHiJiE1115/newproj"
+            },
+            "passed": true
+          },
+          {
+            "edge": "statement_dependency",
+            "observed": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "expected": [
+              {
+                "digest": {
+                  "gitCommit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b"
+                },
+                "uri": "git+https://github.com/SHiJiE1115/newproj@refs/heads/trace-isolation-v09-fd-observation"
+              }
+            ],
+            "passed": true
+          },
+          {
+            "edge": "statement_invocation",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "statement_builder",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRepository",
+            "observed": "SHiJiE1115/newproj",
+            "expected": "SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowSHA",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.githubWorkflowRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryURI",
+            "observed": "https://github.com/SHiJiE1115/newproj",
+            "expected": "https://github.com/SHiJiE1115/newproj",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.sourceRepositoryRef",
+            "observed": "refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runInvocationURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "expected": "https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.subjectAlternativeName",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildSignerDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigURI",
+            "observed": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "expected": "https://github.com/SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml@refs/heads/trace-isolation-v09-fd-observation",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.buildConfigDigest",
+            "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.issuer",
+            "observed": "https://token.actions.githubusercontent.com",
+            "expected": "https://token.actions.githubusercontent.com",
+            "passed": true
+          },
+          {
+            "edge": "retained_certificate.runnerEnvironment",
+            "observed": "github-hosted",
+            "expected": "github-hosted",
+            "passed": true
+          }
+        ],
+        "retained_status": "RETAINED_CRYPTO_VERIFIED_RESULT",
+        "fresh_cryptographic_verification": false,
+        "trust_root_refreshed": false
+      },
+      "baseline_details": {
+        "positive": false,
+        "key": {
+          "repository": "SHiJiE1115/newproj",
+          "source_commit": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+          "run_id": "38136338509",
+          "attempt": "1",
+          "protocol_sha256": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+          "tar_sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+        },
+        "detail_status": "BINDING_MISMATCH",
+        "checks": {
+          "acceptance_status": true,
+          "retained_exit_zero": false,
+          "acceptance_run": true,
+          "acceptance_commit_tar": true,
+          "acceptance_bundle_hash": true,
+          "acceptance_stdout_hash": true,
+          "gate_retained_verified": true,
+          "gate_retained_exit_hash": true,
+          "subject_exact": true,
+          "statement_types": true,
+          "workflow_repository_ref_path": true,
+          "resolved_dependency": true,
+          "invocation_run_attempt": true,
+          "builder_workflow": true,
+          "certificate_repo_commit_ref": true,
+          "certificate_invocation": true,
+          "certificate_workflow_uri": true,
+          "certificate_issuer": true
+        },
+        "fresh_cryptographic_verification": false,
+        "trust_root_refresh": false,
+        "evidence": [
+          {
+            "run": "v09",
+            "file": "ACCEPTANCE.json"
+          },
+          {
+            "run": "v09",
+            "file": "verified.stdout.json",
+            "json_pointer_or_field": "/0/verificationResult"
+          },
+          {
+            "run": "v09",
+            "file": "sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+            "json_pointer_or_field": "/dsseEnvelope/payload"
+          },
+          {
+            "run": "v09",
+            "file": "POSTRUN_RELEASE_GATE.json",
+            "json_pointer_or_field": "/attestation"
+          }
+        ]
+      },
+      "numeric_admitted_unchanged": true,
+      "selected_read_admitted_unchanged": true,
+      "scope": {
+        "plan": "62cd41fb4e97074574f1798c84c6156d2c4fc6a31e11543818f99b5a3cad67af",
+        "fixture": "e2264f5c9ee5c2f1ceabd6d02412a0d2f4238d75dd5cf6b5b91e2a8935f911be",
+        "operation": "typed_verify_exit_intervention",
+        "source_mode": "original"
+      },
+      "scope_sha256": "2feb007322b42ab38e0f3ad9b55d52a55a423f873219d37a27153d28b4587d15",
+      "signature_certificate": {
+        "status": "UNRESOLVED",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_integer_one:retained_signed_identity",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": false,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "neutral",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [
+            [
+              [
+                "evidence-reference-0"
+              ],
+              "retained-evidence-projection"
+            ]
+          ],
+          "certificate_digest": "f4212aabece7a75a32006d10d9523c37160ca0ce941fac06531eed957d6cc984",
+          "checked_worlds": 1,
+          "claim_digest": "6f507fbfa471ee162a9f9f8e1826baf7d4cdf3c70457f17b6eda7fffcd0a63b4",
+          "conditional_groups": [],
+          "fixed_group": null,
+          "input_digest": "c77796fd20d2e8dbfcfc69c642f6675fad40756974a71afc557e97090f37a1de",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "2220ee7b034e489f90a3b59d2c540d71d55e13bc999c4950b1fd40109c3e9004",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "0334d002ad6517ea7a301a43f9c8723293ea97324345ad3a1a3e32acd912d0f3",
+          "snapshot_digest": "2feb007322b42ab38e0f3ad9b55d52a55a423f873219d37a27153d28b4587d15",
+          "status": "UNRESOLVED",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "10e7a4d2dbd9e93688109d4f068c2c6115234f6287dbd764dcb63383e45f4d23"
+          },
+          "world_consensus_status": "UNRESOLVED",
+          "world_proofs": [
+            {
+              "groups": [],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "5bd2caf10f261cfbec09863d096d21052d0a908e8995c79c8f5af825f66a3433"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      "joint_certificate": {
+        "status": "UNRESOLVED",
+        "claim": {
+          "admissible_bases": [
+            "HASHED_ARTIFACT"
+          ],
+          "claim_id": "typed_verify_exit_integer_one:joint_scoped_receipt",
+          "closed_scope": false,
+          "required_level": "reported",
+          "separation_dimensions": [
+            "run"
+          ],
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          }
+        },
+        "admitted_fact_table": {
+          "facts": {
+            "evidence-reference-0": {
+              "applicable": false,
+              "basis": "HASHED_ARTIFACT",
+              "direction": "neutral",
+              "level": "reported"
+            }
+          },
+          "origins": {
+            "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e": {
+              "run": [
+                "b059c9b532b8046bfa00c61e79a9422aaa722a50fda808034bf7ce680db6970e"
+              ]
+            }
+          },
+          "world_id": "retained-evidence-projection"
+        },
+        "certificate": {
+          "blocking_world_by_group": [
+            [
+              [
+                "evidence-reference-0"
+              ],
+              "retained-evidence-projection"
+            ]
+          ],
+          "certificate_digest": "326fffcaaf3d6bed7520a045b4874f991dce66c02718060eeaf2ba9325479f0f",
+          "checked_worlds": 1,
+          "claim_digest": "9d3defb0024f8982472e3ace4714a9adfd7575201dec9d535106a05bffca6642",
+          "conditional_groups": [],
+          "fixed_group": null,
+          "input_digest": "bb671f7814c47e4e6b3c1bfcf83b78149dc296eb121447a8f6ab1ce71ab5f200",
+          "max_group_candidates": null,
+          "max_world_checks": null,
+          "predicate": "support",
+          "quantifier": "FOR_ALL_WORLDS_EXISTS_GROUP",
+          "records_digest": "615f12cd84ec3d379c2bb50e431307ec244e629951bcce50b067ec256e6ab781",
+          "replication_r": 2,
+          "rule_version": "rules-v2.1",
+          "scope_digest": "0334d002ad6517ea7a301a43f9c8723293ea97324345ad3a1a3e32acd912d0f3",
+          "snapshot_digest": "2feb007322b42ab38e0f3ad9b55d52a55a423f873219d37a27153d28b4587d15",
+          "status": "UNRESOLVED",
+          "target": {
+            "kind": "PROSPECTIVE_RUN",
+            "target_id": "c1f306682837275f1da1080139a77e61070331c8838820c36cbf500af612133a"
+          },
+          "world_consensus_status": "UNRESOLVED",
+          "world_proofs": [
+            {
+              "groups": [],
+              "world_id": "retained-evidence-projection"
+            }
+          ],
+          "worlds_digest": "5bd2caf10f261cfbec09863d096d21052d0a908e8995c79c8f5af825f66a3433"
+        },
+        "checker": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    }
+  ],
+  "case_count": 4,
+  "candidate_contract_mismatches": [
+    "boolean_false",
+    "floating_zero"
+  ],
+  "baseline_contract_mismatches": [],
+  "original_inputs_unchanged": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\v09\\receipt.tar",
+      "bytes": 2314240,
+      "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\v09\\CANDIDATE_REPORT.json",
+      "bytes": 1874,
+      "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\v09\\DIRECT_BASELINE_REPORT.json",
+      "bytes": 1204,
+      "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\v09\\POSTRUN_RELEASE_GATE.json",
+      "bytes": 2373,
+      "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\signature\\ACCEPTANCE.json",
+      "bytes": 741,
+      "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\signature\\verified.stdout.json",
+      "bytes": 15110,
+      "sha256": "b58698c3763ea5499d8ff3e80cd81d44ae37c2bc6f6879887d4d52c0729c73cc"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\signature\\sha256-4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc.jsonl",
+      "bytes": 11909,
+      "sha256": "a0421ae8d55b90f72ae88794ad42612a8cb446b1c2c4008ff325bd85c8265ea5"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\semantic\\rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\semantic\\rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    }
+  ],
+  "same_information_scope": "Both signature helpers consume identical acceptance, bundle, verified output, gate and identity. The baseline signature helper is pure and does not execute the later SQLite join; candidate joint status uses actual unchanged numeric/read admissions plus its signature admission.",
+  "fresh_cryptographic_verification": false,
+  "fresh_author_execution": false,
+  "original_cli_pin_bypassed": false,
+  "original_cli_invoked": false,
+  "human_gold": false,
+  "new_llm_calls": 0,
+  "semantic_checker_is_not_adapter_authentication": true,
+  "numeric_positive_control": {
+    "csv_source": "v09",
+    "summary_source": "v09",
+    "summary_member": "out/author_result_175e5ecdd8e0857afa981d0c20e8ac59.json",
+    "checks": [
+      {
+        "edge": "csv_donor_to_target.repository",
+        "observed": "SHiJiE1115/newproj",
+        "expected": "SHiJiE1115/newproj",
+        "passed": true
+      },
+      {
+        "edge": "csv_donor_to_target.source_commit",
+        "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "passed": true
+      },
+      {
+        "edge": "csv_donor_to_target.run_id",
+        "observed": "38136338509",
+        "expected": "38136338509",
+        "passed": true
+      },
+      {
+        "edge": "csv_donor_to_target.attempt",
+        "observed": "1",
+        "expected": "1",
+        "passed": true
+      },
+      {
+        "edge": "csv_donor_to_target.protocol_sha256",
+        "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "passed": true
+      },
+      {
+        "edge": "csv_donor_to_target.tar_sha256",
+        "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+        "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+        "passed": true
+      },
+      {
+        "edge": "summary_to_target.repository",
+        "observed": "SHiJiE1115/newproj",
+        "expected": "SHiJiE1115/newproj",
+        "passed": true
+      },
+      {
+        "edge": "summary_to_target.source_commit",
+        "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "passed": true
+      },
+      {
+        "edge": "summary_to_target.run_id",
+        "observed": "38136338509",
+        "expected": "38136338509",
+        "passed": true
+      },
+      {
+        "edge": "summary_to_target.attempt",
+        "observed": "1",
+        "expected": "1",
+        "passed": true
+      },
+      {
+        "edge": "summary_to_target.protocol_sha256",
+        "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "passed": true
+      },
+      {
+        "edge": "summary_to_target.tar_sha256",
+        "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+        "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+        "passed": true
+      },
+      {
+        "edge": "present.csv",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "present.summary",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "present.params",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "csv_fields",
+        "observed": [
+          "draw",
+          "seed",
+          "train_accuracy",
+          "test_accuracy",
+          "n_leaves",
+          "height",
+          "bound",
+          "time"
+        ],
+        "expected": [
+          "draw",
+          "seed",
+          "train_accuracy",
+          "test_accuracy",
+          "n_leaves",
+          "height",
+          "bound",
+          "time"
+        ],
+        "passed": true
+      },
+      {
+        "edge": "row_count",
+        "observed": 25,
+        "expected": 25,
+        "passed": true
+      },
+      {
+        "edge": "summary_csv_rows",
+        "observed": 25,
+        "expected": 25,
+        "passed": true
+      },
+      {
+        "edge": "csv_to_recipient_summary_sha256",
+        "observed": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+        "expected": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+        "passed": true
+      },
+      {
+        "edge": "summary_first_row",
+        "observed": {
+          "draw": "0",
+          "seed": "1",
+          "train_accuracy": "1.0",
+          "test_accuracy": "0.9555555555555556",
+          "n_leaves": "5",
+          "height": "3",
+          "bound": "1.4162629280872547",
+          "time": "0.0022284984588623047"
+        },
+        "expected": {
+          "draw": "0",
+          "seed": "1",
+          "train_accuracy": "1.0",
+          "test_accuracy": "0.9555555555555556",
+          "n_leaves": "5",
+          "height": "3",
+          "bound": "1.4162629280872547",
+          "time": "0.0022284984588623047"
+        },
+        "passed": true
+      },
+      {
+        "edge": "summary_last_row",
+        "observed": {
+          "draw": "24",
+          "seed": "241",
+          "train_accuracy": "0.9774436090225563",
+          "test_accuracy": "0.8666666666666667",
+          "n_leaves": "6",
+          "height": "4",
+          "bound": "2.668632064704625",
+          "time": "0.008466243743896484"
+        },
+        "expected": {
+          "draw": "24",
+          "seed": "241",
+          "train_accuracy": "0.9774436090225563",
+          "test_accuracy": "0.8666666666666667",
+          "n_leaves": "6",
+          "height": "4",
+          "bound": "2.668632064704625",
+          "time": "0.008466243743896484"
+        },
+        "passed": true
+      },
+      {
+        "edge": "draw_sequence",
+        "observed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "expected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "passed": true
+      },
+      {
+        "edge": "seed_sequence",
+        "observed": [
+          1,
+          11,
+          21,
+          31,
+          41,
+          51,
+          61,
+          71,
+          81,
+          91,
+          101,
+          111,
+          121,
+          131,
+          141,
+          151,
+          161,
+          171,
+          181,
+          191,
+          201,
+          211,
+          221,
+          231,
+          241
+        ],
+        "expected": [
+          1,
+          11,
+          21,
+          31,
+          41,
+          51,
+          61,
+          71,
+          81,
+          91,
+          101,
+          111,
+          121,
+          131,
+          141,
+          151,
+          161,
+          171,
+          181,
+          191,
+          201,
+          211,
+          221,
+          231,
+          241
+        ],
+        "passed": true
+      },
+      {
+        "edge": "summary_status",
+        "observed": "success",
+        "expected": "success",
+        "passed": true
+      },
+      {
+        "edge": "summary_nonce_to_host",
+        "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+        "expected": "175e5ecdd8e0857afa981d0c20e8ac59",
+        "passed": true
+      },
+      {
+        "edge": "summary_nonce_to_target",
+        "observed": "175e5ecdd8e0857afa981d0c20e8ac59",
+        "expected": "175e5ecdd8e0857afa981d0c20e8ac59",
+        "passed": true
+      },
+      {
+        "edge": "params_to_summary_sha256",
+        "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+        "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+        "passed": true
+      },
+      {
+        "edge": "params_to_target_sha256",
+        "observed": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+        "expected": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+        "passed": true
+      },
+      {
+        "edge": "summary_shape",
+        "observed": [
+          178,
+          13,
+          3
+        ],
+        "expected": [
+          178,
+          13,
+          3
+        ],
+        "passed": true
+      },
+      {
+        "edge": "finite_accuracy",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "accuracy_grid",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "rounded_protocol_target",
+        "observed": [
+          "0.904",
+          "0.046"
+        ],
+        "expected": [
+          "0.904",
+          "0.046"
+        ],
+        "passed": true
+      }
+    ],
+    "observations": {
+      "rows": 25,
+      "mean_decimal": "0.903999999999999972",
+      "population_sd_decimal": "0.046068119181688678447933655075439313624095682391315923613810041928546177329887361",
+      "rounded_mean_sd": [
+        "0.904",
+        "0.046"
+      ],
+      "csv_sha256": "3ac9a3dbd4d094131a91f5ad9bae0d089a12eaa7831545a7ff1d2fa467485888",
+      "summary_sha256": "4ae6fbc0722e79c8e23b8935423a4d06e86bee5d2aab8f0e8c1c500625c1a364",
+      "params_sha256": "f9ac9516e33d7eaed23f194d9724f1ad94da82b2d8c643722a439142c6dea33a",
+      "nonce": "175e5ecdd8e0857afa981d0c20e8ac59"
+    },
+    "admitted": true,
+    "diagnostic": "ADMITTED_ARTIFACT_ARITHMETIC"
+  },
+  "selected_read_positive_control": {
+    "source": "v09",
+    "admitted": true,
+    "checks": [
+      {
+        "edge": "retained_read_to_target.repository",
+        "observed": "SHiJiE1115/newproj",
+        "expected": "SHiJiE1115/newproj",
+        "passed": true
+      },
+      {
+        "edge": "retained_read_to_target.source_commit",
+        "observed": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "expected": "6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b",
+        "passed": true
+      },
+      {
+        "edge": "retained_read_to_target.run_id",
+        "observed": "38136338509",
+        "expected": "38136338509",
+        "passed": true
+      },
+      {
+        "edge": "retained_read_to_target.attempt",
+        "observed": "1",
+        "expected": "1",
+        "passed": true
+      },
+      {
+        "edge": "retained_read_to_target.protocol_sha256",
+        "observed": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "expected": "aeae194c6df93796bbcb50d1e70dc6fb240c570a07657052193e1a3a0d5434f5",
+        "passed": true
+      },
+      {
+        "edge": "retained_read_to_target.tar_sha256",
+        "observed": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+        "expected": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc",
+        "passed": true
+      },
+      {
+        "edge": "candidate.status",
+        "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+        "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+        "passed": true
+      },
+      {
+        "edge": "candidate_audit.status",
+        "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+        "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+        "passed": true
+      },
+      {
+        "edge": "direct.status",
+        "observed": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+        "expected": "PASS_PROSPECTIVE_STRACE_OBSERVATION_ONLY",
+        "passed": true
+      },
+      {
+        "edge": "candidate.all_recorded_checks_pass",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "direct.all_recorded_checks_pass",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "candidate.author_execve_same_pid",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "candidate.wine_open_observed",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "candidate.wine_positive_read_observed",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "candidate.execve_wine_order",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "candidate.trace_isolation_observed",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "candidate.frozen_source_snapshot",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "candidate.source_hashes",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "direct.author_execve_same_pid",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "direct.wine_open_and_read",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "direct.execve_wine_order",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "direct.receipt_source_snapshot",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "edge": "direct.local_frozen_protocol",
+        "observed": true,
+        "expected": true,
+        "passed": true
+      }
+    ],
+    "retained_native_gate": "OBSERVED",
+    "limitation": "Recorded version-specific predicate only; NOT_PASSED or missing flags do not establish absence of a physical read."
+  }
+}

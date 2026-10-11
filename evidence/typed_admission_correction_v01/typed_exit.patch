@@ -1,0 +1,34 @@
+--- frozen_v01/layer_candidate.py
++++ typed_exit_patch/layer_candidate.py
+@@ -47,6 +47,13 @@
+     out.append({'edge': name, 'observed': observed, 'expected': expected, 'passed': observed == expected})
+ 
+ 
++def zero_exit_edge(out, name, observed):
++    """A retained process exit is successful only for the JSON integer zero."""
++    out.append({'edge': name, 'observed': observed, 'expected': 0,
++                'required_type': 'integer', 'observed_type': type(observed).__name__,
++                'passed': type(observed) is int and observed == 0})
++
++
+ def all_edges(edges):
+     return all(e['passed'] for e in edges)
+ 
+@@ -180,7 +187,7 @@
+     edge(out,'bundle_to_saved_verified_bundle',bundle,entry['attestation']['bundle'])
+     edge(out,'decoded_signed_statement',json.loads(base64.b64decode(bundle['dsseEnvelope']['payload'],validate=True)),statement)
+     edge(out,'acceptance_status',acceptance.get('status'),'PASS_RETAINED_SIGNATURE_BUNDLE')
+-    for f in ['download_exit','verify_exit']:edge(out,'acceptance.'+f,acceptance.get(f),0)
++    for f in ['download_exit','verify_exit']:zero_exit_edge(out,'acceptance.'+f,acceptance.get(f))
+     edge(out,'acceptance_bundle_hash',sha(raw[bundle_name]),acceptance['bundle_sha256'])
+     edge(out,'acceptance_verified_stdout_hash',sha(raw['verified.stdout.json']),acceptance['verification_stdout_sha256'])
+     k=run['key'];g=run['gate'];branch=g['expected_external_identity']['head_branch'];repo='https://github.com/'+k['repository']
+@@ -189,7 +196,7 @@
+     for f,val in [('receipt_tar_sha256',k['tar_sha256']),('source_commit',k['source_commit']),
+                   ('run_id',int(k['run_id'])),('attempt',int(k['attempt']))]:edge(out,'acceptance.'+f,acceptance.get(f),val)
+     edge(out,'gate_retained_verified',g['attestation'].get('verified'),True)
+-    edge(out,'gate_retained_crypto_exit',g['attestation'].get('gh_exit_code'),0)
++    zero_exit_edge(out,'gate_retained_crypto_exit',g['attestation'].get('gh_exit_code'))
+     edge(out,'gate_stdout_hash',g['attestation'].get('gh_stdout_sha256'),sha(raw['verified.stdout.json']))
+     edge(out,'statement_type',statement.get('_type'),'https://in-toto.io/Statement/v1')
+     edge(out,'predicate_type',statement.get('predicateType'),'https://slsa.dev/provenance/v1')

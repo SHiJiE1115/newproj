@@ -12,6 +12,8 @@ scoped application evidence. Publication is not journal submission or acceptance
 
 ## Application evidence
 
+- [Typed receipt-admission correction and executable v02 package](evidence/typed_admission_correction_v01/README.md): four synthetic type/value controls exposed and fixed an adapter exit-code defect. Semantic certificate validity alone does not authenticate admitted facts. The original six-scene results and frozen v01 evidence remain unchanged.
+
 - [Scoped Wine/ValueEval companion](evidence/scoped_companion_v02/README.md): three retained Wine runs with two splices and a duplicate control, plus five post hoc exact-ID ValueEval report examples. Strong same-information baselines agree; no application advantage is established.
 - [Wine hosted runs](WINE_HOSTED_RUNS.md): v07/v08 failures and actual v09 selected-observation success, with exact source and signature scope.
 - [VPS3 hosted offline audit](VPS3_HOSTED_RUNS.md): current retained-artifact consistency and its explicit historical/provenance limits.
@@ -29,7 +31,7 @@ The [root README at the prior fixed commit](https://github.com/SHiJiE1115/newpro
 is a historical Wine v04 preparation note. It remains unchanged because it is
 included in the historical source freeze; it is not the current project index.
 Use the version-specific executed source when following an old experiment's
-verification instructions. All prior 120 repository files remain unchanged.
+verification instructions. The original 120 repository files remain unchanged. This current index additionally links later, separately versioned corrections.
 
 These materials make no blanket project-licence, human-gold or historical
 execution-authentication claim. Author facts and informed final approval remain

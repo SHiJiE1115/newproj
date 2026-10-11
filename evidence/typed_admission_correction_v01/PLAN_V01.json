@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "status": "FROZEN_BEFORE_PROBE_EXECUTION",
+  "created_utc": "2026-10-11T20:44:44.249831+00:00",
+  "question": "Does the receipt-admission helper require JSON integer zero for the retained verifier exit, and can a type-invalid admitted fact still receive a semantically valid certificate?",
+  "contract": "For /ACCEPTANCE.json/verify_exit, type(value) is int and value == 0. JSON false and 0.0 do not satisfy this operation schema.",
+  "cases": [
+    {
+      "id": "integer_zero",
+      "input": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\integer_zero\\ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+      },
+      "json_literal": "0",
+      "parsed_python_type": "int",
+      "expected_admitted": true,
+      "only_semantic_edit": "/verify_exit",
+      "all_bytes_outside_value_token_unchanged": true
+    },
+    {
+      "id": "boolean_false",
+      "input": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\boolean_false\\ACCEPTANCE.json",
+        "bytes": 745,
+        "sha256": "3437f1414ed88e5b7eafceaba2b1ce4ac02be5ad055b238d994f6cd5a58f5f3d"
+      },
+      "json_literal": "false",
+      "parsed_python_type": "bool",
+      "expected_admitted": false,
+      "only_semantic_edit": "/verify_exit",
+      "all_bytes_outside_value_token_unchanged": true
+    },
+    {
+      "id": "floating_zero",
+      "input": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\floating_zero\\ACCEPTANCE.json",
+        "bytes": 743,
+        "sha256": "a0c8653e1521e7b99dc1cdae9b8e91432dbef73f6d993cd92aadf2236514d3af"
+      },
+      "json_literal": "0.0",
+      "parsed_python_type": "float",
+      "expected_admitted": false,
+      "only_semantic_edit": "/verify_exit",
+      "all_bytes_outside_value_token_unchanged": true
+    },
+    {
+      "id": "integer_one",
+      "input": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration309\\fixtures\\integer_one\\ACCEPTANCE.json",
+        "bytes": 741,
+        "sha256": "e2264f5c9ee5c2f1ceabd6d02412a0d2f4238d75dd5cf6b5b91e2a8935f911be"
+      },
+      "json_literal": "1",
+      "parsed_python_type": "int",
+      "expected_admitted": false,
+      "only_semantic_edit": "/verify_exit",
+      "all_bytes_outside_value_token_unchanged": true
+    }
+  ],
+  "original_acceptance": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\evidence\\signature\\ACCEPTANCE.json",
+    "bytes": 741,
+    "sha256": "fbe67586d83ae81a64db90b09f2b6a6b53b5a0adcc86f6ff32a02b95f3ad6fc2"
+  },
+  "original_candidate": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\layer_candidate.py",
+    "bytes": 22187,
+    "sha256": "3597ee62fd7f9aae4b61e9d49fa2db16d5e0750573e05d5376b5064bfec5815b"
+  },
+  "original_baseline": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\sql_baseline_v02.py",
+    "bytes": 30360,
+    "sha256": "fed2570f8e59ee993e2b99dc9e6d24578ebb72c1b4383d81fd95302c50742488"
+  },
+  "original_protocol": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\protocol.json",
+    "bytes": 11979,
+    "sha256": "3d5f542359cc385cd6edacc3612994fecb034dcedae4e3322602c1aea934641f"
+  },
+  "semantic_modules": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\semantic\\rules_v2_core.py",
+      "bytes": 20969,
+      "sha256": "60988f369a01d71c04d838697e702f0f7c8307bd2de36a1eaa759a0aed48f9c6"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration305\\wine_layer_calibration_v01\\semantic\\rules_v2_checker.py",
+      "bytes": 10859,
+      "sha256": "e77ca753c64813839c17c3fb0bbef8ddd836a2836a25b234ec336f631570035b"
+    }
+  ],
+  "harness": {
+    "path": "C:\\Users\\dongs\\Documents\\Codex\\2026-09-23\\ccfa-ccfa\\maintenance\\storage_resume_20261010\\probe_iter309_typed_admission_v01.py",
+    "bytes": 11761,
+    "sha256": "7cb31d4775af853bdf269db214debd705ee89a1451c6c9a45273531edf5dc462"
+  },
+  "scope": "Four synthetic type/value interventions on a retained artifact interface, not four scientific replications, natural-error-rate data, fresh signing, a cryptographic attack or a bypass of the original hash-pinned CLI.",
+  "method": "Verify original pins; load one v09 run; invoke original candidate and independent baseline helpers on the same verified derived bytes; propagate actual admission through unchanged certify_layer/checker. The new scope digest binds each fixture and this plan.",
+  "exclusion": "No full six-scenario replay, no new author execution, no APIs/network, no P1 inspection, no claim of publication novelty."
+}
