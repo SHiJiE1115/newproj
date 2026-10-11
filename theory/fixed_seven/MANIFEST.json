@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "scope": "Standalone internal fixed-seven upload candidate; unchanged execution bytes, no six-query or publication claim.",
+  "files": [
+    {
+      "path": "coverage/check_coverage.py",
+      "bytes": 9090,
+      "sha256": "e81b8457298094979590db1aa5fa6212ec1d68d2c00c2c5a4df1902eec71378a"
+    },
+    {
+      "path": "coverage/coverage_math_kernel.py",
+      "bytes": 7231,
+      "sha256": "975f8beb8d069042286d320499ae62e8e685ba3b2e55d2910929948959bd1704"
+    },
+    {
+      "path": "coverage/data/ENVELOPE_WITNESSES_V01.json",
+      "bytes": 1160,
+      "sha256": "03f29180ea65939b1861661cd3b965bfccc81252e932fe3e76f18032e432cb0c"
+    },
+    {
+      "path": "coverage/data/RATIONAL_BRANCH_CERTIFICATES_V01.jsonl.gz",
+      "bytes": 6417,
+      "sha256": "95cb3a19aee9584301b02ddda2ab57f0d21c0edec7858be72e64a75f08d9f07a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3031,
+      "sha256": "71599558e8a11300e9d4c7a1a5fa20064b3836e5e0443689ceef5fd6cf100fc9"
+    },
+    {
+      "path": "seven/ALL_ORDER_FRONTIERS_V01.jsonl.gz",
+      "bytes": 29315,
+      "sha256": "33ed0bb404f1da86eb57004e79e96593c6b20995587615da234722e9a7f0d6b2"
+    },
+    {
+      "path": "seven/ENVELOPE_WITNESSES_V01.json",
+      "bytes": 1160,
+      "sha256": "03f29180ea65939b1861661cd3b965bfccc81252e932fe3e76f18032e432cb0c"
+    },
+    {
+      "path": "seven/PRICE_CONE_CERTIFICATES_V01.jsonl.gz",
+      "bytes": 7330,
+      "sha256": "2e558b36fd1a97d02a624fdbaf13459dda651749c34c996258f9d4bed8d93e68"
+    },
+    {
+      "path": "seven/reproduce_seven.py",
+      "bytes": 10212,
+      "sha256": "c9cd19604efa170248ba7f6b8d743b57188d256a9089c7e6405f9fee725951c8"
+    },
+    {
+      "path": "seven/seven_qa_kernel_v01.py",
+      "bytes": 6642,
+      "sha256": "05b2e429b138e33d970e94c6a3e7a8b0b80d19798c4d41855a35f9c11c40e0af"
+    },
+    {
+      "path": "SOURCE_NOTICE.md",
+      "bytes": 1925,
+      "sha256": "1107079ea90d71703fcaaa480fa7b24efd80859ace237d2a258b1db01a2a7f1d"
+    },
+    {
+      "path": "SUBMODULAR_PROOF.md",
+      "bytes": 8148,
+      "sha256": "2a24d3b214fd8b41b8548a49dcb4508db082e88833df6d0c75e8c1935ebc9f31"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 6659,
+      "sha256": "9d3d05354b1a89bfb8a63fd1bd890bf8c093fb9d070d0de9b950e5ab2d91a380"
+    }
+  ],
+  "content_bytes": 98320,
+  "self_hash_excluded": true
+}

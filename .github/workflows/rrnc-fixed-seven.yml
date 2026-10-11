@@ -1,0 +1,39 @@
+name: Fixed-seven exact-cost reproduction
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrnc-fixed-seven-reproduction
+  cancel-in-progress: false
+
+jobs:
+  verify-fixed-seven:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out the selected commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Replay both fixed-seven layers
+        shell: bash
+        run: >-
+          python3 -I -X utf8 -B theory/ci/run_fixed_seven.py
+          --execution-kind github-actions
+          --expect-manifest-sha256 0b2e2ad1c312458b1a7d1802a65ef3a34ff8c1f94e3912630ccac8fc31c3d783
+          --output-dir ci-results/fixed-seven
+      - name: Preserve success or failure outputs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: fixed-seven-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ci-results/fixed-seven/*
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false
