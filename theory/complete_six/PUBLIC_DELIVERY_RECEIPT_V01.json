@@ -1,0 +1,90 @@
+{
+  "schema": "complete-six-public-delivery-receipt-v1",
+  "status": "PASS_PUBLIC_RELEASE_ANONYMOUS_DOWNLOAD_AND_EXACT_MEMBER_EXTRACTION",
+  "observed_utc": "2026-10-11T13:20:00.188385+00:00",
+  "source_commit": "a8f60ce4d7f3edce7fd433e1e6678682d40a2c08",
+  "release_id": 409678338,
+  "tag": "complete-six-review-20261011-v01",
+  "release_url": "https://github.com/SHiJiE1115/newproj/releases/tag/complete-six-review-20261011-v01",
+  "published_at": "2026-10-11T13:16:19Z",
+  "tag_commit_verified": "a8f60ce4d7f3edce7fd433e1e6678682d40a2c08",
+  "assets": [
+    {
+      "name": "complete_six_review_v01.zip",
+      "bytes": 1253960690,
+      "sha256": "6d67d683e6b1df885df2c20f4157a11d7f71765ea219f06f9d32d4017b1693e8",
+      "asset_id": 630794271,
+      "public_url": "https://github.com/SHiJiE1115/newproj/releases/download/complete-six-review-20261011-v01/complete_six_review_v01.zip",
+      "server_digest": "sha256:6d67d683e6b1df885df2c20f4157a11d7f71765ea219f06f9d32d4017b1693e8",
+      "anonymous_http_status": 200
+    },
+    {
+      "name": "verify_download.py",
+      "bytes": 15225,
+      "sha256": "b4715714add5d5e14fbb5bca07871b71fda536877d28544d184b8cff0752ecad",
+      "asset_id": 630798215,
+      "public_url": "https://github.com/SHiJiE1115/newproj/releases/download/complete-six-review-20261011-v01/verify_download.py",
+      "server_digest": "sha256:b4715714add5d5e14fbb5bca07871b71fda536877d28544d184b8cff0752ecad",
+      "anonymous_http_status": 200
+    },
+    {
+      "name": "DOWNLOAD_GUIDE.md",
+      "bytes": 2632,
+      "sha256": "7f9b6766fc3e0e37b7027c30e2af9f4f82ff789662341db52ba1157a937775aa",
+      "asset_id": 630798356,
+      "public_url": "https://github.com/SHiJiE1115/newproj/releases/download/complete-six-review-20261011-v01/DOWNLOAD_GUIDE.md",
+      "server_digest": "sha256:7f9b6766fc3e0e37b7027c30e2af9f4f82ff789662341db52ba1157a937775aa",
+      "anonymous_http_status": 200
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 263,
+      "sha256": "9d8b65aaea264c02dc1f6e1dde55df3af9ee67787b50a727626a8e56d62b5b9f",
+      "asset_id": 630798468,
+      "public_url": "https://github.com/SHiJiE1115/newproj/releases/download/complete-six-review-20261011-v01/SHA256SUMS",
+      "server_digest": "sha256:9d8b65aaea264c02dc1f6e1dde55df3af9ee67787b50a727626a8e56d62b5b9f",
+      "anonymous_http_status": 200
+    }
+  ],
+  "anonymous_download": {
+    "http_authentication": false,
+    "cookies": false,
+    "environment_proxies": false
+  },
+  "download_verification": {
+    "archive_bytes": 1253960690,
+    "archive_members": 5636,
+    "archive_sha256": "6d67d683e6b1df885df2c20f4157a11d7f71765ea219f06f9d32d4017b1693e8",
+    "candidate_bytes": 1491310855,
+    "candidate_files": 5569,
+    "candidate_manifest_sha256": "d863b8d0f090091620dfb61e4094b9803ae3871d698a682166d5060469fba929",
+    "elapsed_seconds": 61.656,
+    "expanded_bytes_verified": 1494686642,
+    "extraction_completed": true,
+    "mathematical_acceptance_certified": false,
+    "mathematical_verification_executed": false,
+    "outer_listed_files": 66,
+    "publication_manifest_sha256": "92636a122d81855b28d61761a353ee402b872440eaf6df96b09afae37919089d",
+    "scope": "Pinned archive and exact manifest-listed member bytes only.",
+    "status": "PASS_DOWNLOAD_BYTES_AND_MEMBERS_ONLY"
+  },
+  "relocated_plan": {
+    "status": "PLAN_ONLY_NOT_EXECUTED",
+    "actual_exit": 0,
+    "mathematics_executed": false
+  },
+  "truncated_negative_control": {
+    "status": "REJECTED_DOWNLOAD_BYTES_OR_MEMBERS",
+    "actual_exit": 1,
+    "extraction_created": false
+  },
+  "source_receipts": {
+    "anonymous_download_sha256": "356feb45a8021290dd4556645b7e3510985783b78274e6d81ec038f4e774900a",
+    "distribution_check_sha256": "562f7ea114749e06f52ada436e93f3c2f282e6f9bc4a892b974e51c671e21139"
+  },
+  "candidate_fresh_aggregate_run": false,
+  "new_mathematical_execution": false,
+  "human_author_review_completed": false,
+  "new_blanket_project_licence_selected": false,
+  "scope": "Observed public review access and exact distribution bytes. Not a new mathematical replay, formal proof, author approval, or historical-authenticity certificate."
+}

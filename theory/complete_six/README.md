@@ -1,5 +1,7 @@
 # Complete six-query review archive: download and verify
 
+Public availability, anonymous retrieval and complete byte verification are now recorded in [PUBLIC_DELIVERY_RECEIPT_V01.json](PUBLIC_DELIVERY_RECEIPT_V01.json). The preparation pins below remain historical and unchanged.
+
 Release location: [complete-six-review-20261011-v01](https://github.com/SHiJiE1115/newproj/releases/tag/complete-six-review-20261011-v01). This preparation record pins the intended assets; consult the public release and later delivery receipt for actual availability.
 
 Download `complete_six_review_v01.zip` and `verify_download.py` from that release. The ZIP is 1,253,960,690 bytes; its SHA256 is:
