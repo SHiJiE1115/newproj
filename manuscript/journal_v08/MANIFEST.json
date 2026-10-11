@@ -1,0 +1,41 @@
+{
+  "schema": "journal-v08-reading-packet-v1",
+  "status": "PREPARATION_NOT_SUBMISSION",
+  "files": [
+    {
+      "path": "CHANGES.md",
+      "bytes": 1771,
+      "sha256": "7ca5c248dde7c597d48a49fed388f851dbb1924f03acd22b3715088f6924e974"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2104,
+      "sha256": "f2b04f95e9c19dee6be533809ff7fbdf46ce0228db708738f40c1ed308c04b53"
+    },
+    {
+      "path": "paper.pdf",
+      "bytes": 588609,
+      "sha256": "4fcce94f4692289d3a44987cc616b3ed917237d057d385a7bcbabb686888ca31"
+    },
+    {
+      "path": "paper.tex",
+      "bytes": 76298,
+      "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 9733,
+      "sha256": "0b15e13a0c724d4442aa5ae4d17abdc6ae48b0a2bae07d58493ef8d242dcc91b"
+    }
+  ],
+  "self_hash_excluded": true,
+  "pdf_pages": 28,
+  "old_mathematical_blocks_preserved": 11,
+  "bibliography_entries": 15,
+  "new_separate_claim": "Complete even-path record-source containment, with unit and additive corollaries.",
+  "original_boundary_and_pair_menu_premises_unchanged": true,
+  "human_review": false,
+  "private_author_forms_included": false,
+  "publisher_dependencies_included": false,
+  "new_blanket_licence_selected": false
+}

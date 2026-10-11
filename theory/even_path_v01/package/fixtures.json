@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "source": {
+    "records": "0,...,n-1 for even n>=2",
+    "A": "All equivalence partitions with 2r~2r+1 for 0<=r<n/2.",
+    "B": "All equivalence partitions with 2r+1~2r+2 for 0<=r<n/2-1 and 0 not~n-1.",
+    "closure": "All other merges are allowed.",
+    "oracle": "Buy each record at most once; observe only its equivalence to acquired records. First acquisition has no informative answer but is charged.",
+    "comparator": "Deterministic zero-error worst additive cost; one global record permutation may use causal permanent skips."
+  },
+  "cases": [
+    {
+      "id": "n6_unit",
+      "prices": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "expected_worst_cost": "4",
+      "world_counts": {
+        "A": 5,
+        "B": 10
+      },
+      "all_partitions": 203,
+      "kind": "existing_scientific_fixture",
+      "expected_value_basis": "Previously frozen independent full-source adaptive and all-720-order calculations; not recomputed by this replay."
+    },
+    {
+      "id": "n6_asymmetric",
+      "prices": [
+        "1",
+        "7",
+        "2",
+        "3",
+        "5",
+        "1"
+      ],
+      "expected_worst_cost": "11",
+      "world_counts": {
+        "A": 5,
+        "B": 10
+      },
+      "all_partitions": 203,
+      "kind": "existing_scientific_fixture",
+      "expected_value_basis": "Previously frozen independent full-source adaptive and all-720-order calculations; not recomputed by this replay."
+    },
+    {
+      "id": "n8_unit",
+      "prices": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "expected_worst_cost": "4",
+      "world_counts": {
+        "A": 15,
+        "B": 37
+      },
+      "all_partitions": 4140,
+      "kind": "existing_scientific_fixture",
+      "expected_value_basis": "Previously checked anchored alphabetic-tree family and the analytic complete-source containment theorem; no adaptive frontier was enumerated."
+    },
+    {
+      "id": "n2_zero",
+      "prices": [
+        "0",
+        "0"
+      ],
+      "expected_worst_cost": "0",
+      "world_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "all_partitions": 2,
+      "kind": "software_edge_fixture",
+      "expected_value_basis": "Existing two-record edge control: both records are needed to distinguish equality from inequality; their total price is zero."
+    },
+    {
+      "id": "n2_rational",
+      "prices": [
+        "0",
+        "3/2"
+      ],
+      "expected_worst_cost": "3/2",
+      "world_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "all_partitions": 2,
+      "kind": "software_edge_fixture",
+      "expected_value_basis": "Existing two-record edge control: both records are needed; exact total price is 3/2."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "package": "even_path_package_v01",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7681,
+      "sha256": "98fcc333c792e83a606a4e6d582aad11567779a487d535f84c4f2ade10b980c1"
+    },
+    {
+      "path": "alternating_path.py",
+      "bytes": 3987,
+      "sha256": "f9127ebd2c8386f5a338dab5b462490e6ff58cefe113816fab7b54b123ea4b3b"
+    },
+    {
+      "path": "fixtures.json",
+      "bytes": 2806,
+      "sha256": "c802923f6d6cbec39f801f29f94cf2391c9ef5d0251161cdfe6d1fc94df632eb"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 11183,
+      "sha256": "a1ca953ebba4076908866fd78f31ce338fd434b5b37f28955af1b948a23d5a6b"
+    }
+  ],
+  "scope": "Byte identity for a fixed replay supplement; no scientific result is asserted by this manifest."
+}

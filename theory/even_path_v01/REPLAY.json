@@ -1,0 +1,2143 @@
+{
+  "schema": 1,
+  "status": "PASS_FIXED_FIXTURE_REPLAY",
+  "human_review": false,
+  "new_price_or_size_search": false,
+  "adaptive_frontier_recomputed": false,
+  "cases": [
+    {
+      "id": "n6_unit",
+      "prices": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "expected_worst_cost": "4",
+      "observed_worst_cost": "4",
+      "world_counts": {
+        "A": 5,
+        "B": 10
+      },
+      "all_partitions": 203,
+      "expected_value_basis": "Previously frozen independent full-source adaptive and all-720-order calculations; not recomputed by this replay.",
+      "kind": "existing_scientific_fixture",
+      "policy": {
+        "schema": 1,
+        "n": 6,
+        "prices": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "optimal_worst_cost": "4",
+        "anchor": 0,
+        "anchor_values": [
+          "4",
+          "4",
+          "4",
+          "4",
+          "4",
+          "4"
+        ],
+        "priority_order": [
+          0,
+          2,
+          1,
+          4,
+          3,
+          5
+        ],
+        "tree": {
+          "query": 2,
+          "left": {
+            "query": 1,
+            "left": {
+              "cut_edge": 0,
+              "label": "B"
+            },
+            "right": {
+              "cut_edge": 1,
+              "label": "A"
+            }
+          },
+          "right": {
+            "query": 4,
+            "left": {
+              "query": 3,
+              "left": {
+                "cut_edge": 2,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 3,
+                "label": "A"
+              }
+            },
+            "right": {
+              "query": 5,
+              "left": {
+                "cut_edge": 4,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 5,
+                "label": "A"
+              }
+            }
+          }
+        },
+        "dp_states": 36,
+        "split_candidates": 90,
+        "scope": "Complete even alternating equivalence path; deterministic zero-error, additive nonnegative costs."
+      },
+      "traces": [
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 5,
+          "acquired": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 3,
+          "acquired": [
+            0,
+            2,
+            4,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            2,
+            4,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            2,
+            4,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "3"
+        }
+      ]
+    },
+    {
+      "id": "n6_asymmetric",
+      "prices": [
+        "1",
+        "7",
+        "2",
+        "3",
+        "5",
+        "1"
+      ],
+      "expected_worst_cost": "11",
+      "observed_worst_cost": "11",
+      "world_counts": {
+        "A": 5,
+        "B": 10
+      },
+      "all_partitions": 203,
+      "expected_value_basis": "Previously frozen independent full-source adaptive and all-720-order calculations; not recomputed by this replay.",
+      "kind": "existing_scientific_fixture",
+      "policy": {
+        "schema": 1,
+        "n": 6,
+        "prices": [
+          "1",
+          "7",
+          "2",
+          "3",
+          "5",
+          "1"
+        ],
+        "optimal_worst_cost": "11",
+        "anchor": 0,
+        "anchor_values": [
+          "11",
+          "16",
+          "11",
+          "13",
+          "15",
+          "11"
+        ],
+        "priority_order": [
+          0,
+          2,
+          1,
+          4,
+          3,
+          5
+        ],
+        "tree": {
+          "query": 2,
+          "left": {
+            "query": 1,
+            "left": {
+              "cut_edge": 0,
+              "label": "B"
+            },
+            "right": {
+              "cut_edge": 1,
+              "label": "A"
+            }
+          },
+          "right": {
+            "query": 4,
+            "left": {
+              "query": 3,
+              "left": {
+                "cut_edge": 2,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 3,
+                "label": "A"
+              }
+            },
+            "right": {
+              "query": 5,
+              "left": {
+                "cut_edge": 4,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 5,
+                "label": "A"
+              }
+            }
+          }
+        },
+        "dp_states": 36,
+        "split_candidates": 90,
+        "scope": "Complete even alternating equivalence path; deterministic zero-error, additive nonnegative costs."
+      },
+      "traces": [
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 5,
+          "acquired": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "cost": "9"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "cost": "9"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 3,
+          "acquired": [
+            0,
+            2,
+            4,
+            3
+          ],
+          "cost": "11"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            2,
+            4,
+            3
+          ],
+          "cost": "11"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            2,
+            4,
+            3
+          ],
+          "cost": "11"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            2,
+            1
+          ],
+          "cost": "10"
+        }
+      ]
+    },
+    {
+      "id": "n8_unit",
+      "prices": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "expected_worst_cost": "4",
+      "observed_worst_cost": "4",
+      "world_counts": {
+        "A": 15,
+        "B": 37
+      },
+      "all_partitions": 4140,
+      "expected_value_basis": "Previously checked anchored alphabetic-tree family and the analytic complete-source containment theorem; no adaptive frontier was enumerated.",
+      "kind": "existing_scientific_fixture",
+      "policy": {
+        "schema": 1,
+        "n": 8,
+        "prices": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "optimal_worst_cost": "4",
+        "anchor": 0,
+        "anchor_values": [
+          "4",
+          "4",
+          "4",
+          "4",
+          "4",
+          "4",
+          "4",
+          "4"
+        ],
+        "priority_order": [
+          0,
+          4,
+          2,
+          1,
+          3,
+          6,
+          5,
+          7
+        ],
+        "tree": {
+          "query": 4,
+          "left": {
+            "query": 2,
+            "left": {
+              "query": 1,
+              "left": {
+                "cut_edge": 0,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 1,
+                "label": "A"
+              }
+            },
+            "right": {
+              "query": 3,
+              "left": {
+                "cut_edge": 2,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 3,
+                "label": "A"
+              }
+            }
+          },
+          "right": {
+            "query": 6,
+            "left": {
+              "query": 5,
+              "left": {
+                "cut_edge": 4,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 5,
+                "label": "A"
+              }
+            },
+            "right": {
+              "query": 7,
+              "left": {
+                "cut_edge": 6,
+                "label": "B"
+              },
+              "right": {
+                "cut_edge": 7,
+                "label": "A"
+              }
+            }
+          }
+        },
+        "dp_states": 64,
+        "split_candidates": 224,
+        "scope": "Complete even alternating equivalence path; deterministic zero-error, additive nonnegative costs."
+      },
+      "traces": [
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 7,
+          "acquired": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 7,
+          "acquired": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 3,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 6,
+          "acquired": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 6,
+          "acquired": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 6,
+          "acquired": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            0,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            0,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 5,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 5,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            2
+          ],
+          "label": "A",
+          "cut_edge": 5,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            2,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 4,
+          "acquired": [
+            0,
+            4,
+            6,
+            5
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 3,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "label": "A",
+          "cut_edge": 3,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 2,
+          "acquired": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        },
+        {
+          "world": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            4,
+            2,
+            1
+          ],
+          "cost": "4"
+        }
+      ]
+    },
+    {
+      "id": "n2_zero",
+      "prices": [
+        "0",
+        "0"
+      ],
+      "expected_worst_cost": "0",
+      "observed_worst_cost": "0",
+      "world_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "all_partitions": 2,
+      "expected_value_basis": "Existing two-record edge control: both records are needed to distinguish equality from inequality; their total price is zero.",
+      "kind": "software_edge_fixture",
+      "policy": {
+        "schema": 1,
+        "n": 2,
+        "prices": [
+          "0",
+          "0"
+        ],
+        "optimal_worst_cost": "0",
+        "anchor": 0,
+        "anchor_values": [
+          "0",
+          "0"
+        ],
+        "priority_order": [
+          0,
+          1
+        ],
+        "tree": {
+          "query": 1,
+          "left": {
+            "cut_edge": 0,
+            "label": "B"
+          },
+          "right": {
+            "cut_edge": 1,
+            "label": "A"
+          }
+        },
+        "dp_states": 4,
+        "split_candidates": 2,
+        "scope": "Complete even alternating equivalence path; deterministic zero-error, additive nonnegative costs."
+      },
+      "traces": [
+        {
+          "world": [
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            1
+          ],
+          "cost": "0"
+        },
+        {
+          "world": [
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            1
+          ],
+          "cost": "0"
+        }
+      ]
+    },
+    {
+      "id": "n2_rational",
+      "prices": [
+        "0",
+        "3/2"
+      ],
+      "expected_worst_cost": "3/2",
+      "observed_worst_cost": "3/2",
+      "world_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "all_partitions": 2,
+      "expected_value_basis": "Existing two-record edge control: both records are needed; exact total price is 3/2.",
+      "kind": "software_edge_fixture",
+      "policy": {
+        "schema": 1,
+        "n": 2,
+        "prices": [
+          "0",
+          "3/2"
+        ],
+        "optimal_worst_cost": "3/2",
+        "anchor": 0,
+        "anchor_values": [
+          "3/2",
+          "3/2"
+        ],
+        "priority_order": [
+          0,
+          1
+        ],
+        "tree": {
+          "query": 1,
+          "left": {
+            "cut_edge": 0,
+            "label": "B"
+          },
+          "right": {
+            "cut_edge": 1,
+            "label": "A"
+          }
+        },
+        "dp_states": 4,
+        "split_candidates": 2,
+        "scope": "Complete even alternating equivalence path; deterministic zero-error, additive nonnegative costs."
+      },
+      "traces": [
+        {
+          "world": [
+            0,
+            0
+          ],
+          "label": "A",
+          "cut_edge": 1,
+          "acquired": [
+            0,
+            1
+          ],
+          "cost": "3/2"
+        },
+        {
+          "world": [
+            0,
+            1
+          ],
+          "label": "B",
+          "cut_edge": 0,
+          "acquired": [
+            0,
+            1
+          ],
+          "cost": "3/2"
+        }
+      ]
+    }
+  ],
+  "existing_scientific_fixture_world_traces": 82,
+  "software_edge_case_world_traces": 4,
+  "all_full_world_classifications_correct": true,
+  "first_anchor_paid_and_acquired": true,
+  "all_priority_orders_causal": true,
+  "all_leaf_certificates_checked": true,
+  "package_unchanged_during_replay": true,
+  "members": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 810,
+      "sha256": "9652c0d088bce019c8105649e3af73d02d41ff54c1c932ca6d7c84a42dca8108"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7681,
+      "sha256": "98fcc333c792e83a606a4e6d582aad11567779a487d535f84c4f2ade10b980c1"
+    },
+    {
+      "path": "alternating_path.py",
+      "bytes": 3987,
+      "sha256": "f9127ebd2c8386f5a338dab5b462490e6ff58cefe113816fab7b54b123ea4b3b"
+    },
+    {
+      "path": "fixtures.json",
+      "bytes": 2806,
+      "sha256": "c802923f6d6cbec39f801f29f94cf2391c9ef5d0251161cdfe6d1fc94df632eb"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 11183,
+      "sha256": "a1ca953ebba4076908866fd78f31ce338fd434b5b37f28955af1b948a23d5a6b"
+    }
+  ],
+  "scope": "The exact mathematical optimum for arbitrary even size follows from the analytic containment and minimax-DP proofs in journal V08 Appendix E.2; these finite fixture replays do not prove the all-size theorem or recompute adaptive lower bounds.",
+  "completed_at_utc": "2026-10-11T18:29:53.898714+00:00"
+}
