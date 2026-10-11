@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "execution_kind": "github-actions",
+  "started_utc": "2026-10-11T11:10:38.566945+00:00",
+  "status": "PASS_SCOPED_FIXED_SEVEN_RUN",
+  "child_launched": true,
+  "actual_child_exit_code": 0,
+  "github_context": {
+    "GITHUB_REPOSITORY": "SHiJiE1115/newproj",
+    "GITHUB_SHA": "d4903be03b56dbb518175013839f87121dac9e8d",
+    "GITHUB_RUN_ID": "38134598264",
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_EVENT_NAME": "workflow_dispatch"
+  },
+  "python": {
+    "version": "3.12.3",
+    "implementation": "CPython"
+  },
+  "platform": {
+    "system": "Linux",
+    "release": "6.17.0-1022-azure",
+    "machine": "x86_64"
+  },
+  "wrapper_sha256": "66608b5500aea35bd28d311e10a0cf8630856a33f45bd3f7620f4fb1a9caf55f",
+  "six_query_boundary_reverified": false,
+  "general_submodular_upper_bound_machine_proved": false,
+  "historical_research_authenticated": false,
+  "human_review_obtained": false,
+  "new_independent_mathematical_implementation": false,
+  "model_API_calls": 0,
+  "network_requests_by_wrapper": 0,
+  "scope": "One fixed-seven source; exact frontier/additive and coverage checks. Written arguments remain necessary.",
+  "attestation": "None. Runner metadata and hashes are not a signed execution certificate.",
+  "manifest_sha256": "0b2e2ad1c312458b1a7d1802a65ef3a34ff8c1f94e3912630ccac8fc31c3d783",
+  "entry_sha256": "9d3d05354b1a89bfb8a63fd1bd890bf8c093fb9d070d0de9b950e5ab2d91a380",
+  "logical_command": "python -I -X utf8 -B theory/fixed_seven/verify.py --mode all --seconds 120",
+  "child_pid": 2326,
+  "counts": {
+    "orders": 5040,
+    "policy_witnesses": 13,
+    "additive_certificates": 864,
+    "coverage_certificates": 864
+  },
+  "verifier.stdout.json": {
+    "bytes": 5589,
+    "sha256": "71c75def373a2dc64a24b7342b69967f31b9d35be9b7d652529de70a89a05efc"
+  },
+  "verifier.stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "finished_utc": "2026-10-11T11:10:41.738370+00:00",
+  "elapsed_seconds": 3.1714415450000075
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "kind": "Persistent copy of actual hosted output, not a signed attestation",
+  "repository": "SHiJiE1115/newproj",
+  "run_id": 38134598264,
+  "attempt": 1,
+  "run_url": "https://github.com/SHiJiE1115/newproj/actions/runs/38134598264",
+  "source_commit": "d4903be03b56dbb518175013839f87121dac9e8d",
+  "workflow_path": ".github/workflows/rrnc-fixed-seven.yml",
+  "job_id": 114455779490,
+  "artifact_id": 11700377748,
+  "github_artifact_digest": "sha256:a7e94898eeabf422d7ea7653449b2f1a53e27b072e454a5aedbe6d22e0af0f9f",
+  "github_artifact_original_expiry": "2026-10-25T11:10:41Z",
+  "observed_job_conclusion": "success",
+  "observed_verifier_exit": 0,
+  "files": [
+    {
+      "file": "receipt.json",
+      "bytes": 2019,
+      "sha256": "b49713350bcd64d2b7538d91ab4fd850b5eec2194dbfb23ae5f4a2a0714b6c22"
+    },
+    {
+      "file": "verifier.stdout.json",
+      "bytes": 5589,
+      "sha256": "71c75def373a2dc64a24b7342b69967f31b9d35be9b7d652529de70a89a05efc"
+    },
+    {
+      "file": "verifier.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "artifact.zip",
+      "bytes": 3975,
+      "sha256": "a7e94898eeabf422d7ea7653449b2f1a53e27b072e454a5aedbe6d22e0af0f9f"
+    }
+  ],
+  "hosted_source_is_the_execution_commit": true,
+  "archive_documentation_commit_was_not_rerun": true,
+  "scope": "Fixed-seven frontier, additive and coverage checks only; no six-query replay, signed attestation, historical authentication, human review or general submodular machine proof."
+}

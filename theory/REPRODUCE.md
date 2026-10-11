@@ -26,7 +26,7 @@ The wrapper preserves complete verifier stdout, stderr, actual exit code, interp
 
 The workflow saves `receipt.json`, `verifier.stdout.json` and `verifier.stderr.txt` as one artifact, including when verification fails. The receipt records selected public GitHub context fields; it does not dump the environment. Those fields are runner claims, not a signed attestation. To cite an actual hosted execution, independently inspect its GitHub run status, selected commit, job status and downloaded output hashes. The presence of an artifact alone is not a passing result.
 
-This preparation has not itself triggered a hosted run. Local validation and an older Wine workflow are not hosted evidence for these theoretical certificates. A future run must receive its own recorded identity and result.
+The first actual hosted execution succeeded on 2026-10-11 at commit `d4903be03b56dbb518175013839f87121dac9e8d`. See [the recorded run and persistent output archive](HOSTED_RUNS.md). Local validation and the older Wine workflow remain separate evidence; this run verifies only the stated fixed-seven scope.
 
 ## Scope and reuse
 
