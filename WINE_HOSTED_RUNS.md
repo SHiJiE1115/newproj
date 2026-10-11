@@ -21,12 +21,12 @@ The [earlier failed run 36583899749](https://github.com/SHiJiE1115/newproj/actio
 
 ## Recheck
 
-Clone this repository and a second copy checked out at the executed source commit above. Unzip `archive/wine/20261011/v09/artifact.zip` into a separate working directory and use its `receipt.tar`. Use Python 3.10+ and GitHub CLI with attestation support.
+Run the commands below from the public archive repository root. `SOURCE_CHECKOUT` denotes a separate checkout at the executed source commit above; `WORKDIR` denotes a separate working directory containing the unzipped `archive/wine/20261011/v09/artifact.zip`. Replace both placeholders with your actual directory paths and quote paths containing spaces. Use Python 3.10+ and GitHub CLI with attestation support.
 
 ```sh
-python SOURCE_CHECKOUT/experiment/verify_receipt.py receipt.tar candidate.json SHiJiE1115/newproj 6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b 38136338509 1
-python archive/wine/20261011/v09/direct_fixed_baseline.py SOURCE_CHECKOUT receipt.tar baseline.json SHiJiE1115/newproj 6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b 38136338509 1
-gh attestation verify receipt.tar --bundle archive/wine/20261011/v09/bundle.jsonl --repo SHiJiE1115/newproj --signer-workflow SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml --source-digest 6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b --source-ref refs/heads/trace-isolation-v09-fd-observation --deny-self-hosted-runners --format json
+python SOURCE_CHECKOUT/experiment/verify_receipt.py WORKDIR/receipt.tar WORKDIR/candidate.json SHiJiE1115/newproj 6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b 38136338509 1
+python archive/wine/20261011/v09/direct_fixed_baseline.py SOURCE_CHECKOUT WORKDIR/receipt.tar WORKDIR/baseline.json SHiJiE1115/newproj 6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b 38136338509 1
+gh attestation verify WORKDIR/receipt.tar --bundle archive/wine/20261011/v09/bundle.jsonl --repo SHiJiE1115/newproj --signer-workflow SHiJiE1115/newproj/.github/workflows/rrnc-wine-strace.yml --source-digest 6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b --source-ref refs/heads/trace-isolation-v09-fd-observation --deny-self-hosted-runners --format json
 ```
 
 Also require the verified certificate's `runInvocationURI` to equal `https://github.com/SHiJiE1115/newproj/actions/runs/38136338509/attempts/1`. The local release gate checked this exact binding and verified timestamps. Signature checking may access trust metadata; no fully offline verification is claimed. Both receipt verifiers return only selected-syscall scope and do not substitute for signature or provider-job checks. The baseline's legacy schema string says v06; the published source and frozen hashes bind the v09 contract.
