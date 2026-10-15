@@ -1,0 +1,59 @@
+{
+  "format": "full11-hosted-replay-protocol-v1",
+  "claim": "For the specified full11copy/pin source, nonnegative additive deterministic worst costs have maximum priority/adaptive ratio5/4; declared16original7-containing menus inherit that maximum.",
+  "A": [
+    "a",
+    1,
+    "a",
+    "b",
+    "a",
+    "c",
+    "c",
+    "a",
+    "b",
+    "b",
+    "c"
+  ],
+  "B": [
+    "u",
+    "u",
+    0,
+    "v",
+    "w",
+    "w",
+    "v",
+    "v",
+    "u",
+    "w",
+    "u"
+  ],
+  "archive": {
+    "name": "full11_direct_proof_v01.zip",
+    "bytes": 3105235,
+    "sha256": "2c875b0f12ef368cc730579f68ceaf708a33cdd1481a01abd15f2aa5fc51d874"
+  },
+  "proof_manifest_sha256": "575ac14eed411deecc2d57663c6c1bdd90e27fa2ea34188c2e8dd965d983fd3b",
+  "proof_obligations": {
+    "adaptive_envelopes_and_roots": 2193,
+    "main_rational_certificates": 125288,
+    "direct_replacement_rational_certificates": 5395,
+    "legal_priority_policies": 293,
+    "true_lower_global_orders": 5040,
+    "witness_adaptive": "4",
+    "witness_priority": "5",
+    "ratio": "5/4"
+  },
+  "execution": "One manual GitHubActions dispatch, no retry. Child900second budget; retained process communication timeout930seconds; Ubuntu24.04 job20minutes. Python3standardlibrary; actual version recorded rather than byte-pinned.",
+  "source_freeze": "Workflow pins HOSTED_FREEZE_V01.json; it binds the wrapper, protocol, README and exact binary source/proof ZIP. Archive members remain byte-identical even where Git text EOL handling differs.",
+  "identity": "Record GitHubrepository,commit,run,attempt,workflow_ref,job and actual child exit. Caller must compare these values with trusted GitHub run metadata; a self-reported identity is not historical or cryptographic attestation.",
+  "limits": [
+    "One specified source, not all eleven-query sources or arbitrary sizes.",
+    "Exact-checker replay is a fresh mathematical verification, not new discovery samples, independent human review or proof of literature priority.",
+    "No original historical scientific run authenticated; no application-method superiority or human gold established.",
+    "C0/P1 and private reserves untouched; no LLM API, provider credential or private author form needed."
+  ],
+  "new_API_calls": 0,
+  "manual_only": true,
+  "automatic_retry": false,
+  "published_run_success_as_of_preparation": false
+}

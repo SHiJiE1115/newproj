@@ -1,0 +1,21 @@
+{
+  "format": "full11-hosted-source-freeze-v1",
+  "files": {
+    "full11_direct_proof_v01.zip": {
+      "bytes": 3105235,
+      "sha256": "2c875b0f12ef368cc730579f68ceaf708a33cdd1481a01abd15f2aa5fc51d874"
+    },
+    "HOSTED_PROTOCOL_V01.json": {
+      "bytes": 2343,
+      "sha256": "984a65724de6d7f9792eda6697b4cb45e0234da6aa738825d876eccef191f229"
+    },
+    "README.txt": {
+      "bytes": 2941,
+      "sha256": "cb16fc254ac5389cd5e1ff2e9ff1c99c7dd6f3c04669258e5a051728ab19de4f"
+    },
+    "run_hosted_full11_v01.py": {
+      "bytes": 9755,
+      "sha256": "5988362c498044fd5c7975c7810b087cb5be208cba1cde63d0f4d8357a37c528"
+    }
+  }
+}
