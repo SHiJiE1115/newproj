@@ -42,3 +42,7 @@ verification instructions. The original 120 repository files remain unchanged. T
 These materials make no blanket project-licence, human-gold or historical
 execution-authentication claim. Author facts and informed final approval remain
 submission matters; no author approval is implied by these machine-produced records.
+
+## Rounded-metric hosted execution retained
+
+[Actual Linux execution and original generated outputs](evidence/rounded_metrics_hosted_v01/README.md): run 38682872578, attempt 1, source commit 7beea07359a15d6084d630a31e0e7bfcc06c4ae7. Complete parsed results match the Windows calculation; formatting bytes differ. This is conditional mathematical reproduction, with no original scientific experiment or model superiority established.

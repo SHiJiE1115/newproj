@@ -1,0 +1,22 @@
+{
+  "status": "PASS_EXACT_CONDITIONAL_REPRODUCTION",
+  "started_utc": "2026-10-15T04:42:34.118446+00:00",
+  "execution_kind": "github-actions",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "run_id": "38682872578",
+  "run_attempt": "1",
+  "commit": "7beea07359a15d6084d630a31e0e7bfcc06c4ae7",
+  "api_calls": 0,
+  "human_gold": false,
+  "scientific_reproduction": false,
+  "actual_dataset_counts": false,
+  "scope": "Recompute the MACD four-rounded-point conditional identification calculation from iteration336. Not the PyHealth calculation, an LLM evaluation, or a new underlying paper experiment.",
+  "manifest_sha256": "a0969f4fc6c360596bdd081846c2f749249fd79f675aea532cad3c468097fdda",
+  "computed_sha256": "a27252f4b9819ead697e268025def338c4cdeec706e47a3f18a8f4277ab2a19e",
+  "computed_canonical_sha256": "9e23d2f016d7ea72919d22d24d9096e4bc3b2d55a0d091c1efe93ef398a0f534",
+  "full_type_sensitive_expected_match": true,
+  "completed_utc": "2026-10-15T04:42:34.183517+00:00",
+  "elapsed_seconds": 0.06506922800002712,
+  "exit_code": 0
+}

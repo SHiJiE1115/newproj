@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "status": "RETAINED_ACTUAL_HOSTED_CONDITIONAL_REPRODUCTION",
+  "repository": "SHiJiE1115/newproj",
+  "source_commit": "7beea07359a15d6084d630a31e0e7bfcc06c4ae7",
+  "source_package_url": "https://github.com/SHiJiE1115/newproj/tree/7beea07359a15d6084d630a31e0e7bfcc06c4ae7/evidence/rounded_metrics_v01",
+  "source_manifest_sha256": "a0969f4fc6c360596bdd081846c2f749249fd79f675aea532cad3c468097fdda",
+  "workflow": {
+    "path": ".github/workflows/rrnc-rounded-metrics.yml",
+    "sha256": "4dc4731f294aa9118739e1e6544951c3cd8159bab5521856399f260db0d63716",
+    "event": "push",
+    "head_branch": "main"
+  },
+  "run": {
+    "id": 38682872578,
+    "attempt": 1,
+    "url": "https://github.com/SHiJiE1115/newproj/actions/runs/38682872578",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "job": {
+    "id": 116251105793,
+    "name": "exact-calculation",
+    "html_url": "https://github.com/SHiJiE1115/newproj/actions/runs/38682872578/job/116251105793",
+    "run_id": 38682872578,
+    "run_attempt": 1,
+    "head_sha": "7beea07359a15d6084d630a31e0e7bfcc06c4ae7",
+    "status": "completed",
+    "conclusion": "success",
+    "labels": [
+      "ubuntu-24.04"
+    ],
+    "started_at": "2026-10-15T04:42:31Z",
+    "completed_at": "2026-10-15T04:42:36Z"
+  },
+  "artifact": {
+    "id": 11948349514,
+    "name": "rounded-metrics-38682872578-1",
+    "size_in_bytes": 4199,
+    "digest": "sha256:09601458caae8af84e6d209db8e414cb4d4e97e09e4461c214d838d14a8f09a2",
+    "created_at": "2026-10-15T04:42:34Z",
+    "expires_at": "2026-10-29T04:42:34Z",
+    "expired": false
+  },
+  "provider_observed_utc": {
+    "jobs": "2026-10-15T04:42:43.591735+00:00",
+    "artifacts": "2026-10-15T04:42:43.959480+00:00"
+  },
+  "retained_original_files": [
+    {
+      "path": "computed.json",
+      "bytes": 29581,
+      "sha256": "a27252f4b9819ead697e268025def338c4cdeec706e47a3f18a8f4277ab2a19e"
+    },
+    {
+      "path": "execution.json",
+      "bytes": 1089,
+      "sha256": "8e856073cf82ab988aef9afc8170dd5d64fbb6f27f9ce37fc5e284ac5db5705c"
+    },
+    {
+      "path": "provider_jobs.json",
+      "bytes": 3139,
+      "sha256": "5c359dd75131414dbb4727bd858402758fa4c06a357ded71ef203cf1ca910356"
+    },
+    {
+      "path": "provider_artifacts.json",
+      "bytes": 1152,
+      "sha256": "4d0c4ce55a2ce4b05d2aeb739c60c496eefd9eeb01bd0d4fefdf007c84d2ebf5"
+    }
+  ],
+  "comparison": {
+    "newly_calculated_linux_vs_windows_full_type_sensitive_match": true,
+    "full_type_sensitive_expected_match": true,
+    "common_canonical_sha256": "9e23d2f016d7ea72919d22d24d9096e4bc3b2d55a0d091c1efe93ef398a0f534",
+    "windows_computed_bytes": 31154,
+    "windows_computed_sha256": "1794f35754707e510c5d3087933860d7badb6ca68019fc237c182c780cb035d4",
+    "linux_computed_bytes": 29581,
+    "linux_computed_sha256": "a27252f4b9819ead697e268025def338c4cdeec706e47a3f18a8f4277ab2a19e",
+    "comparison_scope": "Complete parsed JSON values and types. Original Windows and Linux formatting bytes differ."
+  },
+  "calculation_scope": "MACD four-rounded-point conditional FPR identification and constructed common-cohort witnesses from iteration336.",
+  "model_api_calls": 0,
+  "human_gold": false,
+  "actual_dataset_counts": false,
+  "scientific_replay": false,
+  "signed_historical_authentication": false,
+  "limits": [
+    "One specific observed Ubuntu execution and one prior Windows execution; no proof for all environments.",
+    "No model evaluation, model superiority, human review, or new theoretical novelty is established.",
+    "The counts are mathematical witnesses, not recovered or observed paper data.",
+    "The bounds assume one binary confusion matrix per method and nearest-0.01 point-metric rounding; closed intervals include ties.",
+    "Accuracy confidence intervals, bootstrap procedures, McNemar statistics, original scientific experiments, and the PyHealth calculation are outside this reproduction.",
+    "Provider API snapshots and hashes are retained observations, not signed historical execution authentication."
+  ],
+  "retention_note": "Provider artifact expiration does not remove the original computed/execution bytes retained here. The ZIP itself is represented by its provider identity and verified digest."
+}
