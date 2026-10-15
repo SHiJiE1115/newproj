@@ -1,0 +1,41 @@
+name: Full11 direct exact-proof reproduction
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrnc-full11-direct-reproduction
+  cancel-in-progress: false
+
+jobs:
+  verify-full11-direct:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out the selected source commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify frozen sources and replay the complete exact proof
+        shell: bash
+        run: >-
+          python3 -I -X utf8 -B theory/full11_direct_v01/run_hosted_full11_v01.py
+          --execution-kind github-actions
+          --expect-freeze-sha256 575f3f7c52340f2deea9be7e46a1d4f67c3b89ec115384565fd866116a5ca7a5
+          --output-dir ci-results/full11-direct
+      - name: Preserve actual success or failure receipts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: full11-direct-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ci-results/full11-direct/*.json
+            ci-results/full11-direct/*.txt
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false
