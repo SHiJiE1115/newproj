@@ -1,0 +1,20 @@
+{
+  "format": "full11-hosted-public-retention-v1",
+  "files": {
+    "full11_hosted_receipts_v01.zip": {
+      "bytes": 15158,
+      "sha256": "2e0e1ad9ce972801f429b0416e980edeb509bffc7f00c3f80f914fa503ce616f"
+    },
+    "README.txt": {
+      "bytes": 2808,
+      "sha256": "d030ad3ab5c1fc81efda29991d0f95ba123c62ca288130d717444fdca6d1afec"
+    }
+  },
+  "run_id": 38812275187,
+  "source_commit": "37b10299e6abb9ba260012b24fc244ee90fb94d9",
+  "artifact_id": 12009745146,
+  "actual_child_exit_code": 0,
+  "complete_parsed_math_match_Windows": true,
+  "no_literature_or_application_gain_claim": true,
+  "new_model_API_calls": 0
+}
