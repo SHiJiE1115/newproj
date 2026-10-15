@@ -5,12 +5,16 @@ scoped application evidence. Publication is not journal submission or acceptance
 
 ## Theory reading and verification
 
-- [Current journal V08 reading copy](manuscript/journal_v08/README.md): 28-page draft, source and bibliography. The original six/seven equality-query boundary remains the core theory; Appendix E.2 gives the separate even-path record-source comparison.
+- [Current journal V09 reading copy](manuscript/journal_v09/README.txt): 31-page reviewed draft with the specified full11source extension; author facts, final approval, literature priority and application advantage remain unestablished.
+- [Full11 self-contained direct proof and manual hosted replay](theory/full11_direct_v01/README.txt): one specified source, all2193roots,130683rational nodes,293legal policies and5040true-lower orders. Cloud success is claimed only after a separately retained actual run.
+- [Earlier journal V08 reading copy](manuscript/journal_v08/README.md): 28-page draft, source and bibliography. The original six/seven equality-query boundary remains the core theory; Appendix E.2 gives the separate even-path record-source comparison.
 - [Fixed seven-query verifier](theory/REPRODUCE.md) and [actual hosted evidence](theory/HOSTED_RUNS.md).
 - [Complete six-query archive](theory/complete_six/README.md): download, integrity checks and version-specific executable/analytic scope. The old full run must not be described as a new full execution of every later package.
 - [Fourteen-record control](theory/record_acquisition_v01/DELIVERY.md) and [even-path solver](theory/even_path_v01/DELIVERY.md): separate source models and fixed implementation fixtures.
 
 ## Application evidence
+
+- [Actual S-method negative result and offline decoder repair](evidence/scope_negative_v01/README.txt): all24cases retained; primary S-B upper bound is negative. Post-result repairs remain inconclusive against strong B and do not establish innovation or justify automatic model expansion. Public summary is not a full raw-output replay.
 
 - [Rounded point metrics: conditional identification](evidence/rounded_metrics_v01/README.md): executable rational bounds and two constructed common-cohort witnesses. This reproduces a scoped mathematical calculation, not the original paper experiment or a model success result.
 
