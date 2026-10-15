@@ -1,0 +1,887 @@
+{
+  "format": "scoped-public-model-negative-summary-v1",
+  "status": "NEGATIVE_FROZEN_S_MINUS_B_NO_AUTOMATIC_SCALEUP",
+  "model_alias": "Qwen/Qwen3-14B",
+  "backend_weights_byte_pinned": false,
+  "source_result_sha256": "05cbe5afbdd442e8bdfac18860ea542898f353ea318da31fe49e52b212bd3f0f",
+  "new_requests_in_continuation": 57,
+  "original_total_attempts": 72,
+  "retained_responses": 71,
+  "unresolved_old_response_count": 1,
+  "not_attempted": 0,
+  "planned_cases": 24,
+  "scorable_cases": 23,
+  "scorable_papers": 11,
+  "primary": "Paper-equal-weight S minus B F1 missing-response identification outer bounds; not confidence intervals or population inference.",
+  "identification": {
+    "by_arm": {
+      "A": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 10147157,
+              "denominator": 12501720,
+              "float": 0.8116608754635363
+            },
+            "upper": {
+              "numerator": 10715417,
+              "denominator": 12501720,
+              "float": 0.8571154209180817
+            },
+            "point_identified": false
+          },
+          "recall": {
+            "lower": {
+              "numerator": 14785433153,
+              "denominator": 35850054240,
+              "float": 0.41242428962640254
+            },
+            "upper": {
+              "numerator": 16414981073,
+              "denominator": 35850054240,
+              "float": 0.457878835080948
+            },
+            "point_identified": false
+          },
+          "f1": {
+            "lower": {
+              "numerator": 4438232791,
+              "denominator": 8478910440,
+              "float": 0.5234437634890268
+            },
+            "upper": {
+              "numerator": 4823637811,
+              "denominator": 8478910440,
+              "float": 0.5688983089435722
+            },
+            "point_identified": false
+          }
+        },
+        "known_scorable_cases": 22,
+        "unknown_scorable_cases": 1
+      },
+      "B": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 1824191,
+              "denominator": 2265120,
+              "float": 0.8053396729533093
+            },
+            "upper": {
+              "numerator": 1927151,
+              "denominator": 2265120,
+              "float": 0.8507942184078547
+            },
+            "point_identified": false
+          },
+          "recall": {
+            "lower": {
+              "numerator": 14483682893,
+              "denominator": 20485745280,
+              "float": 0.7070127395921619
+            },
+            "upper": {
+              "numerator": 15414853133,
+              "denominator": 20485745280,
+              "float": 0.7524672850467073
+            },
+            "point_identified": false
+          },
+          "f1": {
+            "lower": {
+              "numerator": 14083577861359,
+              "denominator": 19164897651900,
+              "float": 0.7348631919233213
+            },
+            "upper": {
+              "numerator": 14954709572809,
+              "denominator": 19164897651900,
+              "float": 0.7803177373778668
+            },
+            "point_identified": false
+          }
+        },
+        "known_scorable_cases": 22,
+        "unknown_scorable_cases": 1
+      },
+      "C": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 304926769,
+              "denominator": 442327600,
+              "float": 0.689368624069581
+            },
+            "upper": {
+              "numerator": 304926769,
+              "denominator": 442327600,
+              "float": 0.689368624069581
+            },
+            "point_identified": true
+          },
+          "recall": {
+            "lower": {
+              "numerator": 1490,
+              "denominator": 1617,
+              "float": 0.9214594928880643
+            },
+            "upper": {
+              "numerator": 1490,
+              "denominator": 1617,
+              "float": 0.9214594928880643
+            },
+            "point_identified": true
+          },
+          "f1": {
+            "lower": {
+              "numerator": 1967133518913581671,
+              "denominator": 2571064862506019880,
+              "float": 0.7651045866638364
+            },
+            "upper": {
+              "numerator": 1967133518913581671,
+              "denominator": 2571064862506019880,
+              "float": 0.7651045866638364
+            },
+            "point_identified": true
+          }
+        },
+        "known_scorable_cases": 23,
+        "unknown_scorable_cases": 0
+      },
+      "S": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 10834229503,
+              "denominator": 20951330400,
+              "float": 0.5171141543832463
+            },
+            "upper": {
+              "numerator": 10834229503,
+              "denominator": 20951330400,
+              "float": 0.5171141543832463
+            },
+            "point_identified": true
+          },
+          "recall": {
+            "lower": {
+              "numerator": 789337,
+              "denominator": 1067220,
+              "float": 0.7396197597496299
+            },
+            "upper": {
+              "numerator": 789337,
+              "denominator": 1067220,
+              "float": 0.7396197597496299
+            },
+            "point_identified": true
+          },
+          "f1": {
+            "lower": {
+              "numerator": 139897227933979,
+              "denominator": 236122642255500,
+              "float": 0.5924769712791929
+            },
+            "upper": {
+              "numerator": 139897227933979,
+              "denominator": 236122642255500,
+              "float": 0.5924769712791929
+            },
+            "point_identified": true
+          }
+        },
+        "known_scorable_cases": 23,
+        "unknown_scorable_cases": 0
+      },
+      "S0": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 677552683,
+              "denominator": 1309458150,
+              "float": 0.5174298109489028
+            },
+            "upper": {
+              "numerator": 677552683,
+              "denominator": 1309458150,
+              "float": 0.5174298109489028
+            },
+            "point_identified": true
+          },
+          "recall": {
+            "lower": {
+              "numerator": 159161,
+              "denominator": 213444,
+              "float": 0.7456803658102359
+            },
+            "upper": {
+              "numerator": 159161,
+              "denominator": 213444,
+              "float": 0.7456803658102359
+            },
+            "point_identified": true
+          },
+          "f1": {
+            "lower": {
+              "numerator": 140447630363479,
+              "denominator": 236122642255500,
+              "float": 0.5948079736101952
+            },
+            "upper": {
+              "numerator": 140447630363479,
+              "denominator": 236122642255500,
+              "float": 0.5948079736101952
+            },
+            "point_identified": true
+          }
+        },
+        "known_scorable_cases": 23,
+        "unknown_scorable_cases": 0
+      },
+      "HASH_K": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 10834229503,
+              "denominator": 20951330400,
+              "float": 0.5171141543832463
+            },
+            "upper": {
+              "numerator": 10834229503,
+              "denominator": 20951330400,
+              "float": 0.5171141543832463
+            },
+            "point_identified": true
+          },
+          "recall": {
+            "lower": {
+              "numerator": 789337,
+              "denominator": 1067220,
+              "float": 0.7396197597496299
+            },
+            "upper": {
+              "numerator": 789337,
+              "denominator": 1067220,
+              "float": 0.7396197597496299
+            },
+            "point_identified": true
+          },
+          "f1": {
+            "lower": {
+              "numerator": 139897227933979,
+              "denominator": 236122642255500,
+              "float": 0.5924769712791929
+            },
+            "upper": {
+              "numerator": 139897227933979,
+              "denominator": 236122642255500,
+              "float": 0.5924769712791929
+            },
+            "point_identified": true
+          }
+        },
+        "known_scorable_cases": 23,
+        "unknown_scorable_cases": 0
+      },
+      "LEX_K": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 10887136903,
+              "denominator": 20951330400,
+              "float": 0.5196394069084987
+            },
+            "upper": {
+              "numerator": 10887136903,
+              "denominator": 20951330400,
+              "float": 0.5196394069084987
+            },
+            "point_identified": true
+          },
+          "recall": {
+            "lower": {
+              "numerator": 792571,
+              "denominator": 1067220,
+              "float": 0.742650062779933
+            },
+            "upper": {
+              "numerator": 792571,
+              "denominator": 1067220,
+              "float": 0.742650062779933
+            },
+            "point_identified": true
+          },
+          "f1": {
+            "lower": {
+              "numerator": 140547703532479,
+              "denominator": 236122642255500,
+              "float": 0.595231792215832
+            },
+            "upper": {
+              "numerator": 140547703532479,
+              "denominator": 236122642255500,
+              "float": 0.595231792215832
+            },
+            "point_identified": true
+          }
+        },
+        "known_scorable_cases": 23,
+        "unknown_scorable_cases": 0
+      },
+      "LEX": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 48913,
+              "denominator": 83160,
+              "float": 0.5881794131794131
+            },
+            "upper": {
+              "numerator": 48913,
+              "denominator": 83160,
+              "float": 0.5881794131794131
+            },
+            "point_identified": true
+          },
+          "recall": {
+            "lower": {
+              "numerator": 31525993211,
+              "denominator": 143400216960,
+              "float": 0.2198462030206959
+            },
+            "upper": {
+              "numerator": 31525993211,
+              "denominator": 143400216960,
+              "float": 0.2198462030206959
+            },
+            "point_identified": true
+          },
+          "f1": {
+            "lower": {
+              "numerator": 446233769,
+              "denominator": 1498010976,
+              "float": 0.297884178520198
+            },
+            "upper": {
+              "numerator": 446233769,
+              "denominator": 1498010976,
+              "float": 0.297884178520198
+            },
+            "point_identified": true
+          }
+        },
+        "known_scorable_cases": 23,
+        "unknown_scorable_cases": 0
+      },
+      "ALL": {
+        "paper_macro": {
+          "precision": {
+            "lower": {
+              "numerator": 376469,
+              "denominator": 675675,
+              "float": 0.5571746771746772
+            },
+            "upper": {
+              "numerator": 376469,
+              "denominator": 675675,
+              "float": 0.5571746771746772
+            },
+            "point_identified": true
+          },
+          "recall": {
+            "lower": {
+              "numerator": 1,
+              "denominator": 1,
+              "float": 1.0
+            },
+            "upper": {
+              "numerator": 1,
+              "denominator": 1,
+              "float": 1.0
+            },
+            "point_identified": true
+          },
+          "f1": {
+            "lower": {
+              "numerator": 69196812252518305,
+              "denominator": 98927128303799796,
+              "float": 0.6994725657053208
+            },
+            "upper": {
+              "numerator": 69196812252518305,
+              "denominator": 98927128303799796,
+              "float": 0.6994725657053208
+            },
+            "point_identified": true
+          }
+        },
+        "known_scorable_cases": 23,
+        "unknown_scorable_cases": 0
+      }
+    },
+    "contrasts": {
+      "S_minus_B": {
+        "lower": {
+          "numerator": -1081207414124006261,
+          "denominator": 5755978516165341750,
+          "float": -0.18784076609867395
+        },
+        "upper": {
+          "numerator": -409786013512790818,
+          "denominator": 2877989258082670875,
+          "float": -0.14238622064412848
+        },
+        "width": {
+          "numerator": 1,
+          "denominator": 22,
+          "float": 0.045454545454545456
+        },
+        "decision": "NO_STRICT_POSITIVE_DIFFERENCE_FOR_ANY_BOX_VALUE",
+        "point_identified": false,
+        "scorable_cases": 23,
+        "scorable_papers": 11
+      },
+      "S_minus_C": {
+        "lower": {
+          "numerator": -129091555971900074473,
+          "denominator": 747803621594738709000,
+          "float": -0.17262761538464355
+        },
+        "upper": {
+          "numerator": -129091555971900074473,
+          "denominator": 747803621594738709000,
+          "float": -0.17262761538464355
+        },
+        "width": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "decision": "NO_STRICT_POSITIVE_DIFFERENCE_FOR_ANY_BOX_VALUE",
+        "point_identified": true,
+        "scorable_cases": 23,
+        "scorable_papers": 11
+      },
+      "S_minus_S0": {
+        "lower": {
+          "numerator": -1,
+          "denominator": 429,
+          "float": -0.002331002331002331
+        },
+        "upper": {
+          "numerator": -1,
+          "denominator": 429,
+          "float": -0.002331002331002331
+        },
+        "width": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "decision": "NO_STRICT_POSITIVE_DIFFERENCE_FOR_ANY_BOX_VALUE",
+        "point_identified": true,
+        "scorable_cases": 23,
+        "scorable_papers": 11
+      },
+      "S_minus_HASH_K": {
+        "lower": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "upper": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "width": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "decision": "NO_STRICT_POSITIVE_DIFFERENCE_FOR_ANY_BOX_VALUE",
+        "point_identified": true,
+        "scorable_cases": 23,
+        "scorable_papers": 11
+      },
+      "S_minus_LEX_K": {
+        "lower": {
+          "numerator": -1,
+          "denominator": 363,
+          "float": -0.0027548209366391185
+        },
+        "upper": {
+          "numerator": -1,
+          "denominator": 363,
+          "float": -0.0027548209366391185
+        },
+        "width": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "decision": "NO_STRICT_POSITIVE_DIFFERENCE_FOR_ANY_BOX_VALUE",
+        "point_identified": true,
+        "scorable_cases": 23,
+        "scorable_papers": 11
+      },
+      "S_minus_LEX": {
+        "lower": {
+          "numerator": 379705009536796243,
+          "denominator": 1288914796525356000,
+          "float": 0.29459279275899486
+        },
+        "upper": {
+          "numerator": 379705009536796243,
+          "denominator": 1288914796525356000,
+          "float": 0.29459279275899486
+        },
+        "width": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "decision": "DESCRIPTIVE_POSITIVE_FOR_ALL_BOX_VALUES",
+        "point_identified": true,
+        "scorable_cases": 23,
+        "scorable_papers": 11
+      },
+      "S_minus_ALL": {
+        "lower": {
+          "numerator": -115636426982367931,
+          "denominator": 1080758769579113625,
+          "float": -0.10699559442612797
+        },
+        "upper": {
+          "numerator": -115636426982367931,
+          "denominator": 1080758769579113625,
+          "float": -0.10699559442612797
+        },
+        "width": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        },
+        "decision": "NO_STRICT_POSITIVE_DIFFERENCE_FOR_ANY_BOX_VALUE",
+        "point_identified": true,
+        "scorable_cases": 23,
+        "scorable_papers": 11
+      }
+    },
+    "primary": {
+      "lower": {
+        "numerator": -1081207414124006261,
+        "denominator": 5755978516165341750,
+        "float": -0.18784076609867395
+      },
+      "upper": {
+        "numerator": -409786013512790818,
+        "denominator": 2877989258082670875,
+        "float": -0.14238622064412848
+      },
+      "width": {
+        "numerator": 1,
+        "denominator": 22,
+        "float": 0.045454545454545456
+      },
+      "decision": "NO_STRICT_POSITIVE_DIFFERENCE_FOR_ANY_BOX_VALUE",
+      "point_identified": false,
+      "scorable_cases": 23,
+      "scorable_papers": 11
+    }
+  },
+  "actual_cost": {
+    "actual_A_C_S_only": {
+      "planned_calls": 72,
+      "observed_attempts": 72,
+      "complete_usage_records": 71,
+      "tokens": {
+        "prompt_tokens": {
+          "known_sum": 76490,
+          "known_attempts": 71,
+          "unknown_attempts": 1
+        },
+        "completion_tokens": {
+          "known_sum": 7445,
+          "known_attempts": 71,
+          "unknown_attempts": 1
+        },
+        "total_tokens": {
+          "known_sum": 83935,
+          "known_attempts": 71,
+          "unknown_attempts": 1
+        }
+      }
+    },
+    "by_actual_arm": {
+      "A": {
+        "planned_calls": 24,
+        "observed_attempts": 24,
+        "complete_usage_records": 23,
+        "tokens": {
+          "prompt_tokens": {
+            "known_sum": 22860,
+            "known_attempts": 23,
+            "unknown_attempts": 1
+          },
+          "completion_tokens": {
+            "known_sum": 1929,
+            "known_attempts": 23,
+            "unknown_attempts": 1
+          },
+          "total_tokens": {
+            "known_sum": 24789,
+            "known_attempts": 23,
+            "unknown_attempts": 1
+          }
+        }
+      },
+      "C": {
+        "planned_calls": 24,
+        "observed_attempts": 24,
+        "complete_usage_records": 24,
+        "tokens": {
+          "prompt_tokens": {
+            "known_sum": 25399,
+            "known_attempts": 24,
+            "unknown_attempts": 0
+          },
+          "completion_tokens": {
+            "known_sum": 2055,
+            "known_attempts": 24,
+            "unknown_attempts": 0
+          },
+          "total_tokens": {
+            "known_sum": 27454,
+            "known_attempts": 24,
+            "unknown_attempts": 0
+          }
+        }
+      },
+      "S": {
+        "planned_calls": 24,
+        "observed_attempts": 24,
+        "complete_usage_records": 24,
+        "tokens": {
+          "prompt_tokens": {
+            "known_sum": 28231,
+            "known_attempts": 24,
+            "unknown_attempts": 0
+          },
+          "completion_tokens": {
+            "known_sum": 3461,
+            "known_attempts": 24,
+            "unknown_attempts": 0
+          },
+          "total_tokens": {
+            "known_sum": 31692,
+            "known_attempts": 24,
+            "unknown_attempts": 0
+          }
+        }
+      }
+    },
+    "derived_incremental_calls": {
+      "B": 0,
+      "S0": 0,
+      "HASH_K": 0,
+      "LEX_K": 0,
+      "LEX": 0,
+      "ALL": 0
+    },
+    "pathway_cost_inheritance": {
+      "B": "A",
+      "S0": "S",
+      "HASH_K": "S",
+      "LEX_K": "S"
+    },
+    "derived_incremental_tokens": {
+      "B": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "S0": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "HASH_K": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "LEX_K": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "LEX": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "ALL": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  },
+  "observed_retained_finish_reasons": {
+    "stop": 71
+  },
+  "observed_retained_transport_failures": 0,
+  "observed_retained_truncations": 0,
+  "unresolved_old_response_transport_truncation_cost": "UNKNOWN_NOT_ZERO",
+  "S_all24_execution_states": {
+    "quote_contract_rejection": 5,
+    "unmatched_whole_cell_literal_fallback": 18,
+    "applied_semantically_unvalidated_scope": 1
+  },
+  "S_quote_rejections_with_eligible_reference": 4,
+  "S_all24_JSON_and_binding_schema_valid": true,
+  "post_result_layered_replay": {
+    "not_prospective_or_independent_model_samples": true,
+    "paper_macro": {
+      "bindings_only": {
+        "precision": {
+          "numerator": 1422321301,
+          "denominator": 2095133040,
+          "float": 0.6788692048882967
+        },
+        "recall": {
+          "numerator": 197969,
+          "denominator": 213444,
+          "float": 0.9274985476284178
+        },
+        "f1": {
+          "numerator": 4106078278616,
+          "denominator": 5366423687625,
+          "float": 0.7651423960587825
+        }
+      },
+      "apply_literal_unvalidated": {
+        "precision": {
+          "numerator": 2843319917,
+          "denominator": 4190266080,
+          "float": 0.6785535483226401
+        },
+        "recall": {
+          "numerator": 983377,
+          "denominator": 1067220,
+          "float": 0.9214379415678117
+        },
+        "f1": {
+          "numerator": 4093569132491,
+          "denominator": 5366423687625,
+          "float": 0.7628113937277802
+        }
+      },
+      "C_frozen": {
+        "precision": {
+          "numerator": 304926769,
+          "denominator": 442327600,
+          "float": 0.689368624069581
+        },
+        "recall": {
+          "numerator": 1490,
+          "denominator": 1617,
+          "float": 0.9214594928880643
+        },
+        "f1": {
+          "numerator": 1967133518913581671,
+          "denominator": 2571064862506019880,
+          "float": 0.7651045866638364
+        }
+      },
+      "S_frozen": {
+        "precision": {
+          "numerator": 10834229503,
+          "denominator": 20951330400,
+          "float": 0.5171141543832463
+        },
+        "recall": {
+          "numerator": 789337,
+          "denominator": 1067220,
+          "float": 0.7396197597496299
+        },
+        "f1": {
+          "numerator": 139897227933979,
+          "denominator": 236122642255500,
+          "float": 0.5924769712791929
+        }
+      }
+    },
+    "contrasts": {
+      "bindings_only": {
+        "minus_B_lower": {
+          "numerator": -174697877216250397,
+          "denominator": 11511957032330683500,
+          "float": -0.015175341319084256
+        },
+        "minus_B_upper": {
+          "numerator": 348572896980598853,
+          "denominator": 11511957032330683500,
+          "float": 0.0302792041354612
+        },
+        "minus_C_point": {
+          "numerator": 2174923267002329,
+          "denominator": 57523355507287593000,
+          "float": 3.7809394946141306e-05
+        },
+        "minus_S_frozen_point": {
+          "numerator": 140147,
+          "denominator": 811668,
+          "float": 0.17266542477958968
+        },
+        "minus_bindings_only_point": {
+          "numerator": 0,
+          "denominator": 1,
+          "float": 0.0
+        }
+      },
+      "apply_literal_unvalidated": {
+        "minus_B_lower": {
+          "numerator": -201532275893011897,
+          "denominator": 11511957032330683500,
+          "float": -0.017506343650086586
+        },
+        "minus_B_upper": {
+          "numerator": 321738498303837353,
+          "denominator": 11511957032330683500,
+          "float": 0.027948201804458866
+        },
+        "minus_C_point": {
+          "numerator": -1714857982598290723,
+          "denominator": 747803621594738709000,
+          "float": -0.00229319293605619
+        },
+        "minus_S_frozen_point": {
+          "numerator": 3545,
+          "denominator": 20812,
+          "float": 0.17033442244858735
+        },
+        "minus_bindings_only_point": {
+          "numerator": -1,
+          "denominator": 429,
+          "float": -0.002331002331002331
+        }
+      }
+    },
+    "only_applied_scope_dropped_reference_cells": 4,
+    "only_applied_scope_dropped_nonreference_cells": 2,
+    "new_API_calls": 0,
+    "inherited_original_S_tokens": 31692,
+    "human_gold_created": false
+  },
+  "limits": [
+    "Public aggregate is a disclosure, not complete raw-output/scoring replay; private live-worker logs and credentials are not included.",
+    "Unknown old call was never retried or treated as zero cost. Derived B/S controls reuse parent outputs and are not separately billed.",
+    "Post-result removal/repair of scope is diagnostic, cannot replace the frozen negative S-B endpoint.",
+    "Neither independent code checks nor program/AI review is human annotation or final author approval.",
+    "No significance, generalization, manuscript acceptance or original historical execution-authentication claim."
+  ]
+}

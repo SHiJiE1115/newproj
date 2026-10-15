@@ -1,0 +1,19 @@
+{
+  "format": "scope-negative-public-disclosure-v1",
+  "files": {
+    "layered_decoder_source_v01.zip": {
+      "bytes": 8087,
+      "sha256": "1e3bd1e4964a77e9a48d669634929b19e32ab033210b73c2386732c800c17f3f"
+    },
+    "README.txt": {
+      "bytes": 2417,
+      "sha256": "3950331e89dc014354be23c41c229170de45e74107449207a3029494cf6a2483"
+    },
+    "SUMMARY_V01.json": {
+      "bytes": 25466,
+      "sha256": "9a58e42d4200ed4ed62f71f02cca195383e4d7d603465e2f51253c34c21090c7"
+    }
+  },
+  "raw_response_reproduction_included": false,
+  "method_advantage_established": false
+}
