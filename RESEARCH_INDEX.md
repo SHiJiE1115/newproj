@@ -50,3 +50,7 @@ submission matters; no author approval is implied by these machine-produced reco
 ## Rounded-metric hosted execution retained
 
 [Actual Linux execution and original generated outputs](evidence/rounded_metrics_hosted_v01/README.md): run 38682872578, attempt 1, source commit 7beea07359a15d6084d630a31e0e7bfcc06c4ae7. Complete parsed results match the Windows calculation; formatting bytes differ. This is conditional mathematical reproduction, with no original scientific experiment or model superiority established.
+
+## Full11 actual hosted execution retained
+
+[Actual Linux execution and original receipt archive](evidence/full11_hosted_v01/README.txt): run 38812275187, attempt 1, source commit 37b10299e6abb9ba260012b24fc244ee90fb94d9. The actual child exited 0; all parsed mathematical outputs match the prior Windows replay after excluding only runtime and wall time. The original artifact and a conditional offline receipt verifier are retained. This uses the same exact checker across systems, with no new independent implementation, human review, original historical scientific replay, novelty clearance or application superiority claimed.
