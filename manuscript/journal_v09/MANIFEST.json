@@ -1,0 +1,30 @@
+{
+  "format": "journal-v09-reading-copy-v1",
+  "files": {
+    "CHANGES.txt": {
+      "bytes": 1572,
+      "sha256": "7b6073ffc9a49dca57ec65ee0aeb99aae5c166ebf271317e930a4e8077da8668"
+    },
+    "paper.pdf": {
+      "bytes": 602309,
+      "sha256": "cbc7422dd0ea6baf79eb5d5474ad637417571884684255b8db0503479892e4c2"
+    },
+    "paper.tex": {
+      "bytes": 84358,
+      "sha256": "4f55caa7494a8ba8ff21d09b37f60152833a68cc6322985c382da96d8f7a9954"
+    },
+    "README.txt": {
+      "bytes": 2034,
+      "sha256": "6866849736803cc0c9dd8fc0f63481112cb91ed6b525c377e65f55ad19e6c9f4"
+    },
+    "references.bib": {
+      "bytes": 9733,
+      "sha256": "0b15e13a0c724d4442aa5ae4d17abdc6ae48b0a2bae07d58493ef8d242dcc91b"
+    }
+  },
+  "pages": 31,
+  "private_author_forms_included": false,
+  "human_final_approval": false,
+  "literature_novelty_cleared": false,
+  "application_advantage_established": false
+}
