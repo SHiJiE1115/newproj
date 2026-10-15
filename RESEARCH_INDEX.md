@@ -12,6 +12,8 @@ scoped application evidence. Publication is not journal submission or acceptance
 
 ## Application evidence
 
+- [Rounded point metrics: conditional identification](evidence/rounded_metrics_v01/README.md): executable rational bounds and two constructed common-cohort witnesses. This reproduces a scoped mathematical calculation, not the original paper experiment or a model success result.
+
 - [Two actual Wine executions and the run-separation control](evidence/distinct_run_control_v01/README.md): one newly executed, signed run completes the reverse duplicate-reference control. Two references to one event count as one; two actual events meet run-only separation, while shared data and implementation keep the stronger request unresolved. The same-information SQL baseline agrees; this is not independent scientific replication or application superiority.
 
 - [Required trace-isolation correction and executable v03 package](evidence/read_gate_correction_v01/README.md): one synthetic field erasure exposed a missing baseline premise; the corrected baseline withdraws support while the original 30 layer results remain unchanged. This package retains the v02 typed-exit fix.

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "source": {
+    "url": "https://arxiv.org/html/2602.01740v1",
+    "version": 1,
+    "sha256": "4c82a95c75292f62256de41be65d4f1d8b5b96d3ec9802c2c6bef2d6ef9124ab",
+    "bytes": 343312
+  },
+  "table_dom_id": "S5.T4",
+  "table_view_sha256": "69200afe59a838dc3087e46bce0e3c820a5e97720177e963f41ae9f6b151c06d",
+  "table_fact_scope": "Four printed point metrics for each row. Accuracy CIs and full-paper McNemar statements are not modeled.",
+  "input_nodes": {
+    "Baseline": [
+      "b00529",
+      "b00530",
+      "b00531",
+      "b00532"
+    ],
+    "MACD": [
+      "b00534",
+      "b00535",
+      "b00536",
+      "b00537"
+    ]
+  },
+  "prior_script_sha256": "b45cab816d400a0e02475d91dc5e629a6f8d48bdfa2dd19eddc45687f530ea80",
+  "pure_function_block_sha256": "516d02771d9920f23f9effd46dea6daa1d118935cc49c9523f904421bbd857b4",
+  "prior_bound_result_sha256": "3157362cf5568123f221063dd0d240cf1278bf64f819db7c6e0290ae2d44a28f",
+  "prior_common_cohort_result_sha256": "718bedcaedb73f7277677817551eb8788cf2d14d3e0e68bdaf332902a64cb459",
+  "expected_derivation": "Exact projections of previously executed conditional_identification and common-cohort worlds objects; no renamed math fields.",
+  "core_derivation": "All pure rational functions q through identify are copied byte-for-byte from the original script; Windows orchestration is excluded.",
+  "human_gold": false,
+  "real_sample_counts_recovered": false,
+  "new_theoretical_novelty_claimed": false
+}

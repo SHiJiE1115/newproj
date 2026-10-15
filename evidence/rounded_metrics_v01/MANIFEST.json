@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "scope": "MACD four-rounded-point conditional identification; no original scientific replay",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "DERIVATION.json",
+      "bytes": 1468,
+      "sha256": "f8531e36bd8fc22d2af246876991eb5f7b130e191b7d880a12f7fbd9c7b278a5"
+    },
+    {
+      "path": "exact_bounds.py",
+      "bytes": 4441,
+      "sha256": "b3ab820a04ea1a52ceb16b61f7fbaede326ceef388eebdec1c7c7d79aece8a2d"
+    },
+    {
+      "path": "expected.json",
+      "bytes": 29581,
+      "sha256": "a27252f4b9819ead697e268025def338c4cdeec706e47a3f18a8f4277ab2a19e"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 939,
+      "sha256": "10ec01ef8af2286a877daeeae86aed7b7d9efcbfe0242276cee8358c7b6c48a5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4021,
+      "sha256": "3bbb4f680531efa80b6b89ebb1d9e5bd3b326d3b17d2a5fe08b7da20d83e973c"
+    },
+    {
+      "path": "run.py",
+      "bytes": 5153,
+      "sha256": "36f952e85748a2e3a907d23885116fad020ffec9d9c988329c8f5ecd860a0661"
+    }
+  ]
+}

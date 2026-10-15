@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "cases": {
+    "Baseline": {
+      "printed_metrics": {
+        "accuracy": "0.72",
+        "precision": "0.55",
+        "recall": "0.96",
+        "f1": "0.70"
+      },
+      "target_fpr": "2/5"
+    },
+    "MACD": {
+      "printed_metrics": {
+        "accuracy": "0.85",
+        "precision": "0.73",
+        "recall": "0.90",
+        "f1": "0.80"
+      },
+      "target_fpr": "17/100"
+    }
+  },
+  "constructed_worlds": {
+    "A": {
+      "Baseline": [
+        480,
+        400,
+        20,
+        600
+      ],
+      "MACD": [
+        450,
+        170,
+        50,
+        830
+      ]
+    },
+    "B": {
+      "Baseline": [
+        480,
+        398,
+        20,
+        602
+      ],
+      "MACD": [
+        450,
+        169,
+        50,
+        831
+      ]
+    }
+  },
+  "constructed_total": 1500,
+  "constructed_positives": 500,
+  "constructed_negatives": 1000,
+  "actual_dataset_counts": false,
+  "human_gold": false
+}

@@ -1,0 +1,45 @@
+name: Rounded-metric conditional reproduction
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'evidence/rounded_metrics_v01/**'
+      - '.github/workflows/rrnc-rounded-metrics.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrnc-rounded-metrics
+  cancel-in-progress: false
+
+jobs:
+  exact-calculation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out the exact source commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Recompute complete exact results
+        shell: bash
+        run: >-
+          python3 -I -X utf8 -B evidence/rounded_metrics_v01/run.py
+          --output-dir ci-results/rounded-metrics
+          --expect-manifest-sha256 a0969f4fc6c360596bdd081846c2f749249fd79f675aea532cad3c468097fdda
+          --execution-kind github-actions
+          --run-id '${{ github.run_id }}'
+          --run-attempt '${{ github.run_attempt }}'
+          --commit '${{ github.sha }}'
+      - name: Retain the actual execution and outputs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: rounded-metrics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ci-results/rounded-metrics/*
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false

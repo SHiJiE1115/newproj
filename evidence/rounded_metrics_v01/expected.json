@@ -1,0 +1,1573 @@
+{
+  "conditional_identification": {
+    "Baseline": {
+      "printed_metrics": {
+        "accuracy": "0.72",
+        "precision": "0.55",
+        "recall": "0.96",
+        "f1": "0.70"
+      },
+      "assumed_rounding_closed_intervals": {
+        "accuracy": [
+          [
+            143,
+            200
+          ],
+          [
+            29,
+            40
+          ]
+        ],
+        "precision": [
+          [
+            109,
+            200
+          ],
+          [
+            111,
+            200
+          ]
+        ],
+        "recall": [
+          [
+            191,
+            200
+          ],
+          [
+            193,
+            200
+          ]
+        ],
+        "f1": [
+          [
+            139,
+            200
+          ],
+          [
+            141,
+            200
+          ]
+        ]
+      },
+      "inequalities": [
+        {
+          "name": "TP>=0",
+          "coefficients": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "FP>=0",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "FN>=0",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "TN>=0",
+          "coefficients": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            1,
+            1
+          ]
+        },
+        {
+          "name": "A_lower",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            57,
+            200
+          ]
+        },
+        {
+          "name": "A_upper",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            -11,
+            40
+          ]
+        },
+        {
+          "name": "P_lower",
+          "coefficients": [
+            [
+              -91,
+              200
+            ],
+            [
+              109,
+              200
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "P_upper",
+          "coefficients": [
+            [
+              89,
+              200
+            ],
+            [
+              -111,
+              200
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "R_lower",
+          "coefficients": [
+            [
+              -9,
+              200
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              191,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "R_upper",
+          "coefficients": [
+            [
+              7,
+              200
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              -193,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "F1_lower",
+          "coefficients": [
+            [
+              -61,
+              100
+            ],
+            [
+              139,
+              200
+            ],
+            [
+              139,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "F1_upper",
+          "coefficients": [
+            [
+              59,
+              100
+            ],
+            [
+              -141,
+              200
+            ],
+            [
+              -141,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        }
+      ],
+      "enumeration": {
+        "plane_combinations": 220,
+        "singular_combinations": 36,
+        "distinct_feasible_vertices": 10
+      },
+      "minimum_FPR_denominator_over_vertices": [
+        11627,
+        17954
+      ],
+      "fpr_closed_bounds": [
+        [
+          242561,
+          626280
+        ],
+        [
+          979089,
+          2325400
+        ]
+      ],
+      "fpr_closed_bounds_decimal": [
+        0.3873044005875966,
+        0.42104111120667415
+      ],
+      "lower_vertex": {
+        "proportions_TP_FP_FN_TN": [
+          [
+            1529,
+            4880
+          ],
+          [
+            242561,
+            932080
+          ],
+          [
+            13761,
+            932080
+          ],
+          [
+            2009,
+            4880
+          ]
+        ],
+        "constructed_integer_counts_TP_FP_FN_TN": [
+          292039,
+          242561,
+          13761,
+          383719
+        ],
+        "constructed_total": 932080,
+        "actual_dataset_counts": false,
+        "metrics": {
+          "accuracy": [
+            29,
+            40
+          ],
+          "precision": [
+            26549,
+            48600
+          ],
+          "recall": [
+            191,
+            200
+          ],
+          "f1": [
+            139,
+            200
+          ],
+          "fpr": [
+            242561,
+            626280
+          ]
+        },
+        "strictly_inside_all_rounding_intervals": false
+      },
+      "upper_vertex": {
+        "proportions_TP_FP_FN_TN": [
+          [
+            1221111,
+            3590800
+          ],
+          [
+            979089,
+            3590800
+          ],
+          [
+            44289,
+            3590800
+          ],
+          [
+            1346311,
+            3590800
+          ]
+        ],
+        "constructed_integer_counts_TP_FP_FN_TN": [
+          1221111,
+          979089,
+          44289,
+          1346311
+        ],
+        "constructed_total": 3590800,
+        "actual_dataset_counts": false,
+        "metrics": {
+          "accuracy": [
+            143,
+            200
+          ],
+          "precision": [
+            111,
+            200
+          ],
+          "recall": [
+            193,
+            200
+          ],
+          "f1": [
+            21423,
+            30400
+          ],
+          "fpr": [
+            979089,
+            2325400
+          ]
+        },
+        "strictly_inside_all_rounding_intervals": false
+      },
+      "all_vertices": [
+        [
+          [
+            1529,
+            4880
+          ],
+          [
+            242561,
+            932080
+          ],
+          [
+            13761,
+            932080
+          ]
+        ],
+        [
+          [
+            1529,
+            4880
+          ],
+          [
+            139139,
+            531920
+          ],
+          [
+            7139,
+            531920
+          ]
+        ],
+        [
+          [
+            21037,
+            66640
+          ],
+          [
+            2509,
+            9520
+          ],
+          [
+            109,
+            9520
+          ]
+        ],
+        [
+          [
+            233211,
+            719920
+          ],
+          [
+            186989,
+            719920
+          ],
+          [
+            10989,
+            719920
+          ]
+        ],
+        [
+          [
+            7923,
+            24400
+          ],
+          [
+            1256907,
+            4660400
+          ],
+          [
+            71307,
+            4660400
+          ]
+        ],
+        [
+          [
+            7923,
+            24400
+          ],
+          [
+            720993,
+            2659600
+          ],
+          [
+            36993,
+            2659600
+          ]
+        ],
+        [
+          [
+            1199109,
+            3665200
+          ],
+          [
+            143013,
+            523600
+          ],
+          [
+            6213,
+            523600
+          ]
+        ],
+        [
+          [
+            235653,
+            718160
+          ],
+          [
+            188947,
+            718160
+          ],
+          [
+            8547,
+            718160
+          ]
+        ],
+        [
+          [
+            1208457,
+            3599600
+          ],
+          [
+            968943,
+            3599600
+          ],
+          [
+            56943,
+            3599600
+          ]
+        ],
+        [
+          [
+            1221111,
+            3590800
+          ],
+          [
+            979089,
+            3590800
+          ],
+          [
+            44289,
+            3590800
+          ]
+        ]
+      ],
+      "strict_interior_nonuniqueness_witnesses": [
+        {
+          "proportions_TP_FP_FN_TN": [
+            [
+              1646164574818823,
+              5160418762021600
+            ],
+            [
+              21158835406327979,
+              80355092151479200
+            ],
+            [
+              1139702665707499,
+              80355092151479200
+            ],
+            [
+              2082237980741783,
+              5160418762021600
+            ]
+          ],
+          "constructed_integer_counts_TP_FP_FN_TN": [
+            179431938655251707,
+            148111847844295853,
+            7977918659952493,
+            226963939900854347
+          ],
+          "constructed_total": 562485645060354400,
+          "actual_dataset_counts": false,
+          "metrics": {
+            "accuracy": [
+              289,
+              400
+            ],
+            "precision": [
+              179431938655251707,
+              327543786499547560
+            ],
+            "recall": [
+              179431938655251707,
+              187409857315204200
+            ],
+            "f1": [
+              1646164574818823,
+              2362172678049320
+            ],
+            "fpr": [
+              148111847844295853,
+              375075787745150200
+            ]
+          },
+          "strictly_inside_all_rounding_intervals": true
+        },
+        {
+          "proportions_TP_FP_FN_TN": [
+            [
+              1715177143189569,
+              5160418762021600
+            ],
+            [
+              21658231613212477,
+              80355092151479200
+            ],
+            [
+              1042081919580397,
+              80355092151479200
+            ],
+            [
+              1987423318560929,
+              5160418762021600
+            ]
+          ],
+          "constructed_integer_counts_TP_FP_FN_TN": [
+            186954308607663021,
+            151607621292487339,
+            7294573437062779,
+            216629141723141261
+          ],
+          "constructed_total": 562485645060354400,
+          "actual_dataset_counts": false,
+          "metrics": {
+            "accuracy": [
+              287,
+              400
+            ],
+            "precision": [
+              186954308607663021,
+              338561929900150360
+            ],
+            "recall": [
+              186954308607663021,
+              194248882044725800
+            ],
+            "f1": [
+              1715177143189569,
+              2444086293325120
+            ],
+            "fpr": [
+              151607621292487339,
+              368236763015628600
+            ]
+          },
+          "strictly_inside_all_rounding_intervals": true
+        }
+      ],
+      "specific_fpr_target": [
+        2,
+        5
+      ],
+      "target_slice_enumeration": {
+        "plane_combinations": 66,
+        "singular_combinations": 2,
+        "distinct_feasible_vertices": 5
+      },
+      "target_feasible_in_closed_polytope": true,
+      "target_witness": {
+        "proportions_TP_FP_FN_TN": [
+          [
+            2002831263636669478322,
+            6195513881083173261195
+          ],
+          [
+            1643492464677688698238,
+            6195513881083173261195
+          ],
+          [
+            27983818584094012426,
+            2065171293694391087065
+          ],
+          [
+            821746232338844349119,
+            2065171293694391087065
+          ]
+        ],
+        "constructed_integer_counts_TP_FP_FN_TN": [
+          2002831263636669478322,
+          1643492464677688698238,
+          83951455752282037278,
+          2465238697016533047357
+        ],
+        "constructed_total": 6195513881083173261195,
+        "actual_dataset_counts": false,
+        "metrics": {
+          "accuracy": [
+            4468069960653202525679,
+            6195513881083173261195
+          ],
+          "precision": [
+            1001415631818334739161,
+            1823161864157179088280
+          ],
+          "recall": [
+            1001415631818334739161,
+            1043391359694475757800
+          ],
+          "f1": [
+            1001415631818334739161,
+            1433276611925827423040
+          ],
+          "fpr": [
+            2,
+            5
+          ]
+        },
+        "strictly_inside_all_rounding_intervals": true
+      },
+      "interpretation": "Conditional identification interval, not a confidence interval or a verified population/data result."
+    },
+    "MACD": {
+      "printed_metrics": {
+        "accuracy": "0.85",
+        "precision": "0.73",
+        "recall": "0.90",
+        "f1": "0.80"
+      },
+      "assumed_rounding_closed_intervals": {
+        "accuracy": [
+          [
+            169,
+            200
+          ],
+          [
+            171,
+            200
+          ]
+        ],
+        "precision": [
+          [
+            29,
+            40
+          ],
+          [
+            147,
+            200
+          ]
+        ],
+        "recall": [
+          [
+            179,
+            200
+          ],
+          [
+            181,
+            200
+          ]
+        ],
+        "f1": [
+          [
+            159,
+            200
+          ],
+          [
+            161,
+            200
+          ]
+        ]
+      },
+      "inequalities": [
+        {
+          "name": "TP>=0",
+          "coefficients": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "FP>=0",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "FN>=0",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "TN>=0",
+          "coefficients": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            1,
+            1
+          ]
+        },
+        {
+          "name": "A_lower",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            31,
+            200
+          ]
+        },
+        {
+          "name": "A_upper",
+          "coefficients": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "upper_bound": [
+            -29,
+            200
+          ]
+        },
+        {
+          "name": "P_lower",
+          "coefficients": [
+            [
+              -11,
+              40
+            ],
+            [
+              29,
+              40
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "P_upper",
+          "coefficients": [
+            [
+              53,
+              200
+            ],
+            [
+              -147,
+              200
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "R_lower",
+          "coefficients": [
+            [
+              -21,
+              200
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              179,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "R_upper",
+          "coefficients": [
+            [
+              19,
+              200
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              -181,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "F1_lower",
+          "coefficients": [
+            [
+              -41,
+              100
+            ],
+            [
+              159,
+              200
+            ],
+            [
+              159,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "F1_upper",
+          "coefficients": [
+            [
+              39,
+              100
+            ],
+            [
+              -161,
+              200
+            ],
+            [
+              -161,
+              200
+            ]
+          ],
+          "upper_bound": [
+            0,
+            1
+          ]
+        }
+      ],
+      "enumeration": {
+        "plane_combinations": 220,
+        "singular_combinations": 36,
+        "distinct_feasible_vertices": 6
+      },
+      "minimum_FPR_denominator_over_vertices": [
+        8971,
+        13962
+      ],
+      "fpr_closed_bounds": [
+        [
+          57101,
+          347400
+        ],
+        [
+          54901,
+          292440
+        ]
+      ],
+      "fpr_closed_bounds_decimal": [
+        0.16436672423719056,
+        0.18773423608261525
+      ],
+      "lower_vertex": {
+        "proportions_TP_FP_FN_TN": [
+          [
+            150539,
+            515600
+          ],
+          [
+            57101,
+            515600
+          ],
+          [
+            17661,
+            515600
+          ],
+          [
+            290299,
+            515600
+          ]
+        ],
+        "constructed_integer_counts_TP_FP_FN_TN": [
+          150539,
+          57101,
+          17661,
+          290299
+        ],
+        "constructed_total": 515600,
+        "actual_dataset_counts": false,
+        "metrics": {
+          "accuracy": [
+            171,
+            200
+          ],
+          "precision": [
+            29,
+            40
+          ],
+          "recall": [
+            179,
+            200
+          ],
+          "f1": [
+            5191,
+            6480
+          ],
+          "fpr": [
+            57101,
+            347400
+          ]
+        },
+        "strictly_inside_all_rounding_intervals": false
+      },
+      "upper_vertex": {
+        "proportions_TP_FP_FN_TN": [
+          [
+            4991,
+            15600
+          ],
+          [
+            54901,
+            452400
+          ],
+          [
+            15221,
+            452400
+          ],
+          [
+            8191,
+            15600
+          ]
+        ],
+        "constructed_integer_counts_TP_FP_FN_TN": [
+          144739,
+          54901,
+          15221,
+          237539
+        ],
+        "constructed_total": 452400,
+        "actual_dataset_counts": false,
+        "metrics": {
+          "accuracy": [
+            169,
+            200
+          ],
+          "precision": [
+            29,
+            40
+          ],
+          "recall": [
+            4669,
+            5160
+          ],
+          "f1": [
+            161,
+            200
+          ],
+          "fpr": [
+            54901,
+            292440
+          ]
+        },
+        "strictly_inside_all_rounding_intervals": false
+      },
+      "all_vertices": [
+        [
+          [
+            150539,
+            515600
+          ],
+          [
+            57101,
+            515600
+          ],
+          [
+            17661,
+            515600
+          ]
+        ],
+        [
+          [
+            4669,
+            15600
+          ],
+          [
+            102283,
+            930800
+          ],
+          [
+            32683,
+            930800
+          ]
+        ],
+        [
+          [
+            4669,
+            15600
+          ],
+          [
+            1771,
+            15600
+          ],
+          [
+            491,
+            15600
+          ]
+        ],
+        [
+          [
+            160921,
+            515600
+          ],
+          [
+            61039,
+            515600
+          ],
+          [
+            18879,
+            515600
+          ]
+        ],
+        [
+          [
+            4991,
+            15600
+          ],
+          [
+            109337,
+            930800
+          ],
+          [
+            34937,
+            930800
+          ]
+        ],
+        [
+          [
+            4991,
+            15600
+          ],
+          [
+            54901,
+            452400
+          ],
+          [
+            15221,
+            452400
+          ]
+        ]
+      ],
+      "strict_interior_nonuniqueness_witnesses": [
+        {
+          "proportions_TP_FP_FN_TN": [
+            [
+              12046091,
+              40216800
+            ],
+            [
+              23587790779,
+              208765408800
+            ],
+            [
+              7205107019,
+              208765408800
+            ],
+            [
+              22238731,
+              40216800
+            ]
+          ],
+          "constructed_integer_counts_TP_FP_FN_TN": [
+            62531258381,
+            23587790779,
+            7205107019,
+            115441252621
+          ],
+          "constructed_total": 208765408800,
+          "actual_dataset_counts": false,
+          "metrics": {
+            "accuracy": [
+              341,
+              400
+            ],
+            "precision": [
+              62531258381,
+              86119049160
+            ],
+            "recall": [
+              62531258381,
+              69736365400
+            ],
+            "f1": [
+              12046091,
+              15012080
+            ],
+            "fpr": [
+              23587790779,
+              139029043400
+            ]
+          },
+          "strictly_inside_all_rounding_intervals": true
+        },
+        {
+          "proportions_TP_FP_FN_TN": [
+            [
+              4202823,
+              13405600
+            ],
+            [
+              24695113061,
+              208765408800
+            ],
+            [
+              7141611781,
+              208765408800
+            ],
+            [
+              7158423,
+              13405600
+            ]
+          ],
+          "constructed_integer_counts_TP_FP_FN_TN": [
+            65450562579,
+            24695113061,
+            7141611781,
+            111478121379
+          ],
+          "constructed_total": 208765408800,
+          "actual_dataset_counts": false,
+          "metrics": {
+            "accuracy": [
+              339,
+              400
+            ],
+            "precision": [
+              65450562579,
+              90145675640
+            ],
+            "recall": [
+              65450562579,
+              72592174360
+            ],
+            "f1": [
+              4202823,
+              5225000
+            ],
+            "fpr": [
+              24695113061,
+              136173234440
+            ]
+          },
+          "strictly_inside_all_rounding_intervals": true
+        }
+      ],
+      "specific_fpr_target": [
+        17,
+        100
+      ],
+      "target_slice_enumeration": {
+        "plane_combinations": 66,
+        "singular_combinations": 2,
+        "distinct_feasible_vertices": 3
+      },
+      "target_feasible_in_closed_polytope": true,
+      "target_witness": {
+        "proportions_TP_FP_FN_TN": [
+          [
+            2270299743767,
+            7538237682300
+          ],
+          [
+            851826741137,
+            7538237682300
+          ],
+          [
+            85730800811,
+            2512745894100
+          ],
+          [
+            4158918794963,
+            7538237682300
+          ]
+        ],
+        "constructed_integer_counts_TP_FP_FN_TN": [
+          2270299743767,
+          851826741137,
+          257192402433,
+          4158918794963
+        ],
+        "constructed_total": 7538237682300,
+        "actual_dataset_counts": false,
+        "metrics": {
+          "accuracy": [
+            49455527221,
+            57986443710
+          ],
+          "precision": [
+            133547043751,
+            183654499112
+          ],
+          "recall": [
+            133547043751,
+            148676008600
+          ],
+          "f1": [
+            133547043751,
+            166165253856
+          ],
+          "fpr": [
+            17,
+            100
+          ]
+        },
+        "strictly_inside_all_rounding_intervals": true
+      },
+      "interpretation": "Conditional identification interval, not a confidence interval or a verified population/data result."
+    }
+  },
+  "worlds": {
+    "A": {
+      "Baseline": {
+        "constructed_counts_TP_FP_FN_TN": [
+          480,
+          400,
+          20,
+          600
+        ],
+        "actual_counts": false,
+        "total": 1500,
+        "positives": 500,
+        "negatives": 1000,
+        "metrics": {
+          "accuracy": [
+            18,
+            25
+          ],
+          "precision": [
+            6,
+            11
+          ],
+          "recall": [
+            24,
+            25
+          ],
+          "f1": [
+            16,
+            23
+          ],
+          "fpr": [
+            2,
+            5
+          ]
+        },
+        "strictly_inside_displayed_rounding_intervals": true,
+        "fpr_decimal": 0.4
+      },
+      "MACD": {
+        "constructed_counts_TP_FP_FN_TN": [
+          450,
+          170,
+          50,
+          830
+        ],
+        "actual_counts": false,
+        "total": 1500,
+        "positives": 500,
+        "negatives": 1000,
+        "metrics": {
+          "accuracy": [
+            64,
+            75
+          ],
+          "precision": [
+            45,
+            62
+          ],
+          "recall": [
+            9,
+            10
+          ],
+          "f1": [
+            45,
+            56
+          ],
+          "fpr": [
+            17,
+            100
+          ]
+        },
+        "strictly_inside_displayed_rounding_intervals": true,
+        "fpr_decimal": 0.17
+      }
+    },
+    "B": {
+      "Baseline": {
+        "constructed_counts_TP_FP_FN_TN": [
+          480,
+          398,
+          20,
+          602
+        ],
+        "actual_counts": false,
+        "total": 1500,
+        "positives": 500,
+        "negatives": 1000,
+        "metrics": {
+          "accuracy": [
+            541,
+            750
+          ],
+          "precision": [
+            240,
+            439
+          ],
+          "recall": [
+            24,
+            25
+          ],
+          "f1": [
+            480,
+            689
+          ],
+          "fpr": [
+            199,
+            500
+          ]
+        },
+        "strictly_inside_displayed_rounding_intervals": true,
+        "fpr_decimal": 0.398
+      },
+      "MACD": {
+        "constructed_counts_TP_FP_FN_TN": [
+          450,
+          169,
+          50,
+          831
+        ],
+        "actual_counts": false,
+        "total": 1500,
+        "positives": 500,
+        "negatives": 1000,
+        "metrics": {
+          "accuracy": [
+            427,
+            500
+          ],
+          "precision": [
+            450,
+            619
+          ],
+          "recall": [
+            9,
+            10
+          ],
+          "f1": [
+            300,
+            373
+          ],
+          "fpr": [
+            169,
+            1000
+          ]
+        },
+        "strictly_inside_displayed_rounding_intervals": true,
+        "fpr_decimal": 0.169
+      }
+    }
+  },
+  "same_total_and_prevalence_in_both_worlds": true
+}
