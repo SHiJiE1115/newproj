@@ -1,5 +1,10 @@
 # Research materials: current index
 
+## Current reviewed V12 and small-menu randomization proof
+
+[39-page V12 reading copy and editable source](manuscript/journal_v12/README.txt) integrates the separately defined randomized extension, preserving all13old numbered results and adding Theorem14/Corollary15. [Exact <=3 certificate-ideal proof packet](theory/small_menu_randomization_v01/README.txt) gives the finite all-cost premise. Four is the sharp minimum for randomization benefit and common-completion discrepancy in complete equivalence fibres, distinct from deterministic6/7. The old four-query executable is inherited, not rerun. The current manual workflow has not yet been declared successful merely by this deposit. Literature priority, human approval and practical application advantage remain unestablished; prior V10and historical archives remain exact.
+
+
 This index separates the theory reading copy, its verification artifacts, and
 scoped application evidence. Publication is not journal submission or acceptance.
 

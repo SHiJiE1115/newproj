@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FRESH_LE3_ACTUAL_EXIT_AND_ALL_NON_TIMING_FIELDS_EQUAL",
+  "runtime": {
+    "python": "3.12.14",
+    "system": "Windows"
+  },
+  "at_utc": "2026-10-16T03:14:12.100169+00:00",
+  "checker_pid": 14708,
+  "checker_actual_exit_code": 0,
+  "retained_Popen_wait": true,
+  "canonical_non_timing_result_sha256": "462f25ce1dfaaaad671e061a8e90fe34fb65b0077a9abd366599b2dcab2169c3",
+  "actual_checker_result_sha256": "e487df2b07034db8a9f9b76c35c999254d3c5ff612f557f6caff2819a53cf81d",
+  "source_packet_sha256": "e6d6719871177da37ffbc4a62dfe4ac172578e2909343a54f885a889c9ab192d",
+  "all_non_timing_fields_equal_expected": true,
+  "excluded_fields": [
+    "wall_seconds"
+  ],
+  "no_mathematical_fields_excluded": true,
+  "four_query_reexecuted": false,
+  "new_model_API_calls": 0,
+  "human_review": false
+}

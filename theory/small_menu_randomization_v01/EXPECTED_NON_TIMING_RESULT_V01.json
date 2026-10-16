@@ -1,0 +1,57 @@
+{
+  "status": "PASS_FRESH_LE3_IDEAL_PROOF",
+  "mathematics": {
+    "independent_source_reconstruction": {
+      "closed_graphs_of32768_edge_assignments": 203,
+      "fibre_specifications": 53071,
+      "distinct_supports": 55,
+      "nonconstant_disjoint_source_pairs": 924
+    },
+    "reports": [
+      {
+        "dimension": 1,
+        "tasks": 2,
+        "nonempty_downsets": 2,
+        "checked_source_ideal_pairs": 4,
+        "applicable_tree_witnesses": 2,
+        "inapplicable_certificates": 2,
+        "full_cube_paths_checked": 4,
+        "source_certificate_witnesses_checked": 4,
+        "producer_report_sha256": "63bbb5da1881ecacef23df812506576d8369c31243530a30b71b1548c8610ed6"
+      },
+      {
+        "dimension": 2,
+        "tasks": 50,
+        "nonempty_downsets": 5,
+        "checked_source_ideal_pairs": 250,
+        "applicable_tree_witnesses": 118,
+        "inapplicable_certificates": 132,
+        "full_cube_paths_checked": 472,
+        "source_certificate_witnesses_checked": 336,
+        "producer_report_sha256": "da35eaf2bc08e9c1ae5f01a03a7dbfcb514397e54d9264a848d1618e2e5753cc"
+      },
+      {
+        "dimension": 3,
+        "tasks": 924,
+        "nonempty_downsets": 19,
+        "checked_source_ideal_pairs": 17556,
+        "applicable_tree_witnesses": 10854,
+        "inapplicable_certificates": 6702,
+        "full_cube_paths_checked": 86832,
+        "source_certificate_witnesses_checked": 44322,
+        "producer_report_sha256": "bb32e95fdb37176ecd32f83bbb1b9d7af9c714f16e8fd82243413f3b4829665f"
+      }
+    ],
+    "checked_source_ideal_pairs": 17810,
+    "applicable_total_priority_tree_witnesses": 10974,
+    "full_cube_paths_checked": 87308
+  },
+  "protocol_sha256": "c74265b0ae568a7eddd5adf128c51cdb485f6c203bdb37614f708d2b06a3ea5e",
+  "manifest_sha256": "a9ab2ff3692e0dcd5b3d063c127d27f2015ab59cb530476df098f343df0ea03d",
+  "four_query_reexecuted": false,
+  "fresh_lower_bound_replayed": true,
+  "same_checker_portability_not_another_independent_implementation": true,
+  "literature_priority_established": false,
+  "human_review": false,
+  "new_model_API_calls": 0
+}

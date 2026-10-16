@@ -1,0 +1,41 @@
+{
+  "status": "EXACT_SIX_RAW_INPUT_FILES_AND_FINITE_CHECKER_CORE_PRESERVED",
+  "original_private_packet_sha256": "59928f1519a1f8a172166e4779e6c2f411a9628fbda5b6a08d664f6a1038c03e",
+  "unchanged_proof_files": [
+    {
+      "name": "CERTIFICATE_IDEAL_PROTOCOL_V01.json",
+      "bytes": 3820,
+      "sha256": "c74265b0ae568a7eddd5adf128c51cdb485f6c203bdb37614f708d2b06a3ea5e"
+    },
+    {
+      "name": "COMPLETE_THREE_QUERY_FIBRES_V01.json",
+      "bytes": 12833,
+      "sha256": "bd86f8278eaeb133e622d53cb256ce99ced887c7725e5e4992bfdeaa3232af28"
+    },
+    {
+      "name": "IDEAL_COVER_DIM1_V01.json",
+      "bytes": 876,
+      "sha256": "63bbb5da1881ecacef23df812506576d8369c31243530a30b71b1548c8610ed6"
+    },
+    {
+      "name": "IDEAL_COVER_DIM2_V01.json",
+      "bytes": 47090,
+      "sha256": "da35eaf2bc08e9c1ae5f01a03a7dbfcb514397e54d9264a848d1618e2e5753cc"
+    },
+    {
+      "name": "IDEAL_COVER_DIM3_V01.json",
+      "bytes": 4020167,
+      "sha256": "bb32e95fdb37176ecd32f83bbb1b9d7af9c714f16e8fd82243413f3b4829665f"
+    },
+    {
+      "name": "EXPECTED_SMALL_MENU_LOWER_V01.json",
+      "bytes": 1535,
+      "sha256": "7824e8b63224ebb8da96efad84c839eccc93ef75d3b813d6e2811140d945f516"
+    }
+  ],
+  "finite_core_utf8_sha256": "0e4569f17742850bae2116145ac67e827b2fd0d0962940e5f3d852959966af27",
+  "core_begin": "started = time.monotonic()",
+  "core_end": "assert lower equals expected parsed mathematical file; before old reference handling",
+  "changes": "Docstring, packet manifest, README and result packaging; remove path-bearing old4query JSON/ZIP inclusion and replace with explicit inherited summary. No finite mathematical code/data changes.",
+  "not_a_third_independent_implementation": true
+}
