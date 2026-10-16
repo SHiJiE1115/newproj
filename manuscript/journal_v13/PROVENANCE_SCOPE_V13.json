@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "status": "PUBLIC_V13_EDITORIAL_COPY_WITH_DECLARED_LEDGER_DERIVATION",
+  "created_at_utc": "2026-10-16T04:21:53.892231+00:00",
+  "original_private_delivery_acceptance_sha256": "3ae517e7caffb31e5d9d125ed40bb7b81b0def4a3f357451dd6b5c49dd8333f3",
+  "private_closure_sha256": "f04e167a576c5310ee8fd901a1c77d5de4a8f13d568e25875eb3ef3fe4ef39aa",
+  "reading_copy": {
+    "path": "paper.pdf",
+    "bytes": 669421,
+    "sha256": "097ba7495eaaf737fe4f412f8f80a9683a9c450ba5c6da706fe7d55ea47c1c72",
+    "pages": 40
+  },
+  "editable_source": {
+    "path": "editable_source_v13.zip",
+    "bytes": 102330,
+    "sha256": "9c1e6ab16881e7a42f6bcf04d3ecdb075ffbe52a7a48bc371f7897d4c51d2ba0",
+    "members": 12,
+    "byte_identical_to_accepted_private_zip": true
+  },
+  "current_claim_index": {
+    "path": "CLAIM_EVIDENCE_INDEX_V13.json",
+    "claims": 30,
+    "numbered_results": 15,
+    "original_private_sha256": "388eb0232b75827a2e2560d20f41720a79ed30f1df691ac48173552a4d32076b",
+    "public_sha256": "40d772d9f14c0d3a9ecb32e70a2c853967981f40169ca6f4f19edc67dda4ab08"
+  },
+  "unchanged_V12_mathematics": {
+    "numbered_statements": 15,
+    "proof_environments": 12,
+    "floating_tables": 5
+  },
+  "local_relocated_build": {
+    "processes": [
+      {
+        "stage": "compile_1",
+        "pid": 25960,
+        "actual_exit_code": 0,
+        "retained_Popen_wait": true,
+        "timed_out": false
+      },
+      {
+        "stage": "compile_2",
+        "pid": 5140,
+        "actual_exit_code": 0,
+        "retained_Popen_wait": true,
+        "timed_out": false
+      },
+      {
+        "stage": "compile_3",
+        "pid": 18764,
+        "actual_exit_code": 0,
+        "retained_Popen_wait": true,
+        "timed_out": false
+      }
+    ],
+    "pages": 40,
+    "all_page_texts_equal": true,
+    "all_decoded_content_streams_equal": true,
+    "all_page_boxes_equal": true,
+    "private_acceptance_sha256": "e77549d295a762273d47eceea720916bcb3b2c1e0b84f9d242eaf8acdb0d8197"
+  },
+  "visual_scope": {
+    "final_page_directly_viewed": 40,
+    "final_pages_byte_identical_to_actually_viewed_images": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "private_review_sha256": "10f9269aa1a5dd82b8a4c33b6aa0de222816dc50dba088c33f07ce274082fab3",
+    "human_approval": false
+  },
+  "formal_primary_reference": {
+    "doi": "10.1007/s00037-025-00266-7",
+    "year": 2025,
+    "journal": "Computational Complexity",
+    "volume": 34,
+    "article": 20,
+    "journal_theorem": "5.5",
+    "earlier_conference_theorem": "4.5",
+    "measure": "randomized decision-tree size, not target expected purchased-set cost"
+  },
+  "existing_small_menu_execution": {
+    "source_commit": "aade35dbb049f64f6a66e0db8fd79fc269fb0ba5",
+    "run_id": 38844940996,
+    "attempt": 1,
+    "checker_pid": 2403,
+    "checker_exit": 0,
+    "archive_commit": "1f70f518aa56f6ed368ce8d02fab5cbeb5ee3dc9",
+    "original_artifact_bytes": 3928,
+    "original_artifact_sha256": "d079ee21ba414964dd7c18b3eb4088ed211ee1c67de07259af458fb5eecdfed3",
+    "only_excluded_result_field": "wall_seconds",
+    "mathematical_fields_excluded": [],
+    "not_new_execution_this_deposit": true,
+    "trust": "Conditional executed source/authentic provider metadata/original service digest; local copies alone do not authenticate the provider."
+  },
+  "new_hosted_runs": 0,
+  "new_scientific_replays": 0,
+  "new_model_API_calls": 0,
+  "private_support_memo_released": false,
+  "bibliographic_priority_established": false,
+  "human_author_approval": false,
+  "journal_submitted": false,
+  "new_blanket_project_licence": false,
+  "third_party_full_texts_released": false
+}

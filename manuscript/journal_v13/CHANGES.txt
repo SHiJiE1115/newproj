@@ -1,0 +1,21 @@
+V12 -> V13 (editorial, no numbered mathematical result changed)
+
+-39pages ->40pages after actual compilation and final visual coverage.
+-All15numbered statements,12proofs,5floating tables,230word abstract and5keywords
+ remain verbatim.30claim scopes remain; current page bindings are updated.
+-19references: replace the inspected MFCS2023CDM conference record with formal
+ Computational Complexity34, Article20(2025), DOI10.1007/s00037-025-00266-7.
+ Explain that journalTheorem5.5 corresponds to conference4.5and concerns size.
+ The other18reference entries remain exact. No silent version substitution.
+-Add actual small-menu public availability and source/run/archive provenance,
+ distinguishing same-checker portability, original artifact and provider trust.
+-Bound the exact-transfer comparison by complete source, physical menu, cost,
+ correctness, random seed and charging convention. The separate supporting
+ expressivity memo stays private and is not promoted to a numbered result.
+-SourceZIP is byte-identical to accepted privateV13and all12members are exact.
+ Only the public claim ledger is a declared path-normalized derivative.
+
+PublicV12and every older proof/source/execution record remain unchanged. No
+new Actions dispatch, scientific replay, model call, human approval or priority
+clearance occurred for this editorial release. Local compile success is not
+publisher conversion acceptance. Final author facts/approval remain pending.

@@ -1,0 +1,2256 @@
+{
+  "schema": "V13_CURRENT_CLAIM_EVIDENCE_INDEX",
+  "status": "PASS30_CLAIMS15_UNCHANGED_NUMBERED_RESULTS_CURRENT_BINDINGS",
+  "manuscript": {
+    "source": {
+      "path": "paper.tex",
+      "bytes": 114628,
+      "sha256": "6fd1d0b4f125cf070308e68f52db9dbb00a654468be6ce2ddb34497d2fc5accc"
+    },
+    "pdf": {
+      "path": "paper.pdf",
+      "bytes": 669421,
+      "sha256": "097ba7495eaaf737fe4f412f8f80a9683a9c450ba5c6da706fe7d55ea47c1c72"
+    },
+    "pages": 40
+  },
+  "retained_V10_index": {
+    "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+    "bytes": 84259,
+    "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+  },
+  "V11_to_V12_source_review": {
+    "path": "bound-local-evidence/iteration372/SOURCE_CORRESPONDENCE_V02.json",
+    "bytes": 1259,
+    "sha256": "38bf2dad7058c3d53932f23a422f2a34656071d72df8ae997bca0b4484edf0f8"
+  },
+  "retained_claims": [
+    {
+      "id": "core.dominance",
+      "inherited_record": {
+        "id": "core.dominance",
+        "inherited_record": {
+          "id": "core.dominance",
+          "stable_label": "lem:dominance",
+          "printed_kind": "Lemma",
+          "printed_number": "1",
+          "page": 4,
+          "statement_scope": "Envelope downward-closure inclusion is sufficient for domination for every monotone purchased-set cost, and necessary for domination at every nonnegative additive vector.",
+          "verification_type": "written_elementary_proof",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines 95-103: containment proves sufficiency; indicator prices on a noncontained set prove necessity."
+            }
+          ],
+          "limits": [
+            "An envelope comparison, not equality of optimal policy classes at every additive cost. No program execution is the proof of this lemma."
+          ],
+          "source_lines": [
+            95,
+            103
+          ],
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "lem:dominance",
+          "number": "1",
+          "page": "4"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "lem:dominance",
+        "number": "1",
+        "page": "4"
+      }
+    },
+    {
+      "id": "core.universal_equality",
+      "inherited_record": {
+        "id": "core.universal_equality",
+        "inherited_record": {
+          "id": "core.universal_equality",
+          "stable_label": "lem:criterion",
+          "printed_kind": "Lemma",
+          "printed_number": "2",
+          "page": 4,
+          "statement_scope": "For a finite disjoint binary promise, equality of optimal adaptive and strong-priority values for all normalized nonnegative monotone costs is equivalent to a realizable priority envelope below every minimal adaptive envelope.",
+          "verification_type": "written_elementary_proof",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines 105-114 and Appendix A lines 568-582: finite frontier completeness, monotone paid-context pruning and the zero/one outside-downset separating cost."
+            }
+          ],
+          "limits": [
+            "The converse uses arbitrary monotone costs, not additive costs alone. The global order may depend on the selected cost or envelope. Not a scalar Bellman argument for arbitrary context-dependent set cost."
+          ],
+          "source_lines": [
+            105,
+            114
+          ],
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "lem:criterion",
+          "number": "2",
+          "page": "4"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "lem:criterion",
+        "number": "2",
+        "page": "5"
+      }
+    },
+    {
+      "id": "core.boundary",
+      "inherited_record": {
+        "id": "core.boundary",
+        "inherited_record": {
+          "id": "core.boundary",
+          "stable_label": "thm:boundary",
+          "printed_kind": "Theorem",
+          "printed_number": "3",
+          "page": 5,
+          "statement_scope": "For every pair of nonempty disjoint complete SAME/DIFFERENT partition-fibre supports on a common physical menu of at most six reliable pair queries, A_F=P_F for every normalized nonnegative monotone F. A seven-query complete-fibre instance separates them at strictly positive additive prices. Seven is minimal in each of the four stated cost classes.",
+          "verification_type": "computer_assisted_finite_premise_plus_written_reductions_and_direct_seven_witness",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines 142-203: endpoint/source/filter completeness, common physical realization, simultaneous symmetry and cost transport, Lemmas 1/2/4, singleton/shared-constant reductions and padding. Lines 205-383 provide the seven witness and direct all-policy order obstruction."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration272/full_closure_v01/RESULT.json",
+                "bytes": 11135,
+                "sha256": "e42fb39d3a52a9ccded272af97a28cac3a2f31fa78945d737c527b1c01ff2bdd"
+              },
+              "role": "Iteration272 closed original V03 aggregate execution and separately bounded scientific-byte correspondence to the later candidate; actual mathematical execution is the former."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/reproduction_v18/ROOT_FULL_TERMINAL_V01.json",
+                "bytes": 2194,
+                "sha256": "388fd89c27eff337e016ed42df51db4301a2f2468ae1b2d4874c4df6bb315bf8"
+              },
+              "role": "Retained actual root-owned terminal tool return c3306e, session85490, integer exit0; not a signed attestation."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/reproduction_v18/INDEPENDENT_CLOSED_RECEIPT_QA_V01.json",
+                "bytes": 12534,
+                "sha256": "560641db0fed7e3726f5c92431638f0668978190e1ad2a0de912c29c4365a9c4"
+              },
+              "role": "Independent bounded audit of original receipt chain, stage exits, source/coverage bindings and count alignment; reuses fixed validators, no new solver."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-artifact/ANALYTIC_OBLIGATIONS_V01.md",
+                "bytes": 2832,
+                "sha256": "13a94dd2d85f6c5e4241cc3464bc2571ee3c5a090382a746411eeed9b435e3f3"
+              },
+              "role": "Frozen candidate analytic-obligations note. It records written premises and historical manuscript bindings; this is not the current journal manuscript or a machine proof."
+            }
+          ],
+          "limits": [
+            "Unrestricted record/class count is allowed only under the complete-fibre source contract; arbitrary Horn promises/subsets and changes to acquisition units are outside the theorem.",
+            "The 112971 analytic cases are not fresh explicit-certificate executions. Complete executable layers plus written arguments support the theorem; no proof-assistant certification is claimed.",
+            "Original V03 run is complete; later candidate fresh aggregate execution remains false. Current journal V08 mapping does not retrospectively alter either executable contract.",
+            "No universal upper ratio for every seven-query source, computational-efficiency guarantee, application advantage or literary-priority certification."
+          ],
+          "source_lines": [
+            142,
+            228
+          ],
+          "dependencies": [
+            "core.dominance",
+            "core.universal_equality",
+            "core.finite_premise",
+            "core.seven_direct_obstruction"
+          ],
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "thm:boundary",
+          "number": "3",
+          "page": "6"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "thm:boundary",
+        "number": "3",
+        "page": "6"
+      }
+    },
+    {
+      "id": "core.finite_premise",
+      "inherited_record": {
+        "id": "core.finite_premise",
+        "inherited_record": {
+          "id": "core.finite_premise",
+          "stable_label": "lem:finite",
+          "printed_kind": "Lemma",
+          "printed_number": "4",
+          "page": 7,
+          "statement_scope": "For every disjoint pair in the complete five-query family, and every disjoint six-query pair with neither singleton side nor shared constant, every minimal adaptive envelope has a correct one-global-order causal TAKE/permanent-SKIP policy below it.",
+          "verification_type": "exact_exhaustive_frontier_and_certificate_replay_with_complete_source_and_orbit_checks",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines 165-203 give the catalogue intersection completeness, representative transport, precise finite premise and analytic exclusions."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-artifact/stdout.txt",
+                "bytes": 1849,
+                "sha256": "dabf9295062e5674e22ac2fc86f5d45494af7c29bed70ce86a5de8f468020f42"
+              },
+              "role": "Original completed catalogue stage:198091 endpoint topologies,546735 supports; not by itself a policy theorem."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-artifact/stdout.txt",
+                "bytes": 3563,
+                "sha256": "d6086198242e97c92f58506b39ca3e174df5bc3844ba96c9bc7de8711edf3a19"
+              },
+              "role": "Original completed orbit stage:2860696 genuine unique orbits, canonicality/weights/Burnside and disjoint case groups relative to the same profile set."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-artifact/stdout.txt",
+                "bytes": 2679,
+                "sha256": "177598c2f23faf66d778ddd6a6c7691344b4a91ab137bdf76bd8762de75b7a92"
+              },
+              "role": "Original completed five-query foundation:9439 supports,34601 pair orbits,54021 priority witnesses, full adaptive frontier reconstruction."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-artifact/stdout.txt",
+                "bytes": 2849,
+                "sha256": "9c96536f0e49496d09a6b88d1da8a688e461a8b5cd9d10fcea048c7a6d4d6854"
+              },
+              "role": "Original completed explicit six-query stage:2747725 records and4074031 witnesses across all five disjoint namespaces/intervals."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/reproduction_v18/INDEPENDENT_CLOSED_RECEIPT_QA_V01.json",
+                "bytes": 12534,
+                "sha256": "560641db0fed7e3726f5c92431638f0668978190e1ad2a0de912c29c4365a9c4"
+              },
+              "role": "Binds all four actual stage results and exits to the same original execution and verifies cross-layer alignment."
+            }
+          ],
+          "limits": [
+            "Counts alone are insufficient; membership, complete frontiers, canonical coverage and policy checks are distinct requirements.",
+            "Singleton51048 and shared-constant61923 cases are analytic; duplicate-only129250 cases are explicit, not reduced by choosing a cheaper representative.",
+            "This map rereads small results only; it does not rehash/replay the large scientific payload or create an additional independent implementation."
+          ],
+          "source_lines": [
+            165,
+            203
+          ],
+          "case_partition": {
+            "analytic_singleton": 51048,
+            "analytic_shared_constant_without_singleton": 61923,
+            "explicit_duplicate_only": 129250,
+            "explicit_residual": 2618475,
+            "explicit_total": 2747725,
+            "analytic_total": 112971,
+            "all_orbits": 2860696
+          },
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "lem:finite",
+          "number": "4",
+          "page": "7"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "lem:finite",
+        "number": "4",
+        "page": "8"
+      }
+    },
+    {
+      "id": "core.seven_direct_obstruction",
+      "inherited_record": {
+        "id": "core.seven_direct_obstruction",
+        "inherited_record": {
+          "id": "core.seven_direct_obstruction",
+          "stable_label": "app:order-obstruction",
+          "printed_kind": "Unnumbered supporting proof",
+          "printed_number": null,
+          "page": 10,
+          "statement_scope": "For the exact eight-plus-eight template source and costs(2,2,3,epsilon,1,1,1),0<epsilon<1, an adaptive policy costs at most4+epsilon while every strong-priority policy costs at least5; the displayed priority policy attains5.",
+          "verification_type": "self_contained_written_complete_realization_and_all_first_purchase_skip_obstruction",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Section3.3 lines205-237 realizes every template assignment by14 records retaining all legal cross-block merges. Section3.5 lines260-383 relaxes by free q3 while preserving one common order; both probe branches force contradictory precedences and account for permanent skips."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/autonomous_technical_review_20261011/review_cd/TECHNICAL_REVIEW_CD_SUMMARY_V01.json",
+                "bytes": 7532,
+                "sha256": "8cc685c9512e030730225288de5408a01f3d106c499659cc52610dc49c816adf"
+              },
+              "role": "Prior independent AI technical review of the same direct argument, with small literal-world checks; no full frontier premise needed for strict separation."
+            }
+          ],
+          "limits": [
+            "The direct proof establishes the stated separation without the all-order enumeration, but not the six-query minimality premise or all-price ratio.",
+            "Exact adaptive value9/2 at epsilon1/2 additionally follows from the complete frontier; the explicit adaptive policy already suffices for separation.",
+            "Synthetic complete-source construction, not natural data, human gold, history authentication or measured physical acquisition."
+          ],
+          "source_lines": [
+            205,
+            383
+          ],
+          "section_number": "3.5",
+          "source_realization_page": 8,
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "app:order-obstruction",
+          "number": "3.5",
+          "page": "10"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "app:order-obstruction",
+        "number": "3.5",
+        "page": "11"
+      }
+    },
+    {
+      "id": "core.additive_ratio",
+      "inherited_record": {
+        "id": "core.additive_ratio",
+        "inherited_record": {
+          "id": "core.additive_ratio",
+          "stable_label": "thm:price",
+          "printed_kind": "Theorem",
+          "printed_number": "5",
+          "page": 12,
+          "statement_scope": "For exactly the fixed seven-query source, max over nonnegative additive prices with A>0 of P/A is5/4. Equality occurs precisely on t(2,2,3,0,1,1,1),t>0. Strictly positive prices have supremum5/4 without attainment; A=0 implies P=0.",
+          "verification_type": "complete_finite_frontiers_plus_written_algebra_and_exact_rational_corroboration",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Table3 and lines413-458: complete7/6 frontier formulas, H1<=5/4,H2<=7/6, zero-price boundary, unique equality ray and positive-price nonattainment. Appendix C distinguishes branch LP optima from actual adaptive ratios."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/weighted_gap_limits_20261011/math_qa/SEVEN_ALLCOST_QA_RESULT_V01.json",
+                "bytes": 2470,
+                "sha256": "22601a4d10b1e9af6469a61771218cfcc3b03cc16d0565550b8e801d703ac4fb"
+              },
+              "role": "Original independent checker result: ternary states rather than producer worldmask representation, all5040 order frontiers/13 witnesses and864 exact rational certificates; producer helpers not imported."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration275/hosted_payload_v01/verifier.stdout.json",
+                "bytes": 5589,
+                "sha256": "71c75def373a2dc64a24b7342b69967f31b9d35be9b7d652529de70a89a05efc"
+              },
+              "role": "Iteration275 complete fixed-source frontier/rational replay; verifies maxima and actual winning ratio, explicitly does not mechanically verify unique maximizing ray."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration275/hosted_payload_v01/receipt.json",
+                "bytes": 2019,
+                "sha256": "b49713350bcd64d2b7538d91ab4fd850b5eec2194dbfb23ae5f4a2a0714b6c22"
+              },
+              "role": "Actual hosted child exit0 and source/run identity for the retained output."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/fixed_seven_hosted_run_20261011/HOSTED_ACCEPTANCE_V01.json",
+                "bytes": 6139,
+                "sha256": "8126b55d34ed9c195198c433c63d39c1de87b2a4261a6bb546f818371e0c2011"
+              },
+              "role": "Retained hosted job/artifact/byte-identity acceptance; no extra mathematical implementation."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/autonomous_technical_review_20261011/review_cd/TECHNICAL_REVIEW_CD_SUMMARY_V01.json",
+                "bytes": 7532,
+                "sha256": "8cc685c9512e030730225288de5408a01f3d106c499659cc52610dc49c816adf"
+              },
+              "role": "Independent AI algebraic review including equality constraints and A=0 boundary; retains inherited frontier premise."
+            }
+          ],
+          "limits": [
+            "Only this source, not every seven-query source or coupled extension.",
+            "Uniqueness of the maximizing ray and nonattainment are written arguments, not conclusions from finite price sampling or the hosted result flag.",
+            "Hosted replay is a different execution environment of retained checkers, not a new independent algorithm or six-query replay."
+          ],
+          "source_lines": [
+            385,
+            458
+          ],
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "thm:price",
+          "number": "5",
+          "page": "12"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "thm:price",
+        "number": "5",
+        "page": "13"
+      }
+    },
+    {
+      "id": "core.submodular_ratio",
+      "inherited_record": {
+        "id": "core.submodular_ratio",
+        "inherited_record": {
+          "id": "core.submodular_ratio",
+          "stable_label": "thm:submodular",
+          "printed_kind": "Theorem",
+          "printed_number": "6",
+          "page": 14,
+          "statement_scope": "For the same fixed source and normalized nonnegative monotone submodular F: A=0 implies P=0; if P>A then3P+F({q3})<=4A. The maximal positive-denominator ratio is4/3, attained already by coverage cost F0. Strictly increasing submodular and coverage costs have supremum4/3 without attainment.",
+          "verification_type": "complete_finite_frontier_premise_plus_written_three_inequality_proof_and_coverage_corroboration",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines460-518: three union/intersection inequalities, priority forcing only for P>Hi, shared-envelope case, zero boundary, explicit coverage witness and strict perturbation."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/weighted_gap_limits_20261011/math_qa/SEVEN_ALLCOST_QA_RESULT_V01.json",
+                "bytes": 2470,
+                "sha256": "22601a4d10b1e9af6469a61771218cfcc3b03cc16d0565550b8e801d703ac4fb"
+              },
+              "role": "Complete fixed-source adaptive and priority frontiers required by the argument."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/reproduction_v09/coverage_setup/independent_qa/THEORY_REVIEW_SUBMODULAR_V01.json",
+                "bytes": 6825,
+                "sha256": "f43b0607ab0b6140f8746e4dee019862fb12998a30f9dc01a3c3898576f9a0e8"
+              },
+              "role": "Independent AI proof review explicitly separates all-submodular written proof from coverage LP enumeration; checks all set inclusions and strict-gap condition."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration275/hosted_payload_v01/verifier.stdout.json",
+                "bytes": 5589,
+                "sha256": "71c75def373a2dc64a24b7342b69967f31b9d35be9b7d652529de70a89a05efc"
+              },
+              "role": "Hosted coverage checker verifies all864 rational branches and F0(A=3,P=4) against frontiers rebuilt in the same invocation. This supports coverage only, not a machine proof for all submodular F."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration275/hosted_payload_v01/receipt.json",
+                "bytes": 2019,
+                "sha256": "b49713350bcd64d2b7538d91ab4fd850b5eec2194dbfb23ae5f4a2a0714b6c22"
+              },
+              "role": "Actual hosted execution binding; no new execution in this map."
+            }
+          ],
+          "limits": [
+            "The strengthened inequality is asserted only when P>A, not unconditionally.",
+            "Coverage LPs do not span all submodular costs. The written three-inequality argument supplies the general upper bound and nonattainment.",
+            "Ratios exclude A=0; no all-seven-source bound or application-gain claim."
+          ],
+          "source_lines": [
+            460,
+            518
+          ],
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "thm:submodular",
+          "number": "6",
+          "page": "15"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "thm:submodular",
+        "number": "6",
+        "page": "15"
+      }
+    },
+    {
+      "id": "core.unrestricted_monotone",
+      "inherited_record": {
+        "id": "core.unrestricted_monotone",
+        "inherited_record": {
+          "id": "core.unrestricted_monotone",
+          "stable_label": "section.6",
+          "printed_kind": "Unnumbered result",
+          "printed_number": null,
+          "page": 15,
+          "statement_scope": "On the same fixed source,E={11,28,57,105,120}, F_epsilon(S)=epsilon|S|+1[S outside down(E)] is normalized strictly increasing for epsilon>0. P=1+2epsilon,A=min(4epsilon,1+2epsilon), so positive-denominator ratios are unbounded as epsilon tends to0.",
+          "verification_type": "written_downset_construction_using_complete_frontiers",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Section6 lines520-537 gives all envelope profiles and the masks3/4 submodularity failure; this is a standard downset separation specialization."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/weighted_gap_limits_20261011/math_qa/SEVEN_ALLCOST_QA_RESULT_V01.json",
+                "bytes": 2470,
+                "sha256": "22601a4d10b1e9af6469a61771218cfcc3b03cc16d0565550b8e801d703ac4fb"
+              },
+              "role": "Complete frontier premise for the exact optimum formulas."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/autonomous_technical_review_20261011/review_cd/TECHNICAL_REVIEW_CD_SUMMARY_V01.json",
+                "bytes": 7532,
+                "sha256": "8cc685c9512e030730225288de5408a01f3d106c499659cc52610dc49c816adf"
+              },
+              "role": "Independent AI derivation and small exact profile check of this all-real-epsilon formula, retaining frontier completeness as an inherited dependency."
+            }
+          ],
+          "limits": [
+            "Not submodular: masks3,4 violate the inequality by1 after modular cancellation. No unbounded additive or submodular gap is asserted.",
+            "Strict increase applies only epsilon>0. This is not a sampling-based conclusion, novel general lower-bound technique or new executed experiment."
+          ],
+          "source_lines": [
+            520,
+            537
+          ],
+          "section_number": "6",
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "section.6",
+          "number": "6",
+          "page": "16"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "section.6",
+        "number": "6",
+        "page": "16",
+        "binding_method": "Heading visually inspected on final page16; section has no explicit newlabel."
+      }
+    },
+    {
+      "id": "core.compatible_completion",
+      "inherited_record": {
+        "id": "core.compatible_completion",
+        "inherited_record": {
+          "id": "core.compatible_completion",
+          "stable_label": "sec:completion",
+          "printed_kind": "Unnumbered supporting identity",
+          "printed_number": null,
+          "page": 4,
+          "statement_scope": "For finite consistent binary promise W and normalized nonnegative monotone final-paid-set F, priority value is min over compatible total g and orders of full-domain ordered-diagram worst path cost; adaptive value similarly minimizes read-once branching-program cost without size restrictions.",
+          "verification_type": "written_routine_cost_preserving_completion_and_restriction",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines116-124 and Appendix A.1 lines584-585: unfold a promise policy, terminate first off-promise branch, dominate its paid set by a feasible sibling continuation; restrict a total diagram in the reverse direction."
+            }
+          ],
+          "limits": [
+            "The two minima may select different completions. No diagram-size bound or scalar Bellman optimality for arbitrary set costs is asserted.",
+            "Distinct menu coordinates with equivalent answers keep separate cost identities. The argument requires monotone cost depending on final purchased set, not order or answers.",
+            "Routine model bridge, not an originality or prior-art exclusion claim."
+          ],
+          "source_lines": [
+            116,
+            124
+          ],
+          "section_number": "2.4",
+          "proof_anchor": "app:completion",
+          "proof_page": 20,
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "sec:completion",
+          "number": "2.4",
+          "page": "5"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "sec:completion",
+        "number": "2.4",
+        "page": "5"
+      }
+    },
+    {
+      "id": "core.certificate_transfer",
+      "inherited_record": {
+        "id": "core.certificate_transfer",
+        "inherited_record": {
+          "id": "core.certificate_transfer",
+          "stable_label": "sec:cert-transfer",
+          "printed_kind": "Unnumbered supporting implication",
+          "printed_number": null,
+          "page": 5,
+          "statement_scope": "For nonnegative additive prices and the same promise/menu, K=max_w minimum-certificate-cost(w)<=A<=P. A legal priority rho-certificate-competitive policy implies P<=rho A. An adaptive-optimal compatible completion can have max full-domain certificate cost<=A; the missing further guarantee is its eligible function family and legal priority implementation.",
+          "verification_type": "written_comparison_and_sufficient_transfer_conditions",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines126-139 state same-promise certificate costs, arbitrary-completion direction Cg>=CW, sufficient reverse-factor route, and favorable existential optimal-completion route."
+            }
+          ],
+          "limits": [
+            "A certificate-competitive lower bound alone is not an adaptivity separation; Boolean OR is the stated control.",
+            "Pointwise certificate preservation is sufficient, not necessary. Do not characterize missing pointwise comparison as the only obstruction.",
+            "No blanket impossibility of transferring priced-information theorems; a menu/cost/comparator-preserving bridge must be supplied case by case. Additive results do not automatically extend to shared submodular F."
+          ],
+          "source_lines": [
+            126,
+            139
+          ],
+          "section_number": "2.5",
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "sec:cert-transfer",
+          "number": "2.5",
+          "page": "5"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "sec:cert-transfer",
+        "number": "2.5",
+        "page": "5"
+      }
+    },
+    {
+      "id": "core.compatible_formula_cost",
+      "inherited_record": {
+        "id": "core.compatible_formula_cost",
+        "inherited_record": {
+          "id": "core.compatible_formula_cost",
+          "stable_label": "sec:ro-completion",
+          "printed_kind": "Unnumbered supporting result",
+          "printed_number": null,
+          "page": 9,
+          "statement_scope": "For the fixed source and all nonnegative additive c, among compatible total functions admitting a signed AND/OR formula with each physical coordinate used at most once, minimum full-domain adaptive query cost is c0+c1+c2. With A-positive polarity exactly16 answer orientations permit a monotone completion. At(2,2,3,1/2,1,1,1), the formula-family minimum7 exceeds promise adaptive value9/2.",
+          "verification_type": "self_contained_written_essential_edge_and_weighted_evasiveness_argument",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Lines239-255 provide opposite-label single-coordinate pairs forcing q0,q1,q2, all16 orientations, the compatible formula q2 OR(q1 AND NOT q0), and the neutral-answer adversary including zero prices/unused coordinates."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v06/SOURCE_REVIEW_V01.json",
+                "bytes": 9979,
+                "sha256": "4b4d5d8aff7bd7de49266c4c30ccf4a3c9108e00ffa40b421dc3f6f852a31f32"
+              },
+              "role": "Independent source-diff and analytic review of the original journalV06 addition: exact essential pairs, sign count, weighted neutral adversary, zero/dummy variables and cost-family minimum; preserved in current source."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration275/hosted_payload_v01/verifier.stdout.json",
+                "bytes": 5589,
+                "sha256": "71c75def373a2dc64a24b7342b69967f31b9d35be9b7d652529de70a89a05efc"
+              },
+              "role": "Inherited fixed-source value A=9/2 at the displayed positive prices. The formula-family argument itself needs no finite enumeration."
+            }
+          ],
+          "limits": [
+            "Formula read-once is stronger than reading each coordinate once per decision-tree path.",
+            "Excludes an adaptive-optimal completion from this formula family at those prices; does not exclude other compatible completions, other families or every prior reduction.",
+            "Sixteen is for the explicitly fixed A-positive label polarity. Not an absence-of-unate-completion claim.",
+            "No new enumeration, novelty certification or practical advantage is established by this map."
+          ],
+          "source_lines": [
+            239,
+            255
+          ],
+          "section_number": "3.4",
+          "component_file": "CORE_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "sec:ro-completion",
+          "number": "3.4",
+          "page": "10"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "sec:ro-completion",
+        "number": "3.4",
+        "page": "10"
+      }
+    },
+    {
+      "id": "record_control_fixed14",
+      "inherited_record": {
+        "id": "record_control_fixed14",
+        "inherited_record": {
+          "id": "record_control_fixed14",
+          "stable_label": "prop:record-control",
+          "printed_kind": "Proposition",
+          "printed_number": "7",
+          "page": 24,
+          "statement_scope": "The complete 14-record realization of the fixed-seven source, with all legal cross-block merges retained (877 A worlds and 3263 B worlds). Buying one unread record reveals its relative equalities to all previously acquired records, and the first read is paid. For paired prices c_(2i)=c_(2i+1)=kappa_i/2, kappa=(2,2,3,1/2,1,1,1), both deterministic zero-error adaptive and strong global-order causal-skip worst costs equal 15/4. With unit record prices both equal 4.",
+          "verification_type": "Finite computational premise with a stated exact DSU liveness recurrence, independent lower-bound/policy checks, full-world upper-bound corroboration, and a later portability replay. This mapping does not rerun those checks.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration295/record_acquisition_package_v01/source.json",
+                "bytes": 2735,
+                "sha256": "87734e80539d8f60a26477c3acf8a760cdafa35f3cb4a27f78802be564d0b62e"
+              },
+              "role": "Exact portable scientific contract: 14 records, complete source constraints, integer weights 4c, the saved global order, and the unit control. It is a distinct source from the even-path family of Theorem 8."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/record_acquisition_20261012/INDEPENDENT_WEIGHTED_QA_V01.json",
+                "bytes": 25114,
+                "sha256": "b88d94add6719cdf21997aa484b72d5a268877d7a6f4a23df0026155d88862dc"
+              },
+              "role": "Independent DSU-based feasibility lower bound: budget 14 infeasible in 3233 lower states. Checks all 83 nodes and 53 terminal leaves of the budget-15 policy and the single global record order. No producer-world import or enumeration of all 14! orders."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/record_acquisition_20261012/INDEPENDENT_UNIT_QA_V01.json",
+                "bytes": 820001,
+                "sha256": "8c9918ba1cebfaee3b1a087a0377486045df8820db613a0acddca93b4973fde1"
+              },
+              "role": "Independent DSU extension checks for the unit lower bound: all 91 initial pairs times 12 third-record choices (1092 cases), plus the explicit four-read strong-priority upper bound. This session reads the receipt/selected fields rather than revalidating every stored witness."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/record_acquisition_20261012/PRIORITY_COMPILATION_V01.json",
+                "bytes": 2708,
+                "sha256": "7374692fc4ac229499a25cdf09e403ade135e300d3de7a081ada95826f3d7c03"
+              },
+              "role": "Full-world corroboration of the priority upper bound: the same 53-leaf policy on all 4140 complete source partitions has maximum integer cost 15. This receipt alone gives an upper bound; equality also requires the independent adaptive lower bound."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration295/record acquisition relocation v01/verification.json",
+                "bytes": 3505,
+                "sha256": "cef4e76106ce179839e161d97b4ffafceff5bc8053a66ede773169b6a1f8b8c7"
+              },
+              "role": "Actual relocated-directory replay result for the frozen fixed contract: weighted 15/4 and unit 4, including 3233 lower states and 1092 unit controls. A portability check of an established result, not a new scientific sample."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/v07_integration_20261012/RECORD_PACKAGE_ACCEPTANCE_V02.json",
+                "bytes": 5900,
+                "sha256": "7e4e4505e3313990f7f89f33959ec28e578fbaa642792358e2837133bbedb22e"
+              },
+              "role": "Recorded actual relocated Windows Python execution, input bindings, exact ZIP-member comparison and preserved prior packaging failure. Explicitly reports scientific_replay_from_zip_performed=false; the executed directory and later ZIP members match byte-for-byte."
+            }
+          ],
+          "limits": [
+            "Only these two fixed record-price vectors are established. No claim that this 14-record source has equality for every nonnegative record price.",
+            "The same source predicates do not preserve the old pair-query action/information contract. This control neither refutes nor transfers the pair-menu 5/4 advantage.",
+            "Finite program-checked evidence is not a proof-assistant-kernel certificate. AI review is not human signoff.",
+            "No natural academic-evidence source, historical execution certification, or real application cost advantage is established.",
+            "The iteration295 acceptance describes a local prepared package and one relocated Windows execution; it is not itself evidence of public upload or cross-platform execution."
+          ],
+          "component_file": "RECORD_PATH_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "prop:record-control",
+          "number": "7",
+          "page": "25"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "prop:record-control",
+        "number": "7",
+        "page": "27"
+      }
+    },
+    {
+      "id": "record_path_all_even_containment",
+      "inherited_record": {
+        "id": "record_path_all_even_containment",
+        "inherited_record": {
+          "id": "record_path_all_even_containment",
+          "stable_label": "thm:record-path",
+          "printed_kind": "Theorem",
+          "printed_number": "8",
+          "page": 25,
+          "statement_scope": "For every even n=2k>=2, A contains every partition satisfying SAME(2r,2r+1); B contains every partition satisfying SAME(2r+1,2r+2) and DIFF(0,n-1). All remaining merges are allowed. For every correct deterministic zero-error adaptive policy T in the paid relative-record model there exists a strong-priority policy P such that for every full-source world w there exists a legal hard world h with S_P(w) contained in S_T(h). Therefore the optimal worst costs agree for every finite normalized nonnegative monotone purchased-set cost F.",
+          "verification_type": "All-n analytic containment proof, with source-specific hard-world restriction and full multicolour-world lifting. Finite software calibration is supplementary and is not a premise of the all-size claim.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/docs/P2_EVEN_PATH_PRIORITY_THEOREM_20261012_EN.md",
+                "bytes": 10975,
+                "sha256": "1c411ae38765211de704a2aec579a7ae164b9458d2715cb09b79e2a89537e613"
+              },
+              "role": "Detailed analytic derivation: retain the actual paid anchor; cyclic threshold hard worlds; simulate and delete non-splitting reads; singleton leaves; disjoint interval positions give one preorder permutation; ordinary-edge and seam certificates lift to all legal multicolour worlds; compare purchased sets across possibly different worlds."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/even_path_theorem_20261012/ANALYTIC_THEOREM_V01.json",
+                "bytes": 2631,
+                "sha256": "61aec2e99d448dbfaa0bf7bd1145ed02dd41afba70b2529aefbd2003789fa64d"
+              },
+              "role": "Frozen theorem/model summary and pointers to two AI analytic reviews; explicitly records no computational premise for the all-size theorem and no formal proof-assistant certificate. Historical novelty status is not a new requirement for an endless search."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration298/threshold_transfer_qa/RESULT_V01.json",
+                "bytes": 3414,
+                "sha256": "2394a8494006f1200cb1cc22528afec97302b36eb55578a4537e847bd0f73591"
+              },
+              "role": "Independent finite calibration only: n=8, 52 complete worlds, 3432 anchor/tree combinations and 178464 traces; classification, preorder and certificates agree. Its 337 closures and 44 minimal profiles are within the tested alphabetic-tree family, not an exhaustive adaptive frontier."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/spot_native_and_path_dp_20261012/NOVELTY_POSITION_ADDENDUM_V01.json",
+                "bytes": 1143,
+                "sha256": "289a1696882e0aed79329784a09a073da6c5f14fffd50b23dde1b879cca43b0e"
+              },
+              "role": "Later positioning record: classical inconsistent-chain 2-CNF/path search connection to LNNW Section 4; the manuscript presents the paid-anchor purchased-set containment and full-source lift as its source-specific argument, without claiming a new generic search algorithm or certified priority."
+            }
+          ],
+          "limits": [
+            "This is a separate even-path source family, not an all-price upgrade of Proposition 7 or a theorem for every complete relational source.",
+            "The quantifiers permit h to differ from w. It is not same-world pointwise cost domination.",
+            "The priority order may depend on T and on the chosen F; no single universal order is claimed optimal for all F.",
+            "The first anchor stays in the charged set. Endpoint-first is not assumed without loss of generality.",
+            "Only deterministic zero-error, worst-case, monotone purchased-set costs in the relative-equality model are covered. Randomized/expected cost, response-dependent fees and general batch acquisition contracts are not established.",
+            "No finite calibration, public delivery record, or AI review proves literature priority, human approval or a natural-data advantage."
+          ],
+          "component_file": "RECORD_PATH_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "thm:record-path",
+          "number": "8",
+          "page": "26"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "thm:record-path",
+        "number": "8",
+        "page": "28"
+      }
+    },
+    {
+      "id": "record_path_unit_optimum",
+      "inherited_record": {
+        "id": "record_path_unit_optimum",
+        "inherited_record": {
+          "id": "record_path_unit_optimum",
+          "stable_label": "cor:record-path-unit",
+          "printed_kind": "Corollary",
+          "printed_number": "9",
+          "page": 26,
+          "statement_scope": "In exactly the complete even-path family and relative-record policy model of Theorem 8, under F(S)=|S|, the adaptive and strong-priority optimal worst costs equal 1+ceil(log2 n) for every even n>=2.",
+          "verification_type": "Analytic corollary: one paid uninformative anchor plus the binary-tree height lower bound for n alternating singleton cut leaves; a balanced alphabetic tree and Theorem 8 full-world lift attain the bound.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/docs/P2_EVEN_PATH_PRIORITY_THEOREM_20261012_EN.md",
+                "bytes": 10975,
+                "sha256": "1c411ae38765211de704a2aec579a7ae164b9458d2715cb09b79e2a89537e613"
+              },
+              "role": "All-even analytic theorem and unit-price corollary; lower bound is on the hard family and the balanced-tree construction is valid on all full source worlds."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration298/threshold_transfer_qa/RESULT_V01.json",
+                "bytes": 3414,
+                "sha256": "2394a8494006f1200cb1cc22528afec97302b36eb55578a4537e847bd0f73591"
+              },
+              "role": "Finite n=8 calibration corroborates the unit upper value 4; this result does not supply the all-n lower bound."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration301/package_qa/PACKAGE_ACCEPTANCE_V01.json",
+                "bytes": 8508,
+                "sha256": "a1339572989af5bc63d01bde194624c4fe52aa84aa268774b8f620903f8134be"
+              },
+              "role": "One independent extracted-ZIP replay includes n=6 unit value 4 and n=8 unit value 4, with complete partition enumeration at those fixture sizes. The other three fixtures are additive software controls, not extra unit-price theorem samples."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/spot_native_and_path_dp_20261012/NOVELTY_POSITION_ADDENDUM_V01.json",
+                "bytes": 1143,
+                "sha256": "289a1696882e0aed79329784a09a073da6c5f14fffd50b23dde1b879cca43b0e"
+              },
+              "role": "Positions binary transition search and its logarithmic structure as classical. The formula is not advertised as a new generic binary-search result."
+            }
+          ],
+          "limits": [
+            "The leading 1 charges the first read even though it supplies no information.",
+            "The all-n claim rests on the analytic source-specific theorem and height argument, not extrapolation from n=6 and n=8 replay.",
+            "No unit-cost result for arbitrary sources or the separate 14-record source beyond Proposition 7 is inferred.",
+            "The source restriction and relative-record information contract remain essential."
+          ],
+          "component_file": "RECORD_PATH_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "cor:record-path-unit",
+          "number": "9",
+          "page": "27"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "cor:record-path-unit",
+        "number": "9",
+        "page": "29"
+      }
+    },
+    {
+      "id": "record_path_additive_cubic_dp",
+      "inherited_record": {
+        "id": "record_path_additive_cubic_dp",
+        "inherited_record": {
+          "id": "record_path_additive_cubic_dp",
+          "stable_label": "cor:record-path-additive",
+          "printed_kind": "Corollary",
+          "printed_number": "10",
+          "page": 26,
+          "statement_scope": "For the same even-path family and nonnegative additive record prices c_r, including zero prices, a single cyclic interval table gives D[a,1]=0 and D[a,l]=min_(1<=s<l){c[(a+s)%n]+max(D[a,s],D[(a+s)%n,l-s])}. The common optimum is min_i{c_i+D[i,n]}. It constructs an optimal priority policy in O(n^3) exact arithmetic operations with O(n^2) stored values/splits, and O(n) tree reconstruction.",
+          "verification_type": "Analytic minimax interval decomposition and Theorem 8 containment/lifting; scoped static implementation review plus five frozen software fixtures replayed from an extracted portable package. No new price or size sweep.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration299/algorithm_theory/MINIMAX_ALPHABETIC_DP_REVIEW_V01.json",
+                "bytes": 13658,
+                "sha256": "480d1af3c7a4218c690156cc939a8d65ff4f2b8f4acd73b6d013ff787cb1e1d6"
+              },
+              "role": "Independent analytic recurrence and cyclic-table sharing argument, exact arithmetic versus bit complexity, optimality/lift dependency, preorder reconstruction and actual source-code static review. Distinguishes minimax node prices from expected weighted-leaf alphabetic optimization."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/spot_native_and_path_dp_20261012/ADDITIVE_ALGORITHM_ACCEPTANCE_V01.json",
+                "bytes": 1554,
+                "sha256": "02af6f2ab2b5ee8ef955015d61605b814f00c40cd91f268a529041c71f1f6c1f"
+              },
+              "role": "Binds the standard-library Fraction implementation and original scoped fixture run to the analytic/static review; records zero-price support, the recursion-depth limitation, and no new generic DP/nonadditive solver claim."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration301/package_qa/PACKAGE_ACCEPTANCE_V01.json",
+                "bytes": 8508,
+                "sha256": "a1339572989af5bc63d01bde194624c4fe52aa84aa268774b8f620903f8134be"
+              },
+              "role": "Actual single extracted-ZIP replay, harness and child exit 0. Five fixtures: n6 unit=4 (15 worlds), n6 asymmetric=11 (15), n8 unit=4 (52), n2 zero=0 (2), n2 rational=3/2 (2). Checks full-world labels, leaf certificates, paid-anchor trace costs and priority order; 82 original fixture traces plus 4 edge-case traces, not a new lower-bound or adaptive-frontier run."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/v08_publication_20261012/PUBLIC_COMMIT_CHECK_V01.json",
+                "bytes": 6723,
+                "sha256": "6671e8d927e7c8ace57647f56bcd10454ef0c4bbf56a9bcd405cc42f0026f4a8"
+              },
+              "role": "Distribution/version evidence only: commit 8ecc24b318b1e75c8e0d2f7119921ad1222904f2 publicly binds the V08 reading packet and exact five-file even-path package/ZIP; all 14 new public files matched and prior 106 files were unchanged. This is not a fresh mathematical run."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/spot_native_and_path_dp_20261012/NOVELTY_POSITION_ADDENDUM_V01.json",
+                "bytes": 1143,
+                "sha256": "289a1696882e0aed79329784a09a073da6c5f14fffd50b23dde1b879cca43b0e"
+              },
+              "role": "Classical search/minimax algorithm attribution and limits on novelty claims; the argument here is source-specific optimal transfer and interval construction."
+            }
+          ],
+          "limits": [
+            "The complexity counts exact arithmetic operations. Rational bit complexity additionally depends on input bit length; the implementation is not an arbitrary-real oracle.",
+            "The implementation uses exact Fraction-compatible inputs and recursive reconstruction/JSON; sufficiently deep trees may reach Python recursion limits.",
+            "Execution must compare every selected record to the original anchor, even when a recursive interval begins elsewhere.",
+            "This is worst-case minimax node-priced search, not expected weighted-leaf alphabetic optimization.",
+            "The public software fixtures are finite n=2,6,8 checks. General optimality and O(n^3) complexity come from the analytic proof, not measured performance or finite extrapolation.",
+            "The result is additive only as an algorithm. Theorem 8 equality for general monotone F does not provide a polynomial-time oracle algorithm for arbitrary nonadditive costs.",
+            "Public accessibility, byte equality and one Windows replay do not establish human approval, cross-platform execution, natural application benefit or novelty certification."
+          ],
+          "component_file": "RECORD_PATH_CLAIM_EVIDENCE_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "cor:record-path-additive",
+          "number": "10",
+          "page": "27"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "cor:record-path-additive",
+        "number": "10",
+        "page": "29"
+      }
+    },
+    {
+      "id": "APP_F1_WINE_SELECTED_PROSPECTIVE",
+      "inherited_record": {
+        "id": "APP_F1_WINE_SELECTED_PROSPECTIVE",
+        "inherited_record": {
+          "id": "APP_F1_WINE_SELECTED_PROSPECTIVE",
+          "stable_label": "app:cases",
+          "printed_kind": "case_statement",
+          "printed_number": null,
+          "page": 27,
+          "anchor_page": 27,
+          "printed_heading": "Appendix F.1",
+          "statement_scope": "One selected GitHub Actions author-code run 38136338509 attempt 1, executed source 6f64dd2a7dd75ee14ca65d2e00c4e0a5ea0d131b: 25 prescribed seeds, mean 0.904, population SD 0.04606811918168868. Retained syscall evidence includes a successful 10782-byte read from the designated Wine path; retained attestation verification passed its stated policy.",
+          "verification_type": "Retained actual hosted execution/release-gate evidence plus current read-only inspection of the retained reports and one trace member; no new training, replay or cryptographic verification.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+                "bytes": 2373,
+                "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+              },
+              "role": "Actual release gate binds provider run, exact source, archive, candidate/direct passes and recorded cryptographic check."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+                "bytes": 1874,
+                "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+              },
+              "role": "Actual candidate arithmetic and selected-read observations."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration276/v09_release_gate_v01/receipt.tar",
+                "bytes": 2314240,
+                "sha256": "4ca929880eaa9a7e5b7f13e7b00c3b7dbe1dea025acb97d36ec046e08b2a9ebc"
+              },
+              "role": "Retained original receipt archive; trace.16 was stream-read without extracting to disk."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Exact frozen journal V08 source: source lines 539-560 and 720-735 reviewed."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.aux",
+                "bytes": 9659,
+                "sha256": "72e8f1ad113961afa3a4ca2e518886d1fea38801f9c097e63b13d0d856e5a03b"
+              },
+              "role": "Actual build_02 stable-label, section and subsection page mapping."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.txt",
+                "bytes": 72227,
+                "sha256": "48a2d1e6a3e9ba5d746aebbce42504991ca008fec93f8ef4a517df390527352f"
+              },
+              "role": "Actual build_02 extracted text; printed pages 16,17,27,28 read."
+            }
+          ],
+          "limits": [
+            "Selected prospective execution only, not the historical author experiment.",
+            "The selected positive read is not complete coverage of all consumed bytes.",
+            "The 25 seeds and one hosted run are not 25 independent scientific replications or human gold labels.",
+            "Archive commit ae2ba2d is a later delivery identity, not the executed source commit."
+          ],
+          "component_file": "SCOPE_AND_REMAINING_GATES_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "app:cases",
+          "number": "H",
+          "page": "33"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "app:cases",
+        "number": "H",
+        "page": "35"
+      }
+    },
+    {
+      "id": "APP_F1_WINE_STRONG_FIXED_COMPARATOR",
+      "inherited_record": {
+        "id": "APP_F1_WINE_STRONG_FIXED_COMPARATOR",
+        "inherited_record": {
+          "id": "APP_F1_WINE_STRONG_FIXED_COMPARATOR",
+          "stable_label": "app:cases",
+          "printed_kind": "case_statement",
+          "printed_number": null,
+          "page": 27,
+          "anchor_page": 27,
+          "printed_heading": "Appendix F.1",
+          "statement_scope": "The fixed direct verifier accepts the same tar bytes and caller identity as the candidate. The selected receipt therefore establishes no method advantage or adaptive acquisition-cost gain.",
+          "verification_type": "Byte-bound comparison of two retained actual verifier reports; the comparator is given the same receipt and identity, not a separate learning execution.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration276/v09_release_gate_v01/CANDIDATE_REPORT.json",
+                "bytes": 1874,
+                "sha256": "03a71755adea7ec64cdb16508a9ad1ddaffed079caf5e209c150d47dedf9576e"
+              },
+              "role": "Candidate status and tar digest."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration276/v09_release_gate_v01/DIRECT_BASELINE_REPORT.json",
+                "bytes": 1204,
+                "sha256": "f21ce8635dc767b62e8acf6dee734a7ce7370254d545aa180009ba2c842fcf49"
+              },
+              "role": "Fixed direct baseline PASS on the same tar digest and caller information."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration276/v09_release_gate_v01/POSTRUN_RELEASE_GATE.json",
+                "bytes": 2373,
+                "sha256": "34f64c899017d439e4aa0350decbe98fdc35299905a12e577937f068c44fa4e9"
+              },
+              "role": "The retained release gate confirms same-tar candidate and direct baseline acceptance."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Exact frozen journal V08 source: source lines 539-560 and 720-735 reviewed."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.aux",
+                "bytes": 9659,
+                "sha256": "72e8f1ad113961afa3a4ca2e518886d1fea38801f9c097e63b13d0d856e5a03b"
+              },
+              "role": "Actual build_02 stable-label, section and subsection page mapping."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.txt",
+                "bytes": 72227,
+                "sha256": "48a2d1e6a3e9ba5d746aebbce42504991ca008fec93f8ef4a517df390527352f"
+              },
+              "role": "Actual build_02 extracted text; printed pages 16,17,27,28 read."
+            }
+          ],
+          "limits": [
+            "No new baseline training run.",
+            "No runtime, sample-efficiency or worst-cost superiority follows from acceptance by both verifiers."
+          ],
+          "component_file": "SCOPE_AND_REMAINING_GATES_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "app:cases",
+          "number": "H",
+          "page": "33"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "app:cases",
+        "number": "H",
+        "page": "35"
+      }
+    },
+    {
+      "id": "APP_F2_VPS3_RETAINED_ARITHMETIC",
+      "inherited_record": {
+        "id": "APP_F2_VPS3_RETAINED_ARITHMETIC",
+        "inherited_record": {
+          "id": "APP_F2_VPS3_RETAINED_ARITHMETIC",
+          "stable_label": "app:cases",
+          "printed_kind": "case_statement",
+          "printed_number": null,
+          "page": 27,
+          "anchor_page": 27,
+          "printed_heading": "Appendix F.2 (continues on page 28)",
+          "statement_scope": "The selected deposited workflow has 12 parameters, 48 calculation jobs and 93 unique repository objects. Under declared S=1/four-state conventions, all 12 native values and printed intervals agree; all 48 statically mapped List slots equal raw final-energy decimals. All 12 separate small-JSON central-value comparisons disagree under the declared comparison.",
+          "verification_type": "Retained raw-file arithmetic and exact-decimal compatibility analyses, with the recorded static slot mapping and inherited scientific conventions.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/vps3_entry_refresh_20261011/FULL_PARAMETER_ANALYSIS_V01.json",
+                "bytes": 49591,
+                "sha256": "52c774bcce895addcf79fd418140d4c0eb9afde690fffa8e67bc07c45aca829a"
+              },
+              "role": "Actual 12/12 native and text, 0/12 small-JSON comparison summary and arithmetic limitations."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/vps3_entry_refresh_20261011/RAW_LIST_COMPATIBILITY_V01.json",
+                "bytes": 66510,
+                "sha256": "ca520cd24cf9d7463c1ee9954fa4c6a3bfd17563867deaccb4d8851560c10ba8"
+              },
+              "role": "Actual 48/48 exact finite-decimal equality, independent regex scope and no lineage certification."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Exact frozen journal V08 source: source lines 539-560 and 720-735 reviewed."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.aux",
+                "bytes": 9659,
+                "sha256": "72e8f1ad113961afa3a4ca2e518886d1fea38801f9c097e63b13d0d856e5a03b"
+              },
+              "role": "Actual build_02 stable-label, section and subsection page mapping."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.txt",
+                "bytes": 72227,
+                "sha256": "48a2d1e6a3e9ba5d746aebbce42504991ca008fec93f8ef4a517df390527352f"
+              },
+              "role": "Actual build_02 extracted text; printed pages 16,17,27,28 read."
+            }
+          ],
+          "limits": [
+            "Small-JSON discrepancy is undiagnosed; not 12 certified physical errors.",
+            "Initialization moments do not supply the declared denominator.",
+            "No new DFT/VASP run, physical-convergence proof, full read-set coverage or scientific-truth guarantee.",
+            "One selected workflow and its components are not independent studies; prior Jxx coverage means 11 added parameter coverages."
+          ],
+          "component_file": "SCOPE_AND_REMAINING_GATES_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "app:cases",
+          "number": "H",
+          "page": "33"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "app:cases",
+        "number": "H",
+        "page": "35"
+      }
+    },
+    {
+      "id": "APP_F2_VPS3_PORTABLE_OFFLINE_AUDIT",
+      "inherited_record": {
+        "id": "APP_F2_VPS3_PORTABLE_OFFLINE_AUDIT",
+        "inherited_record": {
+          "id": "APP_F2_VPS3_PORTABLE_OFFLINE_AUDIT",
+          "stable_label": "app:cases",
+          "printed_kind": "case_statement",
+          "printed_number": null,
+          "page": 28,
+          "anchor_page": 27,
+          "printed_heading": "Appendix F.2 continuation",
+          "statement_scope": "The portable offline verifier re-extracts values from digest-bound retained materials. Windows relocation and hosted Linux run 38140070343 attempt 1 have matching non-timestamp scientific output. Executed source is 3f39c2055f81a18513871101d2bedcbb091ea812; archive publication is 7ab1b1dcca85068dc8b81683162699f1a8c3d060.",
+          "verification_type": "Retained actual offline-audit portability and hosted-delivery validation; no new execution in this mapping audit.",
+          "evidence": [
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/vps3_portable_delivery_20261011/DELIVERY_VALIDATION_V01.json",
+                "bytes": 107841,
+                "sha256": "60a2f617ffab8f84f25a4fbde9e7181e6875d325a8895f58bc708cf686b4a4d0"
+              },
+              "role": "Actual portable/hosted audit delivery record and distinct execution/archive identities."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/diagnostics/vps3_entry_refresh_20261011/FULL_PARAMETER_ANALYSIS_V01.json",
+                "bytes": 49591,
+                "sha256": "52c774bcce895addcf79fd418140d4c0eb9afde690fffa8e67bc07c45aca829a"
+              },
+              "role": "Same-information fixed retrieval and arithmetic baseline explicitly sufficient."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-project-outputs/review_evidence_not_copies/paper/ccf_bc_20261011/journal_draft_v08/paper.tex",
+                "bytes": 76298,
+                "sha256": "4e2515afebc197e8e0f815d56e7ace425f432c51cf5ad076c9ee5f94b44ce956"
+              },
+              "role": "Exact frozen journal V08 source: source lines 539-560 and 720-735 reviewed."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.aux",
+                "bytes": 9659,
+                "sha256": "72e8f1ad113961afa3a4ca2e518886d1fea38801f9c097e63b13d0d856e5a03b"
+              },
+              "role": "Actual build_02 stable-label, section and subsection page mapping."
+            },
+            {
+              "artifact": {
+                "path": "bound-local-evidence/iteration300/journal_build_v01/build_02/paper.txt",
+                "bytes": 72227,
+                "sha256": "48a2d1e6a3e9ba5d746aebbce42504991ca008fec93f8ef4a517df390527352f"
+              },
+              "role": "Actual build_02 extracted text; printed pages 16,17,27,28 read."
+            }
+          ],
+          "limits": [
+            "The hosted job runs the offline audit, not the author workflow or VASP.",
+            "Numerical agreement supplies no CREATE edge, historical raw-to-List conversion, parser semantics or historical byte authentication.",
+            "Ordinary fixed retrieval, relational lookup and arithmetic suffice; no adaptive-policy advantage."
+          ],
+          "component_file": "SCOPE_AND_REMAINING_GATES_V01.json"
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "app:cases",
+          "number": "H",
+          "page": "33"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "app:cases",
+        "number": "H",
+        "page": "35"
+      }
+    },
+    {
+      "id": "V09_C20_COMPLETE11_SOURCE",
+      "inherited_record": {
+        "id": "V09_C20_COMPLETE11_SOURCE",
+        "inherited_record": {
+          "id": "V09_C20_COMPLETE11_SOURCE",
+          "location": "AppendixF,page28",
+          "statement": "The displayed22-record complete SAME/DIFFERENT fibres project exactly to both specified8-vector templates.",
+          "evidence": {
+            "path": "bound-local-evidence/iteration355/COMPLETE_FIBRE_REALIZATION_V01.json",
+            "bytes": 20042,
+            "sha256": "904003d705c36117e69e6c5cc3fbc33c1a0b2cb9e3b86d3ab22240659f52e0da"
+          },
+          "premise": "Universal inclusion is the written equality-congruence proof;16 constructed witnesses are not exhaustive partition enumeration."
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "app:full11-copy-pin",
+          "number": "F",
+          "page": "28"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "app:full11-copy-pin",
+        "number": "F",
+        "page": "30"
+      }
+    },
+    {
+      "id": "V09_C21_FULL11_ADDITIVE_BOUND",
+      "inherited_record": {
+        "id": "V09_C21_FULL11_ADDITIVE_BOUND",
+        "inherited_record": {
+          "id": "V09_C21_FULL11_ADDITIVE_BOUND",
+          "location": "Theorem11,page29",
+          "statement": "For exactly the specified full11 source and finite nonnegative additive prices,P<=5A/4;max ratio5/4 at positiveA.",
+          "evidence": {
+            "path": "bound-local-evidence/iteration355/ACCEPTANCE_V01.json",
+            "bytes": 2595,
+            "sha256": "f9ac1f1214788c6214e3b887ee3de4c3895c481399c8613c5e02c41939108931"
+          },
+          "premise": "Complete adaptive frontier and all direct certificate roots/children, true lower4vs5; mathematical/software review, not human review."
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "thm:full11-copy-pin",
+          "number": "11",
+          "page": "29"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "thm:full11-copy-pin",
+        "number": "11",
+        "page": "31"
+      }
+    },
+    {
+      "id": "V09_C22_PROJECTION_AND16_LOWER",
+      "inherited_record": {
+        "id": "V09_C22_PROJECTION_AND16_LOWER",
+        "inherited_record": {
+          "id": "V09_C22_PROJECTION_AND16_LOWER",
+          "location": "Theorem11,page29",
+          "statement": "Every identifiable coordinate projection inherits upper5/4;each of16 original7-containing menus has maximum5/4 and strictly-positive supremum5/4.",
+          "evidence": {
+            "path": "bound-local-evidence/iteration355/APPENDIX_SOURCE_REVIEW_V01.json",
+            "bytes": 1695,
+            "sha256": "f243019e50aa11c4b773a76184a39e44039d2c21ea07e007aa2ce3e57a610e85"
+          },
+          "premise": "Exact projection/high-price exclusion/within-label duplicate argument and finite-policy continuity; no matching lower for every arbitrary submenu or positive-price attainment claim."
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "thm:full11-copy-pin",
+          "number": "11",
+          "page": "29"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "thm:full11-copy-pin",
+        "number": "11",
+        "page": "31"
+      }
+    },
+    {
+      "id": "V09_C23_DIRECT_PORTABLE_REPLAY",
+      "inherited_record": {
+        "id": "V09_C23_DIRECT_PORTABLE_REPLAY",
+        "inherited_record": {
+          "id": "V09_C23_DIRECT_PORTABLE_REPLAY",
+          "location": "AppendixF,pages29-30",
+          "statement": "A fresh extracted Windows3.12 replay checked2193frontier roots,293legal policies,130683direct nodes and5040seven-query orders without old7/8theorem results or anLPsolver.",
+          "evidence": {
+            "path": "bound-local-artifact/RESULT_V01.json",
+            "bytes": 3047,
+            "sha256": "5a2ed31d40c620919b4d4af18a21c23761026e66aabe9d14717e228ed7966b1f"
+          },
+          "premise": "Only the recorded actual Windows runtime; no fresh Linux execution or empirical application advantage."
+        },
+        "inherited_locations_refer_to_original_bound_versions": true,
+        "current_binding": {
+          "stable_label": "app:full11-copy-pin",
+          "number": "F",
+          "page": "28"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "app:full11-copy-pin",
+        "number": "F",
+        "page": "30"
+      }
+    },
+    {
+      "id": "V10_C24_RO_MAXIMUM_FULL_CERTIFICATE",
+      "inherited_record": {
+        "id": "V10_C24_RO_MAXIMUM_FULL_CERTIFICATE",
+        "stable_label": "prop:ro-certificate",
+        "statement": "For every nonnegative additive physical price vector, minimum maximum full-domain certificate cost over compatible read-once AND/OR completions is the largest sum of two core prices. At2,2,3this is5; unrestricted free-probe minimum is4.",
+        "evidence": [
+          {
+            "path": "bound-local-evidence/iteration367/INDEPENDENT_CERTIFICATE_TRANSFER_V01.json",
+            "bytes": 2792,
+            "sha256": "a6a270e862be8896571253968adbfcbc16a0313757a2381a7332524d5e940545"
+          },
+          {
+            "path": "bound-local-evidence/iteration367/CERTIFICATE_TRANSFER_PROOF_V01.txt",
+            "bytes": 10487,
+            "sha256": "403e86166c286d4af48f0ad2824ea19807ec0498069bdde9bbf0a1455b9c24b6"
+          }
+        ],
+        "proof_type": "Written essential-core/neutral-restriction/certificate-projection argument and three-leaf symbolic classification; separate finite corroboration",
+        "limits": "Not the randomized query-cost objective, not all-seven-function enumeration; exact positive-probe unrestricted certificate minimum not asserted.",
+        "current_binding": {
+          "number": "12",
+          "page": "30"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "prop:ro-certificate",
+        "number": "12",
+        "page": "32"
+      }
+    },
+    {
+      "id": "V10_C25_ALL_COMPLETION_POINTWISE_FACTOR2",
+      "inherited_record": {
+        "id": "V10_C25_ALL_COMPLETION_POINTWISE_FACTOR2",
+        "stable_label": "prop:pointwise-certificate",
+        "statement": "At(2,2,3,0,1,1,1), minimum over all compatible total functions of maximum promised-input full/promise certificate-cost ratio is exactly2.",
+        "evidence": [
+          {
+            "path": "bound-local-evidence/iteration367/INDEPENDENT_CERTIFICATE_TRANSFER_V01.json",
+            "bytes": 2792,
+            "sha256": "a6a270e862be8896571253968adbfcbc16a0313757a2381a7332524d5e940545"
+          },
+          {
+            "path": "bound-local-evidence/iteration367/CERTIFICATE_TRANSFER_PROOF_V01.txt",
+            "bytes": 10487,
+            "sha256": "403e86166c286d4af48f0ad2824ea19807ec0498069bdde9bbf0a1455b9c24b6"
+          },
+          {
+            "path": "bound-local-evidence/iteration368/SOURCE_REVIEW_V01.json",
+            "bytes": 3319,
+            "sha256": "47740c5d616f249c59c6b5858747312f066d03542c699272d53b582d99c48595"
+          }
+        ],
+        "proof_type": "Three-world opposite-label cylinder conflict, plus explicit total function and displayed full-certificate upper table",
+        "limits": "No all2^112completion census; capped formula search is not a proof premise; no smallest instance or generic framework novelty claim.",
+        "current_binding": {
+          "number": "13",
+          "page": "31"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "prop:pointwise-certificate",
+        "number": "13",
+        "page": "33"
+      }
+    },
+    {
+      "id": "V10_C26_POSITIVE_PRICE_POINTWISE_LOWER",
+      "inherited_record": {
+        "id": "V10_C26_POSITIVE_PRICE_POINTWISE_LOWER",
+        "stable_label": "prop:pointwise-certificate",
+        "statement": "For0<=epsilon<1at(2,2,3,epsilon,1,1,1), all compatible total functions have pointwise inflation at least2/(1+epsilon)>1.",
+        "evidence": [
+          {
+            "path": "bound-local-evidence/iteration367/INDEPENDENT_CERTIFICATE_TRANSFER_V01.json",
+            "bytes": 2792,
+            "sha256": "a6a270e862be8896571253968adbfcbc16a0313757a2381a7332524d5e940545"
+          },
+          {
+            "path": "bound-local-evidence/iteration367/CERTIFICATE_TRANSFER_PROOF_V01.txt",
+            "bytes": 10487,
+            "sha256": "403e86166c286d4af48f0ad2824ea19807ec0498069bdde9bbf0a1455b9c24b6"
+          }
+        ],
+        "proof_type": "Same analytic three-world threshold disjunction under increasing probe cost; exact promise costs at those three inputs",
+        "limits": "Lower bound only; exact positive-epsilon minimum is uncomputed.",
+        "current_binding": {
+          "number": "13",
+          "page": "31"
+        }
+      },
+      "inherited_index": {
+        "path": "bound-local-evidence/iteration368/PAPER_EVIDENCE_INDEX_V10.json",
+        "bytes": 84259,
+        "sha256": "12383341ae78e4ccbce9d01f47e077c785e71f82cab0ec1f8d0fbfeefef95f92"
+      },
+      "historical_locations_not_relabelled_as_current": true,
+      "current_binding": {
+        "stable_label": "prop:pointwise-certificate",
+        "number": "13",
+        "page": "33"
+      }
+    }
+  ],
+  "new_claims": [
+    {
+      "id": "V12_C27_ALL_MONOTONE_LE3_OPTIMALITY",
+      "stable_label": "thm:random-small",
+      "statement": "For every complete source with m<=3 and every finite normalized nonnegative monotone F, K=D_A=D_P=R_A=R_P; for each source/cost a deterministic priority full-cube completion attains K. Both randomized common-completion minima also equal K.",
+      "evidence": [
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/SMALL_MENU_BOUNDARY_ACCEPTANCE_V01.json",
+            "bytes": 3932,
+            "sha256": "975798320d2d0f5dbc26b82d0cec416888ddf930bb03beafae785a3f86b008bf"
+          },
+          "role": "Accepted exact theorem/model/quantifiers"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/INDEPENDENT_IDEAL_BOUNDARY_V01.json",
+            "bytes": 2936,
+            "sha256": "aeeb619875948b85077fdf7521ea8348ce4f9b9f54cf92b6a067cdd556c0bf6b"
+          },
+          "role": "Independent exact finite proof acceptance"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/CERTIFICATE_IDEAL_PROTOCOL_V01.json",
+            "bytes": 3820,
+            "sha256": "c74265b0ae568a7eddd5adf128c51cdb485f6c203bdb37614f708d2b06a3ea5e"
+          },
+          "role": "Frozen all-cost threshold protocol"
+        }
+      ],
+      "proof_type": "Certificate-path lower bound, complete finite ideal cover, threshold downset analytic argument",
+      "limits": "Complete equivalence fibres with unrestricted class count only; forall source forall cost exists completion, not one uniform completion; not all arbitrary partial three-bit tasks.",
+      "current_binding": {
+        "stable_label": "thm:random-small",
+        "number": "14",
+        "page": "37"
+      }
+    },
+    {
+      "id": "V12_C28_COMPLETE_CERTIFICATE_IDEAL_COVER",
+      "stable_label": "tab:small-ideal",
+      "statement": "203 endpoint partitions,53071specifications,55nonempty supports,924ordered disjoint3querysources; dimensions1to3 cover17810source/ideal cases with10974total priority trees and87308cube paths.",
+      "evidence": [
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/COMPLETE_THREE_QUERY_FIBRES_V01.json",
+            "bytes": 12833,
+            "sha256": "bd86f8278eaeb133e622d53cb256ce99ced887c7725e5e4992bfdeaa3232af28"
+          },
+          "role": "Exact catalogue or independent reconstruction"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/IDEAL_COVER_DIM1_V01.json",
+            "bytes": 876,
+            "sha256": "63bbb5da1881ecacef23df812506576d8369c31243530a30b71b1548c8610ed6"
+          },
+          "role": "Complete proof object"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/IDEAL_COVER_DIM2_V01.json",
+            "bytes": 47090,
+            "sha256": "da35eaf2bc08e9c1ae5f01a03a7dbfcb514397e54d9264a848d1618e2e5753cc"
+          },
+          "role": "Complete proof object"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/IDEAL_COVER_DIM3_V01.json",
+            "bytes": 4020167,
+            "sha256": "bb32e95fdb37176ecd32f83bbb1b9d7af9c714f16e8fd82243413f3b4829665f"
+          },
+          "role": "Complete proof object"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/verify_certificate_ideals_v01.py",
+            "bytes": 11141,
+            "sha256": "ef49ebecd072073fcc4b6a8913e38f24786d0ba41e7883c2e2ae20f1e46b815e"
+          },
+          "role": "Exact catalogue or independent reconstruction"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/INDEPENDENT_IDEAL_BOUNDARY_V01.json",
+            "bytes": 2936,
+            "sha256": "aeeb619875948b85077fdf7521ea8348ce4f9b9f54cf92b6a067cdd556c0bf6b"
+          },
+          "role": "Exact catalogue or independent reconstruction"
+        }
+      ],
+      "proof_type": "Computer-assisted exhaustive finite cover, independent graph/bitset reconstruction and direct total-tree path checks",
+      "limits": "No floating optimizer; all-monotone conclusion uses threshold proof, not finite exploratory price scan. Counts are combinatorial cases, not independent studies.",
+      "current_binding": {
+        "stable_label": "tab:small-ideal",
+        "number": "5",
+        "page": "38"
+      }
+    },
+    {
+      "id": "V12_C29_EXACT_FOUR_QUERY_WITNESS",
+      "stable_label": "cor:random-minimum",
+      "statement": "Complete4querysource at prices(2,2,3,1): both promise randomized optima9/2, both deterministic optima5, both full/promise-charged common-completion randomized minima5.",
+      "evidence": [
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration366/COMPLETION_COUNTEREXAMPLE_ACCEPTANCE_V01.json",
+            "bytes": 2664,
+            "sha256": "bfa824441ee6c4d22c619dc217609795c455079fce40b752fa30fb2d3fa6902a"
+          },
+          "role": "Inherited immutable original4query acceptance; no new old-science run"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/SMALL_MENU_BOUNDARY_ACCEPTANCE_V01.json",
+            "bytes": 3932,
+            "sha256": "975798320d2d0f5dbc26b82d0cec416888ddf930bb03beafae785a3f86b008bf"
+          },
+          "role": "Hash-checked old60file closure and recalled explicit analytical proof"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration372/journal_draft_v12/paper.tex",
+            "bytes": 112138,
+            "sha256": "8f530172436af019dd20d3431fe86f3a5515f9d6abe585a277a4c3eff480190c"
+          },
+          "role": "Self-contained source realization, mixture, mandatory-set lower bound, integrality and completion collision in corollary proof"
+        }
+      ],
+      "proof_type": "Explicit analytical proof plus inherited previously accepted exact4query evidence",
+      "limits": "Both classes separately; seed-randomized priority orders allowed. Not a largest-ratio theorem. Older4query computation not re-executed in371or372.",
+      "current_binding": {
+        "stable_label": "cor:random-minimum",
+        "number": "15",
+        "page": "39"
+      }
+    },
+    {
+      "id": "V12_C30_SHARP_MINIMUM_FOUR",
+      "stable_label": "cor:random-minimum",
+      "statement": "Minimum physical menu permitting randomization benefit or randomized promise/common-completion discrepancy is4for each policy class, for positive additive and containing normalized monotone/submodular cost classes, under both charging conventions.",
+      "evidence": [
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/SMALL_MENU_BOUNDARY_ACCEPTANCE_V01.json",
+            "bytes": 3932,
+            "sha256": "975798320d2d0f5dbc26b82d0cec416888ddf930bb03beafae785a3f86b008bf"
+          },
+          "role": "Accepted lower-menu exclusion and inherited positive-additive witness"
+        },
+        {
+          "artifact": {
+            "path": "bound-local-evidence/iteration371/PRIVATE_PACKET_ACCEPTANCE_V01.json",
+            "bytes": 888,
+            "sha256": "3acd569d3f4ddbef0e8a835021c032b0805b2c672dbf671c8bd529b4876d16a0"
+          },
+          "role": "Actually relocated stdlib <=3replay acceptance; old4zip only verified by hash"
+        }
+      ],
+      "proof_type": "Theorem14 <=3exclusion plus exact positive-additive four-query example",
+      "limits": "Bibliographic priority not established. Distinct from deterministic adaptive/order minimum7; earliest randomized adaptive/order gap undetermined. No application advantage.",
+      "current_binding": {
+        "stable_label": "cor:random-minimum",
+        "number": "15",
+        "page": "39"
+      }
+    }
+  ],
+  "total_claims": 30,
+  "numbered_results": [
+    {
+      "label": "lem:dominance",
+      "number": "1",
+      "page": "4"
+    },
+    {
+      "label": "lem:criterion",
+      "number": "2",
+      "page": "5"
+    },
+    {
+      "label": "thm:boundary",
+      "number": "3",
+      "page": "6"
+    },
+    {
+      "label": "lem:finite",
+      "number": "4",
+      "page": "8"
+    },
+    {
+      "label": "thm:price",
+      "number": "5",
+      "page": "13"
+    },
+    {
+      "label": "thm:submodular",
+      "number": "6",
+      "page": "15"
+    },
+    {
+      "label": "prop:record-control",
+      "number": "7",
+      "page": "27"
+    },
+    {
+      "label": "thm:record-path",
+      "number": "8",
+      "page": "28"
+    },
+    {
+      "label": "cor:record-path-unit",
+      "number": "9",
+      "page": "29"
+    },
+    {
+      "label": "cor:record-path-additive",
+      "number": "10",
+      "page": "29"
+    },
+    {
+      "label": "thm:full11-copy-pin",
+      "number": "11",
+      "page": "31"
+    },
+    {
+      "label": "prop:ro-certificate",
+      "number": "12",
+      "page": "32"
+    },
+    {
+      "label": "prop:pointwise-certificate",
+      "number": "13",
+      "page": "33"
+    },
+    {
+      "label": "thm:random-small",
+      "number": "14",
+      "page": "37"
+    },
+    {
+      "label": "cor:random-minimum",
+      "number": "15",
+      "page": "39"
+    }
+  ],
+  "current_label_bindings": {
+    "page:main-start": {
+      "number": "1",
+      "page": "2"
+    },
+    "tab:scope": {
+      "number": "1",
+      "page": "2"
+    },
+    "sec:envelopes": {
+      "number": "2.3",
+      "page": "4"
+    },
+    "lem:dominance": {
+      "number": "1",
+      "page": "4"
+    },
+    "lem:criterion": {
+      "number": "2",
+      "page": "5"
+    },
+    "sec:completion": {
+      "number": "2.4",
+      "page": "5"
+    },
+    "sec:cert-transfer": {
+      "number": "2.5",
+      "page": "5"
+    },
+    "thm:boundary": {
+      "number": "3",
+      "page": "6"
+    },
+    "sec:catalogue": {
+      "number": "3.1",
+      "page": "6"
+    },
+    "eq:flat": {
+      "number": "1",
+      "page": "7"
+    },
+    "sec:premise": {
+      "number": "3.2",
+      "page": "7"
+    },
+    "tab:coverage": {
+      "number": "2",
+      "page": "8"
+    },
+    "lem:finite": {
+      "number": "4",
+      "page": "8"
+    },
+    "sec:seven": {
+      "number": "3.3",
+      "page": "9"
+    },
+    "sec:ro-completion": {
+      "number": "3.4",
+      "page": "10"
+    },
+    "app:order-obstruction": {
+      "number": "3.5",
+      "page": "11"
+    },
+    "thm:price": {
+      "number": "5",
+      "page": "13"
+    },
+    "tab:frontiers": {
+      "number": "3",
+      "page": "13"
+    },
+    "sec:submodular": {
+      "number": "5",
+      "page": "15"
+    },
+    "thm:submodular": {
+      "number": "6",
+      "page": "15"
+    },
+    "eq:strengthened": {
+      "number": "2",
+      "page": "15"
+    },
+    "eq:three-sets": {
+      "number": "3",
+      "page": "16"
+    },
+    "eq:coverage": {
+      "number": "4",
+      "page": "16"
+    },
+    "page:main-end": {
+      "number": "7",
+      "page": "18"
+    },
+    "page:references-start": {
+      "number": "7",
+      "page": "20"
+    },
+    "app:recursion": {
+      "number": "A",
+      "page": "23"
+    },
+    "app:completion": {
+      "number": "A.1",
+      "page": "23"
+    },
+    "app:structure": {
+      "number": "B",
+      "page": "23"
+    },
+    "app:certificates": {
+      "number": "C",
+      "page": "24"
+    },
+    "app:reproduction": {
+      "number": "D",
+      "page": "24"
+    },
+    "app:record-acquisition": {
+      "number": "E",
+      "page": "26"
+    },
+    "prop:record-control": {
+      "number": "7",
+      "page": "27"
+    },
+    "sec:record-path": {
+      "number": "E.2",
+      "page": "28"
+    },
+    "thm:record-path": {
+      "number": "8",
+      "page": "28"
+    },
+    "cor:record-path-unit": {
+      "number": "9",
+      "page": "29"
+    },
+    "cor:record-path-additive": {
+      "number": "10",
+      "page": "29"
+    },
+    "app:full11-copy-pin": {
+      "number": "F",
+      "page": "30"
+    },
+    "thm:full11-copy-pin": {
+      "number": "11",
+      "page": "31"
+    },
+    "app:certificate-distortion": {
+      "number": "G",
+      "page": "32"
+    },
+    "prop:ro-certificate": {
+      "number": "12",
+      "page": "32"
+    },
+    "prop:pointwise-certificate": {
+      "number": "13",
+      "page": "33"
+    },
+    "tab:certificate-inflation": {
+      "number": "4",
+      "page": "34"
+    },
+    "app:cases": {
+      "number": "H",
+      "page": "35"
+    },
+    "app:randomized-boundary": {
+      "number": "I",
+      "page": "36"
+    },
+    "eq:random-certificate-lower": {
+      "number": "5",
+      "page": "37"
+    },
+    "eq:random-completion-chain": {
+      "number": "6",
+      "page": "37"
+    },
+    "thm:random-small": {
+      "number": "14",
+      "page": "37"
+    },
+    "tab:small-ideal": {
+      "number": "5",
+      "page": "38"
+    },
+    "cor:random-minimum": {
+      "number": "15",
+      "page": "39"
+    }
+  },
+  "visual_review": {
+    "path": "bound-local-evidence/iteration375/VISUAL_REVIEW_V01.json",
+    "bytes": 15947,
+    "sha256": "10f9269aa1a5dd82b8a4c33b6aa0de222816dc50dba088c33f07ce274082fab3"
+  },
+  "technical_exposition_review": {
+    "path": "bound-local-evidence/iteration375/TECHNICAL_VERSION_REVIEW_V01.json",
+    "bytes": 1730,
+    "sha256": "15d64a519755d9e11b9cad832e073d8171914375d75bad77fdc984979faa7dd6"
+  },
+  "new_randomized_primary_positioning": {
+    "path": "bound-local-evidence/iteration371/PRIMARY_POSITIONING_V02.json",
+    "bytes": 2053,
+    "sha256": "09ac1eb3ba8b4ed664eae8f8bc3056a5ecc3372ba2ea0cd8e48fffc142b2143a"
+  },
+  "new_scientific_executions_this_iteration": 0,
+  "new_API_calls": 0,
+  "P1_accessed": false,
+  "human_review_completed": false,
+  "author_facts_supplied": false,
+  "journal_submitted": false,
+  "bibliographic_priority_established": false,
+  "public_version": "PublicV13reading and exact editable-source copy; path-normalized ledger derivative. ExistingV12and executed small-menu source/archive records retained unchanged.",
+  "historical_V12_index": {
+    "path": "bound-local-evidence/iteration372/PAPER_EVIDENCE_INDEX_V12.json",
+    "bytes": 109571,
+    "sha256": "9184bd9250bd66daaf6856473fe1982bb0148a8ad3784a1aea08ad4542e045d8"
+  },
+  "V12_to_V13_source_review": {
+    "path": "bound-local-evidence/iteration375/SOURCE_CORRESPONDENCE_V02.json",
+    "bytes": 1757,
+    "sha256": "6eb16ef7e1927ef49422289429d275abdad0a30e73aa75b9694df3119459365d"
+  },
+  "current_primary_transfer_audit": {
+    "path": "bound-local-evidence/iteration374/PRIMARY_THEOREM_TRANSFER_AUDIT_V01.json",
+    "bytes": 8418,
+    "sha256": "37d219c9a986052fa1d0ee2d31e5c7abfb74eaba67afdce57de18b47373620b3"
+  },
+  "current_supporting_transfer_proof": {
+    "path": "bound-local-evidence/iteration374/SOURCE_EXPRESSIVITY_TRANSFER_PROOF_V01.txt",
+    "bytes": 13645,
+    "sha256": "1b3773b82927208bbed2a71e41f67dd078bfba0fe9794443d2f40819ac2804ee"
+  },
+  "source_expressivity_added_as_numbered_contribution": false,
+  "current_small_menu_execution_provenance": {
+    "source_commit": "aade35dbb049f64f6a66e0db8fd79fc269fb0ba5",
+    "archive_commit": "1f70f518aa56f6ed368ce8d02fab5cbeb5ee3dc9",
+    "actual_run": 38844940996,
+    "attempt": 1,
+    "actual_checker_pid": 2403,
+    "actual_exit_code": 0,
+    "excluded_fields": [
+      "wall_seconds"
+    ],
+    "mathematical_fields_excluded": [],
+    "acceptances": [
+      {
+        "path": "bound-local-evidence/iteration373/ACTUAL_HOSTED_ACCEPTANCE_V01.json",
+        "bytes": 2952,
+        "sha256": "4454369a69c677b75a246cf9cc66c8ee151b199ac784c0e2d680d8f16111fca2"
+      },
+      {
+        "path": "bound-local-evidence/iteration373/PUBLIC_HOSTED_RETENTION_ACCEPTANCE_V01.json",
+        "bytes": 5489,
+        "sha256": "77d3c25103414708e321acff67ae575ea8cc2d946bceeae93e0cd64a456abbb6"
+      },
+      {
+        "path": "bound-local-evidence/iteration373/PUBLIC_EXECUTION_CLOSURE_ACCEPTANCE_V01.json",
+        "bytes": 3807,
+        "sha256": "ffd516bbbe0794827f9f56cd99392bf1562dd6ad70560c7dde6633161573f420"
+      }
+    ],
+    "trust_limit": "Conditional executed source/provider metadata/original artifact digest. Same checker portability is not another independent mathematical implementation or human review."
+  },
+  "public_derivative": {
+    "original_private_index_sha256": "388eb0232b75827a2e2560d20f41720a79ed30f1df691ac48173552a4d32076b",
+    "changes": "Absolute descriptor paths replaced by explicit bound-local locators; current source/PDF locators point to adjacent public files. Only public-version metadata added. All mathematical claim scopes, hashes and current bindings are unchanged.",
+    "locator_limit": "bound-local-evidence and bound-local-project-outputs are non-fetchable evidence identifiers; their presence does not imply all referenced files are public or included.",
+    "manuscript_source": "paper.tex",
+    "manuscript_PDF": "paper.pdf",
+    "editable_source": "editable_source_v13.zip",
+    "existing_proof_packet": "../../theory/small_menu_randomization_v01/small_menu_le3_v01.zip",
+    "existing_original_Linux_receipts": "../../evidence/small_menu_hosted_v01/README.txt",
+    "private_transfer_support_memo_not_released": true
+  }
+}

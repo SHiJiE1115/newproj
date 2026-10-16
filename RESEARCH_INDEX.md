@@ -1,8 +1,13 @@
 # Research materials: current index
 
-## Current reviewed V12 and small-menu randomization proof
+## Current reviewed V13 editorial draft
 
-[39-page V12 reading copy and editable source](manuscript/journal_v12/README.txt) integrates the separately defined randomized extension, preserving all13old numbered results and adding Theorem14/Corollary15. [Exact <=3 certificate-ideal proof packet](theory/small_menu_randomization_v01/README.txt) gives the finite all-cost premise. Four is the sharp minimum for randomization benefit and common-completion discrepancy in complete equivalence fibres, distinct from deterministic6/7. The old four-query executable is inherited, not rerun. The current manual workflow has not yet been declared successful merely by this deposit. Literature priority, human approval and practical application advantage remain unestablished; prior V10and historical archives remain exact.
+[40-page V13 reading copy and exact editable source](manuscript/journal_v13/README.txt) preserve all15numbered statements,12proofs and5tables from V12, with a current30claim index. Formal2025journal citation/version numbering, public availability, actual small-menu source/run/archive provenance and bounded related-work positioning are unified. The complete12member source ZIP is exact to the accepted local source; only the public claim ledger is explicitly path-normalized. [Version and verification scope](manuscript/journal_v13/PROVENANCE_SCOPE_V13.json) distinguish real local compilation, existing hosted executions and their limits. No new workflow/science/model execution is performed by this editorial deposit. PublicV12and all older evidence remain unchanged. Exact literature priority, final author facts/approval and journal submission remain open; no application advantage is established.
+
+
+## Earlier reviewed V12 and small-menu randomization proof
+
+[39-page V12 reading copy and editable source](manuscript/journal_v12/README.txt) integrates the separately defined randomized extension, preserving all13old numbered results and adding Theorem14/Corollary15. [Exact <=3 certificate-ideal proof packet](theory/small_menu_randomization_v01/README.txt) gives the finite all-cost premise. Four is the sharp minimum for randomization benefit and common-completion discrepancy in complete equivalence fibres, distinct from deterministic6/7. The old four-query executable is inherited, not rerun. The original deposit preceded the actual small-menu Linux run; its later original hosted receipts are retained below. Literature priority, human approval and practical application advantage remain unestablished; prior V10and historical archives remain exact.
 
 
 This index separates the theory reading copy, its verification artifacts, and
@@ -10,7 +15,7 @@ scoped application evidence. Publication is not journal submission or acceptance
 
 ## Theory reading and verification
 
-- [Current journal V10 reading copy and editable source](manuscript/journal_v10/README.txt):34reviewed pages,13numbered results, original11statements/proofs preserved. AppendixGadds precise certificate-completion comparisons, current2026framework credit and actual full11Linux provenance. Author facts/final approval, exact priority and practical application advantage remain unestablished.
+- [Earlier journal V10 reading copy and editable source](manuscript/journal_v10/README.txt):34reviewed pages,13numbered results, original11statements/proofs preserved. AppendixGadds precise certificate-completion comparisons, current2026framework credit and actual full11Linux provenance. Author facts/final approval, exact priority and practical application advantage remain unestablished.
 - [Exact certificate-completion replay packet and manual workflow](theory/certificate_transfer_v01/README.txt): sharp pointwise factor2over all compatible completions at the free probe, a positive-price lower, and a distinct read-once maximum-certificate bound. The prepared hosted workflow is not itself a cloud-success receipt.
 - [Earlier journal V09 reading copy](manuscript/journal_v09/README.txt): 31-page reviewed draft with the specified full11source extension; author facts, final approval, literature priority and application advantage remain unestablished.
 - [Full11 self-contained direct proof and manual hosted replay](theory/full11_direct_v01/README.txt): one specified source, all2193roots,130683rational nodes,293legal policies and5040true-lower orders. Cloud success is claimed only after a separately retained actual run.
