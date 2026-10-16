@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "name": "CHANGES.txt",
+      "bytes": 1454,
+      "sha256": "af0e2ef4ab99d568d70b45f741e36e10aea08a4e35e3e04286e46ce8f7e98138"
+    },
+    {
+      "name": "editable_source_v10.zip",
+      "bytes": 676120,
+      "sha256": "e5126b8870aa19430adb13ebbac7e2587502c9ef1d250f4c5d3c80f5cffd3c5a"
+    },
+    {
+      "name": "paper.pdf",
+      "bytes": 630374,
+      "sha256": "a08c2fddab7915d781fb97022b07ab8866a23403bef9ad028d9757f00a762963"
+    },
+    {
+      "name": "paper.tex",
+      "bytes": 96383,
+      "sha256": "dc63eaa051bea6a3fd110e3b5d9b81f5c7f40a20835e019f81439ec735ce9b99"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 1557,
+      "sha256": "e3f513f2b283264dba159633fec55469a24e1f7b2e010783172120ba4e9bafb6"
+    },
+    {
+      "name": "references.bib",
+      "bytes": 10088,
+      "sha256": "f4381fa4a426a402f4df33e54516f1a569257e991da754385ea3ee8826575fb3"
+    }
+  ]
+}

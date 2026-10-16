@@ -5,7 +5,9 @@ scoped application evidence. Publication is not journal submission or acceptance
 
 ## Theory reading and verification
 
-- [Current journal V09 reading copy](manuscript/journal_v09/README.txt): 31-page reviewed draft with the specified full11source extension; author facts, final approval, literature priority and application advantage remain unestablished.
+- [Current journal V10 reading copy and editable source](manuscript/journal_v10/README.txt):34reviewed pages,13numbered results, original11statements/proofs preserved. AppendixGadds precise certificate-completion comparisons, current2026framework credit and actual full11Linux provenance. Author facts/final approval, exact priority and practical application advantage remain unestablished.
+- [Exact certificate-completion replay packet and manual workflow](theory/certificate_transfer_v01/README.txt): sharp pointwise factor2over all compatible completions at the free probe, a positive-price lower, and a distinct read-once maximum-certificate bound. The prepared hosted workflow is not itself a cloud-success receipt.
+- [Earlier journal V09 reading copy](manuscript/journal_v09/README.txt): 31-page reviewed draft with the specified full11source extension; author facts, final approval, literature priority and application advantage remain unestablished.
 - [Full11 self-contained direct proof and manual hosted replay](theory/full11_direct_v01/README.txt): one specified source, all2193roots,130683rational nodes,293legal policies and5040true-lower orders. Cloud success is claimed only after a separately retained actual run.
 - [Earlier journal V08 reading copy](manuscript/journal_v08/README.md): 28-page draft, source and bibliography. The original six/seven equality-query boundary remains the core theory; Appendix E.2 gives the separate even-path record-source comparison.
 - [Fixed seven-query verifier](theory/REPRODUCE.md) and [actual hosted evidence](theory/HOSTED_RUNS.md).

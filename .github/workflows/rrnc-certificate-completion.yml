@@ -1,0 +1,41 @@
+name: Certificate-completion exact replay
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrnc-certificate-completion-replay
+  cancel-in-progress: false
+
+jobs:
+  verify-certificate-completion:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out the selected source commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify frozen packet and replay exact certificate comparisons
+        shell: bash
+        run: >-
+          python3 -I -X utf8 -B theory/certificate_transfer_v01/run_hosted_certificate_v01.py
+          --execution-kind github-actions
+          --expect-freeze-sha256 ac757241b6f769788edbe2b2263ef5ae4e49d0c56712c126eb27372769b217cb
+          --output-dir ci-results/certificate-completion
+      - name: Preserve actual success or failure receipts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: certificate-completion-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ci-results/certificate-completion/*.json
+            ci-results/certificate-completion/*.txt
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false

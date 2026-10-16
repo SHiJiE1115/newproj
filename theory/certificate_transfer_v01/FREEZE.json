@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "scope": "One exact certificate-transfer replay; no model calls or human review",
+  "wrapper_sha256": "8a3110b8e02c431dfdbfb5d5c9bd1fc8ecf42b4acf4587c5fa13f0377e5bcbf9",
+  "packet_sha256": "c767adab75dec1eeac42db739d40722fa9f729756b916c3b1973c07643b95f0b",
+  "expected_windows_report_sha256": "a6a270e862be8896571253968adbfcbc16a0313757a2381a7332524d5e940545"
+}

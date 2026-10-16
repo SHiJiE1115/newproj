@@ -1,0 +1,9 @@
+V09toV10: reviewed source integration
+
+34pages and13numbered results, versus31pages and11numbered results. The abstract and all prior11numbered statements/proofs are preserved. New AppendixGgives the exact read-once maximum-full-certificate minimum, sharp all-completion pointwise factor2at free probe, and a positive-price lower bound. These are supporting transfer comparisons on the specified source.
+
+The related-work discussion credits existing completion complexity and the standard deterministic tree-completion observation. It does not claim a new general completion framework. The full11appendix now reports the actual Linux execution and its source/archive distinction. Source and caption review checks all8newtable rows and18applicable full-certificate sets against all128inputs.
+
+No old six-query/full11/randomized-game enumeration was rerun for this editorial integration. The earlier capped formula search stays UNKNOWNand is excluded from theorem premises. The three-world analytic proof was recorded as a post-cap derivation. The366randomized counterexample stays a separate companion and is not silently added to the main deterministic objective.
+
+This public source ZIP differs from the local reviewed editing ZIP only in its README and packaging manifest; all build inputs, final PDFand inner certificate snapshot are unchanged. No author identities, approval, venue compliance, practical efficacy or literature priority are invented.

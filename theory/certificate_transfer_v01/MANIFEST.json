@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "name": "certificate_transfer_v01.zip",
+      "bytes": 38656,
+      "sha256": "c767adab75dec1eeac42db739d40722fa9f729756b916c3b1973c07643b95f0b"
+    },
+    {
+      "name": "FREEZE.json",
+      "bytes": 381,
+      "sha256": "ac757241b6f769788edbe2b2263ef5ae4e49d0c56712c126eb27372769b217cb"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 2394,
+      "sha256": "9204a9d26f4524feb115b2f33e52b38fbe2b97b2aff8acb860db121feebfe9f1"
+    },
+    {
+      "name": "run_hosted_certificate_v01.py",
+      "bytes": 5835,
+      "sha256": "8a3110b8e02c431dfdbfb5d5c9bd1fc8ecf42b4acf4587c5fa13f0377e5bcbf9"
+    }
+  ]
+}
