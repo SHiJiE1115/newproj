@@ -56,3 +56,7 @@ submission matters; no author approval is implied by these machine-produced reco
 ## Full11 actual hosted execution retained
 
 [Actual Linux execution and original receipt archive](evidence/full11_hosted_v01/README.txt): run 38812275187, attempt 1, source commit 37b10299e6abb9ba260012b24fc244ee90fb94d9. The actual child exited 0; all parsed mathematical outputs match the prior Windows replay after excluding only runtime and wall time. The original artifact and a conditional offline receipt verifier are retained. This uses the same exact checker across systems, with no new independent implementation, human review, original historical scientific replay, novelty clearance or application superiority claimed.
+
+## Certificate-completion actual hosted execution retained
+
+[Actual Linux execution and original receipt archive](evidence/certificate_completion_hosted_v01/README.txt): run 38833749833, attempt 1, source commit a420cd488ca63bfca0a857a103e4c85793269353. The checker actually exited 0 and all parsed mathematical fields match the frozen Windows report. The original service artifact SHA256 was matched before persistent retention. This verifies the declared certificate comparisons across systems with the same checker; no new independent implementation, human review, priority clearance or application benefit is established.

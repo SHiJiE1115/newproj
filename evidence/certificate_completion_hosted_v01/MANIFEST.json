@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "scope": "Persistent raw artifact and metadata of actual certificate run38833749833 attempt1",
+  "source_commit": "a420cd488ca63bfca0a857a103e4c85793269353",
+  "new_model_API_calls": 0,
+  "human_review": false,
+  "manifest_does_not_authenticate_provider_metadata": true,
+  "files": [
+    {
+      "path": "HOSTED_ARTIFACTS.json",
+      "bytes": 906,
+      "sha256": "b6ba579a4d72d1288c5b267f1f31e72a655f75f03ca1cfcad5e3c6f8e8f4f56e"
+    },
+    {
+      "path": "HOSTED_JOBS.json",
+      "bytes": 2770,
+      "sha256": "5d843e93eff36eb0fde80eac595942d24b594faf29565076db4d8ceb377239e3"
+    },
+    {
+      "path": "HOSTED_RUN.json",
+      "bytes": 13826,
+      "sha256": "ded2c6b226f190b27dd6b9ada093946a92ed0ae7a5d89b71de134ac143f8ed3e"
+    },
+    {
+      "path": "original_certificate_completion_artifact.zip",
+      "bytes": 3716,
+      "sha256": "594eeba060c46fe1045011c59e5a25cf88c5965cfdc1f33e818c8a6166123dc1"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 3622,
+      "sha256": "b94e6273ad686080bd0253829b60f7232d1a74b2bbd038123e3413a83bfcc109"
+    },
+    {
+      "path": "RECEIPT_COMPARISON.json",
+      "bytes": 1945,
+      "sha256": "bd2c7a0a7416bb896bddd72230ef702fde499deac1f39b5e6129d0e0dde1b155"
+    }
+  ]
+}

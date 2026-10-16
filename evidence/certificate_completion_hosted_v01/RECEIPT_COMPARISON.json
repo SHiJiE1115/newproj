@@ -1,0 +1,41 @@
+{
+  "status": "PASS_ORIGINAL_SERVER_HASH_ACTUAL_LINUX_EXIT_AND_ALL_PARSED_MATH",
+  "at_utc": "2026-10-16T01:17:24.899944+00:00",
+  "run_id": 38833749833,
+  "run_attempt": 1,
+  "run_url": "https://github.com/SHiJiE1115/newproj/actions/runs/38833749833",
+  "source_commit": "a420cd488ca63bfca0a857a103e4c85793269353",
+  "workflow_id": 386163446,
+  "job_id": 116758106302,
+  "runtime": {
+    "python": "3.12.3",
+    "system": "Linux"
+  },
+  "actual_checker_pid": 2325,
+  "retained_Popen_wait": true,
+  "actual_checker_exit_code": 0,
+  "all_parsed_fields_equal_windows": true,
+  "canonical_mathematical_sha256": "9131fd155105628c959251168abcc2117b1e8388372f8a993a0d2939ed40d186",
+  "windows_report_sha256": "a6a270e862be8896571253968adbfcbc16a0313757a2381a7332524d5e940545",
+  "linux_report_sha256": "367268cbc3efed9a41c9362b70491fecab228b8f75ffa312abb2247290001e16",
+  "byte_identity_across_newline_platforms_required": false,
+  "mathematics": {
+    "RO_max_full_certificate_minimum": "max(c0+c1,c0+c2,c1+c2)",
+    "unrestricted_free_probe_full_certificate_minimum": "4",
+    "unrestricted_free_probe_pointwise_inflation_minimum": "2",
+    "three_world_lower_certificate_triples": 48,
+    "attaining_function_inputs": 128
+  },
+  "new_model_API_calls": 0,
+  "same_checker_across_systems_not_new_independent_implementation": true,
+  "human_review": false,
+  "novelty_established": false,
+  "application_superiority_established": false,
+  "trust_limit": "Conditional on trusted GitHub API metadata, artifact digest and runner service. Self-reported workflow fields alone do not authenticate execution.",
+  "action_runtime_warning": "Pinned checkout/upload actions were forced by GitHub from Node20 to Node24; replay and upload both actually succeeded. No workflow was changed during the run.",
+  "raw_archive": {
+    "bytes": 3716,
+    "sha256": "594eeba060c46fe1045011c59e5a25cf88c5965cfdc1f33e818c8a6166123dc1",
+    "artifact_id": 12018417594
+  }
+}
