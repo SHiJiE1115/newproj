@@ -1,0 +1,77 @@
+{
+  "status": "PASS_ORIGINAL_ARTIFACT_PROVIDER_IDENTITY_REAL_EXIT_AND_FULL_NON_TIMING_RESULT_COMPARISON",
+  "run_id": 38844940996,
+  "run_attempt": 1,
+  "source_commit": "aade35dbb049f64f6a66e0db8fd79fc269fb0ba5",
+  "workflow_id": 386254520,
+  "job_id": 116793229607,
+  "artifact_id": 12023071120,
+  "artifact_bytes": 3928,
+  "artifact_sha256": "d079ee21ba414964dd7c18b3eb4088ed211ee1c67de07259af458fb5eecdfed3",
+  "checker_pid": 2403,
+  "checker_actual_exit_code": 0,
+  "retained_Popen_wait": true,
+  "runtime": {
+    "python": "3.12.3",
+    "system": "Linux"
+  },
+  "all_non_timing_fields_equal": true,
+  "excluded_fields": [
+    "wall_seconds"
+  ],
+  "no_mathematical_fields_excluded": true,
+  "mathematics": {
+    "independent_source_reconstruction": {
+      "closed_graphs_of32768_edge_assignments": 203,
+      "fibre_specifications": 53071,
+      "distinct_supports": 55,
+      "nonconstant_disjoint_source_pairs": 924
+    },
+    "reports": [
+      {
+        "dimension": 1,
+        "tasks": 2,
+        "nonempty_downsets": 2,
+        "checked_source_ideal_pairs": 4,
+        "applicable_tree_witnesses": 2,
+        "inapplicable_certificates": 2,
+        "full_cube_paths_checked": 4,
+        "source_certificate_witnesses_checked": 4,
+        "producer_report_sha256": "63bbb5da1881ecacef23df812506576d8369c31243530a30b71b1548c8610ed6"
+      },
+      {
+        "dimension": 2,
+        "tasks": 50,
+        "nonempty_downsets": 5,
+        "checked_source_ideal_pairs": 250,
+        "applicable_tree_witnesses": 118,
+        "inapplicable_certificates": 132,
+        "full_cube_paths_checked": 472,
+        "source_certificate_witnesses_checked": 336,
+        "producer_report_sha256": "da35eaf2bc08e9c1ae5f01a03a7dbfcb514397e54d9264a848d1618e2e5753cc"
+      },
+      {
+        "dimension": 3,
+        "tasks": 924,
+        "nonempty_downsets": 19,
+        "checked_source_ideal_pairs": 17556,
+        "applicable_tree_witnesses": 10854,
+        "inapplicable_certificates": 6702,
+        "full_cube_paths_checked": 86832,
+        "source_certificate_witnesses_checked": 44322,
+        "producer_report_sha256": "bb32e95fdb37176ecd32f83bbb1b9d7af9c714f16e8fd82243413f3b4829665f"
+      }
+    ],
+    "checked_source_ideal_pairs": 17810,
+    "applicable_total_priority_tree_witnesses": 10974,
+    "full_cube_paths_checked": 87308
+  },
+  "canonical_non_timing_result_sha256": "462f25ce1dfaaaad671e061a8e90fe34fb65b0077a9abd366599b2dcab2169c3",
+  "four_query_reexecuted": false,
+  "new_model_API_calls": 0,
+  "new_independent_implementation": false,
+  "human_review": false,
+  "literature_priority_established": false,
+  "historical_scientific_authentication": false,
+  "trust_limit": "Conditional on authentic GitHub provider snapshots, executed source binding and the original service-digest-matched artifact. Local copies/hashes do not self-authenticate the platform."
+}

@@ -65,3 +65,7 @@ submission matters; no author approval is implied by these machine-produced reco
 ## Certificate-completion actual hosted execution retained
 
 [Actual Linux execution and original receipt archive](evidence/certificate_completion_hosted_v01/README.txt): run 38833749833, attempt 1, source commit a420cd488ca63bfca0a857a103e4c85793269353. The checker actually exited 0 and all parsed mathematical fields match the frozen Windows report. The original service artifact SHA256 was matched before persistent retention. This verifies the declared certificate comparisons across systems with the same checker; no new independent implementation, human review, priority clearance or application benefit is established.
+
+## Small-menu actual hosted execution retained
+
+[Actual Linux <=3 ideal-proof execution and original receipt archive](evidence/small_menu_hosted_v01/README.txt): run38844940996, attempt1, source aade35dbb049f64f6a66e0db8fd79fc269fb0ba5. Checker PID2403 exited0; all parsed result fields equal the Windows control except wall_seconds, with no mathematical field excluded. The original3928byte artifact matches the service SHA256 and is persistently retained. This replays the new17810case certificate-ideal premise; the old four-query leg is inherited, not rerun. Same-checker portability is not a new independent implementation, human review, historical scientific authentication, application advantage or priority clearance.

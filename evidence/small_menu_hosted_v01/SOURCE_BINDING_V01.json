@@ -1,0 +1,125 @@
+{
+  "executed_source_commit": "aade35dbb049f64f6a66e0db8fd79fc269fb0ba5",
+  "source_publication_files": [
+    {
+      "path": ".github/workflows/rrnc-small-menu-ideal.yml",
+      "bytes": 1368,
+      "sha256": "395b4a662d1316230be166c6e6cac15ae5cab384b59fe140344b386738c9e6af",
+      "git_blob_sha1": "efd23ccf74d0021897aaae3447c1dd32cd498c9e",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/.github/workflows/rrnc-small-menu-ideal.yml"
+    },
+    {
+      "path": "manuscript/journal_v12/CHANGES.txt",
+      "bytes": 694,
+      "sha256": "86b682b9679b1d0882297ba9a0969a938626fec54a169a21a4a812615dcb7627",
+      "git_blob_sha1": "a57e796ae078b2e89d3fd4d023dd7c352e5c9575",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/manuscript/journal_v12/CHANGES.txt"
+    },
+    {
+      "path": "manuscript/journal_v12/CLAIM_EVIDENCE_INDEX_V12.json",
+      "bytes": 105739,
+      "sha256": "15f715681922b54eb76c4e9387f87818482ab4fe264daef1f9050b0b5035f6bb",
+      "git_blob_sha1": "9567f9432e8fee8c9942e8b8353a8d07424552ab",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/manuscript/journal_v12/CLAIM_EVIDENCE_INDEX_V12.json"
+    },
+    {
+      "path": "manuscript/journal_v12/editable_source_v12.zip",
+      "bytes": 101385,
+      "sha256": "620c11a08c68192dcb8aa00f240c15cb04541089ab15571be0d056f91ade918f",
+      "git_blob_sha1": "2064dbc4ea68692675aa0ebea71284ae1879594c",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/manuscript/journal_v12/editable_source_v12.zip"
+    },
+    {
+      "path": "manuscript/journal_v12/paper.pdf",
+      "bytes": 665830,
+      "sha256": "813307763c7e7e7b7ac16cea1a0e1a79604daaa8977fa94c568eaf8274113ade",
+      "git_blob_sha1": "9126804c226566d1e700088df8238f85f14514ba",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/manuscript/journal_v12/paper.pdf"
+    },
+    {
+      "path": "manuscript/journal_v12/paper.tex",
+      "bytes": 112138,
+      "sha256": "8f530172436af019dd20d3431fe86f3a5515f9d6abe585a277a4c3eff480190c",
+      "git_blob_sha1": "42df4d7148b7219476240b3117178556e96d2362",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/manuscript/journal_v12/paper.tex"
+    },
+    {
+      "path": "manuscript/journal_v12/README.txt",
+      "bytes": 1841,
+      "sha256": "ef9cc6f64669a629db00058c6a53a7d2bf1c50f59e1635e0e02b17400f7f1901",
+      "git_blob_sha1": "7b05e97e9a569c6babca93625381345c595327c2",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/manuscript/journal_v12/README.txt"
+    },
+    {
+      "path": "manuscript/journal_v12/references.bib",
+      "bytes": 11878,
+      "sha256": "4184ad573d963a4e5cde7d83d5ac5cd1bf794187bed9b23025a43796417baa34",
+      "git_blob_sha1": "453ef6aa98169c8e1a285293ac3b78b2130073dd",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/manuscript/journal_v12/references.bib"
+    },
+    {
+      "path": "RESEARCH_INDEX.md",
+      "bytes": 8504,
+      "sha256": "4bb37436833296cae4cfdb2437c1d5bc3af93294ba2e3cf80fe004079cd16e49",
+      "git_blob_sha1": "2011dca6519b47c74abf87e44f50ac4018b47df3",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/RESEARCH_INDEX.md"
+    },
+    {
+      "path": "theory/small_menu_randomization_v01/CORE_CORRESPONDENCE_V01.json",
+      "bytes": 1713,
+      "sha256": "045da4798e4f9ac4ae01826723e280af497c8a2b7effaf522bf5fa8efbfe0628",
+      "git_blob_sha1": "47fd1a64bd67a40c0f957055562036dbf94d263d",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01/CORE_CORRESPONDENCE_V01.json"
+    },
+    {
+      "path": "theory/small_menu_randomization_v01/EXPECTED_NON_TIMING_RESULT_V01.json",
+      "bytes": 2110,
+      "sha256": "af4eeae82901d3cbfc953be796fe249b8763162652bd75d503b6b450d56fcfc2",
+      "git_blob_sha1": "a5e0413ab00b074d003df5f71089af9dcd4d47c5",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01/EXPECTED_NON_TIMING_RESULT_V01.json"
+    },
+    {
+      "path": "theory/small_menu_randomization_v01/FREEZE.json",
+      "bytes": 669,
+      "sha256": "403e0b3a7becab752a7f02eaaebcec3396fcee0a07db9b0185154a0dc9d953c7",
+      "git_blob_sha1": "d207e400262d6740a124310a0e1f2aaa79f3d4fa",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01/FREEZE.json"
+    },
+    {
+      "path": "theory/small_menu_randomization_v01/README.txt",
+      "bytes": 1431,
+      "sha256": "eccd82c07352cb07b0dbfc082fd176205e62e9725bada5457154f26548f9df99",
+      "git_blob_sha1": "91033690205edf54d8dcf65721f69efbbb0bc59e",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01/README.txt"
+    },
+    {
+      "path": "theory/small_menu_randomization_v01/run_hosted_small_menu_v01.py",
+      "bytes": 5160,
+      "sha256": "3e743090279eaeebcbb74723aea1713d296ad19115873658c7d6f0a6d7427dd8",
+      "git_blob_sha1": "4d5de24184bf464e7d743f7387dfd78585954042",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01/run_hosted_small_menu_v01.py"
+    },
+    {
+      "path": "theory/small_menu_randomization_v01/small_menu_le3_v01.zip",
+      "bytes": 100247,
+      "sha256": "e6d6719871177da37ffbc4a62dfe4ac172578e2909343a54f885a889c9ab192d",
+      "git_blob_sha1": "4c5080d8fbde9536cf188cc92001514690b0633b",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01/small_menu_le3_v01.zip"
+    },
+    {
+      "path": "theory/small_menu_randomization_v01/WINDOWS_LOCAL_CONTROL_V01.json",
+      "bytes": 811,
+      "sha256": "de4dce2c0bf7a6b7ec809dccc09236488d959ad8f53733486dd57624ae8a8df3",
+      "git_blob_sha1": "b111913ea15fd43d6a7ceaf29e88c2e714cd933a",
+      "raw_url": "https://raw.githubusercontent.com/SHiJiE1115/newproj/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01/WINDOWS_LOCAL_CONTROL_V01.json"
+    }
+  ],
+  "same_raw_archive_as_provider_digest": true,
+  "all_windows_linux_non_timing_fields_equal": true,
+  "excluded_fields": [
+    "wall_seconds"
+  ],
+  "no_mathematical_fields_excluded": true,
+  "new_independent_implementation": false,
+  "source_and_later_retention_commits_are_distinct": true
+}

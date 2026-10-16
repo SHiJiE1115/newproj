@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "scope": "One new<=3finite-proof replay; no old4query science, model calls or human review",
+  "wrapper_sha256": "3e743090279eaeebcbb74723aea1713d296ad19115873658c7d6f0a6d7427dd8",
+  "packet_sha256": "e6d6719871177da37ffbc4a62dfe4ac172578e2909343a54f885a889c9ab192d",
+  "checker_sha256": "4efc71522793cdb111aa174953c543a18f5dfdf45493195296b95f937b16e7c4",
+  "manifest_sha256": "a9ab2ff3692e0dcd5b3d063c127d27f2015ab59cb530476df098f343df0ea03d",
+  "expected_non_timing_result_sha256": "af4eeae82901d3cbfc953be796fe249b8763162652bd75d503b6b450d56fcfc2",
+  "excluded_result_fields": [
+    "wall_seconds"
+  ],
+  "no_mathematical_fields_excluded": true
+}
