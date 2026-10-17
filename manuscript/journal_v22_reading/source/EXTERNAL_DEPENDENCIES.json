@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "status": "EXPLICIT_EXTERNAL_DEPENDENCIES_NOT_INCLUDED",
+  "files": [
+    {
+      "name": "sn-jnl.cls",
+      "bytes": 55857,
+      "sha256": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+      "origin": "ExternalSpringerNaturetemplate"
+    },
+    {
+      "name": "sn-mathphys-num.bst",
+      "bytes": 64164,
+      "sha256": "b3a7c7fbcc1e7f9619de634fcea2f5bb7a245818a5942bc576e40ea001633332",
+      "origin": "ExternalSpringerNaturetemplate"
+    },
+    {
+      "name": "appendix.sty",
+      "bytes": 8878,
+      "sha256": "f49c04b4146b0abbfea6865688574067f9f424b270859fa7e88c0410148dc95e",
+      "origin": "ExternalTeXruntimepackage:appendix"
+    },
+    {
+      "name": "cuted.sty",
+      "bytes": 32458,
+      "sha256": "4100a41d79898cca50a6cf169d4ee773a2eb41c3271487804f37192afa47c939",
+      "origin": "ExternalTeXruntimepackage:cuted"
+    },
+    {
+      "name": "threeparttable.sty",
+      "bytes": 13506,
+      "sha256": "e8cc9617113e13dbf4c5219206ccf75930caea6640d82ed45e076fd813cced77",
+      "origin": "ExternalTeXruntimepackage:threeparttable"
+    },
+    {
+      "name": "wrapfig.sty",
+      "bytes": 26220,
+      "sha256": "4695b760c84ded2507b1ddc33e15e299c718f9a556cd330983f0a000f0d10de7",
+      "origin": "ExternalTeXruntimepackage:wrapfig"
+    }
+  ],
+  "publisher_support_page": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
+  "publisher_template_download": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12",
+  "original_template_archive_sha256": "812e76dcaa9c28dc1bff1fb6065d51729b67d4ea140552a05088317414a3ecae",
+  "dependency_versions_are_pinned_to_the_recorded_build_not_latest_claims": true,
+  "licence_notice": "Obtainandusetheexternalfilesundertheirapplicableterms;thispackagegrantsnonelicenceforthem"
+}

@@ -1,0 +1,36 @@
+\begin{theorem}[Three-query certificate optimality, computer-assisted]\label{thm:random-small}
+For every complete equivalence source on at most three physical queries and every finite-valued normalized nonnegative monotone $F$,
+\begin{align*}
+ K_F(W)&=\DR_{\mathcal P}(W;F)=\DR_{\mathcal A}(W;F)\\
+       &=\RR_{\mathcal P}(W;F)=\RR_{\mathcal A}(W;F).
+\end{align*}
+For each source and each such $F$, one compatible total function and one deterministic priority tree attain $K_F(W)$ on the entire cube. Thus both completion minima in~\eqref{eq:random-completion-chain} also equal $K_F(W)$, for either policy class. Zero costs are included.
+\end{theorem}
+\begin{proof}
+The finite premise is a certificate-ideal cover, which we specify and reduce to complete checked objects below. For every complete source on $m\leq3$ queries and every nonempty downset $I\subseteq2^Q$, suppose every promised input has a certificate in $I$. The premise asserts that there is a total priority tree correct on the promise whose purchased set lies in $I$ on \emph{every full-cube input}.
+
+\emph{Complete source reduction.} Duplicate shared query endpoints and impose their identities as SAME constraints in both labels. Collapse all original SAME blocks. Endpoint blocks retain every DIFFERENT edge between them. Any endpoint partition satisfying these induced constraints extends to all original records: assign every remaining block without endpoints its own fresh equivalence class. All remaining DIFFERENT constraints are then satisfied. This uses an unrestricted class count, not transitivity of DIFFERENT. Thus arbitrary hidden records impose no extra restriction on endpoint responses.
+
+For three indexed queries this reduces to six endpoints. Their $B_6=203$ SAME partitions, each with an arbitrary DIFFERENT graph on its blocks, give
+\[
+ \sum_{k=1}^{6}{6\brace k}2^{\binom{k}{2}}=53{,}071
+\]
+satisfiable specifications. Exact projection gives $55$ distinct nonempty supports and $924$ ordered disjoint two-label source pairs. Query coordinates are never identified or repriced by this reduction.
+
+\emph{Exhaustive ideal cover.} For dimensions one and two the check covers all partial Boolean tasks with both labels, a superset of the required sources. At dimension three it covers the complete-source catalogue just described. Enumerating every nonempty downset gives the entire case table in Table~\ref{tab:small-ideal}. Each case supplies either an input with no certificate in $I$, or a global permutation and an explicit total tree. The producer uses quotient-partition enumeration and order recursion. A separate checker reconstructs all $203$ closed equivalence graphs from the $2^{15}$ undirected edge masks, intersects allowed-world bitsets for all $53{,}071$ specifications, and recovers exactly the same $55$ supports and $924$ source pairs. It independently enumerates downsets and tests certificate availability.
+
+For every applicable case the checker traces the supplied tree on every full-cube input, checks labels on the promise, checks membership of its purchased set in $I$, and verifies the same global order along all paths. For an inapplicable case it checks the supplied input against all opposite-label agreements to exclude every allowed certificate. All $17{,}810$ source/ideal pairs are covered exactly once. The $10{,}974$ applicable trees pass $87{,}308$ full-cube path checks. Constant tasks, if allowed, use a zero-purchase leaf. No optimizer or floating-point certificate is used in this finite premise.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}rrrrr@{}}\toprule
+Queries & Tasks & Nonempty downsets & Cases & Total trees\\\midrule
+1 & 2 & 2 & 4 & 2\\
+2 & 50 & 5 & 250 & 118\\
+3 & 924 & 19 & 17,556 & 10,854\\\bottomrule
+\end{tabular}
+\caption{Complete finite certificate-ideal cover. Dimensions one and two include all partial tasks with two nonempty labels; dimension three includes all complete equivalence sources after projection. These are exhaustive combinatorial cases, not independently sampled studies.}\label{tab:small-ideal}
+\end{table}
+
+\emph{All-cost deduction.} Set $t=K_F(W)$ and $I=\{S\subseteq Q:F(S)\leq t\}$. Normalization, nonnegativity and monotonicity make $I$ a nonempty downset. Every promised input has a certificate in $I$ by the definition of $K_F$. The finite cover supplies a deterministic priority tree whose every cube path costs at most $t$. Its leaf function is a compatible total completion. This gives upper bounds $t$ for all stated quantities, while~\eqref{eq:random-certificate-lower} and~\eqref{eq:random-completion-chain} give the lower bounds. The quantifiers are $\forall W\,\forall F\,\exists(g,T)$, not $\exists g\,\forall F$. The universal price statement follows from this threshold argument, not from extrapolating a finite price grid.
+\end{proof}

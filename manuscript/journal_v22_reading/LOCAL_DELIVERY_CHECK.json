@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_EXTRACTED_V22_AUTHORED_SOURCE_BUILD_AND_NEW_PROOF_DELIVERY_BINDINGS",
+  "reading_PDF_sha256": "4633f02172e262e9cb08fb59e5f5431fb36100e0d964e0db3244a5acac416186",
+  "public_source_archive_sha256": "54c19549d9a7da2c8e98e7edee910f81475a9f70a44d73442632626d4b9d9685",
+  "actual_rebuilt_PDF_raw_sha256": "e343f7ef6af2de3a53d393df6fe7637642171be1272003dbd10e992b63011807",
+  "raw_PDF_bytes_may_differ_due_to_build_metadata": true,
+  "all74_page_text_content_stream_boxes_rotation_font_programs_metrics_encodings_and_Xobjects_equal": true,
+  "all27_current_number_page_aux_bindings_equal": true,
+  "source6_scientific_files_exact_to_accepted_V22": true,
+  "external6_explicitly_supplied_hash_checked_not_distributed": true,
+  "actual_source_build_process": {
+    "pid": 24988,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "retained_Popen_wait": true,
+    "wall_seconds": 8.960888300003717
+  },
+  "actual_compiler_stages": [
+    {
+      "stage": "compile_1",
+      "pid": 15232,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 2.289152400015155
+    },
+    {
+      "stage": "bibtex",
+      "pid": 18096,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 1.0398296000203118
+    },
+    {
+      "stage": "compile_2",
+      "pid": 3176,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 1.96671239999705
+    },
+    {
+      "stage": "compile_3",
+      "pid": 15892,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 1.9604882999847177
+    }
+  ],
+  "accepted_reading_visual_scope": "40changedfullpageviewsplus34acceptedexactpixelpagesrecordedinV22acceptance;unchangedPDFreused",
+  "new_proof_zip_sha256": "69f68924b5fe6d9fe0f0fd61f1de1e637e11289e2636c07c1b057876dd6099c5",
+  "new_proof_result_sha256": "5c50a463daa90dc14b7576f9d1f4ec8e51994a664f0cbf4b871c384d81efd9db",
+  "new_proof_not_reexecuted_for_this_delivery": true,
+  "environment_scope": "OneactualextractedWindows/Python3.12build;notnewhostedscience,independentimplementationorhumanreview",
+  "new_model_calls_or_scientific_optimization_or_hosted_runs": 0
+}

@@ -1,0 +1,3847 @@
+{
+  "main": {
+    "schema": 2,
+    "status": "PASS_EXACT_COVERAGE_COUNTEREXAMPLE_ALL_ORIGINAL_FULL_CLASSES",
+    "task": [
+      642,
+      34833
+    ],
+    "W": [
+      0,
+      1,
+      4,
+      7,
+      9,
+      11,
+      15
+    ],
+    "labels": {
+      "0": 1,
+      "1": 0,
+      "4": 1,
+      "7": 0,
+      "9": 0,
+      "11": 1,
+      "15": 1
+    },
+    "full_class_counts": [
+      40,
+      32
+    ],
+    "physical_orbit_members": 48,
+    "fee": [
+      0,
+      17,
+      20,
+      26,
+      19,
+      26,
+      26,
+      31,
+      20,
+      26,
+      27,
+      31,
+      26,
+      31,
+      29,
+      32
+    ],
+    "fee_class": "Weightedcoveragewithstrictlypositiveindividualquerychargesandnonnegativepair/globalsetupweights",
+    "all256_submodular_slacks": [
+      {
+        "S": 0,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 3,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 5,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 6,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 9,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 10,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 12,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 0,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 2,
+        "slack": 11
+      },
+      {
+        "S": 1,
+        "T": 3,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 4,
+        "slack": 10
+      },
+      {
+        "S": 1,
+        "T": 5,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 6,
+        "slack": 12
+      },
+      {
+        "S": 1,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 8,
+        "slack": 11
+      },
+      {
+        "S": 1,
+        "T": 9,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 10,
+        "slack": 13
+      },
+      {
+        "S": 1,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 12,
+        "slack": 12
+      },
+      {
+        "S": 1,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 1,
+        "T": 14,
+        "slack": 14
+      },
+      {
+        "S": 1,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 1,
+        "slack": 11
+      },
+      {
+        "S": 2,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 3,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 4,
+        "slack": 13
+      },
+      {
+        "S": 2,
+        "T": 5,
+        "slack": 15
+      },
+      {
+        "S": 2,
+        "T": 6,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 8,
+        "slack": 13
+      },
+      {
+        "S": 2,
+        "T": 9,
+        "slack": 15
+      },
+      {
+        "S": 2,
+        "T": 10,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 12,
+        "slack": 17
+      },
+      {
+        "S": 2,
+        "T": 13,
+        "slack": 19
+      },
+      {
+        "S": 2,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 2,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 3,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 3,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 3,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 3,
+        "T": 3,
+        "slack": 0
+      },
+      {
+        "S": 3,
+        "T": 4,
+        "slack": 14
+      },
+      {
+        "S": 3,
+        "T": 5,
+        "slack": 4
+      },
+      {
+        "S": 3,
+        "T": 6,
+        "slack": 1
+      },
+      {
+        "S": 3,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 3,
+        "T": 8,
+        "slack": 15
+      },
+      {
+        "S": 3,
+        "T": 9,
+        "slack": 4
+      },
+      {
+        "S": 3,
+        "T": 10,
+        "slack": 2
+      },
+      {
+        "S": 3,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 3,
+        "T": 12,
+        "slack": 20
+      },
+      {
+        "S": 3,
+        "T": 13,
+        "slack": 8
+      },
+      {
+        "S": 3,
+        "T": 14,
+        "slack": 3
+      },
+      {
+        "S": 3,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 1,
+        "slack": 10
+      },
+      {
+        "S": 4,
+        "T": 2,
+        "slack": 13
+      },
+      {
+        "S": 4,
+        "T": 3,
+        "slack": 14
+      },
+      {
+        "S": 4,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 5,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 6,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 8,
+        "slack": 13
+      },
+      {
+        "S": 4,
+        "T": 9,
+        "slack": 14
+      },
+      {
+        "S": 4,
+        "T": 10,
+        "slack": 17
+      },
+      {
+        "S": 4,
+        "T": 11,
+        "slack": 18
+      },
+      {
+        "S": 4,
+        "T": 12,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 4,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 5,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 5,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 5,
+        "T": 2,
+        "slack": 15
+      },
+      {
+        "S": 5,
+        "T": 3,
+        "slack": 4
+      },
+      {
+        "S": 5,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 5,
+        "T": 5,
+        "slack": 0
+      },
+      {
+        "S": 5,
+        "T": 6,
+        "slack": 2
+      },
+      {
+        "S": 5,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 5,
+        "T": 8,
+        "slack": 15
+      },
+      {
+        "S": 5,
+        "T": 9,
+        "slack": 4
+      },
+      {
+        "S": 5,
+        "T": 10,
+        "slack": 21
+      },
+      {
+        "S": 5,
+        "T": 11,
+        "slack": 8
+      },
+      {
+        "S": 5,
+        "T": 12,
+        "slack": 2
+      },
+      {
+        "S": 5,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 5,
+        "T": 14,
+        "slack": 4
+      },
+      {
+        "S": 5,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 6,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 6,
+        "T": 1,
+        "slack": 12
+      },
+      {
+        "S": 6,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 6,
+        "T": 3,
+        "slack": 1
+      },
+      {
+        "S": 6,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 6,
+        "T": 5,
+        "slack": 2
+      },
+      {
+        "S": 6,
+        "T": 6,
+        "slack": 0
+      },
+      {
+        "S": 6,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 6,
+        "T": 8,
+        "slack": 17
+      },
+      {
+        "S": 6,
+        "T": 9,
+        "slack": 20
+      },
+      {
+        "S": 6,
+        "T": 10,
+        "slack": 4
+      },
+      {
+        "S": 6,
+        "T": 11,
+        "slack": 5
+      },
+      {
+        "S": 6,
+        "T": 12,
+        "slack": 4
+      },
+      {
+        "S": 6,
+        "T": 13,
+        "slack": 6
+      },
+      {
+        "S": 6,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 6,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 3,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 5,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 6,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 7,
+        "T": 8,
+        "slack": 19
+      },
+      {
+        "S": 7,
+        "T": 9,
+        "slack": 8
+      },
+      {
+        "S": 7,
+        "T": 10,
+        "slack": 6
+      },
+      {
+        "S": 7,
+        "T": 11,
+        "slack": 4
+      },
+      {
+        "S": 7,
+        "T": 12,
+        "slack": 6
+      },
+      {
+        "S": 7,
+        "T": 13,
+        "slack": 4
+      },
+      {
+        "S": 7,
+        "T": 14,
+        "slack": 2
+      },
+      {
+        "S": 7,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 1,
+        "slack": 11
+      },
+      {
+        "S": 8,
+        "T": 2,
+        "slack": 13
+      },
+      {
+        "S": 8,
+        "T": 3,
+        "slack": 15
+      },
+      {
+        "S": 8,
+        "T": 4,
+        "slack": 13
+      },
+      {
+        "S": 8,
+        "T": 5,
+        "slack": 15
+      },
+      {
+        "S": 8,
+        "T": 6,
+        "slack": 17
+      },
+      {
+        "S": 8,
+        "T": 7,
+        "slack": 19
+      },
+      {
+        "S": 8,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 9,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 10,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 12,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 8,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 9,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 9,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 9,
+        "T": 2,
+        "slack": 15
+      },
+      {
+        "S": 9,
+        "T": 3,
+        "slack": 4
+      },
+      {
+        "S": 9,
+        "T": 4,
+        "slack": 14
+      },
+      {
+        "S": 9,
+        "T": 5,
+        "slack": 4
+      },
+      {
+        "S": 9,
+        "T": 6,
+        "slack": 20
+      },
+      {
+        "S": 9,
+        "T": 7,
+        "slack": 8
+      },
+      {
+        "S": 9,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 9,
+        "T": 9,
+        "slack": 0
+      },
+      {
+        "S": 9,
+        "T": 10,
+        "slack": 2
+      },
+      {
+        "S": 9,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 9,
+        "T": 12,
+        "slack": 1
+      },
+      {
+        "S": 9,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 9,
+        "T": 14,
+        "slack": 3
+      },
+      {
+        "S": 9,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 10,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 10,
+        "T": 1,
+        "slack": 13
+      },
+      {
+        "S": 10,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 10,
+        "T": 3,
+        "slack": 2
+      },
+      {
+        "S": 10,
+        "T": 4,
+        "slack": 17
+      },
+      {
+        "S": 10,
+        "T": 5,
+        "slack": 21
+      },
+      {
+        "S": 10,
+        "T": 6,
+        "slack": 4
+      },
+      {
+        "S": 10,
+        "T": 7,
+        "slack": 6
+      },
+      {
+        "S": 10,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 10,
+        "T": 9,
+        "slack": 2
+      },
+      {
+        "S": 10,
+        "T": 10,
+        "slack": 0
+      },
+      {
+        "S": 10,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 10,
+        "T": 12,
+        "slack": 4
+      },
+      {
+        "S": 10,
+        "T": 13,
+        "slack": 6
+      },
+      {
+        "S": 10,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 10,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 3,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 4,
+        "slack": 18
+      },
+      {
+        "S": 11,
+        "T": 5,
+        "slack": 8
+      },
+      {
+        "S": 11,
+        "T": 6,
+        "slack": 5
+      },
+      {
+        "S": 11,
+        "T": 7,
+        "slack": 4
+      },
+      {
+        "S": 11,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 9,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 10,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 11,
+        "T": 12,
+        "slack": 5
+      },
+      {
+        "S": 11,
+        "T": 13,
+        "slack": 4
+      },
+      {
+        "S": 11,
+        "T": 14,
+        "slack": 1
+      },
+      {
+        "S": 11,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 12,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 12,
+        "T": 1,
+        "slack": 12
+      },
+      {
+        "S": 12,
+        "T": 2,
+        "slack": 17
+      },
+      {
+        "S": 12,
+        "T": 3,
+        "slack": 20
+      },
+      {
+        "S": 12,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 12,
+        "T": 5,
+        "slack": 2
+      },
+      {
+        "S": 12,
+        "T": 6,
+        "slack": 4
+      },
+      {
+        "S": 12,
+        "T": 7,
+        "slack": 6
+      },
+      {
+        "S": 12,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 12,
+        "T": 9,
+        "slack": 1
+      },
+      {
+        "S": 12,
+        "T": 10,
+        "slack": 4
+      },
+      {
+        "S": 12,
+        "T": 11,
+        "slack": 5
+      },
+      {
+        "S": 12,
+        "T": 12,
+        "slack": 0
+      },
+      {
+        "S": 12,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 12,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 12,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 2,
+        "slack": 19
+      },
+      {
+        "S": 13,
+        "T": 3,
+        "slack": 8
+      },
+      {
+        "S": 13,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 5,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 6,
+        "slack": 6
+      },
+      {
+        "S": 13,
+        "T": 7,
+        "slack": 4
+      },
+      {
+        "S": 13,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 9,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 10,
+        "slack": 6
+      },
+      {
+        "S": 13,
+        "T": 11,
+        "slack": 4
+      },
+      {
+        "S": 13,
+        "T": 12,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 13,
+        "T": 14,
+        "slack": 2
+      },
+      {
+        "S": 13,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 1,
+        "slack": 14
+      },
+      {
+        "S": 14,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 3,
+        "slack": 3
+      },
+      {
+        "S": 14,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 5,
+        "slack": 4
+      },
+      {
+        "S": 14,
+        "T": 6,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 7,
+        "slack": 2
+      },
+      {
+        "S": 14,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 9,
+        "slack": 3
+      },
+      {
+        "S": 14,
+        "T": 10,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 11,
+        "slack": 1
+      },
+      {
+        "S": 14,
+        "T": 12,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 13,
+        "slack": 2
+      },
+      {
+        "S": 14,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 14,
+        "T": 15,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 0,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 1,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 2,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 3,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 4,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 5,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 6,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 7,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 8,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 9,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 10,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 11,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 12,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 13,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 14,
+        "slack": 0
+      },
+      {
+        "S": 15,
+        "T": 15,
+        "slack": 0
+      }
+    ],
+    "all64_query_addition_checks": [
+      {
+        "S": 0,
+        "q": 0,
+        "increment": 17,
+        "proper": true
+      },
+      {
+        "S": 0,
+        "q": 1,
+        "increment": 20,
+        "proper": true
+      },
+      {
+        "S": 0,
+        "q": 2,
+        "increment": 19,
+        "proper": true
+      },
+      {
+        "S": 0,
+        "q": 3,
+        "increment": 20,
+        "proper": true
+      },
+      {
+        "S": 1,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 1,
+        "q": 1,
+        "increment": 9,
+        "proper": true
+      },
+      {
+        "S": 1,
+        "q": 2,
+        "increment": 9,
+        "proper": true
+      },
+      {
+        "S": 1,
+        "q": 3,
+        "increment": 9,
+        "proper": true
+      },
+      {
+        "S": 2,
+        "q": 0,
+        "increment": 6,
+        "proper": true
+      },
+      {
+        "S": 2,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 2,
+        "q": 2,
+        "increment": 6,
+        "proper": true
+      },
+      {
+        "S": 2,
+        "q": 3,
+        "increment": 7,
+        "proper": true
+      },
+      {
+        "S": 3,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 3,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 3,
+        "q": 2,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 3,
+        "q": 3,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 4,
+        "q": 0,
+        "increment": 7,
+        "proper": true
+      },
+      {
+        "S": 4,
+        "q": 1,
+        "increment": 7,
+        "proper": true
+      },
+      {
+        "S": 4,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 4,
+        "q": 3,
+        "increment": 7,
+        "proper": true
+      },
+      {
+        "S": 5,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 5,
+        "q": 1,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 5,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 5,
+        "q": 3,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 6,
+        "q": 0,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 6,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 6,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 6,
+        "q": 3,
+        "increment": 3,
+        "proper": true
+      },
+      {
+        "S": 7,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 7,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 7,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 7,
+        "q": 3,
+        "increment": 1,
+        "proper": true
+      },
+      {
+        "S": 8,
+        "q": 0,
+        "increment": 6,
+        "proper": true
+      },
+      {
+        "S": 8,
+        "q": 1,
+        "increment": 7,
+        "proper": true
+      },
+      {
+        "S": 8,
+        "q": 2,
+        "increment": 6,
+        "proper": true
+      },
+      {
+        "S": 8,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 9,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 9,
+        "q": 1,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 9,
+        "q": 2,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 9,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 10,
+        "q": 0,
+        "increment": 4,
+        "proper": true
+      },
+      {
+        "S": 10,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 10,
+        "q": 2,
+        "increment": 2,
+        "proper": true
+      },
+      {
+        "S": 10,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 11,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 11,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 11,
+        "q": 2,
+        "increment": 1,
+        "proper": true
+      },
+      {
+        "S": 11,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 12,
+        "q": 0,
+        "increment": 5,
+        "proper": true
+      },
+      {
+        "S": 12,
+        "q": 1,
+        "increment": 3,
+        "proper": true
+      },
+      {
+        "S": 12,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 12,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 13,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 13,
+        "q": 1,
+        "increment": 1,
+        "proper": true
+      },
+      {
+        "S": 13,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 13,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 14,
+        "q": 0,
+        "increment": 3,
+        "proper": true
+      },
+      {
+        "S": 14,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 14,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 14,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 15,
+        "q": 0,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 15,
+        "q": 1,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 15,
+        "q": 2,
+        "increment": 0,
+        "proper": false
+      },
+      {
+        "S": 15,
+        "q": 3,
+        "increment": 0,
+        "proper": false
+      }
+    ],
+    "strict_proper_increment_min": 1,
+    "positive_nonempty_fee_min": 17,
+    "fee_failures": [],
+    "transfer_identity_on_masks": [
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "some_zero_prior_worlds_may_have_one_query_certificates": true,
+    "hard_prior_support_has_no_one_query_certificate": true,
+    "all504_original_policy_input_paths_correct_and_P_orders_legal": true,
+    "selected_profiles": {
+      "a1": {
+        "adaptive": {
+          "index": 6,
+          "sets": [
+            3,
+            3,
+            0,
+            0,
+            3,
+            0,
+            0,
+            10,
+            0,
+            3,
+            0,
+            10,
+            0,
+            0,
+            0,
+            10
+          ],
+          "tree": [
+            1,
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "priority": {
+          "index": 6,
+          "order": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "sets": [
+            3,
+            3,
+            0,
+            0,
+            3,
+            0,
+            0,
+            10,
+            0,
+            3,
+            0,
+            10,
+            0,
+            0,
+            0,
+            10
+          ],
+          "tree": [
+            1,
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      "a2": {
+        "adaptive": {
+          "index": 21,
+          "sets": [
+            9,
+            9,
+            0,
+            0,
+            9,
+            0,
+            0,
+            9,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0,
+            10
+          ],
+          "tree": [
+            3,
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ]
+        },
+        "priority": {
+          "index": 19,
+          "order": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "sets": [
+            9,
+            9,
+            0,
+            0,
+            9,
+            0,
+            0,
+            9,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0,
+            10
+          ],
+          "tree": [
+            3,
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      "a3": {
+        "adaptive": {
+          "index": 39,
+          "sets": [
+            15,
+            15,
+            0,
+            0,
+            14,
+            0,
+            0,
+            14,
+            0,
+            14,
+            0,
+            6,
+            0,
+            0,
+            0,
+            12
+          ],
+          "tree": [
+            2,
+            [
+              1,
+              [
+                3,
+                [
+                  0,
+                  1,
+                  0
+                ],
+                0
+              ],
+              1
+            ],
+            [
+              3,
+              [
+                1,
+                1,
+                0
+              ],
+              1
+            ]
+          ]
+        }
+      },
+      "p3": {
+        "adaptive": {
+          "index": 20,
+          "sets": [
+            7,
+            7,
+            0,
+            0,
+            14,
+            0,
+            0,
+            14,
+            0,
+            7,
+            0,
+            6,
+            0,
+            0,
+            0,
+            12
+          ],
+          "tree": [
+            2,
+            [
+              1,
+              [
+                0,
+                1,
+                0
+              ],
+              1
+            ],
+            [
+              3,
+              [
+                1,
+                1,
+                0
+              ],
+              1
+            ]
+          ]
+        },
+        "priority": {
+          "index": 18,
+          "order": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "sets": [
+            7,
+            7,
+            0,
+            0,
+            14,
+            0,
+            0,
+            14,
+            0,
+            7,
+            0,
+            6,
+            0,
+            0,
+            0,
+            12
+          ],
+          "tree": [
+            2,
+            [
+              1,
+              [
+                0,
+                1,
+                0
+              ],
+              1
+            ],
+            [
+              3,
+              [
+                1,
+                1,
+                0
+              ],
+              1
+            ]
+          ]
+        }
+      },
+      "p4": {
+        "adaptive": {
+          "index": 35,
+          "sets": [
+            15,
+            15,
+            0,
+            0,
+            13,
+            0,
+            0,
+            13,
+            0,
+            14,
+            0,
+            6,
+            0,
+            0,
+            0,
+            12
+          ],
+          "tree": [
+            2,
+            [
+              1,
+              [
+                3,
+                [
+                  0,
+                  1,
+                  0
+                ],
+                0
+              ],
+              1
+            ],
+            [
+              3,
+              [
+                0,
+                1,
+                0
+              ],
+              1
+            ]
+          ]
+        },
+        "priority": {
+          "index": 30,
+          "order": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "sets": [
+            15,
+            15,
+            0,
+            0,
+            13,
+            0,
+            0,
+            13,
+            0,
+            14,
+            0,
+            6,
+            0,
+            0,
+            0,
+            12
+          ],
+          "tree": [
+            2,
+            [
+              1,
+              [
+                3,
+                [
+                  0,
+                  1,
+                  0
+                ],
+                0
+              ],
+              1
+            ],
+            [
+              3,
+              [
+                0,
+                1,
+                0
+              ],
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "mixture_input_costs": {
+      "A": [
+        {
+          "word": 0,
+          "cost": "188/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 1,
+          "cost": "188/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 4,
+          "cost": "185/7",
+          "anchor_slack": "3/7"
+        },
+        {
+          "word": 7,
+          "cost": "188/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 9,
+          "cost": "188/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 11,
+          "cost": "188/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 15,
+          "cost": "188/7",
+          "anchor_slack": "0"
+        }
+      ],
+      "P": [
+        {
+          "word": 0,
+          "cost": "479/18",
+          "anchor_slack": "5/18"
+        },
+        {
+          "word": 1,
+          "cost": "479/18",
+          "anchor_slack": "5/18"
+        },
+        {
+          "word": 4,
+          "cost": "238/9",
+          "anchor_slack": "4/9"
+        },
+        {
+          "word": 7,
+          "cost": "242/9",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 9,
+          "cost": "242/9",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 11,
+          "cost": "242/9",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 15,
+          "cost": "242/9",
+          "anchor_slack": "0"
+        }
+      ]
+    },
+    "dual_all_original_columns": {
+      "A": [
+        {
+          "column": 0,
+          "expected_cost": "212/7",
+          "anchor_slack": "24/7"
+        },
+        {
+          "column": 1,
+          "expected_cost": "431/14",
+          "anchor_slack": "55/14"
+        },
+        {
+          "column": 2,
+          "expected_cost": "31",
+          "anchor_slack": "29/7"
+        },
+        {
+          "column": 3,
+          "expected_cost": "212/7",
+          "anchor_slack": "24/7"
+        },
+        {
+          "column": 4,
+          "expected_cost": "431/14",
+          "anchor_slack": "55/14"
+        },
+        {
+          "column": 5,
+          "expected_cost": "63/2",
+          "anchor_slack": "65/14"
+        },
+        {
+          "column": 6,
+          "expected_cost": "188/7",
+          "anchor_slack": "0"
+        },
+        {
+          "column": 7,
+          "expected_cost": "55/2",
+          "anchor_slack": "9/14"
+        },
+        {
+          "column": 8,
+          "expected_cost": "31",
+          "anchor_slack": "29/7"
+        },
+        {
+          "column": 9,
+          "expected_cost": "30",
+          "anchor_slack": "22/7"
+        },
+        {
+          "column": 10,
+          "expected_cost": "409/14",
+          "anchor_slack": "33/14"
+        },
+        {
+          "column": 11,
+          "expected_cost": "405/14",
+          "anchor_slack": "29/14"
+        },
+        {
+          "column": 12,
+          "expected_cost": "63/2",
+          "anchor_slack": "65/14"
+        },
+        {
+          "column": 13,
+          "expected_cost": "61/2",
+          "anchor_slack": "51/14"
+        },
+        {
+          "column": 14,
+          "expected_cost": "208/7",
+          "anchor_slack": "20/7"
+        },
+        {
+          "column": 15,
+          "expected_cost": "206/7",
+          "anchor_slack": "18/7"
+        },
+        {
+          "column": 16,
+          "expected_cost": "409/14",
+          "anchor_slack": "33/14"
+        },
+        {
+          "column": 17,
+          "expected_cost": "193/7",
+          "anchor_slack": "5/7"
+        },
+        {
+          "column": 18,
+          "expected_cost": "395/14",
+          "anchor_slack": "19/14"
+        },
+        {
+          "column": 19,
+          "expected_cost": "192/7",
+          "anchor_slack": "4/7"
+        },
+        {
+          "column": 20,
+          "expected_cost": "190/7",
+          "anchor_slack": "2/7"
+        },
+        {
+          "column": 21,
+          "expected_cost": "188/7",
+          "anchor_slack": "0"
+        },
+        {
+          "column": 22,
+          "expected_cost": "55/2",
+          "anchor_slack": "9/14"
+        },
+        {
+          "column": 23,
+          "expected_cost": "27",
+          "anchor_slack": "1/7"
+        },
+        {
+          "column": 24,
+          "expected_cost": "387/14",
+          "anchor_slack": "11/14"
+        },
+        {
+          "column": 25,
+          "expected_cost": "387/14",
+          "anchor_slack": "11/14"
+        },
+        {
+          "column": 26,
+          "expected_cost": "30",
+          "anchor_slack": "22/7"
+        },
+        {
+          "column": 27,
+          "expected_cost": "29",
+          "anchor_slack": "15/7"
+        },
+        {
+          "column": 28,
+          "expected_cost": "193/7",
+          "anchor_slack": "5/7"
+        },
+        {
+          "column": 29,
+          "expected_cost": "395/14",
+          "anchor_slack": "19/14"
+        },
+        {
+          "column": 30,
+          "expected_cost": "191/7",
+          "anchor_slack": "3/7"
+        },
+        {
+          "column": 31,
+          "expected_cost": "391/14",
+          "anchor_slack": "15/14"
+        },
+        {
+          "column": 32,
+          "expected_cost": "405/14",
+          "anchor_slack": "29/14"
+        },
+        {
+          "column": 33,
+          "expected_cost": "191/7",
+          "anchor_slack": "3/7"
+        },
+        {
+          "column": 34,
+          "expected_cost": "391/14",
+          "anchor_slack": "15/14"
+        },
+        {
+          "column": 35,
+          "expected_cost": "190/7",
+          "anchor_slack": "2/7"
+        },
+        {
+          "column": 36,
+          "expected_cost": "27",
+          "anchor_slack": "1/7"
+        },
+        {
+          "column": 37,
+          "expected_cost": "387/14",
+          "anchor_slack": "11/14"
+        },
+        {
+          "column": 38,
+          "expected_cost": "387/14",
+          "anchor_slack": "11/14"
+        },
+        {
+          "column": 39,
+          "expected_cost": "188/7",
+          "anchor_slack": "0"
+        }
+      ],
+      "P": [
+        {
+          "column": 0,
+          "expected_cost": "274/9",
+          "anchor_slack": "32/9"
+        },
+        {
+          "column": 1,
+          "expected_cost": "557/18",
+          "anchor_slack": "73/18"
+        },
+        {
+          "column": 2,
+          "expected_cost": "31",
+          "anchor_slack": "37/9"
+        },
+        {
+          "column": 3,
+          "expected_cost": "274/9",
+          "anchor_slack": "32/9"
+        },
+        {
+          "column": 4,
+          "expected_cost": "557/18",
+          "anchor_slack": "73/18"
+        },
+        {
+          "column": 5,
+          "expected_cost": "63/2",
+          "anchor_slack": "83/18"
+        },
+        {
+          "column": 6,
+          "expected_cost": "242/9",
+          "anchor_slack": "0"
+        },
+        {
+          "column": 7,
+          "expected_cost": "55/2",
+          "anchor_slack": "11/18"
+        },
+        {
+          "column": 8,
+          "expected_cost": "31",
+          "anchor_slack": "37/9"
+        },
+        {
+          "column": 9,
+          "expected_cost": "30",
+          "anchor_slack": "28/9"
+        },
+        {
+          "column": 10,
+          "expected_cost": "523/18",
+          "anchor_slack": "13/6"
+        },
+        {
+          "column": 11,
+          "expected_cost": "173/6",
+          "anchor_slack": "35/18"
+        },
+        {
+          "column": 12,
+          "expected_cost": "63/2",
+          "anchor_slack": "83/18"
+        },
+        {
+          "column": 13,
+          "expected_cost": "88/3",
+          "anchor_slack": "22/9"
+        },
+        {
+          "column": 14,
+          "expected_cost": "523/18",
+          "anchor_slack": "13/6"
+        },
+        {
+          "column": 15,
+          "expected_cost": "247/9",
+          "anchor_slack": "5/9"
+        },
+        {
+          "column": 16,
+          "expected_cost": "505/18",
+          "anchor_slack": "7/6"
+        },
+        {
+          "column": 17,
+          "expected_cost": "244/9",
+          "anchor_slack": "2/9"
+        },
+        {
+          "column": 18,
+          "expected_cost": "242/9",
+          "anchor_slack": "0"
+        },
+        {
+          "column": 19,
+          "expected_cost": "242/9",
+          "anchor_slack": "0"
+        },
+        {
+          "column": 20,
+          "expected_cost": "55/2",
+          "anchor_slack": "11/18"
+        },
+        {
+          "column": 21,
+          "expected_cost": "27",
+          "anchor_slack": "1/9"
+        },
+        {
+          "column": 22,
+          "expected_cost": "497/18",
+          "anchor_slack": "13/18"
+        },
+        {
+          "column": 23,
+          "expected_cost": "497/18",
+          "anchor_slack": "13/18"
+        },
+        {
+          "column": 24,
+          "expected_cost": "247/9",
+          "anchor_slack": "5/9"
+        },
+        {
+          "column": 25,
+          "expected_cost": "505/18",
+          "anchor_slack": "7/6"
+        },
+        {
+          "column": 26,
+          "expected_cost": "245/9",
+          "anchor_slack": "1/3"
+        },
+        {
+          "column": 27,
+          "expected_cost": "167/6",
+          "anchor_slack": "17/18"
+        },
+        {
+          "column": 28,
+          "expected_cost": "245/9",
+          "anchor_slack": "1/3"
+        },
+        {
+          "column": 29,
+          "expected_cost": "167/6",
+          "anchor_slack": "17/18"
+        },
+        {
+          "column": 30,
+          "expected_cost": "242/9",
+          "anchor_slack": "0"
+        },
+        {
+          "column": 31,
+          "expected_cost": "27",
+          "anchor_slack": "1/9"
+        }
+      ]
+    },
+    "A_upper_valid": true,
+    "P_lower_valid": true,
+    "A_lower_valid": true,
+    "P_upper_valid": true,
+    "primary_strict_gap_certified": true,
+    "both_exact_values_certified": true,
+    "A_anchor": "188/7",
+    "P_anchor": "242/9",
+    "gap": "2/63",
+    "complete_full_family_scope": "Inheritedaccepted378/441normalform/pointwise-monotonecoverage;thisfixedrowpaths/fees/dual/primalfreshlychecked",
+    "new_grid_LP_model_hosted_or_human_review": false,
+    "literature_priority_or_natural_gain_established": false,
+    "unexecuted_V01_curvature_point_not_used_for_result_selection": true
+  },
+  "separate": {
+    "schema": 2,
+    "status": "PASS_SEPARATE_PHYSICAL_SOURCE_AND_FIXED_PRIOR_FULL_ADAPTIVE_PRIORITY_DP",
+    "scope_sha256": "132ea95b206227682f63cd07d85ebc54bdbeb0796a59696e6d18a90aaa1bc5f7",
+    "physical_negative_partitions": [
+      {
+        "prior_block_coarsening": [
+          0,
+          0,
+          1
+        ],
+        "word": 7
+      },
+      {
+        "prior_block_coarsening": [
+          0,
+          1,
+          0
+        ],
+        "word": 9
+      },
+      {
+        "prior_block_coarsening": [
+          0,
+          1,
+          2
+        ],
+        "word": 1
+      }
+    ],
+    "physical_positive_partitions": [
+      {
+        "prior_block_coarsening": [
+          0,
+          0,
+          0
+        ],
+        "word": 15
+      },
+      {
+        "prior_block_coarsening": [
+          0,
+          0,
+          1
+        ],
+        "word": 11
+      },
+      {
+        "prior_block_coarsening": [
+          0,
+          1,
+          0
+        ],
+        "word": 4
+      },
+      {
+        "prior_block_coarsening": [
+          0,
+          1,
+          1
+        ],
+        "word": 0
+      },
+      {
+        "prior_block_coarsening": [
+          0,
+          1,
+          2
+        ],
+        "word": 0
+      }
+    ],
+    "W0": [
+      1,
+      7,
+      9
+    ],
+    "W1": [
+      0,
+      4,
+      11,
+      15
+    ],
+    "coverage_features": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        15,
+        9
+      ]
+    ],
+    "fee": [
+      0,
+      17,
+      20,
+      26,
+      19,
+      26,
+      26,
+      31,
+      20,
+      26,
+      27,
+      31,
+      26,
+      31,
+      29,
+      32
+    ],
+    "coverage_repair_triples": [
+      [
+        7,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        14,
+        8
+      ]
+    ],
+    "one_query_certificate_coordinates": {
+      "0": [
+        0
+      ],
+      "1": [],
+      "4": [
+        0
+      ],
+      "7": [],
+      "9": [],
+      "11": [],
+      "15": []
+    },
+    "upper_mixture_costs_on_all7": {
+      "A": [
+        {
+          "word": 0,
+          "cost": "188/7"
+        },
+        {
+          "word": 1,
+          "cost": "188/7"
+        },
+        {
+          "word": 4,
+          "cost": "185/7"
+        },
+        {
+          "word": 7,
+          "cost": "188/7"
+        },
+        {
+          "word": 9,
+          "cost": "188/7"
+        },
+        {
+          "word": 11,
+          "cost": "188/7"
+        },
+        {
+          "word": 15,
+          "cost": "188/7"
+        }
+      ],
+      "P": [
+        {
+          "word": 0,
+          "cost": "479/18"
+        },
+        {
+          "word": 1,
+          "cost": "479/18"
+        },
+        {
+          "word": 4,
+          "cost": "238/9"
+        },
+        {
+          "word": 7,
+          "cost": "242/9"
+        },
+        {
+          "word": 9,
+          "cost": "242/9"
+        },
+        {
+          "word": 11,
+          "cost": "242/9"
+        },
+        {
+          "word": 15,
+          "cost": "242/9"
+        }
+      ]
+    },
+    "A_fixed_dual_Bayes_value": "188/7",
+    "A_DP_states": 63,
+    "A_DP_witness": {
+      "query": 1,
+      "zero": {
+        "query": 0,
+        "zero": {
+          "leaf": 1
+        },
+        "one": {
+          "leaf": 0
+        }
+      },
+      "one": {
+        "query": 3,
+        "zero": {
+          "leaf": 0
+        },
+        "one": {
+          "leaf": 1
+        }
+      }
+    },
+    "P_fixed_dual_Bayes_min_over24orders": "242/9",
+    "all24_original_Porder_results": [
+      {
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "Bayes_expected_cost": "274/9",
+        "states": 61
+      },
+      {
+        "order": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "Bayes_expected_cost": "274/9",
+        "states": 52
+      },
+      {
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "Bayes_expected_cost": "274/9",
+        "states": 64
+      },
+      {
+        "order": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "Bayes_expected_cost": "274/9",
+        "states": 67
+      },
+      {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "Bayes_expected_cost": "274/9",
+        "states": 52
+      },
+      {
+        "order": [
+          0,
+          3,
+          2,
+          1
+        ],
+        "Bayes_expected_cost": "274/9",
+        "states": 64
+      },
+      {
+        "order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 64
+      },
+      {
+        "order": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 55
+      },
+      {
+        "order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 70
+      },
+      {
+        "order": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 76
+      },
+      {
+        "order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 58
+      },
+      {
+        "order": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 73
+      },
+      {
+        "order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "Bayes_expected_cost": "30",
+        "states": 67
+      },
+      {
+        "order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "Bayes_expected_cost": "173/6",
+        "states": 70
+      },
+      {
+        "order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 70
+      },
+      {
+        "order": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 76
+      },
+      {
+        "order": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 76
+      },
+      {
+        "order": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 79
+      },
+      {
+        "order": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 55
+      },
+      {
+        "order": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 67
+      },
+      {
+        "order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 58
+      },
+      {
+        "order": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 73
+      },
+      {
+        "order": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 76
+      },
+      {
+        "order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "Bayes_expected_cost": "242/9",
+        "states": 79
+      }
+    ],
+    "best_Porder": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "P_DP_witness": {
+      "query": 1,
+      "zero": {
+        "query": 0,
+        "zero": {
+          "leaf": 1
+        },
+        "one": {
+          "leaf": 0
+        }
+      },
+      "one": {
+        "skip": 0,
+        "next": {
+          "skip": 2,
+          "next": {
+            "query": 3,
+            "zero": {
+              "leaf": 0
+            },
+            "one": {
+              "leaf": 1
+            }
+          }
+        }
+      }
+    },
+    "all7correctness_worlds_retained_in_every_DP_state": true,
+    "zero_mass_impure_states_cannot_stop": true,
+    "full_original_P_order_shared_across_both_branches_with_causal_permanent_skips": true,
+    "exact_randomized_worst_input_A": "188/7",
+    "exact_randomized_worst_input_P": "242/9",
+    "exact_gap": "2/63",
+    "proof_bridge": "Fixed-priorBayeslowerbounds+all-inputuppermixtures;noall-priorBayesequalityassumed",
+    "retained_policy_matrix_or_main_candidate_result_read": false,
+    "same_agent_separate_algorithm_not_external_human_review": true,
+    "new_LP_model_calls_price_or_prior_or_policy_discovery_grid": false
+  },
+  "derived": {
+    "status": "ANALYTIC_COROLLARIES_OF_ONE_CHECKED_POINT_NO_SECOND_GAME_OR_FEE_SEARCH",
+    "nonconstant_source_forces_nonempty_purchase_every_correct_seed_every_input": true,
+    "removing_global9_shifts_all_policy_input_costs_uniformly": true,
+    "pairwise_only_features": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        12,
+        4
+      ]
+    ],
+    "clean_fee": [
+      0,
+      8,
+      11,
+      17,
+      10,
+      17,
+      17,
+      22,
+      11,
+      17,
+      18,
+      22,
+      17,
+      22,
+      20,
+      23
+    ],
+    "clean_exact_RA": "125/7",
+    "clean_exact_RP": "161/9",
+    "gap": "2/63",
+    "ratio": "1127/1125",
+    "clean_upper_mixture_input_costs": {
+      "A": [
+        {
+          "word": 0,
+          "cost": "125/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 1,
+          "cost": "125/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 4,
+          "cost": "122/7",
+          "anchor_slack": "3/7"
+        },
+        {
+          "word": 7,
+          "cost": "125/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 9,
+          "cost": "125/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 11,
+          "cost": "125/7",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 15,
+          "cost": "125/7",
+          "anchor_slack": "0"
+        }
+      ],
+      "P": [
+        {
+          "word": 0,
+          "cost": "317/18",
+          "anchor_slack": "5/18"
+        },
+        {
+          "word": 1,
+          "cost": "317/18",
+          "anchor_slack": "5/18"
+        },
+        {
+          "word": 4,
+          "cost": "157/9",
+          "anchor_slack": "4/9"
+        },
+        {
+          "word": 7,
+          "cost": "161/9",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 9,
+          "cost": "161/9",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 11,
+          "cost": "161/9",
+          "anchor_slack": "0"
+        },
+        {
+          "word": 15,
+          "cost": "161/9",
+          "anchor_slack": "0"
+        }
+      ]
+    },
+    "minimum_nonempty_fee": 8,
+    "minimum_proper_increment": 1,
+    "incomparable_submodular_slacks": [
+      {
+        "S": 1,
+        "T": 2,
+        "slack": 2
+      },
+      {
+        "S": 1,
+        "T": 4,
+        "slack": 1
+      },
+      {
+        "S": 1,
+        "T": 6,
+        "slack": 3
+      },
+      {
+        "S": 1,
+        "T": 8,
+        "slack": 2
+      },
+      {
+        "S": 1,
+        "T": 10,
+        "slack": 4
+      },
+      {
+        "S": 1,
+        "T": 12,
+        "slack": 3
+      },
+      {
+        "S": 1,
+        "T": 14,
+        "slack": 5
+      },
+      {
+        "S": 2,
+        "T": 1,
+        "slack": 2
+      },
+      {
+        "S": 2,
+        "T": 4,
+        "slack": 4
+      },
+      {
+        "S": 2,
+        "T": 5,
+        "slack": 6
+      },
+      {
+        "S": 2,
+        "T": 8,
+        "slack": 4
+      },
+      {
+        "S": 2,
+        "T": 9,
+        "slack": 6
+      },
+      {
+        "S": 2,
+        "T": 12,
+        "slack": 8
+      },
+      {
+        "S": 2,
+        "T": 13,
+        "slack": 10
+      },
+      {
+        "S": 3,
+        "T": 4,
+        "slack": 5
+      },
+      {
+        "S": 3,
+        "T": 5,
+        "slack": 4
+      },
+      {
+        "S": 3,
+        "T": 6,
+        "slack": 1
+      },
+      {
+        "S": 3,
+        "T": 8,
+        "slack": 6
+      },
+      {
+        "S": 3,
+        "T": 9,
+        "slack": 4
+      },
+      {
+        "S": 3,
+        "T": 10,
+        "slack": 2
+      },
+      {
+        "S": 3,
+        "T": 12,
+        "slack": 11
+      },
+      {
+        "S": 3,
+        "T": 13,
+        "slack": 8
+      },
+      {
+        "S": 3,
+        "T": 14,
+        "slack": 3
+      },
+      {
+        "S": 4,
+        "T": 1,
+        "slack": 1
+      },
+      {
+        "S": 4,
+        "T": 2,
+        "slack": 4
+      },
+      {
+        "S": 4,
+        "T": 3,
+        "slack": 5
+      },
+      {
+        "S": 4,
+        "T": 8,
+        "slack": 4
+      },
+      {
+        "S": 4,
+        "T": 9,
+        "slack": 5
+      },
+      {
+        "S": 4,
+        "T": 10,
+        "slack": 8
+      },
+      {
+        "S": 4,
+        "T": 11,
+        "slack": 9
+      },
+      {
+        "S": 5,
+        "T": 2,
+        "slack": 6
+      },
+      {
+        "S": 5,
+        "T": 3,
+        "slack": 4
+      },
+      {
+        "S": 5,
+        "T": 6,
+        "slack": 2
+      },
+      {
+        "S": 5,
+        "T": 8,
+        "slack": 6
+      },
+      {
+        "S": 5,
+        "T": 9,
+        "slack": 4
+      },
+      {
+        "S": 5,
+        "T": 10,
+        "slack": 12
+      },
+      {
+        "S": 5,
+        "T": 11,
+        "slack": 8
+      },
+      {
+        "S": 5,
+        "T": 12,
+        "slack": 2
+      },
+      {
+        "S": 5,
+        "T": 14,
+        "slack": 4
+      },
+      {
+        "S": 6,
+        "T": 1,
+        "slack": 3
+      },
+      {
+        "S": 6,
+        "T": 3,
+        "slack": 1
+      },
+      {
+        "S": 6,
+        "T": 5,
+        "slack": 2
+      },
+      {
+        "S": 6,
+        "T": 8,
+        "slack": 8
+      },
+      {
+        "S": 6,
+        "T": 9,
+        "slack": 11
+      },
+      {
+        "S": 6,
+        "T": 10,
+        "slack": 4
+      },
+      {
+        "S": 6,
+        "T": 11,
+        "slack": 5
+      },
+      {
+        "S": 6,
+        "T": 12,
+        "slack": 4
+      },
+      {
+        "S": 6,
+        "T": 13,
+        "slack": 6
+      },
+      {
+        "S": 7,
+        "T": 8,
+        "slack": 10
+      },
+      {
+        "S": 7,
+        "T": 9,
+        "slack": 8
+      },
+      {
+        "S": 7,
+        "T": 10,
+        "slack": 6
+      },
+      {
+        "S": 7,
+        "T": 11,
+        "slack": 4
+      },
+      {
+        "S": 7,
+        "T": 12,
+        "slack": 6
+      },
+      {
+        "S": 7,
+        "T": 13,
+        "slack": 4
+      },
+      {
+        "S": 7,
+        "T": 14,
+        "slack": 2
+      },
+      {
+        "S": 8,
+        "T": 1,
+        "slack": 2
+      },
+      {
+        "S": 8,
+        "T": 2,
+        "slack": 4
+      },
+      {
+        "S": 8,
+        "T": 3,
+        "slack": 6
+      },
+      {
+        "S": 8,
+        "T": 4,
+        "slack": 4
+      },
+      {
+        "S": 8,
+        "T": 5,
+        "slack": 6
+      },
+      {
+        "S": 8,
+        "T": 6,
+        "slack": 8
+      },
+      {
+        "S": 8,
+        "T": 7,
+        "slack": 10
+      },
+      {
+        "S": 9,
+        "T": 2,
+        "slack": 6
+      },
+      {
+        "S": 9,
+        "T": 3,
+        "slack": 4
+      },
+      {
+        "S": 9,
+        "T": 4,
+        "slack": 5
+      },
+      {
+        "S": 9,
+        "T": 5,
+        "slack": 4
+      },
+      {
+        "S": 9,
+        "T": 6,
+        "slack": 11
+      },
+      {
+        "S": 9,
+        "T": 7,
+        "slack": 8
+      },
+      {
+        "S": 9,
+        "T": 10,
+        "slack": 2
+      },
+      {
+        "S": 9,
+        "T": 12,
+        "slack": 1
+      },
+      {
+        "S": 9,
+        "T": 14,
+        "slack": 3
+      },
+      {
+        "S": 10,
+        "T": 1,
+        "slack": 4
+      },
+      {
+        "S": 10,
+        "T": 3,
+        "slack": 2
+      },
+      {
+        "S": 10,
+        "T": 4,
+        "slack": 8
+      },
+      {
+        "S": 10,
+        "T": 5,
+        "slack": 12
+      },
+      {
+        "S": 10,
+        "T": 6,
+        "slack": 4
+      },
+      {
+        "S": 10,
+        "T": 7,
+        "slack": 6
+      },
+      {
+        "S": 10,
+        "T": 9,
+        "slack": 2
+      },
+      {
+        "S": 10,
+        "T": 12,
+        "slack": 4
+      },
+      {
+        "S": 10,
+        "T": 13,
+        "slack": 6
+      },
+      {
+        "S": 11,
+        "T": 4,
+        "slack": 9
+      },
+      {
+        "S": 11,
+        "T": 5,
+        "slack": 8
+      },
+      {
+        "S": 11,
+        "T": 6,
+        "slack": 5
+      },
+      {
+        "S": 11,
+        "T": 7,
+        "slack": 4
+      },
+      {
+        "S": 11,
+        "T": 12,
+        "slack": 5
+      },
+      {
+        "S": 11,
+        "T": 13,
+        "slack": 4
+      },
+      {
+        "S": 11,
+        "T": 14,
+        "slack": 1
+      },
+      {
+        "S": 12,
+        "T": 1,
+        "slack": 3
+      },
+      {
+        "S": 12,
+        "T": 2,
+        "slack": 8
+      },
+      {
+        "S": 12,
+        "T": 3,
+        "slack": 11
+      },
+      {
+        "S": 12,
+        "T": 5,
+        "slack": 2
+      },
+      {
+        "S": 12,
+        "T": 6,
+        "slack": 4
+      },
+      {
+        "S": 12,
+        "T": 7,
+        "slack": 6
+      },
+      {
+        "S": 12,
+        "T": 9,
+        "slack": 1
+      },
+      {
+        "S": 12,
+        "T": 10,
+        "slack": 4
+      },
+      {
+        "S": 12,
+        "T": 11,
+        "slack": 5
+      },
+      {
+        "S": 13,
+        "T": 2,
+        "slack": 10
+      },
+      {
+        "S": 13,
+        "T": 3,
+        "slack": 8
+      },
+      {
+        "S": 13,
+        "T": 6,
+        "slack": 6
+      },
+      {
+        "S": 13,
+        "T": 7,
+        "slack": 4
+      },
+      {
+        "S": 13,
+        "T": 10,
+        "slack": 6
+      },
+      {
+        "S": 13,
+        "T": 11,
+        "slack": 4
+      },
+      {
+        "S": 13,
+        "T": 14,
+        "slack": 2
+      },
+      {
+        "S": 14,
+        "T": 1,
+        "slack": 5
+      },
+      {
+        "S": 14,
+        "T": 3,
+        "slack": 3
+      },
+      {
+        "S": 14,
+        "T": 5,
+        "slack": 4
+      },
+      {
+        "S": 14,
+        "T": 7,
+        "slack": 2
+      },
+      {
+        "S": 14,
+        "T": 9,
+        "slack": 3
+      },
+      {
+        "S": 14,
+        "T": 11,
+        "slack": 1
+      },
+      {
+        "S": 14,
+        "T": 13,
+        "slack": 2
+      }
+    ],
+    "strict_incomparable_slack_min": 1,
+    "strict_submodular_definition": "StrictforallincomparableS,T;comparablesetsnecessarilygiveidentity",
+    "full15dim_normalized_fee_box_radius": "1/126",
+    "box_gap_lower": "1/63",
+    "box_nonempty_fee_lower": "1007/126",
+    "box_proper_increment_lower": "62/63",
+    "box_incomparable_submodular_slack_lower": "61/63",
+    "ten_positive_coverage_parameter_box_radius": "1/1260",
+    "coverage_box_per_set_fee_change_bound": "1/126",
+    "largest_ratio_or_radius_or_region_claimed": false
+  }
+}

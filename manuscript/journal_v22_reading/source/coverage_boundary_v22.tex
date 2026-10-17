@@ -1,0 +1,269 @@
+\section{The randomized coverage and submodular boundary}
+\label{app:coverage-boundary}
+This appendix strengthens the four-query upper witness while preserving
+the complete source, the information actions and the full causal-skip
+priority comparator. It concerns the worst-input expectation of the
+\emph{final purchased-set fee}, not an expected sum of batch charges.
+
+\begin{theorem}[Four-query coverage/submodular boundary, computer-assisted]
+\label{thm:coverage-four}
+In the complete equivalence-partition fibre model, the smallest indexed
+pair-query menu permitting $R_{\mathcal A}<R_{\mathcal P}$ is four for
+normalized nonnegative monotone submodular fees, and for nonnegative
+weighted coverage fees. The same minima hold with positive nonempty fees
+and strict increase under every proper inclusion. A witness already has
+strictly positive individual query charges and strictly positive pairwise
+shared-setup charges, without a global setup charge. It is strictly
+submodular on every incomparable pair of query sets. Its exact values are
+\[
+ R_{\mathcal A}=\frac{125}{7},\qquad
+ R_{\mathcal P}=\frac{161}{9},\qquad
+ R_{\mathcal P}-R_{\mathcal A}=\frac{2}{63}.
+\]
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:random-small} excludes a gap on complete sources of at
+most three queries for every normalized nonnegative monotone fee. Each
+fee class in the statement is contained in that class. We give a matching
+complete four-query source and exact upper and lower certificates.
+
+\paragraph*{Complete source.}
+Use records $0,\ldots,7$ and queries $q_i=(2i,2i+1)$, $0\leq i<4$,
+with integer words $w=\sum_i2^ix_i$. Under label zero, the required
+SAME blocks are $\{0,1,2,4,6\},\{3,5\},\{7\}$, with records $3,7$
+required DIFFERENT. Under label one they are
+$\{0,2,4,6\},\{1,3,7\},\{5\}$, with no DIFFERENT requirement.
+In each hypothesis retain every satisfying partition. Such a partition
+is a coarsening of its three prior blocks. The five possible coarsenings
+leave three legal negative partitions and five positive ones. Their
+distinct projections are
+\[
+ W_0=\{1,7,9\},\qquad W_1=\{0,4,11,15\}.
+\]
+These are the same source as in
+Appendix~\ref{app:randomized-adaptive-priority-gap-candidate}, not selected
+subsets of its worlds. Write $\mathcal W=(0,1,4,7,9,11,15)$ for input order.
+
+\paragraph*{Positive charges and pairwise sharing.}
+For $S\subseteq\{0,1,2,3\}$, let
+\begin{equation}\label{eq:pairwise-coverage-C}
+ C(S)=\sum_{i\in S}c_i+
+       \sum_{i<j}w_{ij}{\bf1}\{S\cap\{i,j\}\ne\varnothing\},
+\end{equation}
+where
+\begin{align*}
+ (c_0,c_1,c_2,c_3)&=(3,1,1,1),\\
+ (w_{01},w_{02},w_{03})&=(2,1,2),\\
+ (w_{12},w_{13},w_{23})&=(4,4,4).
+\end{align*}
+A shared setup is charged once when either associated query is bought;
+activating it reveals no additional answer. This leaves exactly the four
+original information actions for both policy classes. Every summand is
+a positive weighted coverage indicator. Consequently $C$ is normalized,
+nonnegative, monotone and submodular. Its least nonempty fee is $8$ and
+its least proper single-query marginal is $1$. For incomparable $S,T$,
+\begin{equation}\label{eq:coverage-strict-slack}
+ C(S)+C(T)-C(S\cup T)-C(S\cap T)
+ =\sum_{\substack{i\in S\setminus T\\j\in T\setminus S}}w_{ij}\geq1.
+\end{equation}
+Here $w_{ij}=w_{ji}$ when necessary. Each set difference is nonempty
+and every pair weight is positive. Comparable sets necessarily give
+equality. Thus the asserted strictness excludes only those identities.
+In mask order the fee values are
+\begin{align*}
+ (C(0),\ldots,C(7))&=(0,8,11,17,10,17,17,22),\\
+ (C(8),\ldots,C(15))&=(11,17,18,22,17,22,20,23).
+\end{align*}
+
+\paragraph*{All-input upper certificates.}
+Write $T(q,u,v)$ for buying $q$ and following $u$ on zero and $v$ on
+one; constants denote labels. Set $u=T(0,1,0)$, $v=T(1,1,0)$,
+$z=T(3,u,0)$. Use
+\begin{align*}
+ a_1&=T(1,u,T(3,0,1)),\\
+ a_2&=T(3,u,T(1,0,1)),\\
+ a_3&=T(2,T(1,z,1),T(3,v,1)),\\
+ p_3&=T(2,T(1,u,1),T(3,v,1)),\\
+ p_4&=T(2,T(1,z,1),T(3,u,1)).
+\end{align*}
+Their paid-set masks on $\mathcal W$ are respectively
+\begin{align*}
+ a_1 &: (3,3,3,10,3,10,10),\\
+ a_2 &: (9,9,9,9,10,10,10),\\
+ a_3 &: (15,15,14,14,14,6,12),\\
+ p_3 &: (7,7,14,14,7,6,12),\\
+ p_4 &: (15,15,13,13,14,6,12).
+\end{align*}
+All five trees are correct on all seven inputs. The four trees
+$a_1,a_2,p_3,p_4$ admit global orders $(1,0,2,3)$, $(2,3,0,1)$,
+$(2,3,1,0)$ and $(2,1,3,0)$, respectively, with causal skips.
+Mixing $a_1,a_2,a_3$ with weights $(3/7,3/7,1/7)$ gives input costs
+\[
+ (125/7,125/7,122/7,125/7,125/7,125/7,125/7).
+\]
+Mixing $a_1,a_2,p_3,p_4$ with $(4/9,4/9,1/18,1/18)$ gives
+\[
+ (317/18,317/18,157/9,161/9,161/9,161/9,161/9).
+\]
+These prove $R_{\mathcal A}\leq125/7$ and
+$R_{\mathcal P}\leq161/9$. The priority mixture is an achievable
+witness, not a restriction of the comparison class to four templates.
+
+\paragraph*{Lower certificates for the full classes.}
+Use priors on $(7,9,11,15)$
+\[
+ \pi_A=(1/7,1/7,5/14,5/14),\qquad
+ \pi_P=(1/9,1/9,7/18,7/18).
+\]
+The other three inputs remain correctness obligations with prior zero.
+Every correct deterministic adaptive tree has $\pi_A$ mean at least
+$125/7$, and every correct global-order priority tree has $\pi_P$ mean
+at least $161/9$. The complete original monotone-undominated families
+have $40$ adaptive and $32$ priority paid-set profiles. Their completeness
+and pointwise paid-set domination are inherited from the source/family
+proofs used in Section~\ref{sec:four-additive}; no new catalogue is assumed.
+The reduced costs for all these columns, multiplied by $14$ and $18$
+respectively, are the following concatenated rows:
+\[
+\begin{array}{rrrrrrrrrr}
+48&55&58&48&55&65&0&9&58&44\\
+33&29&65&51&40&36&33&10&19&8\\
+4&0&9&2&11&11&44&30&10&19\\
+6&15&29&6&15&4&2&11&11&0
+\end{array}
+\]
+and
+\[
+\begin{array}{rrrrrrrr}
+64&73&74&64&73&83&0&11\\
+74&56&39&35&83&44&39&10\\
+21&4&0&0&11&2&13&13\\
+10&21&6&17&6&17&0&2.
+\end{array}
+\]
+All entries are nonnegative. Under a monotone fee, a pointwise
+paid-set-dominated profile cannot improve the lower bound. The exact
+checker re-traced all $504$ original policy/input paths and their order
+witnesses, and checked every displayed column inequality. Mixing private
+seeds preserves a fixed-prior lower bound, and a maximum over inputs
+dominates that mean. The two priors differ; this is not an assertion
+of adaptive/priority equality for every specified prior.
+
+There is also a separate full-class check that uses no retained family
+or first checker result. It reconstructs the physical source above.
+For a prior $\pi$, feasible input set $U$ and already purchased set $B$,
+the pure-state value is $\pi(U)C(B)$. At an impure state, the adaptive
+recurrence minimizes the sum of its two child contributions over every
+unbought query. At a fixed priority order position it considers both
+permanent SKIP and TAKE, and advances the same order in both answer
+children. An impure exhausted state is illegal even if $\pi(U)=0$.
+Induction on remaining queries or positions proves that these recurrences
+cover every legal deterministic policy. Minimizing over all $24$ orders
+covers full $\mathcal P$. Randomizing cannot reduce a fixed-prior mean
+below the best deterministic value.
+
+The two actual checks used the single frozen fee
+$F(S)=C(S)+9{\bf1}\{S\ne\varnothing\}$. They obtained exact lower
+and upper values $188/7$ and $242/9$. Because both labels occur, every
+correct deterministic seed buys a nonempty set on every input. Removing
+the global charge therefore subtracts exactly $9$ from every policy/input
+cost, and from each mixed worst-input objective. This proves the claimed
+$C$ values without a second cost-game optimization. The separate check
+uses $63$ adaptive states and $1602$ states over the $24$ priority orders.
+The arbitrary-policy lower justification is the stated recurrence
+induction, supported by these exact finite calculations.
+For private seeds defined only almost surely, discard the finite union
+of erroneous null seed sets over the seven inputs first.
+\end{proof}
+
+\subsection{How sharing repairs the earlier fee}
+Let $F_0$ be the old nonsubmodular fee in
+Appendix~\ref{app:randomized-adaptive-priority-gap-candidate} and put
+$H_1(S)=F_0(S)+|S|$. Directly on all $16$ sets,
+\begin{align*}
+ F(S)=H_1(S)&+5{\bf1}\{S\cap\{0,1,2\}\ne\varnothing\}\\
+ &+6{\bf1}\{S\cap\{0,1,3\}\ne\varnothing\}\\
+ &+5{\bf1}\{S\cap\{0,2,3\}\ne\varnothing\}\\
+ &+8{\bf1}\{S\cap\{1,2,3\}\ne\varnothing\}.
+\end{align*}
+If $|S|\geq2$, all four triples are met, so $F(S)=H_1(S)+24$ and
+$C(S)=H_1(S)+15$. Every input in the dual support $(7,9,11,15)$
+has an opposite-label input agreeing with each possible first query
+answer. Every correct policy therefore buys at least two queries there.
+The five explicit upper trees buy at least two on all seven inputs.
+The old matched $H_1$ bounds $20/7$ and $26/9$ consequently transfer
+by adding $15$, giving another explanation of the same gap.
+
+It is false that every original input requires two queries: inputs
+$0,4$ have one-query certificates at $q_0$. They are not deleted. The
+argument needs two-query necessity only on the dual support, plus the
+all-input property of the displayed upper trees. In particular it makes
+no uniform $H_1$ cost-shift claim for arbitrary policies on the other
+inputs. The uniform deletion of the \emph{global} charge $9$, in contrast,
+uses only nonempty purchase sets and is valid for all correct policies.
+
+\begin{corollary}[Robust submodular and coverage neighborhoods]
+\label{cor:coverage-robust}
+For the fixed source and fee $C$ in Theorem~\ref{thm:coverage-four}, let
+$G(\varnothing)=0$ and $\max_{S\ne\varnothing}|G(S)-C(S)|\leq1/126$.
+Every such $G$ is positive on nonempty sets, strictly increasing, and
+strictly submodular on incomparable pairs, with
+\[
+ R_{\mathcal P}(G)-R_{\mathcal A}(G)\geq\frac1{63}.
+\]
+There is also a coverage neighborhood: perturb each of the ten positive
+parameters in~\eqref{eq:pairwise-coverage-C} by at most $1/1260$.
+Every resulting fee has these properties and the same gap lower bound.
+\end{corollary}
+\begin{proof}
+If the per-set fee change is at most $r$, each policy's cost on each
+input changes by at most $r$. The explicit adaptive mixture and full
+priority dual from Theorem~\ref{thm:coverage-four} give
+\[
+ R_{\mathcal P}(G)-R_{\mathcal A}(G)\geq2/63-2r.
+\]
+At $r=1/126$ this is $1/63$. Nonempty fees remain at least $8-r>0$;
+proper single-query marginals remain at least $1-2r>0$; incomparable
+submodular slacks remain at least $1-4r>0$. Comparable inequalities
+are identities. Thus the full $15$-dimensional normalized real-fee box
+lies inside the specified submodular class. It need not consist of
+coverage functions. For the ten-parameter box, every parameter remains
+positive and every set fee changes by at most $10/1260=1/126$.
+The previous argument applies. These radii are conservative analytic
+guarantees, not maximum-radius or sampled-neighborhood claims.
+\end{proof}
+
+\subsection{Evidence, prior costs and remaining scope}
+The main rational check uses the original $40/32$ families and checks
+all $256$ submodular inequalities and $64$ query-addition conditions,
+including the $32$ proper additions. A separate implementation uses the
+physical constraints and frozen priors rather than those policy tables.
+Both actual processes exited zero. They were written and run by the
+same AI agent; algorithmic separation is not human or external review.
+The initial concave-cardinality repair candidate was retained unexecuted.
+The coverage fee and certificates were fixed before their first check;
+global-charge removal and the neighborhood bounds are analytic corollaries.
+No new fee/prior search, LP solver, model API or hosted run was used.
+
+Coverage costs and shared resources are established models. In particular,
+Harris et al.~\cite{harris2025} include coverage machine costs in their
+batch-testing setting. Their independent series-diagnosis objective
+charges the sum of performed batch costs in expectation. Here the
+source is a correlated complete label promise, the objective maximizes
+over inputs after private expectation, and each path pays its final
+union fee once. These differences require a cost-, source-, objective-
+and comparator-preserving reduction before transferring a theorem.
+No such subsuming reduction is established here, and arbitrary alternative
+reductions are not ruled out. Exact bibliographic priority remains open.
+
+The minimum four does not classify all four-query submodular tasks.
+The $1345$ source orbits already equal for all monotone fees remain equal
+for submodular fees. The witness orbit has $48$ physical coordinate/label
+transports; this follows by symmetry, not $48$ new runs. Ten other
+four-query source orbits remain unclassified for general submodular fees.
+The additive exclusion through four and the interval
+$5\leq m_{\rm add}\leq m_{\rm pos}\leq7$ are unchanged. The displayed
+ratio $1127/1125$ is one exact witness value, not a largest four-query
+ratio. No natural academic-evaluation advantage, new human gold labels,
+human proof review, formal-kernel certification or historical execution
+authentication follows from this theorem.

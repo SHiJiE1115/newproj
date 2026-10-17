@@ -1,0 +1,36 @@
+Current V22 proof and execution scope
+
+NewTheorem26andCorollary27: see repository theory/coverage_submodular_minimum4_v01/.
+That packet verifies one complete four-query witness, full40A/32Pcolumns,
+all7original inputs,504paths,72dual bounds,all24global orders with causal
+skips and the analytic constant-removal/neighborhood consequences.
+Its actual local result and sanitized execution metadata are deposited.
+It does not freshly enumerate or classify every four-query submodular
+source. Ten source cases remain open. The three-query lower is inherited.
+
+Earlier lower proof source and retained old run:
+https://github.com/SHiJiE1115/newproj/tree/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01
+https://github.com/SHiJiE1115/newproj/tree/1f70f518aa56f6ed368ce8d02fab5cbeb5ee3dc9/evidence/small_menu_hosted_v01
+
+The universal <=4additive proof retains its separate original source/run:
+https://github.com/SHiJiE1115/newproj/tree/837498553f02739d60d3c53f79b8141ac4f5e105/theory/four_query_additive_v01
+https://github.com/SHiJiE1115/newproj/tree/468d5a4df39611102c8b08aaecd8a05d6a6582b1/evidence/four_additive_hosted_v01
+Those old hosted outputs did not execute the newly added coverage checker.
+
+The complete six-query boundary and fixed-seven supplements remain in the
+versioned public review archive and paper-specific dependency ledger.
+Earlier unit-common-completion Prop25and its bounded checker remain in
+the prior public V21reading; this delivery does not re-run old catalogues,
+completion checks or hosted science. Current27statement locators supersede
+old reading locators only for this scientific version.
+
+The accepted PDF remains byte exact. The source-distribution verification
+builds the exact six scientific sources using explicitly supplied six
+external dependencies, compares all74page texts/content streams/boxes/font
+programs and27auxlabel bindings, and records actual exits. It is delivery
+verification, not a new mathematical implementation or human peer review.
+
+Native same-information controls and negative model353are retained; no
+application superiority is inferred. No human gold, historical execution
+authentication, author approval, bibliographic priority or acceptance is
+established. Author facts and final submission declarations remain pending.

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "status": "EXACT_SIX_SCIENTIFIC_SOURCE_FILES_OF_ACCEPTED_V22",
+  "files": [
+    {
+      "name": "paper.tex",
+      "bytes": 168748,
+      "sha256": "1575193d07717591b481f0a41ecf46601e1a1bb0d2cd0bcf8ea80c21758537a1"
+    },
+    {
+      "name": "references.bib",
+      "bytes": 15025,
+      "sha256": "8e1c30115f06da25f1ccdbf021b1b76181886a5ef5989fbfdb497a09a9cab52d"
+    },
+    {
+      "name": "four_query_additive_v01.tex",
+      "bytes": 13784,
+      "sha256": "86dab52d9b67dbc46fd6df663d4f2579beb421c855b3ce92b1fce6f2c724d26c"
+    },
+    {
+      "name": "scientific_insert_v01.tex",
+      "bytes": 16404,
+      "sha256": "6cc7df2a9e0ee8f1e633c89b8248210f28256d9e79f0ffb0b1c23ddb6abc426f"
+    },
+    {
+      "name": "andor_transfer_v21.tex",
+      "bytes": 11244,
+      "sha256": "13e2b02cfccd27dff152c2882784a34e3baa71845e4017ca126adc0e2ccecc47"
+    },
+    {
+      "name": "coverage_boundary_v22.tex",
+      "bytes": 13117,
+      "sha256": "37d9cc8f85296fe7121613090c393d2f7deb302e051a51943f22aea36b0ac54d"
+    }
+  ],
+  "original_private16member_archive_sha256": "fb0199152f5ceae1e0f333ec7678779458e1de1ea877dbf1d992fd13c584ecd7",
+  "distribution_difference": "6unchangedscientificsourcesplusbuildadapterandmetadata;6externalclass/BST/stylesomitted;privateflattransportfilesreplaced",
+  "scientific_tex_bib_bytes_modified": false
+}

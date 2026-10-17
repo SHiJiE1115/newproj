@@ -1,0 +1,15 @@
+Declared source-distribution derivative
+
+Private accepted V22flatZIP:16members.
+Public authored_source.zip:10members.
+All six scientific TeX/BibTeX files are byte exact. Six external files
+(sn-jnl.cls,sn-mathphys-num.bst,appendix.sty,cuted.sty,threeparttable.sty,
+wrapfig.sty) are not redistributed in this new source archive. Public
+AUTHOR_SOURCE_MANIFEST.json,EXTERNAL_DEPENDENCIES.json,README_BUILD.txt
+and build_with_dependencies.py replace private transport metadata/build
+files. The 10-member ZIP is not advertised as the unchanged16-member ZIP.
+
+The dependency fingerprints identify the accepted build, not newest upstream
+versions. Obtain and use external dependencies under their applicable terms.
+No general upstream redistribution clearance, legal opinion or new blanket
+project licence is asserted. Applicable source-specific notices remain.

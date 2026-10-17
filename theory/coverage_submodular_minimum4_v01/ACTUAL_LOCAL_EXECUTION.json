@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "status": "ACTUAL_LOCAL_RELOCATION_EXIT_OBSERVED_NOT_HOSTED_OR_HISTORICAL_AUTHENTICATION",
+  "archive": {
+    "file": "coverage_submodular_minimum4_v01.zip",
+    "bytes": 34154,
+    "sha256": "69f68924b5fe6d9fe0f0fd61f1de1e637e11289e2636c07c1b057876dd6099c5"
+  },
+  "result": {
+    "file": "ACTUAL_LOCAL_REPLAY.json",
+    "bytes": 74863,
+    "sha256": "5c50a463daa90dc14b7576f9d1f4ec8e51994a664f0cbf4b871c384d81efd9db"
+  },
+  "actual_verifier_pid": 27572,
+  "actual_exit_code": 0,
+  "timed_out": false,
+  "retained_Popen_wait": true,
+  "started_utc": "2026-10-17T07:05:01.986786+00:00",
+  "completed_utc": "2026-10-17T07:05:02.290565+00:00",
+  "wall_seconds": 0.33659350001835264,
+  "whole_process_CPU": {
+    "seconds": 0.171875,
+    "method": "GetProcessTimes on retained actual verifier handle; whole child process"
+  },
+  "actual_environment": "WindowsPython3.12.14;standardlibraryonly",
+  "logical_command_correspondence": "python -I -X utf8 -B packet/verify.py --out ABSOLUTE_NEW_RESULT_OUTSIDE_PACKET",
+  "command_paths_are_logical_derivative_not_original_machine_argv": true,
+  "original_start_receipt_sha256": "cbda968879763510fb834b29e93fc5a2fc6fca63059cc31db22c4743b836ccf8",
+  "original_terminal_receipt_sha256": "ef05d2f4658c5186332a9c2a84fff78d9b378217b17beb0b8ee15ce5323fac79",
+  "all_mathematical_fields_match_accepted_originals": true,
+  "science_sha256": "8fea0b4dca8ead9c5c3e9bb0ddb1dc90861d39e95071eedc61554181b8aee7db",
+  "observed_separate_packet_reads": [
+    "bayes_check.py",
+    "data/frozen_scope.json"
+  ],
+  "Python_audit_is_not_OS_sandbox": true,
+  "same_existing_algorithms_portability_not_new_independent_implementation_or_human_review": true,
+  "three_query_lower_inherited_not_reexecuted": true,
+  "old_hosted_runs_executed_this_new_packet": false,
+  "new_model_calls_hosted_runs_or_external_human_annotation": 0,
+  "literature_priority": "OPEN",
+  "natural_application_gain": "NOT_ESTABLISHED"
+}

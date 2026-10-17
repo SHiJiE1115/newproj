@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "scope": "Oneacceptedcoveragepoint_fullAandcausal-skipP_analyticconstantremoval_robustboxes",
+  "files": [
+    {
+      "name": "bayes_check.py",
+      "bytes": 9177,
+      "sha256": "9e1a54a0f900196beabb7cf0934c63156a21643a5a4308ee8ea7ac5f7dfefe7e"
+    },
+    {
+      "name": "data/frozen_scope.json",
+      "bytes": 3685,
+      "sha256": "132ea95b206227682f63cd07d85ebc54bdbeb0796a59696e6d18a90aaa1bc5f7"
+    },
+    {
+      "name": "data/source1209.json.gz",
+      "bytes": 1560,
+      "sha256": "de2f8a28f9efdf058f6b775ec6d7a8e95a14c1de3fedb1619594452af087029d"
+    },
+    {
+      "name": "derive.py",
+      "bytes": 3668,
+      "sha256": "d89ee695faf40862b3ab231b93c0e1ddaa48d27e13b4b84c1ac704fb603b3bb9"
+    },
+    {
+      "name": "EXPECTED_SCIENCE.json",
+      "bytes": 65151,
+      "sha256": "283879591962faca8222407674e7d22d1622b929ff2bd4f77ed7032e4f215fb9"
+    },
+    {
+      "name": "inherited_lower.tex",
+      "bytes": 4828,
+      "sha256": "2817a153af3c7aa420cd5808e8ea6be36435c6a8db178cc8eec6763e134b94eb"
+    },
+    {
+      "name": "INHERITED_LOWER_DEPENDENCY.json",
+      "bytes": 1141,
+      "sha256": "854f45bb5e2cef1a5eb126b2b7327e73184302bd2e62ae33dce00d89cb848a5a"
+    },
+    {
+      "name": "main_check.py",
+      "bytes": 7835,
+      "sha256": "8c3ea16cc4973945718d1a8a910710b27e29adcdbbc093cd71474a987d3fce2d"
+    },
+    {
+      "name": "proof.txt",
+      "bytes": 11839,
+      "sha256": "bdf59495939ee955848e7aa355d8157d3cb2afecfd016e7b82e56ed9c6c58964"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 3876,
+      "sha256": "4bd9de2e082c95a0c32a4aed7fb57e19db16133b4e24e5d62c952927dd3de19f"
+    },
+    {
+      "name": "SOURCE_ORIGINS.json",
+      "bytes": 3761,
+      "sha256": "60ada8f968bd0c695b1b7869e676b68eeee63160a5f5d27d1d37d43c94d4b144"
+    },
+    {
+      "name": "verify.py",
+      "bytes": 5102,
+      "sha256": "a13abe81ceef9569c707394ef98018e2dc889a9c7cce1df04ddfcef41c892d58"
+    }
+  ],
+  "assertions_required": true,
+  "three_query_lower_inherited": true,
+  "private_original_paths_credentials_template_or_primary_paper_bytes_included": false,
+  "checksums_are_not_ownership_or_authenticity_clearance": true
+}

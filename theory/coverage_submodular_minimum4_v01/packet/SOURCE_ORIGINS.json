@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "ancestor_all_family_file": {
+    "identifier": "iteration441/bundle_v01/data/families.json.gz",
+    "compressed_bytes": 716605,
+    "compressed_sha256": "dd3cc25966e8b573125e7a3e582a2be5f63455c277ee49a51f861653e32eccbd",
+    "decoded_bytes": 7684688,
+    "decoded_sha256": "f93b29cabfe19a232a9803902f62674c579c9623a704dcee94edfb5fd543a23d",
+    "selected_row": 1209,
+    "new_projection_semantically_equals_that_row": true
+  },
+  "source_projection_original": {
+    "name": "ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "source_projection_packet": {
+    "name": "data/source1209.json.gz",
+    "compressed_bytes": 1560,
+    "compressed_sha256": "de2f8a28f9efdf058f6b775ec6d7a8e95a14c1de3fedb1619594452af087029d",
+    "decoded_bytes": 42302,
+    "decoded_sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+    "decoded_bytes_exact_to_original449": true
+  },
+  "frozen_scope_original": {
+    "name": "FROZEN_COVERAGE_CANDIDATE_V02.json",
+    "bytes": 3685,
+    "sha256": "132ea95b206227682f63cd07d85ebc54bdbeb0796a59696e6d18a90aaa1bc5f7"
+  },
+  "original_results": [
+    {
+      "name": "COVERAGE_CANDIDATE_RESULT_V02.json",
+      "bytes": 39628,
+      "sha256": "53cc432da61356f75944a4444812a8a8e93ccf5e44d9c6bf65268259fc5823ce"
+    },
+    {
+      "name": "SEPARATE_COVERAGE_CHECK_V02.json",
+      "bytes": 8317,
+      "sha256": "6fadebbc550941f7d3971807bc9ddf7929799d8afa6953fdd000af82672f369a"
+    },
+    {
+      "name": "DERIVED_PAIRWISE_COVERAGE_AND_ROBUSTNESS_V01.json",
+      "bytes": 10710,
+      "sha256": "eb1493c8b73852c5dc1fef789acbd2e937dfcc43658ea76c405bd3137a4b2d0b"
+    }
+  ],
+  "original_code": [
+    {
+      "name": "check_coverage_candidate_v02.py",
+      "bytes": 8029,
+      "sha256": "4600b6cad582d23a491e20a5cbd6e9e8824f7de613df47003c2f460dbfee2541"
+    },
+    {
+      "name": "separate_coverage_bayes_check_v02.py",
+      "bytes": 8735,
+      "sha256": "b5e2b707bf87b170be2418d6ce9c89548f2f7d6cd16171d446cf14c43020f136"
+    }
+  ],
+  "mathematical_core_exact_sha256": {
+    "main": "781b994d0ea23051f221c928fcf8baf2e94a4934e561498178d6ffb1098b2954",
+    "separate": "0332ac19fbeb68fb0f3981318f506f4cfe5b3c74465dd18eb7fac89ab2c125b3"
+  },
+  "original_proof": {
+    "name": "COVERAGE_THEOREM_AND_PROOF_V01.txt",
+    "bytes": 11839,
+    "sha256": "bdf59495939ee955848e7aa355d8157d3cb2afecfd016e7b82e56ed9c6c58964"
+  },
+  "original_V22_index": {
+    "name": "PAPER_EVIDENCE_INDEX_V22_V01.json",
+    "bytes": 8044,
+    "sha256": "d222e9909693f6e65be0281255cdc3287c31076165451d2c48f24698098719ef"
+  },
+  "all_scientific_field_comparison": {
+    "main_excluded_only_transport_file_pins": [
+      "scope",
+      "input_families"
+    ],
+    "separate_excluded": [],
+    "derived_excluded_only_transport_file_pins": [
+      "original_point_result",
+      "separate_point_result",
+      "proof_text"
+    ],
+    "no_fee_prior_profile_order_cost_slack_DP_witness_or_robust_bound_field_excluded": true
+  },
+  "expected_science_sha256": "8fea0b4dca8ead9c5c3e9bb0ddb1dc90861d39e95071eedc61554181b8aee7db",
+  "packaging_adaptations": [
+    "Wrapexistingcheckerstoexposefunctionswithoutinpacketresultwrites",
+    "Readonebyte-exactcompressedsource1209projectioninsteadofall1356families",
+    "Relativizedonlyscope/datafilepins;mathcoresunchanged",
+    "Analyticcorollaryfunctiontakescomputedresultsandreadsnooriginalworkspace",
+    "JSONnormalizationconvertsintegerkeys/tuplestotheirJSONrepresentationsbeforeexactsortedcomparison"
+  ],
+  "new_scientific_optimization_or_independent_implementation_claimed": false
+}

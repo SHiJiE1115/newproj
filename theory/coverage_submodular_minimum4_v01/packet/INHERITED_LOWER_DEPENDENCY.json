@@ -1,0 +1,21 @@
+{
+  "status": "INHERITED_ACCEPTED_THEOREM_NOT_REEXECUTED_BY_THIS_PACKET",
+  "statement": {
+    "label": "thm:random-small",
+    "number": "18",
+    "page": 43,
+    "body_sha256": "651485f3f89a34aa7b57d49e87f48554744318b58167dd9639c0ddf5aab1460a"
+  },
+  "scope": "Everycompleteequivalencesource<=3reliablephysicalqueries,everyfinite normalizednonnegative monotone final-setfee",
+  "conclusion": "K=D_A=D_P=R_A=R_P;hencecoverage/submodularseparationrequires>=4",
+  "public_proof_object_packet": "https://github.com/SHiJiE1115/newproj/tree/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01",
+  "retained_old_execution": "https://github.com/SHiJiE1115/newproj/tree/1f70f518aa56f6ed368ce8d02fab5cbeb5ee3dc9/evidence/small_menu_hosted_v01",
+  "new_packet_exhaustively_replays_three_query_catalogue": false,
+  "lower_proof_excerpt": {
+    "name": "inherited_lower.tex",
+    "bytes": 4828,
+    "sha256": "2817a153af3c7aa420cd5808e8ea6be36435c6a8db178cc8eec6763e134b94eb"
+  },
+  "new_point_plus_inherited_lower_implies_minimum4": true,
+  "generic_partial_task_lower_is_stronger_but_not_needed": true
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 2,
+  "status": "STRONGER_COVERAGE_CONSTRUCTION_FROZEN_BEFORE_FIRST_CANDIDATE_EXECUTION",
+  "pre_execution_change": "V01curvature-repairpointwasneverexecuted. Before anycost-scoreoutput,analyticalcoverageinversiongaveastrongerweighted-shared-setupcandidate. PreserveV01asunexecuted;executeonlythisV02point. No numericalfee/prior/policysearchoroutcome-drivenretuningoccurred.",
+  "source": {"orbit":1209,"task_masks":[642,34833],"W0":[1,7,9],"W1":[0,4,11,15],"input_order":[0,1,4,7,9,11,15],"A_P_counts":[40,32]},
+  "fee_definition": "F(S)=sum_i c_i*1{i in S}+sum_{i<j}w_ij*1{S intersects{i,j}}+9*1{S nonempty}",
+  "individual_costs":[3,1,1,1],
+  "pair_setup_weights":{"0,1":2,"0,2":1,"0,3":2,"1,2":4,"1,3":4,"2,3":4},
+  "global_setup":9,
+  "candidate_F_by_mask":[0,17,20,26,19,26,26,31,20,26,27,31,26,31,29,32],
+  "old_F0":[0,0,0,0,0,0,0,4,0,0,1,4,0,4,2,4],
+  "analytic_transfer": "For EVERYsetwithcardinality>=2,F(S)=24+H1(S),H1=F0+|S|. Somezero-priorinputs0and4haveone-querycertificates,so DONOTclaimall7inputpathsneed>=2. Onhardpriorsupport7,9,11,15eachpossiblefirstanswerhasanopposite-labelinput,forcing>=2queriesineverycorrectseed. Thefiveexplicitupperpoliciesalsohave>=2queryterminalsetsonALL7inputs. These are the precise sufficient lower/upper transfer premises.",
+  "profiles_on_input_order":{"a1":[3,3,3,10,3,10,10],"a2":[9,9,9,9,10,10,10],"a3":[15,15,14,14,14,6,12],"p3":[7,7,14,14,7,6,12],"p4":[15,15,13,13,14,6,12]},
+  "candidate_certificates": {
+    "A_mix":{"a1":"3/7","a2":"3/7","a3":"1/7"},
+    "P_mix":{"a1":"4/9","a2":"4/9","p3":"1/18","p4":"1/18"},
+    "A_dual_on_7_9_11_15":["1/7","1/7","5/14","5/14"],
+    "P_dual_on_7_9_11_15":["1/9","1/9","7/18","7/18"],
+    "A_anchor":"188/7","P_anchor":"242/9","predicted_strict_gap":"2/63",
+    "origin":"BalancingtheoldH1profiles/dualpriorsandadding24;notanewoptimization"
+  },
+  "validation": "Onefeeonly. Checkcoverageformulaall16values,all256submodularinequalities,all64query-additionmonotonicconditions(32properstrictincrements),all40A/32Pcolumnboundsandall7inputupperbounds,all504policy/inputpathsandPorderwitnesses. Alloriginalcorrectnessworldsremainincludeddespitethedual'szero-weightrows.",
+  "separate_verification": "Samefeeandtwoalreadyfrozendualpriorsonly. Aseparateimplementationreconstructstheonecompletephysicalsourceby5coarseningsof3priorblocks,checksupperpolicies,andcomputesexactfixed-priorBayesrecurrencesforalladaptivechoicesandall24originalglobalPorderswithcausalSKIP. This is verification ofthefullbaselineatonefixedpoint,not a policy/price/prior discoverygrid orall-priorequalityclaim. Retainzero-priorworldsaslegalityconstraints.",
+  "conditional_inference": "Onlyifallfeescopeandfullclassboundsplusseparateverificationpass,combinewithaccepted<=3all-monotoneequalitytolocatethefirstcoverage/submodularrandomizedA/Pgapatexact4inthiscomplete-sourcezeroerrorworst-inputmodel. Validatepositiveandstrictmonotonefeefactsseparately. Thiswouldrefutetheoriginalsource1209submodularequalityhypothesis;itdoesnotsolveall4sourceclassificationorchangeadditive5--7interval.",
+  "none": "No LP,newprice/prior/fee/policy/function/completiongrid,model/APIcalls,hostedrun,PDForpublicupload. No new human gold or historical authentication.",
+  "novelty_and_application": "Genericminimax,coveragecosts,completionandsensitivitymethodsareestablished. LiteraturepriorityandnaturalapplicationgainremainOPEN/NOTESTABLISHED.",
+  "preserve": "P1seal/release,353negative,nativestrongbaselines,V21publica015dad,controller/memorykeys,user-deferredauthorfacts",
+  "storage": "Freshoriginalguard,C>=10GiBplusforecast,C<=1MiBmetadata,D<=64MiBphaseforecast,verifiedDonly,noCfallback",
+  "whole_project_complete": false
+}

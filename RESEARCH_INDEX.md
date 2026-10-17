@@ -124,3 +124,12 @@ all-nonnegative-additive proof and original executed/archive identities stay
 separate. This is a research-reading version, not human author approval,
 priority clearance, natural application advantage, a blanket new licence
 or journal submission. Earlier V13 remains accessible unchanged.
+
+
+## Current V22 reading and coverage/submodular four-query proof
+
+- [Current V22 reading PDF](manuscript/journal_v22_reading/paper.pdf): exact74-page accepted preparation draft; main15pages,27results.
+- [Reading and source scope](manuscript/journal_v22_reading/README.txt), [27statement evidence index](manuscript/journal_v22_reading/CLAIM_EVIDENCE_INDEX_V22.json), [authored-source ZIP](manuscript/journal_v22_reading/authored_source.zip).
+- [New portable coverage proof](theory/coverage_submodular_minimum4_v01/README.txt), [exact13-member ZIP](theory/coverage_submodular_minimum4_v01/coverage_submodular_minimum4_v01.zip), [actual local replay](theory/coverage_submodular_minimum4_v01/ACTUAL_LOCAL_REPLAY.json).
+- Coverage/submodular randomized minimum4in the stated complete-source model; positive individual/pairwise setup witness125/7versus161/9,gap2/63; conservative robust boxes retain>=1/63. Additive5--7andother10submodularcasesremainopen.
+- The new packet reuses two existing exact algorithms and one actual Windows relocation; <=3lower inherited. Old hosted runs did not execute it. No new model run, human review, literature-priority clearance, application superiority, author approval or journal submission is claimed. Old V21andallolderrecordsremainunchanged.

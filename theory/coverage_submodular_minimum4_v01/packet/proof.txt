@@ -1,0 +1,217 @@
+FOUR QUERIES SUFFICE WITH POSITIVE QUERY CHARGES AND PAIRWISE SHARED SETUPS
+Exact mathematical result in the declared complete-source model
+Literature priority and natural application gain are not established
+
+1. The statement
+
+In the complete binary equivalence-partition-fibre model, let R_A and R_P
+be minimum worst-input expected actual purchased-set costs of zero-error
+policies with input-independent private randomness. In P each seed fixes
+one global query permutation, shared across answer branches, while allowing
+causal permanent SKIPs and stopping. Both classes receive the same source,
+fee and purchased answers. A fixed dual prior is not an assumed population.
+
+The minimum number of indexed pair queries permitting R_A<R_P is exactly4
+for normalized nonnegative monotone submodular fees, and for nonnegative
+weighted coverage fees. The same minimum holds under strictly positive
+nonempty fees and strict increase under every proper inclusion. An upper
+witness already uses strictly positive individual query charges and strictly
+positive pairwise shared-setup charges, without a global setup charge.
+Its fee is strictly submodular on every incomparable pair of query sets.
+
+On the fixed source below, this simple fee has exact values
+  R_A = 125/7,       R_P = 161/9,       R_P-R_A = 2/63.
+The ratio is1127/1125on this one cost point, not a global extremal bound.
+This settles the previously open minimum for these cost classes within
+the stated model. It does not change the additive minimum interval5--7,
+and it is not a full classification of all four-query sources or fees.
+
+2. The complete physical source
+
+There are eight records0,...,7 and q_i=(2i,2i+1), i=0,...,3. An answer is1
+for equality; w=sum_i2^i x_i. Under label0 the required SAME blocks are
+  {0,1,2,4,6}, {3,5}, {7}, with3 DIFFERENT7.
+Under label1 they are
+  {0,2,4,6}, {1,3,7}, {5}, with no DIFFERENT constraint.
+Each hypothesis retains EVERY equivalence partition satisfying its
+constraints. Classes are unrestricted. A satisfying partition is exactly
+a coarsening of the three corresponding prior blocks. The five coarsenings
+of three blocks leave3legal label0 partitions and5label1 partitions. Their
+distinct projections are
+  W0={1,7,9}, W1={0,4,11,15}.
+The supports are nonempty and disjoint. This is the old source1209 with
+task masks(642,34833). No original input or constraint has been changed.
+
+3. A fee made of positive query costs and pairwise sharing
+
+For a purchased set S, define the witness fee C by
+  C(S)=sum_{i in S}c_i + sum_{i<j}w_ij * 1{S intersects{i,j}},
+where
+  c=(3,1,1,1),
+  (w01,w02,w03,w12,w13,w23)=(2,1,2,4,4,4).
+Each shared setup is paid once if either associated query is bought.
+Activation itself reveals no answer; the information actions remain the
+four original pair tests. The same charges apply to both policy classes.
+
+For masks0through15, the fee table is
+  (0,8,11,17,10,17,17,22,11,17,18,22,17,22,20,23).
+It is a sum of ten positive weighted coverage indicators. Each such
+indicator is normalized, monotone and submodular; summing proves these
+properties for C. Adding a new query increases its individual charge
+by at least1, while all setup increments are nonnegative. Thus C is
+strictly increasing under every proper inclusion and positive on every
+nonempty set. No zero-cost probe or negative charge is used.
+
+More explicitly, for incomparable S,T,
+  C(S)+C(T)-C(S union T)-C(S intersection T)
+     = sum_{i in S\T, j in T\S}w_ij >=1.
+The two set differences are nonempty and every pair weight is positive.
+Comparable sets have the unavoidable equality. The least proper marginal
+is1, the least nonempty fee is8, and the least incomparable slack is1.
+
+4. Explicit all-input upper policies
+
+Write T(q,u,v) for query q followed by u on0and v on1; constants are labels.
+Let u=T(0,1,0), v=T(1,1,0), z=T(3,u,0). The five old legal trees are
+  a1=T(1,u,T(3,0,1)),
+  a2=T(3,u,T(1,0,1)),
+  a3=T(2,T(1,z,1),T(3,v,1)),
+  p3=T(2,T(1,u,1),T(3,v,1)),
+  p4=T(2,T(1,z,1),T(3,u,1)).
+Their purchased-set profiles on ordered inputs(0,1,4,7,9,11,15) are
+  a1=(3,3,3,10,3,10,10),
+  a2=(9,9,9,9,10,10,10),
+  a3=(15,15,14,14,14,6,12),
+  p3=(7,7,14,14,7,6,12),
+  p4=(15,15,13,13,14,6,12).
+All five are correct on ALL seven original inputs. The four priority trees
+a1,a2,p3,p4 admit global orders(1,0,2,3),(2,3,0,1),(2,3,1,0),(2,1,3,0).
+Intermediate irrelevant coordinates may be permanently skipped.
+
+Mix a1,a2,a3 with weights(3/7,3/7,1/7). The seven expected costs under C are
+  (125/7,125/7,122/7,125/7,125/7,125/7,125/7),
+so R_A<=125/7. Mix a1,a2,p3,p4 with(4/9,4/9,1/18,1/18). Its costs are
+  (317/18,317/18,157/9,161/9,161/9,161/9,161/9),
+so the full P optimum is at most161/9. These are legal witnesses, not
+a restriction of P to four templates.
+
+5. Exact lower certificates against the full classes
+
+Use priors supported on(7,9,11,15), respectively
+  pi_A=(1/7,1/7,5/14,5/14),
+  pi_P=(1/9,1/9,7/18,7/18).
+Zero-prior inputs0,1,4 remain correctness constraints. For every correct
+deterministic A tree its pi_A mean is at least125/7; for every correct
+full global-order P tree its pi_P mean is at least161/9. Linearity over
+private seeds and max>=prior-average give the required randomized lower
+bounds. The priors differ; no equality for all specified priors is assumed.
+
+Two exact checks establish these lower obligations. The accepted original
+normal-form family contains40Aand32Ppointwise-monotone-undominated profiles.
+Every one was traced on all seven inputs, preserving its P order. The
+reduced costs, scaled by14for A and18for P, in the original retained order,
+are
+  A: (48,55,58,48,55,65,0,9,58,44,33,29,65,51,40,36,33,10,19,8,
+      4,0,9,2,11,11,44,30,10,19,6,15,29,6,15,4,2,11,11,0),
+  P: (64,73,74,64,73,83,0,11,74,56,39,35,83,44,39,10,
+      21,4,0,0,11,2,13,13,10,21,6,17,6,17,0,2).
+They are all nonnegative. Pointwise paid-set domination and normalization
+preserve these lower bounds for any discarded/redundant policy under a
+monotone fee. The old full-family completeness arguments and original
+public dataset hash are explicit dependencies, not new enumeration here.
+
+A separate implementation reads no retained policy matrix or first result.
+It reconstructs the complete source from its prior-block coarsenings and
+minimizes expected cost for the two fixed priors by exact recursion. For
+an impure feasible set U and purchased set B, A minimizes over the next
+unbought q the sum of the two child expected costs. At a pure state the
+contribution is pi(U)*C(B). Empty states contribute zero. For fixed P order
+the recursion considers both permanent SKIP and TAKE, advances the same
+order in both answer children, and rejects impure exhausted states even
+when pi(U)=0. Induction on remaining queries/order positions proves these
+recurrences cover every legal deterministic policy. Taking the minimum over
+all24orders covers the full P class; private mixing cannot improve one
+fixed-prior mean. The separate checker uses63A states and1602total P states.
+
+The actual separate check used the fee F=C+9*1{S nonempty}, obtaining
+188/7and242/9. Since the task has both labels, every correct zero-error
+seed purchases a nonempty set on every input. Deleting the global charge9
+therefore subtracts exactly9from every policy/input cost, including after
+mixing and maximizing, and gives125/7and161/9for C. The main column check
+also used that same F. This constant-removal corollary requires no second
+fee search, new prior, LP, or policy optimization.
+
+6. Why the coverage construction preserves the old gap
+
+The previously accepted monotone table was
+  F0=(0,0,0,0,0,0,0,4,0,0,1,4,0,4,2,4).
+Let H1(S)=F0(S)+|S|. Its explicit matched profiles and fixed dual priors
+give20/7and26/9, although H1 is not submodular. A direct all16set identity is
+  F(S)=H1(S)+5I(S meets012)+6I(S meets013)
+                 +5I(S meets023)+8I(S meets123),
+where F=C+9I(S nonempty) and012denotes{0,1,2}, etc. For every set of at
+least two queries, all four added groups are met, so F=H1+24and C=H1+15.
+
+Each input in the dual support(7,9,11,15) has an opposite-label input
+agreeing with each possible one-query answer. Thus every correct policy
+must purchase at least two queries there. The five explicit upper policies
+also purchase at least two on EVERY input. The two lower priors and upper
+mixtures therefore inherit the same constant15and prove the displayed
+Cvalues. It is false that every original input needs two queries: positive
+inputs0and4have one-query certificates at q0. They are still retained, and
+the proof does not assume a uniform H1cost shift for arbitrary policies
+on these zero-prior worlds. This distinction is essential.
+
+7. A full-dimensional robust submodular neighborhood
+
+Let G(empty)=0 and max_{S nonempty}|G(S)-C(S)|<=r. A whole policy's
+cost on each input changes by at most r, because the fee is charged once
+on its actual purchased set. The explicit A mixture and full-P dual give
+  R_P(G)-R_A(G) >= 2/63-2r.
+For r=1/126, this is at least1/63. At the same radius the least nonempty
+fee is at least8-r>0, every proper marginal at least1-2r>0, and every
+incomparable submodular slack at least1-4r>0. Comparable-set inequalities
+are identities. Thus the entire15-dimensional normalized real-fee box is
+strictly positive, strictly increasing and strictly submodular, with a
+strict A/P gap. It need not consist entirely of coverage functions.
+
+Within the ten positive individual/pair-setup parameters, perturbing every
+parameter by at mostdelta changes each set fee by at most10delta. The
+closed parameter box delta=1/1260 remains positive, consists of coverage
+fees, and has gap at least1/63by the same bound. These conservative radii
+are analytic consequences, not sampled fee grids or largest-region claims.
+
+8. The exact minimum
+
+Accepted V21 Theorem18 proves equality for every complete source with at
+most3queries and every finite normalized nonnegative monotone fee. Both
+coverage and submodular costs, and their stricter positive/increasing
+subclasses, are contained in that class. The four-query complete witness
+above supplies the matching upper size. Hence each stated minimum is4.
+V21 Theorem5 gives a consistent stronger lower for arbitrary partial tasks,
+but that broader scope is not needed for this complete-source conclusion.
+No old three-query catalogue or hosted run was repeated in this step.
+
+9. Evidence and limits
+
+The main actual checker PID19108 exited0 and checked504original tree/input
+paths, all72column bounds,256submodular inequalities and64query-addition
+conditions including32proper strict additions. The separate checker PID3880
+exited0; it used physical constraints and the two frozen priors, not the
+retained family or first result. Both used exact fractions, no solver or
+model API. The unused first curvature-repair candidate is retained as
+unexecuted; the coverage candidate and certificates were frozen before
+their first numerical check. The global-charge deletion and neighborhood
+claims are written analytic corollaries and are identified separately.
+
+This refutes the source1209all-submodular equality hypothesis. The other
+ten four-query cases not proved equal for all monotone costs remain open;
+no complete four-query submodular classification or maximal ratio is claimed.
+The pure additive universal equality through4and5--7interval are unchanged.
+Coverage/setup fees, minimax duality and the general proof tools are not
+claimed as new concepts. Specific bibliographic priority remains open.
+No natural academic-evaluation gain, human gold label, human proof review,
+formal-kernel theorem, original historical execution authentication or CCF
+acceptance is established. P1, negative model353and strong native controls,
+the V21 public reading and deferred author facts remain unchanged. The
+new theorem is not yet included in V21 and warrants one scientific revision.
