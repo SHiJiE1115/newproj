@@ -1,0 +1,213 @@
+PAIR-RESOURCE SUPPORT MINIMUM ON THE FIXED FOUR-QUERY SOURCE1209
+New internal result; not yet integrated into or published with V22.
+
+1. Precise claim and model
+
+There are four reliable equality queries q_i=(2i,2i+1) on eight records,
+i=0,1,2,3. The two promised label families have prior SAME blocks
+  label0: {0,1,2,4,6}, {3,5}, {7}, and prior DIFFERENT(3,7);
+  label1: {0,2,4,6}, {1,3,7}, {5}, with no prior DIFFERENT constraint.
+Take every coarsening of each three-block prior consistent with its DIFFERENT
+constraint. There are three negative and five positive physical partitions.
+Their query words, w=sum_i 2^i answer(q_i), project to
+  W0={1,7,9}, W1={0,4,11,15}, W=(0,1,4,7,9,11,15).
+No additional arbitrary Boolean words are admitted or deleted.
+
+A is the class of zero-error adaptive policies. P permits a single global order
+per deterministic seed, shared across both branches, with causal permanent SKIP
+and stopping. A randomized policy is an input-independent private mixture of
+legal zero-error seeds. Both objectives are the maximum, over all original
+inputs, of the seed expectation of the final purchased-set fee. Write them RA
+and RP. No claim about equality under every Bayes prior is made.
+
+Consider only the additive-plus-pair-coverage family
+  F(S)=sum_{i in S} c_i + sum_{e in E} w_e 1{S intersects e},
+where c_i>=0, w_e>0, and E consists of distinct two-element subsets of
+{0,1,2,3}. There is no extra global setup resource. Define pair support as |E|;
+repeated copies of the same pair combine into a single coefficient.
+
+THEOREM. On this fixed source, the minimum pair support allowing RA<RP is exactly
+two. The upper bound is attained with every c_i strictly positive. For every
+one-pair choice e and all c_i,lambda>=0,
+  F(S)=sum_{i in S}c_i+lambda 1{S intersects e} implies RA=RP.
+This is a sourcewise minimum in the stated cost family. It is not a lower bound
+over all four-query sources or for arbitrary shared-resource group sizes.
+
+2. Inherited finite-class reduction
+
+The unchanged source1209 monotone-cost catalogue, used in earlier accepted
+results, gives 40 adaptive and 32 priority paid-set profiles. Every priority
+profile is also present in the adaptive family. This earlier completeness
+reduction is reused, not regenerated or strengthened here. The exact original
+tree, priority order and all sixteen paid-mask slots are in
+  ../iteration449/ORIGINAL_SOURCE1209_FAMILIES_V01.json
+SHA256 03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad.
+Both new readers reconstruct the physical promise; all 72*7=504 original
+tree/input paths and all priority branch orders are checked again. The new
+two-pair lower bound is also checked without using this catalogue, by a separate
+physical-source recurrence over every legal query and every global order.
+
+3. Universal one-pair lower bound: finite proof of a continuous statement
+
+Fix e and one of the 24 permutations o of the individual prices. Parametrize
+  c_{o(j)}=d0+...+dj, j=0,1,2,3, and lambda=d4,
+where d lies in the nonnegative five-dimensional orthant. These closed cones
+cover every nonnegative c,lambda, including zero, equal-price and lambda=0
+boundaries. Every purchased-set fee and every difference of two such fees is
+linear in d. Nonnegativity on all generators of a cone proves nonnegativity
+throughout it; no numerical minimax game is solved at a generator point.
+
+The certificate uses the original P32 followed by A40 as 72 columns. Adding P
+columns does not change the adaptive game, since P is already a subclass of A.
+Within a cone, the following rules are sufficient.
+
+(a) Full-game saddle. For an original input w and original priority p, let h be
+its paid mask on w. Check that every original A column costs at least F(h) on w,
+and that p costs at most F(h) on all seven inputs. Then both values equal F(h).
+Only four fixed templates are tested: (w=1,P6), (w=7,P6), (w=9,P19),
+(w=1,P19). Even in a descendant cone these inequalities refer to the full game.
+
+(b) Weak dominance. Delete a column if a surviving column is no dearer on all
+surviving rows; delete a row if another surviving row is no cheaper on every
+surviving column. Each operation preserves the finite mixed minimax value.
+All inequalities are universal linear inequalities on the current cone.
+
+(c) Full-original-row P lifting. For each surviving terminal column t, exhibit
+one original legal P column p_t no dearer on ALL SEVEN original inputs. This
+last check is not restricted to terminal objective rows. Row inequalities
+recorded during deletion continue to hold on the subset of terminal columns.
+By induction through row deletions, for any terminal mixture every deleted row
+is bounded by a terminal row. An optimal terminal mixture, extended by zero to
+the original columns, therefore has the original adaptive value on all inputs.
+Replace each terminal column by p_t with the same private probability. The
+all-original-row inequalities show RP<=RA. Inclusion P subset A gives RA<=RP.
+The argument also applies along nested cone refinements: inherited column
+subsets preserve all earlier row inequalities. It does not assert that weak
+dominance started separately from A and P reaches the same fixed point.
+
+When these rules do not close a cone, split on a recorded linear form f into
+the two CLOSED halves f>=0 and f<=0. This changes no task, policy or fee family.
+For parent generators r, retain nonnegative/zero generators and, for each
+positive p and negative n, add the boundary generator
+  f(p)n-f(n)p.
+These generate the nonnegative half: in a conic decomposition, cancel every
+negative f contribution against positive f contributions, leaving nonnegative
+generators and the displayed pairwise boundary combinations. The other half
+is identical after negating f. Hence their union covers the parent cone.
+
+The cone is pointed (contained in d>=0) and full five-dimensional; every actual
+split has generators of both signs. For the complete accumulated inequality
+description, a feasible nonzero ray is extreme iff its active normals have
+rank four. Thus removing only candidate rays whose active rank is below four
+preserves all extreme rays and the cone they generate. The separate reader
+reconstructs BOTH halves and verifies exact generator sets, active ranks and
+full rank five, using Fraction Gauss-Jordan instead of the producer's primitive
+integer elimination. This is standard polyhedral reasoning, not a claimed new
+general optimization algorithm.
+
+Result: all 6*24=144 parameter roots are covered by 164 nodes and 10 splits,
+with 154 closed leaves: 73 full-game saddles and 81 dominance/lifting leaves.
+There are 5,533 column deletions, 342 row deletions and 252 full-original-row
+P-lifts. Every node is reachable exactly once; there are no residual leaves,
+unstarted roots or budget-success substitutions. The separate reader checked
+223,769 scalar generator inequalities and 289 exact rational ranks.
+
+The retained V01 attempt closed only 136 roots using dominance/lifting alone.
+Its 113 residual leaves were insufficient certificates, not counterexamples.
+V02 added the four already established additive-case saddle templates; the
+fee family and original game did not change. Both attempt records remain.
+The universal result includes lambda=0, so it also excludes pair support zero.
+
+4. Two pairs suffice: one frozen algebraically derived rational witness
+
+Take c=(4,3,2,3), w_{1,2}=w_{2,3}=2, with all other pair weights zero.
+The complete fee vector in masks 0..15 is
+  (0,4,5,9,6,10,9,13,5,9,10,14,9,13,12,16).
+It is a coverage function with six positive resources: four singleton resources
+and two pair resources. Its smallest proper query marginal is two, so it is
+strictly increasing and positive on every nonempty set. It is submodular, but
+is NOT strictly submodular on every incomparable pair of sets.
+
+For T_i(low,high), let u=T_0(1,0), v=T_1(1,0), z=T_3(u,0). Use five old trees:
+  a1=T_1(u,T_3(0,1)); a2=T_3(u,T_1(0,1));
+  a3=T_2(T_1(z,1),T_3(v,1));
+  p3=T_2(T_1(u,1),T_3(v,1)); p4=T_2(T_1(z,1),T_3(u,1)).
+Priority orders for a1,a2,p3,p4 are respectively (1,0,2,3), (2,3,0,1),
+(2,3,1,0), (2,1,3,0). Their costs in W order are
+  a1:  9, 9, 9,10, 9,10,10
+  a2:  9, 9, 9, 9,10,10,10
+  a3: 16,16,12,12,12, 9, 9
+  p3: 13,13,12,12,13, 9, 9
+  p4: 16,16,13,13,12, 9, 9.
+
+An adaptive mixture gives weights (13,12,3,1)/29 to (a1,a2,a3,p3).
+Its costs on all seven inputs are
+  (286,286,273,286,286,286,286)/29.
+The prior (0,1,0,3,3,11,11)/29 gives every one of the original 40 A columns
+expected cost at least 286/29. Equality holds exactly for A6,A20,A21,A39.
+Consequently RA=286/29.
+
+A priority mixture gives weights (7,7,1,1)/16 to (a1,a2,p3,p4).
+Its costs are (155,155,151,158,158,158,158)/16.
+The prior (0,0,0,1,1,3,3)/8 gives every original 32 P column cost at least
+79/8. Equality holds exactly for P6,P18,P19,P30. Consequently RP=79/8.
+The exact gap is 79/8-286/29=3/232>0. The ratio RP/RA is 2291/2288;
+the relative cost reduction versus P in this witness is 3/2291, about 0.13%.
+This small separation is a structural existence/minimality result, not evidence
+of a large application improvement.
+
+All fractions, the fee and the certificate were frozen before full-column
+evaluation. They came from balancing these five old profiles: write the four
+cheap pair fees as p=9, F10=p+h with h=1, F14=p+L with L=3,
+F7=F13=p+L+k with k=1, and F15=p+M with M=7=2L+k. Solving the displayed
+binding linear equalities gives the stated mixtures and priors. Only this
+single fee point was evaluated; there was no LP, price/prior grid or retuning.
+
+5. Catalogue-free separate lower-bound check
+
+The separate checker reads ONLY the frozen candidate, not the policy families,
+the main result or the cone producer. A read audit enforces this for research
+artifact inputs. It reconstructs all eight physical partitions and seven words.
+For a feasible world set X and purchased set S, a label-pure state stops at
+mass(X)F(S). An impure state must query even when mass(X)=0. The adaptive
+recurrence minimizes the sum of the two successor values over every unbought
+query. Under the frozen A prior it gives 286/29 using 63 memoized states.
+
+For each of the 24 global orders, a second recurrence either permanently skips
+the next query or purchases it and uses the same remaining order on both
+branches. It stops only on a label-pure state. The minimum under the frozen P
+prior is 79/8. A private mixture of seeds cannot beat a fixed-prior deterministic
+Bayes minimum. Combining these lower bounds with the all-input upper mixtures
+proves both randomized worst-input values directly. Zero-mass inputs remain
+correctness requirements everywhere. These are fixed-prior certificates, not
+an assumption that the A and P Bayes values agree for all priors.
+
+6. Derived sparse robustness
+
+For fixed policy classes, changing every fee by at most r changes each class's
+optimal worst-input value by at most r: it changes every seed/input cost by
+at most r, hence every private expectation, input maximum and policy infimum
+by at most r. Therefore RP(G)-RA(G)>=3/232-2r.
+At r=3/928 the gap is at least 3/464.
+
+Perturb the FOUR individual prices and the TWO positive pair weights each by
+at most delta=1/1856. A set hits at most six resources, so its fee changes by
+at most 6delta=3/928. All six resource weights remain strictly positive, the
+family remains strictly increasing coverage/submodular, and the gap remains
+at least 3/464. This is a six-dimensional box in the stated sparse resource
+parameters. It is not a full fifteen-dimensional strict-submodular fee box.
+
+7. Evidence limits and current status
+
+The producer and two separately written verification algorithms ran locally
+with real retained-child-handle exit receipts, exact integers/fractions and
+fresh storage guards. These are same-agent internal mathematical/computational
+checks, not new human labels, external independent review or a formal proof
+kernel. Standard finite-game, dominance and polyhedral tools are credited as
+tools, not claimed as innovations. Bibliographic priority remains open.
+
+The older coverage/submodular query-menu minimum four, old six-pair witness,
+public V22, additive global 5..7 interval, unresolved source classification,
+negative model353 and equal strong native controls are unchanged. The new
+result refines cost complexity on source1209; no real application advantage,
+CCF acceptance, authorship facts or journal submission follows from it.

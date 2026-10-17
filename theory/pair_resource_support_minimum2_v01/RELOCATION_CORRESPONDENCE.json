@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_FIVE_CHILD_RELOCATION_ALL_MATH_FIELDS_EXACT",
+  "packet": {
+    "path": "$ARTIFACTS\\iteration455\\pair_resource_support_minimum2_v03.zip",
+    "bytes": 60676,
+    "sha256": "a914d66770c3c7d345556de5649189a61b5fa2cc29177948964b8ae0044cbcbe"
+  },
+  "actual_result": {
+    "path": "$ARTIFACTS\\iteration455\\ACTUAL_REPLAY_RESULT_V03.json",
+    "bytes": 77914,
+    "sha256": "9b27f4c86284142b10d4b8c1f7cbde657d431f23de21682d3e04cfe2866a769d"
+  },
+  "actual_process_start": {
+    "path": "$ARTIFACTS\\iteration455\\ACTUAL_REPLAY_V03.PROCESS_START.json",
+    "bytes": 1097,
+    "sha256": "22aba8c59d31f8398ea1597505f92a642791a38ffe9f2e1a2b28540eb593ea9f"
+  },
+  "actual_process_terminal": {
+    "path": "$ARTIFACTS\\iteration455\\ACTUAL_REPLAY_V03.PROCESS_TERMINAL.json",
+    "bytes": 239,
+    "sha256": "5d23b12d15687a67311418d0c6dfae6642cc4dbb4a3482bae22ffa2686edc470"
+  },
+  "actual_children": [
+    {
+      "component": "source_completeness",
+      "actual_pid": 8296,
+      "actual_exit_code": 0,
+      "read_audit": {
+        "path": "$WORK\\source_completeness.READ_AUDIT.json",
+        "bytes": 809,
+        "sha256": "93bb398ea17c2d9d6e36897c41663628bbe66878ebd765e46bc93815a0770e54"
+      }
+    },
+    {
+      "component": "single_pair",
+      "actual_pid": 21684,
+      "actual_exit_code": 0,
+      "read_audit": {
+        "path": "$WORK\\single_pair.READ_AUDIT.json",
+        "bytes": 1298,
+        "sha256": "04f8bb029d86871139dc3e879501d946f7d0275e88eb13ccc90e0f41f82cb5ef"
+      }
+    },
+    {
+      "component": "full_class",
+      "actual_pid": 23320,
+      "actual_exit_code": 0,
+      "read_audit": {
+        "path": "$WORK\\full_class.READ_AUDIT.json",
+        "bytes": 1071,
+        "sha256": "ec5e7a8f1530017fd8a1d67940f1aee8eb3b9290cd0c21e374d3bbef0e39240c"
+      }
+    },
+    {
+      "component": "separate_dp",
+      "actual_pid": 18248,
+      "actual_exit_code": 0,
+      "read_audit": {
+        "path": "$WORK\\separate_dp.READ_AUDIT.json",
+        "bytes": 973,
+        "sha256": "51d0e8576e1394a89f9c510b20c01d55ffb12c00a6d54159a05e307c9182967c"
+      }
+    },
+    {
+      "component": "derived",
+      "actual_pid": 16912,
+      "actual_exit_code": 0,
+      "read_audit": {
+        "path": "$WORK\\derived.READ_AUDIT.json",
+        "bytes": 1365,
+        "sha256": "248bf06472caf3aa38bcf281aa764a64ed73d431e89e3e9f26e9bb77e62095a7"
+      }
+    }
+  ],
+  "whole_science_sha256": "60c7651a570a39e9ef775d3e4cb8548e66872b08285310548dacad53c66d2a6a",
+  "all_original_top_keys": {
+    "single_pair": 22,
+    "full_class": 21,
+    "separate_dp": 27,
+    "derived": 26
+  },
+  "whole_nested_value_counts": {
+    "dicts": 177,
+    "lists": 92,
+    "integers": 494,
+    "booleans": 24,
+    "strings": 265,
+    "nulls": 0,
+    "floats": 0
+  },
+  "mathematical_field_exclusions": [],
+  "all_four_original_core_source_bytes_exact": true,
+  "all19_extracted_packet_files_unchanged": true,
+  "new_fixed_source_completeness": {
+    "A": 40,
+    "P": 32,
+    "stats": {
+      "candidate_profiles": 520,
+      "subset_pair_checks": 2271,
+      "max_frontier": 35
+    }
+  },
+  "source_constructor_scope": "This one fixed source only, not the1356-source catalogue or a new fee/prior game",
+  "current_statement28and29_exact_body_and_all72_TeX_slacks_verified": true,
+  "raw_original_result_byte_equal_flags": {
+    "single_pair": false,
+    "full_class": true,
+    "separate_dp": false,
+    "derived": false
+  },
+  "same_four_implementations_replayed_not_new_external_independence": true,
+  "new_fee_prior_candidates_model_calls_external_human_labels_or_hosted_runs": 0
+}

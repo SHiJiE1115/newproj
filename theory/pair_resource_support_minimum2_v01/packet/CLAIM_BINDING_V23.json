@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "edition": "Private accepted V23, not the older publicV22",
+  "PDF": {
+    "bytes": 897909,
+    "sha256": "1463e1133093efebfc3492f56217663edf9b8d01f3cb28a9fa38ac37236818c2"
+  },
+  "source_zip": {
+    "bytes": 149751,
+    "sha256": "4ffe21db61ea1ff00d6c28b5869d14566ade204921d76dbd366afbf59a2b978c"
+  },
+  "full29statement_index": {
+    "bytes": 8835,
+    "sha256": "888dd7bee03dae3201ddd7caa6267787f3e91aea865c62dd15cd3b5a6ccfa691"
+  },
+  "exact_fragment": {
+    "bytes": 13190,
+    "sha256": "83221198053ba3d5d4cd97aedb4d00dbdf06b32032555b1097092c4595fd9baf"
+  },
+  "statements": [
+    {
+      "label": "thm:pair-resource-minimum",
+      "number": "28",
+      "page": 76,
+      "body_sha256": "541589127fd70dd36145999b96d9dd5ce2ea1c1feda7cf79785eac95b0188b5e"
+    },
+    {
+      "label": "cor:sparse-pair-resource-robust",
+      "number": "29",
+      "page": 79,
+      "body_sha256": "f6456e94695ef430d3be0df5ec357e2f4bbe133581c1c12a069365a2626546a1"
+    }
+  ],
+  "no_full_PDF_rebuild_or_parse_claim": true,
+  "new_thm28_sourcewise_not_all_source_resource_minimum": true,
+  "human_or_formal_review": false
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "status": "ORIGINAL_BYTES_EXACT_NO_CORE_SOURCE_ADAPTATIONS",
+  "files": {
+    "data/source1209.json": {
+      "original_relative_to_artifacts": "iteration449/ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+      "bytes": 42302,
+      "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+    },
+    "data/SYMBOLIC_PROOF_SCOPE_V02.json": {
+      "original_relative_to_artifacts": "iteration453/SYMBOLIC_PROOF_SCOPE_V02.json",
+      "bytes": 3226,
+      "sha256": "2e7dcd9050b4f13ed6908d991225c120b25aaab51d1dd4ad1dc5608b84d11082"
+    },
+    "data/SYMBOLIC_SINGLE_PAIR_PROOF_V02.json.gz": {
+      "original_relative_to_artifacts": "iteration453/SYMBOLIC_SINGLE_PAIR_PROOF_V02.json.gz",
+      "bytes": 8641,
+      "sha256": "1c7d1631191a6f466506f3b1cf437af2a41d2330ade909e028a0220f729099f0"
+    },
+    "data/FROZEN_TWO_PAIR_CANDIDATE_V01.json": {
+      "original_relative_to_artifacts": "iteration453/FROZEN_TWO_PAIR_CANDIDATE_V01.json",
+      "bytes": 2582,
+      "sha256": "dbd1a77d661a0af9e369e27b22ee5523edf9f12a5c4f9bf0c3b24b400e715487"
+    },
+    "data/PAIR_RESOURCE_MINIMUM_THEOREM_AND_PROOF_V01.txt": {
+      "original_relative_to_artifacts": "iteration453/PAIR_RESOURCE_MINIMUM_THEOREM_AND_PROOF_V01.txt",
+      "bytes": 12435,
+      "sha256": "9d76c0a1750f5b7dee00aaef2cd01ad239ab63d4e137b32bc356891908c060d3"
+    },
+    "data/pair_resource_support_v23.tex": {
+      "original_relative_to_artifacts": "iteration454/journal_draft_v23_clean/pair_resource_support_v23.tex",
+      "bytes": 13190,
+      "sha256": "83221198053ba3d5d4cd97aedb4d00dbdf06b32032555b1097092c4595fd9baf"
+    },
+    "original/read_single_pair_proof_v01.py": {
+      "original_relative_to_artifacts": "iteration453/read_single_pair_proof_v01.py",
+      "bytes": 11564,
+      "sha256": "d78e42a3b58d5d073932feadfcf070ac9bde95442982d179ab4ff87557cf8cec"
+    },
+    "original/check_two_pair_v01.py": {
+      "original_relative_to_artifacts": "iteration453/check_two_pair_v01.py",
+      "bytes": 5300,
+      "sha256": "ce2164d88af7a546944f237ee01bf3116a31f05e0f97f1261e718f9e56907735"
+    },
+    "original/separate_two_pair_bayes_v01.py": {
+      "original_relative_to_artifacts": "iteration453/separate_two_pair_bayes_v01.py",
+      "bytes": 8253,
+      "sha256": "bc326567c74756660e423cfb2eaafeaafd50bf93631e6aac34f19ba4b3f828f7"
+    },
+    "original/derive_pair_resource_result_v01.py": {
+      "original_relative_to_artifacts": "iteration453/derive_pair_resource_result_v01.py",
+      "bytes": 4136,
+      "sha256": "3e53c8a18b243eab98b193874a0cd02e5f23699ced94ea79c0b80e122d3eabc1"
+    }
+  },
+  "original_result_hashes": {
+    "single_pair": {
+      "original_file_name": "SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+      "bytes": 3471,
+      "sha256": "cb35eda9d24ac7e2c0d16a001334510310d122f306868954ede33f50f264db4e"
+    },
+    "full_class": {
+      "original_file_name": "TWO_PAIR_FULL_CLASS_RESULT_V01.json",
+      "bytes": 11698,
+      "sha256": "c757f5b131d57c02407e0d5048d6527c4057b3abd7fa5a2b5798f4be75803f70"
+    },
+    "separate_dp": {
+      "original_file_name": "TWO_PAIR_SEPARATE_DP_RESULT_V01.json",
+      "bytes": 9022,
+      "sha256": "516ad5659582da7b7ac4ddd7da0e5097f1e0792fbb72845f0969e0f2daa37461"
+    },
+    "derived": {
+      "original_file_name": "DERIVED_PAIR_RESOURCE_MINIMUM_V01.json",
+      "bytes": 3054,
+      "sha256": "0c2c893d68cf11084f181181b50dabd207b74e697f75a5ce29e21251fd5d8374"
+    }
+  },
+  "normalization_contract": "Compare entire four original result dictionaries after only declared provenance canonicalization: three input-pin paths in reader; single audited scope path in DP; three dependent-result pin records in derived become their full canonical-science SHA references; theorem-text input pin path normalized. All numeric, Boolean, structural, witness, count, scope and status fields remain. Validate every fresh raw pin against its actual file before normalizing. No mathematical field omitted.",
+  "original_four_core_source_bytes_unchanged": true,
+  "new_dependency_checker": "complete_source.py:one fixed source symbolic profile completeness,not a new scientific fee/prior or global source catalogue",
+  "replay_not_new_independent_implementation_or_human_review": true,
+  "priority": "OPEN",
+  "transport_repair": {
+    "version": 2,
+    "cause": "Windows DEVNULL device audit failure before any scientific child",
+    "fix": "Closed anonymous stdin PIPE; no file access exception or mathematical change",
+    "previous_packet_preserved": true
+  },
+  "completeness_dependency_repair": {
+    "version": 3,
+    "original_full_counts": [
+      40,
+      32
+    ],
+    "minimal_counts": [
+      35,
+      27
+    ],
+    "requirement": "Exact reduced-family equality plus minimum containment and all504original legal paths; retain all original proof columns",
+    "old_descriptor_in_V22_V23_requires_erratum": true,
+    "original_four_core_scripts_and_science_unchanged": true
+  }
+}

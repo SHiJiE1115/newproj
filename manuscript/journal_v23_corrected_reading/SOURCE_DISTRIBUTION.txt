@@ -1,0 +1,11 @@
+Declared authored-source distribution derivative
+
+The publicZIP has11members; the accepted private flatZIP has17. All seven
+scientificTeX/BibTeX files are exact corrected-V23bytes. The six external
+class/BST/style files are omitted. The public relative source/dependency
+ledgers, build adapter and README replace private transport metadata.
+Dependency origins and exact fingerprints are inherited unchanged from
+the accepted V22distribution review. Obtain and use the external files
+under their applicable terms. No external runtime, template, primary-paper
+HTML, blanket repository licence or new redistribution permission is supplied.
+LOCAL_DELIVERY_CHECK.json records the one actual extracted-source build.

@@ -133,3 +133,11 @@ or journal submission. Earlier V13 remains accessible unchanged.
 - [New portable coverage proof](theory/coverage_submodular_minimum4_v01/README.txt), [exact13-member ZIP](theory/coverage_submodular_minimum4_v01/coverage_submodular_minimum4_v01.zip), [actual local replay](theory/coverage_submodular_minimum4_v01/ACTUAL_LOCAL_REPLAY.json).
 - Coverage/submodular randomized minimum4in the stated complete-source model; positive individual/pairwise setup witness125/7versus161/9,gap2/63; conservative robust boxes retain>=1/63. Additive5--7andother10submodularcasesremainopen.
 - The new packet reuses two existing exact algorithms and one actual Windows relocation; <=3lower inherited. Old hosted runs did not execute it. No new model run, human review, literature-priority clearance, application superiority, author approval or journal submission is claimed. Old V21andallolderrecordsremainunchanged.
+
+
+## Corrected V23 reading and sourcewise pair-resource proof
+
+- [Corrected79-page reading](manuscript/journal_v23_corrected_reading/paper.pdf), [29statement evidence index](manuscript/journal_v23_corrected_reading/CLAIM_EVIDENCE_INDEX_V23_CORRECTED.json), and [authored source distribution](manuscript/journal_v23_corrected_reading/authored_source.zip).
+- [Exact new19-member proof packet](theory/pair_resource_support_minimum2_v01/pair_resource_support_minimum2_v03.zip), [actual local replay record](theory/pair_resource_support_minimum2_v01/ACTUAL_LOCAL_EXECUTION.json), [erratum](theory/pair_resource_support_minimum2_v01/ERRATUM.txt), and [immutable-packet bridge](manuscript/journal_v23_corrected_reading/IMMUTABLE_PACKET_BRIDGE.json).
+- One proof descriptor corrected: complete40/32retained families have35/27pointwise minima; all29statements and numerical bounds unchanged. OldV22reading and all source/executed/archive identities remain.
+- The pair-resource minimum two is fixed-source. Actual five-child Windows replay, not a new hosted run or independent external/human/formal review. Priority OPEN, practical advantage NOT_ESTABLISHED; no journal submission or final author approval.

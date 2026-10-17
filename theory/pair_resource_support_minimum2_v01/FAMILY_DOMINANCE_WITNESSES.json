@@ -1,0 +1,315 @@
+{
+  "schema": 1,
+  "status": "PASS_ORIGINAL_FULL_FAMILIES_COMPLETE_WITH_FIVE_REDUNDANT_PROFILES_EACH",
+  "source": {
+    "path": "$ARTIFACTS\\iteration449\\ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "reconstructed_completeness": {
+    "path": "$ARTIFACTS\\iteration455\\ACTUAL_REPLAY_RESULT_V03.json",
+    "bytes": 77914,
+    "sha256": "9b27f4c86284142b10d4b8c1f7cbde657d431f23de21682d3e04cfe2866a769d"
+  },
+  "W": [
+    0,
+    1,
+    4,
+    7,
+    9,
+    11,
+    15
+  ],
+  "classes": {
+    "A": {
+      "original_full_count": 40,
+      "pointwise_minimal_count": 35,
+      "every_minimal_vector_occurs_in_original": true,
+      "redundant_profiles": [
+        {
+          "original_column": 5,
+          "dominated_by_original_column": 4,
+          "original_paid_profile": [
+            1,
+            13,
+            1,
+            13,
+            15,
+            15,
+            13
+          ],
+          "subset_paid_profile": [
+            1,
+            9,
+            1,
+            9,
+            15,
+            15,
+            13
+          ],
+          "strict_subset_words": [
+            1,
+            7
+          ]
+        },
+        {
+          "original_column": 8,
+          "dominated_by_original_column": 2,
+          "original_paid_profile": [
+            5,
+            7,
+            5,
+            13,
+            7,
+            7,
+            13
+          ],
+          "subset_paid_profile": [
+            1,
+            7,
+            1,
+            13,
+            7,
+            7,
+            13
+          ],
+          "strict_subset_words": [
+            0,
+            4
+          ]
+        },
+        {
+          "original_column": 12,
+          "dominated_by_original_column": 4,
+          "original_paid_profile": [
+            5,
+            13,
+            5,
+            13,
+            15,
+            15,
+            13
+          ],
+          "subset_paid_profile": [
+            1,
+            9,
+            1,
+            9,
+            15,
+            15,
+            13
+          ],
+          "strict_subset_words": [
+            0,
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "original_column": 28,
+          "dominated_by_original_column": 21,
+          "original_paid_profile": [
+            13,
+            13,
+            13,
+            13,
+            10,
+            10,
+            10
+          ],
+          "subset_paid_profile": [
+            9,
+            9,
+            9,
+            9,
+            10,
+            10,
+            10
+          ],
+          "strict_subset_words": [
+            0,
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "original_column": 29,
+          "dominated_by_original_column": 22,
+          "original_paid_profile": [
+            13,
+            13,
+            13,
+            13,
+            14,
+            14,
+            12
+          ],
+          "subset_paid_profile": [
+            9,
+            9,
+            9,
+            9,
+            14,
+            14,
+            12
+          ],
+          "strict_subset_words": [
+            0,
+            1,
+            4,
+            7
+          ]
+        }
+      ]
+    },
+    "P": {
+      "original_full_count": 32,
+      "pointwise_minimal_count": 27,
+      "every_minimal_vector_occurs_in_original": true,
+      "redundant_profiles": [
+        {
+          "original_column": 5,
+          "dominated_by_original_column": 4,
+          "original_paid_profile": [
+            1,
+            13,
+            1,
+            13,
+            15,
+            15,
+            13
+          ],
+          "subset_paid_profile": [
+            1,
+            9,
+            1,
+            9,
+            15,
+            15,
+            13
+          ],
+          "strict_subset_words": [
+            1,
+            7
+          ]
+        },
+        {
+          "original_column": 8,
+          "dominated_by_original_column": 2,
+          "original_paid_profile": [
+            5,
+            7,
+            5,
+            13,
+            7,
+            7,
+            13
+          ],
+          "subset_paid_profile": [
+            1,
+            7,
+            1,
+            13,
+            7,
+            7,
+            13
+          ],
+          "strict_subset_words": [
+            0,
+            4
+          ]
+        },
+        {
+          "original_column": 12,
+          "dominated_by_original_column": 4,
+          "original_paid_profile": [
+            5,
+            13,
+            5,
+            13,
+            15,
+            15,
+            13
+          ],
+          "subset_paid_profile": [
+            1,
+            9,
+            1,
+            9,
+            15,
+            15,
+            13
+          ],
+          "strict_subset_words": [
+            0,
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "original_column": 24,
+          "dominated_by_original_column": 19,
+          "original_paid_profile": [
+            13,
+            13,
+            13,
+            13,
+            10,
+            10,
+            10
+          ],
+          "subset_paid_profile": [
+            9,
+            9,
+            9,
+            9,
+            10,
+            10,
+            10
+          ],
+          "strict_subset_words": [
+            0,
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "original_column": 25,
+          "dominated_by_original_column": 20,
+          "original_paid_profile": [
+            13,
+            13,
+            13,
+            13,
+            14,
+            14,
+            12
+          ],
+          "subset_paid_profile": [
+            9,
+            9,
+            9,
+            9,
+            14,
+            14,
+            12
+          ],
+          "strict_subset_words": [
+            0,
+            1,
+            4,
+            7
+          ]
+        }
+      ]
+    }
+  },
+  "proof": "Each displayed original paid profile contains its displayed original legal dominator at every original input, with a strict set inclusion on the listed words. Every reconstructed minimal vector is in the original family. The exhaustive feasible-state recurrence reconstructs35A/27P minima. Hence the full40A/32P families and these antichains have identical optimal values for every monotone final-set fee and every private mixture objective.",
+  "old_minimality_predicate": "REFUTED",
+  "original_full_class_completeness": "VERIFIED",
+  "no_change_to_old_science_columns_prices_priors_or_expected_four_result_objects": true
+}

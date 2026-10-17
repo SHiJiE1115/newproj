@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "status": "EXPLICIT_ORIGINAL_PACKET_TO_CORRECTED_READING_CORRESPONDENCE",
+  "immutable_packet": {
+    "file": "../../theory/pair_resource_support_minimum2_v01/pair_resource_support_minimum2_v03.zip",
+    "bytes": 60676,
+    "sha256": "a914d66770c3c7d345556de5649189a61b5fa2cc29177948964b8ae0044cbcbe"
+  },
+  "packet_original_privateV23_binding_unmodified": {
+    "schema": 1,
+    "edition": "Private accepted V23, not the older publicV22",
+    "PDF": {
+      "bytes": 897909,
+      "sha256": "1463e1133093efebfc3492f56217663edf9b8d01f3cb28a9fa38ac37236818c2"
+    },
+    "source_zip": {
+      "bytes": 149751,
+      "sha256": "4ffe21db61ea1ff00d6c28b5869d14566ade204921d76dbd366afbf59a2b978c"
+    },
+    "full29statement_index": {
+      "bytes": 8835,
+      "sha256": "888dd7bee03dae3201ddd7caa6267787f3e91aea865c62dd15cd3b5a6ccfa691"
+    },
+    "exact_fragment": {
+      "bytes": 13190,
+      "sha256": "83221198053ba3d5d4cd97aedb4d00dbdf06b32032555b1097092c4595fd9baf"
+    },
+    "statements": [
+      {
+        "label": "thm:pair-resource-minimum",
+        "number": "28",
+        "page": 76,
+        "body_sha256": "541589127fd70dd36145999b96d9dd5ce2ea1c1feda7cf79785eac95b0188b5e"
+      },
+      {
+        "label": "cor:sparse-pair-resource-robust",
+        "number": "29",
+        "page": 79,
+        "body_sha256": "f6456e94695ef430d3be0df5ec357e2f4bbe133581c1c12a069365a2626546a1"
+      }
+    ],
+    "no_full_PDF_rebuild_or_parse_claim": true,
+    "new_thm28_sourcewise_not_all_source_resource_minimum": true,
+    "human_or_formal_review": false
+  },
+  "corrected_reading": {
+    "file": "paper.pdf",
+    "bytes": 898467,
+    "sha256": "fab0a5c59c40ad6487e02115366f6c88e01027a612d1b0784ef4aae51f3696ac"
+  },
+  "corrected_authored_source_distribution": {
+    "file": "authored_source.zip",
+    "bytes": 99159,
+    "sha256": "49f9cf3c02041ffb865d329c18b4df4084e52c55c52b79640967fc3af6a4e9ee"
+  },
+  "corrected_original_private17member_source_ZIP": {
+    "bytes": 150073,
+    "sha256": "314be8bedf8a8b3b71728e0465077c4a9f757d0156da5111a414948631002510"
+  },
+  "corrected_public29statement_index": {
+    "file": "CLAIM_EVIDENCE_INDEX_V23_CORRECTED.json",
+    "bytes": 7405,
+    "sha256": "3f33e642ad1bb751be484994691cac14c65fe5e0c8e319d9531a2f9efa7bb08a"
+  },
+  "original_private_correspondence_record": {
+    "bytes": 4757,
+    "sha256": "d478177ce10c56aa66557fc61830261b0b498b22bf132767a330dac7c4817069"
+  },
+  "all29_statement_bodies_numbers_labels_exact": true,
+  "same28_29_fragment_and_all72dual_slacks": true,
+  "current28_29": [
+    {
+      "label": "thm:pair-resource-minimum",
+      "number": "28",
+      "page": 76,
+      "body_sha256": "541589127fd70dd36145999b96d9dd5ce2ea1c1feda7cf79785eac95b0188b5e"
+    },
+    {
+      "label": "cor:sparse-pair-resource-robust",
+      "number": "29",
+      "page": 79,
+      "body_sha256": "f6456e94695ef430d3be0df5ec357e2f4bbe133581c1c12a069365a2626546a1"
+    }
+  ],
+  "current28proofpages": [
+    76,
+    77,
+    78,
+    79
+  ],
+  "current29proofpage": 79,
+  "one_proof26_descriptor_correction_all_bounds_retained": true,
+  "whole_science_sha256": "60c7651a570a39e9ef775d3e4cb8548e66872b08285310548dacad53c66d2a6a",
+  "packet_was_changed_or_claimed_to_parse_corrected_PDF": false,
+  "original_four_implementations_replayed_not_new_independent_or_human_or_formal_review": true
+}

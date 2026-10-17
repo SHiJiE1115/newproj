@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "scope": "source1209_exact_pair_support2_original_four_cores_and_fixed_source_completeness",
+  "files": [
+    {
+      "name": "child_audit.py",
+      "bytes": 3164,
+      "sha256": "31692f38fb67bf652b88ffa89e925bbc6b7ea8fc092a58295822bdfe2fe3e1d7"
+    },
+    {
+      "name": "CLAIM_BINDING_V23.json",
+      "bytes": 1165,
+      "sha256": "d533a175f2a10434d67130869f6f34e137e7dd0d701673a0b4458c75b621e399"
+    },
+    {
+      "name": "complete_source.py",
+      "bytes": 6472,
+      "sha256": "819416b3ecf3d37f5f2aac7b7644dae2531e4049a5b20af775b189022fec3b6c"
+    },
+    {
+      "name": "data/FROZEN_TWO_PAIR_CANDIDATE_V01.json",
+      "bytes": 2582,
+      "sha256": "dbd1a77d661a0af9e369e27b22ee5523edf9f12a5c4f9bf0c3b24b400e715487"
+    },
+    {
+      "name": "data/PAIR_RESOURCE_MINIMUM_THEOREM_AND_PROOF_V01.txt",
+      "bytes": 12435,
+      "sha256": "9d76c0a1750f5b7dee00aaef2cd01ad239ab63d4e137b32bc356891908c060d3"
+    },
+    {
+      "name": "data/pair_resource_support_v23.tex",
+      "bytes": 13190,
+      "sha256": "83221198053ba3d5d4cd97aedb4d00dbdf06b32032555b1097092c4595fd9baf"
+    },
+    {
+      "name": "data/source1209.json",
+      "bytes": 42302,
+      "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+    },
+    {
+      "name": "data/SYMBOLIC_PROOF_SCOPE_V02.json",
+      "bytes": 3226,
+      "sha256": "2e7dcd9050b4f13ed6908d991225c120b25aaab51d1dd4ad1dc5608b84d11082"
+    },
+    {
+      "name": "data/SYMBOLIC_SINGLE_PAIR_PROOF_V02.json.gz",
+      "bytes": 8641,
+      "sha256": "1c7d1631191a6f466506f3b1cf437af2a41d2330ade909e028a0220f729099f0"
+    },
+    {
+      "name": "EXPECTED_SCIENCE.json",
+      "bytes": 29394,
+      "sha256": "6037c9334c23b9bfc4dfe4acb658386f3af9dd2451f153961eab9d4de462e905"
+    },
+    {
+      "name": "original/check_two_pair_v01.py",
+      "bytes": 5300,
+      "sha256": "ce2164d88af7a546944f237ee01bf3116a31f05e0f97f1261e718f9e56907735"
+    },
+    {
+      "name": "original/derive_pair_resource_result_v01.py",
+      "bytes": 4136,
+      "sha256": "3e53c8a18b243eab98b193874a0cd02e5f23699ced94ea79c0b80e122d3eabc1"
+    },
+    {
+      "name": "original/read_single_pair_proof_v01.py",
+      "bytes": 11564,
+      "sha256": "d78e42a3b58d5d073932feadfcf070ac9bde95442982d179ab4ff87557cf8cec"
+    },
+    {
+      "name": "original/separate_two_pair_bayes_v01.py",
+      "bytes": 8253,
+      "sha256": "bc326567c74756660e423cfb2eaafeaafd50bf93631e6aac34f19ba4b3f828f7"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 6136,
+      "sha256": "568112f627496dc63ae8f48af1e28f69db2237c4089c5f436f37221400c38cbf"
+    },
+    {
+      "name": "science.py",
+      "bytes": 5094,
+      "sha256": "504cc26c20d026e53600b29502397d7df6dd5119decb3abcf55cceb3c2201649"
+    },
+    {
+      "name": "SOURCE_ORIGINS.json",
+      "bytes": 5049,
+      "sha256": "c4f8a957b2ce9855f833400201731a2a99ecefeaa6443c1855344934206b4c64"
+    },
+    {
+      "name": "verify.py",
+      "bytes": 11863,
+      "sha256": "921cb873c245f347b428aeda40696c403c2c12be8a44ffff676136c5118f7560"
+    }
+  ],
+  "whole_expected_science_sha256": "60c7651a570a39e9ef775d3e4cb8548e66872b08285310548dacad53c66d2a6a",
+  "canonical_whole_value_counts": {
+    "dicts": 177,
+    "lists": 92,
+    "integers": 494,
+    "booleans": 24,
+    "strings": 265,
+    "nulls": 0,
+    "floats": 0
+  },
+  "no_mathematical_field_exclusions": true,
+  "no_core_source_code_adaptations": true,
+  "network_or_model_or_solver_required": false,
+  "human_or_formal_review": false
+}

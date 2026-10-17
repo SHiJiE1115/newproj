@@ -1,0 +1,20 @@
+Family descriptor correction, with original certificates retained
+
+The original publicV22 and original privateV23 proof of Theorem26 called its
+40adaptive/32priority retained profiles monotone-undominated. Direct physical
+feasible-state reconstruction in the new packet disproved that descriptor:
+the exact pointwise-minimal antichains contain35adaptive/27priority profiles.
+Each retained family has five redundant profiles. The full40/32 families
+are complete: every reconstructed minimum occurs in the original family;
+every retained profile has a reconstructed pointwise subset; all504original
+policy/input paths and original order witnesses were checked for legality.
+FAMILY_DOMINANCE_WITNESSES.json supplies the ten explicit subset witnesses.
+
+The correctedV23 proof onpage73 now distinguishes retained from minimal
+families. All40/32 original certificate columns remain. All29 numbered
+statements and every mathematical bound are unchanged; the other25proof
+bodies, all10tables and27references are exact to original privateV23.
+Theorem28's current proof spanspages76--79; Corollary29 is onpage79.
+OriginalV22/privateV23, V01/V02failed attempts and V03packet retain their
+identities. The immutable packet still binds the original privateV23PDF;
+the separate bridge binds the corrected reading without changing the ZIP.

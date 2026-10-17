@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_EXTRACTED_CORRECTED_V23_AUTHORED_SOURCE_BUILD_AND_NEW_PROOF_DELIVERY_BINDINGS",
+  "reading_PDF_sha256": "fab0a5c59c40ad6487e02115366f6c88e01027a612d1b0784ef4aae51f3696ac",
+  "public_source_archive_sha256": "49f9cf3c02041ffb865d329c18b4df4084e52c55c52b79640967fc3af6a4e9ee",
+  "actual_rebuilt_PDF_raw_sha256": "e4e5c0ab5c5d9b06497df0fc639cf51676ac2cc170e555103fa70b817350c5e3",
+  "raw_PDF_bytes_may_differ_due_to_build_metadata": true,
+  "all79_page_text_content_stream_boxes_rotation_font_programs_metrics_encodings_and_Xobjects_equal": true,
+  "all29_current_number_page_aux_bindings_equal": true,
+  "source7_scientific_files_exact_to_accepted_corrected_V23": true,
+  "external6_explicitly_supplied_hash_checked_not_distributed": true,
+  "actual_source_build_process": {
+    "pid": 27384,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "retained_Popen_wait": true,
+    "wall_seconds": 12.176171999977669
+  },
+  "actual_compiler_stages": [
+    {
+      "stage": "compile_1",
+      "pid": 11396,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 3.014062800008105
+    },
+    {
+      "stage": "bibtex",
+      "pid": 9404,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 1.3494403999939095
+    },
+    {
+      "stage": "compile_2",
+      "pid": 22880,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 2.4297292999981437
+    },
+    {
+      "stage": "compile_3",
+      "pid": 3584,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 2.72641350000049
+    }
+  ],
+  "accepted_reading_visual_scope": "9changedfullpageviewsplus70exactacceptedpixelsand11currentfullviewsrecordedin456acceptance;unchangedcorrectedPDFreused",
+  "new_proof_zip_sha256": "a914d66770c3c7d345556de5649189a61b5fa2cc29177948964b8ae0044cbcbe",
+  "new_proof_not_reexecuted_for_this_delivery": true,
+  "environment_scope": "OneactualextractedWindows/Python3.12build;notnewhostedscience,independentimplementationorhumanreview",
+  "new_model_calls_or_scientific_optimization_or_hosted_runs": 0,
+  "original_new_proof_result_sha256": "9b27f4c86284142b10d4b8c1f7cbde657d431f23de21682d3e04cfe2866a769d",
+  "public_logical_path_replay_result_sha256": "99f70dbb865b67a46be526b77b85a34fdb52ce0eae8ffdf68ac03413e50bcabe",
+  "public_replay_result_is_declared_path_derivative_not_original_raw_bytes": true,
+  "science_and_completeness_objects_unchanged": true
+}

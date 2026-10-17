@@ -1,0 +1,1319 @@
+{
+  "single_pair": {
+    "schema": 1,
+    "status": "PASS_ALL_SIX_SINGLE_PAIR_FAMILIES_ALL_CONTINUOUS_NONNEGATIVE_PARAMETERS",
+    "source": {
+      "path": "$INPUT/source1209.json",
+      "bytes": 42302,
+      "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+    },
+    "scope": {
+      "path": "$INPUT/SYMBOLIC_PROOF_SCOPE_V02.json",
+      "bytes": 3226,
+      "sha256": "2e7dcd9050b4f13ed6908d991225c120b25aaab51d1dd4ad1dc5608b84d11082"
+    },
+    "proof": {
+      "path": "$INPUT/SYMBOLIC_SINGLE_PAIR_PROOF_V02.json.gz",
+      "bytes": 8641,
+      "sha256": "1c7d1631191a6f466506f3b1cf437af2a41d2330ade909e028a0220f729099f0"
+    },
+    "physical_partitions": [
+      [
+        {
+          "coarsening": [
+            0,
+            0,
+            1
+          ],
+          "word": 7
+        },
+        {
+          "coarsening": [
+            0,
+            1,
+            0
+          ],
+          "word": 9
+        },
+        {
+          "coarsening": [
+            0,
+            1,
+            2
+          ],
+          "word": 1
+        }
+      ],
+      [
+        {
+          "coarsening": [
+            0,
+            0,
+            0
+          ],
+          "word": 15
+        },
+        {
+          "coarsening": [
+            0,
+            0,
+            1
+          ],
+          "word": 11
+        },
+        {
+          "coarsening": [
+            0,
+            1,
+            0
+          ],
+          "word": 4
+        },
+        {
+          "coarsening": [
+            0,
+            1,
+            1
+          ],
+          "word": 0
+        },
+        {
+          "coarsening": [
+            0,
+            1,
+            2
+          ],
+          "word": 0
+        }
+      ]
+    ],
+    "W0": [
+      1,
+      7,
+      9
+    ],
+    "W1": [
+      0,
+      4,
+      11,
+      15
+    ],
+    "original_paths_checked": 504,
+    "original_A_P_counts": [
+      40,
+      32
+    ],
+    "full_policy_completeness": "Inherited unchanged original source1209 monotone-cost catalogue and its earlier completeness proof; no new catalogue generated",
+    "parameter_root_cones_verified": 144,
+    "closed_single_pair_families": 6,
+    "counts": {
+      "nodes": 164,
+      "splits": 10,
+      "closed_lifting_leaves": 81,
+      "pure_saddle_leaves": 73,
+      "column_deletions": 5533,
+      "row_deletions": 342,
+      "full_original_row_P_lifts": 252,
+      "scalar_inequalities": 223769,
+      "exact_fraction_rank_calls": 289
+    },
+    "exact_rank_method": "Independent Fraction Gauss-Jordan, not producer integer primitive elimination",
+    "continuous_cover_lemma": "Sorted-price orthants cover c>=0; exact half-cone crossing generators and active rank-four extreme-ray pruning preserve full five-dimensional pointed cones and closed boundaries",
+    "game_bridge": "Every deletion preserves reduced finite minimax; removed row inequalities remain on terminal columns. All-original-row P-lifts give RP<=RA, while P subset A gives reverse. Full-game saddle leaves directly prove equality.",
+    "claim": "For this fixed source only, RA=RP for F(S)=sum(c_i over i in S)+lambda*1{S intersects e}, all c_i,lambda>=0 and all six physical pairs e",
+    "no_all_prior_Bayes_equality_claim": true,
+    "numeric_games_LP_price_or_prior_grids_new_model_API_or_human_review": false,
+    "same_agent_separate_reader_not_external_human_or_formal_kernel": true,
+    "whole_project_complete": false
+  },
+  "full_class": {
+    "schema": 1,
+    "status": "PASS_FULL_ORIGINAL_CLASS_RATIONAL_PRIMAL_DUAL_CERTIFICATES",
+    "scope_sha256": "dbd1a77d661a0af9e369e27b22ee5523edf9f12a5c4f9bf0c3b24b400e715487",
+    "source_sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+    "fee_by_mask": [
+      0,
+      4,
+      5,
+      9,
+      6,
+      10,
+      9,
+      13,
+      5,
+      9,
+      10,
+      14,
+      9,
+      13,
+      12,
+      16
+    ],
+    "positive_individual_costs": [
+      4,
+      3,
+      2,
+      3
+    ],
+    "positive_pair_groups": [
+      [
+        [
+          1,
+          2
+        ],
+        2
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        2
+      ]
+    ],
+    "minimum_submodularity_slack": 0,
+    "minimum_proper_marginal": 2,
+    "strict_on_all_incomparable_pairs": false,
+    "full_A_P_counts": [
+      40,
+      32
+    ],
+    "all_correct_original_paths_checked": 504,
+    "results": {
+      "A": {
+        "anchor": "286/29",
+        "upper_on_all7": [
+          {
+            "word": 0,
+            "expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "word": 1,
+            "expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "word": 4,
+            "expected_fee": "273/29",
+            "slack": "13/29"
+          },
+          {
+            "word": 7,
+            "expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "word": 9,
+            "expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "word": 11,
+            "expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "word": 15,
+            "expected_fee": "286/29",
+            "slack": "0"
+          }
+        ],
+        "dual_lower_on_all_columns": [
+          {
+            "column": 0,
+            "prior_expected_fee": "386/29",
+            "slack": "100/29"
+          },
+          {
+            "column": 1,
+            "prior_expected_fee": "403/29",
+            "slack": "117/29"
+          },
+          {
+            "column": 2,
+            "prior_expected_fee": "13",
+            "slack": "91/29"
+          },
+          {
+            "column": 3,
+            "prior_expected_fee": "386/29",
+            "slack": "100/29"
+          },
+          {
+            "column": 4,
+            "prior_expected_fee": "403/29",
+            "slack": "117/29"
+          },
+          {
+            "column": 5,
+            "prior_expected_fee": "419/29",
+            "slack": "133/29"
+          },
+          {
+            "column": 6,
+            "prior_expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "column": 7,
+            "prior_expected_fee": "303/29",
+            "slack": "17/29"
+          },
+          {
+            "column": 8,
+            "prior_expected_fee": "13",
+            "slack": "91/29"
+          },
+          {
+            "column": 9,
+            "prior_expected_fee": "363/29",
+            "slack": "77/29"
+          },
+          {
+            "column": 10,
+            "prior_expected_fee": "333/29",
+            "slack": "47/29"
+          },
+          {
+            "column": 11,
+            "prior_expected_fee": "330/29",
+            "slack": "44/29"
+          },
+          {
+            "column": 12,
+            "prior_expected_fee": "419/29",
+            "slack": "133/29"
+          },
+          {
+            "column": 13,
+            "prior_expected_fee": "405/29",
+            "slack": "119/29"
+          },
+          {
+            "column": 14,
+            "prior_expected_fee": "375/29",
+            "slack": "89/29"
+          },
+          {
+            "column": 15,
+            "prior_expected_fee": "372/29",
+            "slack": "86/29"
+          },
+          {
+            "column": 16,
+            "prior_expected_fee": "333/29",
+            "slack": "47/29"
+          },
+          {
+            "column": 17,
+            "prior_expected_fee": "302/29",
+            "slack": "16/29"
+          },
+          {
+            "column": 18,
+            "prior_expected_fee": "11",
+            "slack": "33/29"
+          },
+          {
+            "column": 19,
+            "prior_expected_fee": "289/29",
+            "slack": "3/29"
+          },
+          {
+            "column": 20,
+            "prior_expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "column": 21,
+            "prior_expected_fee": "286/29",
+            "slack": "0"
+          },
+          {
+            "column": 22,
+            "prior_expected_fee": "303/29",
+            "slack": "17/29"
+          },
+          {
+            "column": 23,
+            "prior_expected_fee": "294/29",
+            "slack": "8/29"
+          },
+          {
+            "column": 24,
+            "prior_expected_fee": "311/29",
+            "slack": "25/29"
+          },
+          {
+            "column": 25,
+            "prior_expected_fee": "311/29",
+            "slack": "25/29"
+          },
+          {
+            "column": 26,
+            "prior_expected_fee": "363/29",
+            "slack": "77/29"
+          },
+          {
+            "column": 27,
+            "prior_expected_fee": "349/29",
+            "slack": "63/29"
+          },
+          {
+            "column": 28,
+            "prior_expected_fee": "302/29",
+            "slack": "16/29"
+          },
+          {
+            "column": 29,
+            "prior_expected_fee": "11",
+            "slack": "33/29"
+          },
+          {
+            "column": 30,
+            "prior_expected_fee": "299/29",
+            "slack": "13/29"
+          },
+          {
+            "column": 31,
+            "prior_expected_fee": "316/29",
+            "slack": "30/29"
+          },
+          {
+            "column": 32,
+            "prior_expected_fee": "333/29",
+            "slack": "47/29"
+          },
+          {
+            "column": 33,
+            "prior_expected_fee": "302/29",
+            "slack": "16/29"
+          },
+          {
+            "column": 34,
+            "prior_expected_fee": "11",
+            "slack": "33/29"
+          },
+          {
+            "column": 35,
+            "prior_expected_fee": "289/29",
+            "slack": "3/29"
+          },
+          {
+            "column": 36,
+            "prior_expected_fee": "296/29",
+            "slack": "10/29"
+          },
+          {
+            "column": 37,
+            "prior_expected_fee": "313/29",
+            "slack": "27/29"
+          },
+          {
+            "column": 38,
+            "prior_expected_fee": "313/29",
+            "slack": "27/29"
+          },
+          {
+            "column": 39,
+            "prior_expected_fee": "286/29",
+            "slack": "0"
+          }
+        ],
+        "minimum_dual_slack": "0",
+        "binding_columns": [
+          6,
+          20,
+          21,
+          39
+        ]
+      },
+      "P": {
+        "anchor": "79/8",
+        "upper_on_all7": [
+          {
+            "word": 0,
+            "expected_fee": "155/16",
+            "slack": "3/16"
+          },
+          {
+            "word": 1,
+            "expected_fee": "155/16",
+            "slack": "3/16"
+          },
+          {
+            "word": 4,
+            "expected_fee": "151/16",
+            "slack": "7/16"
+          },
+          {
+            "word": 7,
+            "expected_fee": "79/8",
+            "slack": "0"
+          },
+          {
+            "word": 9,
+            "expected_fee": "79/8",
+            "slack": "0"
+          },
+          {
+            "word": 11,
+            "expected_fee": "79/8",
+            "slack": "0"
+          },
+          {
+            "word": 15,
+            "expected_fee": "79/8",
+            "slack": "0"
+          }
+        ],
+        "dual_lower_on_all_columns": [
+          {
+            "column": 0,
+            "prior_expected_fee": "107/8",
+            "slack": "7/2"
+          },
+          {
+            "column": 1,
+            "prior_expected_fee": "14",
+            "slack": "33/8"
+          },
+          {
+            "column": 2,
+            "prior_expected_fee": "13",
+            "slack": "25/8"
+          },
+          {
+            "column": 3,
+            "prior_expected_fee": "107/8",
+            "slack": "7/2"
+          },
+          {
+            "column": 4,
+            "prior_expected_fee": "14",
+            "slack": "33/8"
+          },
+          {
+            "column": 5,
+            "prior_expected_fee": "29/2",
+            "slack": "37/8"
+          },
+          {
+            "column": 6,
+            "prior_expected_fee": "79/8",
+            "slack": "0"
+          },
+          {
+            "column": 7,
+            "prior_expected_fee": "21/2",
+            "slack": "5/8"
+          },
+          {
+            "column": 8,
+            "prior_expected_fee": "13",
+            "slack": "25/8"
+          },
+          {
+            "column": 9,
+            "prior_expected_fee": "25/2",
+            "slack": "21/8"
+          },
+          {
+            "column": 10,
+            "prior_expected_fee": "23/2",
+            "slack": "13/8"
+          },
+          {
+            "column": 11,
+            "prior_expected_fee": "91/8",
+            "slack": "3/2"
+          },
+          {
+            "column": 12,
+            "prior_expected_fee": "29/2",
+            "slack": "37/8"
+          },
+          {
+            "column": 13,
+            "prior_expected_fee": "103/8",
+            "slack": "3"
+          },
+          {
+            "column": 14,
+            "prior_expected_fee": "23/2",
+            "slack": "13/8"
+          },
+          {
+            "column": 15,
+            "prior_expected_fee": "83/8",
+            "slack": "1/2"
+          },
+          {
+            "column": 16,
+            "prior_expected_fee": "11",
+            "slack": "9/8"
+          },
+          {
+            "column": 17,
+            "prior_expected_fee": "10",
+            "slack": "1/8"
+          },
+          {
+            "column": 18,
+            "prior_expected_fee": "79/8",
+            "slack": "0"
+          },
+          {
+            "column": 19,
+            "prior_expected_fee": "79/8",
+            "slack": "0"
+          },
+          {
+            "column": 20,
+            "prior_expected_fee": "21/2",
+            "slack": "5/8"
+          },
+          {
+            "column": 21,
+            "prior_expected_fee": "10",
+            "slack": "1/8"
+          },
+          {
+            "column": 22,
+            "prior_expected_fee": "85/8",
+            "slack": "3/4"
+          },
+          {
+            "column": 23,
+            "prior_expected_fee": "85/8",
+            "slack": "3/4"
+          },
+          {
+            "column": 24,
+            "prior_expected_fee": "83/8",
+            "slack": "1/2"
+          },
+          {
+            "column": 25,
+            "prior_expected_fee": "11",
+            "slack": "9/8"
+          },
+          {
+            "column": 26,
+            "prior_expected_fee": "41/4",
+            "slack": "3/8"
+          },
+          {
+            "column": 27,
+            "prior_expected_fee": "87/8",
+            "slack": "1"
+          },
+          {
+            "column": 28,
+            "prior_expected_fee": "41/4",
+            "slack": "3/8"
+          },
+          {
+            "column": 29,
+            "prior_expected_fee": "87/8",
+            "slack": "1"
+          },
+          {
+            "column": 30,
+            "prior_expected_fee": "79/8",
+            "slack": "0"
+          },
+          {
+            "column": 31,
+            "prior_expected_fee": "10",
+            "slack": "1/8"
+          }
+        ],
+        "minimum_dual_slack": "0",
+        "binding_columns": [
+          6,
+          18,
+          19,
+          30
+        ]
+      }
+    },
+    "exact_gap": "3/232",
+    "failed_bounds": [],
+    "completeness": "Same unchanged previously certified source1209 full monotone-cost families; no new policy catalogue",
+    "number_of_candidate_fee_points": 1,
+    "new_LP_or_numeric_parameter_or_prior_grid": false,
+    "zero_prior_worlds_retained_for_correctness": true,
+    "separate_physical_source_DP_required": true,
+    "not_global_all_source_lower_bound_or_external_human_review": true
+  },
+  "separate_dp": {
+    "schema": 1,
+    "status": "PASS_SEPARATE_PHYSICAL_SOURCE_AND_FIXED_PRIOR_FULL_DP",
+    "scope_sha256": "dbd1a77d661a0af9e369e27b22ee5523edf9f12a5c4f9bf0c3b24b400e715487",
+    "physical_partitions": [
+      [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coarsening": [
+            0,
+            0,
+            1
+          ],
+          "word": 7
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coarsening": [
+            0,
+            1,
+            0
+          ],
+          "word": 9
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2
+          ],
+          "coarsening": [
+            0,
+            1,
+            2
+          ],
+          "word": 1
+        }
+      ],
+      [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coarsening": [
+            0,
+            0,
+            0
+          ],
+          "word": 15
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coarsening": [
+            0,
+            0,
+            1
+          ],
+          "word": 11
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coarsening": [
+            0,
+            1,
+            0
+          ],
+          "word": 4
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "coarsening": [
+            0,
+            1,
+            1
+          ],
+          "word": 0
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1
+          ],
+          "coarsening": [
+            0,
+            1,
+            2
+          ],
+          "word": 0
+        }
+      ]
+    ],
+    "W0": [
+      1,
+      7,
+      9
+    ],
+    "W1": [
+      0,
+      4,
+      11,
+      15
+    ],
+    "coverage_features": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        12,
+        2
+      ]
+    ],
+    "fee": [
+      0,
+      4,
+      5,
+      9,
+      6,
+      10,
+      9,
+      13,
+      5,
+      9,
+      10,
+      14,
+      9,
+      13,
+      12,
+      16
+    ],
+    "upper_on_all7": {
+      "A": [
+        {
+          "word": 0,
+          "fee": "286/29"
+        },
+        {
+          "word": 1,
+          "fee": "286/29"
+        },
+        {
+          "word": 4,
+          "fee": "273/29"
+        },
+        {
+          "word": 7,
+          "fee": "286/29"
+        },
+        {
+          "word": 9,
+          "fee": "286/29"
+        },
+        {
+          "word": 11,
+          "fee": "286/29"
+        },
+        {
+          "word": 15,
+          "fee": "286/29"
+        }
+      ],
+      "P": [
+        {
+          "word": 0,
+          "fee": "155/16"
+        },
+        {
+          "word": 1,
+          "fee": "155/16"
+        },
+        {
+          "word": 4,
+          "fee": "151/16"
+        },
+        {
+          "word": 7,
+          "fee": "79/8"
+        },
+        {
+          "word": 9,
+          "fee": "79/8"
+        },
+        {
+          "word": 11,
+          "fee": "79/8"
+        },
+        {
+          "word": 15,
+          "fee": "79/8"
+        }
+      ]
+    },
+    "A_fixed_dual_Bayes_value": "286/29",
+    "A_DP_states": 63,
+    "A_DP_witness": {
+      "q": 1,
+      "zero": {
+        "q": 0,
+        "zero": {
+          "leaf": 1
+        },
+        "one": {
+          "leaf": 0
+        }
+      },
+      "one": {
+        "q": 3,
+        "zero": {
+          "leaf": 0
+        },
+        "one": {
+          "leaf": 1
+        }
+      }
+    },
+    "P_fixed_dual_min_over24orders": "79/8",
+    "all24_original_Porder_results": [
+      {
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "fixed_prior_Bayes": "107/8",
+        "states": 61
+      },
+      {
+        "order": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "fixed_prior_Bayes": "107/8",
+        "states": 52
+      },
+      {
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "fixed_prior_Bayes": "13",
+        "states": 64
+      },
+      {
+        "order": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "fixed_prior_Bayes": "13",
+        "states": 67
+      },
+      {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "fixed_prior_Bayes": "107/8",
+        "states": 52
+      },
+      {
+        "order": [
+          0,
+          3,
+          2,
+          1
+        ],
+        "fixed_prior_Bayes": "107/8",
+        "states": 64
+      },
+      {
+        "order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 64
+      },
+      {
+        "order": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 55
+      },
+      {
+        "order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 70
+      },
+      {
+        "order": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 76
+      },
+      {
+        "order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 58
+      },
+      {
+        "order": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 73
+      },
+      {
+        "order": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "fixed_prior_Bayes": "25/2",
+        "states": 67
+      },
+      {
+        "order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "fixed_prior_Bayes": "91/8",
+        "states": 70
+      },
+      {
+        "order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 70
+      },
+      {
+        "order": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 76
+      },
+      {
+        "order": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 76
+      },
+      {
+        "order": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 79
+      },
+      {
+        "order": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 55
+      },
+      {
+        "order": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 67
+      },
+      {
+        "order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 58
+      },
+      {
+        "order": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 73
+      },
+      {
+        "order": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 76
+      },
+      {
+        "order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "fixed_prior_Bayes": "79/8",
+        "states": 79
+      }
+    ],
+    "P_DP_witness": {
+      "q": 1,
+      "zero": {
+        "q": 0,
+        "zero": {
+          "leaf": 1
+        },
+        "one": {
+          "leaf": 0
+        }
+      },
+      "one": {
+        "skip": 0,
+        "next": {
+          "skip": 2,
+          "next": {
+            "q": 3,
+            "zero": {
+              "leaf": 0
+            },
+            "one": {
+              "leaf": 1
+            }
+          }
+        }
+      }
+    },
+    "best_Porder": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "failed_checks": [],
+    "exact_randomized_worst_input_A": "286/29",
+    "exact_randomized_worst_input_P": "79/8",
+    "exact_gap": "3/232",
+    "all7correctness_worlds_retained_in_every_DP_state": true,
+    "zero_mass_impure_states_cannot_stop": true,
+    "one_global_order_per_seed_shared_branches_and_permanent_causal_skip": true,
+    "DP_project_input_read_audit": {
+      "unique_read_files": [
+        "$INPUT/FROZEN_TWO_PAIR_CANDIDATE_V01.json"
+      ],
+      "policy_catalogue_main_result_or_producer_read": false
+    },
+    "proof_bridge": "Fixed-prior Bayes lower bounds plus all-input upper mixtures; no all-prior equality claim",
+    "same_agent_separate_algorithm_not_external_human_or_formal_kernel": true,
+    "new_model_API_LP_price_prior_policy_grid": false
+  },
+  "derived": {
+    "schema": 1,
+    "status": "PASS_SOURCEWISE_PAIR_SUPPORT_MINIMUM_EXACTLY2_WITH_SPARSE_ROBUSTNESS",
+    "claim_scope": {
+      "source_orbit": 1209,
+      "W0": [
+        1,
+        7,
+        9
+      ],
+      "W1": [
+        0,
+        4,
+        11,
+        15
+      ],
+      "fee_family": "nonnegative additive individual costs plus nonnegative distinct two-query coverage groups; no global setup",
+      "minimum_positive_pair_support": 2,
+      "minimum_also_with_strictly_positive_individual_costs": 2,
+      "not_an_all_four_query_sources_lower_bound": true,
+      "not_arbitrary_resource_group_sizes": true
+    },
+    "one_pair_proof": {
+      "logical_component": "single_pair",
+      "canonical_science_sha256": "9668bc3c3604e0ea82e3bd049714a4f84fd3bf84b5cd8281f95c96c41b0793f1"
+    },
+    "two_pair_full_class_proof": {
+      "logical_component": "full_class",
+      "canonical_science_sha256": "29920c21293ede903dd72c6094f5650050d51e9a0c08b10e8d455a653826d8fd"
+    },
+    "two_pair_catalogue_free_DP": {
+      "logical_component": "separate_dp",
+      "canonical_science_sha256": "77af49ae5d328516147de6e0a6f0f7d2d0630c4b1ebb5636758a85f7e4aafc2e"
+    },
+    "theorem_and_proof": {
+      "path": "$INPUT/PAIR_RESOURCE_MINIMUM_THEOREM_AND_PROOF_V01.txt",
+      "bytes": 12435,
+      "sha256": "9d76c0a1750f5b7dee00aaef2cd01ad239ab63d4e137b32bc356891908c060d3"
+    },
+    "exact_RA": "286/29",
+    "exact_RP": "79/8",
+    "exact_gap": "3/232",
+    "RP_over_RA": "2291/2288",
+    "relative_cost_reduction_versus_P": "3/2291",
+    "uniform_fee_lipschitz": {
+      "per_class_constant": 1,
+      "gap_loss_constant": 2,
+      "fee_sup_radius": "3/928",
+      "gap_lower_bound": "3/464",
+      "scope": "Valid fixed-task fees only; an arbitrary fee-vector box is not asserted to be submodular"
+    },
+    "sparse_coverage_parameter_box": {
+      "dimensions": 6,
+      "parameters": "c0,c1,c2,c3,w12,w23",
+      "coordinate_radius": "1/1856",
+      "sup_fee_deviation_bound": "3/928",
+      "smallest_resource_weight_lower_bound": "3711/1856",
+      "gap_lower_bound": "3/464",
+      "positive_exactly2_pair_groups_preserved": true,
+      "strictly_increasing_coverage_submodular": true,
+      "strict_on_all_incomparable_pairs": false
+    },
+    "prior_sourcewise_support_interval": [
+      1,
+      6
+    ],
+    "new_exact_sourcewise_support": 2,
+    "old_query_menu_minimum_coverage_submodular": 4,
+    "old_global_additive_menu_interval": [
+      5,
+      7
+    ],
+    "new_point_evaluations": 1,
+    "new_price_prior_grid_LP_model_hosted_human_calls": 0,
+    "not_in_public_V22_yet": true,
+    "bibliographic_priority": "OPEN",
+    "real_application_advantage": "NOT_ESTABLISHED",
+    "CCF_acceptance_guaranteed": false,
+    "independent_external_human_or_formal_review": false,
+    "whole_project_complete": false
+  }
+}

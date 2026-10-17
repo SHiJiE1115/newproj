@@ -1,0 +1,19 @@
+Edition and evidence ledger
+
+The accepted publicV22reading at commit5df6889 remains its own27-statement
+edition. The original privateV23adds Theorem28 and Corollary29 and retains
+its original PDF/source/index fingerprints inside the immutable proof packet.
+This correctedV23reading fixes only the demonstrated Theorem26proof family
+descriptor plus version metadata. All29statements and mathematical bounds
+remain unchanged, as do the other25proof bodies,10tables and27references.
+Theorem28's current proof spanspages76--79; Corollary29 remains onpage79.
+
+paper.pdf is exactly the accepted898467-byte corrected PDF, including its
+private-at-build wording. This later public deposit does not rewrite that
+historical build or imply the older hosted jobs executed the new proof.
+The authored source archive is the explicitly declared11-member derivative;
+it is not the original private17-member ZIP. Both fingerprints are recorded.
+The proof archive remains its exact19-member V03bytes and original V23binding.
+IMMUTABLE_PACKET_BRIDGE.json establishes the explicit later-edition link.
+No authors, affiliations, final declarations, human review or journal
+submission have been invented or completed by this deposit.
