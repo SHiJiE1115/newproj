@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "version": "V24materialsource;globalpair-supportextension",
+  "files": [
+    {
+      "name": "andor_transfer_v21.tex",
+      "bytes": 11244,
+      "sha256": "13e2b02cfccd27dff152c2882784a34e3baa71845e4017ca126adc0e2ccecc47"
+    },
+    {
+      "name": "coverage_boundary_v22.tex",
+      "bytes": 13601,
+      "sha256": "a2b127b60af15fceafb00c6d6e22b8d5056aab02b99b002c2924d592fd62002e"
+    },
+    {
+      "name": "four_query_additive_v01.tex",
+      "bytes": 13784,
+      "sha256": "86dab52d9b67dbc46fd6df663d4f2579beb421c855b3ce92b1fce6f2c724d26c"
+    },
+    {
+      "name": "global_pair_support_v24.tex",
+      "bytes": 14422,
+      "sha256": "eed513c165af7909b9e757f8fdbee36bfd8040dc9ac68798949a4df17c526804"
+    },
+    {
+      "name": "pair_resource_support_v23.tex",
+      "bytes": 13190,
+      "sha256": "83221198053ba3d5d4cd97aedb4d00dbdf06b32032555b1097092c4595fd9baf"
+    },
+    {
+      "name": "paper.tex",
+      "bytes": 170466,
+      "sha256": "6987ec3ab6b77ce74114ceb0c8df5145d86f7edbbdd31684fbe347358995bbd2"
+    },
+    {
+      "name": "references.bib",
+      "bytes": 15025,
+      "sha256": "8e1c30115f06da25f1ccdbf021b1b76181886a5ef5989fbfdb497a09a9cab52d"
+    },
+    {
+      "name": "scientific_insert_v01.tex",
+      "bytes": 16404,
+      "sha256": "6cc7df2a9e0ee8f1e633c89b8248210f28256d9e79f0ffb0b1c23ddb6abc426f"
+    }
+  ],
+  "all8_scientific_files_exact_to_accepted_privateV24": true,
+  "external6_omitted_and_pinned_separately": true
+}

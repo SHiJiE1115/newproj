@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_EXTRACTED_PUBLIC12MEMBER_V24_SOURCE_BUILD",
+  "source_archive_sha256": "61c5081574b43daa38eb0fd57258299deaa91a6f96abdb2aab9e5b5b54624d98",
+  "reading_PDF_sha256": "2274857ba26e3ca7648179f8e9f24578a4529f186b3006502217cd5a47ef2218",
+  "actual_rebuilt_PDF_sha256": "c70926d3267e40030153976a44d7567c8f76b64a1db9075ac75615b1164caedf",
+  "rawPDFmetadata_can_differ": true,
+  "all83_page_text_content_boxes_rotation_fontprograms_metrics_encodings_ToUnicode_Xobjects_equal": true,
+  "all30_statement_number_page_bindings_equal": true,
+  "actual_build_process": {
+    "pid": 8004,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "retained_Popen_wait": true,
+    "wall_seconds": 11.509510400006548
+  },
+  "actual_compiler_stages": [
+    {
+      "stage": "compile_1",
+      "pid": 25928,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 2.9011843999905977
+    },
+    {
+      "stage": "bibtex",
+      "pid": 18268,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 1.315944900008617
+    },
+    {
+      "stage": "compile_2",
+      "pid": 3732,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 3.1049939999938942
+    },
+    {
+      "stage": "compile_3",
+      "pid": 15056,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true,
+      "wall_seconds": 2.5306343999982346
+    }
+  ],
+  "all8_scientific_sources_exact_to_private460V24": true,
+  "external6_pinned_supplied_separately_not_redistributed": true,
+  "new_model_calls_hosted_runs_or_scientific_grids": false,
+  "human_external_or_formal_review": false
+}

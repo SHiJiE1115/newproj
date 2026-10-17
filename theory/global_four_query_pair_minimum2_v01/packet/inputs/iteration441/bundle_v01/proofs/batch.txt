@@ -1,0 +1,74 @@
+FULL CONTINUOUS ADDITIVE DOMAIN CERTIFICATES: FROZEN NINE-SOURCE BATCH
+
+Scope. A policy is zero-error on every promised input of the ORIGINAL complete
+two-label equivalence-partition source. A permits arbitrary adaptive queries;
+P permits a global query order with causal permanent skips. Private random
+seeds are input-independent. The objective is the largest expected paid cost
+over promised inputs. Query prices are arbitrary finite nonnegative reals;
+the fee of a purchased set is their sum. This is not a known-prior theorem.
+The accepted original normal-form/completeness proof in iteration378 is an
+explicit premise. No new strategy generation or restricted baseline is used.
+
+For each permutation pi of four queries put
+c_pi(0)=z0, c_pi(1)=z0+z1, c_pi(2)=z0+z1+z2,
+c_pi(3)=z0+z1+z2+z3, with all z>=0. These 24 CLOSED cones cover the
+entire nonnegative orthant, including all ties and zero-price faces.
+Every original input/strategy payoff is an integer linear form in z.
+A difference with all coefficients nonnegative is nonnegative throughout
+the cone. These are identities of linear forms, not numeric price tests.
+
+The finite minimization columns initially contain every original A and P;
+the maximization rows contain EVERY original promised input. Adding legal
+P columns cannot change the full A value. Deleting a column weakly dominated
+by another column on every currently active row preserves the mixed minimax
+value. Deleting a row weakly dominated by another row on every currently
+active column also preserves that value. Induct over the frozen deletion
+trace. The separate checker reconstructs actual original tree paths and
+checks every active opponent and every coefficient at every deletion.
+
+Let T be the terminal game. Each removed row has a later dominating row.
+Following this finite chain yields ONE map tau from all original inputs
+to terminal rows which works simultaneously for ALL terminal columns:
+cost(w,j)<=cost(tau(w),j). It therefore works for every mixed policy.
+Checking separate columnwise maxima without a common row map would not
+justify this lifting. The independent checker explicitly checks that map.
+
+Certificate 1: for EACH terminal column j, a legal original priority column
+p(j) costs no more than j on EVERY ORIGINAL input throughout the cone.
+Push any minimax-optimal mixture of T through j -> p(j). At every original
+input its cost is at most that mixture's cost at tau(w), hence at most the
+value of T, which equals the original A value. Since P is contained in A,
+the reverse inequality is automatic. Thus full A and full P have equal
+worst-input expected costs for every price in that cone.
+
+The frozen second sufficient criterion is a terminal pure saddle with
+linear value L, plus an original legal P costing at most L on all original
+inputs. Its inequalities imply the same conclusion. It was checked but
+was not used in any of the 214 successful cones in this batch.
+
+Original complete physical sources. For each of the two fibres the separate
+checker filters the SAVED 4140 distinct Bell(8) restricted-growth partitions
+by the original SAME and DIFFERENT constraints and verifies the exact query
+projection, with no new arbitrary partial promise. The accepted catalogue
+coverage proof handles hidden records by collapsing SAME classes and giving
+hidden-only classes fresh distinct identifiers; it permits arbitrary finite
+DIFFERENT conjunctions and unrestricted equivalence-class count. A coordinate
+permutation and label swap transports legal policies, source correctness,
+and additive prices bijectively. All 48 such transformations are checked
+against the original physical orbit. Literal answer-bit flips are not used.
+
+Outcome. All 24 cones are certified for eight original source orbits:
+1221,1258,1265,1292,1312,1328,1343,1344, covering 312 ordered tasks.
+Source1322 has 22 certified cones and TWO UNCLOSED cones (a<=b<=c<=d,
+a<=b<=d<=c). Criterion failure does not prove a strict adaptivity gap or
+an impossibility theorem. It remains one open orbit, covering 24 tasks.
+Including accepted earlier proofs, the additive equality classification
+contains 1355/1356 orbits and 42840/42864 ordered tasks. This is NOT a
+theorem for all four-query sources or a new minimum-query boundary.
+
+Scope control. The identical procedure correctly remains unclosed on the
+OLD nonadditive monotone Fbase of source1209. Its already certified full
+values A=4/5<P=6/7 remain unchanged. The new additive certificates cannot
+be extended to all monotone or submodular fees on the basis of this batch.
+No new numeric price/prior/minimax LP, model call, human review, literature
+priority, natural application advantage, or publication acceptance is claimed.

@@ -1,0 +1,267 @@
+\section{The pair-resource minimum over all complete four-query sources}
+\label{app:global-pair-support}
+The sourcewise exclusion in Appendix~\ref{app:pair-resource-support}
+can be extended to every complete source. This changes the source
+quantifier while keeping the same observations, final-set charges and
+full causal-skip priority class. The finite proof below treats the
+entire nonnegative price orthant, rather than a price sample.
+
+\begin{theorem}[Universal one-pair equality and the four-query resource minimum, computer-assisted]
+\label{thm:global-pair-resource-minimum}
+Let $W_0,W_1$ be nonempty, disjoint projections of two complete
+equivalence-partition fibres, with unrestricted class count, on a menu
+$Q$ of at most four indexed pair-equality queries. For finite weights
+$c_i,w_e\geq0$, charge
+\begin{equation}\label{eq:global-pair-fee}
+ F(S)=\sum_{i\in S}c_i+
+       \sum_{e\in\binom Q2} w_e{\bf1}\{S\cap e\ne\varnothing\}.
+\end{equation}
+If at most one distinct pair has positive weight, then
+$R_{\mathcal A}(W;F)=R_{\mathcal P}(W;F)$.
+The values use input-independent private randomness, zero error on
+every promised input, and worst-input expected actual final-set cost.
+Each priority seed may choose its own global order and make causal
+permanent skips.
+
+Over all complete sources with exactly four indexed queries and fees
+of the form~\eqref{eq:global-pair-fee}, the least number of positive
+distinct pair weights permitting $R_{\mathcal A}<R_{\mathcal P}$ is
+exactly two. The same minimum holds when all individual charges are
+strictly positive.
+\end{theorem}
+Repeated occurrences of one pair combine into one weight. Each shared
+group here has size exactly two; its activation supplies no extra
+information. There is no separate global setup term. The minimum is
+over complete four-query sources, not over arbitrarily large menus or
+arbitrary resource groups. In particular, an additive gap already
+exists at seven queries.
+
+\begin{proof}
+\paragraph*{Source cover and monotone majority.}
+Use the complete four-query source cover and policy normalization in
+the proof of Theorem~\ref{thm:four-additive}. Endpoint SAME components
+and DIFFERENT filters give all $465$ nonempty one-sided supports from
+$4140$ endpoint partitions. The $42864$ ordered disjoint tasks form
+$1356$ orbits under simultaneous coordinate permutations and label
+exchange. These are complete physical sources; no literal answer
+complementation is used as a source symmetry.
+
+For $S\subseteq T$, each coefficient in
+\[
+ F(T)-F(S)=\sum_i c_i\bigl({\bf1}_{i\in T}-{\bf1}_{i\in S}\bigr)
+  +\sum_e w_e\bigl({\bf1}_{T\cap e\ne\varnothing}
+                         -{\bf1}_{S\cap e\ne\varnothing}\bigr)
+\]
+is nonnegative. Thus the fee is finite, normalized, nonnegative and
+monotone. The earlier $1300$ certificate-threshold cases, $31$
+same-input policy-subset cases and $14$ structural cases already prove
+equality for every fee in this larger monotone class. This closes
+$1345$ disjoint source orbits for all one-pair parameters. It uses the
+mathematical scope of those certificates, not agreement at sampled
+prices. Their full finite certificate outputs were also freshly
+replayed in the combined execution described below.
+
+\paragraph*{Physical transport and full-policy premise.}
+The remaining $11$ sources are listed in
+Table~\ref{tab:global-pair-residuals}. Their physical realizations are
+retained as label-specific endpoint partitions and DIFFERENT pairs.
+A direct connectivity check on all $16$ answer words reconstructs
+both nonempty label supports, for $22$ supports in total. It verifies
+the exact catalogue task, not just its number of words.
+
+For each source, recurse on its feasible words. At an impure state an
+adaptive policy chooses any remaining informative query and combines
+both continuations. For each of the $24$ global permutations, priority
+recursion allows either SKIP with the same feasible words or TAKE
+with the same remaining suffix in both branches. Pure states stop.
+If a query has a known answer, repeats an earlier purchase, or follows
+a pure state, erasing it cannot raise a monotone final-set fee.
+Pointwise-subset pruning is valid under every common previously paid
+context. This proves that every full policy has a no-dearer member in
+the reconstructed minimal family. The original retained families need
+not be irredundant: all their legal paths and orders are kept, every
+minimal vector occurs in them, and every retained vector has a
+reconstructed pointwise-subset vector.
+
+The audit checks $6957$ original policy/input paths. With query
+permutations and label exchange it explicitly checks $333936$ paths.
+For a permutation $\sigma$, transport $c_i$ to $c_{\sigma(i)}$,
+$e$ to $\sigma(e)$, each tree query and global order likewise, and
+exchange terminal labels if needed. For every purchased mask, all
+five coefficients of the one-pair fee agree. The $24\cdot6\cdot16
+=2304$ coefficient identities therefore preserve costs for every
+real parameter, the input-independent seed distribution and the
+maximum over inputs. The inverse transformation gives the reverse
+policy map. This covers all $408$ ordered tasks in the residual
+orbits without adding an answer-complement symmetry.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+Source ID & Inputs & Retained $\mathcal A/\mathcal P$
+          & Minimal $\mathcal A/\mathcal P$ & Ordered tasks\\
+\midrule
+1209 & 7 & $40/32$ & $35/27$ & 48\\
+1217 & 7 & $30/28$ & $30/28$ & 24\\
+1221 & 7 & $26/25$ & $21/20$ & 48\\
+1258 & 9 & $46/36$ & $40/30$ & 24\\
+1265 & 8 & $51/42$ & $48/39$ & 48\\
+1292 & 10 & $58/40$ & $48/30$ & 48\\
+1312 & 8 & $45/33$ & $31/23$ & 48\\
+1322 & 8 & $45/31$ & $41/27$ & 24\\
+1328 & 8 & $30/26$ & $30/26$ & 24\\
+1343 & 9 & $55/37$ & $51/33$ & 24\\
+1344 & 9 & $45/35$ & $35/25$ & 48\\
+\bottomrule
+\end{tabular}
+\caption{All $11$ residual canonical sources in the frozen four-query
+catalogue. IDs identify exact projected tasks in the packet. Retained
+families, including redundant columns, are used in the certificates;
+the freshly reconstructed minimal families establish completeness.}
+\label{tab:global-pair-residuals}
+\end{table}
+
+\paragraph*{Closed continuous-parameter certificates.}
+For each source and each of the six pairs, use the $24$ closed
+individual-price orders. If $o$ is an order, write
+\[
+ c_{o(j)}=d_0+\cdots+d_j\quad(0\leq j<4),\qquad
+ \lambda=d_4,\qquad d\in\mathbb R_{\geq0}^{5}.
+\]
+Every path fee is a homogeneous linear form in these five variables.
+The price-order orthants cover all nonnegative $c,\lambda$ including
+ties, zero prices and zero setup charge. Each root is closed by the
+same two finite-game mechanisms proved in
+Theorem~\ref{thm:pair-resource-minimum}.
+
+At a pure-saddle leaf, one original hard input lower-bounds every
+full adaptive column by an anchor fee, while a legal original
+priority column is bounded by that anchor on every original input.
+At a dominance/lifting leaf, removing a weakly dominated minimizer
+column or maximizer row preserves the finite mixed minimax value.
+Following the deleted-row chains gives a common no-cheaper surviving
+row for every terminal mixture. Every remaining column then has an
+original priority replacement whose cost is no greater on
+\emph{all original inputs}. This last condition includes removed
+objective rows and all zero-prior correctness inputs. Replacing the
+terminal mixture with the same seed weights gives
+$R_{\mathcal P}\leq R_{\mathcal A}$. Policy inclusion gives equality.
+Separate dominance runs on the two classes are not assumed to have
+the same terminal game.
+
+A split on a linear form $f$ uses both closed halves $f\geq0$ and
+$f\leq0$. For parent generators $p,n$ with opposite signs, the
+crossing vector $f(p)n-f(n)p$ lies on their shared boundary and is a
+nonnegative combination of $p,n$. Together with the retained
+same-sign and zero generators, these vectors generate the respective
+halfcones. All cones lie in the nonnegative orthant and are pointed.
+The reader checks full dimension five. A feasible nonzero ray is
+extreme exactly when its active normals in the complete accumulated
+inequality description have rank four. Removing only nonextreme
+candidate rays consequently preserves the entire cone. Exact
+Gauss--Jordan elimination over fractions reconstructs the clipped
+cones and ranks separately from the producer's primitive-integer
+elimination. A generator inequality therefore holds on the whole
+cone, rather than only at tested cost vectors.
+
+Across all $11\cdot6\cdot24=1584$ roots there are $1776$ nodes and
+$96$ splits. All $1680$ leaves close: $887$ by pure saddles and
+$793$ by dominance and full-original-row lifting. The separate readers
+check $55742$ column deletions, $3913$ row deletions, $2829$
+full-original-row priority lifts, $2704249$ scalar inequalities and
+$3275$ exact ranks. Every node is reached once, all roots close and
+there is no unstarted root or residual leaf. No mixed-template leaf
+is needed. These checks, together with the full-policy and closed
+cone-cover arguments, prove one-pair equality on every residual
+source for the full continuous nonnegative domain. The $1345$
+monotone cases and transport complete the four-query exclusion.
+
+\paragraph*{Smaller menus and the upper witness.}
+For fewer than four queries, add fresh record pairs forced DIFFERENT
+under both label hypotheses. Give each dummy query zero individual
+charge and no membership in a positive pair group. Every original
+physical world extends by fresh classes, so the dummy answers are
+constant zero. Removing known-answer dummy purchases preserves all
+original observations and fees. Deleting them from each seed's global
+order is a legal permanent skip. Thus both minimax values are
+unchanged by padding, and the four-query exclusion covers every
+smaller menu. A menu without any eligible pair has additive fees and
+is also covered by Theorem~\ref{thm:four-additive}.
+
+On the complete four-query source of
+Theorem~\ref{thm:pair-resource-minimum}, take
+$(c_0,c_1,c_2,c_3)=(4,3,2,3)$ and $w_{12}=w_{23}=2$, with all other
+pair weights zero. That theorem gives the full-class values
+$R_{\mathcal A}=286/29$ and $R_{\mathcal P}=79/8$, with gap $3/232$.
+The combined scope check freshly recomputes the $40+32$ matching dual
+inequalities and both all-input upper mixtures; it does not introduce
+a new fee, prior or numerical solve. At most one positive pair is
+excluded universally above, and this two-pair witness has strictly
+positive individual charges. The minimum is therefore exactly two
+in both the nonnegative and positive individual-charge classes.
+Corollary~\ref{cor:sparse-pair-resource-robust} still gives a
+six-resource box of radius $1/1856$ with gap at least $3/464$.
+\end{proof}
+
+\paragraph*{Combined execution and dependence.}
+The private combined packet is named
+\path{combined_global_four_query_pair_proof_v03.zip}. On Windows it
+was extracted into a new directory and actually run with a separate
+work directory and output directory. Its $25$ mathematical child
+processes all exited zero, with retained process handles and separate
+start/terminal records. They comprise one residual-source audit, one
+fresh replay of the $1345$ finite monotone certificates, ten symbolic
+producers, eleven fraction-based readers, the global composition and
+the final scope/upper check. All $26$ complete output objects match
+the pre-execution frozen reference objects under declared
+provenance-only normalization; no mathematical field is excluded.
+The ten regenerated candidate proof gzip files are byte-identical
+to their original files. All replayed mathematical checking cores,
+including the earlier single-source reader and monotone-certificate
+kernels, retain their original source bytes. Staging wrappers are
+declared separately.
+
+The complete global source and full policy-catalogue cover remains
+an inherited accepted premise from the earlier all-additive packet;
+it is not re-enumerated in this combined replay. The $1345$ finite
+certificate kernels, all eleven residual physical/completeness
+checks and all continuous one-pair readers are freshly executed.
+The old two-pair full-class and physical-recursion results remain
+declared inherited modules; the additional $72$ fixed dual checks
+and all-input mixtures are freshly recalculated.
+
+Byte-exact original scopes commit to the earlier audit/projection
+hashes. Those reference snapshots are therefore retained as inputs,
+and the fresh complete audit objects must match them before dependent
+readers run. They are not prefilled fresh outputs. The unchanged
+composer's discovery-era process counts and original proof text
+remain explicitly origin context; distinct current execution records
+give the actual replay counts. Two failed Windows launch-audit
+adapters were retained. Both failed before any mathematical child
+started; their repairs handle the platform's command-line
+representation and explicitly pass the same interpreter. No
+mathematical predicate or input scope was changed. Python audit hooks
+constrain scientific file access and deny network and nested process
+launch after bootstrap; they are not operating-system isolation.
+The optional original storage preflight is a separately declared
+host-environment dependency, not a mathematical input.
+
+\paragraph*{Interpretation and limits.}
+The theorem strengthens the source quantifier of
+Theorem~\ref{thm:pair-resource-minimum}; it does not change that
+theorem's sourcewise witness or improve its approximately $0.13\%$
+cost reduction. It does not classify every four-query submodular
+fee, every two-pair instance, larger setup groups, all specified-prior
+Bayes games, or larger query menus. Cost sharing, coverage modeling,
+finite minimax certificates and cone clipping are established tools.
+The candidate contribution is the exact universal pair-support
+boundary under the stated complete-source and comparator contract.
+The bounded comparisons with shared-cost testing~\cite{harris2025},
+Pandora's reward-search objective~\cite{pandora} and stochastic
+Boolean evaluation~\cite{hellerstein2022adaptivity} do not establish
+literature priority or exclude all possible preserving reductions.
+This is internal computer-assisted verification using different
+programs from one research assistant, without external independent
+implementation review, human author approval or formal proof-kernel
+certification. No practical academic-evaluation advantage follows.

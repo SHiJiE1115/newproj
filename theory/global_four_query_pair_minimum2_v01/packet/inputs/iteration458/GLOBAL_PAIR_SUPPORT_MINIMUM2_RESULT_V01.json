@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "status": "PASS_INTERNAL_COMPUTER_ASSISTED_ALL_COMPLETE_FOUR_QUERY_ONE_PAIR_EQUALITY_AND_MINIMUM_POSITIVE_PAIR_SUPPORT2",
+  "theorem_id": "G4_PAIR_SUPPORT_MINIMUM2",
+  "statement": "For every nonempty disjoint complete equivalence-partition promise on at most four indexed pair-equality queries, every finite c_i>=0 and any one distinct two-query group e with lambda>=0, F(S)=sum_{i in S}c_i+lambda*1{S intersects e} satisfies R_A=R_P in the private-seed zero-error worst-input expected final-set-cost model. Over all complete FOUR-query sources, the minimum number of positive distinct pair-setup weights permitting R_A<R_P is exactly2, also with strictly positive individual charges.",
+  "proof_modules": {
+    "inherited_complete_source_cover_and1345_monotone_equalities": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\ACCEPTANCE_V01.json",
+      "bytes": 10347,
+      "sha256": "6a75bd679c9339a9b56d92bd691d8da301cd1638aae2c7929c41e0b151bea224"
+    },
+    "fresh_residual_physical_completeness_and_pair_fee_transport": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REMAINING_SOURCE_AUDIT_V01.json",
+      "bytes": 201200,
+      "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512"
+    },
+    "all11_residual_sources_closed": [
+      {
+        "source_id": 1209,
+        "reader_result_origin": "Inheritedactual455whole-objectreplayof453separatechecker",
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+          "bytes": 3471,
+          "sha256": "cb35eda9d24ac7e2c0d16a001334510310d122f306868954ede33f50f264db4e"
+        },
+        "portable_whole_science_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\ACTUAL_REPLAY_RESULT_V03.json",
+          "bytes": 77914,
+          "sha256": "9b27f4c86284142b10d4b8c1f7cbde657d431f23de21682d3e04cfe2866a769d"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 164,
+          "splits": 10,
+          "closed_lifting_leaves": 81,
+          "pure_saddle_leaves": 73,
+          "column_deletions": 5533,
+          "row_deletions": 342,
+          "full_original_row_P_lifts": 252,
+          "scalar_inequalities": 223769,
+          "exact_fraction_rank_calls": 289
+        }
+      },
+      {
+        "source_id": 1217,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\SOURCE1217_READER_RESULT_V02.json",
+          "bytes": 3781,
+          "sha256": "642018fa750f176600c258ea7aac050d39b6891b004900aea1d99ce212a53d10"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\SOURCE1217_READER_SPEC_V02.json",
+          "bytes": 1091,
+          "sha256": "42638785dd0c7a781133495d642f887857232313995a79d5576dc83b4aefaf07"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 148,
+          "splits": 2,
+          "closed_lifting_leaves": 54,
+          "pure_saddle_leaves": 92,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 2871,
+          "row_deletions": 223,
+          "full_original_row_P_lifts": 169,
+          "scalar_inequalities": 126349,
+          "exact_fraction_rank_calls": 175
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1217",
+            "pid": 19824,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1217.PROCESS_TERMINAL.json",
+              "bytes": 309,
+              "sha256": "cbfcb8e0f24eca1c5bd45a979598685b4701030ce09c403df9b7ccc6a4cc5702"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1217",
+            "pid": 27356,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1217.PROCESS_TERMINAL.json",
+              "bytes": 312,
+              "sha256": "5008ce332486a98548a3ed9fa62481d4ec7666d677e8074b9f6d6b727757d0a2"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1221,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1221\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3789,
+          "sha256": "37e10af890d5def56e1ba7b6999c8dad676507e24ea93224007766ad28bb4380"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1221\\READER_SPEC_V02.json",
+          "bytes": 1369,
+          "sha256": "f393f99cf923a5a2648c580a8f0651b04174c9d87c04b8971eec32afc28235c7"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 60,
+          "pure_saddle_leaves": 84,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 2615,
+          "row_deletions": 195,
+          "full_original_row_P_lifts": 445,
+          "scalar_inequalities": 127785,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1221",
+            "pid": 10356,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1221.PROCESS_TERMINAL.json",
+              "bytes": 312,
+              "sha256": "eb3c49cd0b55f0cdacbec782efaee0119593359db18dc9367b7a2af71ccf851d"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1221",
+            "pid": 18828,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1221.PROCESS_TERMINAL.json",
+              "bytes": 314,
+              "sha256": "1c32db718f5fadc13366166a267d0eb2c42f08e2d4aa982163f4870bac56cff5"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1258,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1258\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3806,
+          "sha256": "2b4b426d2daadbf597cf922fb57e08e47017467d6a4db089ead8022bba483a6f"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1258\\READER_SPEC_V02.json",
+          "bytes": 1369,
+          "sha256": "e4027d246e8a5ae1c0810cb86e981c2316faf9ec3c7abaae6c2d3631196a2478"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 48,
+          "pure_saddle_leaves": 96,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 3832,
+          "row_deletions": 296,
+          "full_original_row_P_lifts": 104,
+          "scalar_inequalities": 206720,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1258",
+            "pid": 24168,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1258.PROCESS_TERMINAL.json",
+              "bytes": 313,
+              "sha256": "5b06e7b564727edff9d83b619fac529ae345aa6e672ceb51840a3565caf5cca4"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1258",
+            "pid": 27432,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1258.PROCESS_TERMINAL.json",
+              "bytes": 312,
+              "sha256": "9ddf9e55321ee23c523803875d63389198546a5c62173313226f8c2fdf69e56c"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1265,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3749,
+          "sha256": "ad88e448fa53d841bac7c05196b9a296ba79804eada9c77782393f57daea3b0c"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\READER_SPEC_V02.json",
+          "bytes": 1369,
+          "sha256": "724b3ba9b6de0826602d4a567dfa88eadcef399ef358ba783bae76708e9ce088"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 162,
+          "splits": 9,
+          "closed_lifting_leaves": 49,
+          "pure_saddle_leaves": 104,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 4084,
+          "row_deletions": 199,
+          "full_original_row_P_lifts": 318,
+          "scalar_inequalities": 212354,
+          "exact_fraction_rank_calls": 313
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1265",
+            "pid": 23848,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1265.PROCESS_TERMINAL.json",
+              "bytes": 313,
+              "sha256": "7ee49e7ecb92a89bf3f4a9d19aef11c52e49eb191398bb96eeef96e1be9420eb"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1265",
+            "pid": 16236,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1265.PROCESS_TERMINAL.json",
+              "bytes": 314,
+              "sha256": "38d56f472cd990e0a9beec07c99134dc6542f69cc8dbc918231083944b1ac4fe"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1292,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1292\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3764,
+          "sha256": "8afa5bbcd32d797938c1e43612d6585d0cd0cc49518dc7950ea4ab1306e895b1"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1292\\READER_SPEC_V02.json",
+          "bytes": 1370,
+          "sha256": "24648b220761a5635dbe851b8d36c36d7ecb5e12d82edd8baf649c6c347e7b9c"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 48,
+          "pure_saddle_leaves": 96,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 4608,
+          "row_deletions": 351,
+          "full_original_row_P_lifts": 96,
+          "scalar_inequalities": 271350,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1292",
+            "pid": 23060,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1292.PROCESS_TERMINAL.json",
+              "bytes": 312,
+              "sha256": "f77b5b38e25dedb2677a93b7cf4f28534a0b44a16e9097a16dcc5e6b2b8884a3"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1292",
+            "pid": 15900,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1292.PROCESS_TERMINAL.json",
+              "bytes": 309,
+              "sha256": "9c7f1edc92bcca25b9810017f89371309fef82254859f60ddbc0462ee3ff4300"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1312,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1312\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3746,
+          "sha256": "dbe7622d4503a482f3d782e3f65d8d4898eee1745e3921bd76f89ad25a7729c4"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1312\\READER_SPEC_V02.json",
+          "bytes": 1369,
+          "sha256": "d86645c7dffe82f82b8c100253faf0c687236022c567102c0229a9d1fc135ab9"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 84,
+          "pure_saddle_leaves": 60,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 6408,
+          "row_deletions": 471,
+          "full_original_row_P_lifts": 144,
+          "scalar_inequalities": 281970,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1312",
+            "pid": 16128,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1312.PROCESS_TERMINAL.json",
+              "bytes": 314,
+              "sha256": "f4ac89e5efc74d5854a9d94c2d0cfc0f732b2c091bb79b79c03a74241a00e604"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1312",
+            "pid": 8296,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1312.PROCESS_TERMINAL.json",
+              "bytes": 307,
+              "sha256": "d72fc538a0081e63c87effcbe0ce43417bbb9fcf2ba9f76382c4b73ec2efcd3c"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1322,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1322\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3753,
+          "sha256": "1a073e847d564f2043b8c2ca3d0544924b694da57af2d50e99b3c8fb99ef130c"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1322\\READER_SPEC_V02.json",
+          "bytes": 1370,
+          "sha256": "50b12414542c4ba2f6e9b9f6a30afee42509aaff4fd814237d3e9d1aef069b5c"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 262,
+          "splits": 59,
+          "closed_lifting_leaves": 167,
+          "pure_saddle_leaves": 36,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 10569,
+          "row_deletions": 705,
+          "full_original_row_P_lifts": 689,
+          "scalar_inequalities": 478848,
+          "exact_fraction_rank_calls": 1203
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1322",
+            "pid": 25096,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1322.PROCESS_TERMINAL.json",
+              "bytes": 313,
+              "sha256": "7f23b877c604e625b1a2f1cdaba2b659c684ec43e46cd99c04c257742f91c304"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1322",
+            "pid": 15812,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1322.PROCESS_TERMINAL.json",
+              "bytes": 313,
+              "sha256": "818d0c7e561ab1c74a049f74113510bf61455e11692a0eab8047250a57b201a4"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1328,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1328\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3750,
+          "sha256": "b862bf51c99734c0c77d92370d95b7a97f0f21fe42873a52077b13266c4050c7"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1328\\READER_SPEC_V02.json",
+          "bytes": 1369,
+          "sha256": "ab9a866c764d54b93b6791d0a4bbf8d4e7072127dae7022eb2d09f1aa1b2bded"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 176,
+          "splits": 16,
+          "closed_lifting_leaves": 46,
+          "pure_saddle_leaves": 114,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 2226,
+          "row_deletions": 170,
+          "full_original_row_P_lifts": 264,
+          "scalar_inequalities": 125984,
+          "exact_fraction_rank_calls": 431
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1328",
+            "pid": 12824,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1328.PROCESS_TERMINAL.json",
+              "bytes": 309,
+              "sha256": "7806903efabdb5b372032065422e2440fc4868937c9f652ae9bb890c67445d40"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1328",
+            "pid": 12100,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1328.PROCESS_TERMINAL.json",
+              "bytes": 314,
+              "sha256": "e63e94a2b46c079cd29f52b73fb0c30ff647a8728949d6a3349467e916d33027"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1343,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1343\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3757,
+          "sha256": "2f62e479c3b0c78a87a4534ff8ad5de1f169524c69f2e2229ff2795d1b18d2a7"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1343\\READER_SPEC_V02.json",
+          "bytes": 1369,
+          "sha256": "12aab55d800c261338ed4b1a8cee9e94b7e6310c82f02923c500fcab630e9fa3"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 72,
+          "pure_saddle_leaves": 72,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 6408,
+          "row_deletions": 406,
+          "full_original_row_P_lifts": 216,
+          "scalar_inequalities": 326230,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1343",
+            "pid": 26028,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1343.PROCESS_TERMINAL.json",
+              "bytes": 311,
+              "sha256": "5dae33d5bf76f2abe8dee73745629e99f65f45335c39c418c8ff7ba0ab3b37a4"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1343",
+            "pid": 27172,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1343.PROCESS_TERMINAL.json",
+              "bytes": 313,
+              "sha256": "9ba65eaf8e19d19a4ce73ba8edc71eb068a98fcf712718af395c4e14cccfd305"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1344,
+        "reader_result": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1344\\SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3757,
+          "sha256": "08b07bfcd11b7bca83cbab77daf4a1d9ade240114bdb959d46ba4f2826d3107f"
+        },
+        "reader_spec": {
+          "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1344\\READER_SPEC_V02.json",
+          "bytes": 1369,
+          "sha256": "76c6e24ba10fc7b62f36695b6e4c3da8be4e80cdc5b444ffdd245d80abdcdd10"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 84,
+          "pure_saddle_leaves": 60,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 6588,
+          "row_deletions": 555,
+          "full_original_row_P_lifts": 132,
+          "scalar_inequalities": 322890,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1344",
+            "pid": 23640,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1344.PROCESS_TERMINAL.json",
+              "bytes": 314,
+              "sha256": "437f935c203e1327c0d5a6ff8a39c877689f3eb8805a1d024f27e337c7e07337"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1344",
+            "pid": 2664,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1344.PROCESS_TERMINAL.json",
+              "bytes": 313,
+              "sha256": "e27c4ab453cb91c8a92cc5b8aaa1641586ecdee104e025fbd3cba203fe4fcad8"
+            }
+          }
+        ]
+      }
+    ],
+    "inherited_two_pair_fullclass_witness": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\TWO_PAIR_FULL_CLASS_RESULT_V01.json",
+      "bytes": 11698,
+      "sha256": "c757f5b131d57c02407e0d5048d6527c4057b3abd7fa5a2b5798f4be75803f70"
+    },
+    "inherited_separate_physical_DP": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\TWO_PAIR_SEPARATE_DP_RESULT_V01.json",
+      "bytes": 9022,
+      "sha256": "516ad5659582da7b7ac4ddd7da0e5097f1e0792fbb72845f0969e0f2daa37461"
+    },
+    "inherited_robustness": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\DERIVED_PAIR_RESOURCE_MINIMUM_V01.json",
+      "bytes": 3054,
+      "sha256": "0c2c893d68cf11084f181181b50dabd207b74e697f75a5ce29e21251fd5d8374"
+    }
+  },
+  "source_cover": {
+    "all_canonical_orbits": 1356,
+    "inherited_monotone_closed_orbits": 1345,
+    "one_pair_residual_orbits": 11,
+    "original_ordered_tasks": 42864,
+    "fresh_residual_ordered_tasks": 408,
+    "physical_supports_rechecked": 22
+  },
+  "residual_cones": 1584,
+  "residual_counts": {
+    "nodes": 1776,
+    "splits": 96,
+    "closed_lifting_leaves": 793,
+    "pure_saddle_leaves": 887,
+    "column_deletions": 55742,
+    "row_deletions": 3913,
+    "full_original_row_P_lifts": 2829,
+    "scalar_inequalities": 2704249,
+    "exact_fraction_rank_calls": 3275
+  },
+  "original_residual_policy_input_paths": 6957,
+  "new_source_producers": 10,
+  "final_accepted_separate_readers": 10,
+  "actual_separate_reader_passes_including_metadata_repair": 20,
+  "retained_metadata_repair": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\READER_METADATA_REPAIR_V02.json",
+    "bytes": 6674,
+    "sha256": "eb8ea8a7410c803b0a0ebaa6c606baf598efcd6070f1536443d92b03cd9aaf7d"
+  },
+  "new_real_process_terminals": [
+    {
+      "phase": "PROVE_SOURCE1217",
+      "pid": 19824,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1217.PROCESS_TERMINAL.json",
+        "bytes": 309,
+        "sha256": "cbfcb8e0f24eca1c5bd45a979598685b4701030ce09c403df9b7ccc6a4cc5702"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1217",
+      "pid": 27356,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1217.PROCESS_TERMINAL.json",
+        "bytes": 312,
+        "sha256": "5008ce332486a98548a3ed9fa62481d4ec7666d677e8074b9f6d6b727757d0a2"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1221",
+      "pid": 10356,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1221.PROCESS_TERMINAL.json",
+        "bytes": 312,
+        "sha256": "eb3c49cd0b55f0cdacbec782efaee0119593359db18dc9367b7a2af71ccf851d"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1221",
+      "pid": 18828,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1221.PROCESS_TERMINAL.json",
+        "bytes": 314,
+        "sha256": "1c32db718f5fadc13366166a267d0eb2c42f08e2d4aa982163f4870bac56cff5"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1258",
+      "pid": 24168,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1258.PROCESS_TERMINAL.json",
+        "bytes": 313,
+        "sha256": "5b06e7b564727edff9d83b619fac529ae345aa6e672ceb51840a3565caf5cca4"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1258",
+      "pid": 27432,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1258.PROCESS_TERMINAL.json",
+        "bytes": 312,
+        "sha256": "9ddf9e55321ee23c523803875d63389198546a5c62173313226f8c2fdf69e56c"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1265",
+      "pid": 23848,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1265.PROCESS_TERMINAL.json",
+        "bytes": 313,
+        "sha256": "7ee49e7ecb92a89bf3f4a9d19aef11c52e49eb191398bb96eeef96e1be9420eb"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1265",
+      "pid": 16236,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1265.PROCESS_TERMINAL.json",
+        "bytes": 314,
+        "sha256": "38d56f472cd990e0a9beec07c99134dc6542f69cc8dbc918231083944b1ac4fe"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1292",
+      "pid": 23060,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1292.PROCESS_TERMINAL.json",
+        "bytes": 312,
+        "sha256": "f77b5b38e25dedb2677a93b7cf4f28534a0b44a16e9097a16dcc5e6b2b8884a3"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1292",
+      "pid": 15900,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1292.PROCESS_TERMINAL.json",
+        "bytes": 309,
+        "sha256": "9c7f1edc92bcca25b9810017f89371309fef82254859f60ddbc0462ee3ff4300"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1312",
+      "pid": 16128,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1312.PROCESS_TERMINAL.json",
+        "bytes": 314,
+        "sha256": "f4ac89e5efc74d5854a9d94c2d0cfc0f732b2c091bb79b79c03a74241a00e604"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1312",
+      "pid": 8296,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1312.PROCESS_TERMINAL.json",
+        "bytes": 307,
+        "sha256": "d72fc538a0081e63c87effcbe0ce43417bbb9fcf2ba9f76382c4b73ec2efcd3c"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1322",
+      "pid": 25096,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1322.PROCESS_TERMINAL.json",
+        "bytes": 313,
+        "sha256": "7f23b877c604e625b1a2f1cdaba2b659c684ec43e46cd99c04c257742f91c304"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1322",
+      "pid": 15812,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1322.PROCESS_TERMINAL.json",
+        "bytes": 313,
+        "sha256": "818d0c7e561ab1c74a049f74113510bf61455e11692a0eab8047250a57b201a4"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1328",
+      "pid": 12824,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1328.PROCESS_TERMINAL.json",
+        "bytes": 309,
+        "sha256": "7806903efabdb5b372032065422e2440fc4868937c9f652ae9bb890c67445d40"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1328",
+      "pid": 12100,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1328.PROCESS_TERMINAL.json",
+        "bytes": 314,
+        "sha256": "e63e94a2b46c079cd29f52b73fb0c30ff647a8728949d6a3349467e916d33027"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1343",
+      "pid": 26028,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1343.PROCESS_TERMINAL.json",
+        "bytes": 311,
+        "sha256": "5dae33d5bf76f2abe8dee73745629e99f65f45335c39c418c8ff7ba0ab3b37a4"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1343",
+      "pid": 27172,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1343.PROCESS_TERMINAL.json",
+        "bytes": 313,
+        "sha256": "9ba65eaf8e19d19a4ce73ba8edc71eb068a98fcf712718af395c4e14cccfd305"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1344",
+      "pid": 23640,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1344.PROCESS_TERMINAL.json",
+        "bytes": 314,
+        "sha256": "437f935c203e1327c0d5a6ff8a39c877689f3eb8805a1d024f27e337c7e07337"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1344",
+      "pid": 2664,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REREAD_SOURCE1344.PROCESS_TERMINAL.json",
+        "bytes": 313,
+        "sha256": "e27c4ab453cb91c8a92cc5b8aaa1641586ecdee104e025fbd3cba203fe4fcad8"
+      }
+    }
+  ],
+  "source1209_original_proof_and1345cases_inherited_not_rerun": true,
+  "one_pair_class_monotone_normalized": "Nonnegative individual charges plus nonnegative activation on intersection with a pair is finite,normalized and monotone; hence fits the1345older proofs.",
+  "fewer_than4query_extension": "Pad with fresh query pairs forcedDIFFERENT under both labelpriors,eachdummyindividualcharge0and outside the shared pair. Every old physicalworld extends with fresh classes,so projected support is oldW times constantzero answers. Erasing these known-answer dummies preserves both fullAandcausal-skipPgames and every final fee. The four-query exclusion therefore implies all smaller menus.",
+  "upper_witness": {
+    "source1209": {
+      "W0": [
+        1,
+        7,
+        9
+      ],
+      "W1": [
+        0,
+        4,
+        11,
+        15
+      ]
+    },
+    "individual_charges": [
+      4,
+      3,
+      2,
+      3
+    ],
+    "positive_pair_groups": [
+      [
+        [
+          1,
+          2
+        ],
+        2
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        2
+      ]
+    ],
+    "all_other_pair_weights": 0,
+    "separate_global_setup": false,
+    "R_A": "286/29",
+    "R_P": "79/8",
+    "gap": "3/232",
+    "relative_saving_to_RP": "3/2291",
+    "strictly_increasing_coverage_fee": true,
+    "six_coordinate_robust_radius": "1/1856",
+    "robust_gap_at_least": "3/464"
+  },
+  "scope_limits": [
+    "Completeequivalencepromises,unrestrictedclasscount,disjointlabelprojections,atmost4indexedqueries",
+    "Individualchargespluspairintersectionactivationcosts;notarbitrarylargerresourcegroups",
+    "Minimum2isoverallcompleteFOUR-querysources;notalllargermenus,whereadditivegapsalreadyexist",
+    "Existenceoftwo-pairgapdoesnotclaimeverytwo-pairfeeorsourcehasagap",
+    "Privatezeroerrorminimaxwithfullcausalskippriority;notallevery-priorBayesequality",
+    "No all-four-querygeneral-submodularclassification or practicalapplicationadvantage follows"
+  ],
+  "bibliographic_priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "internal_computer_assisted_proof_not_external_human_independent_or_formal_kernel_review": true,
+  "new_numeric_fee_prior_grid_LP_API_hosted_humanlabels_PDF_or_publicupload": false,
+  "whole_project_complete": false
+}

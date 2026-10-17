@@ -1,0 +1,89 @@
+Four-query adaptive and causal-priority strategy coverage
+
+1. Normal form sufficient for all finite normalized nonnegative monotone F
+A deterministic correct policy can stop as soon as its remaining promised
+inputs have one label. It can erase a purchase whose answer is already fixed
+on the current feasible inputs, simulating that known answer in subsequent
+decisions. It can erase repeated purchases. These transformations preserve
+correctness and replace every input's purchased set by a subset. Monotonicity
+therefore never increases its cost. For a global-priority policy, erasing
+purchases is a legal causal permanent skip and retains its original order.
+This is a dominance normal form, not a claim that all syntactically possible
+policies already stop early or avoid noninformative queries.
+
+There are finitely many normal-form trees on four coordinates. For any
+zero-error seed-randomized policy on the finite input domain, remove the union
+of its finitely many probability-zero erroneous seed sets. Every remaining
+seed is a correct deterministic policy. Normalizing each seed as above gives
+a distribution on the finite normal-form trees at no larger cost. Its priority
+order may depend on the seed. Thus the finite policy families suffice for both
+R_A and R_P under worst-input expected purchased-set cost. There is no bounded
+error, averaging over inputs, expected-set substitution, or fixed chosen order.
+
+2. Per-input purchased-set enumeration
+For each pair (W0,W1) of disjoint nonempty supports use all feasible answer
+vectors x in W0 union W1. A policy vector records a4bit purchased set at each
+such x. Outside-domain vector entries are0and have no cost constraint.
+
+Adaptive recursion: a pure state returns the zero future-set vector with its
+label. At a mixed state choose any remaining informative query q, recursively
+choose a tree for each nonempty response child, and union q into every paid
+set in the current state. Enumerate the Cartesian product of child families.
+Deduplicating identical per-input future-set vectors retains some realizing
+tree and loses no attainable cost vector for any F. This is enumeration of
+sets, not scalar cost optimization at a paid context; it does not assume an
+invalid context-independent scalar Bellman recurrence for nonadditive F.
+
+For a fixed permutation, recurse on its suffix and feasible state. Enumerate
+both permanent SKIP and informative TAKE, with independent response-child
+choices after TAKE. Terminal pure states stop; an exhausted mixed suffix is
+infeasible. Union the families across all24permutations. Deduplicate each
+per-input vector only after retaining a legal order/tree realizing it. This
+implements the full causal-skip baseline, with seed-randomized global orders.
+
+3. A different complete check of priority realizability
+The separate checker expands every normal-form adaptive tree without pruning
+by purchased-vector equivalence. For a tree form a query-order graph: every
+ancestor query precedes every query occurring in either descendant subtree.
+The tree is realizable by one global order exactly when this graph admits a
+topological order. Necessity follows from each feasible root-to-leaf path.
+For sufficiency scan a topological order and take a coordinate exactly when
+it is the next query of the current simulated tree. Earlier coordinates that
+are not next cannot occur later in any remaining branch (that would violate
+the ancestor-order condition), so they may be permanently skipped using only
+current history. Empty response branches are absent in this normal form.
+
+Collect all adaptive vectors from all expanded trees and all priority vectors
+from the order-compatible trees. Comparing these sets to the producer's
+separate adaptive/suffix-SKIP recursions verifies coverage by another method.
+Each supplied tree is also traced directly for correctness, purchased masks,
+no repeated query, and the supplied global order when applicable.
+
+4. Symmetry scope
+Use only simultaneous permutations of the four physical coordinates and an
+exchange of the two labels. Apply the same coordinate change to prices or a
+set-cost function. Tree legality, causal skips and per-input set inclusion are
+preserved; the minimax objectives are equivariant. Certify a disjoint orbit
+partition of every one of the42864ordered complete-source tasks. Arbitrary
+literal flips are not used, and no arbitrary partial Boolean task is inserted.
+The fixed positive price grid {1,2,3}^4 is permutation-closed. It is a discovery
+grid, not a replacement for arbitrary nonnegative monotone costs.
+
+5. A strong all-cost sufficient condition, with a failure rule
+For each adaptive vector a, ask whether a priority vector p satisfies
+P_p(x) subseteq P_a(x) at every promised input. If this holds for every a,
+replace each seed's adaptive tree by its corresponding priority tree. Every
+monotone F then costs no more at every input, so R_P<=R_A. The reverse follows
+from policy-class inclusion. This establishes equality for every allowed F
+on that task. A verified orbit cover transfers it to all tasks only if every
+orbit passes the sufficient condition.
+
+If an adaptive vector has no such priority dominator, the condition has failed;
+that is NOT a proof of a randomized minimax gap. Record every failed vector
+and then use only the pre-frozen cost-discovery protocol for cost comparisons.
+Any strict gap needs exact rational mixed upper and dual lower certificates;
+absence on a finite grid cannot establish an all-cost identity or new minimum.
+
+This is optional theory work. The main V13, P1and actual negative model study
+remain unchanged. Software checks and this AI-authored argument are not human
+author approval or a proof-assistant kernel. Literature priority remains open.

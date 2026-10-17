@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "theorem": "G4_PAIR_SUPPORT_MINIMUM2",
+  "reading_PDF_sha256": "2274857ba26e3ca7648179f8e9f24578a4529f186b3006502217cd5a47ef2218",
+  "numbered_statement": {
+    "label": "thm:global-pair-resource-minimum",
+    "number": "30",
+    "page": 80,
+    "body_sha256": "d5888030ba8b58cb9ad056ee955e26352f1d60e32252e43d05308b51aa292811"
+  },
+  "statement_page": 80,
+  "proof_pages": [
+    80,
+    81,
+    82
+  ],
+  "source_fragment_sha256": "eed513c165af7909b9e757f8fdbee36bfd8040dc9ac68798949a4df17c526804",
+  "original_private_combined_packet_sha256": "96969bfdcb390cf6a494d6e47cd7519656b8bb6397d3640a6c5c7841a8b00ebf",
+  "public_derived_packet_sha256": "c9745037f5b5ab4fa975867e4736fac1ab79830410dec46d6760045271b863fe",
+  "public_actual_parent_pid": 26028,
+  "actual_mathematical_children": 25,
+  "whole_output_objects": 26,
+  "zero_error_minimax_full_causal_skip": true,
+  "complete_sources_unrestricted_classes": true,
+  "one_pair_equality_scope": "Allcompleteatmost4querysources,finiteindividualandonepairchargesnonnegative",
+  "minimum2_scope": "OverallcompleteEXACTLY4querysources;alsoallindividualchargesstrictlypositive",
+  "internal_computer_assisted_not_human_external_or_formal": true,
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED"
+}

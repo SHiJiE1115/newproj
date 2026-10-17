@@ -1,0 +1,106 @@
+All-complete-four-query pair-setup support minimum: internal theorem and proof
+
+THEOREM G4_PAIR_SUPPORT_MINIMUM2 (computer-assisted).
+Use nonempty disjoint complete equivalence-partition promises, unrestricted
+class count, reliable indexed pair-equality queries, private input-independent
+seeds, zero error on every promised input, and worst-input expected final
+purchased-set fee. P uses one global order per seed and permits causal
+permanent SKIP; both classes see exactly the same query information.
+
+On any source with at most four queries, for every finite c_i>=0,lambda>=0
+and every pair e of distinct query indices,
+  F(S)=sum(i in S)c_i + lambda*1[S intersects e] implies R_A=R_P.
+Consequently, over all complete FOUR-query sources and pair-coverage fees,
+the minimum number of positive distinct pair weights allowing R_A<R_P is2.
+The same minimum holds with strictly positive individual charges.
+
+Proof.
+1. Complete source cover and inherited majority.
+The accepted441proof reduces arbitrary hidden/repeated records to endpoint
+SAME blocks and DIFFERENT filters, with fresh-class extension for sufficiency.
+Its actual full replay covers42864ordered tasks in1356query-permutation/label
+orbits. Literal-answer complementation is not used. The disjoint proof ledger
+has1300certificate-threshold,31pointwise-subset and14structural cases whose
+claims hold for EVERY finite normalized nonnegative monotone fee. A one-pair
+fee is in this class. These1345cases inherit that accepted proof; they were
+not freshly rerun or replaced by counts. The exact remaining sourceIDs are
+[1209, 1217, 1221, 1258, 1265, 1292, 1312, 1322, 1328, 1343, 1344].
+
+2. Exact transport and policy premise for the residual sources.
+Fresh direct witness projection checks both physical label supports for all
+11sources on all16answerwords. Fresh symbolic feasible-state recursion checks
+full adaptive and all24causal-skip priority minima, against the retained full
+policy families; original families are not assumed irredundant. The6957
+original policy/input paths and333936permuted/label-swapped paths are legal.
+For any query permutation sigma, rename query i and charge c_i to sigma(i),
+and rename e to sigma(e). Every purchased mask has the same five fee
+coefficients;2304coefficient identities check all24permutations,6pairs,16sets.
+This is an algebraic identity for all real parameters, not evaluated minimax
+games at sampled prices. The inverse maps strategies back, including the
+shared order and all skips. Input-independent seed distributions, perinput
+costs, maxima and positive-pair-support count are preserved.
+
+3. Continuous one-pair certificates.
+For each of the11sources and6pairs, all24closed individual-price order cones
+are covered. In a cone c_order[j]=d0+...+dj with d>=0; lambda is a fifth
+nonnegative coordinate. A path cost is a five-variable homogeneous linear
+form. Splits use two CLOSED halfcones and exact crossing generators; active
+rank-four constraints retain every extreme ray of each pointed full5Dcone.
+Zero prices,lambda0,price ties and all split boundaries remain included.
+The root orthants thus cover all continuous nonnegative parameters.
+
+There are1584roots,1776nodes,96splits,
+887full-game pure-saddle leaves and
+793dominance/full-original-row lifting leaves.
+All leaves close. The source1209proof is the accepted453/455proof; the other
+10sources have10new producers and10final separate readers, all exit0.
+Ten earlier reader passes are retained; a result metadata-key collision
+was repaired without changing any mathematical checking code or output.
+The compositionV01rejection and both reader versions remain on record.
+Separate-reader Fraction elimination checks cone ranks instead of using the
+producer's primitive-integer elimination. It replays every deletion, every
+full-original-input priority lift and every full-game saddle inequality.
+The full residual total is2704249scalar inequalities,
+with3275Fraction rank calls.
+
+At a pure leaf, one legal Ppolicy has cost at most an anchor on ALL inputs;
+every full adaptive policy costs at least that anchor on one original input.
+This directly gives R_A>=anchor>=R_P. At a lifting leaf, weak row/column
+deletions preserve the finite minimax value. Every removed row maps through
+the retained row chains to a common no-cheaper terminal row for ALL terminal
+columns. Each terminal adaptive column has a legal original Pcolumn whose
+cost is no greater on ALL original inputs, not only the surviving rows.
+Apply these replacements with the same private mixture weights. Then
+R_P<=R_A; policy inclusion gives R_A<=R_P. Full-game legal witnesses and
+the fresh completeness premise include zero-prior inputs. Thus every seedwise
+zero-error policy is covered and all11residual sources have equality.
+Together with steps1--2, all complete four-query sources have equality.
+
+4. Smaller menus and exact support threshold.
+For fewer queries, add fresh dummy record-pairs forcedDIFFERENT under each
+label, with zero individual charges and no membership in e. Every old world
+extends using fresh classes; dummy answers are constant0. Known-answer dummy
+purchases may be removed. Deleting them from each seed's global order is a
+legal permanent skip, so both minimax games and final fees are unchanged.
+The four-query equality therefore also covers all smaller menus.
+
+At four queries the accepted complete source1209hasW0={1,7,9} and
+W1={0,4,11,15}. Setc=(4,3,2,3),w_{1,2}=w_{2,3}=2,otherpairweights0.
+There is no global setup term. Its exact full-class and separate physical-DP
+checks give R_A=286/29,R_P=79/8, gap3/232>0. All individual charges are
+strictly positive and all proper set inclusions strictly increase the fee.
+At most one positive pair is excluded above; two positive pairs suffice.
+Therefore the over-source four-query support minimum is exactly2 in both
+the nonnegative and positive individual-charge classes. The old six-parameter
+box of radius1/1856 still has gap>=3/464 and stays in this two-pair class.
+
+Limits.
+This is an internal computer-assisted mathematical result, not human or
+external independent implementation review, a formal proof kernel, historical
+execution attestation, evidence of application advantage or a venue decision.
+No new fee/prior grid,LP,model API,hosted run,human labels or PDF is used.
+The result concerns pairwise activation at at most4queries; at larger menus
+additive gaps exist, so minimum2is not a resource lower bound for all menus.
+It does not classify every four-query submodular fee or every two-pair instance.
+The primary-literature priority comparison and portable combined proof
+delivery remain to be completed before strengthening the manuscript claim.

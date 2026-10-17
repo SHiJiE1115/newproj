@@ -1,0 +1,184 @@
+\section{An exact private-coin curve on the seven-query source}
+\label{app:seven-private-curve}
+This appendix returns to the complete source in Section~\ref{sec:seven}, with all sixteen template assignments and the original seven physical coordinates. Put
+\[
+ c_\varepsilon=(2,2,3,\varepsilon,1,1,1),\qquad \varepsilon\geq0,
+\]
+with additive fee $F_\varepsilon(S)=\sum_{i\in S}c_{\varepsilon,i}$. Abbreviate $R_{\mathcal C}(\varepsilon)=\RR_{\mathcal C}(W;F_\varepsilon)$, using the zero-error, worst-input expected-cost definition of Appendix~\ref{app:randomized-boundary}. Priority policies may randomize their global order and causal permanent skips; the input remains independent of the private seed.
+
+\begin{theorem}[Exact curve in one additive price family, computer-assisted]
+\label{thm:seven-private-curve}
+Let $\eta=\sqrt{19}-4$. On this fixed complete source,
+\begin{align}
+ R_{\mathcal A}(\varepsilon)&=\min\{4+\varepsilon,9/2\},\label{eq:seven-random-A}\\
+ R_{\mathcal P}(\varepsilon)&=
+ \begin{cases}
+ (\varepsilon^2+13\varepsilon+46)/(\varepsilon+11),&0\leq\varepsilon\leq\eta,\\
+ (17-2\varepsilon)/(4-\varepsilon),&\eta\leq\varepsilon\leq2/5,\\
+ 9/2,&\varepsilon\geq2/5.
+ \end{cases}\label{eq:seven-random-P}
+\end{align}
+Consequently, $R_{\mathcal P}>R_{\mathcal A}$ exactly when $0\leq\varepsilon<1/2$. All seven prices are strictly positive when $\varepsilon>0$. The priority value changes rational branch at $\eta$ and reaches its constant value at $2/5$. Its cost gap above the adaptive value closes only at $1/2$.
+\end{theorem}
+\begin{proof}
+We give explicit upper policies and the finite, full-class premises for matching lower bounds. Indices $0,\ldots,7$ enumerate the $A$ worlds lexicographically by $(\alpha,\beta,\gamma)$; indices $8,\ldots,15$ enumerate $B$ by $(\mu,\nu,\omega)$. The priors below certify lower bounds; none is an assumed population distribution.
+
+\emph{Upper policies.} Retain the notation $N_i(L,R)$ for a query with zero and one continuations. Set $U_i=N_i(B,A)$, $V_i=N_i(A,B)$ and
+\[
+ H=N_4\bigl(N_5(V_6,A),U_2\bigr).
+\]
+Five correct priority trees are
+\begin{align*}
+ T_0&=N_4\bigl(N_0(U_1,B),N_3(N_5(A,U_6),U_2)\bigr),\\
+ T_1&=N_3\bigl(N_0(U_1,N_5(U_2,U_6)),H\bigr),\\
+ T_2&=N_3\bigl(N_0(U_1,N_4(B,N_5(A,U_6))),H\bigr),\\
+ T_3&=N_0\bigl(U_1,N_3(N_5(U_4,U_6),U_2)\bigr),\\
+ T_4&=N_0(U_1,U_2).
+\end{align*}
+Table~\ref{tab:seven-private-orders} supplies one shared physical order for each entire tree, including both answer branches. Unused coordinates are permanently skipped.
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}cl@{}}\toprule
+Tree & Shared order of physical coordinates\\\midrule
+$T_0$ & $(4,0,1,3,2,5,6)$\\
+$T_1$ & $(3,0,1,4,5,2,6)$\\
+$T_2$ & $(3,0,1,4,2,5,6)$\\
+$T_3$ & $(0,1,3,2,5,4,6)$\\
+$T_4$ & $(0,1,2,3,4,5,6)$\\\bottomrule
+\end{tabular}
+\caption{Legal global orders for the explicit mixed-policy upper certificates. They are witnesses, not a restriction of the lower-bound comparison class.}
+\label{tab:seven-private-orders}
+\end{table}
+
+For the first branch, mix $T_0,T_1,T_2,T_3$ with probabilities
+\[
+ \frac{1}{\varepsilon+11}
+ \bigl(2+2\varepsilon,\ 3+\varepsilon,\ 4,\ 2-2\varepsilon\bigr).
+\]
+For every world, its expected-cost numerator is at most $\varepsilon^2+13\varepsilon+46$. The possible slacks are
+\[
+ \begin{gathered}
+ 0,\quad 7+\varepsilon,\quad14+2\varepsilon,\quad4+2\varepsilon-2\varepsilon^2,\\
+ 2-2\varepsilon^2,\quad2+2\varepsilon^2,\quad9+5\varepsilon+2\varepsilon^2.
+ \end{gathered}
+\]
+They are nonnegative on $[0,1/2]$, and some worlds attain the target. For the second branch, mix $T_0,T_1,T_2,T_4$ with probabilities
+\[
+ \frac{1}{4-\varepsilon}(1,1,1,1-\varepsilon).
+\]
+The target numerator is $17-2\varepsilon$; the possible slacks are $0,2,4,2-\varepsilon,1-\varepsilon,\varepsilon,3+\varepsilon$. Thus this is a legal upper bound on $[\eta,2/5]$.
+
+A probe-free upper bound $9/2$, valid for every $\varepsilon$, mixes $T_4$ with weight $1/2$ and
+\[
+ S_1=N_4(N_0(U_1,B),U_2),\qquad
+ S_2=N_4(N_1(B,V_0),U_2)
+\]
+with weights $1/4$ each. Shared orders for $S_1,S_2$ are $(3,4,0,1,2,5,6)$ and $(3,4,1,0,2,5,6)$; both skip coordinate $3$ without purchasing it. Direct evaluation of the sixteen worlds proves the bound. An adaptive witness buys $q_3$, with zero child $N_0(U_1,N_5(U_4,U_6))$ and one child $N_4(N_6(A,U_5),U_2)$. Its worst cost is at most $4+\varepsilon$. These supply all upper bounds needed below.
+
+\emph{Full-class lower certificates.} For any prior, every correct deterministic policy has average cost at least its exact Bayes optimum. The same lower bound holds for any input-independent mixture, and worst-input expectation is at least prior average. Correctness and leaf purity always retain all sixteen worlds, including those of prior mass zero.
+
+One constant prior puts masses $(6,1,1,4)/12$ on worlds $(0,4,5,15)$. Its adaptive root cost is
+\[
+ \min\{54,51+6\varepsilon,48+12\varepsilon\}/12
+ =\min\{9/2,4+\varepsilon\}.
+\]
+For the first priority branch, put prior numerators
+\[
+ (6,1-\varepsilon,1-\varepsilon,1-\varepsilon,2+4\varepsilon)
+\]
+on worlds $(0,4,5,13,15)$, with denominator $11+\varepsilon$. The complete priority cost frontier on $[0,1/2]$ reduces to
+\[
+ \varepsilon^2+13\varepsilon+46,\qquad49+5\varepsilon.
+\]
+Their difference, second minus first, is $3-8\varepsilon-\varepsilon^2$, nonnegative on $[0,\eta]$.
+For the second branch, use the same five worlds with numerators
+\[
+ \begin{gathered}
+ 6(1-\varepsilon),\quad(1-\varepsilon)^2,\quad(1-\varepsilon)^2,\\
+ (1-\varepsilon)^2,\quad-1+10\varepsilon-3\varepsilon^2
+ \end{gathered}
+\]
+and denominator $2(4-\varepsilon)$. The retained root polynomials are
+\[
+ 31+4\varepsilon+\varepsilon^2,\qquad34-4\varepsilon,
+ \qquad38-14\varepsilon.
+\]
+Relative to $34-4\varepsilon$, their differences are $\varepsilon^2+8\varepsilon-3$, $0$ and $4-10\varepsilon$. All are nonnegative on $[\eta,2/5]$. The priors normalize and are nonnegative on their stated intervals. They give the matching lower bounds.
+
+\emph{Finite premises and their coverage.} For each fixed physical permutation, a state consists of its remaining position and the feasible world set. A pure state costs zero; an exhausted mixed state is infeasible. Each other state compares permanently skipping the current query with purchasing it, adding prior mass times price and both response continuations under that same remaining order. Taking the minimum over all $5040$ permutations covers every causal-skip priority policy. Adaptive recursion instead chooses the next query at each feasible state. Constant-answer and post-purity purchases may be omitted because prices are nonnegative.
+
+The computations retain polynomial costs, pruning only by a domination relation valid on the entire declared parameter interval. Addition of common fees and independent response continuations preserves that relation. The first variable prior produces degree at most two. The second produces degree at most three; the cubic terms happen to cancel in the final three root witnesses. A separately implemented world-tuple recursion rebuilds every order, using different sufficient coefficient-dominance tests. Each per-order verification covers $1{,}763{,}124$ state instances over all orders. Polynomial nonnegativity is checked exactly at endpoints and internal derivative critical points, with quadratic algebraic endpoints where necessary. These are finite proof premises and exact real-interval sign checks, not a sampled price grid or a new general optimization method.
+
+Finally, at $2/5$ the matching value is $9/2$. Every fixed policy's cost is nondecreasing in $\varepsilon$, so minimization of worst-input expectation is also nondecreasing. The probe-free upper bound then proves the entire constant branch. Writing the first two formulas as $g,h$,
+\[
+ g-h=\frac{(1-\varepsilon)(\varepsilon^2+8\varepsilon-3)}
+                {(\varepsilon+11)(4-\varepsilon)}.
+\]
+Thus $\eta$ is an actual branch change, not just the failure of a selected prior. The formulas agree at their shared endpoints. Subtracting~\eqref{eq:seven-random-A} proves the gap assertion.
+\end{proof}
+
+The curved pieces satisfy $g=\varepsilon+2+24/(\varepsilon+11)$ and $h=2+9/(4-\varepsilon)$, so each has positive second derivative. Their first derivatives jump down at $\eta$, and the derivative drops to zero at $2/5$. Hence this explicit value curve is neither globally convex nor globally concave. This is a consequence of the displayed formulas, not a new general parametric-game principle. The result concerns one price family on one source. It does not determine a randomized minimum within additive or submodular fees, an all-additive-price ratio, or practical academic-evaluation gains.
+
+\section{A controlled recorded-identity realization with byte costs}
+\label{app:controlled-lineage-bytes}
+We separate a controlled realization of the query model from a natural academic task. A record here points to a locally recorded invocation identifier. Equality means the same recorded source invocation. Distinct identifiers do not establish statistical independence of research results, and the structural labels $A,B$ do not denote paper truth or quality.
+
+\begin{proposition}[Controlled byte-cost realization]
+\label{prop:controlled-lineage-bytes}
+The seven-query source admits a controlled recorded-identity realization with a trusted paid-bit interface and positive additive query-phase byte costs
+\[
+ L=(1535,1535,2303,255,767,767,767).
+\]
+In the valid-enrollment model, one executed adaptive tree has worst-input cost $3325$ bytes, while every correct privately randomized global-order policy has worst-input expected cost at least $57993/17$ bytes. Consequently,
+\[
+ R^{\rm byte}_{\mathcal P}-R^{\rm byte}_{\mathcal A}
+ \geq1468/17>0.
+\]
+The cost is newly returned explicit query-payload read buffers. No device-I/O, latency, dollar, unrestricted end-to-end or natural-task advantage is asserted.
+\end{proposition}
+\begin{proof}
+\emph{Source construction.} Give each block of a valid partition of the fourteen records a distinct registered invocation tag, and point every record in that block to the same tag. At most fourteen tags suffice. Conversely, the kernel of a record-to-tag map is an equivalence relation. A validator imposing only the original SAME blocks and DIFFERENT edges therefore admits exactly the complete source. The general registry and encoder allow up to fourteen roots; they do not impose a two-class promise. The exact sixteen-signature projection follows from Section~\ref{sec:seven}. Two tags suffice for representative witnesses, without replacing that complete-source proof by sampling.
+
+The controlled registry uses a unique fixed-length tag per invocation, echoed by a child together with its PID. A trusted parent retains the real process handle and records the actual exit and byte bindings. A query file contains only the two endpoint tags in JSON, followed by whitespace padding to $L_q$. The encoder has no label argument. The paid interface checks its fixed byte binding and returns only the equality bit. A fresh policy instance receives the same cost metadata for every possible world; it receives no root tags, world index, filenames, content hashes, harness order or unpaid preflight answers. This is an explicit trusted observation contract, not an OS sandbox or a historical author authenticator. Missing, malformed or changed enrollment would invalidate the source instance and remain unresolved, rather than becoming an opposite structural label.
+
+\emph{Actual cost and full-class comparison.} At $\varepsilon=1/3$, multiply the reference prices by three to obtain
+\[
+ c=(6,6,9,1,3,3,3),\qquad R_{\mathcal A}=13,
+ \quad R_{\mathcal P}=227/17.
+\]
+Choose $B=256$ and set $L_q=Bc_q-1$. A valid fixed-size file read with cap $L_q+1$ returns exactly $L_q$ bytes. Different queries have different physical files, and a repeated coordinate conveys no new information. For any deterministic policy and world,
+\[
+ C_{\rm byte}(T,w)=B C_c(T,w)-N_T(w),\qquad0\leq N_T(w)\leq7.
+\]
+The inequalities $BC_c-7\leq C_{\rm byte}\leq BC_c$ survive private expectation, worst-input maximization and minimization over either full policy class. The preceding theorem therefore gives
+\[
+ R^{\rm byte}_{\mathcal P}\geq256(227/17)-7=57993/17.
+\]
+The fixed adaptive tree was executed on every signature; its largest actual path cost is $3325$. Since the valid bit projection is complete and file lengths are fixed, this is an upper bound over the entire source, not just the particular root names used in the capture. It proves the stated difference. The new byte-price optima are not solved exactly.
+\end{proof}
+
+\paragraph*{Execution and independent checking.}
+The source map and cost argument were frozen and checked before starting the identity children. Exactly two trivial local identity invocations were captured, both with retained-handle exit zero; neither trained a model or reproduced an author's experiment. Their identifiers generated sixteen signature representatives and $112$ fixed-size payload files. One adaptive tree and all four components of the fixed reference priority mixture were actually executed on every signature, giving $80$ paths and $259$ query-payload reads. Input-independent weights $4/17,5/17,6/17,2/17$ give the exact expected costs in Table~\ref{tab:controlled-lineage-byte-costs}. No policies were selected or reoptimized after observing these traces.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}p{.52\linewidth}r@{}}\toprule
+Quantity in the controlled query phase & Bytes\\\midrule
+Executed adaptive tree, worst-input upper bound & $3325$\\
+Executed reference priority mixture, feasible upper bound & $58063/17$\\
+All randomized priority policies, analytical lower bound & $57993/17$\\
+Optimal priority minus optimal adaptive, lower bound & $1468/17$\\\bottomrule
+\end{tabular}
+\caption{Measured feasible bounds and a transferred full-class lower bound are different evidence types. Neither feasible policy is asserted optimal at the new byte prices.}
+\label{tab:controlled-lineage-byte-costs}
+\end{table}
+
+A separate program imports none of the source producer, encoder, paid oracle or policy interpreter. It checks the actual root receipts and stdout hashes, all $112$ raw files, their root assignments, source constraints and signatures, then reconstructs all $80$ policy paths, public observations and byte ledgers. It reuses the pinned complete $5040$-order reference certificate and checks the cost perturbation deduction. This combines an analytical complete-source argument with actual representative executions; it is not a proof-assistant kernel, human review or exhaustive execution of every partition/root count.
+
+\paragraph*{Common costs and limits.}
+Payload creation wrote $126864$ bytes and common enrollment read $126864$ bytes. These operations are shared preparation, not free work or information supplied to one policy. Evaluating all mixture components consumed $256509$ query bytes in total; that study cost is distinct from executing one component drawn from the deployed private mixture. Code/import/metadata readsets, OS caches and device transfers are outside the query-buffer metric. Root differences certify only the trusted local invocation identity relation. The two roots and sixteen representative signatures are one engineered fixture, not independent natural studies.
+
+The whitespace lengths were deliberately chosen to realize the reference fee family up to a bounded perturbation. Thus this proposition validates a controlled model implementation, not a natural pricing distribution or academic-evaluation benefit. It does not overturn the separate native equal-value and fee-transfer obstructions, the frozen model-study negatives, or the absence of human gold and historical paper authentication.
+
+\paragraph*{Evidence and manuscript status.}
+The exact curve and controlled realization have separately frozen local proof objects, actual process receipts and independent checks. Their private evidence ledger distinguishes prior results reused from new executions. They are not contained in the earlier public review archive, and no new public deposit or venue readiness is claimed. Existing numbered statements and proof bodies remain unchanged. Bibliographic priority, natural application advantage, author facts and final author approval remain unresolved or deferred.

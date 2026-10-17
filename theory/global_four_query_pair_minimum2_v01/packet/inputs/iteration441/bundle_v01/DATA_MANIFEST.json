@@ -1,0 +1,618 @@
+{
+  "schema": 1,
+  "status": "EXACT_SCIENTIFIC_PROJECTIONS_DATA_READY_CODE_AND_REPLAY_PENDING",
+  "datasets": {
+    "catalogue": {
+      "file": "data/catalogue.json.gz",
+      "compressed_bytes": 71008,
+      "compressed_sha256": "facc2b7e40aa88fd3b1ef7d9c4041ffaf2b7436587d476cfd5586232fea439d3",
+      "canonical_bytes": 1074000,
+      "canonical_sha256": "d7f6537d9bf779738f9047a9f48f15f1d1a67c30b8350d9dfd1a7aec0ddea494",
+      "projection": "exact fields query_pairs,partition_rows,support_witnesses",
+      "original_sources": [
+        {
+          "source_id": "iteration377/FOUR_QUERY_CATALOGUE_V01.json",
+          "raw_bytes": 3730204,
+          "raw_sha256": "31094b3103d10e75829247cd8ad4c4a888ae1b4920ed0f08910a7d9ee22d5f31"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "families": {
+      "file": "data/families.json.gz",
+      "compressed_bytes": 716605,
+      "compressed_sha256": "dd3cc25966e8b573125e7a3e582a2be5f63455c277ee49a51f861653e32eccbd",
+      "canonical_bytes": 7684688,
+      "canonical_sha256": "f93b29cabfe19a232a9803902f62674c579c9623a704dcee94edfb5fd543a23d",
+      "projection": "exact original rows,including ALLA/Pvectors,trees,orders,andpaidsets",
+      "original_sources": [
+        {
+          "source_id": "iteration378/POLICY_VECTOR_FAMILIES_V01.json",
+          "raw_bytes": 7685211,
+          "raw_sha256": "cce7b180a0040fa6a1ff3cd111f40910d1622258b41429a6f39856c1b557f9e5"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "ideals": {
+      "file": "data/ideals.json.gz",
+      "compressed_bytes": 422,
+      "compressed_sha256": "2877225d260c4f206f790c162e12ebd41c444002514ab98208b41568465e5b71",
+      "canonical_bytes": 820,
+      "canonical_sha256": "e58a2e8bd1c2aa43717969b199a218350c5529d6a24252d9ad804aa7b4401764",
+      "projection": "exact nonempty_ideals",
+      "original_sources": [
+        {
+          "source_id": "iteration385/BOOLEAN_LATTICE_IDEALS_V01.json",
+          "raw_bytes": 1914,
+          "raw_sha256": "aa1884420c8e711947cbf51cca5dcd38e5d26502c1a98cd1ad960e0ce6fd424e"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "threshold": {
+      "file": "data/threshold.json.gz",
+      "compressed_bytes": 111121,
+      "compressed_sha256": "901f544dbcbbbe0bf1901f506dc4ec82b3ae50fcb897a065a537504a1b84474a",
+      "canonical_bytes": 2030935,
+      "canonical_sha256": "caa6f20004b08ee97d1a635726b44a04655e37d04bd25e0bce0ef3d35f350181",
+      "projection": "exact1300successfulrows+originalsuccessindices;stronger-propertyfailuresnotusedasequalityproofs",
+      "original_sources": [
+        {
+          "source_id": "iteration385/MONOTONE_CERTIFICATE_OPTIMALITY_V01.json",
+          "raw_bytes": 10115567,
+          "raw_sha256": "80de7829d9a3ab7b6b87dd761a5294854760b11ea1ff3ee47acec638a1570efc"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "groups": {
+      "file": "data/groups.json.gz",
+      "compressed_bytes": 3229,
+      "compressed_sha256": "5b21ddc7493a0cc41465826b30e96044fdadaf7fd1d5e3c42e22bf79d3a34f2a",
+      "canonical_bytes": 7086,
+      "canonical_sha256": "2487ba36997f009544852303ea719dfde435d9d34939c37f552ac406bc4d6f7f",
+      "projection": "exact fixed proof-groupkind,orbits,fee_scope;omitmachine-evidencepaths",
+      "original_sources": [
+        {
+          "source_id": "iteration439/INTEGRATED_SCOPE_SPEC_V01.json",
+          "raw_bytes": 49391,
+          "raw_sha256": "a9aab60d3548594088169eace82b4deb53f2220aa62c2bc1eda91859205f7643"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct386": {
+      "file": "data/struct386.json.gz",
+      "compressed_bytes": 2631,
+      "compressed_sha256": "459c8afc31dee34eddec48261720247e6d0a45fba1fde6bd9c9e3fa2bfb118ac",
+      "canonical_bytes": 27970,
+      "canonical_sha256": "20536e848f4d8acb3aac266c7297cfef2014075c6480743290e7a60e7767ef51",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration386/TWO_COLUMN_MONOTONE_CERTIFICATE_V01.json",
+          "raw_bytes": 84253,
+          "raw_sha256": "212848ddb1f9220527fe7666054917dd93c7021f5c5724dbd7a22681518e7cd7"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct393": {
+      "file": "data/struct393.json.gz",
+      "compressed_bytes": 9690,
+      "compressed_sha256": "c136e50b9d0abae0ac9f003d78e051b08e39d6bb2425350d983860bc810b94cc",
+      "canonical_bytes": 87000,
+      "canonical_sha256": "37d94ef296d381fdce4cf3343727afb70ec86aba991541d8854dfd15c1c8ef15",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration393/THREE_COLUMN_CERTIFICATE_V01.json",
+          "raw_bytes": 210417,
+          "raw_sha256": "86ae841249ae2f06015f35544d9e5de3ebb25336633dce3483cc474031d06ad9"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct394": {
+      "file": "data/struct394.json.gz",
+      "compressed_bytes": 9318,
+      "compressed_sha256": "c5129a5ba40f141b4cdf6456e4e0ab62973534358dba3dec0d8319392c943556",
+      "canonical_bytes": 119664,
+      "canonical_sha256": "c50cf03a586513e3592a7fc36da01875b089589e699d14ad986754c685009ee5",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration394/SIGNED_TRANSFER_CERTIFICATE_V01.json",
+          "raw_bytes": 217238,
+          "raw_sha256": "2be468e38cd38552d372583688a84a6d425858aa8a356b2935c922e0dd833490"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct395": {
+      "file": "data/struct395.json.gz",
+      "compressed_bytes": 11819,
+      "compressed_sha256": "1e177bf6c567fd1467499becd0910c42526a0019f9e41225a79297727f8f8ccf",
+      "canonical_bytes": 181931,
+      "canonical_sha256": "6fec10495df91cb2a28e12aa64a4f5d04ff426b48f92ff66875f36d2e6f476dc",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration395/ROW_RETRACTION_CERTIFICATE_V01.json",
+          "raw_bytes": 312962,
+          "raw_sha256": "69cb0b1efc0937c9b024f9de27291651d69c326fde526165c22b243e6c8de861"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct396": {
+      "file": "data/struct396.json.gz",
+      "compressed_bytes": 14255,
+      "compressed_sha256": "2660e9dceed825e15f0ab0d3f0c69b67fb8880a32089cf823f643f42e0e8ba1b",
+      "canonical_bytes": 192223,
+      "canonical_sha256": "b33c1745608506ccaac09bba9aa3eac9577168c332a2644dc050bc528b090b82",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration396/TWO_CONE_CERTIFICATE_V01.json",
+          "raw_bytes": 399542,
+          "raw_sha256": "25bcafd7b25fbe633d361c87117372509a3a3ce8b466d0548e5cc8d4d022c0db"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct397": {
+      "file": "data/struct397.json.gz",
+      "compressed_bytes": 12282,
+      "compressed_sha256": "e9894c2bd846ba5b39f3ee395e8433cf1c6938a45349a85dd3dd1e92e5085440",
+      "canonical_bytes": 187949,
+      "canonical_sha256": "33cf22ae95f039c2f9d6af8f1ba7689bb0c9d996e445008612ab3d9428419567",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration397/AND_HINT_CERTIFICATE_V01.json",
+          "raw_bytes": 324141,
+          "raw_sha256": "af670f64bc17097ed3d90516ee005b6371199e437ba1dde5fee558515e237f85"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct398": {
+      "file": "data/struct398.json.gz",
+      "compressed_bytes": 12501,
+      "compressed_sha256": "e73b03301592b1b02e2a7280372c20180c87394b78bc8bcffe823731adf7cecb",
+      "canonical_bytes": 194113,
+      "canonical_sha256": "5c29c51b6a8f31b92f20ff2ebd8baaee5cd17b0f44b2ea185589de93f3671d37",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration398/PREFIX_RETRACTION_CERTIFICATE_V01.json",
+          "raw_bytes": 335026,
+          "raw_sha256": "8e42aca8d33be1280a498dc40dccfb3b5796ef2b60f062908725033b0a6aff62"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "struct399": {
+      "file": "data/struct399.json.gz",
+      "compressed_bytes": 11022,
+      "compressed_sha256": "5c7a87b51d6cfe69e0204bffdece6d4e7db57ccfb155cc7d726e4a5719579f50",
+      "canonical_bytes": 198324,
+      "canonical_sha256": "92835bdf1983fe7ec6e6e2a2cd41171aeb00f53680e1e7472882ab39c6f73e2b",
+      "projection": "allcertificatecontentexceptdeclaredoperationaltop-levelmetadata;opaqueprovenancepinsnormalized",
+      "original_sources": [
+        {
+          "source_id": "iteration399/CHAIN_SADDLE_CERTIFICATE_V01.json",
+          "raw_bytes": 339386,
+          "raw_sha256": "375879d49027f2ad5bd8cc69b3b05e4f8c87b19b11683ad3418f079cf70c913c"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1217": {
+      "file": "data/source1217.json.gz",
+      "compressed_bytes": 1431,
+      "compressed_sha256": "5475703cb58f9c9fefd11e0e6731135ab5c4ce54c66aa0d9227c96666916fe49",
+      "canonical_bytes": 14707,
+      "canonical_sha256": "7e2497810b9bfae3ad83c8967d159d9368b498583c54e351874bd84f9d3f53fa",
+      "projection": "exact source1217cones/roots/proofnodes;only29oldrealizingrecordsserial/task/domain/adaptiveprior/priorityupper;nochangednumericcase",
+      "original_sources": [
+        {
+          "source_id": "iteration380/RETAINED_CERTIFICATE_LIBRARIES_V01.json",
+          "raw_bytes": 1636567,
+          "raw_sha256": "56305c92ed6311d504f817b5db5b810bd3b47dc8c1a7dd9769ee11ff342570e3"
+        },
+        {
+          "source_id": "iteration378/COST_RESULTS_V01.jsonl",
+          "raw_bytes": 21289858,
+          "raw_sha256": "dc2ec6c6d8bedb343f75f09de26a49e89df723dafe62856ec7534b7a3e2ff8d3"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1209": {
+      "file": "data/source1209.json.gz",
+      "compressed_bytes": 9102,
+      "compressed_sha256": "9e9f2a5ea888a59f5f2bd509e23b7b46c0c8841de12d5789bfcb993238e6a08c",
+      "canonical_bytes": 271379,
+      "canonical_sha256": "a1334006501dd3290fbf1cb465a2ad8df31a22e6b158f16f8fd5854d72ae4ff2",
+      "projection": "exact complete cones,including failed preliminarytemplates retainedinside them",
+      "original_sources": [
+        {
+          "source_id": "iteration436/FULL_SOURCE_FAN_RESULT_V03.json",
+          "raw_bytes": 1293312,
+          "raw_sha256": "795cf7e42c0684da25a3a8826433e930e719b9b2021ef7e2a92e8ff6d3d52e9b"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1221": {
+      "file": "data/source1221.json.gz",
+      "compressed_bytes": 13089,
+      "compressed_sha256": "c31a6185d3792130edc5fefd597002e09d5d21f9ca40593b02362be024722212",
+      "canonical_bytes": 437130,
+      "canonical_sha256": "3e3553fc18899df939055c5a8f4f84587b76653750c689c40725a81eeb026d72",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1221/RESULT_V01.json",
+          "raw_bytes": 2129762,
+          "raw_sha256": "bf1e0c42ef96512ecb220f5b07f70d120cc7effe6959eecfc1c8f138542b049e"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1258": {
+      "file": "data/source1258.json.gz",
+      "compressed_bytes": 31978,
+      "compressed_sha256": "b33b7a69180f0d451547b0e5533fcf52134fa67c771433d09a3818e8befffbaa",
+      "canonical_bytes": 926751,
+      "canonical_sha256": "fda8a3ad62c60e5684d8ff83c77351d9d05259066fe687aebe750e7a9245ca9a",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1258/RESULT_V01.json",
+          "raw_bytes": 4536320,
+          "raw_sha256": "997b110cf6db037e16c6e204cdac432c2a1f4713d2669c264ee4309e9c0b29aa"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1265": {
+      "file": "data/source1265.json.gz",
+      "compressed_bytes": 34972,
+      "compressed_sha256": "5a3544636e46d3712ff92393fc99dfb1923419aa7cb090efa6186cced8de376c",
+      "canonical_bytes": 1088595,
+      "canonical_sha256": "4963ffaf66f616193a3404571be3e2f7e279228f903047e838d928449a23f60c",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1265/RESULT_V01.json",
+          "raw_bytes": 5093172,
+          "raw_sha256": "0cab5bbfeb17fbe24d738de86c73d0a05f026f1637530a0de18aa7c5bea41f33"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1292": {
+      "file": "data/source1292.json.gz",
+      "compressed_bytes": 40804,
+      "compressed_sha256": "4ae4d13cd440a1de1c2dfa1131f0e65ab229083290c33cae551fc63a8a535d83",
+      "canonical_bytes": 1254658,
+      "canonical_sha256": "8a9f50c93889855c8881c3564010c68c638fabef4bee986bc36d843f3565e089",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1292/RESULT_V01.json",
+          "raw_bytes": 6112609,
+          "raw_sha256": "c9c4f3db9807eb6bc8bb6967e938cc9f32850e403c3aa3ed43a7a59873a30491"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1312": {
+      "file": "data/source1312.json.gz",
+      "compressed_bytes": 29241,
+      "compressed_sha256": "74502d4a339bf2a6fffbf8336bb9ccdd92c6a15e94d55daf77983fdb68cd495e",
+      "canonical_bytes": 833221,
+      "canonical_sha256": "0126cfbabb15c4ad0e536699e2be65e73729ea807da2ef952f7fdfbde3482560",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1312/RESULT_V01.json",
+          "raw_bytes": 3992286,
+          "raw_sha256": "00d7ff3cb574b5ec3afcf35aac82202c3728967c3a49557a0c543cbcd587c07f"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1328": {
+      "file": "data/source1328.json.gz",
+      "compressed_bytes": 15829,
+      "compressed_sha256": "a1bc4c91fa787403893789b9972584ea051e027fac5f90c0eee53adbd3a3cd92",
+      "canonical_bytes": 516672,
+      "canonical_sha256": "d9cb466e19268318cb4cbb6ac57b936f45f2265a13533b53b83f73d73d302303",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1328/RESULT_V01.json",
+          "raw_bytes": 2583104,
+          "raw_sha256": "6ebf81e4d3bdfb15e28018a4144a2f80aaf898e35b9d9b18f32dc825972dde44"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1343": {
+      "file": "data/source1343.json.gz",
+      "compressed_bytes": 36120,
+      "compressed_sha256": "72ee3bd3b92c0fd17bb71e739c7fc572cdfe6b9e94de2ffa759de369d5c2ff43",
+      "canonical_bytes": 1105479,
+      "canonical_sha256": "cdec5a7035af885caea4ff4c87f855a456986fc763e4576c7f8495f11c9838b9",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1343/RESULT_V01.json",
+          "raw_bytes": 5309343,
+          "raw_sha256": "11d75fc8557bfddca577e780d01e49217d62ef51779859585b28c9307d8d72da"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1344": {
+      "file": "data/source1344.json.gz",
+      "compressed_bytes": 30971,
+      "compressed_sha256": "83cbf19449b6e0bd75bc0237c2dce0f8103a5df95c1ae40d096ab9792a6ef989",
+      "canonical_bytes": 893502,
+      "canonical_sha256": "b19787122fc0e3c0f08d74c0ede9ac873e809fc5313f0fb41ed9c0e404be5407",
+      "projection": "exact complete cones",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1344/RESULT_V01.json",
+          "raw_bytes": 4386833,
+          "raw_sha256": "8ecee2a40c30a85c1ef649e38887acc900453d2db46fae5c19ae52d4a6004b0a"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "source1322": {
+      "file": "data/source1322.json.gz",
+      "compressed_bytes": 28690,
+      "compressed_sha256": "ec0cff5db32d7dc323ca6d481b2790f0a9593398b6b6131911ccca5fb6c4d3a6",
+      "canonical_bytes": 845451,
+      "canonical_sha256": "64fc5baec254f74bb425a3dedbe739864684efc924217d07a25cabc74db92794",
+      "projection": "ALL24oldconesincluding2UNCLOSEDtraces;exact3newsubcones/coefficients/mixture/prior/transport;fulloriginal45A31P",
+      "original_sources": [
+        {
+          "source_id": "iteration437/cases/orbit_1322/RESULT_V01.json",
+          "raw_bytes": 3831134,
+          "raw_sha256": "0868a3e9feee5c6128ddb3df2abfa1b9a5d95e6ed2c10766b27562ac81b80fc5"
+        },
+        {
+          "source_id": "iteration438/PROOF_SPEC_V01.json",
+          "raw_bytes": 10028,
+          "raw_sha256": "38b3098d533055b8e5b1a60b62ff672f73e687f33592bb4d1d6ffd407d9e8bf4"
+        },
+        {
+          "source_id": "iteration438/SYMBOLIC_RESULT_V01.json",
+          "raw_bytes": 204823,
+          "raw_sha256": "e0180abb3fbebe2230ace862902347f8378742579c9b11c2a7c774b72ac36756"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    },
+    "seven": {
+      "file": "data/seven.json.gz",
+      "compressed_bytes": 660,
+      "compressed_sha256": "4e5b5d4e98bbb8e80b9c5a005003c773bd843bc8919ae3ddd886b37e368d0aab",
+      "canonical_bytes": 2000,
+      "canonical_sha256": "cebbc012c08469447608c30ab9b6dd3511d9ade3c16e216965dcc0f1fd312ffc",
+      "projection": "exact oldworldorder,Aupperexistingtrees,oldpolynomialprior/PupperatUNCHANGEDepsilon1/3,complete14recordconstruction;AuppernotrelabeledasnewexactAoptimum",
+      "original_sources": [
+        {
+          "source_id": "iteration363/FREE_PROBE_RESULT_V01.json",
+          "raw_bytes": 18187,
+          "raw_sha256": "4e12ec7af5f5faec4029d905daf9e517e9f258eb4fbf49d269988e8e6fb11f4d"
+        },
+        {
+          "source_id": "iteration428/PARAMETRIC_RESULT_V01.json",
+          "raw_bytes": 21337,
+          "raw_sha256": "328fd86ca07fbc7bd79ac3307f0663c12046d5601c78c8dbbaa4d0de3020033e"
+        },
+        {
+          "source_id": "iteration439/INTEGRATED_SCOPE_SPEC_V01.json",
+          "raw_bytes": 49391,
+          "raw_sha256": "a9aab60d3548594088169eace82b4deb53f2220aa62c2bc1eda91859205f7643"
+        },
+        {
+          "source_id": "iteration441/PACKET_SPEC_V01.json",
+          "raw_bytes": 26713,
+          "raw_sha256": "05ddd9191e8094e10b8ce93c069df58d70eb55ecba0cf503c7f5dfed7da20f8a"
+        }
+      ],
+      "only_opaque_provenance_paths_normalized": true
+    }
+  },
+  "analytic_proof_texts": [
+    {
+      "id": "struct386",
+      "file": "proofs/struct386.txt",
+      "bytes": 6933,
+      "sha256": "522c56cf482bc4f65db3a8e359c2e753be469b17b78d799b10b6bc359b00beb7",
+      "original_source_id": "iteration386/TWO_COLUMN_MONOTONE_PROOF_V01.txt",
+      "original_raw_sha256": "522c56cf482bc4f65db3a8e359c2e753be469b17b78d799b10b6bc359b00beb7",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "struct393",
+      "file": "proofs/struct393.txt",
+      "bytes": 4867,
+      "sha256": "c7b5e2513a59ed6035b124bedec90ea839e8cb6389e262507320386dff5676d3",
+      "original_source_id": "iteration393/THREE_COLUMN_SCOPE_ARGUMENT_V01.txt",
+      "original_raw_sha256": "c7b5e2513a59ed6035b124bedec90ea839e8cb6389e262507320386dff5676d3",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "struct394",
+      "file": "proofs/struct394.txt",
+      "bytes": 4243,
+      "sha256": "e068a6a905059de505c78d4478a867789c38c42468454cc828600fb8228f0f5b",
+      "original_source_id": "iteration394/SIGNED_TRANSFER_ARGUMENT_V01.txt",
+      "original_raw_sha256": "e068a6a905059de505c78d4478a867789c38c42468454cc828600fb8228f0f5b",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "struct395",
+      "file": "proofs/struct395.txt",
+      "bytes": 4283,
+      "sha256": "5943cc0cbfdf83be83b12d836e74eba5a8695e6564be7f7e64046857a021c3a5",
+      "original_source_id": "iteration395/ROW_RETRACTION_ARGUMENT_V01.txt",
+      "original_raw_sha256": "5943cc0cbfdf83be83b12d836e74eba5a8695e6564be7f7e64046857a021c3a5",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "struct396",
+      "file": "proofs/struct396.txt",
+      "bytes": 4495,
+      "sha256": "28b4e8ea8a15e1f86e401f9d8cf32f4d7ef0534b18285ff47f3ebc1c7c85f70e",
+      "original_source_id": "iteration396/TWO_CONE_SIMULATION_ARGUMENT_V01.txt",
+      "original_raw_sha256": "28b4e8ea8a15e1f86e401f9d8cf32f4d7ef0534b18285ff47f3ebc1c7c85f70e",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "struct397",
+      "file": "proofs/struct397.txt",
+      "bytes": 3927,
+      "sha256": "fcde63a30e4e8d91fcc01cb3acde5aab90e5b73c449696b335d71a79e81b25da",
+      "original_source_id": "iteration397/AND_HINT_ARGUMENT_V01.txt",
+      "original_raw_sha256": "fcde63a30e4e8d91fcc01cb3acde5aab90e5b73c449696b335d71a79e81b25da",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "struct398",
+      "file": "proofs/struct398.txt",
+      "bytes": 3147,
+      "sha256": "40e443bc911b14863882f1935af6e5ea1a4a345e92dbb3c7571decdbe419aa73",
+      "original_source_id": "iteration398/PREFIX_RETRACTION_ARGUMENT_V01.txt",
+      "original_raw_sha256": "40e443bc911b14863882f1935af6e5ea1a4a345e92dbb3c7571decdbe419aa73",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "struct399",
+      "file": "proofs/struct399.txt",
+      "bytes": 4074,
+      "sha256": "3c9d51fb7bdd65ef7ad5189c9f8c7d15bc43e5b3c983507a15e5ee108cc1f379",
+      "original_source_id": "iteration399/CHAIN_SADDLE_ARGUMENT_V01.txt",
+      "original_raw_sha256": "3c9d51fb7bdd65ef7ad5189c9f8c7d15bc43e5b3c983507a15e5ee108cc1f379",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "integrated",
+      "file": "proofs/integrated.txt",
+      "bytes": 11067,
+      "sha256": "8d7b7f24222b9776161ef73002b7634cad29b2e8c497d7fe429c88b3cf621175",
+      "original_source_id": "iteration439/INTEGRATED_THEOREM_AND_PROOF_V01.txt",
+      "original_raw_sha256": "8d7b7f24222b9776161ef73002b7634cad29b2e8c497d7fe429c88b3cf621175",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "catalogue",
+      "file": "proofs/catalogue.txt",
+      "bytes": 6231,
+      "sha256": "c9bdd33d7449f15d205ea6d45084eea852a6ae8a48921d7db14509e53196e940",
+      "original_source_id": "iteration377/SOURCE_CATALOGUE_COVERAGE_PROOF_V01.txt",
+      "original_raw_sha256": "c9bdd33d7449f15d205ea6d45084eea852a6ae8a48921d7db14509e53196e940",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "normalform",
+      "file": "proofs/normalform.txt",
+      "bytes": 5747,
+      "sha256": "293fa656664800bd5bb327998600becbdba7c3015229183050d56ba2add234af",
+      "original_source_id": "iteration378/POLICY_NORMAL_FORM_AND_COVERAGE_V01.txt",
+      "original_raw_sha256": "293fa656664800bd5bb327998600becbdba7c3015229183050d56ba2add234af",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "threshold",
+      "file": "proofs/threshold.txt",
+      "bytes": 5617,
+      "sha256": "565d15f5998840a6f990abfa52373cf19a5bdab66f7f9f1b4f87efc02ca30999",
+      "original_source_id": "iteration385/ALL_MONOTONE_IDEAL_ARGUMENT_V01.txt",
+      "original_raw_sha256": "84a0aae73568170bdc1ac3d2188da47373076b12a0a4116710842ef60eef1eef",
+      "operational_token_substitutions_only": [
+        {
+          "from_sha256": "9718873820a895ba74a95f19c30e6a76ec6fe19d15f73fd4178fadb04f2d29c7",
+          "replacement": "[local-volume-id]",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "file": "proofs/library.txt",
+      "bytes": 4399,
+      "sha256": "4fe029c1018d660f663042590a712dcecf267a9e21634569e568ed9c71947d4c",
+      "original_source_id": "iteration380/LIBRARY_COVERAGE_ARGUMENT_V01.txt",
+      "original_raw_sha256": "4fe029c1018d660f663042590a712dcecf267a9e21634569e568ed9c71947d4c",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "source1209",
+      "file": "proofs/source1209.txt",
+      "bytes": 3668,
+      "sha256": "d63ce5f4455674b60071058bfd203683523e55269446f92e811e04416c942ce5",
+      "original_source_id": "iteration436/FULL_SOURCE_FAN_ARGUMENT_V03.txt",
+      "original_raw_sha256": "d63ce5f4455674b60071058bfd203683523e55269446f92e811e04416c942ce5",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "batch",
+      "file": "proofs/batch.txt",
+      "bytes": 4701,
+      "sha256": "bd4b23b4044d7d3dcb154e3e943c74cb4310f2c5fd7c2b5ad5ed5d867d2b2065",
+      "original_source_id": "iteration437/PROOF_ARGUMENT_V01.txt",
+      "original_raw_sha256": "bd4b23b4044d7d3dcb154e3e943c74cb4310f2c5fd7c2b5ad5ed5d867d2b2065",
+      "operational_token_substitutions_only": []
+    },
+    {
+      "id": "source1322",
+      "file": "proofs/source1322.txt",
+      "bytes": 4809,
+      "sha256": "d8c733d2e9f7a7388b56fc8d69af47e033c5d2c8aef6116e6272bb49c45c1109",
+      "original_source_id": "iteration438/SOURCE1322_EXACT_ARGUMENT_V01.txt",
+      "original_raw_sha256": "d8c733d2e9f7a7388b56fc8d69af47e033c5d2c8aef6116e6272bb49c45c1109",
+      "operational_token_substitutions_only": []
+    }
+  ],
+  "full_scope": "completebinaryequivalencefibres,allnonnegativeadditiveprices,fullprivateAandcausal-skiprandom-orderP",
+  "reference_counts": {
+    "partitions": 4140,
+    "supports": 465,
+    "tasks": 42864,
+    "orbits": 1356,
+    "A_vectors": 39113,
+    "P_vectors": 33781,
+    "policy_input_paths": 629694,
+    "threshold_cells": 155995,
+    "old1217cones": 29,
+    "old7physical_orders": 5040
+  },
+  "minimum_interval": [
+    5,
+    7
+  ],
+  "old7_scope": "Afeasibleupper/Pmatchedminimax/gaploweronly;notnewexactAoptimumorwholeparametercurvereplay",
+  "analytic_lemma_treatment": "Complete arguments included; state explicitly which scalar lemma algebra is inspected as prooftext rather than a formal-proof kernel.",
+  "prior_work_scope": "Bounded primary positioning completed; literaturepriority and all-reduction review remainOPEN.",
+  "model_API_calls": 0,
+  "human_review": false,
+  "new_game_or_source_choice": false,
+  "historical_count_error": {
+    "source1217_initial_wrong_count": 26,
+    "actual_unchanged_old_count": 29,
+    "real_failed_reader_exit": 1,
+    "cardinality_only_correction": true,
+    "scientific_certificates_changed": false
+  }
+}

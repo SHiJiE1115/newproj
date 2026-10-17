@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "status": "PASS_ALL_SIX_SINGLE_PAIR_FAMILIES_ALL_CONTINUOUS_NONNEGATIVE_PARAMETERS",
+  "source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration449\\ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "scope": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\SYMBOLIC_PROOF_SCOPE_V02.json",
+    "bytes": 3226,
+    "sha256": "2e7dcd9050b4f13ed6908d991225c120b25aaab51d1dd4ad1dc5608b84d11082"
+  },
+  "proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\SYMBOLIC_SINGLE_PAIR_PROOF_V02.json.gz",
+    "bytes": 8641,
+    "sha256": "1c7d1631191a6f466506f3b1cf437af2a41d2330ade909e028a0220f729099f0"
+  },
+  "physical_partitions": [
+    [
+      {
+        "coarsening": [
+          0,
+          0,
+          1
+        ],
+        "word": 7
+      },
+      {
+        "coarsening": [
+          0,
+          1,
+          0
+        ],
+        "word": 9
+      },
+      {
+        "coarsening": [
+          0,
+          1,
+          2
+        ],
+        "word": 1
+      }
+    ],
+    [
+      {
+        "coarsening": [
+          0,
+          0,
+          0
+        ],
+        "word": 15
+      },
+      {
+        "coarsening": [
+          0,
+          0,
+          1
+        ],
+        "word": 11
+      },
+      {
+        "coarsening": [
+          0,
+          1,
+          0
+        ],
+        "word": 4
+      },
+      {
+        "coarsening": [
+          0,
+          1,
+          1
+        ],
+        "word": 0
+      },
+      {
+        "coarsening": [
+          0,
+          1,
+          2
+        ],
+        "word": 0
+      }
+    ]
+  ],
+  "W0": [
+    1,
+    7,
+    9
+  ],
+  "W1": [
+    0,
+    4,
+    11,
+    15
+  ],
+  "original_paths_checked": 504,
+  "original_A_P_counts": [
+    40,
+    32
+  ],
+  "full_policy_completeness": "Inherited unchanged original source1209 monotone-cost catalogue and its earlier completeness proof; no new catalogue generated",
+  "parameter_root_cones_verified": 144,
+  "closed_single_pair_families": 6,
+  "counts": {
+    "nodes": 164,
+    "splits": 10,
+    "closed_lifting_leaves": 81,
+    "pure_saddle_leaves": 73,
+    "column_deletions": 5533,
+    "row_deletions": 342,
+    "full_original_row_P_lifts": 252,
+    "scalar_inequalities": 223769,
+    "exact_fraction_rank_calls": 289
+  },
+  "exact_rank_method": "Independent Fraction Gauss-Jordan, not producer integer primitive elimination",
+  "continuous_cover_lemma": "Sorted-price orthants cover c>=0; exact half-cone crossing generators and active rank-four extreme-ray pruning preserve full five-dimensional pointed cones and closed boundaries",
+  "game_bridge": "Every deletion preserves reduced finite minimax; removed row inequalities remain on terminal columns. All-original-row P-lifts give RP<=RA, while P subset A gives reverse. Full-game saddle leaves directly prove equality.",
+  "claim": "For this fixed source only, RA=RP for F(S)=sum(c_i over i in S)+lambda*1{S intersects e}, all c_i,lambda>=0 and all six physical pairs e",
+  "no_all_prior_Bayes_equality_claim": true,
+  "numeric_games_LP_price_or_prior_grids_new_model_API_or_human_review": false,
+  "same_agent_separate_reader_not_external_human_or_formal_kernel": true,
+  "whole_project_complete": false
+}

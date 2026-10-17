@@ -1,0 +1,854 @@
+{
+  "schema": 1,
+  "status": "PASS_INTERNAL_COMPUTER_ASSISTED_ALL_COMPLETE_FOUR_QUERY_ONE_PAIR_EQUALITY_AND_MINIMUM_POSITIVE_PAIR_SUPPORT2",
+  "theorem_id": "G4_PAIR_SUPPORT_MINIMUM2",
+  "statement": "For every nonempty disjoint complete equivalence-partition promise on at most four indexed pair-equality queries, every finite c_i>=0 and any one distinct two-query group e with lambda>=0, F(S)=sum_{i in S}c_i+lambda*1{S intersects e} satisfies R_A=R_P in the private-seed zero-error worst-input expected final-set-cost model. Over all complete FOUR-query sources, the minimum number of positive distinct pair-setup weights permitting R_A<R_P is exactly2, also with strictly positive individual charges.",
+  "proof_modules": {
+    "inherited_complete_source_cover_and1345_monotone_equalities": {
+      "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/ACCEPTANCE_V01.json",
+      "bytes": 10287,
+      "sha256": "6017a6db0d7f6f9811ff569a3e3f18eb833fd9808194a0af3234ab8ce1d7190b"
+    },
+    "fresh_residual_physical_completeness_and_pair_fee_transport": {
+      "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+      "bytes": 201200,
+      "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512"
+    },
+    "all11_residual_sources_closed": [
+      {
+        "source_id": 1209,
+        "reader_result_origin": "Inheritedactual455whole-objectreplayof453separatechecker",
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+          "bytes": 3576,
+          "sha256": "09a8499c3ec8cbb1cb8b4689a59b8b8180579dcd51887333e0f2a924cbd060d0"
+        },
+        "portable_whole_science_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration455/ACTUAL_REPLAY_RESULT_V03.json",
+          "bytes": 77914,
+          "sha256": "9b27f4c86284142b10d4b8c1f7cbde657d431f23de21682d3e04cfe2866a769d"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 164,
+          "splits": 10,
+          "closed_lifting_leaves": 81,
+          "pure_saddle_leaves": 73,
+          "column_deletions": 5533,
+          "row_deletions": 342,
+          "full_original_row_P_lifts": 252,
+          "scalar_inequalities": 223769,
+          "exact_fraction_rank_calls": 289
+        }
+      },
+      {
+        "source_id": 1217,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_RESULT_V02.json",
+          "bytes": 3921,
+          "sha256": "46bac0f2642839b1f76b4e0464c25972ad545fc92c419320974f22b0a18dc52b"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_SPEC_V02.json",
+          "bytes": 1242,
+          "sha256": "e35865f7301144200781b6d0d01958506a8471154e48344bafd0ff81d2f5f5a2"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 148,
+          "splits": 2,
+          "closed_lifting_leaves": 54,
+          "pure_saddle_leaves": 92,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 2871,
+          "row_deletions": 223,
+          "full_original_row_P_lifts": 169,
+          "scalar_inequalities": 126349,
+          "exact_fraction_rank_calls": 175
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1217",
+            "pid": 15820,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1217.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "17d8d0a7903191ce0d8d9e4d917dbe0618d2c9028fe8405db6bf98dd42c3d128"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1217",
+            "pid": 26120,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1217.PROCESS_TERMINAL.json",
+              "bytes": 270,
+              "sha256": "288a7d3298367e4e99b8c5517bf1e53577b4861a2ecef10c8674d9ae2de34453"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1221,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3929,
+          "sha256": "c43fada13f36d57c7383f9e772b04e83eb72e8cb79cb59fefb45aa64a84d38e4"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/READER_SPEC_V02.json",
+          "bytes": 1515,
+          "sha256": "0485d681016281d59b048ed0711a8ad4a562f363a56a9c760d8b870e412260af"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 60,
+          "pure_saddle_leaves": 84,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 2615,
+          "row_deletions": 195,
+          "full_original_row_P_lifts": 445,
+          "scalar_inequalities": 127785,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1221",
+            "pid": 21044,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1221.PROCESS_TERMINAL.json",
+              "bytes": 268,
+              "sha256": "06c5116cad933f57ef57bc09568664dde9a35c48aca4bc1fc79593e15a76bf3c"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1221",
+            "pid": 17992,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1221.PROCESS_TERMINAL.json",
+              "bytes": 268,
+              "sha256": "8679eda91584877bbe83ef2bbf4d2367bd6c1816039b3341b90f75d536326084"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1258,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3946,
+          "sha256": "d5255ab5bcf34f0e4ba676f49dd508d001e5869cc960064d5f088afd8979e9fa"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/READER_SPEC_V02.json",
+          "bytes": 1515,
+          "sha256": "87985a3f49529d5314d04ada38516382b0eb5560f72307a703451aaac35daecb"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 48,
+          "pure_saddle_leaves": 96,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 3832,
+          "row_deletions": 296,
+          "full_original_row_P_lifts": 104,
+          "scalar_inequalities": 206720,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1258",
+            "pid": 26380,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1258.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "1ce58b961cce22421dc6471fadbe0b7c85d81273dff2fbcfd52b1312a7bca362"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1258",
+            "pid": 10368,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1258.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "1af79bc9c45e330bb0bb77c858c143c3f233c7ec3464403a85093a7393ae6442"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1265,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3889,
+          "sha256": "b0d1377cb673351d086fb410491a51f500aaefefb7e21b9520effad88f77135f"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/READER_SPEC_V02.json",
+          "bytes": 1515,
+          "sha256": "3a157f65c17cccebcaab7acd7be297d8b86ac3520db7d09ccc1c1bd736ab4593"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 162,
+          "splits": 9,
+          "closed_lifting_leaves": 49,
+          "pure_saddle_leaves": 104,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 4084,
+          "row_deletions": 199,
+          "full_original_row_P_lifts": 318,
+          "scalar_inequalities": 212354,
+          "exact_fraction_rank_calls": 313
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1265",
+            "pid": 1656,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1265.PROCESS_TERMINAL.json",
+              "bytes": 265,
+              "sha256": "7a024ef57447b9fda4cd4b45ad66fa1ca288a598402907b7efe932f54769b0ac"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1265",
+            "pid": 27584,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1265.PROCESS_TERMINAL.json",
+              "bytes": 268,
+              "sha256": "7575ce2a892dcbb00cc0597cfcc28900f23be27ebd10bfae26a44eba1471950f"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1292,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3904,
+          "sha256": "c9c0f48386dc4ee5e89beaeb34f61bea8c29e9634b00cad5b223105c29dda729"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/READER_SPEC_V02.json",
+          "bytes": 1516,
+          "sha256": "66fd5d4075e8f9037341633747d42bd8b9d376a1dd59b4021ce1dac83aa478b9"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 48,
+          "pure_saddle_leaves": 96,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 4608,
+          "row_deletions": 351,
+          "full_original_row_P_lifts": 96,
+          "scalar_inequalities": 271350,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1292",
+            "pid": 25856,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1292.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "5d3f2a07f1571eddbd369357929660ff65eb7824178ae9ab76dc071fe5249b90"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1292",
+            "pid": 12908,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1292.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "40c93c33e46fb28648b7a013f004e0827c2db562497cb78645b3fa2112106297"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1312,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3886,
+          "sha256": "f5fc8f06b49387a358e75e1e3da9bd7c33c9a14ec2f3716a2ceb2a5dcc78bac7"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/READER_SPEC_V02.json",
+          "bytes": 1515,
+          "sha256": "8f45af7c38445625983de69fed5d3de5e508cec9410c98d86f37d4aaab4f2c2e"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 84,
+          "pure_saddle_leaves": 60,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 6408,
+          "row_deletions": 471,
+          "full_original_row_P_lifts": 144,
+          "scalar_inequalities": 281970,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1312",
+            "pid": 20960,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1312.PROCESS_TERMINAL.json",
+              "bytes": 268,
+              "sha256": "9f98eddede77bc47f7e745ecbb4d0b532aec297c6a0d58edc9da48c434a1b77b"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1312",
+            "pid": 26488,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1312.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "d81c18317fc4fac814c91c3b6d255656198a38946a42ea37b2cdd403f63e0f4c"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1322,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3893,
+          "sha256": "1c3158fbc738cfcf7ef4ca2ba81d47fd1c56a2256bd02d92311028b9fa82e7ec"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/READER_SPEC_V02.json",
+          "bytes": 1516,
+          "sha256": "e1fd8ee0d3e0689a9e89f2846ff3674387b79d11599122ba93a5b44cda9b9112"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 262,
+          "splits": 59,
+          "closed_lifting_leaves": 167,
+          "pure_saddle_leaves": 36,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 10569,
+          "row_deletions": 705,
+          "full_original_row_P_lifts": 689,
+          "scalar_inequalities": 478848,
+          "exact_fraction_rank_calls": 1203
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1322",
+            "pid": 20988,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1322.PROCESS_TERMINAL.json",
+              "bytes": 270,
+              "sha256": "9184a48eb5e72214e3a6470a7dd13227291c0b8699151a2b67ae2b63fd20f29c"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1322",
+            "pid": 20672,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1322.PROCESS_TERMINAL.json",
+              "bytes": 268,
+              "sha256": "d94b6229e0200993a767c853843e11308011d62c90cf08c7a3955f7fc02e8c6d"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1328,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3890,
+          "sha256": "099e3290b36351c645af30495be5ae567993d4f5cef67633cda44d4cb13bb395"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/READER_SPEC_V02.json",
+          "bytes": 1515,
+          "sha256": "b284b8476d88faceb00ed1ddbebd471b95ccca9378687d9fb003b1ae805a95b9"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 176,
+          "splits": 16,
+          "closed_lifting_leaves": 46,
+          "pure_saddle_leaves": 114,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 2226,
+          "row_deletions": 170,
+          "full_original_row_P_lifts": 264,
+          "scalar_inequalities": 125984,
+          "exact_fraction_rank_calls": 431
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1328",
+            "pid": 27408,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1328.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "4c49af6437b1219829d8feb6e7ecd7f738ee066c7ff6e77cb6f3ed4780edd412"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1328",
+            "pid": 25260,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1328.PROCESS_TERMINAL.json",
+              "bytes": 270,
+              "sha256": "7b00a7aa590854be76d88ce9cea1d599a940415d8f72333c2efe974c7fa037f6"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1343,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3897,
+          "sha256": "4b4ef70d3f6d30873bc2f67deb87e3e25731410a0542c9dbb7113f06a9f5231d"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/READER_SPEC_V02.json",
+          "bytes": 1515,
+          "sha256": "f338dde81819a2470416f662083642a66a90abdfae91c9e02f7e3866ec1e9e59"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 72,
+          "pure_saddle_leaves": 72,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 6408,
+          "row_deletions": 406,
+          "full_original_row_P_lifts": 216,
+          "scalar_inequalities": 326230,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1343",
+            "pid": 26876,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1343.PROCESS_TERMINAL.json",
+              "bytes": 270,
+              "sha256": "a946ca3f2708ddd628cd8982e9a6024cc2ed3e5540fa77318d9cbd8ebce5c449"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1343",
+            "pid": 26644,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1343.PROCESS_TERMINAL.json",
+              "bytes": 270,
+              "sha256": "f594d78e2d0c6ce07c895c2f257866bf3f6dc82be48cd784874ec2a7535062d9"
+            }
+          }
+        ]
+      },
+      {
+        "source_id": 1344,
+        "reader_result": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SEPARATE_READER_RESULT_V02.json",
+          "bytes": 3897,
+          "sha256": "763d4adde882d972718d319b63a1fab659a9ac957c1ebd75bf30043c541a4e2d"
+        },
+        "reader_spec": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/READER_SPEC_V02.json",
+          "bytes": 1515,
+          "sha256": "4ac34510e8ca44703bd9763de33aee10ee127116f5471a566a937e0c98b44aaa"
+        },
+        "roots": 144,
+        "counts": {
+          "nodes": 144,
+          "splits": 0,
+          "closed_lifting_leaves": 84,
+          "pure_saddle_leaves": 60,
+          "fixed_rational_minimax_leaves": 0,
+          "unclosed_leaves": 0,
+          "not_started_roots": 0,
+          "column_deletions": 6588,
+          "row_deletions": 555,
+          "full_original_row_P_lifts": 132,
+          "scalar_inequalities": 322890,
+          "exact_fraction_rank_calls": 144
+        },
+        "actual_phases": [
+          {
+            "phase": "PROVE_SOURCE1344",
+            "pid": 19280,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1344.PROCESS_TERMINAL.json",
+              "bytes": 269,
+              "sha256": "70d709f05fe53ed635ee698d9afce63be53118ce45644dcca7a9d070b91b9841"
+            }
+          },
+          {
+            "phase": "REREAD_SOURCE1344",
+            "pid": 10304,
+            "actual_exit_code": 0,
+            "terminal": {
+              "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1344.PROCESS_TERMINAL.json",
+              "bytes": 270,
+              "sha256": "11e9c3da85981f004f795c00970012ba2e7e788e701b7a46558c06990453c8c8"
+            }
+          }
+        ]
+      }
+    ],
+    "inherited_two_pair_fullclass_witness": {
+      "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/TWO_PAIR_FULL_CLASS_RESULT_V01.json",
+      "bytes": 11698,
+      "sha256": "c757f5b131d57c02407e0d5048d6527c4057b3abd7fa5a2b5798f4be75803f70"
+    },
+    "inherited_separate_physical_DP": {
+      "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/TWO_PAIR_SEPARATE_DP_RESULT_V01.json",
+      "bytes": 9022,
+      "sha256": "516ad5659582da7b7ac4ddd7da0e5097f1e0792fbb72845f0969e0f2daa37461"
+    },
+    "inherited_robustness": {
+      "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/DERIVED_PAIR_RESOURCE_MINIMUM_V01.json",
+      "bytes": 3054,
+      "sha256": "0c2c893d68cf11084f181181b50dabd207b74e697f75a5ce29e21251fd5d8374"
+    }
+  },
+  "source_cover": {
+    "all_canonical_orbits": 1356,
+    "inherited_monotone_closed_orbits": 1345,
+    "one_pair_residual_orbits": 11,
+    "original_ordered_tasks": 42864,
+    "fresh_residual_ordered_tasks": 408,
+    "physical_supports_rechecked": 22
+  },
+  "residual_cones": 1584,
+  "residual_counts": {
+    "nodes": 1776,
+    "splits": 96,
+    "closed_lifting_leaves": 793,
+    "pure_saddle_leaves": 887,
+    "column_deletions": 55742,
+    "row_deletions": 3913,
+    "full_original_row_P_lifts": 2829,
+    "scalar_inequalities": 2704249,
+    "exact_fraction_rank_calls": 3275
+  },
+  "original_residual_policy_input_paths": 6957,
+  "new_source_producers": 10,
+  "final_accepted_separate_readers": 10,
+  "actual_separate_reader_passes_including_metadata_repair": 20,
+  "retained_metadata_repair": {
+    "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/READER_METADATA_REPAIR_V02.json",
+    "bytes": 6674,
+    "sha256": "eb8ea8a7410c803b0a0ebaa6c606baf598efcd6070f1536443d92b03cd9aaf7d"
+  },
+  "new_real_process_terminals": [
+    {
+      "phase": "PROVE_SOURCE1217",
+      "pid": 15820,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1217.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "17d8d0a7903191ce0d8d9e4d917dbe0618d2c9028fe8405db6bf98dd42c3d128"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1217",
+      "pid": 26120,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1217.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "288a7d3298367e4e99b8c5517bf1e53577b4861a2ecef10c8674d9ae2de34453"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1221",
+      "pid": 21044,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1221.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "06c5116cad933f57ef57bc09568664dde9a35c48aca4bc1fc79593e15a76bf3c"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1221",
+      "pid": 17992,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1221.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "8679eda91584877bbe83ef2bbf4d2367bd6c1816039b3341b90f75d536326084"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1258",
+      "pid": 26380,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1258.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "1ce58b961cce22421dc6471fadbe0b7c85d81273dff2fbcfd52b1312a7bca362"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1258",
+      "pid": 10368,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1258.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "1af79bc9c45e330bb0bb77c858c143c3f233c7ec3464403a85093a7393ae6442"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1265",
+      "pid": 1656,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1265.PROCESS_TERMINAL.json",
+        "bytes": 265,
+        "sha256": "7a024ef57447b9fda4cd4b45ad66fa1ca288a598402907b7efe932f54769b0ac"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1265",
+      "pid": 27584,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1265.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "7575ce2a892dcbb00cc0597cfcc28900f23be27ebd10bfae26a44eba1471950f"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1292",
+      "pid": 25856,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1292.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "5d3f2a07f1571eddbd369357929660ff65eb7824178ae9ab76dc071fe5249b90"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1292",
+      "pid": 12908,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1292.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "40c93c33e46fb28648b7a013f004e0827c2db562497cb78645b3fa2112106297"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1312",
+      "pid": 20960,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1312.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "9f98eddede77bc47f7e745ecbb4d0b532aec297c6a0d58edc9da48c434a1b77b"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1312",
+      "pid": 26488,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1312.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "d81c18317fc4fac814c91c3b6d255656198a38946a42ea37b2cdd403f63e0f4c"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1322",
+      "pid": 20988,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1322.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "9184a48eb5e72214e3a6470a7dd13227291c0b8699151a2b67ae2b63fd20f29c"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1322",
+      "pid": 20672,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1322.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "d94b6229e0200993a767c853843e11308011d62c90cf08c7a3955f7fc02e8c6d"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1328",
+      "pid": 27408,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1328.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "4c49af6437b1219829d8feb6e7ecd7f738ee066c7ff6e77cb6f3ed4780edd412"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1328",
+      "pid": 25260,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1328.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "7b00a7aa590854be76d88ce9cea1d599a940415d8f72333c2efe974c7fa037f6"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1343",
+      "pid": 26876,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1343.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "a946ca3f2708ddd628cd8982e9a6024cc2ed3e5540fa77318d9cbd8ebce5c449"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1343",
+      "pid": 26644,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1343.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "f594d78e2d0c6ce07c895c2f257866bf3f6dc82be48cd784874ec2a7535062d9"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1344",
+      "pid": 19280,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1344.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "70d709f05fe53ed635ee698d9afce63be53118ce45644dcca7a9d070b91b9841"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1344",
+      "pid": 10304,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1344.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "11e9c3da85981f004f795c00970012ba2e7e788e701b7a46558c06990453c8c8"
+      }
+    }
+  ],
+  "source1209_original_proof_and1345cases_inherited_not_rerun": true,
+  "one_pair_class_monotone_normalized": "Nonnegative individual charges plus nonnegative activation on intersection with a pair is finite,normalized and monotone; hence fits the1345older proofs.",
+  "fewer_than4query_extension": "Pad with fresh query pairs forcedDIFFERENT under both labelpriors,eachdummyindividualcharge0and outside the shared pair. Every old physicalworld extends with fresh classes,so projected support is oldW times constantzero answers. Erasing these known-answer dummies preserves both fullAandcausal-skipPgames and every final fee. The four-query exclusion therefore implies all smaller menus.",
+  "upper_witness": {
+    "source1209": {
+      "W0": [
+        1,
+        7,
+        9
+      ],
+      "W1": [
+        0,
+        4,
+        11,
+        15
+      ]
+    },
+    "individual_charges": [
+      4,
+      3,
+      2,
+      3
+    ],
+    "positive_pair_groups": [
+      [
+        [
+          1,
+          2
+        ],
+        2
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        2
+      ]
+    ],
+    "all_other_pair_weights": 0,
+    "separate_global_setup": false,
+    "R_A": "286/29",
+    "R_P": "79/8",
+    "gap": "3/232",
+    "relative_saving_to_RP": "3/2291",
+    "strictly_increasing_coverage_fee": true,
+    "six_coordinate_robust_radius": "1/1856",
+    "robust_gap_at_least": "3/464"
+  },
+  "scope_limits": [
+    "Completeequivalencepromises,unrestrictedclasscount,disjointlabelprojections,atmost4indexedqueries",
+    "Individualchargespluspairintersectionactivationcosts;notarbitrarylargerresourcegroups",
+    "Minimum2isoverallcompleteFOUR-querysources;notalllargermenus,whereadditivegapsalreadyexist",
+    "Existenceoftwo-pairgapdoesnotclaimeverytwo-pairfeeorsourcehasagap",
+    "Privatezeroerrorminimaxwithfullcausalskippriority;notallevery-priorBayesequality",
+    "No all-four-querygeneral-submodularclassification or practicalapplicationadvantage follows"
+  ],
+  "bibliographic_priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "internal_computer_assisted_proof_not_external_human_independent_or_formal_kernel_review": true,
+  "new_numeric_fee_prior_grid_LP_API_hosted_humanlabels_PDF_or_publicupload": false,
+  "whole_project_complete": false
+}

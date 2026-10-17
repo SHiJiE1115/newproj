@@ -1,0 +1,11 @@
+{
+  "pid": 25096,
+  "actual_exit_code": 0,
+  "timed_out": false,
+  "completed_utc": "2026-10-17T09:32:20.733501+00:00",
+  "wall_seconds": 2.7860154999943916,
+  "full_process_CPU": {
+    "seconds": 2.15625,
+    "method": "GetProcessTimes on retained child handle; whole process including imports"
+  }
+}

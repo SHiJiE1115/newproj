@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "status": "PASS_SOURCEWISE_PAIR_SUPPORT_MINIMUM_EXACTLY2_WITH_SPARSE_ROBUSTNESS",
+  "claim_scope": {
+    "source_orbit": 1209,
+    "W0": [
+      1,
+      7,
+      9
+    ],
+    "W1": [
+      0,
+      4,
+      11,
+      15
+    ],
+    "fee_family": "nonnegative additive individual costs plus nonnegative distinct two-query coverage groups; no global setup",
+    "minimum_positive_pair_support": 2,
+    "minimum_also_with_strictly_positive_individual_costs": 2,
+    "not_an_all_four_query_sources_lower_bound": true,
+    "not_arbitrary_resource_group_sizes": true
+  },
+  "one_pair_proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+    "bytes": 3471,
+    "sha256": "cb35eda9d24ac7e2c0d16a001334510310d122f306868954ede33f50f264db4e"
+  },
+  "two_pair_full_class_proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\TWO_PAIR_FULL_CLASS_RESULT_V01.json",
+    "bytes": 11698,
+    "sha256": "c757f5b131d57c02407e0d5048d6527c4057b3abd7fa5a2b5798f4be75803f70"
+  },
+  "two_pair_catalogue_free_DP": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\TWO_PAIR_SEPARATE_DP_RESULT_V01.json",
+    "bytes": 9022,
+    "sha256": "516ad5659582da7b7ac4ddd7da0e5097f1e0792fbb72845f0969e0f2daa37461"
+  },
+  "theorem_and_proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration453\\PAIR_RESOURCE_MINIMUM_THEOREM_AND_PROOF_V01.txt",
+    "bytes": 12435,
+    "sha256": "9d76c0a1750f5b7dee00aaef2cd01ad239ab63d4e137b32bc356891908c060d3"
+  },
+  "exact_RA": "286/29",
+  "exact_RP": "79/8",
+  "exact_gap": "3/232",
+  "RP_over_RA": "2291/2288",
+  "relative_cost_reduction_versus_P": "3/2291",
+  "uniform_fee_lipschitz": {
+    "per_class_constant": 1,
+    "gap_loss_constant": 2,
+    "fee_sup_radius": "3/928",
+    "gap_lower_bound": "3/464",
+    "scope": "Valid fixed-task fees only; an arbitrary fee-vector box is not asserted to be submodular"
+  },
+  "sparse_coverage_parameter_box": {
+    "dimensions": 6,
+    "parameters": "c0,c1,c2,c3,w12,w23",
+    "coordinate_radius": "1/1856",
+    "sup_fee_deviation_bound": "3/928",
+    "smallest_resource_weight_lower_bound": "3711/1856",
+    "gap_lower_bound": "3/464",
+    "positive_exactly2_pair_groups_preserved": true,
+    "strictly_increasing_coverage_submodular": true,
+    "strict_on_all_incomparable_pairs": false
+  },
+  "prior_sourcewise_support_interval": [
+    1,
+    6
+  ],
+  "new_exact_sourcewise_support": 2,
+  "old_query_menu_minimum_coverage_submodular": 4,
+  "old_global_additive_menu_interval": [
+    5,
+    7
+  ],
+  "new_point_evaluations": 1,
+  "new_price_prior_grid_LP_model_hosted_human_calls": 0,
+  "not_in_public_V22_yet": true,
+  "bibliographic_priority": "OPEN",
+  "real_application_advantage": "NOT_ESTABLISHED",
+  "CCF_acceptance_guaranteed": false,
+  "independent_external_human_or_formal_review": false,
+  "whole_project_complete": false
+}

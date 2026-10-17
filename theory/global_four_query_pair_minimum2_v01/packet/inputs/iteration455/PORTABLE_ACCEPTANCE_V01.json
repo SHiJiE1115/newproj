@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_PORTABLE_NEW_PROOF_WITH_COMPLETE_FAMILY_DEPENDENCY_AND_DISCLOSED_WORDING_DEFECT",
+  "ZIP": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\pair_resource_support_minimum2_v03.zip",
+    "bytes": 60676,
+    "sha256": "a914d66770c3c7d345556de5649189a61b5fa2cc29177948964b8ae0044cbcbe"
+  },
+  "members": 19,
+  "actual_result": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\ACTUAL_REPLAY_RESULT_V03.json",
+    "bytes": 77914,
+    "sha256": "9b27f4c86284142b10d4b8c1f7cbde657d431f23de21682d3e04cfe2866a769d"
+  },
+  "correspondence": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\RELOCATION_CORRESPONDENCE_V03.json",
+    "bytes": 4268,
+    "sha256": "61eb8a2b978297a74cf49e7a17c69412369c76e4606a9414310afb600390699d"
+  },
+  "whole_science_sha256": "60c7651a570a39e9ef775d3e4cb8548e66872b08285310548dacad53c66d2a6a",
+  "all_top_level_keys": {
+    "single_pair": 22,
+    "full_class": 21,
+    "separate_dp": 27,
+    "derived": 26
+  },
+  "all_nested_value_counts": {
+    "dicts": 177,
+    "lists": 92,
+    "integers": 494,
+    "booleans": 24,
+    "strings": 265,
+    "nulls": 0,
+    "floats": 0
+  },
+  "mathematical_field_exclusions": [],
+  "original_four_core_source_bytes_unchanged": true,
+  "actual_parent_pid": 27152,
+  "actual_five_children": [
+    {
+      "component": "source_completeness",
+      "pid": 8296,
+      "actual_exit_code": 0
+    },
+    {
+      "component": "single_pair",
+      "pid": 21684,
+      "actual_exit_code": 0
+    },
+    {
+      "component": "full_class",
+      "pid": 23320,
+      "actual_exit_code": 0
+    },
+    {
+      "component": "separate_dp",
+      "pid": 18248,
+      "actual_exit_code": 0
+    },
+    {
+      "component": "derived",
+      "pid": 16912,
+      "actual_exit_code": 0
+    }
+  ],
+  "full_profile_counts": [
+    40,
+    32
+  ],
+  "independently_reconstructed_minimal_counts": [
+    35,
+    27
+  ],
+  "all_original_504_paths_legal": true,
+  "full_family_completeness": "PASS",
+  "original_irredundancy_hypothesis": "REFUTED",
+  "exact_manuscript_descriptor_defect": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\EXACT_MANUSCRIPT_CORRECTION_V01.json",
+    "bytes": 1685,
+    "sha256": "0d72f9d8bc83b9808fc867c9daa830c49c7ca07078a4ed8c59b90af0f10eda29"
+  },
+  "old_numeric_claims_or_original_data_changed": false,
+  "failed_attempts_retained": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\ACTUAL_REPLAY.PROCESS_TERMINAL.json",
+      "bytes": 238,
+      "sha256": "e3037658720bb3553a0654570431266610df540c584d557d105a12eeb0f7194c"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\ACTUAL_REPLAY_V02.PROCESS_TERMINAL.json",
+      "bytes": 236,
+      "sha256": "77fdd00ccff000bb07af7a5a2c8e3ef657684504b537dd0b55e8bf889d0b4f76"
+    }
+  ],
+  "repairs": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\TRANSPORT_REPAIR_V02.json",
+      "bytes": 1661,
+      "sha256": "22bc0472a4e8da14b3a1add6bdd97a30cc36635525451a32da3aefc871bcca5a"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\COMPLETENESS_REPAIR_V03.json",
+      "bytes": 2562,
+      "sha256": "960d69488ca0d1855fdc48ab796f100ce1d7153579ba42f6f1f16f204ef532d4"
+    }
+  ],
+  "brief": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\RESEARCH_RESULT_BRIEF_ZH_V01.txt",
+    "bytes": 1936,
+    "sha256": "94871a4a30426f4874a1ff87cf1948691e1a0e1ec4e2c114a1d03b45da57f350"
+  },
+  "next": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration455\\NEXT_FIX_DESCRIPTOR_AND_REVIEWED_DELIVERY_V01.json",
+    "bytes": 2967,
+    "sha256": "cf0780c71c9e70e8f516fa2d904246092c498d368ea5a2b8180090c5f4558844"
+  },
+  "human_or_external_independent_or_formal_review": false,
+  "model_calls_or_new_human_labels_or_hosted_runs": 0,
+  "PDF_edited_or_public_uploaded": false,
+  "BC_MANUSCRIPT_READY": false,
+  "whole_project_complete": false
+}

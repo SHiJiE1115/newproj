@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "status": "RETAINED_METADATA_REPAIRS_NOT_NEW_MATHEMATICAL_FINDINGS",
+  "current_public_metadata_ledger_repair": {
+    "schema": 1,
+    "status": "VERSIONED_NONSCIENTIFIC_FILE_CLASSIFICATION_REPAIR_BEFORE_ANY_PUBLIC_DERIVATIVE_MATH_REPLAY",
+    "cause": "V01computed old/new file classification before writing its new public README, so the ledger incorrectly counted README among unchanged files. No mathematical or replay result is affected.",
+    "repair": "Declare the subsequent README document edit in changed files and remove it from unchanged files. Retain V01 ZIP, ledger and real builder receipt. Freeze a fresh V02 derivative before actual replay.",
+    "public_derivative_mathematical_children_started_before_repair": 0,
+    "original_math_programs_scopes_proof_files_unchanged": true
+  },
+  "retained_V01_public_candidate_ZIP_sha256": "a95078172d97e2cfa552c688ee8211e38918fc44478a1d81955f56e1bca6ef49",
+  "V01_builder_real_terminal": {
+    "pid": 12988,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "completed_utc": "2026-10-17T10:38:09.176340+00:00",
+    "wall_seconds": 25.616075400001137,
+    "full_process_CPU": {
+      "seconds": 4.890625,
+      "method": "GetProcessTimes on retained child handle; whole process including imports"
+    }
+  },
+  "V02_builder_real_terminal": {
+    "pid": 24620,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "completed_utc": "2026-10-17T10:39:15.775552+00:00",
+    "wall_seconds": 24.53496729998733,
+    "full_process_CPU": {
+      "seconds": 4.96875,
+      "method": "GetProcessTimes on retained child handle; whole process including imports"
+    }
+  },
+  "origin_private_windows_repairs": [
+    {
+      "schema": 1,
+      "status": "VERSIONED_WINDOWS_AUDIT_COMMAND_TRANSPORT_REPAIR_BEFORE_ANY_MATHEMATICAL_CHILD",
+      "failed_outer_pid": 3728,
+      "failed_portable_parent_pid": 26336,
+      "actual_exit_code": 1,
+      "cause": "Windows subprocess.Popen audit event supplies a command-line string, not the original argv list. The strict list comparison rejected the first host storage gate before a child launch.",
+      "repair": "Compare against subprocess.list2cmdline of the exact allowlisted argv on Windows, and verify executable plus cwd. No broad command permission. POSIX retains exact argv comparison.",
+      "new_runtime": "replay_v02.py",
+      "retained": "V01 ZIP, extracted tree, staged work, stdout/stderr and actual exit receipts retained.",
+      "mathematical_program_or_scope_or_predicate_change": false,
+      "new_model_or_numeric_experiment": false
+    },
+    {
+      "schema": 1,
+      "status": "VERSIONED_EXPLICIT_EXECUTABLE_TRANSPORT_REPAIR_BEFORE_ANY_MATHEMATICAL_CHILD",
+      "failed_outer_pid": 18192,
+      "failed_parent_pid": 27256,
+      "actual_exit_code": 1,
+      "cause": "Windows Popen defaults the explicit executable audit argument to None, although argv has the interpreter. The separate executable identity assertion rejected that None before launch.",
+      "repair": "Pass executable=sys.executable explicitly to Popen. Retain exact command-line, exact executable and exact cwd allowlist checks. No mathematical code, parameters, scopes, or checks change.",
+      "all_failed_v01_v02_artifacts_retained": true,
+      "mathematical_children_started_in_either_failed_attempt": 0
+    }
+  ],
+  "public_math_replay_only_started_after_V02_frozen": true,
+  "no_mathematical_core_or_scope_or_price_changed": true
+}

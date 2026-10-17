@@ -1,0 +1,2375 @@
+{
+  "schema": 1,
+  "status": "ACTUAL_PUBLIC_DERIVATIVE_WINDOWS_LOCAL_REPLAY_RECORD_PRESENTATION_VIEW",
+  "actual_parent_start": {
+    "pid": 26028,
+    "command": [
+      "runtime-or-host-origin://python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/replay_v03.py",
+      "--work",
+      "artifact-origin://scratch/iteration461_public_proof_v02",
+      "--out",
+      "artifact-origin://artifacts/iteration461/actual_public_proof_v02",
+      "--host-storage-guard",
+      "host-environment://storage_guard.py"
+    ],
+    "script_sha256": "858da25c3cfde71a50dee530178cc4c25c0f4082552953299ed3b3365a63be37",
+    "started_utc": "2026-10-17T10:40:08.336367+00:00"
+  },
+  "actual_parent_terminal": {
+    "pid": 26028,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "wall_seconds": 71.51960869997856,
+    "CPU_seconds_retained_handle": 4.734375,
+    "completed_utc": "2026-10-17T10:41:19.776622+00:00"
+  },
+  "actual_outer_start": {
+    "pid": 1688,
+    "command": [
+      "runtime-or-host-origin://python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "artifact-origin://artifacts/iteration461/execute_public_proof_v02.py"
+    ],
+    "started_utc": "2026-10-17T10:39:52.020067+00:00",
+    "script_sha256": "6c1ba4fca1dc3a7778f8690d4cb160a0df630c00f7ace20dcd40ec04d23b0897"
+  },
+  "actual_outer_terminal": {
+    "pid": 1688,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "completed_utc": "2026-10-17T10:41:19.887848+00:00",
+    "wall_seconds": 87.91057049998199,
+    "full_process_CPU": {
+      "seconds": 0.796875,
+      "method": "GetProcessTimes on retained child handle; whole process including imports"
+    }
+  },
+  "all25_mathematical_children": [
+    {
+      "phase": "AUDIT_RESIDUAL",
+      "start": {
+        "pid": 12152,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/audit_remaining_sources_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/AUDIT_RESIDUAL.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\audit\\\\iteration458\\\\REMAINING_SOURCE_AUDIT_V01.json\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\audit\\\\iteration458\\\\RESIDUAL_SOURCE_PROJECTIONS_V01.json\"]"
+        ],
+        "started_utc": "2026-10-17T10:40:23.843325+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/audit_remaining_sources_v02.py",
+          "bytes": 14329,
+          "sha256": "c3298f571fa8a8a349ae5cfae34d20f46e0434a72181e8a9d5c7f2dbd4960711"
+        }
+      },
+      "terminal": {
+        "pid": 12152,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:28.311958+00:00",
+        "wall_seconds": 4.518427300004987,
+        "full_process_CPU": {
+          "seconds": 3.28125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/audit_remaining_sources_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/ACCEPTANCE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/LOCAL_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/DATA_MANIFEST.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/MANIFEST.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/README.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/algebra.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/catalogue.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/catalogue.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/families.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/groups.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/ideals.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/seven.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1209.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1217.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1221.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1258.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1265.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1292.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1312.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1322.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1328.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1343.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/source1344.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct386.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct393.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct394.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct395.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct396.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct397.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct398.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/struct399.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/data/threshold.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/policies.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/prices.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofio.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/batch.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/catalogue.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/integrated.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/library.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/normalform.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/source1209.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/source1322.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct386.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct393.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct394.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct395.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct396.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct397.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct398.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/struct399.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/proofs/threshold.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/seven.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/structures.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration441/bundle_v01/verify.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/audit_remaining_sources_v02.py"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/AUDIT_RESIDUAL.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 23216,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:23.651162+00:00",
+        "wall_seconds": 0.3215495999902487,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "06bbdc7f2e1e9de437a7a0f129371c2ff1fb4f5602fe45fffe28286108dae9b3"
+    },
+    {
+      "phase": "MAJORITY_1345",
+      "start": {
+        "pid": 27644,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/majority_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/MAJORITY_1345.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\MAJORITY_RESULT_V01.json\"]"
+        ],
+        "started_utc": "2026-10-17T10:40:29.108586+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/majority_v01.py",
+          "bytes": 966,
+          "sha256": "ee12ec7332dc3bfe683964327d467c682fc1eb38af6ad125b06aa232617910c3"
+        }
+      },
+      "terminal": {
+        "pid": 27644,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:33.453684+00:00",
+        "wall_seconds": 4.376304000004893,
+        "full_process_CPU": {
+          "seconds": 3.171875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/majority_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/DATA_MANIFEST.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/MANIFEST.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/README.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/__pycache__/algebra.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/__pycache__/proofio.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/__pycache__/structures.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/algebra.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/catalogue.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/catalogue.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/families.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/groups.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/ideals.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/seven.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1209.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1217.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1221.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1258.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1265.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1292.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1312.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1322.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1328.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1343.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/source1344.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct386.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct393.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct394.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct395.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct396.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct397.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct398.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/struct399.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/data/threshold.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/policies.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/prices.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofio.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/batch.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/catalogue.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/integrated.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/library.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/normalform.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/source1209.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/source1322.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct386.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct393.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct394.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct395.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct396.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct397.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct398.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/struct399.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/proofs/threshold.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/seven.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/structures.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/bundle_v01/verify.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/majority_v01.py"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/MAJORITY_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/MAJORITY_1345.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 13736,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:28.960626+00:00",
+        "wall_seconds": 0.24310970000806265,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "602eae14e967b4cf8b6386793af108ee3f8ffa6058d9c8d9010ddd7b7820a019"
+    },
+    {
+      "phase": "READ_SOURCE1209",
+      "start": {
+        "pid": 23400,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/read_single_pair_proof_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/READ_SOURCE1209.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration453\\\\SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json\"]"
+        ],
+        "started_utc": "2026-10-17T10:40:34.408935+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/read_single_pair_proof_v01.py",
+          "bytes": 11564,
+          "sha256": "d78e42a3b58d5d073932feadfcf070ac9bde95442982d179ab4ff87557cf8cec"
+        }
+      },
+      "terminal": {
+        "pid": 23400,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:35.161710+00:00",
+        "wall_seconds": 0.8092975000035949,
+        "full_process_CPU": {
+          "seconds": 0.46875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/read_single_pair_proof_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration449/ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/SYMBOLIC_PROOF_SCOPE_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/SYMBOLIC_SINGLE_PAIR_PROOF_V02.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/read_single_pair_proof_v01.py"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/READ_SOURCE1209.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 10140,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:34.069748+00:00",
+        "wall_seconds": 0.34835820001899265,
+        "full_process_CPU": {
+          "seconds": 0.140625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "795771a7fe2f464cdadba500e2e7d62223b5c3c2999dc40a198fee9cd07536de"
+    },
+    {
+      "phase": "PROVE_SOURCE1217",
+      "start": {
+        "pid": 15820,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source1217_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1217.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\SOURCE1217_SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\SOURCE1217_SINGLE_PAIR_RESULT_V01.json\"]"
+        ],
+        "started_utc": "2026-10-17T10:40:35.787464+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source1217_v01.py",
+          "bytes": 12182,
+          "sha256": "e8f20f86e212196fa3499df81b696e82c046039fd6e4f9a9dcd544bb56bd6243"
+        }
+      },
+      "terminal": {
+        "pid": 15820,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:36.487203+00:00",
+        "wall_seconds": 0.7491687000147067,
+        "full_process_CPU": {
+          "seconds": 0.53125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source1217_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_ORIGINAL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source1217_v01.py"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1217.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 12140,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:35.571634+00:00",
+        "wall_seconds": 0.27188360001309775,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "e7a2b27c6d489968e456b6119256439a9cc9e4f0fcfc8d5ed3391617586d4514"
+    },
+    {
+      "phase": "REREAD_SOURCE1217",
+      "start": {
+        "pid": 26120,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1217.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\SOURCE1217_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:40:37.061511+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 26120,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:37.494925+00:00",
+        "wall_seconds": 0.45602860001963563,
+        "full_process_CPU": {
+          "seconds": 0.28125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_ORIGINAL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1217.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 22304,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:36.795491+00:00",
+        "wall_seconds": 0.21744269999908283,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "84bb9bad0b959b12e9f5deab542c9a567ba0d204fda57ca5d6135c16bfe27e2a"
+    },
+    {
+      "phase": "PROVE_SOURCE1221",
+      "start": {
+        "pid": 21044,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1221.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1221\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1221\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:40:38.300761+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 21044,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:38.819640+00:00",
+        "wall_seconds": 0.5454863000195473,
+        "full_process_CPU": {
+          "seconds": 0.3125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1221.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 5376,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:38.060798+00:00",
+        "wall_seconds": 0.2638992999854963,
+        "full_process_CPU": {
+          "seconds": 0.15625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "935ebb14527838cf0729712c62d6c67da69d7192769c8c39c89e75a62774b9b8"
+    },
+    {
+      "phase": "REREAD_SOURCE1221",
+      "start": {
+        "pid": 17992,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1221.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1221\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:40:39.856722+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 17992,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:40.390105+00:00",
+        "wall_seconds": 0.5615184999769554,
+        "full_process_CPU": {
+          "seconds": 0.3125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1221.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 26544,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:39.664662+00:00",
+        "wall_seconds": 0.5752621999999974,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "827e84e8e70ebda3f9fbbaabb4655677fa47906657a4f12e0bc64e5ab2dfbe58"
+    },
+    {
+      "phase": "PROVE_SOURCE1258",
+      "start": {
+        "pid": 26380,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1258.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1258\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1258\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:40:41.387274+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 26380,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:42.252098+00:00",
+        "wall_seconds": 0.907542500004638,
+        "full_process_CPU": {
+          "seconds": 0.546875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1258.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 15124,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:41.134472+00:00",
+        "wall_seconds": 0.2618138999969233,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "e20d97462bb407db5a4bb10e931cb0164d242720690194c6e4b886344abb838e"
+    },
+    {
+      "phase": "REREAD_SOURCE1258",
+      "start": {
+        "pid": 10368,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1258.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1258\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:40:43.264802+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 10368,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:43.890249+00:00",
+        "wall_seconds": 0.7661430999869481,
+        "full_process_CPU": {
+          "seconds": 0.40625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1258.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 7768,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:42.911053+00:00",
+        "wall_seconds": 0.3676649999979418,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "56839e8d0ad0af20870966e3cf8b230ce252bc2d66c60864cbd86b726fe1f447"
+    },
+    {
+      "phase": "PROVE_SOURCE1265",
+      "start": {
+        "pid": 1656,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1265.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1265\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1265\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:40:45.040793+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 1656,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:46.235679+00:00",
+        "wall_seconds": 1.2733412999950815,
+        "full_process_CPU": {
+          "seconds": 0.75,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1265.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 20512,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:44.611166+00:00",
+        "wall_seconds": 0.35618100001011044,
+        "full_process_CPU": {
+          "seconds": 0.15625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "76d766e9694af2a89cb23d2537237fe6c70eed27ddd9843d93d5e345229e1b69"
+    },
+    {
+      "phase": "REREAD_SOURCE1265",
+      "start": {
+        "pid": 27584,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1265.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1265\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:40:47.071363+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 27584,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:47.745040+00:00",
+        "wall_seconds": 0.716180900024483,
+        "full_process_CPU": {
+          "seconds": 0.53125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1265.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 19732,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:46.804408+00:00",
+        "wall_seconds": 0.32609190000221133,
+        "full_process_CPU": {
+          "seconds": 0.15625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "9104d5d694a0af88853edccca76a63d6d9f97c7b6d351264a8dda73e4f705009"
+    },
+    {
+      "phase": "PROVE_SOURCE1292",
+      "start": {
+        "pid": 25856,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1292.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1292\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1292\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:40:48.432408+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 25856,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:49.823844+00:00",
+        "wall_seconds": 1.4128008000261616,
+        "full_process_CPU": {
+          "seconds": 0.96875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1292.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 1680,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:48.280465+00:00",
+        "wall_seconds": 0.24821310001425445,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "d52f72e4afe3a1ca4342f355865240e0481234c5aacec892657af2e0e5ed7f20"
+    },
+    {
+      "phase": "REREAD_SOURCE1292",
+      "start": {
+        "pid": 12908,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1292.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1292\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:40:51.721973+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 12908,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:52.415368+00:00",
+        "wall_seconds": 0.7743029000121169,
+        "full_process_CPU": {
+          "seconds": 0.53125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1292.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 7924,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:51.054649+00:00",
+        "wall_seconds": 0.6659966000006534,
+        "full_process_CPU": {
+          "seconds": 0.140625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "1f63a5bcdc71a91f6e5909fe14b98d416f9bba0d57e91b691fc18fa94138fb7b"
+    },
+    {
+      "phase": "PROVE_SOURCE1312",
+      "start": {
+        "pid": 20960,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1312.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1312\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1312\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:40:53.122232+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 20960,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:54.286225+00:00",
+        "wall_seconds": 1.2135535000124946,
+        "full_process_CPU": {
+          "seconds": 0.8125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1312.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 12448,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:52.848497+00:00",
+        "wall_seconds": 0.2723593999980949,
+        "full_process_CPU": {
+          "seconds": 0.171875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "e329a4b3d5f0b528716e2b13a88f703b45bcf0e50019bb44b8728388d6ecfa28"
+    },
+    {
+      "phase": "REREAD_SOURCE1312",
+      "start": {
+        "pid": 26488,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1312.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1312\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:40:55.143102+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 26488,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:55.827103+00:00",
+        "wall_seconds": 0.7518359999812674,
+        "full_process_CPU": {
+          "seconds": 0.53125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1312.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 18656,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:54.784940+00:00",
+        "wall_seconds": 0.2414596000162419,
+        "full_process_CPU": {
+          "seconds": 0.109375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "45236da1420f3c4f00874c717797ab71f0ac579d0e34997d5f6cde7a599ccc1a"
+    },
+    {
+      "phase": "PROVE_SOURCE1322",
+      "start": {
+        "pid": 20988,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1322.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1322\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1322\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:40:56.521693+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 20988,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:59.213749+00:00",
+        "wall_seconds": 2.7489969999878667,
+        "full_process_CPU": {
+          "seconds": 2.046875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1322.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 14320,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:56.296851+00:00",
+        "wall_seconds": 0.26712490001227707,
+        "full_process_CPU": {
+          "seconds": 0.140625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "54261f5e3a86db2f9f63aae65c3df61a5735c0f8d122d89dacbc700d703650c0"
+    },
+    {
+      "phase": "REREAD_SOURCE1322",
+      "start": {
+        "pid": 20672,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1322.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1322\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:41:00.044885+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 20672,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:01.223141+00:00",
+        "wall_seconds": 1.2458081000077073,
+        "full_process_CPU": {
+          "seconds": 0.9375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1322.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 10124,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:40:59.796104+00:00",
+        "wall_seconds": 0.30400979999103583,
+        "full_process_CPU": {
+          "seconds": 0.09375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "a1d0e53a0517630e954e450631eb7ea067580e1001a527026160c48fd568dbd4"
+    },
+    {
+      "phase": "PROVE_SOURCE1328",
+      "start": {
+        "pid": 27408,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1328.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1328\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1328\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:41:02.464654+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 27408,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:03.171185+00:00",
+        "wall_seconds": 0.7523036999918986,
+        "full_process_CPU": {
+          "seconds": 0.53125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1328.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 27468,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:01.939359+00:00",
+        "wall_seconds": 0.38109899999108166,
+        "full_process_CPU": {
+          "seconds": 0.15625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "fb97a9f58d40ea2c8e295ba89c3a9910116e90ff93067f3d53d8e912f8031a56"
+    },
+    {
+      "phase": "REREAD_SOURCE1328",
+      "start": {
+        "pid": 25260,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1328.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1328\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:41:04.186682+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 25260,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:04.769734+00:00",
+        "wall_seconds": 0.6419669000024442,
+        "full_process_CPU": {
+          "seconds": 0.484375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1328.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 26616,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:03.778122+00:00",
+        "wall_seconds": 0.3481831999961287,
+        "full_process_CPU": {
+          "seconds": 0.109375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "47748ce0686cfa112c18979c6cccc7794c3efccfd47897a25ec69d2c1726fb24"
+    },
+    {
+      "phase": "PROVE_SOURCE1343",
+      "start": {
+        "pid": 26876,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1343.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1343\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1343\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:41:05.754050+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 26876,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:09.409084+00:00",
+        "wall_seconds": 3.7359785999869928,
+        "full_process_CPU": {
+          "seconds": 2.921875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1343.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 17368,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:05.522817+00:00",
+        "wall_seconds": 0.35509820000152104,
+        "full_process_CPU": {
+          "seconds": 0.140625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "6621a129227dc73e6169566373b96ed258a969edbfde2da382c2fe06ac06ae72"
+    },
+    {
+      "phase": "REREAD_SOURCE1343",
+      "start": {
+        "pid": 26644,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1343.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1343\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:41:10.106576+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 26644,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:10.857444+00:00",
+        "wall_seconds": 0.8127399999939371,
+        "full_process_CPU": {
+          "seconds": 0.578125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1343.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 12844,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:09.907623+00:00",
+        "wall_seconds": 0.26352229999611154,
+        "full_process_CPU": {
+          "seconds": 0.109375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "e39315ac150286087a6db83532f0a3ed4443b94cd626f9612d0962fbaa5b516e"
+    },
+    {
+      "phase": "PROVE_SOURCE1344",
+      "start": {
+        "pid": 19280,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1344.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1344\\\\SINGLE_PAIR_PROOF_V01.json.gz\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1344\\\\PRODUCER_RESULT_V01.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/PRODUCER_SPEC_V01.json"
+        ],
+        "started_utc": "2026-10-17T10:41:11.820104+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "bytes": 12607,
+          "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+        }
+      },
+      "terminal": {
+        "pid": 19280,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:13.616764+00:00",
+        "wall_seconds": 1.8723622000252362,
+        "full_process_CPU": {
+          "seconds": 1.40625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/PRODUCER_SPEC_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/PRODUCER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1344.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 14464,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:11.525013+00:00",
+        "wall_seconds": 0.3161647999950219,
+        "full_process_CPU": {
+          "seconds": 0.109375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "728ca172cd1c8ad60e4bcc6a41109a74e4184c61786e120260c52fc0c7ce5b72"
+    },
+    {
+      "phase": "REREAD_SOURCE1344",
+      "start": {
+        "pid": 10304,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1344.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\source1344\\\\SEPARATE_READER_RESULT_V02.json\"]",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/READER_SPEC_V02.json"
+        ],
+        "started_utc": "2026-10-17T10:41:14.409688+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "bytes": 14815,
+          "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+        }
+      },
+      "terminal": {
+        "pid": 10304,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:15.201557+00:00",
+        "wall_seconds": 0.8287381999834906,
+        "full_process_CPU": {
+          "seconds": 0.609375,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1344.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 9536,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:14.135608+00:00",
+        "wall_seconds": 0.22887680001440458,
+        "full_process_CPU": {
+          "seconds": 0.171875,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "9e58c5408a293df2895b3c22ebcb47dd46def9c8fc2aa7516f44e7a109e42855"
+    },
+    {
+      "phase": "COMPOSE_GLOBAL_V03",
+      "start": {
+        "pid": 27220,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/compose_global_pair_minimum_v03.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/COMPOSE_GLOBAL_V03.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\GLOBAL_PAIR_SUPPORT_MINIMUM2_RESULT_V01.json\", \"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\GLOBAL_PAIR_MINIMUM_THEOREM_AND_PROOF_V01.txt\"]"
+        ],
+        "started_utc": "2026-10-17T10:41:15.838312+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/compose_global_pair_minimum_v03.py",
+          "bytes": 18991,
+          "sha256": "fe1d4f2916a2e93d6a359d0fef97f9427b4d5945aac8feddf5d248c28d66b1d8"
+        }
+      },
+      "terminal": {
+        "pid": 27220,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:17.008883+00:00",
+        "wall_seconds": 1.2171725000080187,
+        "full_process_CPU": {
+          "seconds": 0.40625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/compose_global_pair_minimum_v03.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_compression.cpython-312.pyc",
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://gzip.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://struct.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/ACCEPTANCE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration441/LOCAL_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration449/ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/DERIVED_PAIR_RESOURCE_MINIMUM_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/TWO_PAIR_FULL_CLASS_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/TWO_PAIR_SEPARATE_DP_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration455/ACTUAL_REPLAY_RESULT_V03.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration455/CLOSE_PORTABLE.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration455/PORTABLE_ACCEPTANCE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1217.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1217.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1217.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1221.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1221.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1221.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1258.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1258.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1258.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1265.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1265.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1265.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1292.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1292.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1292.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1312.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1312.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1312.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1322.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1322.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1322.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1328.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1328.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1328.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1343.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1343.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1343.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1344.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1344.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1344.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/READER_METADATA_REPAIR_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1217.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1217.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1217.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1221.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1221.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1221.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1258.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1258.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1258.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1265.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1265.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1265.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1292.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1292.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1292.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1312.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1312.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1312.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1322.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1322.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1322.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1328.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1328.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1328.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1343.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1343.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1343.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1344.PROCESS_START.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1344.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1344.STORAGE.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_ORIGINAL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/compose_global_pair_minimum_v03.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SINGLE_PAIR_SCOPE_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/ORIGINAL_FULL_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/READER_SPEC_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SEPARATE_READER_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SEPARATE_READER_RESULT_V02.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SINGLE_PAIR_PROOF_V01.json.gz",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SINGLE_PAIR_SCOPE_V01.json"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/GLOBAL_PAIR_MINIMUM_THEOREM_AND_PROOF_V01.txt",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/GLOBAL_PAIR_SUPPORT_MINIMUM2_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/COMPOSE_GLOBAL_V03.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 23564,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:15.683041+00:00",
+        "wall_seconds": 0.2613390999904368,
+        "full_process_CPU": {
+          "seconds": 0.125,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "753b9f596b73c3b4f2732ec90eeb160122d1252d29c3d2a69c6d37c7e2585454"
+    },
+    {
+      "phase": "CHECK_GLOBAL_SCOPE_UPPER",
+      "start": {
+        "pid": 11916,
+        "command": [
+          "runtime-or-host-origin://python.exe",
+          "-I",
+          "-X",
+          "utf8",
+          "-B",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02/child_audit_v01.py",
+          "artifact-origin://artifacts/iteration461/extracted_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/check_global_scope_and_upper_v01.py",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/CHECK_GLOBAL_SCOPE_UPPER.json",
+          "[\"D:\\\\CodexResearch\\\\ccfa-ccfa-01a0ce5d\\\\scratch\\\\iteration461_public_proof_v02\\\\core\\\\iteration458\\\\GLOBAL_SCOPE_AND_UPPER_QA_V01.json\"]"
+        ],
+        "started_utc": "2026-10-17T10:41:18.206680+00:00",
+        "script_sha256": "cfce7f6c425d9501c29e3cc1597e777523948dd8731d9edcad42f75a089cf124",
+        "executed_mathematical_target": {
+          "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/check_global_scope_and_upper_v01.py",
+          "bytes": 6285,
+          "sha256": "bcf6864e609aeca0cfe7854698ed4c3109d7718553f314a09d54b38616e46043"
+        }
+      },
+      "terminal": {
+        "pid": 11916,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:18.446129+00:00",
+        "wall_seconds": 0.2876772000163328,
+        "full_process_CPU": {
+          "seconds": 0.140625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "scientific_IO_audit": {
+        "schema": 1,
+        "target": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/check_global_scope_and_upper_v01.py",
+        "normal_return": true,
+        "read_files": [
+          "runtime-or-host-origin://_weakrefset.cpython-312.pyc",
+          "runtime-or-host-origin://contextlib.cpython-312.pyc",
+          "runtime-or-host-origin://decimal.cpython-312.pyc",
+          "runtime-or-host-origin://fractions.cpython-312.pyc",
+          "runtime-or-host-origin://hashlib.cpython-312.pyc",
+          "runtime-or-host-origin://numbers.cpython-312.pyc",
+          "runtime-or-host-origin://pkgutil.cpython-312.pyc",
+          "runtime-or-host-origin://typing.cpython-312.pyc",
+          "runtime-or-host-origin://weakref.cpython-312.pyc",
+          "runtime-or-host-origin://abc.cpython-312.pyc",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration449/ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/COMPOSE_GLOBAL_V03.PROCESS_TERMINAL.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/GLOBAL_PAIR_SUPPORT_MINIMUM2_RESULT_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/check_global_scope_and_upper_v01.py"
+        ],
+        "written_files": [
+          "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/GLOBAL_SCOPE_AND_UPPER_QA_V01.json",
+          "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/CHECK_GLOBAL_SCOPE_UPPER.json"
+        ],
+        "denied": [],
+        "no_network_or_nested_child": true,
+        "boundary": "Python audit events after bootstrap, not OS isolation"
+      },
+      "host_environment_gate_actual_terminal": {
+        "pid": 9008,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "completed_utc": "2026-10-17T10:41:18.028049+00:00",
+        "wall_seconds": 0.33328290001372807,
+        "full_process_CPU": {
+          "seconds": 0.15625,
+          "method": "GetProcessTimes on retained Popen handle"
+        }
+      },
+      "original_host_storage_gate_status": "PASS",
+      "original_gate_record_SHA256": "19a81c2803813b20f40a067fc9afb5b12c8da5d115015b9fc6786406b5d6e4fe"
+    }
+  ],
+  "process_handles_retained_actual_exits_not_process_absence_inferences": true,
+  "path_only_presentation_derivative_not_original_raw_receipt_bytes": true,
+  "new_hosted_execution_or_external_independent_or_human_or_formal_review": false
+}

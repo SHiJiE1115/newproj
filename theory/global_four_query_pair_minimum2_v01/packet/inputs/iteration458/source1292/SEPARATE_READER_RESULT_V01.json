@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "status": "PASS_ALL6_ONE_PAIR_FAMILIES_ALL_CONTINUOUS_NONNEGATIVE_PARAMETERS",
+  "source_id": 1292,
+  "source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1292\\ORIGINAL_FULL_FAMILIES_V01.json",
+    "bytes": 10519,
+    "sha256": "100e20a73903733211c8a1fda9d56250e454417d96a5f934f668f9b2f73727ff"
+  },
+  "scope": "This fixed source only. Partialproofisnotgap or universalexclusion. Globalall-complete-four-queryminimumstillOPEN1or2untilremainingcasesclose.",
+  "proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1292\\SINGLE_PAIR_PROOF_V01.json.gz",
+    "bytes": 5942,
+    "sha256": "27c392d8504fa5647fedb6286193f5fcb2f30222d986dc65943177b2f54ac3f7"
+  },
+  "physical_label_witnesses": [
+    {
+      "different_record_pairs": [
+        [
+          3,
+          7
+        ]
+      ],
+      "generator_subset_mask": 32,
+      "partition_index": 1297,
+      "same_partition": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "different_record_pairs": [],
+      "generator_subset_mask": 0,
+      "partition_index": 53,
+      "same_partition": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "W0": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    8,
+    9,
+    10
+  ],
+  "W1": [
+    5,
+    15
+  ],
+  "original_paths_checked": 980,
+  "original_A_P_counts": [
+    58,
+    40
+  ],
+  "completeness_dependency": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REMAINING_SOURCE_AUDIT_V01.json",
+    "bytes": 201200,
+    "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512"
+  },
+  "parameter_root_cones_replayed": 144,
+  "parameter_root_cones_closed": 144,
+  "closed_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "full_source_one_pair_exclusion_accepted": true,
+  "counts": {
+    "nodes": 144,
+    "splits": 0,
+    "closed_lifting_leaves": 48,
+    "pure_saddle_leaves": 96,
+    "fixed_rational_minimax_leaves": 0,
+    "unclosed_leaves": 0,
+    "not_started_roots": 0,
+    "column_deletions": 4608,
+    "row_deletions": 351,
+    "full_original_row_P_lifts": 96,
+    "scalar_inequalities": 271350,
+    "exact_fraction_rank_calls": 144
+  },
+  "unclosed_roots": [],
+  "exact_rank_method": "FractionGaussJordan;producerusesprimitiveintegerelimination",
+  "cover_argument": "Sorted-priceclosedorthantspluslambda>=0 coverallcontinuousnonnegativeparameters. Twoexactclosedhalfcones includezero/tie/splitboundaries;crossingrays andrank4activeconstraints preserveeach full5dimpointedcone.",
+  "game_argument": "Everyweakdeletionpreserves the reduced finite game with a common originalrow map; fulloriginalrowprioritylifts recover RP<=RA;policyinclusion gives reverse. Pure and fixedrational leaves close thefulloriginal game directly. Fixedrationalchecks use Fraction expectation on eachgenerator,independentofproducerinteger coefficientcompilation.",
+  "no_all_prior_Bayes_equality_claim": true,
+  "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF": false,
+  "same_agent_separate_reader_not_external_human_or_formal_kernel": true,
+  "whole_project_complete": false
+}

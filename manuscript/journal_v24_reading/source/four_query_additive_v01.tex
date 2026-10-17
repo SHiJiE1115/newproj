@@ -1,0 +1,274 @@
+\section{Randomized equality at four queries with additive costs}
+\label{sec:four-additive}
+The fee class changes the randomized boundary. Here we prove an exclusion
+at four queries for every nonnegative additive price vector. This is
+stronger than agreement on a finite set of prices. It does not extend
+the exclusion to arbitrary partial Boolean promises or to all submodular
+final-set fees.
+
+For $\mathcal C\in\{\mathcal A,\mathcal P\}$, define
+\[
+ R_{\mathcal C}(W;c)=\min_{\mu}\max_{w\in W}
+   \sum_T\mu_T\sum_{q\in P_T(w)}c_q,\qquad c\in\mathbb R_{\geq0}^{Q}.
+\]
+The private seed is independent of $w$. For $\mathcal P$ each seed may
+choose its own global permutation; its two answer branches share that
+permutation and may permanently skip queries using the observations so
+far. A lower-bound prior used in a certificate is not a population
+assumption. The maximum is over the original correctness promise, even
+at inputs receiving zero probability in that prior.
+
+\begin{theorem}[Four-query additive equality, computer-assisted]
+\label{thm:four-additive}
+Let $W_0,W_1$ be the nonempty, disjoint projections of two complete
+partition fibres with an unrestricted number of classes, on at most
+four indexed pair-equality queries. For every finite nonnegative real
+additive price vector $c$,
+\[
+ R_{\mathcal A}(W;c)=R_{\mathcal P}(W;c).
+\]
+Hidden records, shared endpoints, zero prices and price ties are allowed.
+The statement concerns worst-input expected actual purchased cost at
+zero error. It does not assert equality under every specified input prior.
+\end{theorem}
+
+\begin{proof}
+We give the reduction, full-policy premise and continuous-price
+certificate obligations. The accompanying packet supplies the finite
+assignments and complete analytic case arguments. Its implementation
+checks the stated obligations using exact arithmetic; the analytic
+arguments are not replaced by a formal proof kernel.
+
+\emph{Complete source cover.}
+Collapse all prior SAME components, including paths through hidden
+records. The eight marked endpoint occurrences induce a partition $\pi$.
+For an answer word $w\in\{0,1\}^4$, merge the positive query edges.
+The word is possible exactly when every zero-answer edge and every
+prior DIFFERENT pair still has separate ends. Necessity follows from
+transitivity. For sufficiency assign each remaining component a fresh
+class, and assign fresh classes to hidden-only components. The number
+of classes is unrestricted, so there is no further extension condition.
+
+For a fixed $\pi$, let $B_\pi$ be its answer support without forbidden
+pairs. A forbidden pair between endpoint-containing blocks defines a
+filter $H_j\subseteq B_\pi$. Starting with $\{B_\pi\}$, the iteration
+\[
+ \mathcal L_j=\mathcal L_{j-1}\cup
+       \{S\cap H_j:S\in\mathcal L_{j-1}\}
+\]
+covers every finite forbidden-pair conjunction, including redundant
+filters. All $4140$ restricted-growth strings on eight positions give
+$465$ distinct nonempty supports. Every disjoint pair is realized on
+the same eight physical records with its two label-specific priors.
+There are $42864$ ordered tasks, partitioned into $1356$ orbits under
+simultaneous query-coordinate permutations and label exchange.
+Answer-bit complementation is not a physical symmetry used in this cover.
+
+\emph{Full policy cover.}
+Repeated, publicly fixed-answer and post-pure queries can be erased
+without increasing a nonnegative additive cost. In $\mathcal P$ erasure
+is a legal permanent skip. At a mixed feasible state, the adaptive
+recursion chooses any remaining informative query and combines both
+answer continuations. For a fixed permutation, the priority recursion
+unites SKIP on the same feasible set with TAKE on both answer children,
+using the same remaining suffix on both branches. Pure states stop.
+Taking the union over all $24$ orders covers the full priority class.
+The finite union of input-specific null sets of erroneous seeds can
+be removed from any zero-error randomized policy. Seedwise
+normalization therefore reduces it to a distribution on these finite
+families. A fresh recursion reconstructs all $39113$ adaptive and
+$33781$ priority paid-set vectors. All $629694$ original-input paths
+are checked for correctness, purchased sets, no repeated queries and
+the shared global order. No chosen-order or restricted-input baseline
+is substituted for $\mathcal P$.
+
+\emph{The majority of sources.}
+For any normalized monotone fee $F$, put
+\[
+ K_F=\max_{w\in W}\min_{S\text{ certifies }w} F(S).
+\]
+Every correct path is a certificate, so $K_F\leq R_{\mathcal A}(W;F)$.
+The set $I_F=\{S:F(S)\leq K_F\}$ is a nonempty downset in $2^{[4]}$
+and contains a certificate for every input. There are exactly $167$
+nonempty downsets. For $1300$ orbits, each relevant downset admits a
+legal original priority policy whose path sets all belong to it.
+Checking all $155995$ relevant source/downset cells yields
+$R_{\mathcal P}\leq K_F\leq R_{\mathcal A}$. For another $31$ orbits,
+each complete adaptive vector has a legal priority vector contained
+in it on every original input. Replacing each seed's policy proves
+the same inequality. The reverse inequality follows throughout from
+$\mathcal P\subseteq\mathcal A$.
+
+\emph{Structural and additive-only sources.}
+Table~\ref{tab:four-proof-cover} gives the disjoint remainder. For the
+$14$ structural orbits, complete two-column, three-column and chain
+saddle arguments, or common-input retractions, imply equality for all
+normalized monotone fees. The packet includes their complete ordered
+case splits, generator signs and zero-boundary arguments. Polynomial
+identities and nonnegative-product decompositions are checked for
+$64$, $105$ and $52$ sign obligations in the three scalar saddle
+lemmas, respectively. The physical source bindings are separately
+checked on the full original families ($2336$ input obligations).
+Auxiliary response encodings in a structural template are individually
+bound between its lower core and upper envelope; they are not added
+to the physical orbit group. The two cost-preorder regions use opposite
+scalar inequalities and include their shared boundary.
+
+For clarity, the remaining $11$ orbits require only additive costs.
+At a fixed nonnegative price vector, a sufficient certificate is a
+probability vector $\lambda$ on original inputs and a probability
+vector $p$ on legal priority columns with common value $L$, satisfying
+\begin{align}
+ \sum_w\lambda_w\,c(P_A(w))&\geq L
+       &&\text{for every full adaptive column }A,\label{eq:four-dual}\\
+ \sum_jp_j\,c(P_{P_j}(w))&\leq L
+       &&\text{for every original input }w.\label{eq:four-upper}
+\end{align}
+These imply $R_{\mathcal A}\geq L\geq R_{\mathcal P}$ directly.
+For constant rational $\lambda,p$, the inequalities are homogeneous
+linear forms in $c$. On a closed price-order cone
+$c_{\pi_0}\leq\cdots\leq c_{\pi_3}$, write
+\[
+ c_{\pi_j}=\sum_{k=0}^{j}t_k,\qquad t_k\geq0.
+\]
+Nonnegative coefficients in the $t$ variables prove an inequality
+on the entire cone, with ties and zero prices included.
+
+The retained-library orbit uses all $29$ unchanged rational
+prior/priority-mixture certificates. Every one of the $24$ order cones
+lies in a certified region, as checked on its four suffix-indicator
+generators. The exact normals are reconstructed from all original
+adaptive columns and all original-input priority upper inequalities;
+the library is not justified by its old sampled prices.
+
+Nine more orbits use $24$ complete closed order cones each. Each cone
+has a pure saddle certificate or a sequence of row and column
+dominance inequalities with nonnegative coefficients. Deleting a
+column replaces it by a no-more-expensive active column on every
+active row. Deleting a row maps it to a no-cheaper active row
+simultaneously for all active columns. Following the row chains gives
+one common map for every mixture of terminal columns. Each terminal
+column then lifts to an original legal priority column on all hard
+rows. This preserves the full worst-input randomized value. In the
+one orbit with a preliminary deleted input, its paid set is contained
+in another input's paid set for \emph{every} original adaptive and
+priority column. Its objective constraint is therefore redundant for
+both classes, while it remains a correctness obligation. All $16634$
+dominance steps, $556560$ scalar signs and $3008$ pure-saddle scalar
+signs are replayed from the original paid sets.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}p{0.67\linewidth}r@{}}\toprule
+Proof obligation & Source orbits\\\midrule
+Certificate-threshold downsets & $1300$\\
+Same-input full-policy subset replacement & $31$\\
+Two-column structural saddle & $2$\\
+Three-column saddle and signed template bindings & $1+4$\\
+Common retraction; two preorder regions; AND/hint; prefix & $1+1+1+1$\\
+Chain structural saddle & $3$\\
+Retained rational library, all $29$ regions & $1$\\
+Pure saddles and common-row dominance, $24$ cones each & $1+8$\\
+Balanced two-input certificate and $22$ old closed cones & $1$\\\midrule
+Total, with disjoint memberships & $1356$\\\bottomrule
+\end{tabular}
+\caption{Complete four-query cover. The first six rows prove equality
+for the full monotone fee class on their stated sources. The last
+three rows complete the nonnegative additive theorem only. Each orbit
+is bound to its full original policy families.}
+\label{tab:four-proof-cover}
+\end{table}
+
+\emph{The final source and its boundary faces.}
+To make the remaining rational dependence explicit, one orbit has
+negative words $\{0,3,4,7,8,11\}$ and positive words $\{1,15\}$,
+where $w=\sum_{q=0}^3 2^qw_q$. Write its prices as $(a,b,c,d)$.
+Twenty-two order cones are closed by the preceding dominance method.
+The two remaining orders are interchanged by swapping $c,d$; this
+involution preserves the source and both complete policy families.
+It suffices to treat $0\leq a\leq b\leq c\leq d$.
+Two legal original priority policies, denoted $U,V$, have paid masks
+$(3,14)$ and $(7,12)$ respectively on positive inputs $(1,15)$.
+Their full original-input traces and global orders are checked.
+Put
+\[
+ D=b+c,\quad S=a+b-d,\quad
+ N=b(a+b+c)+c(c+d).
+\]
+On $S\geq0$ and $D>0$, use weights $S/D$ and $(c+d-a)/D$
+on $U,V$, and lower prior $b/D,c/D$ on inputs $1,15$.
+All weights are nonnegative and sum to one. Both positive inputs
+have upper value $N/D$. The common row map
+\[
+ \tau(0)=\tau(1)=\tau(8)=1,\qquad
+ \tau(3)=\tau(4)=\tau(7)=\tau(11)=\tau(15)=15
+\]
+dominates every original input for both upper policies on this cone.
+
+For the lower bound, every correct tree must buy queries $a,b$ on
+input $1$ and $c,d$ on input $15$, using the opposite-label
+single-coordinate witnesses $0,3$ and $11,7$ respectively. These
+paths share their prefix up to the first differing queried answer.
+If that first differing query is $b$, their costs are at least
+$(a+b,b+c+d)$; if it is $c$, they are at least $(a+b+c,c+d)$.
+The prior-weighted numerators in both cases are $N$. If it is $d$,
+the latter lower numerator increases by $b(d-c)\geq0$. Extra purchases
+cannot reduce cost. Thus \eqref{eq:four-dual} holds for every correct
+adaptive tree, not just the retained finite columns.
+
+On $S\leq0$, pure policy $V$ has worst cost $c+d$; the mandatory
+$c,d$ purchases on input $15$ give the matching lower bound. The
+packet checks all original-input upper inequalities. Closed
+nonnegative parameterizations for the three regions are
+\begin{align*}
+ S\geq0 &: (S,b-a,c-b,d-c),\\
+ S\leq0,\ c\leq a+b &: (a+b-c,b-a,c-b,d-a-b),\\
+ S\leq0,\ c\geq a+b &: (a,b-a,c-a-b,d-c).
+\end{align*}
+Their invertible linear maps and all numerator coefficients are
+checked exactly ($1576$ scalar coefficients, including zeros).
+In the first region $D$ has coefficient vector $(2,2,3,2)$, so
+$D=0$ is only the all-zero price vector. Use legal pure $V$ there
+at cost zero, without division. On the switching face,
+$N-(c+d)D=bS=0$, and the mixed weight on $U$ vanishes. This
+includes the shared boundaries and closes both remaining orders.
+
+All $1356$ orbits are now covered for the whole nonnegative real
+additive orthant. Pulling prices back along a physical coordinate
+permutation preserves the classes and costs. For fewer than four
+queries, append fresh known-SAME zero-price dummy pairs to both
+fibres. Their insertion and erasure preserve the two policy classes
+and all actual costs, proving the stated at-most-four scope.
+\end{proof}
+
+\begin{corollary}[Randomized additive first-occurrence interval]
+\label{cor:additive-first-interval}
+Let $m_{\rm add}$ and $m_{\rm pos}$ be the least menu sizes with
+$R_{\mathcal A}<R_{\mathcal P}$ in this same complete-source model,
+for nonnegative additive and strictly positive additive prices,
+respectively. Then
+\[
+ 5\leq m_{\rm add}\leq m_{\rm pos}\leq7.
+\]
+The exact additive minima remain undetermined. The corresponding
+submodular minimum is four by Theorem~\ref{thm:coverage-four}.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:four-additive} excludes all smaller menus. On the
+complete seven-query source in Section~\ref{sec:seven}, use the old
+prices $(2,2,3,1/3,1,1,1)$. A correct adaptive tree has worst cost
+$13/3$. The original priority mixture has upper $227/51$ and the
+fixed prior supported on world indices $(0,4,5,13,15)$, with
+weights $(9,1,1,1,5)/17$, gives a matching lower bound over all
+$5040$ global orders with causal skips. Worlds with prior zero
+are still included in every correctness/purity test. Therefore
+\[
+ R_{\mathcal P}-R_{\mathcal A}\geq
+  \frac{227}{51}-\frac{13}{3}=\frac{2}{17}>0.
+\]
+The retained exact curve in Appendix~\ref{app:seven-private-curve}
+also supplies the adaptive optimum. Only its legal adaptive upper
+and matched full-priority value are needed for this corollary;
+the upper alone is not a new proof of an exact adaptive optimum.
+\end{proof}
+

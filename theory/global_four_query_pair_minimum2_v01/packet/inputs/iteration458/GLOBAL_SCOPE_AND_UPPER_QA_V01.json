@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "status": "PASS_SEPARATE_GLOBAL_SCOPE_PREMISE_AND_EXACT_POSITIVE_TWO_PAIR_WITNESS_RECALCULATION",
+  "global_result": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\GLOBAL_PAIR_SUPPORT_MINIMUM2_RESULT_V01.json",
+    "bytes": 33899,
+    "sha256": "a401eab4c276cbb0759bb0d7cfb2918684f21423e2991d90f2290fead5ac458b"
+  },
+  "formal_monotone_coefficient_checks": 390,
+  "sampled_minimax_games": 0,
+  "new_fee_or_prior_candidates": 0,
+  "original_upper_witness_source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration449\\ORIGINAL_SOURCE1209_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "fixed_old_individual_charges": [
+    4,
+    3,
+    2,
+    3
+  ],
+  "fixed_old_pair_groups": [
+    [
+      [
+        1,
+        2
+      ],
+      2
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      2
+    ]
+  ],
+  "A_upper_costs": [
+    "286/29",
+    "286/29",
+    "273/29",
+    "286/29",
+    "286/29",
+    "286/29",
+    "286/29"
+  ],
+  "P_upper_costs": [
+    "155/16",
+    "155/16",
+    "151/16",
+    "79/8",
+    "79/8",
+    "79/8",
+    "79/8"
+  ],
+  "A_dual_slacks_all40": [
+    "100/29",
+    "117/29",
+    "91/29",
+    "100/29",
+    "117/29",
+    "133/29",
+    "0",
+    "17/29",
+    "91/29",
+    "77/29",
+    "47/29",
+    "44/29",
+    "133/29",
+    "119/29",
+    "89/29",
+    "86/29",
+    "47/29",
+    "16/29",
+    "33/29",
+    "3/29",
+    "0",
+    "0",
+    "17/29",
+    "8/29",
+    "25/29",
+    "25/29",
+    "77/29",
+    "63/29",
+    "16/29",
+    "33/29",
+    "13/29",
+    "30/29",
+    "47/29",
+    "16/29",
+    "33/29",
+    "3/29",
+    "10/29",
+    "27/29",
+    "27/29",
+    "0"
+  ],
+  "P_dual_slacks_all32": [
+    "7/2",
+    "33/8",
+    "25/8",
+    "7/2",
+    "33/8",
+    "37/8",
+    "0",
+    "5/8",
+    "25/8",
+    "21/8",
+    "13/8",
+    "3/2",
+    "37/8",
+    "3",
+    "13/8",
+    "1/2",
+    "9/8",
+    "1/8",
+    "0",
+    "0",
+    "5/8",
+    "1/8",
+    "3/4",
+    "3/4",
+    "1/2",
+    "9/8",
+    "3/8",
+    "1",
+    "3/8",
+    "1",
+    "0",
+    "1/8"
+  ],
+  "R_A": "286/29",
+  "R_P": "79/8",
+  "gap": "3/232",
+  "robust_sparse_radius": "1/1856",
+  "robust_gap_at_least": "3/464",
+  "global_pair_support_minimum_nonnegative_and_positive": 2,
+  "scope_argument": {
+    "source_reduction": "Query-only observations and final paid-set fees depend only on the projected word and label. Physical sources with the same disjoint label supports induce the same two finite games.",
+    "majority_fee_premise": "Each coefficient of F(T)-F(S) is nonnegative for S subset T,for all6pairs and65proper subset inclusions;F(empty)=0. Thus the1345inherited ALLmonotone proofs apply to the entire continuous one-pair fee family.",
+    "symmetry": "The source audit maps the physical query labels,prices,activation pair,tree nodes,globalorder and terminal labels bijectively;support size and private seed independence preserved. No literal answer complement symmetry is assumed.",
+    "normalization": "Known-answer/repeated/postpure purchases can be removed under monotone final-set fees. Source-specific symbolic antichain pruning remains valid under common previously purchased contexts. All old full columns remain legal and retained,including zero-prior correctness worlds.",
+    "padding": "A fresh dummy query forcedDIFFERENT under both labels has constant answer0. Give it zero individual charge and no membership in any positive pair group. Fresh classes extend each old physical world under the unrestricted class-count model. Remove dummy purchases from each adaptive tree and per-seed priority order;cost and zero-error observations are unchanged. Thus every smaller-menu counterexample would yield a four-query counterexample.",
+    "exact_minimum": "Universal support<=1exclusion plus the explicit support2positive-individual-charge witness gives g4(nonnegative)=g4(positive)=2. No perturbation lemma is needed to equate these two minima.",
+    "not_implied": "No bound for all larger menus or arbitrary-size setup groups;no exact first additive gap between5and7;no general classification of every four-query submodular cost;no real academic-evaluation benefit or literature priority."
+  },
+  "same_agent_separate_arithmetic_and_scope_review_not_human_or_formal_kernel": true,
+  "new_LP_price_prior_grid_API_hosted_humanlabels_or_PDF": false,
+  "whole_project_complete": false
+}

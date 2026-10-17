@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "version": "V24materialprivate-at-buildreading-publiccandidate",
+  "accepted_private_PDF_sha256": "2274857ba26e3ca7648179f8e9f24578a4529f186b3006502217cd5a47ef2218",
+  "public_reading_PDF_sha256": "2274857ba26e3ca7648179f8e9f24578a4529f186b3006502217cd5a47ef2218",
+  "private18member_source_ZIP_sha256": "b3823572e668d9f0a4f8e26900760fbf5463abb23f26d6391382de8cd30744b4",
+  "public12member_source_ZIP_sha256": "61c5081574b43daa38eb0fd57258299deaa91a6f96abdb2aab9e5b5b54624d98",
+  "source_ZIPs_byte_exact": false,
+  "all8_scientific_sources_byte_exact": true,
+  "external6notredistributed": true,
+  "previous_public_correctedV23_commit": "a2659fe7423541d60afb57bcc7e3328d04925b47",
+  "previous_public_versions_source_execution_archives_preserved": true,
+  "new_global_theorem_already_in_older_V23": false,
+  "publication_not_hosted_execution_or_author_approval": true
+}

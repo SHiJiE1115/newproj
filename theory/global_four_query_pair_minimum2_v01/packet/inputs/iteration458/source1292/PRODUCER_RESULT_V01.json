@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "status": "PRODUCER_CANDIDATE_ALL144_PARAMETER_CONES_CLOSED",
+  "proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1292\\SINGLE_PAIR_PROOF_V01.json.gz",
+    "bytes": 5942,
+    "sha256": "27c392d8504fa5647fedb6286193f5fcb2f30222d986dc65943177b2f54ac3f7",
+    "decoded_bytes": 253821,
+    "decoded_sha256": "9fc526b13b186cc2ebc65ef44a716f967810f570168231769aabd4ce770a45db"
+  },
+  "candidate_closed_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "closed_roots": 144,
+  "roots": 144,
+  "unclosed_roots": [],
+  "stats": {
+    "cone_nodes": 144,
+    "column_deletions": 4608,
+    "row_deletions": 351,
+    "splits": 0,
+    "closed_leaves": 144,
+    "unclosed_leaves": 0,
+    "whole_cone_generator_inequality_checks": 184320,
+    "max_rays": 5,
+    "max_depth": 0,
+    "numerical_games_solved": 0,
+    "pure_saddle_leaves": 96,
+    "fixed_rational_minimax_leaves": 0
+  },
+  "independent_reader_required": true,
+  "new_numeric_games_LP_model_hosted_or_human_review": false
+}

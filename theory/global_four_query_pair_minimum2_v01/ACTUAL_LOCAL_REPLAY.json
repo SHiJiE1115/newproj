@@ -1,0 +1,565 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_RELOCATED_COMBINED_GLOBAL_FOUR_QUERY_PAIR_SUPPORT_MINIMUM2_PROOF",
+  "whole_objects": 26,
+  "whole_object_correspondence": {
+    "path": "artifact-origin://artifacts/iteration461/actual_public_proof_v02/WHOLE_CORRESPONDENCE_V01.json",
+    "bytes": 34808,
+    "sha256": "3840d59166238311007380ddaa620f5fce2562a8f818cf8f9f9ebd8ca9ffcc85"
+  },
+  "actual_mathematical_children": [
+    {
+      "phase": "AUDIT_RESIDUAL",
+      "pid": 12152,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/audit_remaining_sources_v02.py",
+        "bytes": 14329,
+        "sha256": "c3298f571fa8a8a349ae5cfae34d20f46e0434a72181e8a9d5c7f2dbd4960711"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/AUDIT_RESIDUAL.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "96cf858e0b1ddc58b5770183f2514a8c808973b18c1dd8d71f857dbb0877153b"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/AUDIT_RESIDUAL.json",
+        "bytes": 10028,
+        "sha256": "e535c344d4a9260d5dc9c7c5eb8c2db918912ea4751187cc49391aa0df61ff16"
+      }
+    },
+    {
+      "phase": "MAJORITY_1345",
+      "pid": 27644,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/majority_v01.py",
+        "bytes": 966,
+        "sha256": "ee12ec7332dc3bfe683964327d467c682fc1eb38af6ad125b06aa232617910c3"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/MAJORITY_1345.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "023cdb19643ff433277655cbeb8b4524e867da752a9cb5598365049fc68ae228"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/MAJORITY_1345.json",
+        "bytes": 10229,
+        "sha256": "6e4abe84910182cc2bff23c6f998b331463193ec49e50af53f823a114ad308d7"
+      }
+    },
+    {
+      "phase": "READ_SOURCE1209",
+      "pid": 23400,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/read_single_pair_proof_v01.py",
+        "bytes": 11564,
+        "sha256": "d78e42a3b58d5d073932feadfcf070ac9bde95442982d179ab4ff87557cf8cec"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/READ_SOURCE1209.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "806cc2fad04ccc67e5c6990f7c23e265277697679089b23ea9a5657ec8ab3bbd"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/READ_SOURCE1209.json",
+        "bytes": 3005,
+        "sha256": "d653ed7361318dfea4e48f81d361b82a8d57f8b9d355b233e001f9ab94d32010"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1217",
+      "pid": 15820,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source1217_v01.py",
+        "bytes": 12182,
+        "sha256": "e8f20f86e212196fa3499df81b696e82c046039fd6e4f9a9dcd544bb56bd6243"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1217.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "17d8d0a7903191ce0d8d9e4d917dbe0618d2c9028fe8405db6bf98dd42c3d128"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1217.json",
+        "bytes": 2999,
+        "sha256": "347d428fd862dcf2b419a8341a33ca2992f837180cdf16a63d33192d06703c83"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1217",
+      "pid": 26120,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1217.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "288a7d3298367e4e99b8c5517bf1e53577b4861a2ecef10c8674d9ae2de34453"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1217.json",
+        "bytes": 3429,
+        "sha256": "a1558c003123bf232e8ea4c358b7aabf1ad66211d5e63996faa3f93caf443342"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1221",
+      "pid": 21044,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1221.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "06c5116cad933f57ef57bc09568664dde9a35c48aca4bc1fc79593e15a76bf3c"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1221.json",
+        "bytes": 3149,
+        "sha256": "3a7bbc9710cbe758553a66a10106ce46a2f764fd065a304c393396c2dc55d263"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1221",
+      "pid": 17992,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1221.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "8679eda91584877bbe83ef2bbf4d2367bd6c1816039b3341b90f75d536326084"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1221.json",
+        "bytes": 3448,
+        "sha256": "e26ab44f9a2cf8ed2668f6ce5400a537469f43c9e3f438e9a2ce02dd64e5aa5e"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1258",
+      "pid": 26380,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1258.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "1ce58b961cce22421dc6471fadbe0b7c85d81273dff2fbcfd52b1312a7bca362"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1258.json",
+        "bytes": 3149,
+        "sha256": "ef778195469f6f964dfd65832fb729442297f16fb247f0839b45581cda772380"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1258",
+      "pid": 10368,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1258.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "1af79bc9c45e330bb0bb77c858c143c3f233c7ec3464403a85093a7393ae6442"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1258.json",
+        "bytes": 3448,
+        "sha256": "20e3e8d0a8519638452b7b40ad928ab0aa2c3948e1170cc1b6bfc44d22d644ba"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1265",
+      "pid": 1656,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1265.PROCESS_TERMINAL.json",
+        "bytes": 265,
+        "sha256": "7a024ef57447b9fda4cd4b45ad66fa1ca288a598402907b7efe932f54769b0ac"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1265.json",
+        "bytes": 3149,
+        "sha256": "da6334afcf436df50c3c7d72021263b4a59c691ee4442e5419621661d68b2c21"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1265",
+      "pid": 27584,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1265.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "7575ce2a892dcbb00cc0597cfcc28900f23be27ebd10bfae26a44eba1471950f"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1265.json",
+        "bytes": 3448,
+        "sha256": "86ba01d41adacbb737ae536f1263a2426fc89d181a5ed753aea7723ace15aca9"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1292",
+      "pid": 25856,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1292.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "5d3f2a07f1571eddbd369357929660ff65eb7824178ae9ab76dc071fe5249b90"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1292.json",
+        "bytes": 3149,
+        "sha256": "48ea6c9f92f0360ee5b6e7e6b9b1a2b2bc3caecf7e49455f81c6909d5d3b1011"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1292",
+      "pid": 12908,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1292.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "40c93c33e46fb28648b7a013f004e0827c2db562497cb78645b3fa2112106297"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1292.json",
+        "bytes": 3448,
+        "sha256": "c1b032c9750fd4bf0ceb2925ae6a2ad117f794b6d3b4aa63a01a1899f418d078"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1312",
+      "pid": 20960,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1312.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "9f98eddede77bc47f7e745ecbb4d0b532aec297c6a0d58edc9da48c434a1b77b"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1312.json",
+        "bytes": 3149,
+        "sha256": "5d78296203aa2ed63658af245b6dd2b5d06d60175b628b0504a392d7e47cb08d"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1312",
+      "pid": 26488,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1312.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "d81c18317fc4fac814c91c3b6d255656198a38946a42ea37b2cdd403f63e0f4c"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1312.json",
+        "bytes": 3448,
+        "sha256": "cf7ce2e2682db61d4e27cbfd8f04db7836320fd2a187cb713bb41ab07e70e2b5"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1322",
+      "pid": 20988,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1322.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "9184a48eb5e72214e3a6470a7dd13227291c0b8699151a2b67ae2b63fd20f29c"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1322.json",
+        "bytes": 3149,
+        "sha256": "64296543b063c9023f6cd24291db3117aa00205c73c39f26cd74af5d167c1884"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1322",
+      "pid": 20672,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1322.PROCESS_TERMINAL.json",
+        "bytes": 268,
+        "sha256": "d94b6229e0200993a767c853843e11308011d62c90cf08c7a3955f7fc02e8c6d"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1322.json",
+        "bytes": 3448,
+        "sha256": "9d986d0491802796898146f47f250a322d8b2ab14db9fa409c7342306294b848"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1328",
+      "pid": 27408,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1328.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "4c49af6437b1219829d8feb6e7ecd7f738ee066c7ff6e77cb6f3ed4780edd412"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1328.json",
+        "bytes": 3149,
+        "sha256": "5fedde33dfdf6cb79c1cfd395ced34f17a3d9f42c29210e393a6bf8327d87fab"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1328",
+      "pid": 25260,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1328.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "7b00a7aa590854be76d88ce9cea1d599a940415d8f72333c2efe974c7fa037f6"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1328.json",
+        "bytes": 3448,
+        "sha256": "408eb6d4075e806f9fcdd82d4d3260a754deb9d9710bc8048367e6bd88ce0d02"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1343",
+      "pid": 26876,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1343.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "a946ca3f2708ddd628cd8982e9a6024cc2ed3e5540fa77318d9cbd8ebce5c449"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1343.json",
+        "bytes": 3149,
+        "sha256": "72327f04076cce2738bfcd85d8e3b9a315dfa2815189b58981353022f208818a"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1343",
+      "pid": 26644,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1343.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "f594d78e2d0c6ce07c895c2f257866bf3f6dc82be48cd784874ec2a7535062d9"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1343.json",
+        "bytes": 3448,
+        "sha256": "9199147b74457fe1a49e76a6f4e2670225afa29f56fa65ca9c6e8fe6018408ec"
+      }
+    },
+    {
+      "phase": "PROVE_SOURCE1344",
+      "pid": 19280,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/prove_source_pair_v01.py",
+        "bytes": 12607,
+        "sha256": "d7fdbad7ae0c3a691c0ed72c21069a1dc1c8c96aef45308368dab979eb30cd36"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/PROVE_SOURCE1344.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "70d709f05fe53ed635ee698d9afce63be53118ce45644dcca7a9d070b91b9841"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/PROVE_SOURCE1344.json",
+        "bytes": 3149,
+        "sha256": "63ea430a72b92f499bc47f7c3cee5f1c639c886350c8dfd028fa8bb616eb57f4"
+      }
+    },
+    {
+      "phase": "REREAD_SOURCE1344",
+      "pid": 10304,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/read_source_pair_proof_v02.py",
+        "bytes": 14815,
+        "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/REREAD_SOURCE1344.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "11e9c3da85981f004f795c00970012ba2e7e788e701b7a46558c06990453c8c8"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/REREAD_SOURCE1344.json",
+        "bytes": 3448,
+        "sha256": "075d4f06ec4d8ec3ab1a3f12b623b5506e0d5eb6f21d6193c0ccf1f9668f922e"
+      }
+    },
+    {
+      "phase": "COMPOSE_GLOBAL_V03",
+      "pid": 27220,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/compose_global_pair_minimum_v03.py",
+        "bytes": 18991,
+        "sha256": "fe1d4f2916a2e93d6a359d0fef97f9427b4d5945aac8feddf5d248c28d66b1d8"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/COMPOSE_GLOBAL_V03.PROCESS_TERMINAL.json",
+        "bytes": 269,
+        "sha256": "47d51dc488ded7f3041c060d0b2068224b24cf85a608b001b64f5c1bfbdb8480"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/COMPOSE_GLOBAL_V03.json",
+        "bytes": 22225,
+        "sha256": "69a9e555aeeb3ff2121fa967854c28ad39691c47eb8bb633f305b8bd3f44ec49"
+      }
+    },
+    {
+      "phase": "CHECK_GLOBAL_SCOPE_UPPER",
+      "pid": 11916,
+      "actual_exit_code": 0,
+      "target": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/check_global_scope_and_upper_v01.py",
+        "bytes": 6285,
+        "sha256": "bcf6864e609aeca0cfe7854698ed4c3109d7718553f314a09d54b38616e46043"
+      },
+      "terminal": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/CHECK_GLOBAL_SCOPE_UPPER.PROCESS_TERMINAL.json",
+        "bytes": 270,
+        "sha256": "415c0c323015029c182b3ad6f82d195441d77c075474ad3067b55e90eac12cbb"
+      },
+      "audit": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/io_audits/CHECK_GLOBAL_SCOPE_UPPER.json",
+        "bytes": 2622,
+        "sha256": "4024c39c3cf7279ccd56a1b606f7e607c23fa08b947f418a6d455b3b9d3176e0"
+      }
+    }
+  ],
+  "all_actual_mathematical_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fresh_1345_finite_monotone_certificates": true,
+  "fresh_11_source_physical_policy_transport_audit": true,
+  "fresh_producers": 10,
+  "fresh_fraction_readers": 11,
+  "fresh_global_composition": true,
+  "fresh_fixed_upper_dual_inequalities": 72,
+  "byte_exact_candidate_gzip_proofs": 10,
+  "inherited": "Full global source catalogue and original policy-family cover, old two-pair full-class/DP/robustness results. Fresh finite monotone kernels and fixed72dual QA do not rerun those enumerations.",
+  "current_global_result": {
+    "path": "artifact-origin://artifacts/iteration461/actual_public_proof_v02/CURRENT_GLOBAL_RESULT_V01.json",
+    "bytes": 35428,
+    "sha256": "6b5df0d5e4e024ffd31c34ce68acb186ebff5dc7c59f8348ca73944d56adfc70"
+  },
+  "legacy_protocol_view": {
+    "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/GLOBAL_PAIR_SUPPORT_MINIMUM2_RESULT_V01.json",
+    "bytes": 36281,
+    "sha256": "78b122f5659f2a0e755f234c52f7d9c5e0b7b41fbde930a87e63fe19422ac5cf"
+  },
+  "host_storage_guard_used": true,
+  "scientific_inputs_from_packet_or_staged_work_only": true,
+  "audit_boundary": "Python hooks after documented bootstrap, not OS isolation",
+  "not_external_independent_human_or_formal_kernel_review": true,
+  "bibliographic_priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "new_model_calls_hosted_runs_numeric_grids_LP_human_labels_PDF_or_publicupload": false,
+  "whole_project_complete": false
+}

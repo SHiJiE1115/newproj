@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "status": "VERSIONED_READER_RESULT_METADATA_REPAIR_BEFORE_GLOBAL_ACCEPTANCE",
+  "cause": "Duplicate literal scopekey replaced verified scopepin by narrative text inV01result;composer correctly rejected the missing pin",
+  "failed_composition_pid": 27052,
+  "failed_exit": 1,
+  "diagnosed_duplicate_literal_keys": [
+    {
+      "file": "read_source_pair_proof_v01.py",
+      "line": 292,
+      "key": "scope"
+    }
+  ],
+  "code_edit": "Rename only narrative result scope key to claim_scope; fingerprint stays scope",
+  "mathematical_checking_prefix_byte_exact": true,
+  "all10original_candidate_proofs_scopes_sources_unchanged": true,
+  "old_reader_results_and_receipts_retained": true,
+  "readerV02": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\read_source_pair_proof_v02.py",
+    "bytes": 14815,
+    "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+  },
+  "all10reread_specs_frozen_before_execution": [
+    {
+      "source_id": 1217,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\SOURCE1217_READER_SPEC_V02.json",
+        "bytes": 1091,
+        "sha256": "42638785dd0c7a781133495d642f887857232313995a79d5576dc83b4aefaf07"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\SOURCE1217_READER_SPEC_V01.json",
+        "bytes": 1089,
+        "sha256": "287f507cc2d67123353421ae7dd48e46eb9f81f629d61c81b93430835e1cc7a8"
+      }
+    },
+    {
+      "source_id": 1221,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1221\\READER_SPEC_V02.json",
+        "bytes": 1369,
+        "sha256": "f393f99cf923a5a2648c580a8f0651b04174c9d87c04b8971eec32afc28235c7"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1221\\READER_SPEC_V01.json",
+        "bytes": 1369,
+        "sha256": "0c0b8c7609d287034f7f1136d8980ca2fdd981fffac14e0831e921ae3d38bed5"
+      }
+    },
+    {
+      "source_id": 1258,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1258\\READER_SPEC_V02.json",
+        "bytes": 1369,
+        "sha256": "e4027d246e8a5ae1c0810cb86e981c2316faf9ec3c7abaae6c2d3631196a2478"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1258\\READER_SPEC_V01.json",
+        "bytes": 1369,
+        "sha256": "977b231fbf5d6c2fee833ff89c69ae9998e8c93df07e3717fd347e2367f62ab0"
+      }
+    },
+    {
+      "source_id": 1265,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\READER_SPEC_V02.json",
+        "bytes": 1369,
+        "sha256": "724b3ba9b6de0826602d4a567dfa88eadcef399ef358ba783bae76708e9ce088"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\READER_SPEC_V01.json",
+        "bytes": 1369,
+        "sha256": "92ae2e0ed84072306e5b707c49b40d078179ea1dcb7767715f28d9ee519067a3"
+      }
+    },
+    {
+      "source_id": 1292,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1292\\READER_SPEC_V02.json",
+        "bytes": 1370,
+        "sha256": "24648b220761a5635dbe851b8d36c36d7ecb5e12d82edd8baf649c6c347e7b9c"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1292\\READER_SPEC_V01.json",
+        "bytes": 1370,
+        "sha256": "cc47115c0e36cb22fa446eec7280a29a3c629ef5aa4fb0dddf3a8b59af08c46e"
+      }
+    },
+    {
+      "source_id": 1312,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1312\\READER_SPEC_V02.json",
+        "bytes": 1369,
+        "sha256": "d86645c7dffe82f82b8c100253faf0c687236022c567102c0229a9d1fc135ab9"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1312\\READER_SPEC_V01.json",
+        "bytes": 1369,
+        "sha256": "58a136a6d4a83eda3f942c847dd9d919886c6ff085263f0f04dde77eaffc84b0"
+      }
+    },
+    {
+      "source_id": 1322,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1322\\READER_SPEC_V02.json",
+        "bytes": 1370,
+        "sha256": "50b12414542c4ba2f6e9b9f6a30afee42509aaff4fd814237d3e9d1aef069b5c"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1322\\READER_SPEC_V01.json",
+        "bytes": 1370,
+        "sha256": "f114aae8b5de4dcdf81addce935eef1dd977d5aeb60b25770ebd3ccc412f039b"
+      }
+    },
+    {
+      "source_id": 1328,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1328\\READER_SPEC_V02.json",
+        "bytes": 1369,
+        "sha256": "ab9a866c764d54b93b6791d0a4bbf8d4e7072127dae7022eb2d09f1aa1b2bded"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1328\\READER_SPEC_V01.json",
+        "bytes": 1369,
+        "sha256": "c9ade471cb48c0d5393f2945cccb4167a64a272043268eeabd981b03566b67e4"
+      }
+    },
+    {
+      "source_id": 1343,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1343\\READER_SPEC_V02.json",
+        "bytes": 1369,
+        "sha256": "12aab55d800c261338ed4b1a8cee9e94b7e6310c82f02923c500fcab630e9fa3"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1343\\READER_SPEC_V01.json",
+        "bytes": 1369,
+        "sha256": "f478db21331d723728860faedfeabb975e4e6e43e005474eb8ce99eca78c2927"
+      }
+    },
+    {
+      "source_id": 1344,
+      "spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1344\\READER_SPEC_V02.json",
+        "bytes": 1369,
+        "sha256": "76c6e24ba10fc7b62f36695b6e4c3da8be4e80cdc5b444ffdd245d80abdcdd10"
+      },
+      "original_spec": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1344\\READER_SPEC_V01.json",
+        "bytes": 1369,
+        "sha256": "7650d3138f3dd70248f00c1e1ef7833f8ad6d8913d734845f0ffe981028c5abe"
+      }
+    }
+  ],
+  "no_new_producer_fee_prior_candidate_or_grid": true,
+  "whole_project_complete": false
+}

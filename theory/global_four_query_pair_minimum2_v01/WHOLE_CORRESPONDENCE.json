@@ -1,0 +1,1053 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "comparisons": [
+    {
+      "role": "iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+        "bytes": 730560,
+        "sha256": "3067cbc4059ffa1356e581f934e55210db57b91a65667a5396ef1f2bc763d605"
+      },
+      "whole_canonical_sha256": "59111c4b9fd9f8b4b7f70315e6b647c3f738d5119d5821acf0aa3aaee24b934e",
+      "all_top_level_keys": [
+        "schema",
+        "frozen441family_projection",
+        "source_order",
+        "pair_order",
+        "price_order",
+        "rows",
+        "original_full_families_retained_not_assumed_irredundant"
+      ],
+      "all_nested_value_counts": {
+        "dict": 882,
+        "list": 5858,
+        "str": 3,
+        "int": 25579,
+        "bool": 1,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/audit/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+        "bytes": 201344,
+        "sha256": "1ab3ccbf5c62332670368c4f8ec44ca70636c9af96932e89e12140ca5bb1d8ef"
+      },
+      "whole_canonical_sha256": "f2dad05fc851b4872a8886b8bf53e47c3ca1e0f53854e659559bd2a781c72988",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "original441acceptance",
+        "original441actual_full_replay",
+        "frozen_data_manifest",
+        "static_packet_files_rehashed",
+        "source_classification",
+        "monotone_already_closed",
+        "residual_sources",
+        "inherited1345_and_full_catalogue_proofs_not_reexecuted",
+        "new_global_source_catalogue_regenerated",
+        "source_projections",
+        "residual_results",
+        "physical_label_supports_checked",
+        "all16_possible_words_checked_per_physical_label",
+        "original_full_policy_input_paths_checked",
+        "explicit_transported_policy_input_paths_checked",
+        "residual_ordered_tasks_covered",
+        "query_permutations",
+        "label_swaps",
+        "literal_answer_complementation_used",
+        "fee_coefficient_identities_checked",
+        "cost_values_sampled",
+        "transport_argument",
+        "completeness_argument",
+        "new_one_pair_fee_equality_or_gap_proved",
+        "g4_support_minimum",
+        "next_source_in_frozen_order_not_already_accepted",
+        "source1209_all6pairfamilies_already_accepted_in453455",
+        "new_fee_prior_grid_LP_API_hosted_human_labels_or_PDF",
+        "same_agent_dependency_audit_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 338,
+        "list": 1153,
+        "str": 56,
+        "int": 8631,
+        "bool": 9,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "majority",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/MAJORITY_RESULT_V01.json",
+        "bytes": 780,
+        "sha256": "076c528d2089793d454f875f50bb71ffbae6af5981adac92aeff68070e18f698"
+      },
+      "whole_canonical_sha256": "5a0f22a16727347630eb1b925fa6d0b4f11bdf3171a33a68842b76cd992f4864",
+      "all_top_level_keys": [
+        "threshold_and_subset",
+        "structural"
+      ],
+      "all_nested_value_counts": {
+        "dict": 7,
+        "list": 0,
+        "str": 1,
+        "int": 16,
+        "bool": 0,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration453/SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration453/SINGLE_PAIR_SEPARATE_READER_RESULT_V01.json",
+        "bytes": 3576,
+        "sha256": "09a8499c3ec8cbb1cb8b4689a59b8b8180579dcd51887333e0f2a924cbd060d0"
+      },
+      "whole_canonical_sha256": "748a982cf3b53b25dbb2a1a86da2c13f7d23ccc0f4a69582427ccea4da149cfd",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source",
+        "scope",
+        "proof",
+        "physical_partitions",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "full_policy_completeness",
+        "parameter_root_cones_verified",
+        "closed_single_pair_families",
+        "counts",
+        "exact_rank_method",
+        "continuous_cover_lemma",
+        "game_bridge",
+        "claim",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_or_prior_grids_new_model_API_or_human_review",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 13,
+        "list": 14,
+        "str": 12,
+        "int": 57,
+        "bool": 4,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/SOURCE1217_SINGLE_PAIR_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_SINGLE_PAIR_RESULT_V01.json",
+        "bytes": 1269,
+        "sha256": "55aed3eefcbb1220260b91d1b91f18cffe9b2f311bf7cad7444b5e4139a628f1"
+      },
+      "whole_canonical_sha256": "6fd9b2ef1cd2451646b1ea90dd18880f0b81f490093005ed3b6a3ea5159bc319",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/SOURCE1217_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/SOURCE1217_READER_RESULT_V02.json",
+        "bytes": 3921,
+        "sha256": "46bac0f2642839b1f76b4e0464c25972ad545fc92c419320974f22b0a18dc52b"
+      },
+      "whole_canonical_sha256": "5381fae951c51be8193e16cade1f8d3da9b372aa881b7dfd0acdce05f1387d6a",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 18,
+        "str": 14,
+        "int": 66,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1221/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/PRODUCER_RESULT_V01.json",
+        "bytes": 1270,
+        "sha256": "4306d0bd87f824f8ac8a24e2748f43635f6403d82c0190a81a8f424ac6c27143"
+      },
+      "whole_canonical_sha256": "6f7a2f2ae40c19cbfbb2de529501bb56ab571c9435ede199848d20a2865df270",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1221/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1221/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3929,
+        "sha256": "c43fada13f36d57c7383f9e772b04e83eb72e8cb79cb59fefb45aa64a84d38e4"
+      },
+      "whole_canonical_sha256": "06f194d0d26a68c715027728d13ce92968137a435b0a208ae62bcb8b9b76c005",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 18,
+        "str": 14,
+        "int": 66,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1258/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/PRODUCER_RESULT_V01.json",
+        "bytes": 1270,
+        "sha256": "f6a67e5609d54da49b70e29774edb511410008dec02a83baa14fd74efb17fad3"
+      },
+      "whole_canonical_sha256": "dacc1c9ac6785faa58b5256e5980d9ac7bad074ac690ffce99f6a509e45a5729",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1258/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1258/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3946,
+        "sha256": "d5255ab5bcf34f0e4ba676f49dd508d001e5869cc960064d5f088afd8979e9fa"
+      },
+      "whole_canonical_sha256": "b1558647a380ed44c8638478f484848887e8008d159e60b2843b00f87fcc917a",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 18,
+        "str": 14,
+        "int": 68,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1265/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/PRODUCER_RESULT_V01.json",
+        "bytes": 1271,
+        "sha256": "30b5de0b5ec7409955b1693235f42a00297ceba23a58b1ad44fb8e96f347de14"
+      },
+      "whole_canonical_sha256": "190b7457905377255ab2eb4ca22cda8928b145a522285547110e60b3ac4e3f75",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1265/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1265/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3889,
+        "sha256": "b0d1377cb673351d086fb410491a51f500aaefefb7e21b9520effad88f77135f"
+      },
+      "whole_canonical_sha256": "fe50b58942133d578527e4a541893ec30f21a5d51d6573a4ddb852467d2bc5f9",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 17,
+        "str": 14,
+        "int": 65,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1292/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/PRODUCER_RESULT_V01.json",
+        "bytes": 1270,
+        "sha256": "f36790b4a4aa1aefb8e60e1017e7c4970e4197c56cd8cbc2a9d67845ea22a4bf"
+      },
+      "whole_canonical_sha256": "2e8b94232b3706bd80e43391a9d4ae71ace1a9a4e9445ccd8f577a38fa290459",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1292/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1292/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3904,
+        "sha256": "c9c0f48386dc4ee5e89beaeb34f61bea8c29e9634b00cad5b223105c29dda729"
+      },
+      "whole_canonical_sha256": "0ad4c442e883185ab08378d10ec94f7d23638b5037ef58a64a019db6be58d94c",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 17,
+        "str": 14,
+        "int": 67,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1312/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/PRODUCER_RESULT_V01.json",
+        "bytes": 1270,
+        "sha256": "018293b3185b89fd73a76304fcc8970dbf3adb434a5bcb4076cedfaa70fd90e3"
+      },
+      "whole_canonical_sha256": "4d85232e8e7e70792fed4eeab0212af8ab549ceeb7e84ad4160bc640e8abb83a",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1312/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1312/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3886,
+        "sha256": "f5fc8f06b49387a358e75e1e3da9bd7c33c9a14ec2f3716a2ceb2a5dcc78bac7"
+      },
+      "whole_canonical_sha256": "3bbb4805db3e7dffa1832a5957edae6d0cf0117dd7d34407b227a06e94f24d6c",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 17,
+        "str": 14,
+        "int": 65,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1322/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/PRODUCER_RESULT_V01.json",
+        "bytes": 1273,
+        "sha256": "d0be1d1bb0b588864f49f4f237b04dcd9431fbc74d36118c1528eb0604523bb4"
+      },
+      "whole_canonical_sha256": "315f6851ac45d2b5658687b0e8306c3f823236cfada423d5fe80aba9ec218d23",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1322/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1322/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3893,
+        "sha256": "1c3158fbc738cfcf7ef4ca2ba81d47fd1c56a2256bd02d92311028b9fa82e7ec"
+      },
+      "whole_canonical_sha256": "a7fc3e3bf17a6d0cd713543433dddfef90ee6deb46afa1bc36606d27a8a1d718",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 17,
+        "str": 14,
+        "int": 65,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1328/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/PRODUCER_RESULT_V01.json",
+        "bytes": 1272,
+        "sha256": "b6bcc8a8ea236a89451b994fcce58cf6eafcd9997236f2ba6f2c4eaa168d30c5"
+      },
+      "whole_canonical_sha256": "f3843400daddf00415dd1b4177ac51c0d83c5a5a41d330bf47338e689a16b00c",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1328/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1328/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3890,
+        "sha256": "099e3290b36351c645af30495be5ae567993d4f5cef67633cda44d4cb13bb395"
+      },
+      "whole_canonical_sha256": "e273a036c80e22ab2fc7caf4705b05819c3555b986c959864f8e84be73b1e19c",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 17,
+        "str": 14,
+        "int": 65,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1343/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/PRODUCER_RESULT_V01.json",
+        "bytes": 1270,
+        "sha256": "aa076cd3a3498476b757eaebe663bb9d087c4fe1a331add81f0d0c3cd8216c8f"
+      },
+      "whole_canonical_sha256": "0c262a5db722025593c3202f9fdfff14bb15e5822f5cbf48fa94f73fbd0d5dc6",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1343/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1343/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3897,
+        "sha256": "4b4ef70d3f6d30873bc2f67deb87e3e25731410a0542c9dbb7113f06a9f5231d"
+      },
+      "whole_canonical_sha256": "9fd37a907942e6a90bafe3b973234e6b57d8b6fa8f613405b34cfd07381d7c71",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 17,
+        "str": 14,
+        "int": 66,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1344/PRODUCER_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/PRODUCER_RESULT_V01.json",
+        "bytes": 1270,
+        "sha256": "c8c487ad77f4dde5d6888574e45922715e04ee54f7f799940bf4cd10dd499ece"
+      },
+      "whole_canonical_sha256": "80040fe087e35c5665a44a36b832f338a1361cf42c55d02e3496bb170a3850ec",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "proof",
+        "candidate_closed_pairs",
+        "closed_roots",
+        "roots",
+        "unclosed_roots",
+        "stats",
+        "independent_reader_required",
+        "new_numeric_games_LP_model_hosted_or_human_review"
+      ],
+      "all_nested_value_counts": {
+        "dict": 3,
+        "list": 8,
+        "str": 4,
+        "int": 29,
+        "bool": 2,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/source1344/SEPARATE_READER_RESULT_V02.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/source1344/SEPARATE_READER_RESULT_V02.json",
+        "bytes": 3897,
+        "sha256": "763d4adde882d972718d319b63a1fab659a9ac957c1ebd75bf30043c541a4e2d"
+      },
+      "whole_canonical_sha256": "f0c15a0cb0cb3ce8c27d2ec09bdaede538309d55c5638871fbe24bba0bb9d1ad",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "source_id",
+        "source",
+        "scope",
+        "proof",
+        "physical_label_witnesses",
+        "W0",
+        "W1",
+        "original_paths_checked",
+        "original_A_P_counts",
+        "completeness_dependency",
+        "parameter_root_cones_replayed",
+        "parameter_root_cones_closed",
+        "closed_pairs",
+        "full_source_one_pair_exclusion_accepted",
+        "counts",
+        "unclosed_roots",
+        "exact_rank_method",
+        "cover_argument",
+        "game_argument",
+        "claim_scope",
+        "no_all_prior_Bayes_equality_claim",
+        "numeric_games_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "same_agent_separate_reader_not_external_human_or_formal_kernel",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 8,
+        "list": 17,
+        "str": 14,
+        "int": 66,
+        "bool": 5,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/GLOBAL_PAIR_SUPPORT_MINIMUM2_RESULT_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/GLOBAL_PAIR_SUPPORT_MINIMUM2_RESULT_V01.json",
+        "bytes": 36281,
+        "sha256": "78b122f5659f2a0e755f234c52f7d9c5e0b7b41fbde930a87e63fe19422ac5cf"
+      },
+      "whole_canonical_sha256": "1d6e4e3105bb0c46cb9b9f408fdfead3b386909cca4ec5455e1a731e27db0e52",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "theorem_id",
+        "statement",
+        "proof_modules",
+        "source_cover",
+        "residual_cones",
+        "residual_counts",
+        "original_residual_policy_input_paths",
+        "new_source_producers",
+        "final_accepted_separate_readers",
+        "actual_separate_reader_passes_including_metadata_repair",
+        "retained_metadata_repair",
+        "new_real_process_terminals",
+        "source1209_original_proof_and1345cases_inherited_not_rerun",
+        "one_pair_class_monotone_normalized",
+        "fewer_than4query_extension",
+        "upper_witness",
+        "scope_limits",
+        "bibliographic_priority",
+        "application_advantage",
+        "internal_computer_assisted_proof_not_external_human_independent_or_formal_kernel_review",
+        "new_numeric_fee_prior_grid_LP_API_hosted_humanlabels_PDF_or_publicupload",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 136,
+        "list": 21,
+        "str": 299,
+        "int": 258,
+        "bool": 6,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    },
+    {
+      "role": "iteration458/GLOBAL_SCOPE_AND_UPPER_QA_V01.json",
+      "raw": {
+        "path": "artifact-origin://scratch/iteration461_public_proof_v02/core/iteration458/GLOBAL_SCOPE_AND_UPPER_QA_V01.json",
+        "bytes": 4651,
+        "sha256": "73e18d0dec25cba27f4d240294cf632749d6da65cdd2185cd2b9c575694110f4"
+      },
+      "whole_canonical_sha256": "d61e9cdad93c0caf73dd3db65864902a146b495c5a76fff3c0da9a99b27c6a34",
+      "all_top_level_keys": [
+        "schema",
+        "status",
+        "global_result",
+        "formal_monotone_coefficient_checks",
+        "sampled_minimax_games",
+        "new_fee_or_prior_candidates",
+        "original_upper_witness_source",
+        "fixed_old_individual_charges",
+        "fixed_old_pair_groups",
+        "A_upper_costs",
+        "P_upper_costs",
+        "A_dual_slacks_all40",
+        "P_dual_slacks_all32",
+        "R_A",
+        "R_P",
+        "gap",
+        "robust_sparse_radius",
+        "robust_gap_at_least",
+        "global_pair_support_minimum_nonnegative_and_positive",
+        "scope_argument",
+        "same_agent_separate_arithmetic_and_scope_review_not_human_or_formal_kernel",
+        "new_LP_price_prior_grid_API_hosted_humanlabels_or_PDF",
+        "whole_project_complete"
+      ],
+      "all_nested_value_counts": {
+        "dict": 4,
+        "list": 10,
+        "str": 104,
+        "int": 17,
+        "bool": 3,
+        "float": 0,
+        "null": 0
+      },
+      "mathematical_field_exclusions": [],
+      "whole_object_equal": true
+    }
+  ],
+  "mathematical_field_exclusions": [],
+  "origin_protocol_versus_current_metadata_fields": [
+    "actual_separate_reader_passes_including_metadata_repair",
+    "source1209_original_proof_and1345cases_inherited_not_rerun"
+  ]
+}

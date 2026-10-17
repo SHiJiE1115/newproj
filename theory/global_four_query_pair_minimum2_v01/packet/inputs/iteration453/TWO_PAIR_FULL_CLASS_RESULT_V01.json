@@ -1,0 +1,522 @@
+{
+  "schema": 1,
+  "status": "PASS_FULL_ORIGINAL_CLASS_RATIONAL_PRIMAL_DUAL_CERTIFICATES",
+  "scope_sha256": "dbd1a77d661a0af9e369e27b22ee5523edf9f12a5c4f9bf0c3b24b400e715487",
+  "source_sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+  "fee_by_mask": [
+    0,
+    4,
+    5,
+    9,
+    6,
+    10,
+    9,
+    13,
+    5,
+    9,
+    10,
+    14,
+    9,
+    13,
+    12,
+    16
+  ],
+  "positive_individual_costs": [
+    4,
+    3,
+    2,
+    3
+  ],
+  "positive_pair_groups": [
+    [
+      [
+        1,
+        2
+      ],
+      2
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      2
+    ]
+  ],
+  "minimum_submodularity_slack": 0,
+  "minimum_proper_marginal": 2,
+  "strict_on_all_incomparable_pairs": false,
+  "full_A_P_counts": [
+    40,
+    32
+  ],
+  "all_correct_original_paths_checked": 504,
+  "results": {
+    "A": {
+      "anchor": "286/29",
+      "upper_on_all7": [
+        {
+          "word": 0,
+          "expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "word": 1,
+          "expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "word": 4,
+          "expected_fee": "273/29",
+          "slack": "13/29"
+        },
+        {
+          "word": 7,
+          "expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "word": 9,
+          "expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "word": 11,
+          "expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "word": 15,
+          "expected_fee": "286/29",
+          "slack": "0"
+        }
+      ],
+      "dual_lower_on_all_columns": [
+        {
+          "column": 0,
+          "prior_expected_fee": "386/29",
+          "slack": "100/29"
+        },
+        {
+          "column": 1,
+          "prior_expected_fee": "403/29",
+          "slack": "117/29"
+        },
+        {
+          "column": 2,
+          "prior_expected_fee": "13",
+          "slack": "91/29"
+        },
+        {
+          "column": 3,
+          "prior_expected_fee": "386/29",
+          "slack": "100/29"
+        },
+        {
+          "column": 4,
+          "prior_expected_fee": "403/29",
+          "slack": "117/29"
+        },
+        {
+          "column": 5,
+          "prior_expected_fee": "419/29",
+          "slack": "133/29"
+        },
+        {
+          "column": 6,
+          "prior_expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "column": 7,
+          "prior_expected_fee": "303/29",
+          "slack": "17/29"
+        },
+        {
+          "column": 8,
+          "prior_expected_fee": "13",
+          "slack": "91/29"
+        },
+        {
+          "column": 9,
+          "prior_expected_fee": "363/29",
+          "slack": "77/29"
+        },
+        {
+          "column": 10,
+          "prior_expected_fee": "333/29",
+          "slack": "47/29"
+        },
+        {
+          "column": 11,
+          "prior_expected_fee": "330/29",
+          "slack": "44/29"
+        },
+        {
+          "column": 12,
+          "prior_expected_fee": "419/29",
+          "slack": "133/29"
+        },
+        {
+          "column": 13,
+          "prior_expected_fee": "405/29",
+          "slack": "119/29"
+        },
+        {
+          "column": 14,
+          "prior_expected_fee": "375/29",
+          "slack": "89/29"
+        },
+        {
+          "column": 15,
+          "prior_expected_fee": "372/29",
+          "slack": "86/29"
+        },
+        {
+          "column": 16,
+          "prior_expected_fee": "333/29",
+          "slack": "47/29"
+        },
+        {
+          "column": 17,
+          "prior_expected_fee": "302/29",
+          "slack": "16/29"
+        },
+        {
+          "column": 18,
+          "prior_expected_fee": "11",
+          "slack": "33/29"
+        },
+        {
+          "column": 19,
+          "prior_expected_fee": "289/29",
+          "slack": "3/29"
+        },
+        {
+          "column": 20,
+          "prior_expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "column": 21,
+          "prior_expected_fee": "286/29",
+          "slack": "0"
+        },
+        {
+          "column": 22,
+          "prior_expected_fee": "303/29",
+          "slack": "17/29"
+        },
+        {
+          "column": 23,
+          "prior_expected_fee": "294/29",
+          "slack": "8/29"
+        },
+        {
+          "column": 24,
+          "prior_expected_fee": "311/29",
+          "slack": "25/29"
+        },
+        {
+          "column": 25,
+          "prior_expected_fee": "311/29",
+          "slack": "25/29"
+        },
+        {
+          "column": 26,
+          "prior_expected_fee": "363/29",
+          "slack": "77/29"
+        },
+        {
+          "column": 27,
+          "prior_expected_fee": "349/29",
+          "slack": "63/29"
+        },
+        {
+          "column": 28,
+          "prior_expected_fee": "302/29",
+          "slack": "16/29"
+        },
+        {
+          "column": 29,
+          "prior_expected_fee": "11",
+          "slack": "33/29"
+        },
+        {
+          "column": 30,
+          "prior_expected_fee": "299/29",
+          "slack": "13/29"
+        },
+        {
+          "column": 31,
+          "prior_expected_fee": "316/29",
+          "slack": "30/29"
+        },
+        {
+          "column": 32,
+          "prior_expected_fee": "333/29",
+          "slack": "47/29"
+        },
+        {
+          "column": 33,
+          "prior_expected_fee": "302/29",
+          "slack": "16/29"
+        },
+        {
+          "column": 34,
+          "prior_expected_fee": "11",
+          "slack": "33/29"
+        },
+        {
+          "column": 35,
+          "prior_expected_fee": "289/29",
+          "slack": "3/29"
+        },
+        {
+          "column": 36,
+          "prior_expected_fee": "296/29",
+          "slack": "10/29"
+        },
+        {
+          "column": 37,
+          "prior_expected_fee": "313/29",
+          "slack": "27/29"
+        },
+        {
+          "column": 38,
+          "prior_expected_fee": "313/29",
+          "slack": "27/29"
+        },
+        {
+          "column": 39,
+          "prior_expected_fee": "286/29",
+          "slack": "0"
+        }
+      ],
+      "minimum_dual_slack": "0",
+      "binding_columns": [
+        6,
+        20,
+        21,
+        39
+      ]
+    },
+    "P": {
+      "anchor": "79/8",
+      "upper_on_all7": [
+        {
+          "word": 0,
+          "expected_fee": "155/16",
+          "slack": "3/16"
+        },
+        {
+          "word": 1,
+          "expected_fee": "155/16",
+          "slack": "3/16"
+        },
+        {
+          "word": 4,
+          "expected_fee": "151/16",
+          "slack": "7/16"
+        },
+        {
+          "word": 7,
+          "expected_fee": "79/8",
+          "slack": "0"
+        },
+        {
+          "word": 9,
+          "expected_fee": "79/8",
+          "slack": "0"
+        },
+        {
+          "word": 11,
+          "expected_fee": "79/8",
+          "slack": "0"
+        },
+        {
+          "word": 15,
+          "expected_fee": "79/8",
+          "slack": "0"
+        }
+      ],
+      "dual_lower_on_all_columns": [
+        {
+          "column": 0,
+          "prior_expected_fee": "107/8",
+          "slack": "7/2"
+        },
+        {
+          "column": 1,
+          "prior_expected_fee": "14",
+          "slack": "33/8"
+        },
+        {
+          "column": 2,
+          "prior_expected_fee": "13",
+          "slack": "25/8"
+        },
+        {
+          "column": 3,
+          "prior_expected_fee": "107/8",
+          "slack": "7/2"
+        },
+        {
+          "column": 4,
+          "prior_expected_fee": "14",
+          "slack": "33/8"
+        },
+        {
+          "column": 5,
+          "prior_expected_fee": "29/2",
+          "slack": "37/8"
+        },
+        {
+          "column": 6,
+          "prior_expected_fee": "79/8",
+          "slack": "0"
+        },
+        {
+          "column": 7,
+          "prior_expected_fee": "21/2",
+          "slack": "5/8"
+        },
+        {
+          "column": 8,
+          "prior_expected_fee": "13",
+          "slack": "25/8"
+        },
+        {
+          "column": 9,
+          "prior_expected_fee": "25/2",
+          "slack": "21/8"
+        },
+        {
+          "column": 10,
+          "prior_expected_fee": "23/2",
+          "slack": "13/8"
+        },
+        {
+          "column": 11,
+          "prior_expected_fee": "91/8",
+          "slack": "3/2"
+        },
+        {
+          "column": 12,
+          "prior_expected_fee": "29/2",
+          "slack": "37/8"
+        },
+        {
+          "column": 13,
+          "prior_expected_fee": "103/8",
+          "slack": "3"
+        },
+        {
+          "column": 14,
+          "prior_expected_fee": "23/2",
+          "slack": "13/8"
+        },
+        {
+          "column": 15,
+          "prior_expected_fee": "83/8",
+          "slack": "1/2"
+        },
+        {
+          "column": 16,
+          "prior_expected_fee": "11",
+          "slack": "9/8"
+        },
+        {
+          "column": 17,
+          "prior_expected_fee": "10",
+          "slack": "1/8"
+        },
+        {
+          "column": 18,
+          "prior_expected_fee": "79/8",
+          "slack": "0"
+        },
+        {
+          "column": 19,
+          "prior_expected_fee": "79/8",
+          "slack": "0"
+        },
+        {
+          "column": 20,
+          "prior_expected_fee": "21/2",
+          "slack": "5/8"
+        },
+        {
+          "column": 21,
+          "prior_expected_fee": "10",
+          "slack": "1/8"
+        },
+        {
+          "column": 22,
+          "prior_expected_fee": "85/8",
+          "slack": "3/4"
+        },
+        {
+          "column": 23,
+          "prior_expected_fee": "85/8",
+          "slack": "3/4"
+        },
+        {
+          "column": 24,
+          "prior_expected_fee": "83/8",
+          "slack": "1/2"
+        },
+        {
+          "column": 25,
+          "prior_expected_fee": "11",
+          "slack": "9/8"
+        },
+        {
+          "column": 26,
+          "prior_expected_fee": "41/4",
+          "slack": "3/8"
+        },
+        {
+          "column": 27,
+          "prior_expected_fee": "87/8",
+          "slack": "1"
+        },
+        {
+          "column": 28,
+          "prior_expected_fee": "41/4",
+          "slack": "3/8"
+        },
+        {
+          "column": 29,
+          "prior_expected_fee": "87/8",
+          "slack": "1"
+        },
+        {
+          "column": 30,
+          "prior_expected_fee": "79/8",
+          "slack": "0"
+        },
+        {
+          "column": 31,
+          "prior_expected_fee": "10",
+          "slack": "1/8"
+        }
+      ],
+      "minimum_dual_slack": "0",
+      "binding_columns": [
+        6,
+        18,
+        19,
+        30
+      ]
+    }
+  },
+  "exact_gap": "3/232",
+  "failed_bounds": [],
+  "completeness": "Same unchanged previously certified source1209 full monotone-cost families; no new policy catalogue",
+  "number_of_candidate_fee_points": 1,
+  "new_LP_or_numeric_parameter_or_prior_grid": false,
+  "zero_prior_worlds_retained_for_correctness": true,
+  "separate_physical_source_DP_required": true,
+  "not_global_all_source_lower_bound_or_external_human_review": true
+}

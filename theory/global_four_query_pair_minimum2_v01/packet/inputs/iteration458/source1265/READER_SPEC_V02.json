@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "scope": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\SINGLE_PAIR_SCOPE_V01.json",
+    "bytes": 17973,
+    "sha256": "fd709ea2a90ba6ac31b50b94ef6fc6aa272b2e5a998bdfc40554da92ed966f80"
+  },
+  "source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\ORIGINAL_FULL_FAMILIES_V01.json",
+    "bytes": 9768,
+    "sha256": "ca4a5aec50f02b07a8fb5cb1cb7f9d6de9275431ee590e3cdb5b9c529257ebb5"
+  },
+  "proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\SINGLE_PAIR_PROOF_V01.json.gz",
+    "bytes": 7618,
+    "sha256": "d97479f96125e5553d2d6b8ebdef8576e84828c98ec0f491641cd53df7316f07"
+  },
+  "out": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\source1265\\SEPARATE_READER_RESULT_V02.json",
+  "reader": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\read_source_pair_proof_v02.py",
+    "bytes": 14815,
+    "sha256": "b5151489cd69751baeca073bef7de3405430281c30c56a7f755d7d38b15f6c87"
+  },
+  "candidate_actual_terminal": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\PROVE_SOURCE1265.PROCESS_TERMINAL.json",
+    "bytes": 313,
+    "sha256": "7ee49e7ecb92a89bf3f4a9d19aef11c52e49eb191398bb96eeef96e1be9420eb"
+  }
+}

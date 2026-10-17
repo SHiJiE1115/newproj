@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "status": "VERSIONED_SYMBOLIC_PROOF_CLASS_REPAIR_BEFORE_EXECUTION_NO_FEE_OR_GAME_CHANGE",
+  "previous_goal_turn": "PROGRESS452actualpublicV22andnewproofdelivery36anonymousfilesplusdirectionupdate",
+  "source_orbit": 1209,
+  "W0": [
+    1,
+    7,
+    9
+  ],
+  "W1": [
+    0,
+    4,
+    11,
+    15
+  ],
+  "W": [
+    0,
+    1,
+    4,
+    7,
+    9,
+    11,
+    15
+  ],
+  "A_P_counts": [
+    40,
+    32
+  ],
+  "source_sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+  "fee": "sumc_i*1{i in S}+lambda*1{S intersects e};c>=0,lambda>=0,all6pairs",
+  "hypothesis": "Full-private-A=Pforall6continuousfamilies;UNPROVED",
+  "method": "Finiteobjective-levelweak-dominanceandfull-original-rowP-liftingproofonexact5dimpolyhedralcones,notnumericprice/prior/gamegrid",
+  "cover": "24closedindividual-price-orderconesperpair;4price-differencecoordinatespluslambda>=0. Homogeneousgeneratorsproveallcontinuousparameters,notminimaxevaluationsatgeneratorpoints.",
+  "proof_steps": "Firsttest4fixedfull-original-gamepure-saddlecertificates;otherwiseV01weak-dominance/full-original-rowP-liftingandexactconecoverrules. All7correctnessworldsandfullclassesretained.",
+  "refinement": "Deterministicfirststraddlingcost-differenceformsplitintoclosedhalves;exactpositive/negative-generatorcrossingscovereachhalf. Pruneonlyrayswithactive-constraint-rank<4infull5dimcones;recordentirerationalproofscope.",
+  "no_silent_success": "Anyunclosedleaf/time/nodebudgetresidualkeepsaffectedglobalhypothesisOPEN;insufficientpureproofdoesnotmeanmethodgap.",
+  "bounds": {
+    "max_nodes_total": 4096,
+    "max_nodes_per_root": 192,
+    "compute_seconds": 150
+  },
+  "verification": "Afterproducer,independentreaderimplementationreconstructsfees/fullsourcepaths,costinequalities,conecoverandP-lifting;producerPASSaloneisnotacceptedtheorem.",
+  "not_performed": "NoLPsolver,numericfee/prior/policygrid,newpolicycatalogue,modelAPI,oldhostedscience,PDForpublicupload",
+  "preserve": "P1,353negative,nativecontrols,publicV22/source/executed/archiveidentities,controller/memorykeys,authorfactsdeferral",
+  "storage": "Originalfreshguard,C>=10GiBplusforecast,C<=1MiBmetadata,D<=64MiBphase,verifiedDonly",
+  "priority_application_human_or_formal_review": false,
+  "whole_project_complete": false,
+  "retained_V01_result": {
+    "file": "SYMBOLIC_SINGLE_PAIR_RESULT_V01.json",
+    "sha256": "fda2fac821499ba7b2049b28f5cc6d10d2852d0f8506ba56376fbad0429090fd",
+    "status": "PARTIAL_CANDIDATES_NOT_ACCEPTED_THEOREMS"
+  },
+  "reason": "V01pure-dominance/full-row-liftingproofclassleft113leavesincludingoldadditivepure-saddlecases. Addthe4alreadyestablished436pure-saddletemplatesaswhole-original-gamecertificates;nofee/candidate/price-gridorpolicycataloguechange.",
+  "pure_saddle_templates": [
+    {
+      "word": 1,
+      "P": 6
+    },
+    {
+      "word": 7,
+      "P": 6
+    },
+    {
+      "word": 9,
+      "P": 19
+    },
+    {
+      "word": 1,
+      "P": 19
+    }
+  ],
+  "pure_saddle_rule": "Atoneoriginalhardinputeveryoriginal40Acolumncost>=F(originalPpaidset);thatlegalPcost<=anchoronALL7inputs. Linear-generatorchecksproveeveryparameterinthecone."
+}
