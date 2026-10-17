@@ -1,0 +1,41 @@
+name: Complete four-query additive exact replay
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrnc-four-query-additive-exact
+  cancel-in-progress: false
+
+jobs:
+  verify-four-additive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out the selected source commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Replay all original source families and exact price certificates
+        shell: bash
+        run: >-
+          python3 -I -X utf8 -B theory/four_query_additive_v01/run_hosted_four_additive_v01.py
+          --execution-kind github-actions
+          --expect-freeze-sha256 6911d96a9ed1830ab284688b3cfce3124b5e078f5340590b9b078acec194c60d
+          --output-dir ci-results/four-additive
+      - name: Retain actual success or failure receipts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: four-additive-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ci-results/four-additive/*.json
+            ci-results/four-additive/*.txt
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false

@@ -74,3 +74,17 @@ submission matters; no author approval is implied by these machine-produced reco
 ## Small-menu actual hosted execution retained
 
 [Actual Linux <=3 ideal-proof execution and original receipt archive](evidence/small_menu_hosted_v01/README.txt): run38844940996, attempt1, source aade35dbb049f64f6a66e0db8fd79fc269fb0ba5. Checker PID2403 exited0; all parsed result fields equal the Windows control except wall_seconds, with no mathematical field excluded. The original3928byte artifact matches the service SHA256 and is persistently retained. This replays the new17810case certificate-ideal premise; the old four-query leg is inherited, not rerun. Same-checker portability is not a new independent implementation, human review, historical scientific authentication, application advantage or priority clearance.
+
+
+## Complete four-query additive exclusion: full proof packet
+
+[Exact full-source proof and manual replay](theory/four_query_additive_v01/README.txt):
+all1356 physical source orbits, full39113A/33781P families and every finite
+nonnegative real additive price vector; zero/tie faces included. The old
+strictly positive7-query witness has A-upper13/3 and full-P value227/51,
+giving a first randomized additive-gap interval5to7, with exact minimum open.
+The original frozen52-file ZIP and every exposed member are identical to
+the accepted private source; two actual Windows processes, one after ZIP relocation, agree. A newly
+prepared manual Linux workflow is not yet evidence of hosted success.
+The new V19 manuscript remains private. No blanket licence, human review,
+literature-priority clearance or natural application gain is asserted.

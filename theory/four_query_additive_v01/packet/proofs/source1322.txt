@@ -1,0 +1,78 @@
+SOURCE1322: TWO REMAINING FULL PRICE CONES
+
+Source and policy scope. Bits are ordered (a,b,c,d), least significant first.
+Label0 words are {0,3,4,7,8,11}; label1 words are {1,15}. They are the ORIGINAL
+complete SAME/DIFFERENT equivalence-partition fibres, not a smaller promise.
+All policies must be correct on ALL EIGHT original words, even when a dual
+weight below is zero. The dual weight is a lower-bound device, not a change
+of source or a relaxation of zero-error correctness. Private coins are
+independent of the input. P may randomize a global order and causally skip.
+
+Assume 0<=a<=b<=c<=d. Swapping c,d fixes each physical fibre and maps the
+ORIGINAL priority vectors P5 -> P6 and P14 -> P24, closing the other cone.
+
+The two original legal P policies have these cost pairs on words1,15:
+P5:  (a+b,   b+c+d);  tree b -> (a if b=0; c then d if b=1).
+P14: (a+b+c, c+d);    tree c -> (b then a if c=0; d if c=1).
+Their original global orders are respectively (b,a,c,d) and (c,b,a,d).
+All leaves and permanent skips were checked directly on all original inputs.
+
+One simultaneous map sends original words0,1,8 to1, and3,4,7,11,15 to15.
+For BOTH P5 and P14, cost(w)<=cost(mapped(w)) throughout this ordered cone.
+For example on words3,11 the P14 inequality is b+c<=c+d; on word4 the P5
+inequality is a+b<=b+c+d. All other map inequalities are equality or add
+nonnegative fees. Thus every mixture of these two P policies has its worst
+cost among the two positive words. This map is common to both policies.
+
+Universal lower bound. Word1 must query a and b: opposite-label words0 and3
+differ from it only at a and b. Word15 must query c and d: opposite-label
+words11 and7 differ only at c and d. Consider any deterministic correct
+query tree, not just our finite stored family. The first query where words1
+and15 answer differently is b,c,or d. Before it the common path can contain
+only a (repeats can be erased). Neither positive path may stop there, since
+an opposite-label word agrees on that prefix. If this query is b, the path
+on15 incurs extra b beyond its mandatory c,d. If it is c, the path on1
+incurs extra c beyond a,b. If it is d, the path on1 incurs extra d>=c.
+Any preceding a is nonnegative and does not weaken these bounds.
+
+Put D=b+c, S=a+b-d, and N=b*(a+b+c)+c*(c+d).
+For D>0 use the dual input weights b/D on1 and c/D on15. The weighted
+mandatory-certificate cost plus the first distinguishing query is at least
+[b*(a+b)+c*(c+d)+b*c]/D=N/D in every case. Averaging this seedwise inequality
+proves it for every zero-error private randomized A policy. Separately,
+the mandatory c,d certificate on15 always gives the lower bound c+d.
+
+If d>=a+b, the pure original P14 costs at most c+d on all original inputs;
+its cost on15 is exactly c+d. Hence R_A=R_P=c+d.
+If d<=a+b and D>0, mix original P5 with probability S/D and P14 with
+probability (c+d-a)/D. These are nonnegative, sum to1, and depend only on
+known prices. Their expected costs at BOTH1 and15 equal N/D. The common
+row map proves this upper bound on every original input. Hence R_A=R_P=N/D.
+At d=a+b, N-(c+d)*D=b*S=0 and the mixture reduces to pure P14.
+On the ordered mixed region D=0 forces all prices to0, where pure P14
+has value0; no division is used on that face.
+
+Exact domain proof, not a price grid. The ordered cone is the union of:
+(M) d<=a+b, (L) c<=a+b<=d, and (H) a+b<=c<=d.
+Their four nonnegative coordinates and inverse price maps are frozen in
+PROOF_SPEC_V01.json. For M the coordinates are (S,b-a,c-b,d-c), and
+D=2*S+2*(b-a)+3*(c-b)+2*(d-c); thus its only zero face is the origin.
+Both matrix inverses, every domain inequality, all76 ORIGINAL A/P column
+lower bounds, and all8 ORIGINAL input P upper bounds were checked exactly.
+The second implementation uses ten triangular quadratic coefficients,
+also reconstructs the shared-path lower proof, and replays all22 earlier
+complete-cone proofs with their common row maps and original P liftings.
+
+Thus this ORIGINAL source and its24 coordinate/label orbit members have
+R_A=R_P for EVERY finite nonnegative additive price vector. The displayed
+closed value formula is claimed only for the two newly resolved ordering
+cones. The other22 cones have accepted equality certificates, not a new
+claimed uniform value formula. General monotone costs, arbitrary partial
+sources, all known priors, generic method novelty and natural gains are
+outside this conclusion. No external human review was performed.
+
+Catalogue-level status. With this result every one of the1356 ORIGINAL
+four-query source orbits has a sourcewise additive equality certificate,
+covering42864 ordered tasks according to the accepted catalogue. The next
+step is a separate dependency/coverage audit before promoting this list to
+an integrated universal theorem or deriving a new minimum-query bound.

@@ -1,0 +1,27 @@
+{
+  "status": "ACTUAL_LOCAL_AND_EXTRACTED_FULL_WINDOWS_REPLAYS_SCIENCE_EQUAL",
+  "python": "3.12.14",
+  "science_sha256": "9603869d50d3ef3605200dd4fff86476cd8ea35688d17d223f48d86ab6b9fc4f",
+  "original_local_result_raw_sha256": "37e2af25f4a98dd2ac785a7df8fc29feea86d9cc1f1abf627b97f68029a04153",
+  "original_relocated_result_raw_sha256": "52d7d6afa2160ca0c36575a9466a6165ece3fff1974e0f3c8c074c3510b79110",
+  "actual_local_process_terminal": {
+    "pid": 25076,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "full_process_CPU_seconds": 12.296875,
+    "wall_seconds": 15.347521999996388,
+    "completed_utc": "2026-10-17T04:09:14.470820+00:00"
+  },
+  "actual_relocated_process_terminal": {
+    "pid": 288,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "full_process_CPU_seconds": 11.890625,
+    "wall_seconds": 15.231466099998215,
+    "completed_utc": "2026-10-17T04:11:05.398508+00:00"
+  },
+  "original95pins_and_all25scientificprojections16prooftexts_checked": true,
+  "local_receipts_do_not_authenticate_GitHub_or_original_historical_science": true,
+  "same_implementation_not_independent_review": true,
+  "new_model_API_calls": 0
+}

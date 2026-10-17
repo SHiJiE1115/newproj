@@ -1,0 +1,37 @@
+PUBLICATION AND SOURCE NOTICE
+
+This exact research supplement is distributed under the project owner's
+continuing authorization to publish reviewed experimental materials in
+SHiJiE1115/newproj and manually run Actions. It is not a paper submission,
+author identity assertion or human approval. The V19 paper remains private.
+
+The original archive's private-candidate and replay-pending labels describe
+its state when frozen. They are retained byte-for-byte as historical source
+metadata. This companion notice records the later reviewed public deposit;
+it does not retroactively rewrite the frozen inputs or claim an earlier run.
+
+The original numerical datasets, proof texts and checking code were prepared
+within this research project, with AI assistance. They are exact scientific
+field projections and project-verifier derivatives from the recorded source
+IDs and raw hashes in DATA_MANIFEST.json. Source-pin path normalization and
+two operational token substitutions are explicitly declared there. The
+private original-path ledger is not distributed. All25 decoded gzip payloads
+and all raw members were scanned; this is a bounded content/source review,
+not a universal ownership or anonymity guarantee.
+
+No third-party paper full text, publisher class/template, deposited external
+dataset, credential, private machine/controller state, sealed P1 response or
+author personal information is included. Python standard-library components
+are imported from the installed interpreter, not redistributed here.
+No blanket project licence is selected or added by this deposit. Public
+availability must not be described as a new permissive open-source licence.
+Existing repository and source-specific notices remain in force.
+
+The old1217 library count transcription26->29 is disclosed in the frozen
+archive manifest. A separate private provenance reader initially omitted the
+already-frozen packet specification from its origin lookup; its versioned
+index-only repair passed. That private failed receipt is declared here but
+is not included in this public packet. Numeric certificates, prices, priors
+and strategy families were not changed by either reader correction. The reproduction is a mathematical
+check of the explicitly complete-fibre model, not independent human labels,
+original paper execution, natural academic-evaluation success or CCF acceptance.
