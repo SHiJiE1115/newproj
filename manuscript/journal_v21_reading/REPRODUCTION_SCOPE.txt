@@ -1,0 +1,56 @@
+REPRODUCTION SCOPE FOR CURRENT V21
+
+The article has25numbered results,22proof environments,10tables and27references.
+The original24statement bodies and numbers,21proof bodies and10table bodies
+are unchanged from V20. New Proposition25 is on p68, with proof on pp68--69.
+The source/fee/comparator/error/randomness quantifiers remain explicit.
+
+New supporting lemma, fixed old source and unit costs:
+  W0={0,3,4,7,8,11},W1={1,15},word=sum_i2^i xi.
+  Promise R_A=R_P=5/2. Minimum over ALL compatible total Boolean functions
+  of full-cube R_A and R_P equals3. Private seeds are input-independent;
+  every seed must compute one common total function in the completion cost.
+  P is the full global-order class with causal permanent SKIPs, not a
+  selected order or prefix baseline. Nonunate functions are included.
+
+Run the fixed-obligation checker with Python3.11+ standard library:
+  python -I -B verify_unit_completion.py --out /absolute/new/result.json
+The output must be new and outside this reading directory. It checks the
+six frozen local implications, the forced16-entry function, the two old
+promise P policies and eight explicit full-cube directional seeds. It does
+not search over completions/policies, optimize an LP, or run a model. The
+sensitivity lower for every seed and the independent-child lower for g
+are written analytic arguments; fixtures do not formally derive them.
+
+The6/5completion inflation applies only to this source and unit prices.
+It gives no all-reductions or unequal-price obstruction. It does not narrow
+the randomized additive first-gap interval5--7 or solve its exact minimum.
+The generic completion and sensitivity methods are established context;
+the document claims no new generic framework or literature-priority clearance.
+
+Existing proof packets and original execution records remain separate:
+  Deterministic complete-six / fixed-seven review:
+  https://github.com/SHiJiE1115/newproj/blob/main/theory/complete_six/README.md
+  https://github.com/SHiJiE1115/newproj/blob/main/theory/REPRODUCE.md
+  https://github.com/SHiJiE1115/newproj/blob/main/theory/HOSTED_RUNS.md
+  Complete-four all-nonnegative-real-additive proof, executed source:
+  https://github.com/SHiJiE1115/newproj/tree/837498553f02739d60d3c53f79b8141ac4f5e105/theory/four_query_additive_v01
+  Actual Linuxrun39003766001attempt1:
+  https://github.com/SHiJiE1115/newproj/actions/runs/39003766001
+  Its distinct persistent output archive:
+  https://github.com/SHiJiE1115/newproj/tree/468d5a4df39611102c8b08aaecd8a05d6a6582b1/evidence/four_additive_hosted_v01
+  Three-query randomized ideal extension's actual hosted record:
+  https://github.com/SHiJiE1115/newproj/blob/main/evidence/small_menu_hosted_v01/README.txt
+
+The executed commits and later archival commits are distinct. No existing
+hosted job, complete catalogue or old price study was rerun for this reading
+release. Same-checker portability is not another independent implementation,
+human review, formal proof kernel or original historical science attestation.
+The entire new paper proof is readable here; not every inherited executable
+layer is embedded into this source ZIP. Follow its own versioned packet and
+analytic dependencies, rather than infer coverage from a single green check.
+
+The actual model study remains negative and the strong native fixed baseline
+controls remain equal. No natural academic-evaluation improvement, human
+gold label or general historical execution certification is established.
+https://github.com/SHiJiE1115/newproj/blob/main/evidence/scope_negative_v01/README.txt

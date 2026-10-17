@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "status": "EXACT_FIVE_SCIENTIFIC_SOURCE_FILES_OF_ACCEPTED_V21",
+  "files": [
+    {
+      "name": "paper.tex",
+      "bytes": 167125,
+      "sha256": "2d381c48686297e3be9821ce6e0c3336faf0ca3b66a8a4268fd50584df08c182"
+    },
+    {
+      "name": "references.bib",
+      "bytes": 15025,
+      "sha256": "8e1c30115f06da25f1ccdbf021b1b76181886a5ef5989fbfdb497a09a9cab52d"
+    },
+    {
+      "name": "four_query_additive_v01.tex",
+      "bytes": 13741,
+      "sha256": "df36bc5fa8e424a784a4b42dd350c72ffcb15c09376389f4576aa5e31013f00d"
+    },
+    {
+      "name": "scientific_insert_v01.tex",
+      "bytes": 16404,
+      "sha256": "6cc7df2a9e0ee8f1e633c89b8248210f28256d9e79f0ffb0b1c23ddb6abc426f"
+    },
+    {
+      "name": "andor_transfer_v21.tex",
+      "bytes": 11244,
+      "sha256": "13e2b02cfccd27dff152c2882784a34e3baa71845e4017ca126adc0e2ccecc47"
+    }
+  ],
+  "original_private15member_archive_sha256": "8f4dd666cb0fc7f4876ef94edca6ac938dd1c6e65c31e930259c6fb3e978048a",
+  "distribution_difference": "Publicarchivehas5unchangedscientificsources,newbuildadapterandmetadata;6thirdpartyruntimefilesarenotredistributed",
+  "scientific_tex_bib_bytes_modified": false
+}

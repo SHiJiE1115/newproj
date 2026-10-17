@@ -1,0 +1,39 @@
+CURRENT RESEARCH READING RELEASE -- V21
+
+Published under the project owner's continuing authorization to distribute
+reviewed research materials in SHiJiE1115/newproj. This is a public reading
+version, not a journal submission, acceptance or human author approval.
+Author identities, order, affiliations, final disclosures and informed
+responsibility remain pending; no identity is invented by this deposit.
+Broad AI use in exploration, proof development, code, checking, writing
+and formatting is disclosed in the article. Machine checks are not humans.
+
+paper.pdf is byte-exact to the accepted private-at-build V21. Its internal
+draft labels and author placeholders are retained as original build metadata.
+This companion notice identifies the later reviewed public-reading deposit.
+Old public manuscript versions and original source/execution/archive records
+remain unchanged. Their earlier private/pending labels are historical states.
+
+The scientific .tex/.bib files in authored_source.zip are exact V21 content.
+The public source distribution is a declared9memberderivative: six external
+class/BST/style files from the private15memberZIP are omitted; a new explicit
+dependency builder and relative metadata are supplied. The third-party
+template/runtime files and original template archive are not redistributed
+in this new packet. Their names and hashes are dependency metadata, not
+a new grant of rights. Obtain them separately under their applicable terms.
+No blanket project licence is selected by this publication. Public access
+must not be described as a new permissive open-source licence.
+
+The current25claimmap preserves statement bodies/numbers/pages/hashes and
+declares its removal of original machine paths/private closure references.
+No original private full closure, model credentials, supervisor state,
+unapproved author facts, sealed P1 response or outside paper full text is
+included. The configured content scan is bounded and does not guarantee
+universal ownership, anonymity or absence of every possible identifier.
+
+The new Proposition25 is a supporting analytic comparison on one fixed
+complete four-query source at unit prices. Literature priority remains open,
+application advantage is not established, and ordinary CCFB/C is a target,
+not an outcome. TCS-specific format/anonymity/fees remain unverified.
+No new model calls, hosted runs, scientific optimization, external human
+annotation or original historical-science execution occurs in this deposit.

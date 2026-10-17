@@ -1,0 +1,218 @@
+{
+  "schema": 21,
+  "status": "CURRENT_READING25_STATEMENT_BODY_NUMBER_PAGE_BINDINGS",
+  "manuscript": {
+    "file": "paper.pdf",
+    "bytes": 848149,
+    "sha256": "7028d2002e855a2e333d4dfa9bba225b3fd9b92a0e86dde8a48acd2e952414c8",
+    "pages": 70,
+    "main_pages": 14,
+    "proofs": 22,
+    "tables": 10,
+    "references": 27
+  },
+  "source": {
+    "file": "authored_source.zip",
+    "bytes": 86472,
+    "sha256": "28ca17fc04c395b17a448c2a814df28677e120c245dfde49cf938c5ebea234e8",
+    "members": 9,
+    "all5scientific_sources_exact": true,
+    "sixexternaldependencies_not_redistributed": true
+  },
+  "numbered_statement_map": [
+    {
+      "label": "lem:dominance",
+      "number": "1",
+      "page": 5,
+      "body_sha256": "4e4c74b3151bd659145348707350760d72e434cb512bc90a8fb1f788828230ea",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "lem:criterion",
+      "number": "2",
+      "page": 5,
+      "body_sha256": "92b82926bd0da2971d6663256b6e7358bd1c3f67f3146b2d3f29c37ae8ec8f8a",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:boundary",
+      "number": "3",
+      "page": 6,
+      "body_sha256": "df135a103c126c78665f96b6db00b3ecd9f73ef51f98b714d2efd7ed015444d1",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "lem:finite",
+      "number": "4",
+      "page": 8,
+      "body_sha256": "39f3f7a3361d409d9930734f122479df6e077436cd05e62ff4178b2e1a590384",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:generic-random-three",
+      "number": "5",
+      "page": 10,
+      "body_sha256": "9fe9bff41d89230686e265539b172fd825fe06d05ee2b7411dc486a218e7e498",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:random-priority-four",
+      "number": "6",
+      "page": 10,
+      "body_sha256": "5e3b4574974838d07eee797ddcd41bf9b9062ff6e6de7bf2fce21f3f17c0e01d",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:four-additive",
+      "number": "7",
+      "page": 11,
+      "body_sha256": "af523636edc152111c03aef8f8b73e3fa69fe4f7fad897a7bd57f8c2f2a2d0f1",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "cor:additive-first-interval",
+      "number": "8",
+      "page": 14,
+      "body_sha256": "b6ec09d608dd1c0818d0358a6c58364497f9df5ae4564ce4d19089727e02fcb5",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:price",
+      "number": "9",
+      "page": 14,
+      "body_sha256": "ec4b1803715c6b9980e31f1308fc748ebcf243f918186300763df6e0607462e7",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:submodular",
+      "number": "10",
+      "page": 15,
+      "body_sha256": "d265e4479fd49c2a493aeaad563f0b19d1c2b7fc7532567456072a8b82a1991a",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "prop:record-control",
+      "number": "11",
+      "page": 32,
+      "body_sha256": "ed3be1ab0f7f065848798b731d594f02de3bcc4e0249b3887668e6e1c5be7841",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:record-path",
+      "number": "12",
+      "page": 33,
+      "body_sha256": "3f011d43cf6b2abf035e85a04f776e399e30217606b812b2bacf78cde74bf5fd",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "cor:record-path-unit",
+      "number": "13",
+      "page": 34,
+      "body_sha256": "a7ce2d85dc5c2e31382abe228557c721f00623e2051ca688cb65e646e529123d",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "cor:record-path-additive",
+      "number": "14",
+      "page": 34,
+      "body_sha256": "5889261a2598ced8d838ef96811698281d415183eb4407fbf89d7029d36749ac",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:full11-copy-pin",
+      "number": "15",
+      "page": 37,
+      "body_sha256": "63333502f513c4674e26c1ce3f9c037e8def65a7f4ed3324219208f8fb224b4d",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "prop:ro-certificate",
+      "number": "16",
+      "page": 38,
+      "body_sha256": "e66318b72d1d9297c95d5211fb1adb1308d1551abdac71d3edd087a137cb3740",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "prop:pointwise-certificate",
+      "number": "17",
+      "page": 39,
+      "body_sha256": "d2240823404c9128de2b80a2775cc089111461c71835f0e5c3eeea244fc165df",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:random-small",
+      "number": "18",
+      "page": 43,
+      "body_sha256": "651485f3f89a34aa7b57d49e87f48554744318b58167dd9639c0ddf5aab1460a",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "cor:random-minimum",
+      "number": "19",
+      "page": 45,
+      "body_sha256": "65fd743e6311384330ff36d9d053437925a6c1bdf6720eb8c05e357b75cdb2cb",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "lem:generic-root-flip",
+      "number": "20",
+      "page": 51,
+      "body_sha256": "6c689075f8cc833e2969cf221e6700eb50fe2df28cdcfb095ed4cb311c5ba8e4",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "lem:generic-promise-extension",
+      "number": "21",
+      "page": 51,
+      "body_sha256": "78de9a7313218bcb3479f7354090411e7147f5d47775c98b5b3b0f9a5a9b4209",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "cor:generic-random-minimum-four",
+      "number": "22",
+      "page": 52,
+      "body_sha256": "94b93ad5c5664f8fd100bf8d1ace6977abb2db3e023daa9bef310e5ca42c19e2",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "thm:seven-private-curve",
+      "number": "23",
+      "page": 57,
+      "body_sha256": "8ac85001effc69e02a659d41764ecb15d7a11db3d127ae688eae73cb249a4d00",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "prop:controlled-lineage-bytes",
+      "number": "24",
+      "page": 60,
+      "body_sha256": "331dd21dc0371037f03e9ec91809a77cbe2d7c71d59681994a932f48e2610f0b",
+      "proof_role": "Retainedanalytic/computer-assistedresult;seeversion-specificproofscopeandpaper"
+    },
+    {
+      "label": "prop:unit-common-completion",
+      "number": "25",
+      "page": 68,
+      "body_sha256": "1ff1c628b2a94a382d22c7c3ab9a59f03be0a23486343a64ba84be1e0a77b8f0",
+      "proof_role": "Newdirectanalyticproofplusboundedfixedobligationcheck"
+    }
+  ],
+  "hash_definition": "UTF8entirenumberedstatementenvironmentafterexpandingthe3projectinputfragments",
+  "new_proposition": {
+    "label": "prop:unit-common-completion",
+    "number": "25",
+    "statement_page": 68,
+    "proof_pages": [
+      68,
+      69
+    ],
+    "scope": "Exactlyonespecifiedcomplete4source/unitprices/privatezeroerrorworstinputexpectedactualpaidcost/fullcausal-skipP;ALLcompatibletotalfunctionsfullcubeA/Pmin3versusoriginalpromise5/2",
+    "proof": "Sixlocalsensitivityimplicationsandtheoldindependent-childlower/8legalPseedupper",
+    "checker": "verify_unit_completion.py",
+    "checker_is_not_formal_kernel": true
+  },
+  "old24_statement_bodies_and_numbers21proofs10tables_retained": true,
+  "reproduction_scope": "REPRODUCTION_SCOPE.txt",
+  "normalization": "Current25label/number/page/bodyhashrowsareexact;originalhostpaths/privateclosurebindingsnotdistributed. Publicscopeanddependencylinksaredescribedseparately.",
+  "public_packet_does_not_contain_original_private_closure_or_sealedP1": true,
+  "human_review_or_priority_or_natural_gain_or_journal_readiness": false
+}

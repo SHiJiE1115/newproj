@@ -102,3 +102,25 @@ fixedpositive7full5040-order dual were replayed. Same-code cross-system
 reproduction is not independent human review, application advantage, priority
 clearance or original historical scientific authentication. The manuscript
 remains private; the archive commit is distinct from the executed source.
+
+
+## Current V21 theory reading update (17 October 2026)
+
+This entry supersedes earlier current-reading pointers; all older version
+notes and public records above remain historical and unchanged.
+[Current reading manuscript and authored sources](manuscript/journal_v21_reading/README.txt):
+70-page PDF, 14-page main text, 25 numbered results, 22 proof environments,
+10 tables and 27 references. Five scientific source files are exact V21;
+external template/runtime dependencies are declared separately and are not
+redistributed in the new source ZIP. Current statement/body/page bindings,
+an actual extracted-source delivery check and the new fixed-obligation
+checker have explicit scopes. No hosted science was rerun for this release.
+
+New supporting Proposition25 proves that on one complete four-query source
+at unit costs the minimum over every compatible total Boolean completion
+of the full-cube randomized A/P cost is3, versus promise5/2. It does not
+narrow the additive A/P first-gap interval5--7. The prior universal complete4
+all-nonnegative-additive proof and original executed/archive identities stay
+separate. This is a research-reading version, not human author approval,
+priority clearance, natural application advantage, a blanket new licence
+or journal submission. Earlier V13 remains accessible unchanged.

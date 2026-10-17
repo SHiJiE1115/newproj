@@ -1,0 +1,2203 @@
+% INTERNAL JOURNAL PREPARATION: human author verification and final declarations pending.
+% Official Springer Nature template 3.1 (December 2024); class bytes unmodified.
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+\usepackage{amsmath,amssymb,booktabs,array}
+% Keep existing bibliography URLs valid with the publisher BST's burl hook.
+\providecommand{\burl}{\url}
+\newcommand{\A}{\mathsf{A}}
+\newcommand{\Pcost}{\mathsf{P}}
+\newcommand{\down}{\mathop{\downarrow}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\Comp}{\operatorname{Comp}}
+\newcommand{\SAME}{\mathsf{SAME}}
+\newcommand{\DIFF}{\mathsf{DIFFERENT}}
+\newcommand{\DR}{\mathsf{D}}
+\newcommand{\RR}{\mathsf{R}}
+\DeclareMathOperator{\Max}{Max}
+\DeclareMathOperator{\Min}{Min}
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\theoremstyle{thmstylethree}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{thmstyletwo}
+\newtheorem{remark}[theorem]{Remark}
+\raggedbottom
+\hypersetup{pdfauthor={},pdftitle={Sharp Query Thresholds for Adaptivity under Complete Equivalence Promises},pdfsubject={Preparation draft; human author review and author declarations pending}}
+\begin{document}
+\title[Sharp Query Thresholds for Adaptivity]{Sharp Query Thresholds for Adaptivity under Complete Equivalence Promises}
+\author{\fnm{DRAFT -- author details pending}}
+\affil{\orgname{Affiliation and contact information pending}}
+
+\abstract{We study zero-error classification between complete equivalence-partition hypotheses using priced pair-equality queries. Each hypothesis retains every partition satisfying its stated equalities and inequalities, with an unrestricted number of classes. Adaptive policies are compared with one global query order that permits causal permanent skips; both receive the same information and pay for their actual purchased set. For deterministic worst-input cost, a computer-assisted proof gives equality on every complete source with at most six queries, and a complete seven-query source separates the classes at positive additive prices. Under private randomization, general monotone final-set fees permit a gap already at four queries. The witness is nonadditive and nonsubmodular, including strictly increasing perturbations approaching unit additive fees. In contrast, we prove randomized equality for every complete source with at most four queries and every nonnegative real additive price vector, including all zero and tie faces. The first additive randomized separation therefore requires between five and seven queries; its exact minimum remains open. On the fixed seven-query source, the sharp deterministic ratios are $5/4$ for additive prices and $4/3$ for monotone submodular fees, while general monotone ratios are unbounded. Complete finite certificates and analytic arguments support the stated source and cost quantifiers. Practical academic-evaluation gains and exact literature priority are not established.}
+\keywords{query complexity, adaptivity, ordered decision diagrams, equivalence constraints, submodular costs}
+
+\maketitle
+\clearpage
+\noindent\textbf{Internal research draft.} Human authorship details, author review and final declarations remain pending. This article has not been submitted or accepted. The existing template is used for internal reading; venue-specific format and submission readiness have not been verified.
+\label{page:main-start}
+
+\section{Introduction}
+\label{sec:introduction}
+Suppose that observations are equality tests between records, and that the
+unknown state is an equivalence partition. Two hypotheses specify which
+records must agree and which must differ. The task is to identify the
+hypothesis while buying as little information as possible. An adaptive
+policy can change its next query after an answer. A priority policy fixes
+one global order in advance, but may permanently skip queries using the
+answers already observed. Both policies know the same hypotheses and fees.
+We ask when adaptivity first improves their optimal worst-input costs.
+
+The hypotheses in this paper are \emph{complete}: each contains every
+partition satisfying its stated SAME and DIFFERENT constraints. Completeness
+restricts the permitted answer tables; it does not mean that the available
+queries reveal the whole partition. For example, with queries
+$(a,b),(b,c),(a,c)$, the hypothesis $a=b$ admits exactly the words
+$(1,0,0)$ and $(1,1,1)$. The alternative hypothesis $b=c$, $a\ne b$
+admits $(0,1,0)$. Unlisted cross-block merges remain possible.
+This small illustration explains the input contract, rather than giving
+an adaptivity separation. Arbitrarily retaining selected compatible worlds
+would define a different promise class.
+
+The model isolates classification between relational hypotheses, rather
+than reconstruction of an entire partition. It can describe a controlled
+identity-checking task in which the constraints and query answers have
+precise meanings. Applying it to academic evidence would additionally
+require validating those meanings and the completeness assumption. Our
+results do not establish a natural evidence-acquisition advantage or
+authenticate a historical scientific execution.
+
+\subsection{The boundaries depend on randomness and fees}
+Write $D_{\mathcal C}$ for optimal deterministic worst-input cost and
+$R_{\mathcal C}$ for optimal worst-input expected cost with input-independent
+private randomness, where $\mathcal C\in\{\mathcal A,\mathcal P\}$.
+The fee is charged on the actual purchased set. It is finite, nonnegative,
+normalized at the empty set, and monotone unless a narrower class is stated.
+Table~\ref{tab:core-boundaries} distinguishes the source and fee quantifiers.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}p{0.18\linewidth}p{0.27\linewidth}p{0.43\linewidth}@{}}
+\toprule
+Policies & Fees and source scope & First-occurrence conclusion\\
+\midrule
+Deterministic & Complete sources; monotone fees
+& Equality for every menu of size at most six; a positive-additive gap at seven.\\[3pt]
+Private random & Arbitrary partial tasks; monotone fees
+& Equality at sizes at most three.\\[3pt]
+Private random & Complete sources; monotone fees
+& A gap at four, including strictly positive strictly increasing fees; the witness is nonadditive and nonsubmodular.\\[3pt]
+Private random & Complete sources; nonnegative additive prices
+& Equality at sizes at most four for every real price vector; the minimum size permitting a gap lies between five and seven.\\
+\bottomrule
+\end{tabular}
+\caption{Menu-size statements. An equality row quantifies over every source
+and every fee in its stated class; an upper-size witness is existential.
+The exact randomized additive minimum and the submodular minimum remain open.}
+\label{tab:core-boundaries}
+\end{table}
+
+The first contribution is the deterministic six/seven boundary
+(Theorem~\ref{thm:boundary}). Completeness is essential: a four-query Horn
+promise outside this source class already separates the deterministic
+policies. The proof combines a complete source cover, analytic reductions
+and exact finite certificates, rather than extrapolation from sampled fees.
+
+The second contribution separates the roles of private randomness and the
+fee class. With monotone final-set fees the minimum drops to four
+(Theorems~\ref{thm:generic-random-three} and~\ref{thm:random-priority-four}).
+At four queries, however, additive prices force equality on every complete
+source (Theorem~\ref{thm:four-additive}), including zero prices and ties.
+This is an all-price exclusion, with full original adaptive and causal-skip
+priority families. Together with the complete seven-query positive-additive
+witness it gives the five-to-seven interval in
+Corollary~\ref{cor:additive-first-interval}; it does not identify an exact
+randomized additive threshold.
+
+A separate fixed-source analysis determines the sharp deterministic
+ratios on the seven-query witness: $5/4$ for additive prices, $4/3$ for
+monotone submodular fees, and unbounded ratios for unrestricted monotone
+fees. These ratio claims concern that source, not every menu of size seven.
+The specified eleven-query extension, record-acquisition comparisons,
+completion bounds and execution-evidence cases are supporting results
+with separate assumptions and evidence.
+
+\subsection{Closest prior comparisons}
+Priced information and certificate-competitive evaluation are established
+\cite{charikar02,cicalese14}. Ordered diagrams permit omitted variables,
+and Greiner et al.'s linear strategies allow causal irrelevant-test skips
+\cite{greiner}. Neither skipping, private worst-input randomization nor
+generic adaptivity separation is proposed as a new concept here.
+
+The total read-once AND--OR comparison is especially relevant.
+Amano~\cite{amano2011directional} studies general and recursive directional
+randomized evaluation. Ito and Suzuki~\cite{itosuzuki2025collapse} prove
+that depth-first and directional randomized values coincide for every
+such total tree at unit query costs. Directional seeds are legal priority
+policies, giving $R_{\mathcal A}\le R_{\mathcal P}\le R_{\rm dir}=R_{\rm DF}$
+on that full-domain problem. Thus their upper bounds can transfer to our
+priority class; their depth-first lower bounds alone need not.
+The two larger policy sets are not nested.
+
+Transferring that equality sharply to a relational promise still requires
+preserving its optimum and fees. On one complete four-query source at unit
+prices, Appendix~\ref{app:andor-transfer} proves promise value $5/2$ but
+minimum full-cube value $3$ over \emph{all} compatible total functions
+(Proposition~\ref{prop:unit-common-completion}). For one compatible AND--OR
+completion, the hard-child product places mass $3/16$ outside the promise.
+These fixed-source, unit-cost obstructions leave other reductions open.
+
+Specified-distribution objectives require a further quantifier comparison.
+Stochastic Boolean evaluation~\cite{hellerstein2022adaptivity}, the tight
+$k$-of-$n$ stochastic gap~\cite{nielsen2025kofn}, and correlated function
+certification~\cite{ghuge2026correlations} supply important prior context.
+A fixed-prior separation alone does not establish a gap between two
+separately minimized worst-input values, although a valid fixed-prior
+lower bound against the full priority class remains a valid minimax
+lower bound. Completion and representation-size work also has established
+methods whose transfer needs the correct cost and comparator.
+Appendix~\ref{app:additional-positioning} and
+Appendix~\ref{sec:generic-related-scope} give the detailed comparisons.
+The exact literature priority of our model-specific boundary remains open;
+no new generic minimax or completion framework is claimed.
+
+\subsection{Organization and evidence}
+Section~\ref{sec:model-core} specifies the source and both policy classes.
+Section~\ref{sec:det-thresholds} proves the deterministic threshold.
+Section~\ref{sec:randomized-core} states the randomized monotone boundary,
+with its complete proofs in the appendices.
+Section~\ref{sec:four-additive} gives the continuous-price four-query
+exclusion. Section~\ref{sec:fixed-cost-core} states the fixed-source
+fee-class bounds. The appendices retain the complete proofs, finite-proof
+dependencies and applicability controls. Exact certificate replay supports
+the stated mathematical obligations; it is not human review, a formal
+proof kernel, or evidence of practical superiority.
+
+\section{Model and complete policy recursion}\label{sec:model-core}
+\subsection{Complete partition fibres}
+Let $R$ be a finite record set. For each label $y\in\{A,B\}$, let $C_y$ be a conjunction of $\SAME(r,s)$ and $\DIFF(r,s)$ constraints, and let $\Omega_y$ contain \emph{all} equivalence partitions satisfying $C_y$. Both fibres are nonempty. The number of equivalence classes is unrestricted.
+
+A physical menu $Q=\{q_0,\ldots,q_{m-1}\}$ assigns each coordinate a pair of records. Its answer is $1$ exactly when that pair is equivalent. Write $W_y\subseteq\{0,1\}^m$ for the projection of $\Omega_y$ onto the menu. Assume $W_A\cap W_B=\varnothing$. Distinct partitions can have the same answer vector. Distinct physical coordinates keep their separate cost identities even when their answers are equivalent.
+
+Unlisted equalities do not imply inequalities: unconstrained blocks may merge. Arbitrary pruning of $W_y$, bounding the number of classes, or imposing a distribution changes the model.
+
+For example, nonnegative query charges and shared setup fees give
+$F(S)=\sum_{q\in S}c_q+\sum_p a_p\mathbf1\{S\cap Q_p\ne\varnothing\}$.
+This illustrates a monotone submodular cost without assuming platform measurements.
+
+\subsection{Policies and purchased-set costs}
+A deterministic adaptive policy purchases an unpurchased query using only purchased answers and stops at a pure feasible state. A \emph{priority policy} fixes a permutation $\pi$ of $Q$ first. At each position it can TAKE the query, permanently SKIP it, or stop, using only observed answers. Skipping reveals nothing and cannot be undone. The order may depend on the instance and its costs, but not on unobserved answers.
+
+Global order indexes coordinates, not paid-test depth: causal skips may make the $k$th purchase differ across inputs. Prefix policies prohibit intermediate skips. Appendix~\ref{sec:generic-related-scope} compares these classes and full-cube linear strategies.
+
+Let $F:2^Q\to\mathbb R_{\geq0}$ satisfy $F(\varnothing)=0$ and $F(S)\leq F(T)$ for $S\subseteq T$. For a policy $T$, let $P_T(w)$ be its final purchased set in world $w$, and define
+\[
+ C_F(T)=\max_{w\in W_A\cup W_B} F(P_T(w)).
+\]
+The optimal adaptive and priority values are $\A_F$ and $\Pcost_F$. Policy-class inclusion gives $\A_F\leq\Pcost_F$. For additive prices $\kappa\geq0$, with $F(S)=\sum_{q\in S}\kappa_q$, write $\A^*(\kappa)$ and $\Pcost^*(\kappa)$.
+
+The main deterministic objective excludes noisy observations, randomization, allowed errors, expected costs, and charges depending on answer values or acquisition order. Appendix~\ref{app:randomized-boundary} defines a separate zero-error randomized extension with expected purchased-set cost; no randomized conclusion is implicit in the deterministic results. Repeating a physical coordinate is unnecessary with reliable answers. Computational costs of constructing a policy are separate from its query costs.
+
+\subsection{Envelopes and dominance}\label{sec:envelopes}
+The envelope $E(T)$ is the family of inclusion-maximal sets among $\{P_T(w):w\in W_A\cup W_B\}$. It is an antichain, with $C_F(T)=\max_{S\in E(T)}F(S)$. For envelopes write $E_1\preceq E_2$ if every member of $E_1$ is contained in some member of $E_2$; equivalently, $\down E_1\subseteq\down E_2$.
+
+\begin{lemma}[Cost-independent dominance]\label{lem:dominance}
+If $E_1\preceq E_2$, then $E_1$ costs no more than $E_2$ for every monotone $F$. This relation is necessary as well for domination at every nonnegative additive price vector.
+\end{lemma}
+\begin{proof}
+Containment proves sufficiency. If $S\in E_1$ is contained in no member of $E_2$, give the coordinates in $S$ unit prices and the others zero prices. The first envelope costs at least $|S|$; the second costs at most $|S|-1$.
+\end{proof}
+
+The recursion combines every query and feasible child-envelope choice, then retains envelopes minimal under $\preceq$. A fixed-order recursion also permits SKIP. Induction on remaining coordinates proves completeness; adjoining a common query and uniting branch families preserve dominance. Appendix~\ref{app:recursion} specifies the recurrence, empty-family conventions and paid-context costs.
+
+\begin{lemma}[Universal equality criterion]\label{lem:criterion}
+Equality $\A_F=\Pcost_F$ holds for every admissible monotone $F$ if and only if each minimal adaptive envelope has a realizable priority envelope dominated by it.
+\end{lemma}
+\begin{proof}
+Every adaptive envelope has a minimal adaptive envelope below it, since the family is finite. A priority certificate below that envelope costs no more, proving $\Pcost_F\leq\A_F$. Conversely, suppose a minimal adaptive envelope $E$ has no priority envelope below it. Set $F(S)=0$ on $\down E$ and $F(S)=1$ elsewhere. This is normalized and monotone. The adaptive witness costs zero, while every priority policy has a path outside $\down E$ and costs one. This converse concerns arbitrary monotone costs, not additive costs alone.
+\end{proof}
+
+Incompatible branch orders in one adaptive tree do not rule out a different optimal priority tree.
+
+
+\subsection{Private randomness and the objective}
+For an arbitrary partial Boolean task $f:D\to\{0,1\}$ and a finite
+normalized nonnegative monotone fee $F$, define
+\[
+ R_{\mathcal C}(f,F)=\min_{\mu\in\Delta(\mathcal C)}\max_{w\in D}
+      \mathbb E_{T\sim\mu}F(P_T(w)),
+ \qquad\mathcal C\in\{\mathcal A,\mathcal P\}.
+\]
+Every supported tree must be correct on all of $D$. The input is
+independent of the seed. For $\mathcal P$ each seed fixes one global
+order, shared by both answer branches; permanent SKIPs are causal.
+Different seeds may choose different orders. When $D=W_0\cup W_1$,
+we also write $R_{\mathcal C}(W;F)=\RR_{\mathcal C}(W;F)$.
+For additive $F_c(S)=\sum_{q\in S}c_q$ we write $R_{\mathcal C}(W;c)$.
+The deterministic values are $D_{\mathcal A}=\A_F$ and
+$D_{\mathcal P}=\Pcost_F$. Neither the cost of an expected purchased
+set nor a per-seed hard budget is being minimized.
+
+\section{The first deterministic separation}\label{sec:det-thresholds}
+\begin{theorem}[Computer-assisted six/seven boundary]\label{thm:boundary}
+For complete partition fibres, if $|Q|\leq6$, then $\A_F=\Pcost_F$ for every normalized nonnegative monotone $F$. A seven-query complete-fibre instance has a strict gap with strictly positive additive prices. Thus seven is the smallest menu size permitting a strict gap for each of the monotone, monotone submodular, nonnegative additive, and strictly positive additive cost classes.
+\end{theorem}
+The order may depend on $F$; one order optimal for all costs is not asserted. The theorem minimizes queries, not records or classes. We separate the structural reduction, the finite premise, and the explicit upper-size witness.
+
+\subsection{A finite catalogue and its structural meaning}\label{sec:catalogue}
+Collapse prior SAME blocks on one side. Retain blocks containing query endpoints and their induced DIFFERENT constraints. Every consistent endpoint partition extends to omitted blocks by assigning each a fresh class. Clone shared endpoints and express their identities through prior SAME constraints. At most $2m$ named endpoint positions therefore suffice, without changing physical query coordinates.
+
+After contraction, the menu is a labeled multigraph $G=(V,Q)$, possibly with loops and parallel edges; let $D$ be the forbidden terminal pairs. A set $X\subseteq Q$ of SAME answers is feasible exactly when
+\begin{equation}\label{eq:flat}
+ \cl_{M(G)}(X)=X
+ \quad\text{and no pair in }D\text{ is connected in }(V,X).
+\end{equation}
+Transitivity and the negative constraints prove necessity. Assigning each component of $(V,X)$ a separate class proves sufficiency, with omitted blocks assigned fresh classes. This is an equality of answer supports, not a bijection of hidden partitions.
+
+Equivalently, add an auxiliary edge for each forbidden pair and fix its SAME answer to zero. The legal supports are fixed-coordinate sections of the augmented graphic-flat relation. Auxiliary edges are constraints, not purchasable queries. Complementing edge answers gives demand-separated multicuts~\cite{berczi,hornakova}. All transformations preserve the original purchased sets and $F$.
+
+Each circuit yields Horn implications from its other edges to the last edge; each forbidden terminal path gives a negative Horn clause. The source class is strictly narrower than arbitrary Horn relations. Indeed, suppose nonconstant coordinates satisfy $x_i=1\Rightarrow x_j=1$. Merge just the feasible endpoint blocks of query $i$, keeping the other blocks separate. Query $j$ can be one in this atomic world only when it joins the same pair of blocks. Hence the reverse implication also holds. A strict one-way positive implication between nonconstant coordinates is impossible.
+
+For comparison, the four-query Horn supports $A=\{0,2,3,6,7,11\}$ and $B=\{4,5,14,15\}$, with prices $(1,2,2,2)$ and integer-bit coordinates, have adaptive cost $5$ and priority cost $6$ for every one of the $24$ orders. The first support has $x_0\Rightarrow x_1$ without the converse. This exact finite example lies outside the complete-source class for every record count, so it does not refute Theorem~\ref{thm:boundary}.
+
+The four-query comparison shows why completeness matters: the six-query equality is specific to graphic-flat sections, rather than to general Horn promises or ordered diagrams. Complete-source and 2-CNF relations are also incomparable when visible coordinates are preserved (Appendix~\ref{app:structure}).
+
+\subsection{The checked finite premise}\label{sec:premise}
+For each endpoint identification, enumerate its unrestricted partition-answer support. Intersect it with every distinct collection of forbidden-pair filters, retaining distinct nonempty supports. Iterative intersection, deduplicated by the entire resulting support, covers all conjunctions. For a fixed endpoint identification and realizable $X$, the components of $(V,X)$ form the finest partition realizing $X$. A forbidden-pair filter admits $X$ exactly when its endpoints are in different components. This one partition therefore satisfies all filters that individually admit $X$, justifying their intersection. Pair disjoint supports, then quotient by \emph{simultaneous} coordinate permutations and label exchange. The sides cannot be relabeled independently, and arbitrary answer-bit flips are not used.
+
+Any disjoint pair of catalogue supports has a common physical realization. Take $2m$ distinct records $r_{i,0},r_{i,1}$ and queries $q_i=(r_{i,0},r_{i,1})$. Under each label impose the endpoint identifications and forbidden pairs generating that support. These SAME and DIFFERENT constraints may differ by label; the physical coordinates and their cost identities remain fixed.
+
+A coordinate permutation $\sigma$ transports cost by $F_\sigma(T)=F(\sigma^{-1}(T))$. This preserves purchased-set costs and the four cost classes in Theorem~\ref{thm:boundary}. A representative certificate therefore covers its full orbit. Table~\ref{tab:coverage} states the completed finite premise.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}p{0.69\linewidth}r@{}}
+\toprule
+Layer & Count\\\midrule
+Six-query endpoint topologies & 198,091\\
+Distinct nonempty complete one-sided supports & 546,735\\
+Disjoint support-pair orbits & 2,860,696\\
+Singleton-side orbits & 51,048\\
+Remaining orbits with a shared constant coordinate & 61,923\\
+Remaining duplicate/complement gate orbits & 129,250\\
+Residual orbits with explicit strategy certificates & 2,618,475\\
+Uncovered cases & 0\\\bottomrule
+\end{tabular}
+\caption{Complete six-query classification. The last four case groups are disjoint. Counts are accompanied by membership and complete-certificate checks.}\label{tab:coverage}
+\end{table}
+
+\begin{lemma}[Finite certificate premise]\label{lem:finite}
+Let $\mathcal C_m$ be exactly the family of nonempty supports from endpoint identifications and forbidden-pair conjunctions on $m$ labelled query coordinates. For every disjoint pair in $\mathcal C_5$, and every disjoint pair in $\mathcal C_6$ with neither a singleton side nor a shared constant coordinate, each minimal adaptive envelope $E$ has a correct priority policy $T$, compatible with one global permutation, with $E(T)\preceq E$.
+\end{lemma}
+The finite check reconstructs every adaptive frontier and verifies supplied policies for legality, order compatibility and containment. It need not enumerate the whole priority frontier. This premise has no prices; Lemma~\ref{lem:criterion} supplies the all-cost consequence. The orbit audit checks source membership, canonicality, uniqueness, weights and an independent Burnside count. Counts alone are insufficient. Duplicate/complement coordinates receive explicit certificates, not a cost-independent representative substitution.
+
+The two analytic groups require short proofs. If one side is $\{a\}$, take an adaptive tree's query sequence on $a$. Every opposite-label world differs somewhere on that sequence. Buy it in that fixed order, stopping with the opposite label at the first difference. Each purchased set is a prefix of the set on $a$, so its worst monotone cost is no larger than that of the original tree. This argument works for arbitrary disjoint supports and any menu size.
+
+If a query has a shared constant answer on both sides, remove its nodes from any policy. Purchased sets shrink and the projected supports remain disjoint. Deletion preserves complete fibres by retaining the same records and constraints and deleting only an observation. On a six-query instance the remaining menu has at most five queries. The independently checked five-query foundation covers $9,439$ supports, $34,601$ pair orbits, and $54,021$ priority-envelope witnesses. Apply it and insert the removed coordinate back as a permanent skip. If primed values denote deletion, then
+\[
+ \A_F\leq\Pcost_F\leq\Pcost'_{F'}=\A'_{F'}\leq\A_F,
+ \qquad F'(S)=F(S).
+\]
+Smaller menus are padded with shared constant queries, with $F^+(S)=F(S\cap Q)$, then projected back. Positive dummy prices also suffice when proving the strictly positive additive statement, because they need not be bought.
+
+Together, catalogue completeness, the analytic groups, full adaptive-frontier reconstruction and Lemma~\ref{lem:criterion} establish the lower-size assertion. This is a computer-assisted finite premise, not a proof-assistant-kernel theorem. The executable evidence and all dependency layers remain necessary.
+
+\subsection{A complete seven-query source}\label{sec:seven}
+With coordinates $0,\ldots,6$, use the templates
+\[
+ A=(\alpha,1,\alpha,\beta,\alpha,\gamma,\gamma),\qquad
+ B=(\mu,\mu,0,\nu,\omega,\omega,\nu).
+\]
+Each side retains all eight assignments to its three free bits; these are combinatorial freedoms, not probabilistic independence. A common vector would force $q_1=1$, then $\mu=1$, $q_0=1$ and $\alpha=1$, contradicting $q_2=0$.
+
+For a complete realization, take records $0,\ldots,13$ and $q_i=(2i,2i+1)$. Under $A$, impose the SAME blocks
+\[
+ \{0,4,8\},\ \{1,5,9\},\ \{2,3\},\ \{10,12\},\ \{11,13\},
+\]
+with $6,7$ unconstrained singleton blocks and no DIFFERENT constraints. Under $B$, impose
+\[
+ \{0,2\},\ \{1,3\},\ \{6,12\},\ \{7,13\},\ \{8,10\},\ \{9,11\},
+\]
+with $4,5$ singleton blocks and $\DIFF(4,5)$. Unlisted cross-block merges remain legal. Every satisfying partition has the stated template. Conversely, merge the relevant block pair for each free bit equal to one, and give the remaining blocks distinct fresh classes. Every assignment is realized, so the supports are exact complete-fibre projections.
+
+The complete frontiers in Appendix~\ref{app:fixed-fee-proofs} give, for $t>0$ and $\varepsilon\geq0$,
+\[
+ \kappa=(2t,2t,3t,\varepsilon,t,t,t),\qquad
+ \A^*=\min(5t,4t+\varepsilon),\quad\Pcost^*=5t.
+\]
+Taking $t=1$, $\varepsilon=1/2$ gives strictly positive prices with values $9/2$ and $5$, completing the upper-size assertion of Theorem~\ref{thm:boundary}. Section~\ref{app:order-obstruction} gives a direct proof of strict separation: for $0<\varepsilon<1$, it establishes $\A^*\leq4+\varepsilon<5=\Pcost^*$ by incompatible necessary orders across two probe answers. The complete frontiers there additionally determine the exact adaptive value and the all-price ratio.
+
+\paragraph*{A readable pair of policies.}
+Let $N_i(L,R)$ mean buy $q_i$ and follow $L$ on answer zero or $R$ on answer one; leaves $A,B$ output the label. The following saved adaptive witness begins with the inexpensive probe:
+\begin{align*}
+ L&=N_0\bigl(N_1(B,A),\ N_5(N_4(B,A),N_6(B,A))\bigr),\\
+ R&=N_4\bigl(N_5(N_6(A,B),A),\ N_2(B,A)\bigr),\\
+ T&=N_3(L,R).
+\end{align*}
+Its envelope is $\{11,28,57,105,120\}$ and its cost at $(2,2,3,1/2,1,1,1)$ is $9/2$. A priority policy in order $0,1,2,3,4,5,6$ is $N_0(N_1(B,A),N_2(B,A))$, skipping $q_1$ after $q_0=1$. Its envelope $\{3,5\}$ costs $5$. These policies show achievable values and the role of the probe; completeness of the frontiers, not a conflict between these particular trees, proves optimality.
+
+\section{Randomization changes the first separation}
+\label{sec:randomized-core}
+In this section $F$ is any finite normalized nonnegative monotone
+purchased-set fee. The first statement even permits an arbitrary partial
+Boolean domain $D$ and the objective $R_{\mathcal C}(f,F)$ just defined.
+
+\begin{theorem}[Generic three-query equality]
+\label{thm:generic-random-three}
+For every partial Boolean task with $|Q|\leq3$ and every fee in the
+stated class, $R_{\mathcal A}(f,F)=R_{\mathcal P}(f,F)$.
+\end{theorem}
+
+The result concerns a worst-input expectation; it does not assert
+equality for each specified prior or with the cheapest-certificate
+lower bound. Its analytic reductions and disjoint finite proof cover
+are in Appendix~\ref{sec:generic-random-three}. Complete sources satisfy
+the stronger certificate identity of Theorem~\ref{thm:random-small}.
+
+\begin{theorem}[Four-query randomized boundary; general monotone fees]\label{thm:random-priority-four}
+In the complete equivalence-partition fibre model, the smallest indexed
+pair-query menu permitting $R_{\mathcal A}(F)<R_{\mathcal P}(F)$ is four
+for normalized nonnegative monotone final-set fees. The same minimum
+holds when every nonempty set has positive fee and every proper
+inclusion strictly increases the fee.
+\end{theorem}
+
+The complete four-query construction and its full proof appear in
+Appendix~\ref{app:randomized-adaptive-priority-gap-candidate}.
+Its fees remain nonadditive and nonsubmodular, even in the strictly
+positive strictly increasing perturbations approaching unit additive
+fees. The deterministic values on that same source are equal by
+Theorem~\ref{thm:boundary}. Deterministic equality for every fee
+therefore does not imply equality after mixing policies: the random
+objective averages input-specific path costs before maximizing over
+inputs. The additive restriction changes the conclusion, as the next
+section proves.
+
+\input{four_query_additive_v01}
+
+\section{Fee-class bounds on the fixed seven-query source}
+\label{sec:fixed-cost-core}
+The following results concern exactly the complete source in
+Section~\ref{sec:seven}. They compare deterministic values and do not
+give universal ratio bounds for all menus of size seven.
+
+\begin{theorem}[Fixed-source price bound]\label{thm:price}
+For exactly the source in Section~\ref{sec:seven},
+\[
+ \max_{\kappa\geq0:\A^*(\kappa)>0}
+ \frac{\Pcost^*(\kappa)}{\A^*(\kappa)}=\frac54.
+\]
+Equality holds precisely on $\kappa=t(2,2,3,0,1,1,1)$, $t>0$, in the stated numbering. Over strictly positive prices the supremum remains $5/4$, but is not attained. This is not an upper bound for every seven-query source.
+\end{theorem}
+
+\begin{theorem}[Fixed-source submodular bound]\label{thm:submodular}
+For every normalized nonnegative monotone submodular $F$ on this fixed source, $\A_F=0$ implies $\Pcost_F=0$. Whenever $\Pcost_F>\A_F$,
+\begin{equation}\label{eq:strengthened}
+ 3\Pcost_F+F(\{q_3\})\leq4\A_F.
+\end{equation}
+The maximum of $\Pcost_F/\A_F$ over costs with $\A_F>0$ is $4/3$, already attained by a coverage cost. If $F$ must increase strictly under every proper inclusion, the supremum is $4/3$ and is not attained, both for submodular and for coverage costs.
+\end{theorem}
+
+Appendix~\ref{app:fixed-fee-proofs} gives the full frontiers and
+unchanged proofs, including attainment and strict-cost limits.
+For unrestricted strictly monotone fees the ratio is unbounded on
+that same source (Appendix~\ref{app:monotone-fees}). The nonadditive
+construction is outside the submodular class, so it supplies no
+unbounded additive or submodular ratio. The specified eleven-query
+extension has its own fixed-source quantifier
+(Appendix~\ref{app:full11-copy-pin}).
+
+\section{Scope, reproducibility and open questions}
+\label{sec:scope-core}
+The unresolved additive first-occurrence size is five, six or seven;
+the submodular randomized minimum is also open. We claim neither an
+arbitrary-size extremal ratio nor polynomial-time strategy synthesis.
+The universal source results use unrestricted class count and exact,
+reliable equality queries. A specified correlated population, bounded
+error, noisy tests or a different information unit requires another analysis.
+
+The complete six-query proof and fixed-seven supplements are available
+in the \href{https://github.com/SHiJiE1115/newproj/releases/tag/complete-six-review-20261011-v01}{public review archive}.
+The four-query all-additive proof has a separate
+\href{https://github.com/SHiJiE1115/newproj/tree/837498553f02739d60d3c53f79b8141ac4f5e105/theory/four_query_additive_v01}{self-contained packet}
+and \href{https://github.com/SHiJiE1115/newproj/tree/468d5a4df39611102c8b08aaecd8a05d6a6582b1/evidence/four_additive_hosted_v01}{retained actual Linux execution evidence}.
+Appendix~\ref{app:reproduction} maps the older proof dependencies;
+Appendix~\ref{app:four-additive-replay} states the newer packet's full
+scope. Replaying exact code across systems is not independent
+implementation, human review or formal proof-kernel certification.
+
+Applicability controls are retained, rather than interpreted as positive
+application results. Changing pair tests to record reads removes the gap
+on a fixed control, and an all-size even-path family has a priority normal
+form (Appendix~\ref{app:record-acquisition}). The selected Wine execution
+and offline VPS3 audit have same-information fixed verifiers and establish
+no acquisition advantage (Appendix~\ref{app:cases}). Controlled recorded
+identities and byte budgets have their own engineered contracts
+(Appendix~\ref{app:controlled-lineage-bytes}). These results identify
+conditions a future academic-evidence application must satisfy.
+
+The contribution under consideration is the exact source- and fee-dependent
+boundary, with specified fixed-source bounds. The cited minimax,
+completion and ordered-evaluation methods are established. The bounded
+prior-work comparison does not certify exact literature priority, and
+the paper establishes no improvement in academic rankings, semantic
+judgement or historical authentication.
+\label{page:main-end}
+
+\backmatter
+\section*{Statements and Declarations}
+\paragraph*{Author information and contributions.}
+Names, author order, affiliations, contact information, contribution statements and final responsibility assignments have not been supplied or approved for this draft. The title-page text is a preparation placeholder, not a proposed author identity.
+\paragraph*{Funding and competing interests.}
+Author declarations are pending. No statement of absence of funding or competing interests is made.
+\paragraph*{Research process and generative AI.}
+Generative AI tools, including Codex agents, were used in research exploration, proof development, implementation of search and verification programs, automated cross-checking, manuscript drafting and formatting. Programmatic certificate replay and agent cross-checks are not human peer review. Technical checking is performed with the stated programmatic and AI-assisted methods. Actual author information, final disclosures and informed approval by the responsible human authors remain pending. Before submission those authors must understand the final claims, approve the manuscript and accept responsibility for it; this statement does not impose a separate manual replay of every technical check. Combinatorial cases are not independent scientific studies or human gold labels.
+\paragraph*{Data and code availability.}
+The public core packets and actual execution records are identified in
+Section~\ref{sec:scope-core}. Appendix~\ref{app:availability-ledger}
+retains the additional source-specific deposit and version correspondence.
+Public availability does not grant a blanket repository licence;
+source-specific notices state applicable terms. This private manuscript
+has not been submitted or publicly deposited.
+
+\paragraph*{Other declarations.}
+Human-participant, consent and other ethical declarations must be assessed and completed by the responsible authors as applicable; this preparation text does not certify those determinations.
+
+
+\clearpage
+\label{page:references-start}
+\bibliography{references}
+\clearpage
+\appendix
+
+\section{Completion and direct order comparisons}\label{app:completion-comparisons}
+\subsection{Compatible completions}\label{sec:completion}
+For a labeled promise $W$, let $\Comp(W)$ contain its compatible total Boolean functions. Let $O_F(g,\pi)$ be the minimum full-domain worst purchased-set cost of a $\pi$-ordered decision diagram computing $g$, and $R_F(g)$ the corresponding minimum over read-once branching programs, without diagram-size restrictions. Then
+\[
+ \Pcost_F(W)=\min_{g\in\Comp(W)}\min_\pi O_F(g,\pi),\qquad
+ \A_F(W)=\min_{g\in\Comp(W)}R_F(g).
+\]
+Unfolding and completing promise policies proves these identities; Appendix~\ref{app:completion} gives the cost-preserving argument.
+
+The minima may use different completions; answer-equivalent coordinates retain separate cost identities. The appendix addresses paid-context costs, without asserting scalar Bellman optimality.
+
+\subsection{Certificate competition and minimax transfer}\label{sec:cert-transfer}
+Fix nonnegative additive prices and write $c(S)=\sum_{q\in S}c_q$, with $F=c$. For $w\in W$, let $C_W^c(w)$ be the minimum cost of a coordinate set whose answers at $w$ determine its label within $W$, and put $K_W^c=\max_{w\in W}C_W^c(w)$. Every terminating correct policy path is a certificate. Hence
+\[
+ K_W^c\leq\A_c(W)\leq\Pcost_c(W).
+\]
+If a legal priority policy $T$ satisfies $c(P_T(w))\leq\rho C_W^c(w)$ for every $w\in W$, with finite $\rho\geq1$, then
+\[
+ \Pcost_c(W)\leq C_c(T)\leq\rho K_W^c\leq\rho\A_c(W).
+\]
+The multiplicative formulation includes zero certificate costs. A certificate-competitive lower bound alone gives no adaptivity separation: with unit prices, Boolean OR has optimal certificate ratio $m$, but both minimax values equal $m$.
+
+For an arbitrary compatible total completion $g$, every full-domain certificate is a promise certificate, so $C_g^c(w)\geq C_W^c(w)$ on $W$. The reverse inequality need not hold: for $W=\{00\mapsto0,11\mapsto1\}$ with unit prices, both promise certificate costs are one, whereas the completion $g(x)=x_1\wedge x_2$ has $C_g^c(11)=2$. One sufficient transfer route is $C_g^c(w)\leq\alpha C_W^c(w)$ on $W$, together with a legal priority implementation of a $\rho$-certificate-competitive policy for $g$ on the same menu and prices; restriction to $W$ then gives $\Pcost_c(W)\leq\rho\alpha\A_c(W)$.
+
+Pointwise certificate preservation is not necessary. Complete an optimal adaptive promise tree as in Appendix~\ref{app:completion}, obtaining $g_T$ and a full-domain tree of worst cost $\A_c(W)$. Each of its paths certifies $g_T$, so $\max_{x\in\{0,1\}^m}C_{g_T}^c(x)\leq\A_c(W)$. Thus a legal priority policy for this particular $g_T$ with certificate factor $\rho$ would also give $\Pcost_c(W)\leq\rho\A_c(W)$. The remaining issue is whether $g_T$ belongs to a function family with such a uniform guarantee and an admissible global-order implementation. The completion identities do not supply that membership or implementation. Applying the priced-information results to our boundary therefore still requires a menu- and cost-preserving bridge; additive guarantees do not automatically cover shared submodular costs. These transfer observations are supporting comparisons, not claims of new competitive-analysis results.
+
+The two certificate comparisons are quantitatively different on our fixed source. Appendix~\ref{app:certificate-distortion} proves that the least uniform pointwise inflation over \emph{all} compatible completions is exactly $2$ at prices $(2,2,3,0,1,1,1)$, although a suitable completion has maximum full-domain certificate cost $4$. It also gives a strict positive-price pointwise obstruction and an exact maximum-certificate bound for read-once AND/OR completions. These are specific transfer limitations, not exclusions of every classical algorithm or reduction.
+
+
+\subsection{Compatible formulas and full-domain cost}\label{sec:ro-completion}
+The fixed source has compatible read-once AND/OR formulas, but this representation need not preserve optimal query cost. List bits in coordinate order $q_0,\ldots,q_6$. The opposite-label pairs
+\[
+ (0100000,1100000),\quad(0100000,0000000),\quad
+ (1111111,1101111)
+\]
+have their first member in $A$ and second in $B$, and differ only at $q_0,q_1,q_2$, respectively. These three coordinates are therefore essential in every compatible total function. With $A$ positive, monotonicity after answer flips forces $q_0$ negative and $q_1,q_2$ positive. Conversely,
+\[
+ g(q)=q_2\lor(q_1\land\neg q_0)
+\]
+is compatible: on $A$, either $\alpha=1$ or $(q_1,q_0)=(1,0)$; on $B$, $q_2=0$ and $q_0=q_1$. It ignores the last four coordinates. Thus exactly $16$ answer orientations admit a monotone completion for this label polarity.
+
+Let $\mathcal R(W)$ be the compatible total functions admitting an AND/OR formula in which each physical coordinate appears at most once as a literal; unused coordinates are allowed. This formula restriction is stronger than querying each coordinate at most once per decision-tree path. A read-once AND/OR function is evasive on its essential variables~\cite{charikar02}. Directly, answer a queried literal by its parent's neutral value, delete it and suppress unary gates. The residual formula stays nonconstant until its final essential variable is queried. Negated leaves only reverse the returned bit. Hence for nonnegative additive prices, $R_c(g)$ is the sum of all essential-coordinate prices, including zero-price cases. The three necessary coordinates and the displayed formula give
+\[
+ \min_{g\in\mathcal R(W)}R_c(g)=c_0+c_1+c_2.
+\]
+At $(2,2,3,1/2,1,1,1)$ this minimum is $7$, whereas the adaptive promise value is $9/2$. An adaptive-optimal completion from Section~\ref{sec:cert-transfer} therefore lies outside this formula family at these prices. Other, nonoptimal completions may still support useful promise-restricted certificate bounds. This cost-preservation obstruction concerns the stated family on the original menu; it establishes neither exclusion of every prior reduction nor a practical application advantage. Proposition~\ref{prop:ro-certificate} separately determines the best maximum full-domain certificate cost in this family; Proposition~\ref{prop:pointwise-certificate} addresses pointwise inflation without a formula restriction.
+
+\subsection{A direct order obstruction}
+\label{app:order-obstruction}
+
+We prove directly that the source in Section~\ref{sec:seven}, at prices
+$(2,2,3,\varepsilon,1,1,1)$ with $0<\varepsilon<1$, satisfies
+\[
+ \A^*\le 4+\varepsilon<5=\Pcost^*.
+\]
+The complete-fibre realization and the adaptive and priority upper bounds
+are already given there. It remains to prove the priority lower bound.
+This argument does not use the enumerated frontiers and does not replace
+the six-query classification or the all-price theorem.
+
+Disclose $q_3=\beta$ for free at the outset, deleting its position but
+keeping \emph{one common permutation} of all other coordinates for both
+values of $\beta$. An original policy can ignore this information until
+its former $q_3$ position and simulate its original decisions without
+paying for that query. This is therefore a relaxation; earlier pure
+stopping can only lower cost. Put
+\[
+ (x,y,z,\ell,m,r)=(q_0,q_1,q_2,q_4,q_5,q_6),
+ \qquad (c_x,c_y,c_z,c_\ell,c_m,c_r)=(2,2,3,1,1,1).
+\]
+The exact conditional supports in this notation are
+\[
+ \mathcal A_\beta=\{(a,1,a,a,c,c):a,c\in\{0,1\}\},\qquad
+ \mathcal B_\beta=\{(u,u,0,w,w,\beta):u,w\in\{0,1\}\}.
+\]
+Suppose every path costs at most four in this relaxed game. Both labels
+are initially feasible for either $\beta$. Preliminary SKIPs reveal
+nothing. Opposite-label worlds agreeing on all available coordinates
+except one force its purchase on their common transcript; if that
+coordinate was skipped, correctness is impossible. Granting previously
+skipped coordinates back can only make a lower-bound subproblem easier.
+
+\paragraph*{The branch $\beta=0$ forces $m\prec\ell$.}
+Use the three legal worlds
+\[
+ A_0=(0,1,0,0,0,0),\quad B_0=(0,0,0,0,0,0),\quad
+ B_1=(1,1,0,0,0,0).
+\]
+On $A_0$, both $y$ and $x$ are necessary to exclude $B_0$ and $B_1$,
+respectively. The following cases exhaust the first actual purchase.
+
+\begin{center}\small
+\begin{tabular}{@{}p{0.14\linewidth}p{0.80\linewidth}@{}}
+\toprule
+First query & A feasible response defeating budget four\\\midrule
+$\ell,m,r$ & Answer $0$. The three displayed worlds remain; the
+additional $x,y$ cost is four after a unit purchase.\\
+$z$ & Answer $0$. The same three worlds require an additional four after
+paying three.\\
+$y$ & Answer $1$. Worlds $A_0,B_1$ force $x$, using the entire remaining
+budget two; any other positive purchase first makes $x$ unaffordable.
+Yet $x=1$ still leaves both $(1,1,1,1,0,0)\in\mathcal A_\beta$ and
+$B_1$ feasible, so buying only $x$ cannot finish.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Thus the first purchase must be $x$. On its feasible answer $1$, $y$ is
+constant and $z$ is unaffordable. The informative unit-coordinate
+supports, with budget two, are exactly
+\[
+ A' = \{100,111\},\qquad B'=\{000,110\}
+ \quad\text{on }(\ell,m,r).
+\]
+No unit coordinate can have been skipped before the first unit purchase:
+the opposite-label pairs $100/000$, $100/110$ and $111/110$ differ only
+at $\ell,m,r$, respectively. Nor can an endpoint be purchased first.
+After $\ell=1$, the surviving worlds are $100,111$ versus $110$;
+neither remaining coordinate alone separates their labels. After $r=0$,
+they are $100$ versus $000,110$, again not separable by either single
+remaining coordinate. A constant-query purchase only consumes budget.
+Consequently $m$ must be purchased first among the units, which requires
+$m\prec\ell$ in the fixed order.
+
+\paragraph*{The branch $\beta=1$ forces $\ell\prec m$.}
+The legal pair
+\[
+ A_+=(1,1,1,1,1,1),\qquad B_+=(1,1,0,1,1,1)
+\]
+differs only at $z$. Again consider every first purchase other than
+$\ell$.
+
+\begin{center}\small
+\begin{tabular}{@{}p{0.14\linewidth}p{0.80\linewidth}@{}}
+\toprule
+First query & A feasible response defeating budget four\\\midrule
+$x,y$ & Answer $1$. The displayed pair forces $z$, whose price three
+exceeds the remaining budget two.\\
+$z$ & Answer $0$. Budget one remains. Each affordable query has a mixed
+answer: $\ell=0$, $m=0$, or $r=1$, respectively, as follows directly
+from the conditional templates. Hence no one-query continuation works.\\
+$m,r$ & Answer $1$. The displayed pair forces $z$, consuming the entire
+remaining budget three. Any other purchase first makes this common
+transcript unaffordable. Buying $z$ next also fails: its answer $0$
+remains mixed, with $A=(0,1,0,0,1,1)$ and a matching $B$ (choose
+$u=0,w=1$ after $m=1$, or $u=0,w=0$ after $r=1$).\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Only $\ell$ can be the first purchase. If $m\prec\ell$, then $m$
+must already have been permanently skipped. On the feasible answer
+$\ell=0$, take
+\[
+ \widehat A=(0,1,0,0,1,1),\quad
+ \widehat B_0=(0,0,0,0,0,1),\quad
+ \widehat B_1=(1,1,0,0,0,1).
+\]
+After omitting the unavailable $m$, these worlds agree outside $x,y$.
+On $\widehat A$ both heavy queries are necessary, costing four while
+only three remain. The coordinates $z,r$ supply no substitute; additional
+prior skips cannot help. Thus $m$ cannot precede $\ell$, proving
+$\ell\prec m$. This step is what rules out using a fixed order with
+history-dependent permanent SKIPs, rather than merely comparing two
+particular decision trees.
+
+The two necessary precedences contradict the common remaining
+permutation. Finally, all six nonprobe prices are integers. An original
+priority policy of total worst cost strictly below five would induce,
+after free disclosure, a policy whose every nonprobe path costs at most
+four. The contradiction gives $\Pcost^*\ge5$. The priority policy in
+Section~\ref{sec:seven} costs exactly five and ignores $q_3$; its adaptive
+policy costs at most $4+\varepsilon$. This proves the displayed strict
+separation without an exact adaptive lower bound or a permutation scan.
+
+\section{Complete fixed-source fee-class proofs}\label{app:fixed-fee-proofs}
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.31\linewidth}p{0.32\linewidth}p{0.29\linewidth}@{}}\toprule
+Source quantifier & Cost class & Conclusion\\\midrule
+Every complete source, \mbox{$m\leq6$} & Normalized monotone & $\A_F=\Pcost_F$\\
+One complete source, $m=7$ & Strictly positive additive & $\Pcost_F>\A_F$ is possible\\
+That same fixed source & Nonnegative additive & Maximum ratio $5/4$\\
+That same fixed source & Monotone submodular & Maximum ratio $4/3$\\
+That same fixed source & Strictly monotone & Ratios unbounded\\
+One specified source, \mbox{$m=11$}, and its identifiable projections & Nonnegative additive & Upper $5/4$\\\bottomrule
+\end{tabular}
+\caption{All set costs are normalized and nonnegative; ratios require $\A_F>0$. On the seven-query source, strictly positive additive and strictly increasing submodular costs retain the respective suprema without attainment. The eleven-query row concerns one specified source; Appendix~\ref{app:full11-copy-pin} gives sixteen matching menus. No all-seven-source or all-eleven-source upper bound is asserted.}\label{tab:scope}
+\end{table}
+\subsection{Additive bound}
+\paragraph*{Proof of Theorem~\ref{thm:price}.}
+
+\subsection{Complete frontiers}
+An integer mask encodes a purchased set, with bit $q$ denoting coordinate $q$. The complete adaptive and priority frontiers are shown in Table~\ref{tab:frontiers}. Display rows do not pair policies; five envelopes are shared.
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{}ll@{}}\toprule
+Adaptive & Priority\\\midrule
+$\{3,5\}$ & $\{3,5\}$\\
+$\{11,28,57,105,120\}$ & $\{11,28,121\}$\\
+$\{11,57,60,105\}$ & $\{11,57,60,105\}$\\
+$\{19,20\}$ & $\{19,20\}$\\
+$\{28,43,57,120\}$ & ---\\
+$\{35,49,52\}$ & $\{35,49,52\}$\\
+$\{67,84,113\}$ & $\{67,84,113\}$\\\bottomrule
+\end{tabular}
+\caption{Undominated envelopes, with TAKE/SKIP optimization in all $5,040$ orders.}\label{tab:frontiers}
+\end{table}
+The producer used feasible-world masks. Its independent checker used $2,187$ ternary partial assignments, saturated copy clauses and frozenset families. It compared every feasibility flag against direct support enumeration, every order's frontier, and all $13$ saved witnesses.
+
+Write $\kappa=(a,b,c,z,d,e,f)$ for prices, not source bits. The priority costs are
+\begin{align*}
+G_0&=\max(a+b,a+c),\\
+G_1&=z+\max(a+b,c+d,a+d+e+f),\\
+G_2&=z+\max(a+b,a+d+e,c+d+e,a+e+f),\\
+G_3&=\max(a+b+d,c+d),\\
+G_4&=\max(a+b+e,a+d+e,c+d+e),\\
+G_5&=\max(a+b+f,c+d+f,a+d+e+f).
+\end{align*}
+The two adaptive-only costs are
+\begin{align*}
+H_1&=z+\max(a+b,c+d,a+d+e,a+e+f,d+e+f),\\
+H_2&=z+\max(c+d,a+b+e,a+d+e,d+e+f).
+\end{align*}
+Thus $\Pcost^*=\min_{0\leq i\leq5}G_i$ and
+\[
+ \A^*=\min(G_0,G_2,G_3,G_4,G_5,H_1,H_2).
+\]
+The formulas hold at all real nonnegative prices because the finite frontiers are complete, not because prices have been sampled.
+
+\subsection{Algebraic proof}
+First eliminate the probe price $z$. For fixed other prices, write $\Pcost^*(z)=\min(U,z+V)$ with $U=\min(G_0,G_3,G_4,G_5)$ and $V=\min(G_1-z,G_2-z)$; write $H_i=z+W_i$. If $V\leq W_i$, the ratio $\Pcost^*/H_i$ is at most one whenever defined. If $V>W_i>0$, both $U/(z+W_i)$ and $(z+V)/(z+W_i)$ decrease with $z$ whenever their minimum exceeds one. If $W_i=0$, the path sets cover all six non-probe coordinates, so those prices vanish and $G_0=0$. It suffices to bound each $\Pcost^*/H_i$ at $z=0$. This does not assume that $H_i$ remains adaptive-optimal when $z$ changes. A shared adaptive-optimal envelope gives ratio one.
+
+For $H_1$, normalize $W_1=1$. Then
+\[
+a+b,\ c+d,\ a+d+e,\ a+e+f,\ d+e+f\leq1.
+\]
+If $G_0,G_2,G_3$ all exceed $r>1$, their potentially large terms imply $a+c>r$, $e>r-1$ and $d>r-1$, respectively. Adding $c+d\leq1$ and $a+d+e\leq1$ yields
+\[
+2\geq a+c+2d+e>4r-3.
+\]
+At $r=5/4$ this is impossible. Hence $\Pcost^*/H_1\leq5/4$.
+
+For $H_2$, normalize $W_2=1$, so
+\[
+c+d,\ a+b+e,\ a+d+e,\ d+e+f\leq1.
+\]
+If $G_0,G_4,G_3$ all exceed $r>1$, their terms imply $a+c>r$, $e>r-1$, and $d-e>r-1$. Consequently
+\[
+2\geq a+c+2d+e>6r-5.
+\]
+Setting $r=7/6$ is impossible, giving $\Pcost^*/H_2\leq7/6$ and therefore $\Pcost^*/\A^*\leq5/4$.
+
+At $(a,b,c,z,d,e,f)=(1/2,1/2,3/4,0,1/4,1/4,1/4)$, the formulas give $\A^*=1$ and every priority envelope costs $5/4$. For global equality, only $H_1$ can be optimal and strict probe-price decrease forces $z=0$. Normalize $W_1=1$. All priority costs are at least $5/4$, forcing $a+c\geq5/4$, $d,e\geq1/4$, and $a+c+2d+e\leq2$. Equality is necessary throughout. Thus $d=e=1/4$, $c=3/4$ and $a=1/2$. From $G_3\geq5/4$ and $a+b\leq1$ obtain $b=1/2$. The inequality $a+e+f\leq1$ gives $f\leq1/4$, and $G_1=\max(1,1,1+f)\geq5/4$ gives the reverse bound. Scaling proves the unique ray.
+
+Every strictly positive vector has $z>0$. When its ratio exceeds one, removing $z$ strictly increases it, ruling out attainment of $5/4$. The vectors $(2,2,3,\varepsilon,1,1,1)$ approach ratio $5/(4+\varepsilon)\to5/4$ as $\varepsilon\downarrow0$. If $\A^*=0$, all zero-price coordinates together separate the supports and can also be queried in a fixed order at zero cost. Hence $\Pcost^*=0$ too; such vectors are excluded from the ratio. This completes Theorem~\ref{thm:price}.
+
+\paragraph*{A specified eleven-query extension.}
+Appendix~\ref{app:full11-copy-pin} gives an explicit complete
+twenty-two-record realization of an eleven-query extension.
+Its additive upper bound is $5/4$, inherited by every identifiable coordinate
+projection; the sixteen menus containing the original seven queries have
+matching maximum $5/4$ over nonnegative prices. This is a specified-source
+result. Its separate direct certificate packet covers every price cone,
+without an old seven/eight-query upper-bound premise.
+
+\section{Submodular fixed-source proof}\label{sec:submodular}
+Throughout this section the source is exactly the one in Section~\ref{sec:seven}. A normalized monotone cost $F$ is submodular if
+\[
+ F(S)+F(T)\geq F(S\cup T)+F(S\cap T)\qquad(S,T\subseteq Q).
+\]
+This includes nonnegative query charges with shared setup fees. The complete monotone-cost frontiers in Table~\ref{tab:frontiers} remain the finite premise.
+
+\paragraph*{Proof of Theorem~\ref{thm:submodular}.}
+
+\begin{proof}
+For this proof only, write $F(0345)$ for $F(\{q_0,q_3,q_4,q_5\})$ and similarly for other coordinate strings; these strings are not decimal masks. Let $H_1,H_2$ denote the costs of the two adaptive-only envelopes:
+\begin{align*}
+ H_1&=\max\{F(013),F(234),F(0345),F(0356),F(3456)\},\\
+ H_2&=\max\{F(234),F(0135),F(0345),F(3456)\}.
+\end{align*}
+Set $Y=03456$, $X=2345$, $Z=014$, $I=345$ and $J=34$. Submodularity gives
+\begin{align*}
+ F(0345)+F(3456)&\geq F(Y)+F(I),\\
+ F(234)+F(I)&\geq F(X)+F(J).
+\end{align*}
+For $H_1$, a third application and monotonicity give
+\[
+ F(013)+F(J)\geq F(0134)+F(3)\geq F(Z)+F(3).
+\]
+For $H_2$, replace this third line by
+\[
+ F(0135)+F(J)\geq F(01345)+F(3)\geq F(Z)+F(3).
+\]
+Adding the relevant three lines cancels $F(I)$ and $F(J)$, proving for each $i=1,2$ that
+\begin{equation}\label{eq:three-sets}
+ F(Y)+F(X)+F(Z)+F(3)\leq4H_i.
+\end{equation}
+
+Suppose $\Pcost_F>H_1$. The priority envelopes with masks $\{11,28,121\}$ and $\{11,57,60,105\}$ respectively force $F(Y)\geq\Pcost_F$ and $F(X)\geq\Pcost_F$: all their other path costs are at most $H_1$, and the cost of any valid priority policy is at least its optimum. The envelope $\{19,20\}$ forces $F(Z)\geq\Pcost_F$, because $24\subseteq234$ implies $F(24)\leq H_1$.
+
+If instead $\Pcost_F>H_2$, the envelope $\{11,28,121\}$ again forces $F(Y)\geq\Pcost_F$, since $013\subseteq0135$. In $\{35,49,52\}$, the paths $015\subseteq0135$ and $045\subseteq0345$ cost at most $H_2$. Thus $F(245)\geq\Pcost_F$, and $245\subseteq X$ gives $F(X)\geq\Pcost_F$. The envelope $\{19,20\}$ gives the same bound for $F(Z)$. Hence (\ref{eq:three-sets}) yields $3\Pcost_F+F(3)\leq4H_i$ whenever $\Pcost_F>H_i$.
+
+If a shared envelope attains $\A_F$, then $\Pcost_F=\A_F$. Otherwise an $H_i$ attains $\A_F$, by completeness of the adaptive frontier. In particular, when $\Pcost_F>\A_F$, selecting such an $i$ proves (\ref{eq:strengthened}). If $\A_F=0<\Pcost_F$, this inequality contradicts nonnegativity. For positive $\A_F$, the ratio is either one or at most $4/3$.
+
+For attainment, take the coverage cost
+\begin{equation}\label{eq:coverage}
+ F_0(S)=|S\cap\{q_0,q_1,q_4,q_6\}|+2\mathbf1\{q_2\in S\}
+       +\mathbf1\{S\cap\{q_0,q_5\}\ne\varnothing\}.
+\end{equation}
+It has independent query charges and one unit setup charge shared by $q_0,q_5$; $q_3$ is free. The seven adaptive envelope costs in Table~\ref{tab:frontiers} are $4,3,4,4,3,4,4$, and all six priority envelopes cost four. Thus $\A_{F_0}=3$ and $\Pcost_{F_0}=4$.
+
+Strict increase implies $F(\{q_3\})>0$ and $\A_F>0$, since every correct policy makes a nonempty purchase. Equation~(\ref{eq:strengthened}) then rules out ratio $4/3$. Conversely, $F_\delta(S)=F_0(S)+\delta|S|$ is strictly increasing coverage for $\delta>0$, and the same finite frontiers give
+\[
+ \Pcost_{F_\delta}=4+2\delta,\qquad
+ \A_{F_\delta}=\min(4+2\delta,3+4\delta).
+\]
+For $0<\delta\leq1/2$ the ratio tends to $4/3$ as $\delta\downarrow0$, proving both suprema.
+\end{proof}
+
+\section{Unrestricted monotone fixed-source fees}\label{app:monotone-fees}
+The finite bounds in Theorems~\ref{thm:price} and~\ref{thm:submodular} depend on their respective cost classes. Let $E=\{11,28,57,105,120\}$ and, for $\varepsilon>0$, define
+\[
+ F_\varepsilon(S)=\varepsilon|S|+\mathbf{1}\{S\notin\down E\}.
+\]
+It is normalized and strictly increasing under proper inclusion. The six priority envelopes have costs
+\[
+1+2\varepsilon,\ 1+5\varepsilon,\ 1+4\varepsilon,\
+1+3\varepsilon,\ 1+3\varepsilon,\ 1+4\varepsilon.
+\]
+Envelope $E$ costs $4\varepsilon$, and the other adaptive-only envelope costs $1+4\varepsilon$. Therefore
+\[
+ \Pcost_{F_\varepsilon}=1+2\varepsilon,\qquad
+ \A_{F_\varepsilon}=\min(4\varepsilon,1+2\varepsilon).
+\]
+For $0<\varepsilon\leq1/2$ the ratio is $1/(4\varepsilon)+1/2$, unbounded as $\varepsilon\downarrow0$, with positive denominators. The finite inside/outside cardinality profiles prove these formulas for all real $\varepsilon\geq0$; rational software controls are not a sampling argument.
+
+These costs are not submodular. Masks $3,4$ and their intersection $0$ belong to $\down E$, but their union $7$ does not. The modular term cancels and the submodular inequality fails by one. The construction thus establishes no unbounded additive or submodular ratio. It applies the standard downset separation in Lemma~\ref{lem:criterion}, rather than introducing a new general lower-bound technique.
+
+\section{Explicit policy recurrence}\label{app:recursion}
+For precision, write $X=(X_A,X_B)$ for the current labeled feasible worlds and $U$ for available coordinates. Let $I_q$ contain the answers with nonempty feasible children. For a selected child envelope $E_b$ at each $b\in I_q$, define
+\[
+ \mathsf{Join}_q((E_b)_{b\in I_q})
+ =\Max_{\subseteq}\!\bigcup_{b\in I_q}\{S\cup\{q\}:S\in E_b\}.
+\]
+Here $\Max_{\subseteq}$ retains maximal purchased sets inside one envelope, whereas $\Min_{\preceq}$ retains minimal envelopes. At a nonempty mixed state,
+\[
+ \mathcal A(X,U)=\Min_{\preceq}\!\bigcup_{q\in U}
+ \left\{\mathsf{Join}_q((E_b)):
+ E_b\in\mathcal A(X|_{q=b},U\setminus\{q\})\ (b\in I_q)\right\}.
+\]
+The pure-state value is $\{\{\varnothing\}\}$; the value of a mixed state with $U=\varnothing$ is the empty family. Thus an impossible policy combination contributes nothing. Empty feasible children are omitted. For a fixed order, at position $i$ take the minimal union of (i) the family from skipping to $i+1$ at the same $X$ and (ii) these joined feasible-child families for taking $q_{\pi(i)}$ and continuing at $i+1$. These rules also specify zero-price and constant-coordinate cases.
+
+At a common paid context $P$, future set $S$ is evaluated by $F(P\cup S)$. Equivalently, set $G_P(S)=F(P\cup S)-F(P)$ for $S\subseteq Q\setminus P$. This cost is normalized, nonnegative and monotone, and remains submodular when $F$ is submodular. Subtracting the common constant preserves continuation comparisons for fixed $P$, but does not remove dependence on the paid context. Downward-closure inclusion is preserved under adjoining a common query and uniting branch families, so dominance pruning remains valid. General $F$ cannot be replaced by an additive remaining-cost recursion. Empty answer children contribute no legal path.
+
+\subsection{Compatible-completion proof}\label{app:completion}
+To extend a promise policy, unfold its tree and terminate a branch when no promised world remains. At the first such branch, a feasible sibling world purchases a superset of that branch's purchased coordinates. Monotonicity bounds its cost. The completed tree computes a compatible function, and preserves the order or read-once property. Conversely, restrict a diagram to $W$, unfold it and stop at pure states. Cost cannot increase. These transformations prove both identities.
+
+\section{Relation to 2-CNF promises}\label{app:structure}
+The source class is not contained in 2-CNF relations: a three-edge path with DIFFERENT endpoints allows every assignment except $111$. The majority of legal $110,101,011$ is illegal. All 2-CNF relations, including existential projections, are majority-closed. Conversely, $x_0\Rightarrow x_1$ is 2-CNF but violates the atomic condition. These obstructions concern representations preserving visible query coordinates; encodings with new paid queries require a separate menu and cost analysis.
+
+\section{Exact rational corroboration}\label{app:certificates}
+\subsection{Independent rational certificates}
+For the additive costs $H_i$ of Theorem~\ref{thm:price}, normalize every path cost to at most one. Choose one path per priority envelope and bound a ratio variable by its cost. The $432$ combinations per $H_i$ yield $864$ linear programs. Their maximal optima equal $\max_{\kappa\geq0,H_i\leq1}\Pcost^*$ and, by homogeneity, $\sup_{\kappa\geq0,H_i>0}\Pcost^*/H_i$; $H_i=0$ implies $\Pcost^*=0$. An individual branch optimum is not the global adaptive ratio.
+
+The original floating-point solver proposed candidates. Acceptance required exact rational primal and nonnegative dual feasibility, exact column equations and equal objectives. The independent checker rebuilt every program and verified all $864$ certificates using rational arithmetic without an LP solver. The two maxima were $5/4$ and $7/6$. These checks support the algebraic proof without enlarging its source scope.
+\paragraph*{Independent coverage certificates.}
+A separate bounded check represents coverage costs as
+$F(S)=\sum_{\varnothing\ne R\subseteq Q}w_R\mathbf1\{S\cap R\ne\varnothing\}$,
+with $127$ nonnegative resource weights. The same $432$ path choices for each adaptive-only envelope produce $864$ LP branches; their maxima are both $4/3$. Every branch has an exact rational primal/dual certificate. A separate checker reconstructs all intersection columns and verifies these certificates without importing the producer or using an LP solver. This certifies the coverage subclass. The three submodular inequalities above, not the coverage LP, prove the upper bound for all submodular costs. Both arguments depend on the already established fixed-source frontiers.
+
+\section{A map of the computational proof}\label{app:reproduction}
+The six-query catalogue splits into $112,971$ analytic and $2,747,725$ explicit cases. The analytic cases are $51,048$ singleton-side pairs and $61,923$ remaining shared-constant pairs; the latter depend on the complete five-query foundation. The explicit cases are $129,250$ remaining duplicate/complement pairs and $2,618,475$ residual pairs. These disjoint scopes must not be replaced by a sample, a count-only test or a selected-policy comparison.
+
+\begin{center}\small
+\begin{tabular}{@{}p{0.25\linewidth}p{0.64\linewidth}@{}}\toprule
+Obligation & Required evidence\\\midrule
+Source completeness & Enumerate endpoint identifications and all distinct forbidden-filter intersections; compare the full support family.\\
+Pair completeness & Genuine source membership, canonical representatives, uniqueness, orbit weights and independent Burnside count.\\
+Five-query foundation & Complete supports and pair orbits; rebuild every adaptive frontier and verify all priority witnesses.\\
+Analytic cases & Singleton proof and constant-coordinate deletion, with monotone paid-context costs.\\
+Explicit six-query cases & Reconstruct full adaptive frontiers and replay all increasing-order TAKE/SKIP certificates for $2,747,725$ cases.\\
+Coverage alignment & Match each physical pair index to its assigned case group and certificate; require no omissions or duplicate accepted ranges.\\
+Fixed-source cost bounds & Rebuild the seven-query frontiers; verify additive and coverage certificates; use algebra and submodularity for the general bounds and nonattainment.\\\bottomrule
+\end{tabular}
+\end{center}
+
+The original V03 portable bundle completed one fresh aggregate run on 11 October 2026. It executed the complete source catalogue, pair-orbit census, five-query foundation and all $2,747,725$ explicit six-query certificates in one invocation. Each stage exited successfully and met its fixed result contract. The explicit layer replayed $4,074,031$ priority witnesses. The terminal status is conditional on the written analytic arguments: neither hashing those arguments nor checking the executable layers constitutes a formal derivation of them. The accompanying iteration-272 closure ledger binds the original bundle, stage receipts, inputs and precise scope. It records an actual local process observation, not an operating-system-signed attestation.
+
+The later frozen candidate retains identical scientific data, mathematical kernels and stage programs. Its aggregate contract changes the textual proof bindings to V08 and omits the historical-index binding; its driver changes only the corresponding contract hash. Its acceptance covers byte inventory, a boundary plan and the fixed-seven supplement. It has not completed a fresh aggregate six-query run under its new contract. The completed original V03 run is evidence about the common computational inputs, not fresh execution of the candidate. This journal-preparation source preserves the V08 mathematical statements and proofs while updating front matter, declarations and this reproduction account; it does not retroactively change either artifact's contract.
+
+The \href{https://github.com/SHiJiE1115/newproj/releases/tag/complete-six-review-20261011-v01}{review archive} preserves all $5,569$ candidate files and adds an outer source notice, version map and execution-evidence index. Original receipt bytes and derived summaries are labelled separately. The \href{https://github.com/SHiJiE1115/newproj/blob/57ed5b69243fec06c2a7a58f062f3793f6557738/theory/complete_six/PUBLIC_DELIVERY_RECEIPT_V01.json}{fixed delivery record}, at commit \texttt{57ed5b6}, binds the four public assets by size and SHA256. The release tag points to source commit \texttt{a8f60ce}. An anonymous download and extraction checked all $5,636$ archive members; a relocated plan-only invocation exited successfully. These distribution checks do not add a mathematical replay. The outer correspondence includes journal draft V02, whose mathematical blocks were unchanged in V03. Journal V04 added three analytic explanations (common filter witnesses, a common physical menu, and continuation costs). Journal V05 explained certificate-to-minimax transfer and cited priced-information work. Journal V06 added a self-contained comparison with compatible read-once AND/OR formulas. Journal V07 added the separately checked fourteen-record acquisition control. Journal V08 appends an analytic normal form for a different even-path family and an additive construction in Appendix~\ref{app:record-acquisition}, with explicit positioning against classical path search. These revisions do not change the original boundary or pair-menu finite certificate premise, or the inner executable contract binding V08.
+
+For the boundary, the entries are \path{verify_catalogue_v02.py}, \path{verify_orbits_v01.py}, \path{verify_five.py} and \path{verify_six.py}. From the extracted archive, the aggregate entry is \path{candidate/boundary/verify_bundle.py}, with \verb|--mode boundary-full --seconds 14400| and a fresh output directory outside \path{candidate/}. This explicit cap overrides the wrapper's 900-second default. The original bundle V03 run took about $11,199.1$ seconds on its recorded environment; four hours is a cap, not a completion guarantee on another machine. The archive reviewer guide gives the complete command and interpreter requirements. Complete acceptance requires every layer to finish; files-only, planning, smoke or partial results do not suffice. Strategy and rational LP checks use exact integer/rational arithmetic. The orbit census additionally uses NumPy for exact combinatorial operations. A proposed floating-point LP solution is insufficient. Proof inputs and failed executions are preserved. Byte hashes identify versions; they do not establish authorship, human review, historical authenticity or an error-free proof kernel.
+
+The fixed-seven supplement has the entry \verb|verify.py --mode all|. In that invocation, \path{reproduce_seven.py} rebuilds all $5,040$ order frontiers, checks $13$ witnesses and verifies $864$ additive certificates; \path{check_coverage.py} then verifies $864$ coverage certificates against the same frontier bytes. It needs Python 3.10+ and its standard library, without an LP solver or model API. Coverage enumeration certifies the coverage subclass; the three-inequality argument in the paper supplies the upper bound for general submodular costs. Exact hashes, executable commands, dependency requirements and accepted versions belong in the accompanying versioned ledger. The \href{https://github.com/SHiJiE1115/newproj/blob/5ca862c87d35df3db12c83e28e5167f4eebdbb09/theory/HOSTED_RUNS.md}{public fixed-seven record} retains the executed source and results of hosted run 38134598264, attempt~1. That run used source commit \texttt{d4903be}; the linked persistent archive is the later commit \texttt{5ca862c}. It completed the fixed-seven checks just described, not the universal six-query layers or a machine proof of the general submodular argument.
+
+
+\section{Changing the acquisition unit}\label{app:record-acquisition}
+\subsection{A fixed fourteen-record control}
+Retain the complete 14-record realization in Section~\ref{sec:seven}, including every legal cross-block merge. Now an action acquires one previously unread record. Its answer identifies its equivalence class relative to all previously acquired records, with one possible fresh class. The first acquisition conveys no class-name or label information. Only this induced partition is observable: absolute token names, content semantics, sizes and timing are excluded. This is a declared oracle contract, not a measurement of actual file contents or access time. Both policy classes receive the same responses. A priority policy scans one global record order with causal permanent skips and stopping.
+
+\begin{proposition}[Finite record-acquisition control]\label{prop:record-control}
+On this source, give records $2i,2i+1$ the prices $c_{2i}=c_{2i+1}=\kappa_i/2$, where $\kappa=(2,2,3,1/2,1,1,1)$. The adaptive and strong-priority worst costs are both $15/4$. With unit prices on all records they are both $4$.
+\end{proposition}
+\begin{proof}
+The $A$ prior has seven SAME components and no required inequality, hence $B_7=877$ complete partitions, where $B_k$ is the $k$th Bell number. The $B$ prior has eight SAME components and requires two specified components to remain different, giving $B_8-B_7=3263$. These full partitions, rather than the eight pair-answer templates per label, define the control.
+
+For the matched prices use integer weights
+\[
+ w=4c=(4,4,4,4,6,6,1,1,2,2,2,2,2,2).
+\]
+Here the weighted conclusion has a finite computational premise. Let $h$ be a partial induced partition and let $H(h,b)$ denote feasibility within additional integer budget $b$. It is true at a nonempty pure state. At a mixed state it is true exactly when some unread record $r$ with $w_r\leq b$ has
+\[
+ H(h\cup\{r\mapsto t\},b-w_r)=\mathrm{true}
+ \quad\text{for every feasible next class }t.
+\]
+If there is no affordable successful action it is false. Every existing observed class and one fresh class are considered. A class assignment is feasible for a label exactly when unioning its observed equalities with that label's SAME constraints violates neither a required DIFFERENT pair nor an observed inequality. Distinct remaining components provide a completion, proving sufficiency of this test. The recursion terminates because each action adds a record.
+
+Exact evaluation gives $H(\varnothing,14)=\mathrm{false}$. Integer path costs therefore imply an adaptive lower bound of $15/4$. A saved tree attains integer budget $15$; all its paths increase in the single order
+\[
+ (8,7,5,4,1,2,0,3,9,6,10,12,11,13).
+\]
+Scanning this order and skipping until the next node of the tree implements the same observations, leaves and costs. This proves the priority upper bound and hence equality. The independent constraint-extension checker verifies all $83$ nodes and $53$ leaves of this tree, including exhaustive response coverage and label purity, and evaluates the lower recurrence in $3233$ states. A separate full-world implementation corroborates the result on all $4140$ partitions. No enumeration of $14!$ orders is needed. These are program-checked finite claims, not proof-assistant-kernel theorems.
+
+For unit prices, first acquire $0,1$. If equal, acquire $4,5$; otherwise acquire $2,3$. The selected pair is equal under $A$ and different under $B$. The order $(0,1,4,5,2,3,6,7,8,9,10,11,12,13)$ implements this four-read policy. For the lower bound, answer the first pair DIFFERENT precisely when it is one of $\{4,5\},\{4,1\},\{4,9\},\{5,0\},\{5,8\}$, and SAME otherwise. For every third record there remains a common induced partition under both labels. The checker verifies this extension assertion for all $91\cdot12=1092$ first-pair/third-record cases. Thus three reads cannot suffice.
+\end{proof}
+
+The accompanying record-acquisition supplement contains the source constraints, integer prices, the saved tree and a standard-library verifier. It checks the weighted lower recurrence, all tree branches and their common order, and the unit-price control. This is a separate finite check from the six-query proof and fixed-seven pair-menu supplement. The source predicates and isolated-pair prices are preserved, but the action set and available information change. The result neither contradicts the pair-menu theorem nor establishes equality for all record prices, all complete sources or any natural academic-evidence task.
+
+\subsection{An all-size record-path family}\label{sec:record-path}
+Consider a separate family on $V=\{0,\ldots,n-1\}$, where $n=2k\geq2$. The fibre $\Omega_A$ contains every partition satisfying $2r\sim2r+1$ for $0\leq r<k$. The fibre $\Omega_B$ contains every partition satisfying $2r+1\sim2r+2$ for $0\leq r<k-1$, and $0\not\sim n-1$. All other merges are allowed. The fibres are disjoint: their combined equalities contradict the endpoint inequality. This family differs from the preceding 14-record source; its conclusions do not extend that finite control to all prices.
+
+Use the same relative-record oracle: buying an unread record reveals its equivalences to all previously acquired records. Absolute class names are unavailable. Policies are deterministic and zero-error. A priority policy fixes a record permutation and permits causal permanent skips. Write $S_T(w)$ for the purchased set and $\A_F^{\mathrm{rec}},\Pcost_F^{\mathrm{rec}}$ for the two optimal worst costs under normalized nonnegative monotone $F:2^V\to\mathbb R_{\geq0}$. These symbols concern this record model. The first acquisition is uninformative but remains in the charged set.
+
+\begin{theorem}[Record-path containment]\label{thm:record-path}
+For every correct adaptive policy $T$ there is a correct priority policy $P$ such that
+\[
+ \forall w\in\Omega_A\cup\Omega_B\quad
+ \exists h\in\Omega_A\cup\Omega_B:
+ \quad S_P(w)\subseteq S_T(h).
+\]
+Consequently $\A_F^{\mathrm{rec}}=\Pcost_F^{\mathrm{rec}}$ for every such $F$. The order may depend on $T$ and hence on the chosen cost. The comparison world $h$ need not equal $w$.
+\end{theorem}
+\begin{proof}
+For $j<n-1$, let $h_j$ have two classes $\{0,\ldots,j\}$ and $\{j+1,\ldots,n-1\}$; let $h_{n-1}$ be all equal. These worlds are legal, with label $B$ for even $j$ and $A$ for odd $j$. Since $n$ is even, labels alternate cyclically. Retain $T$'s actual first record $i$, which is fixed before informative observations. No endpoint-first restriction is imposed.
+
+Put $v_t=(i+t)\bmod n$ for $0\leq t\leq n$, treating $v_n=i$ as a ghost, and define
+\[
+ b_t=\mathbf1\{v_t\not\sim i\},\qquad
+ \epsilon_t=\mathbf1\{t\geq n-i\},\qquad
+ g_t=b_t\oplus\epsilon_t.
+\]
+Thus $g_0=0,g_n=1$; the ghost costs no second acquisition. On $h_j$, writing $p=(j-i)\bmod n$ gives $g_t=\mathbf1\{t>p\}$. On this at-most-two-class subfamily, the anchor bits determine all acquired equivalences. The resulting transition search is closely related to inconsistent chain 2-CNF clause search~\cite[Section~4]{lovasz}: with endpoints fixed, a $0$-to-$1$ edge violates $g_t\lor\neg g_{t+1}$. The classical search structure and the minimax recurrence below are not claimed as new general algorithms.
+
+Restrict $T$ to these $n$ hard worlds. Surviving cuts form an interval $[L,U]$. A read at position $t$ splits it exactly when $L<t\leq U$. Otherwise its bit and complete response are constant on the surviving hard worlds: simulate that response and delete the purchase. Relations involving deleted records remain simulable from their inferred anchor bits on this subfamily. Stop once the interval is singleton. A correct original leaf cannot retain a larger interval, since adjacent cuts have opposite labels. This produces an alphabetic binary tree with $n$ leaves; normalization only deletes purchases from each original hard-world path.
+
+A split at $t$ leaves possible internal positions $L+1,\ldots,t-1$ on the left and $t+1,\ldots,U$ on the right. These sets are disjoint. Inductively, each nonanchor record occurs at most once in the whole tree, and therefore exactly once among its $n-1$ internal nodes. The anchor followed by internal-node preorder is a permutation. Every tree path increases in this order; off-path nodes can be skipped once the relevant branch is observed.
+
+Run this tree on any legal, possibly multicolour, world, using only equality to the original anchor. Its $g$ sequence need not be monotone. Maintain $g_L=0,g_{U+1}=1$. A response $g_t=1$ selects $[L,t-1]$, and $g_t=0$ selects $[t,U]$. The invariant persists, so a leaf $p$ gives adjacent bits $g_p=0,g_{p+1}=1$. Both boundary records were acquired, or are the anchor/ghost.
+
+For an ordinary physical edge $(j,j+1)$ the biases agree, including an ordinary edge entering the ghost. Thus the raw bits differ: exactly one endpoint equals the anchor, so the endpoints differ. This excludes $A$ when $j$ is even and $B$ when $j$ is odd. At the seam $(n-1,0)$ the bias changes from zero to one; a $0$-to-$1$ transition forces both raw bits to be zero. The endpoints then equal the anchor and each other, excluding $B$. These certificates give precisely the hard-world leaf labels, including endpoint anchors.
+
+Every lifted path reaches the same structural leaf as some $h_j$, and purchases exactly that normalized leaf set. Hence $S_P(w)\subseteq S_T(h_j)$. Monotonicity bounds the worst cost of $P$ by that of $T$. Minimizing, and using inclusion of priority policies among adaptive policies, proves equality, including zero and nonadditive costs.
+\end{proof}
+
+\begin{corollary}[Unit prices]\label{cor:record-path-unit}
+For $F(S)=|S|$, the common optimum is $1+\lceil\log_2 n\rceil$.
+\end{corollary}
+\begin{proof}
+After the paid uninformative anchor, the normalized binary tree must distinguish $n$ cuts, requiring height at least $\lceil\log_2 n\rceil$. A balanced alphabetic tree has this height and admits the same full-world lift and priority order.
+\end{proof}
+
+\begin{corollary}[Nonnegative additive prices]\label{cor:record-path-additive}
+For $F(S)=\sum_{r\in S}c_r$, $c_r\geq0$, an optimal priority policy can be constructed in $O(n^3)$ exact arithmetic operations using $O(n^2)$ stored values and splits.
+\end{corollary}
+\begin{proof}
+Let $D[a,\ell]$ be the minimum worst additional price for $\ell$ consecutive cyclic cuts beginning at $a$, excluding already acquired boundary records. With all record indices modulo $n$,
+\begin{align*}
+ D[a,1]&=0,\\
+ D[a,\ell]&=\min_{1\leq s<\ell}
+ \bigl(c_{a+s}+\max\{D[a,s],D[a+s,\ell-s]\}\bigr).
+\end{align*}
+The root comparison costs $c_{a+s}$ on both branches; either child tree can be chosen independently. This proves the recurrence by induction. Every alphabetic tree has the preceding lift, and each leaf is attained by its hard world. Containment therefore gives the exact optimum
+\[
+ \A_F^{\mathrm{rec}}=\Pcost_F^{\mathrm{rec}}
+ =\min_{0\leq i<n}\bigl(c_i+D[i,n]\bigr).
+\]
+One table filled by increasing $\ell$ serves every anchor: a continuation depends only on its cyclic interval and internal prices. There are $n^2$ states and $n^2(n-1)/2$ split candidates. Saved minimizing splits reconstruct the tree in $O(n)$ time; its anchor and preorder give the causal-skip witness. Execution always compares to the original anchor, even when a subinterval starts elsewhere. Strictly shorter child intervals handle zero-price ties without further assumptions. Exact rational arithmetic additionally depends on input bit length. This is minimax node-priced search, not expected weighted-leaf optimization.
+\end{proof}
+
+% Proposed appendix fragment, not a standalone document.
+% Main manuscript V08 remains unchanged. Integrate only in a new reviewed build.
+% Local proof packet SHA256:
+% 2c875b0f12ef368cc730579f68ceaf708a33cdd1481a01abd15f2aa5fc51d874
+\section{A complete eleven-query extension}\label{app:full11-copy-pin}
+
+This appendix concerns one specified complete source and its coordinate
+projections. All prices here are finite, nonnegative and additive. It does not
+bound every eleven-query complete source or a source of arbitrary size.
+Append four coordinates to the templates of Section~\ref{sec:seven}:
+\begin{align*}
+ T_A&=(\alpha,1,\alpha,\beta,\alpha,\gamma,\gamma,
+             \alpha,\beta,\beta,\gamma),\\
+ T_B&=(\mu,\mu,0,\nu,\omega,\omega,\nu,
+             \nu,\mu,\omega,\mu).
+\end{align*}
+Each label retains all eight assignments to its three free bits.
+
+\paragraph*{Complete equivalence realization.}
+Take records $0,\ldots,21$ and the common physical queries
+$q_i=(2i,2i+1)$ for $i=0,\ldots,10$. Under label $A$, impose the SAME blocks
+\[
+\begin{gathered}
+ \{0,4,8,14\},\quad\{1,5,9,15\},\quad\{2,3\},\\
+ \{6,16,18\},\quad\{7,17,19\},\quad
+ \{10,12,20\},\quad\{11,13,21\},
+\end{gathered}
+\]
+with no DIFFERENT constraints. Under label $B$, impose
+\[
+\begin{gathered}
+ \{0,2,16,20\},\quad\{1,3,17,21\},\\
+ \{6,12,14\},\quad\{7,13,15\},\quad
+ \{8,10,18\},\quad\{9,11,19\},
+\end{gathered}
+\]
+and $\DIFF(4,5)$, leaving $4,5$ as the remaining singleton blocks.
+The source contains every partition satisfying these constraints.
+All unlisted cross-block merges remain legal.
+
+For each free bit, all left endpoints form one SAME block and all right
+endpoints form another. Their equality fixes every occurrence of that bit.
+The fixed-one pair is SAME and the fixed-zero pair is DIFFERENT. Thus every
+satisfying partition has its label's displayed template. Conversely, start
+with exactly the displayed blocks, merge the two blocks of each free bit set
+to one, and give all remaining blocks distinct fresh classes. The groups and
+pin blocks are disjoint, so this realizes every assignment without violating
+the DIFFERENT constraint. This proves exact complete-fibre projection.
+The construction also extends every original fourteen-record partition;
+new records are only attached to the corresponding existing group blocks.
+
+Write $\A^*_{11}$ and $\Pcost^*_{11}$ for the adaptive and causal-skip
+global-order optima on this source.
+\newpage
+\begin{theorem}[Specified eleven-query additive bound]
+\label{thm:full11-copy-pin}
+For all admissible prices $\kappa$,
+\[
+ \Pcost^*_{11}(\kappa)\leq\frac54\A^*_{11}(\kappa).
+\]
+The maximum ratio over prices with $\A^*_{11}>0$ is $5/4$.
+Every identifiable coordinate projection inherits this upper bound.
+For each of the sixteen menus containing the original seven coordinates,
+the nonnegative-price maximum and strictly-positive-price supremum are
+$5/4$.
+\end{theorem}
+\begin{proof}
+The upper uses a computer-assisted finite premise. Complete adaptive
+recursion gives $2,193$ minimal envelopes. Fix one envelope $E$, let
+$U=\bigcup_{S\in E}S$, and normalize its worst path cost to at most one.
+Introduce $\rho\geq0$ and nonnegative prices on $U$, with
+\[
+ \sum_{q\in S}\kappa_q\leq1\quad(S\in E),
+ \qquad \rho\leq\sum_{q\in U}\kappa_q.
+\]
+The union $U$ separates labels, so buying all $U$ is a correct priority
+policy. At a branch use a correct $U$-only ordered policy $F$ and create
+one child for each of its maximal purchased sets $T$, adding
+$\rho\leq\sum_{q\in T}\kappa_q$.
+For the actual optimum $\rho=\Pcost^*_U$, at least one such child contains
+the point, since $\Pcost^*_U$ is at most the worst path cost of $F$.
+Thus a complete finite branch tree whose every leaf has a rational dual
+upper bound $5/4$ proves $\Pcost^*_U\leq5/4$ throughout the normalized
+domain. The full priority optimum is at most this $U$-only optimum.
+Selecting an optimal adaptive envelope and scaling gives the
+claimed full-menu bound. If $\A^*_{11}=0$, the union of coordinates used
+by a zero-cost adaptive tree is free and separates labels, so
+$\Pcost^*_{11}=0$.
+
+The delivered direct proof contains $293$ legal priority policies and
+$130,683$ exact rational nodes, covering all $2,193$ envelope roots and
+all required children. Of these, $5,395$ nodes directly replace $166$
+roots previously justified by old seven/eight-query results. The
+self-contained replay rebuilds the complete adaptive frontier from
+ternary group states, replays all policies on all legal worlds and
+checks every primal/dual equation and branch disjunction. It imports
+neither the producer's mathematical functions nor an LP solver.
+Completeness of the priority-policy library is not a premise of this
+upper proof.
+
+For the matching lower, take
+\[
+ \kappa=(2,2,3,0,1,1,1,10,10,10,10).
+\]
+The complete full-menu adaptive frontier evaluates to $4$.
+Scalar fixed-order recursion on the seven-coordinate projection checks
+all $5,040$ permutations and obtains minimum $5$, allowing causal
+permanent SKIP at every observed history. The legal policy
+$N_0(N_1(B,A),N_2(B,A))$ costs $5$.
+Any policy purchasing an added coordinate on a legal world costs at
+least $10$, whereas an original-seven policy already costs at most $5$.
+Erasing unobserved outside skips preserves a seven-coordinate policy.
+Hence the full priority optimum is exactly $5$ and the ratio is $5/4$.
+
+For an identifiable submenu $M$, assign every omitted coordinate a
+price $H>\sum_{q\in M}\kappa_q$. Buying all $M$ is a finite-cost priority
+policy. A reachable outside purchase cannot improve either optimum;
+policies avoiding such purchases have precisely the projected
+histories. Within-label duplicate projections do not alter correctness
+or worst cost. Both optima therefore equal their $M$-only values, and
+the full-source upper transfers.
+For menus containing all seven original coordinates, restricting the
+displayed witness gives the same $4$ versus $5$ lower.
+Replacing the zero price by $\varepsilon>0$ and taking
+$\varepsilon\downarrow0$ gives the positive-price supremum, by
+continuity of finite minima of finite maxima of linear policy costs.
+No positive-price attainment or uniqueness claim is needed.
+\end{proof}
+
+The packet \texttt{full11\_direct\_proof\_v01.zip} uses Python's standard
+library. Its scalar recursion compares SKIP with a purchase followed by
+the worst feasible child, for one precommitted order at a time.
+The exact certificates concern every nonnegative real price vector,
+not a sampled price grid.
+The relocated Windows replay is accompanied by an actual Linux run:
+GitHub Actions run \href{https://github.com/SHiJiE1115/newproj/actions/runs/38812275187}{38812275187},
+attempt~1, executed source commit \texttt{37b10299} with Python~3.12.3
+and exited with code zero. Its parsed mathematical fields agree with
+the Windows result; only runtime metadata and elapsed time are excluded.
+The retained receipt is archived at commit \texttt{cba5d748}, which
+is distinct from the executed source. This is a cross-platform replay
+of the same checker, not a new independent mathematical implementation. Neither programmatic replay nor this finite-source
+extension establishes literature priority, human author review,
+or application advantage.
+
+
+% Appendix fragment for V10, not a standalone document.
+\section{Certificate costs under compatible completions}
+\label{app:certificate-distortion}
+
+This appendix concerns the complete seven-query source of
+Section~\ref{sec:seven}. All its eight assignments on each side are
+retained. It quantifies two different certificate comparisons used in
+Section~\ref{sec:cert-transfer}; it does not change the deterministic
+policy objective. Write
+\[
+ K_c(g)=\max_{x\in\{0,1\}^7}C_g^c(x)
+\]
+for a compatible total function $g$. Let $\mathcal R(W)$ be the
+read-once AND/OR formula family of Section~\ref{sec:ro-completion},
+including signed literals and permitting unused coordinates.
+
+\begin{proposition}[Maximum full-domain certificates]
+\label{prop:ro-certificate}
+For every nonnegative additive price vector $c$,
+\[
+ \min_{g\in\mathcal R(W)}K_c(g)
+   =\max\{c_0+c_1,c_0+c_2,c_1+c_2\}.
+\]
+At $c^0=(2,2,3,0,1,1,1)$, the minimum over unrestricted compatible
+total functions is instead $4$. For
+$c^\varepsilon=(2,2,3,\varepsilon,1,1,1)$, where
+$0\leq\varepsilon<1$, that unrestricted minimum is at most
+$4+\varepsilon<5$, while the displayed read-once minimum is $5$.
+No exact unrestricted positive-$\varepsilon$ minimum is asserted.
+\end{proposition}
+
+\begin{proof}
+The three opposite-label Hamming pairs in
+Section~\ref{sec:ro-completion} force coordinates $0,1,2$ to be
+essential in every completion. Any nominated set of essential leaves
+in a reduced read-once AND/OR formula can survive a restriction of all
+other leaves. At a gate whose two children contain nominated leaves,
+recurse in both. If only one does, set the other child to the gate's
+neutral value and suppress the gate. A nonconstant child can be set
+to either value by setting all its signed literals alike. Read-onceness
+makes these assignments consistent, and every nominated leaf remains
+essential.
+
+Maximum certificate cost cannot increase under restriction. A
+certificate at an extended full input, intersected with the surviving
+coordinates, certifies the restricted function. Its nonnegative cost
+is no larger. It therefore suffices to consider three-essential-leaf
+read-once functions on coordinates $0,1,2$.
+
+A pure AND or OR has an input forcing all three literals, so its
+maximum certificate cost is $c_0+c_1+c_2$. A mixed three-leaf formula
+has maximum certificate cost equal to the largest pair sum. For
+$a\land(b\lor d)$, every input has a certificate using at most two
+leaves, while the single-success positive inputs force $\{a,b\}$
+and $\{a,d\}$, and the double-failure negative input forces
+$\{b,d\}$. OR duality and literal flips preserve the statement.
+These cases exhaust the three-leaf formulas. The compatible function
+$q_1\land(\neg q_0\lor q_2)$ attains the largest pair sum on the
+original full cube, proving the first assertion even with zero prices.
+
+For the unrestricted free-probe minimum, interpret the displayed
+adaptive tree $T$ of Section~\ref{sec:seven} on every Boolean input.
+Its full-cube worst purchased cost is $4$, so each of its paths is a
+full certificate of cost at most $4$. Conversely, the promised input
+$0100000$ has opposite promised Hamming neighbours at coordinates
+$0$ and $1$. Every full certificate there buys both, at cost $4$.
+For $c^\varepsilon$, the same tree buys coordinate $3$ exactly once
+on each path and gives the upper bound $4+\varepsilon$.
+\end{proof}
+
+For the remainder put $c=c^0$, and abbreviate $C_W^c$ and $C_g^c$ by
+$C_W$ and $C_g$. Every promised certificate cost is positive. Define
+\[
+ \alpha(g)=\max_{w\in W}\frac{C_g(w)}{C_W(w)}.
+\]
+This maximizes ratios at promised inputs, rather than maximizing
+full-cube certificate costs before comparison. Its minimizer need
+not minimize $K_c$.
+
+\begin{proposition}[Sharp pointwise certificate inflation]
+\label{prop:pointwise-certificate}
+Over all compatible total Boolean functions, without a read-once
+restriction,
+\[
+ \min_{g\in\Comp(W)}\alpha(g)=2.
+\]
+At prices $c^\varepsilon$, for $0\leq\varepsilon<1$, every compatible
+total function has pointwise inflation at least
+$2/(1+\varepsilon)>1$. The latter bound is not claimed sharp for
+positive $\varepsilon$.
+\end{proposition}
+
+\begin{proof}
+Use the promised inputs, in coordinate order,
+\[
+ a=1110111\in W_A,\quad b=0000000\in W_B,
+ \quad d=1110100\in W_A.
+\]
+Their promise certificate costs are $1,2,2$. At $a$, the only
+promise certificate of cost below $2$ is $\{3,6\}$, fixing
+$(q_3,q_6)=(0,1)$. Any cheaper single unit-price coordinate, even
+with the free probe, still agrees with some $B$ input.
+
+Suppose $C_g(a)<2$, $C_g(b)<4$ and $C_g(d)<4$. The certificate at
+$a$ forces $g=1$ throughout the full-cube cylinder
+$q_3=0,q_6=1$. A certificate at $b$ must contain $q_1$: the
+opposite promised input $0100000$ differs only there. It must also
+contain $q_6=0$ to avoid that positive cylinder. These two queries
+cost $3$; under a strict budget $4$, only free $q_3$ may be added.
+The possible coordinate sets are therefore $\{1,6\}$ and
+$\{1,3,6\}$, fixing $q_1=q_6=0$ and optionally $q_3=0$.
+
+The input $d$ agrees at $3,6$, so its certificate must fix $q_1=1$
+to avoid this negative cylinder. No promise certificate at $d$ of
+cost below $4$ contains $q_1$. With that cost-$2$ query bought, at
+most one unit-price query among $4,5,6$ and the free probe remain
+affordable; a $B$ input agrees in each case. This contradiction
+establishes, for every compatible $g$,
+\[
+ C_g(a)\geq2\quad\hbox{or}\quad C_g(b)\geq4
+       \quad\hbox{or}\quad C_g(d)\geq4.
+\]
+Dividing by the respective promise costs gives $\alpha(g)\geq2$.
+This is a three-input cylinder argument over every completion,
+not an enumeration of all $2^{112}$ total completions.
+
+For a matching upper bound define the total function
+\[
+ g_*(q)=
+ \begin{cases}
+  1,&q_3\ne q_6,\\
+  0,&q_3=q_6,\ q_5\ne q_6,\\
+  0,&q_3=q_5=q_6,\ q_1=0,\\
+  \neg q_0\lor q_4,&q_3=q_5=q_6=0,\ q_1=1,\\
+  \neg q_4\lor q_2,&q_3=q_5=q_6=1,\ q_1=1.
+ \end{cases}
+\]
+Substituting either source template proves compatibility.
+Table~\ref{tab:certificate-inflation} gives $C_W$ and sufficient
+full certificates for $g_*$. Each listed certificate costs at most
+$2C_W$, so $\alpha(g_*)\leq2$.
+
+\begin{table}[htbp]
+\centering
+\caption{Pointwise comparison at $c^0$. The source parameters are
+those in Section~\ref{sec:seven}; rows with overlapping conditions
+for $B$ may use either indicated certificate. Coordinate $3$ is free.
+The last column is a certificate-cost upper bound, not a query-policy
+execution cost.}\label{tab:certificate-inflation}
+\begin{tabular}{@{}llccl@{}}
+\toprule
+Label & Parameter condition & $C_W$ & Certificate & Cost\\
+\midrule
+$A$ & $\beta\ne\gamma$ & $1$ & $\{3,6\}$ & $1$\\
+$A$ & $\alpha\ne\beta=\gamma$ & $2$ & $\{3,5,1,4\}$ & $4$\\
+$A$ & $\alpha=\beta=\gamma=0$ & $4$ & $\{3,5,1,0\}$ & $5$\\
+$A$ & $\alpha=\beta=\gamma=1$ & $3$ & $\{3,5,1,2\}$ & $6$\\
+\midrule
+$B$ & $\mu=0$ & $2$ & $\{3,6,1\}$ & $3$\\
+$B$ & $\nu\ne\omega$ & $2$ & $\{3,5,6\}$ & $2$\\
+$B$ & $\mu=1,\ \nu=\omega=0$ & $3$ & $\{3,6,0,4\}$ & $4$\\
+$B$ & $\mu=1,\ \nu=\omega=1$ & $4$ & $\{3,6,4,2\}$ & $5$\\
+\botrule
+\end{tabular}
+\end{table}
+
+For completeness, the promise-cost entries follow directly from
+the templates. On $A$, $\beta\ne\gamma$ is witnessed by $\{3,6\}$,
+and $\alpha\ne\gamma$ by $\{4,5\}$. The free probe alone is never
+pure. When $\beta=\gamma$, every one unit-price coordinate together
+with the probe still agrees with some $B$ input, giving the cost-$2$
+lower bound in the second $A$ row. When neither inequality occurs, the all-zero
+parameter input has Hamming neighbours forcing $0,1$, and the all-one
+parameter input has a neighbour forcing $2$. On $B$, $q_1=0$ or
+$q_5\ne q_6$ yields cost $2$. Otherwise the two remaining inputs
+force, respectively, $0$ and one of $2,4$, or $2$ and one of $0,4$;
+the certificates $\{0,4\}$ and $\{2,4\}$ attain costs $3,4$.
+No single unit-price query with the free probe separates these $B$
+inputs from all $A$ inputs. This also establishes the cost-$2$
+lower bounds in the preceding cases.
+
+Finally let $0\leq\varepsilon<1$. Prices only increase from $c^0$,
+so the certificate families affordable below thresholds $2,4,4$
+in the lower proof only shrink. The same three-way disjunction
+therefore holds. The promise costs at $a,b,d$ are now
+$1+\varepsilon,2,2$: at $a$ the unique base certificate below $2$
+is $\{3,6\}$, and the other two costs are attained without $3$.
+Dividing the disjunction by these costs proves the asserted lower
+bound $2/(1+\varepsilon)$.
+\end{proof}
+
+\paragraph*{Transfer scope and finite corroboration.}
+At $c^0$, a uniform pointwise comparison
+$C_g(w)\leq\alpha C_W(w)$ requires $\alpha\geq2$. Composing it
+with a full-domain certificate-competitive factor $\rho\geq1$
+cannot by itself recover the fixed-source bound $5/4$ through the
+product $\rho\alpha$. For $0<\varepsilon<3/5$, the positive-price
+lower bound similarly exceeds $5/4$. This does not exclude an
+input-dependent analysis, source-aware algorithms, other reductions,
+or the different maximum-full-certificate bridge with a suitable
+unrestricted completion and legal priority implementation.
+
+General completion complexity and distinctions between promise-valid
+and domain-certifying certificates are established context
+\cite{huffstutler2026completion}. Our $C_W$ is a priced version of
+the promise-valid convention. The exact constants above concern this
+specified complete source; no new general framework or literature
+priority is asserted.
+
+Separate implementations corroborate the argument by classifying
+all $64$ three-essential-variable read-once truth functions through
+formula generation and a $256$-table cofactor scan, checking $48$
+affordable certificate triples for opposite-label cylinder conflicts,
+and checking all $128$ outputs of each explicit total witness.
+The original bounded formula search stopped at a resource limit and
+is not a proof premise. Independent programmatic replay is neither
+a proof-assistant kernel nor human author review.
+
+
+\paragraph*{Public replay provenance.}
+The separately deposited certificate packet was executed once in Linux,
+Python~3.12.3, by GitHub Actions run
+\href{https://github.com/SHiJiE1115/newproj/actions/runs/38833749833}{38833749833},
+attempt~1, using source commit \texttt{a420cd488}. The actual checker
+process exited with code zero. Every parsed mathematical output field
+agreed with the frozen Windows report; no mathematical field was excluded.
+The original service-digest-matched artifact and provider metadata are
+retained at archive commit \texttt{f68a04d13}, distinct from the executed
+source. Attribution to the hosted run is conditional on the stated trust
+in provider metadata and the artifact digest. This is a cross-system replay
+of the same checker, not another independent implementation, human author
+review, or historical scientific authentication.
+
+\section{Case evidence and applicability limits}\label{app:cases}
+These development cases concern research-artifact auditing. They are separate from the complete-source query theorems: neither supplies a complete possible-world model, an independently justified priced physical menu, or a measured adaptive-policy advantage. The counts below are evidence components of selected workflows, not independent scientific studies or human gold labels.
+
+\subsection{A selected prospective Wine execution}
+A fixed author-code configuration was executed in GitHub Actions, run 38136338509, attempt~1, using source commit \texttt{6f64dd2}. Across the prescribed 25 seeds, the saved CSV has mean $0.904$ and population standard deviation $0.04606811918168868$, compatible with the target three-decimal Wine cell. The retained receipt binds the selected execution version, output and hosted-run provenance. Its inspected syscall trace records a successful 10,782-byte read from the designated Wine path, and the retained signature bundle passes the fixed verification policy.
+
+A fixed direct verifier accepts the same artifact. This supports a selected prospective execution under its observation contract; it does not authenticate the historical experiment or establish the complete set of consumed bytes. Earlier failed attempts remain archived. The \href{https://github.com/SHiJiE1115/newproj/blob/ae2ba2d6bd62dd7e7152f519d49569b91d235a1d/WINE_HOSTED_RUNS.md}{persistent Wine record} at archive commit \texttt{ae2ba2d} links the actual source and retained evidence. The archive commit is not the executed source. No separate baseline training run or policy-cost benefit is claimed.
+
+\subsection{An offline VPS3 artifact audit}
+The selected workflow comes from the Materials Cloud deposit \emph{AMaRaNTA: automated first-principles exchange parameters in 2D magnets [Results]} by Aditya Putatunda, Giuseppe Cuono, Federico Orlando and Silvia Picozzi (\href{https://doi.org/10.24435/materialscloud:he-3k}{DOI: 10.24435/materialscloud:he-3k}). The fixed target comprises twelve parameters, 48 calculation jobs and 93 distinct repository objects in one VPS3 workflow. Prespecified raw-input spin states and final sigma-to-zero energies, combined with the declared four-state conventions, reproduce all twelve native parameter values within $10^{-7}$~meV and agree with the deposited text at its displayed precision. The declared $S=1$ convention is not an inferred initialization-moment denominator.
+
+All 48 raw energies equal their corresponding stored List-slot finite-decimal values exactly under the statically identified source slot mapping. None of the twelve results agrees with the separate small-JSON central value under the declared comparison. This discrepancy remains undiagnosed; it is not classified as twelve newly discovered physical errors. Since $J_{xx}$ had already been checked from raw files, completion added eleven parameter coverages. Prior retrieval failures and cache reuse remain in the scoped acquisition record, which is not the whole research cost.
+
+The portable verifier re-extracts text and small-JSON values from digest-bound retained source bytes, checks selected typed database ports and statically checks the archived source. It does not execute that author source. The relocated Windows result and the Linux result from hosted run 38140070343, attempt~1, agree apart from their timestamps. The latter uses source commit \texttt{3f39c20}; the \href{https://github.com/SHiJiE1115/newproj/blob/7ab1b1dcca85068dc8b81683162699f1a8c3d060/VPS3_HOSTED_RUNS.md}{persistent VPS3 record} is at the later archive commit \texttt{7ab1b1d}.
+
+This hosted execution runs the offline audit, not VASP or the original workflow. Numerical agreement does not supply the missing CREATE edges, authenticate historical raw-to-List conversion or parser semantics, establish physical convergence, or resolve the small-JSON discrepancy. The package preserves source attribution, the deposit's stated CC BY 4.0 terms and its original public database metadata; it is not an anonymized archive. Ordinary fixed retrieval, relational lookup and arithmetic suffice for these observations. They do not verify the complete-fibre hypothesis for academic evidence or demonstrate practical gains from the query-policy theorems.
+
+
+\section{A sharp randomized small-menu boundary}\label{app:randomized-boundary}
+This appendix extends the policy objective explicitly. It does not change the deterministic six/seven comparison. Here labels are written $0,1$, with complete-fibre projections $W_0,W_1$ and $W=W_0\cup W_1$. All physical query identities and the unrestricted number of equivalence classes are retained. Costs $F:2^Q\to\mathbb R_{\geq0}$ are finite-valued, normalized and monotone.
+
+\subsection{Private randomness and a common completion}
+For $\mathcal C\in\{\mathcal A,\mathcal P\}$, let $\DR_{\mathcal C}(W;F)$ denote optimal deterministic worst-input cost. Thus $\DR_{\mathcal A}=\A_F$ and $\DR_{\mathcal P}=\Pcost_F$. A zero-error randomized policy is an input-independent distribution over correct deterministic policies, with value
+\[
+ \RR_{\mathcal C}(W;F)=\min_{\mu}\max_{w\in W}
+       \mathbb E_{T\sim\mu} F(P_T(w)).
+\]
+For priority policies the private seed may sample the permutation before execution; each supported deterministic policy still has a single global order and causal permanent skips. The input is independent of the private seed. We do not use the cost of an expected purchased set, an average over inputs, or a bounded-error criterion.
+
+A set $S\subseteq Q$ is a promise certificate at $w$ if every promised input agreeing with $w$ on $S$ has its label. Put
+\[
+ K_F(W)=\max_{w\in W}\min_{S\text{ a promise certificate at }w}F(S).
+\]
+Every correct terminating path is a certificate. Consequently, for both classes,
+\begin{equation}\label{eq:random-certificate-lower}
+ K_F(W)\leq\RR_{\mathcal C}(W;F)\leq\DR_{\mathcal C}(W;F).
+\end{equation}
+For a fixed $g\in\Comp(W)$, let $\RR^{\mathrm{full}}_{\mathcal C}(g;F)$ require correctness and charge worst-input expected cost on the full Boolean cube. Let $\RR^W_{\mathcal C}(g;F)$ retain full-cube correctness but charge only promised inputs. In both definitions all supported trees compute the same $g$. Then
+\begin{equation}\label{eq:random-completion-chain}
+ \RR_{\mathcal C}(W;F)\leq\min_{g\in\Comp(W)}\RR^W_{\mathcal C}(g;F)
+ \leq\min_{g\in\Comp(W)}\RR^{\mathrm{full}}_{\mathcal C}(g;F).
+\end{equation}
+The cube includes every indexed answer string, even if some strings are not physically realizable for a particular menu. A compatible completion may depend on the source and on $F$; no single completion is asserted to optimize all costs at once.
+
+\subsection{Certificate ideals remove the price quantifier}
+\begin{theorem}[Three-query certificate optimality, computer-assisted]\label{thm:random-small}
+For every complete equivalence source on at most three physical queries and every finite-valued normalized nonnegative monotone $F$,
+\begin{align*}
+ K_F(W)&=\DR_{\mathcal P}(W;F)=\DR_{\mathcal A}(W;F)\\
+       &=\RR_{\mathcal P}(W;F)=\RR_{\mathcal A}(W;F).
+\end{align*}
+For each source and each such $F$, one compatible total function and one deterministic priority tree attain $K_F(W)$ on the entire cube. Thus both completion minima in~\eqref{eq:random-completion-chain} also equal $K_F(W)$, for either policy class. Zero costs are included.
+\end{theorem}
+\begin{proof}
+The finite premise is a certificate-ideal cover, which we specify and reduce to complete checked objects below. For every complete source on $m\leq3$ queries and every nonempty downset $I\subseteq2^Q$, suppose every promised input has a certificate in $I$. The premise asserts that there is a total priority tree correct on the promise whose purchased set lies in $I$ on \emph{every full-cube input}.
+
+\emph{Complete source reduction.} Duplicate shared query endpoints and impose their identities as SAME constraints in both labels. Collapse all original SAME blocks. Endpoint blocks retain every DIFFERENT edge between them. Any endpoint partition satisfying these induced constraints extends to all original records: assign every remaining block without endpoints its own fresh equivalence class. All remaining DIFFERENT constraints are then satisfied. This uses an unrestricted class count, not transitivity of DIFFERENT. Thus arbitrary hidden records impose no extra restriction on endpoint responses.
+
+For three indexed queries this reduces to six endpoints. Their $B_6=203$ SAME partitions, each with an arbitrary DIFFERENT graph on its blocks, give
+\[
+ \sum_{k=1}^{6}{6\brace k}2^{\binom{k}{2}}=53{,}071
+\]
+satisfiable specifications. Exact projection gives $55$ distinct nonempty supports and $924$ ordered disjoint two-label source pairs. Query coordinates are never identified or repriced by this reduction.
+
+\emph{Exhaustive ideal cover.} For dimensions one and two the check covers all partial Boolean tasks with both labels, a superset of the required sources. At dimension three it covers the complete-source catalogue just described. Enumerating every nonempty downset gives the entire case table in Table~\ref{tab:small-ideal}. Each case supplies either an input with no certificate in $I$, or a global permutation and an explicit total tree. The producer uses quotient-partition enumeration and order recursion. A separate checker reconstructs all $203$ closed equivalence graphs from the $2^{15}$ undirected edge masks, intersects allowed-world bitsets for all $53{,}071$ specifications, and recovers exactly the same $55$ supports and $924$ source pairs. It independently enumerates downsets and tests certificate availability.
+
+For every applicable case the checker traces the supplied tree on every full-cube input, checks labels on the promise, checks membership of its purchased set in $I$, and verifies the same global order along all paths. For an inapplicable case it checks the supplied input against all opposite-label agreements to exclude every allowed certificate. All $17{,}810$ source/ideal pairs are covered exactly once. The $10{,}974$ applicable trees pass $87{,}308$ full-cube path checks. Constant tasks, if allowed, use a zero-purchase leaf. No optimizer or floating-point certificate is used in this finite premise.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}rrrrr@{}}\toprule
+Queries & Tasks & Nonempty downsets & Cases & Total trees\\\midrule
+1 & 2 & 2 & 4 & 2\\
+2 & 50 & 5 & 250 & 118\\
+3 & 924 & 19 & 17,556 & 10,854\\\bottomrule
+\end{tabular}
+\caption{Complete finite certificate-ideal cover. Dimensions one and two include all partial tasks with two nonempty labels; dimension three includes all complete equivalence sources after projection. These are exhaustive combinatorial cases, not independently sampled studies.}\label{tab:small-ideal}
+\end{table}
+
+\emph{All-cost deduction.} Set $t=K_F(W)$ and $I=\{S\subseteq Q:F(S)\leq t\}$. Normalization, nonnegativity and monotonicity make $I$ a nonempty downset. Every promised input has a certificate in $I$ by the definition of $K_F$. The finite cover supplies a deterministic priority tree whose every cube path costs at most $t$. Its leaf function is a compatible total completion. This gives upper bounds $t$ for all stated quantities, while~\eqref{eq:random-certificate-lower} and~\eqref{eq:random-completion-chain} give the lower bounds. The quantifiers are $\forall W\,\forall F\,\exists(g,T)$, not $\exists g\,\forall F$. The universal price statement follows from this threshold argument, not from extrapolating a finite price grid.
+\end{proof}
+
+\subsection{Four positive-priced physical queries attain the gap}
+\begin{corollary}[Sharp four-query minimum]\label{cor:random-minimum}
+For complete equivalence sources, four is the smallest menu allowing either $\RR_{\mathcal C}<\DR_{\mathcal C}$ or a strict randomized promise/common-completion gap, for each $\mathcal C\in\{\mathcal A,\mathcal P\}$. This holds with strictly positive additive prices, and in the containing normalized monotone cost classes, including monotone submodular costs. Both full-cube and promise-charged common-completion minima have the same minimum menu size.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:random-small} excludes the discrepancies at size at most three. We give the existing four-query witness and its exact analytical values to prove attainability.
+
+Coordinates are listed in order $0,1,2,3$, with positive prices $c=(2,2,3,1)$ and supports
+\begin{align*}
+ W_1&=\{A_0=0100,A_1=1111\},\\
+ W_0&=\{B_{00}=0000,B_{01}=0001,B_{10}=1100,B_{11}=1101\}.
+\end{align*}
+Use records $r_0,\ldots,r_7$ and disjoint pair query $q_i=[r_{2i}\sim r_{2i+1}]$. For label one the SAME blocks are $\{0,4,6\}$, $\{1,5,7\}$ and $\{2,3\}$, with no DIFFERENT constraints. The exact answer form is $(a,1,a,a)$. For label zero impose SAME blocks $\{0,2\}$ and $\{1,3\}$ and DIFFERENT$(4,5)$, giving exactly $(u,u,0,w)$. All indicated free bits are realizable. Without the label promise all sixteen strings are physically realizable.
+
+Write $N_i(L,R)$ for query $i$ with zero/one children $L,R$. Mix the following promise-correct priority trees with masses $1/2,1/4,1/4$. Each is total on the cube, but their completions need not agree outside $W$:
+\begin{align*}
+ U_1&=N_0(N_1(0,1),N_2(0,1)),\\
+ U_2&=N_3(N_0(N_1(0,1),0),N_2(0,1)),\\
+ U_3&=N_3(N_1(0,N_0(1,0)),N_2(0,1)).
+\end{align*}
+Their global orders are $(0,1,2,3)$, $(3,2,0,1)$ and $(3,2,1,0)$ respectively. The expected costs on $(A_0,A_1,B_{00},B_{01},B_{10},B_{11})$ are $(9/2,9/2,4,4,9/2,9/2)$. Thus $\RR_{\mathcal P}\leq9/2$.
+
+For the lower bound assign masses $1/2,1/6,1/3$ to $A_0,A_1,B_{11}$. Opposite-label single-bit neighbours force mandatory query sets $M_{A_0}=\{0,1\}$ and $M_{A_1}=M_{B_{11}}=\{2\}$. Including the first actual query $i$ in each mandatory set gives average-cost lower bounds $9/2,9/2,5,9/2$ for the four choices of $i$. That first query is independent of the unknown input. Every correct randomized mixture therefore has worst expected cost at least $9/2$, even in the adaptive class. Deterministic costs are integral, and $U_1$ attains worst cost $5$. Hence, for both classes,
+\[
+ \RR_{\mathcal C}(W;c)=9/2,\qquad\DR_{\mathcal C}(W;c)=5.
+\]
+
+Now fix a compatible total $g$ and let $z=0101$. If $g(z)=0$, opposite-label single-bit neighbours of $A_0$ force coordinates $0,1,3$, costing $5$. If $g(z)=1$, neighbours $z,A_1$ of $B_{11}$ force coordinates $0,2$, again costing $5$. The input incurring this cost is promised. Every supported deterministic tree computing this fixed $g$ must pay at least $5$ on that same input, so randomizing trees cannot remove the lower bound. Finally $U_1$ computes the compatible total function equal to $x_1$ when $x_0=0$ and to $x_2$ when $x_0=1$, at full-cube worst cost $5$. Both common-completion minima therefore equal $5$, proving all claimed four-query gaps.
+\end{proof}
+
+\subsection{Proof provenance, literature and limits}
+The three-query finite premise has separately generated proof objects and an independent standard-library checker. The original portable packet was extracted and actually replayed at a different local path. The later \href{https://github.com/SHiJiE1115/newproj/tree/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01}{public derivative} retains six raw proof inputs and the complete finite mathematical checker core; its declared packaging changes omit the old path-bearing four-query files. The four-query witness is inherited from the earlier immutable companion result, with its separate certificate report; its sixty closed files were hash-checked when accepting the small-menu boundary. The analytical proof above gives its source, mixture, lower bound and completion collision explicitly. The old four-query computation was not re-executed for this revision.
+
+The public derivative was executed once on Linux with Python~3.12.3, by \href{https://github.com/SHiJiE1115/newproj/actions/runs/38844940996}{GitHub Actions run 38844940996}, attempt~1, using source commit \texttt{aade35d}. A retained checker process handle records PID~2403, exit zero. All parsed result fields equal the Windows control except \texttt{wall\_seconds}; no mathematical field is excluded. The original 3,928-byte archive matches the fetched service SHA256. It is retained with provider metadata and an offline receipt verifier at \href{https://github.com/SHiJiE1115/newproj/tree/1f70f518aa56f6ed368ce8d02fab5cbeb5ee3dc9/evidence/small_menu_hosted_v01}{archive commit \texttt{1f70f51}}, distinct from the executed source. Acceptance depends on authentic provider metadata, the executed source and original artifact digest; local copies alone do not authenticate the platform. This is the same mathematical checker on another system, not an additional independent implementation, proof-assistant kernel or human review. The ledger distinguishes the new three-query execution from inherited four-query evidence.
+
+The earlier exploratory scan used $125$ partial-task symmetry classes and $64$ price triples. Its failure to find a gap is not a proof premise. Theorem~\ref{thm:random-small} instead uses the complete source/ideal cover and the threshold deduction for every monotone $F$. The certificate and common-completion identity in Theorem~\ref{thm:random-small} is not asserted for every arbitrary partial three-bit function. The weaker randomized adaptive/priority equality for arbitrary partial tasks is proved separately in Theorem~\ref{thm:generic-random-three}.
+
+Consistent outputs and compatible total completions are established context in pseudodeterministic search and communication~\cite{chattopadhyay2025pseudo,goos2026pseudo,watson2026pseudo}. The inspected journal Theorem~5.5 of Chattopadhyay et al. is a randomized decision-tree-size result (Theorem~4.5 in its earlier conference version). The current STOC paper includes a bounded-error query-depth warmup, and Watson gives a zero-sided-error communication separation. These are important prior results. Our objective fixes the complete equivalence source and physical pair menu, charges expected purchased-set cost at zero error, and distinguishes whole-cube from promise-only completion charging. A direct transfer needs these hypotheses and quantifiers to be preserved; no such exact derivation from the inspected statements is asserted. A separate bounded source-expressivity audit supports that comparison and is retained with the preparation record. It is not an additional numbered contribution of this manuscript or a proof of bibliographic priority. The candidate result here is the exact minimum physical menu within complete equivalence fibres and the all-monotone certificate identity below that minimum.
+
+The preceding corollary concerns randomization benefit and a common-completion discrepancy. Subsection~\ref{app:randomized-adaptive-priority-gap-candidate} proves the four-query randomized adaptive/priority minimum for general monotone final-set fees, including strictly positive strictly monotone fees. Its witness is nonadditive and nonsubmodular. For additive fees, Theorem~\ref{thm:four-additive} now excludes all complete sources through four queries and Corollary~\ref{cor:additive-first-interval} gives a five-to-seven interval. The exact additive minimum and the submodular minimum remain undetermined. The deterministic adaptive/order boundary remains six versus seven, and no largest randomized four-query ratio is claimed. No practical academic-evaluation gain, new model experiment, human gold label, or new historical execution certification follows from this appendix.
+
+% Private insertion candidate;not a standalone document and not part of main/publicV13.
+% Exact mathematical statements accepted by401and402;literature priority remainsopen.
+% Requires the existing manuscript's theorem/proof and math environments.
+
+\subsection{A four-query randomized adaptive--priority boundary}
+\label{app:randomized-adaptive-priority-gap-candidate}
+
+Write $\mathcal A$ for correct adaptive policies and $\mathcal P$ for
+correct policies that sample a global query order with the private seed,
+permit causal permanent skips, and may stop once the output is determined.
+For a normalized monotone final purchased-set fee $F$, put
+\[
+ R_{\mathcal C}(F)=\min_{\mu\in\Delta(\mathcal C)}
+       \max_{w\in W}\mathbb E_{T\sim\mu}F(S_T(w)),
+ \qquad \mathcal C\in\{\mathcal A,\mathcal P\}.
+\]
+Here $R_{\mathcal C}(F)$ abbreviates the previously defined
+$\RR_{\mathcal C}(W;F)$ for a fixed promise $W$.
+The input is chosen before the private seed. Both policy classes receive
+the same complete source promise, query menu and fee function.
+
+\paragraph*{Proof of Theorem~\ref{thm:random-priority-four}.}
+\begin{proof}
+Theorem~\ref{thm:random-small} gives equality for every complete source
+with at most three queries and every normalized monotone fee. We describe
+the four-query upper witness and matching bounds explicitly.
+
+Use records $0,\ldots,7$, with $q_i=(2i,2i+1)$ for $i=0,\ldots,3$;
+an answer bit is one for equality. The negative source has required
+equality blocks $\{0,1,2,4,6\}$, $\{3,5\}$ and $\{7\}$, with
+$3\ne7$. The positive source has required equality blocks
+$\{0,2,4,6\}$, $\{1,3,7\}$ and $\{5\}$, with no required inequality.
+Each source contains all coarsenings consistent with its requirements.
+Their projected supports, using $w=\sum_i2^i q_i$, are
+\[
+ W_0=\{1,7,9\},\qquad W_1=\{0,4,11,15\}.
+\]
+These supports are disjoint. The three compatible negative and five
+positive record partitions produce exactly these projected supports.
+
+For a query set with mask $s$, define
+\[
+ (F_0(s))_{s=0}^{15}=
+ (0,0,0,0,0,0,0,4,0,0,1,4,0,4,2,4).
+\]
+For $d\ge0$, let $G_d(S)=|S|+dF_0(S)$. This fee is normalized,
+positive on nonempty sets, and strictly increasing under proper
+inclusion, including at $d=0$.
+
+Here are complete matching bounds for every $d\ge0$. The following
+three adaptive paid-set profiles list their masks on inputs
+$(0,1,4,7,9,11,15)$:
+\[
+ \begin{aligned}
+ a_1&=(3,3,3,10,3,10,10),\\
+ a_2&=(9,9,9,9,10,10,10),\\
+ a_3&=(15,15,14,14,14,6,12).
+ \end{aligned}
+\]
+% The independently checked profile source is the complete378family.
+% If adopting this fragment,run the dedicated insertion validator first.
+Use their certified tree representatives with weights
+\[
+ \frac{(2+4d,\;2+4d,\;2d)}{4+10d}.
+\]
+For the priority upper bound, the four certified profiles are
+$a_1,a_2,p_3,p_4$, where
+\[
+ \begin{aligned}
+ p_3&=(7,7,14,14,7,6,12),\\
+ p_4&=(15,15,13,13,14,6,12).
+ \end{aligned}
+\]
+with weights $(2+6d,2+6d,d,d)/(4+14d)$.
+To specify the representatives, let $T(q,u,v)$ query $q$, continuing
+with $u$ after zero and $v$ after one; constants denote output leaves.
+Put $u=T(0,1,0)$, $v=T(1,1,0)$ and $z=T(3,u,0)$. The five trees are
+\[
+ \begin{aligned}
+ a_1&=T(1,u,T(3,0,1)),&
+ a_2&=T(3,u,T(1,0,1)),\\
+ a_3&=T(2,T(1,z,1),T(3,v,1)),&
+ p_3&=T(2,T(1,u,1),T(3,v,1)),\\
+ p_4&=T(2,T(1,z,1),T(3,u,1)).
+ \end{aligned}
+\]
+The four priority trees $a_1,a_2,p_3,p_4$ admit orders
+$(1,0,2,3)$, $(2,3,0,1)$, $(2,3,1,0)$ and $(2,1,3,0)$,
+respectively. All five trees are correct on the original seven inputs.
+The respective dual input distributions are supported on $(7,9,11,15)$,
+with weights
+\[
+ \frac{(2d,2d,2+3d,2+3d)}{4+10d},\qquad
+ \frac{(2d,2d,2+5d,2+5d)}{4+14d}.
+\]
+The first mixture has cost at most
+$2+d-d^2/(5d+2)$ on every original input, while every correct adaptive
+tree has at least this expected cost under the first dual distribution.
+The second mixture and second distribution give the corresponding
+matching value $2+d-d^2/(7d+2)$ for all priority policies.
+The complete families contain forty adaptive and thirty-two priority
+paid-set vectors, independently reconstructed from all four-level tree
+skeletons. Every column inequality, every original input upper bound,
+normalization and positive denominator is checked symbolically for the
+entire interval $d\ge0$. Hence
+\[
+ R_{\mathcal A}(G_d)=2+d-\frac{d^2}{5d+2},\qquad
+ R_{\mathcal P}(G_d)=2+d-\frac{d^2}{7d+2},
+\]
+and
+\[
+ R_{\mathcal P}(G_d)-R_{\mathcal A}(G_d)
+       =\frac{2d^3}{(5d+2)(7d+2)}>0\quad(d>0).
+\]
+This proves the four-query witness within the stated strictly positive,
+strictly monotone subclass, and thus in the containing monotone class.
+Together with the complete-source lower bound, the minimum is four.
+\end{proof}
+
+\paragraph*{Deterministic and randomized costs on the same source.}
+For this source, the previously defined deterministic optima satisfy
+\[
+ D_{\mathcal A}(G_d)=D_{\mathcal P}(G_d)=2+d\qquad(d\geq0).
+\]
+Here $D_{\mathcal C}(G_d)$ abbreviates
+$\DR_{\mathcal C}(W;G_d)$.
+The priority tree $a_1$ uses only purchased masks $3$ and $10$, whose
+fees are $2$ and $2+d$, proving the upper bound. For a direct lower
+bound, any path buying at least three coordinates costs at least
+$3+2d>2+d$. A correct tree of depth at most two cannot start with
+$q_0$: after $q_0=1$, no single remaining coordinate separates all
+opposite labels. It cannot start with $q_2$ either, by the branch
+$q_2=1$. If it starts with $q_1$, the branch $q_1=1$ forces $q_3$
+as the second purchase; if it starts with $q_3$, the branch $q_3=1$
+forces $q_1$. Either case purchases mask $10$ on some input and costs
+$2+d$. This also proves the unit-fee endpoint $d=0$.
+
+The same values can be expressed using the existing certificate
+family $H_e=F_0+e|\cdot|$. That family has
+$D_{\mathcal A}(H_e)=D_{\mathcal P}(H_e)=1+2e$,
+$R_{\mathcal A}(H_e)=1+2e-1/(5+2e)$ and
+$R_{\mathcal P}(H_e)=1+2e-1/(7+2e)$.
+For $d>0$, $G_d=dH_{1/d}$, and all four optimum values are positively
+homogeneous in the fee: multiplication by $d$ commutes with the
+policy minimum, the input maximum and the private-seed expectation.
+This yields the displayed deterministic value and re-expresses the
+randomized formulas above without changing the source or policy
+class. The contrast therefore combines the already established
+boundaries and exact fee families, rather than asserting another
+independent separation contribution.
+
+Deterministic envelope domination need not supply randomized
+domination. For each priority path it permits a comparison with an
+adaptive path on another input; that comparison input may depend on
+the sampled policy. It gives no same-input coupling that would
+compare the two worst-input expectations.
+
+\paragraph*{Fees arbitrarily close to unit additive fees.}
+For all sets,
+\[
+ |S|\le G_d(S)\le(1+4d/3)|S|,
+ \qquad \|G_d-|\cdot|\|_\infty=4d.
+\]
+Thus for every $\eta>0$, choosing $d=3\eta/4$ gives a strict
+adaptive--priority gap while every set fee lies between its unit
+additive value and $(1+\eta)$ times that value. All singleton fees are
+exactly one. For every $d>0$,
+\[
+ G_d(\{q_1,q_3\})+G_d(\varnothing)
+       -G_d(\{q_1\})-G_d(\{q_3\})=d>0.
+\]
+The witness therefore remains nonadditive, nonsubadditive and
+nonsubmodular for every positive perturbation. It proves no separation
+inside additive or submodular fee classes. Its advantage is cubic:
+\[
+ \lim_{d\downarrow0}
+ \frac{R_{\mathcal P}(G_d)-R_{\mathcal A}(G_d)}{d^3}=\frac12,
+ \qquad
+ \lim_{d\downarrow0}
+ \frac{R_{\mathcal P}(G_d)/R_{\mathcal A}(G_d)-1}{d^3}=\frac14.
+\]
+For $d=3/40$, the fee factor is at most $11/10$, and the exact values
+are $1969/950$ and $4187/2020$, with gap $27/191900$.
+
+\paragraph*{Perturbation robustness.}
+For any fixed policy family, its optimal randomized worst-input value
+is $1$-Lipschitz in the supremum norm of final-set fees. Each fixed
+policy's expected cost changes by at most that norm on each input;
+taking maximum inputs and then minimum mixtures preserves the bound.
+Consequently, every legal fee $G'$ satisfying
+$\|G'-G_d\|_\infty<
+(R_{\mathcal P}(G_d)-R_{\mathcal A}(G_d))/2$
+retains the strict gap. This is a fee-model guarantee, not a measured
+API-billing or academic-workflow improvement.
+
+\paragraph*{Comparator conventions.}
+Amano's recursive directional class~\cite{amano2011directional} first fixes child-subformula
+orders. For each seed, depth-first leaf expansion gives a global order;
+causal skips implement completed subformulas. This class is contained
+in $\mathcal P$. A fixed-permutation prefix class without skips is
+also contained in $\mathcal P$; the explicit permutation-prefix
+convention appears in~\cite{hellerstein2022adaptivity}. Their lower bounds alone do not give a
+lower bound against $\mathcal P$.
+As a finite check on the distinction, for
+$(x_0\wedge x_1)\vee(x_2\wedge x_3)$ on the full cube at unit prices,
+adaptive, priority and recursive-directional randomized worst-input
+values are all $3$, while the no-skip prefix value is $10/3$.
+The full-cube example is not an added complete-source classification
+result. These comparator translations and generic minimax arguments
+are supporting context; exact model-specific literature priority
+remains under review.
+
+% Primary references for later bibliography integration:
+% Amano,On Directional vs.General Randomized Decision Tree Complexity
+% forRead-OnceFormulas,CJTCS2011article3,doi:10.4086/cjtcs.2011.003.
+% Official source:http://cjtcs.cs.uchicago.edu/articles/2011/3/contents.html
+% Hellerstein,Kletenik,Liu,Witter,arXiv:2208.03810v1,definition1.3.
+% Existing401and402frozenledgers identify exact scripts,source hashes andreceipts.
+% machine-profile-a1:[3,3,3,10,3,10,10]
+% machine-profile-a2:[9,9,9,9,10,10,10]
+% machine-profile-a3:[15,15,14,14,14,6,12]
+% machine-profile-p3:[7,7,14,14,7,6,12]
+% machine-profile-p4:[15,15,13,13,14,6,12]
+
+\paragraph*{Exact replay scope.}
+The separate private companion packet \path{randomized_gap_v01.zip}
+provides three explicit verification components: the inherited
+three-query certificate-ideal checker, a portable adaptation of the
+independent full-family four-query saddle checker, and a portable
+adaptation of the near-additive/comparator checker. Each component
+reconstructs its stated finite objects and checks exact rational or
+symbolic inequalities. The packet contains the complete forty and
+thirty-two profiles for this source. It does not rely on a selected
+price grid, a reduced priority comparator, model responses or human
+labels. The release ledger distinguishes original independent checks
+from replay of the same checker kernels at a different path. It is a
+local replay packet; no new hosted or historical execution is claimed.
+
+
+\section{A generic randomized three-query boundary}
+\label{sec:generic-random-three}
+
+\subsection{Model and scope}
+Let $Q$ be a finite coordinate set, $D\subseteq\{0,1\}^{Q}$ a promise,
+and $f:D\to\{0,1\}$. We take $D\ne\varnothing$; the empty promise has
+value zero by convention. A purchased-set fee is a finite function
+$F:2^Q\to\mathbb R_{\geq0}$ with $F(\varnothing)=0$ and
+$F(S)\leq F(T)$ for $S\subseteq T$.
+A deterministic policy must return the correct label on every promised input.
+The class $\mathcal A$ allows causal query choices. In $\mathcal P$, each
+private seed fixes one global order; queries may be permanently skipped
+using the observed history. Different seeds may use different orders.
+The value is
+\[
+ R_{\mathcal C}(f,F)=
+ \min_{\pi\in\Delta(\mathcal C)}
+ \max_{w\in D}\mathbb E_{T\sim\pi}F(P_T(w)),
+ \qquad \mathcal C\in\{\mathcal A,\mathcal P\}.
+\]
+Each supported tree is promise-correct. No single common total completion
+across all seeds is required. Here $R_{\mathcal C}(f,F)$ extends the
+notation $\RR_{\mathcal C}(W;F)$ from Appendix~\ref{app:randomized-boundary}
+to an arbitrary labeled promise $f:D\to\{0,1\}$.
+
+Theorem~\ref{thm:generic-random-three} is stated in Section~\ref{sec:randomized-core}. The following reductions and finite cover prove it.
+
+The theorem concerns the worst-input expectation over private randomness.
+It asserts neither equality for each fixed input prior nor a universal
+identity with the cheapest-certificate lower bound.
+The stronger certificate identity for complete relational sources remains
+a separate, narrower result. In particular, the three-query randomized
+equality itself needs no relational-source completeness assumption.
+
+\subsection{Analytical reductions}
+Stop a tree as soon as its label is determined and remove any query whose
+answer is fixed by the current promise and history. These operations shrink
+purchased sets pointwise and preserve global-order feasibility. Every
+resulting tree on three coordinates is obtained by pruning one of the
+twelve complete query skeletons. Independent recursion on the remaining
+input subset gives the same finite tree family. A tree belongs to
+$\mathcal P$ precisely when the union of its path precedence constraints
+is acyclic; a topological order implements the tree with permanent skips.
+
+\begin{lemma}[Translation and subset replacement]
+\label{lem:generic-root-flip}
+Assume $|Q|\leq3$. Let $G$ be the group of pairs $(v,k)$ satisfying
+$D\mathbin{\oplus}v=D$ and
+$f(w\mathbin{\oplus}v)=f(w)\mathbin{\oplus}k$.
+Suppose every normalized $\mathcal A$ tree either has a $\mathcal P$ tree
+with a pointwise subset of purchased coordinates, or has a root coordinate
+flipped by some element of $G$. Then $R_{\mathcal A}=R_{\mathcal P}$
+for every stated fee.
+\end{lemma}
+\begin{proof}
+Swapping a tree's branches at coordinates indicated by $v$ and flipping
+its leaves by $k$ maps its purchased set at $w$ to its original purchased
+set at $w\mathbin{\oplus}v$. Coordinates are not permuted, so $F$ need not
+be symmetric. Uniformly averaging an arbitrary tree mixture over $G$
+cannot increase its worst cost.
+
+Fix a root-flipping element $h$. Pair group elements as $\{g,g\oplus h\}$.
+If a root branch is label-constant, its paired branch is constant as well.
+Otherwise let $a,b$ be the next queries in the root's two branches.
+After this choice, at most one coordinate remains, so the normalized
+continuation is forced. The two orders $(q,a,\text{remaining})$ and
+$(q,b,\text{remaining})$ reproduce, for each input, the purchased-set
+multiset of the paired trees. Each has weight $1/|G|$.
+For roots that are not flipped, use the supplied pointwise subset
+replacements. Applying these operations to the same full-group average
+produces a $\mathcal P$ mixture of no larger worst cost.
+The inclusion $\mathcal P\subseteq\mathcal A$ completes the proof.
+\end{proof}
+
+For a promised input $w$, call $S$ a certificate if no opposite-label
+promised input agrees with $w$ on $S$, and set
+\[
+ K_F=\max_{w\in D}\min_{S\text{ certifies }w}F(S).
+\]
+Every correct path is a certificate. For the sublevel downset
+$I_F=\{S:F(S)\leq K_F\}$, every input has a certificate in $I_F$.
+Thus, if every such downset has a priority tree with all promised path
+sets inside it, then
+\[
+ K_F\leq R_{\mathcal A}\leq R_{\mathcal P}
+       \leq \DR_{\mathcal P}(f;F)\leq K_F.
+\]
+There are exactly nineteen nonempty downsets on three coordinates.
+This is the existing certificate-threshold reduction, rather than a
+new minimax framework.
+
+For $H\subseteq D$, write $R_{\mathcal C}(H,F)$ for the value of the
+restricted labeled task $f|_H$; the notation for $D$ has the same meaning.
+
+\begin{lemma}[Promise extension preserving worst cost]
+\label{lem:generic-promise-extension}
+Write $D=H\cup\{z\}$. Suppose every normalized $H$-correct adaptive tree
+also classifies $z$ correctly, and one fixed $u\in H$ satisfies
+$P_T(z)\subseteq P_T(u)$ for every such tree $T$. Then
+$R_{\mathcal C}(D,F)=R_{\mathcal C}(H,F)$ for
+$\mathcal C\in\{\mathcal A,\mathcal P\}$ and every stated fee.
+\end{lemma}
+\begin{proof}
+Restriction gives $R_{\mathcal C}(H,F)\leq R_{\mathcal C}(D,F)$.
+Normalize a mixture on $H$ without increasing its cost. Each tree already
+extends correctly to $D$, and the same $u$ works for every seed. Hence
+\[
+ \mathbb E F(P_T(z))\leq
+ \mathbb E F(P_T(u))\leq
+ \max_{w\in H}\mathbb E F(P_T(w)).
+\]
+This proves the reverse inequality. The common choice of $u$ is essential
+to this argument; a seed-dependent choice would not justify it.
+\end{proof}
+
+\subsection{Exhaustive certificate coverage}
+\begin{proof}[Proof of Theorem~\ref{thm:generic-random-three}]
+There are $3^8-2\cdot2^8+1=6050$ nonconstant three-bit partial tasks.
+They are covered by three disjoint verified classes.
+\begin{enumerate}
+\item For $4498$ tasks, Lemma~\ref{lem:generic-root-flip} applies.
+The complete structural reconstruction contains $43302$ adaptive and
+$38598$ priority normal trees over all tasks. The covered class uses
+$24264$ direct subset obligations and $23376$ pair/input identities.
+\item For $1344$ additional tasks, all applicable downsets have the
+certificate-threshold priority witnesses. The full residual check covers
+$1552\cdot19=29488$ task/downset pairs, retaining $25040$ inapplicable
+pairs, $4240$ successful priority witnesses, and $208$ refutations of the
+stronger universal $K_F$ conjecture.
+\item All final $208$ tasks satisfy
+Lemma~\ref{lem:generic-promise-extension} after deleting one input.
+Dependencies strictly decrease the promise-domain size and terminate at
+already proved tasks. There are $1536$ tree-level label/subset obligations;
+$420$ earlier deletion options with incorrect labels remain in the ledger.
+\end{enumerate}
+The independent checker verifies the disjoint exhaustive union
+$4498+1344+208=6050$. Constants cost zero. Fewer coordinates embed by fixing
+the added bits and extending the fee by intersection with the original
+coordinate set; fixed-answer queries can be removed.
+\end{proof}
+
+\begin{corollary}[Minimum randomized adaptive/priority menu]
+\label{cor:generic-random-minimum-four}
+For arbitrary partial Boolean tasks, four is the minimum number of
+coordinates permitting $R_{\mathcal A}<R_{\mathcal P}$ under general
+monotone fees, and also under strictly positive strictly increasing fees.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:generic-random-three} excludes a gap below four. The complete four-query source in Theorem~\ref{thm:random-priority-four} is also a partial Boolean task. With its fee $F_0$, the exact randomized adaptive and priority values are $4/5$ and $6/7$; with $14F_0(S)+|S|$, they are $239/18$ and $351/25$. The latter fee is positive on every nonempty set and strictly increases under proper inclusion. The complete $40\mathcal A/32\mathcal P$ policy coverage and exact primal/dual certificates underlying that theorem establish the upper witness. Together the lower and upper bounds prove both minima.
+\end{proof}
+
+The witness is nonadditive and nonsubmodular. Consequently this corollary
+does not determine a first separation inside additive or submodular fee
+subclasses. Randomization itself can help on three variables:
+the classical unit-price majority example has $K=2$, deterministic
+cost $3$, and randomized cost $8/3$ \cite{amano2011directional}.
+The $208$ certificate-threshold refutations remain valid even though
+their randomized adaptive/priority values are equal.
+
+\subsection{Primary-source comparison}
+\label{sec:generic-related-scope}
+The present contribution candidate is the exact finite boundary under
+the stated quantifiers. Ordered skipping, partial-function consistency,
+randomized worst-input expectation, and nonadditive testing costs
+are established concepts.
+
+The following comparisons use the actual source witnesses and unit
+leaf-query costs. They clarify the comparator and objective; they are
+not additional separation contributions. Write $\RR_{\mathcal C}$ for
+the full-cube, worst-input expected value and $B_{\mathcal C}(\nu)$ for
+the optimal expected cost under a fixed input prior $\nu$, with every
+supported policy still correct on the full cube. For either class,
+\[
+ B_{\mathcal C}(\nu)\leq\RR_{\mathcal C}.
+\]
+The fixed-prior objective is linear in the policy mixture. Thus a valid
+lower bound covering every deterministic ordered-skip policy also covers
+private mixtures of different orders and gives a minimax lower bound.
+A prior-versus-minimax distinction alone does not invalidate it.
+
+\paragraph*{Recursive directional strategies.}
+Amano's directional policies recursively finish a selected subformula
+before entering another~\cite{amano2011directional}. After fixing the
+coins, a depth-first leaf expansion embeds them in $\mathcal P$.
+The source's Eq.~(3.2) has $154$ variables. Let $f_i$ be disjunctions
+on disjoint sets of sizes $(11,12,12,39,79)$ and let $z$ be separate;
+the formula is
+\[
+ f=((f_1\land f_2\land f_3\land f_5)\lor z)\land f_4.
+\]
+The algorithm used for the general upper bound in its Theorem~3.8
+also has a global-order implementation. Pre-sample each disjunction's
+leaf order uniformly and a uniform permutation of the three small
+blocks. Fix the global order as $z,f_5,f_4$, then those small blocks.
+If $z=1$, skip $f_5$ and the small blocks; otherwise evaluate the
+conjunction in that order, skipping the remainder after any false
+block. Within a disjunction stop at the first true leaf. These skips
+use only purchased answers. The small-block conjunction has expected
+cost at most $73/4$ on false inputs and $19$ on true inputs; the
+conjunction $f_5\land f_4$ has bounds $79$ and $60$, respectively.
+Including $z$ gives a worst-input expected cost at most $80$.
+Independent pre-sampling in disjoint recursive copies preserves the
+global order by leaf-block concatenation, so
+\[
+ \RR_{\mathcal P}(f^{(k)})\leq80^k.
+\]
+In contrast, the published directional Claim~3.9, first row of
+Eq.~(3.4) at the base case, gives
+$d_0(f)\geq536183/6341>80$. We adopt that published directional
+lower bound rather than reprove it. It cannot be relabeled as an
+all-$\mathcal P$ lower bound in view of the displayed feasible policy.
+The value $80^k$ is an upper bound, not a computation of the exact
+$\RR_{\mathcal P}$ or $\RR_{\mathcal A}$ for this family.
+
+\paragraph*{Linear strategies and fixed-prior lower bounds.}
+Greiner et al.'s Definition~16 already permits irrelevant-test skipping
+\cite{greiner}. On the full cube, a correct policy cannot permanently
+skip a still-relevant variable: two completions differing only in that
+variable would remain indistinguishable. Pruning redundant queries
+therefore identifies that linear class with our full-cube comparator.
+Numbering here follows the author manuscript dated
+9 September 2005. Its Theorem~18 uses a unit-cost formula of the form
+\[
+ h=\bigvee_{i=1}^{r}
+ \left[\left(X_i\lor\bigwedge_{j=1}^{D}Y_{ij}\right)
+       \land\bigwedge_{k=1}^{r}B_{ik}\right].
+\]
+Under the displayed prior $\nu_0$, the $X_i$ are independent
+Bernoulli$(q)$ and all $Y,B$ leaves have probability one of being true.
+Correctness still concerns the full cube, and those leaves must be
+purchased to confirm them. Put $K=D+r$ and $N=r(D+r+1)$, the number
+of query leaves. The source's adaptive strategy scans $X_i$ until a
+true one and then its $B$ block; after all false $X_i$, it uses one
+$Y$ block and its $B$ block. Extend it by querying remaining leaves
+after an unexpected $Y/B$ outcome. Its expected cost under $\nu_0$ is
+\[
+ U=\frac{1-(1-q)^r}{q}+r+D(1-q)^r.
+\]
+The source's canonical-block lower-bound argument yields the
+conservative finite expression
+$B_{\mathcal P}(\nu_0)\geq\min\{r/q,(1-q)D\}$.
+This is a legitimate linear-class Bayes lower bound; we adopt the
+source's exchange argument and do not claim a new full proof of it.
+
+The obstacle to transferring the displayed average-cost ratio is
+instead a concrete upper/lower comparison. A fixed order tests all
+$Y_{1j}$, then all $B_{1k}$, with the other leaves afterwards. It
+costs $K$ on every $\nu_0$-supported input. On the supported input
+$w_*$ with all $X_i=0$ and all $Y,B=1$, every positive certificate
+contains a complete $Y_i$ block and its $B_i$ block. Hence every
+correct adaptive seed costs at least $K$ at $w_*$, giving
+\[
+ B_{\mathcal P}(\nu_0)\leq K\leq\RR_{\mathcal A}.
+\]
+Thus this particular prior cannot certify a strict minimax
+$\mathcal P/\mathcal A$ gap. Restricting correctness to its
+constant-label support would be a different promise problem.
+
+The source also prescribes replacing the probability-one leaves by
+probability $1-\varepsilon$, for example
+$\varepsilon=2^{-2^n}$ with its total-node parameter $n$.
+Keep the $X$ probabilities unchanged and call the prior
+$\nu_\varepsilon$. Couple the same $X$ bits and strategy coins;
+any of the $N-r$ other leaves changes with probability at most
+$(N-r)\varepsilon$. Since every nonrepeating policy costs at most
+$N$, every fixed-policy mean, and hence each optimal Bayes value,
+changes by at most $N(N-r)\varepsilon$. The source's mean bounds
+therefore remain meaningful. More sharply, the preceding fixed order
+costs $K$ when its first $K$ leaves are true and at most $N$ otherwise:
+\[
+ \begin{split}
+ B_{\mathcal P}(\nu_\varepsilon)
+ &\leq K+(N-K)\bigl(1-(1-\varepsilon)^K\bigr)
+ \leq K+NK\varepsilon,\\
+ \frac{B_{\mathcal P}(\nu_\varepsilon)}{\RR_{\mathcal A}}
+ &\leq1+N\varepsilon.
+ \end{split}
+\]
+The last inequality uses the unchanged full-cube lower bound at $w_*$.
+It caps what this prior can certify by averaging; it is not an upper
+bound on the actual minimax ratio $\RR_{\mathcal P}/\RR_{\mathcal A}$.
+A tiny gap, another prior, or another reduction is not excluded.
+
+\paragraph*{Permutation prefixes versus causal skips.}
+Hellerstein et al. define a non-adaptive strategy as a test permutation
+whose prefix is purchased until the function is determined
+\cite{hellerstein2022adaptivity}. We use arXiv:2208.03810v1,
+7 August 2022, its first-page definition and Theorem~7. Denote that
+prefix class by $\mathcal N_{\rm pre}$. Its address-function witness
+has $d$ selector bits and $2^d$ dedicated bits, all independent uniform
+and unit-priced, and returns the selected dedicated bit. Put all
+selectors before all dedicated bits in one global order. After paying
+for the selectors, skip the now irrelevant unselected bits and buy
+the selected bit. This $\mathcal P$ strategy costs $d+1$ on every
+input, implementing the source's adaptive upper bound. The source's
+$\Omega(2^d)$ prefix-search lower bound consequently is not an
+all-$\mathcal P$ lower bound.
+
+The smallest member $f(a,z_0,z_1)=z_a$ calibrates the distinction with
+no change of costs or prior. The order $a,z_0,z_1$ with causal skips
+always buys two bits; no single bit determines this full-cube
+function. Thus $\DR_{\mathcal A}=\DR_{\mathcal P}
+=\RR_{\mathcal A}=\RR_{\mathcal P}=2$.
+In contrast, every prefix permutation has uniform mean $5/2$ and
+worst cost $3$: each possible first pair determines the value on
+exactly half the inputs. Averaging gives a $5/2$ lower bound for any
+private mixture of prefix orders. A half-half mixture of
+$(a,z_0,z_1)$ and $(a,z_1,z_0)$ attains $5/2$ on each input.
+Therefore $\DR_{\mathcal N_{\rm pre}}=3$ and
+$\RR_{\mathcal N_{\rm pre}}=5/2$ under the same minimax convention.
+These exact small-member values are our calibration of a classical
+source function, not a quoted new theorem of that paper. They
+establish no exact values for the larger address-function family.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\linewidth}
+                >{\raggedright\arraybackslash}p{0.35\linewidth}
+                >{\raggedright\arraybackslash}p{0.36\linewidth}}
+\toprule
+Primary result & Inspected model and measure & Transfer issue for the present theorem\\
+\midrule
+Karpinski--Mubarakzjanov \cite{karpinski1999}
+& Polynomial-size OBDD classes; bounded probability of an unknown answer;
+the proof keeps a common variable order.
+& Exact expected purchased-set cost and seed-specific orders require
+additional arguments.\\[3pt]
+Kristensen--Miltersen \cite{kristensen2006}
+& Fixed-order diagrams consistent with a partial truth table;
+decision-node minimization.
+& Compatible completion is prior; the node-count objective differs
+from the present path-cost objective.\\[3pt]
+Harris--Nagarajan--Tan \cite{harris2025}
+& Known independent probabilities, series diagnosis, and subadditive
+batch costs accumulated along performed batches.
+& Promise class, prior, and charging convention require an explicit
+cost-preserving translation.\\
+\bottomrule
+\end{tabular}
+\caption{A bounded comparison of inspected statements. It is not an
+exhaustive exclusion of earlier theorems or reductions.}
+\label{tab:generic-scope}
+\end{table}
+
+The Las Vegas OBDD class equivalence in \cite{karpinski1999} concerns
+polynomial representation size. We use no representation-size bound.
+The partial-table model and compatible completions in
+\cite{kristensen2006} already formalize promise consistency.
+The inspected statements therefore do not directly supply the exact
+finite cost boundary stated here.
+
+\paragraph*{Batch-history charging.}
+The batch-testing objective in \cite{harris2025} adds the cost of each
+performed batch. A direct substitution of its set-cost symbol for our
+terminal-set fee need not preserve path charges. For nonempty batches
+$c(B)=\rho+\sum_{i\in B}a_i$ with $\rho>0$, one batch $\{a,b\}$ costs
+$\rho+a_a+a_b$, whereas two singleton batches cost
+$2\rho+a_a+a_b$. The final tested union is the same. A single
+$F(\{a,b\})$ cannot represent both charges. This elementary control
+addresses that substitution, without excluding other reductions.
+
+The same paper assumes subadditive costs. In our existing strict gap
+family $G_d(S)=|S|+dF_0(S)$, $d>0$, one has
+\[
+ G_d(\{1,3\})=2+d>
+ G_d(\{1\})+G_d(\{3\})=2.
+\]
+That witness lies outside the subadditive cost class. Nonadditive cost
+modeling itself is credited to the existing literature.
+
+\paragraph*{Source assumptions and priority.}
+Because Theorem~\ref{thm:generic-random-three} now concerns arbitrary
+partial functions, exclusion of an earlier witness from complete
+relational sources does not establish distinctness of this generic
+lower bound. The complete-source $K_F$ identity needs its own comparison.
+This bounded primary audit establishes no bibliographic priority and
+rules out no arbitrary recoding. The full 1998 Vereshchagin text remains
+an access limitation; the later directional construction and attribution
+were inspected in Amano \cite{amano2011directional}.
+
+\subsection{Execution evidence and manuscript status}
+\label{sec:generic-execution}
+The unified private packet has $35$ files and $379013$ compressed bytes.
+Its ZIP was actually extracted into another directory and its four
+components were executed on Windows Python~3.12.14. All exited with
+code zero, and every non-runtime mathematical field matched the closed
+originals. The run preserves the $208$ stronger-$K$ counterexamples and
+all $420$ rejected label extensions. Three lower checking cores retain
+their original text except four path-bearing content bindings; the
+four-query upper component is byte-identical to its earlier portable
+source.
+
+This was a relocation replay of existing checking implementations,
+with no model requests, numerical minimax solves, or new price/prior
+grids. It adds no human review or practical academic-evaluation advantage.
+Other operating systems were not tested.
+
+The private V21 retains all V20 numbered statements, proof bodies and
+tables. Appendix~\ref{app:andor-transfer} adds a direct sensitivity proof of
+the exact full-cube minimum over every compatible total function on one
+unit-cost source, extending the earlier specified-completion comparison.
+This supporting result is separate from the main adaptive/order boundary.
+All old public records remain unchanged. Literature priority, natural
+application advantage and final author approval remain open.
+
+\input{scientific_insert_v01}
+
+
+\section{Additional prior-work positioning}\label{app:additional-positioning}
+Charikar et al.~\cite{charikar02} compare deterministic priced queries with an input-specific cheapest certificate. Such guarantees can bound minimax cost, but require a strategy in the allowed class and a suitable cost comparison. Section~\ref{sec:cert-transfer} makes this connection explicit; the two objectives cannot be separated merely by their denominators. Section~\ref{sec:ro-completion} gives a concrete fixed-source formula-cost comparison.
+
+Positive-rational additive instances fit discrete function evaluation~\cite{cicalese14}, whose logarithmic approximation concerns adaptive trees. Ordered diagrams permit omitted variables; maximum-path objectives~\cite{ebendt06,ebendt05}, compatible completions~\cite{oliveira,sasao}, and average-path cofactoring~\cite{jiang} are established. Greiner et al.~\cite{greiner} separate expected-cost AND/OR strategies under fixed permutations with causal skips. Section~\ref{sec:completion} identifies our comparator.
+
+Graphic-flat and multicut representations~\cite{berczi,hornakova} are standard. Transferring cut-edge cost results or inconsistent 2-CNF clause-search bounds~\cite{lovasz} requires preserving our visible menu, purchased-set costs and classification objective; complete fibres need not be 2-CNF.
+
+Partition learning~\cite{liu,black} reconstructs the whole partition under different class-count and round assumptions. Matroidal query bounds~\cite{kulkarni} concern full-cube independence recognition. Neither task is our ordered-skip classification problem.
+
+For independent box values, Berger et al.~\cite{pandora} give an optimal fixed exploration order for expected maximum reward minus submodular set cost. Our worst-cost zero-error relational classification needs a separate argument; no reduction is asserted.
+
+Completion complexity, defined by minimizing a measure over compatible total functions, is established context. Huffstutler et al.~\cite{huffstutler2026completion} distinguish promise-valid from domain-certifying certificates and record preservation of deterministic unit-query complexity under an optimal completion. Our purchased-set completion identities are supporting tree transformations, not a new completion framework.
+
+Appendix~\ref{app:randomized-boundary} gives three distinct four-query randomized phenomena on complete sources: benefit over deterministic policies, a promise/common-completion discrepancy, and adaptive/global-order separation. The first two have a positive-additive witness. The third has strictly positive strictly increasing final-set fees, including fees arbitrarily close to unit additive fees, but these witnesses remain nonadditive and nonsubmodular. Appendix~\ref{sec:generic-random-three} extends only the lower bound for the third phenomenon to arbitrary partial Boolean tasks.
+
+Worst-input private randomness and restricted-order separations are established~\cite{amano2011directional}. A directional formula strategy chooses a recursive child order and completes a child before entering another. Its deterministic seeds compile to global leaf orders with short-circuit skips. Our full priority comparator may also interleave unfinished children: on $(x_0\wedge x_1)\vee(x_2\wedge x_3)$, order $(0,2,1,3)$ has query prefix $(0,2,1)$ on the all-one input. A directional lower bound need not bound this larger class. The comparison uses the original paper's public full-text copy; the publisher's bytes were not authenticated in the bounded audit. Permutation-prefix policies~\cite{hellerstein2022adaptivity} are also inside our comparator; Greiner et al.'s linear strategies already permit irrelevant-test skips~\cite{greiner}. Appendix~\ref{sec:generic-related-scope} translates concrete witnesses and retains valid fixed-prior lower bounds. Further prior context includes Las Vegas ordered diagrams~\cite{karpinski1999}, consistent partial-table diagrams~\cite{kristensen2006}, and nonadditive batch testing~\cite{harris2025}.
+
+Specified-distribution objectives need a separate quantifier comparison.
+Hellerstein et al.~\cite{hellerstein2022adaptivity} study expected additive
+cost under independent inputs. Nielsen et al.~\cite{nielsen2025kofn}
+give a tight stochastic gap of two for $k$-of-$n$ evaluation with fixed
+input probabilities; the inspected full version is v2. A fixed-prior
+gap does not alone establish a worst-input gap between two separately
+minimized policy classes. Correlated stochastic certification is also
+established~\cite{ghuge2026correlations}; its specified correlated
+distribution and one-sided active-set certificate objective differ from
+two complete equivalence fibres. These comparisons do not rule out all
+model-preserving reductions. Neither correlation nor generic adaptivity,
+minimax or threshold techniques are claimed as new.
+
+Consistent-output and completion phenomena also occur in search and communication complexity~\cite{chattopadhyay2025pseudo,goos2026pseudo,watson2026pseudo}. The formal journal version of Chattopadhyay et al. distinguishes query depth from decision-tree size; its Theorem~5.5 concerns size of compatible completions. Transferring such a result requires a cost- and comparator-preserving argument. Complete-source expressivity exclusions do not establish distinctness of our new generic lower bound. We claim no new generic minimax or completion framework; exact literature priority remains under review.
+
+\section{Applicability and evidence context}\label{app:scope-context}
+The deterministic boundary concerns menu size; ratio bounds are restricted to the specified seven-query source and eleven-query extension. The randomized additive theorem concerns all complete sources with at most four queries. Its first-occurrence interval is five to seven, not an exact additive minimum; the general monotone minimum four and the open submodular minimum are distinct claims. We assert no polynomial-time synthesis or practical acquisition advantage. Academic-evidence use would require validated executable queries, a defensible complete promise, and same-information baselines including reads, joins, batching and caching. We claim no gain in rankings, semantic judgement or historical authentication.
+
+The acquisition unit matters even on this fixed source. Appendix~\ref{app:record-acquisition} replaces paid pair answers by paid record reads that reveal every equivalence relation among acquired records. Splitting each price in $(2,2,3,1/2,1,1,1)$ equally between its two endpoints preserves the cost of acquiring that isolated pair, but the new adaptive and priority optima are both $15/4$. Thus the pair-menu gap does not survive this particular change of information and cost contract. This finite control supplies no measured file-system or scientific-workflow benefit. For a separate even-length alternating source family, Theorem~\ref{thm:record-path} gives a priority normal form for every monotone purchased-set cost. The appendix also gives an exact additive-cost construction. These supporting model comparisons use classical path-search ideas and do not strengthen the six/seven pair-query boundary.
+
+Appendix~\ref{app:cases} reports a prospective Wine execution and an offline audit of deposited VPS3 artifacts. These cases distinguish observed execution, numerical compatibility and historical provenance. A same-information fixed verifier also accepts the Wine receipt, and ordinary fixed retrieval and arithmetic suffice for VPS3. Neither case establishes a complete-fibre promise for a natural task or an adaptive acquisition advantage.
+
+Appendix~\ref{app:reproduction} separates the complete six-query computational layers and their analytic premises from the fixed-seven supplement. The latter rebuilds $5,040$ order frontiers and checks $13$ trees plus both $864$-certificate families; coverage checks supplement the general submodular proof. The accompanying versioned ledger records the completed original V03 aggregate run and the narrower acceptance of the later frozen candidate.
+The generic randomized lower bound has a separate finite proof covering all $6050$ nonconstant three-bit partial tasks. Appendix~\ref{sec:generic-random-three} gives its analytical reductions, the disjoint $4498+1344+208$ coverage, and the scope of an actual relocated replay. The $208$ failures of a stronger certificate-cost conjecture are retained. This extension leaves the deterministic six/seven classification and the earlier physical-source claims unchanged. Section~\ref{sec:four-additive} separately adds the all-real-price complete four-query additive theorem, with a portable full-family replay. Neither result establishes a natural application advantage.
+
+
+\section{Additional availability and version ledger}\label{app:availability-ledger}
+The complete boundary evidence and fixed-seven supplement are available in the \href{https://github.com/SHiJiE1115/newproj/releases/tag/complete-six-review-20261011-v01}{public review archive}. Appendix~\ref{app:reproduction} identifies the fixed delivery record, version correspondence and verification scope. The separate Wine and VPS3 packages are public through the versioned records in Appendix~\ref{app:cases}; executed source commits and later archive commits are distinguished. The fourteen-record control has a separate \href{https://github.com/SHiJiE1115/newproj/tree/78da45ebeff7e74d0cb080114f30172fac3f09f8/theory/record_acquisition_v01}{public record-acquisition supplement}. The full-eleven direct-proof packet has a separate \href{https://github.com/SHiJiE1115/newproj/tree/37b10299e6abb9ba260012b24fc244ee90fb94d9/theory/full11_direct_v01}{public source record} and a completed Linux replay, with \href{https://github.com/SHiJiE1115/newproj/tree/cba5d748dfc44d285c44396a01af4098d4b9201d/evidence/full11_hosted_v01}{retained hosted receipts}; these are separate from the frozen original review archive. The certificate-transfer supplement has a separate \href{https://github.com/SHiJiE1115/newproj/tree/a420cd488ca63bfca0a857a103e4c85793269353/theory/certificate_transfer_v01}{public source packet} and \href{https://github.com/SHiJiE1115/newproj/tree/f68a04d13e7b082a651866ecd518c7199aac30a5/evidence/certificate_completion_hosted_v01}{retained Linux replay receipts}. They are not part of the frozen original review archive; Appendix~\ref{app:certificate-distortion} specifies their mathematical and execution scope. Appendix~\ref{app:full11-copy-pin} states its source, direct certificate obligations and execution scope. The optional even-path calibration and additive-solver implementation are prepared separately; they are not included in the frozen review archive. The even-path theorem has an analytic proof independent of this calibration. The randomized small-menu extension in Appendix~\ref{app:randomized-boundary} has a separate \href{https://github.com/SHiJiE1115/newproj/tree/aade35dbb049f64f6a66e0db8fd79fc269fb0ba5/theory/small_menu_randomization_v01}{public proof-object and replay packet}, with \href{https://github.com/SHiJiE1115/newproj/tree/1f70f518aa56f6ed368ce8d02fab5cbeb5ee3dc9/evidence/small_menu_hosted_v01}{retained original Linux receipts}. These are later deposits, not members of the frozen original review archive. The public derivative preserves the six finite-proof inputs and mathematical checker core; it omits the path-bearing old four-query files and identifies that inherited analytical leg separately. The current manuscript evidence ledger binds these versions. Public access does not grant a blanket project licence. The responsible authors must finalize applicable distribution terms and author declarations before submission. Source-specific notices accompany the materials; a deposited dataset's licence is not a blanket repository licence.
+The generic randomized boundary additionally has a private standard-library proof packet, \path{generic_randomized_minimum4_v01.zip}. It was extracted and executed locally at another path; Appendix~\ref{sec:generic-execution} identifies that replay's scope. It is separate from the public packets above. The four-query additive packet \path{PORTABLE_PROOF_V01.zip} was subsequently published with retained Linux execution evidence (Appendix~\ref{app:four-additive-replay}). It includes the complete source/family/continuous-price proof obligations and analytic texts, with an actual extracted relocation replay as described in Section~\ref{sec:four-additive}. The current manuscript remains private. Its revision does not imply another hosted execution or human author approval.
+
+\section{Four-query all-additive reproduction and limits}
+\label{app:four-additive-replay}
+The self-contained packet \path{PORTABLE_PROOF_V01.zip} contains $52$
+files ($1304852$ compressed bytes), $25$ compressed exact scientific
+projections and $16$ analytic proof texts. It regenerates the complete
+source/policy cover and checks the continuous-price obligations, including
+the positive-price seven-query dual. Two Windows executions, one after
+extraction at a different directory, produced identical mathematical objects.
+
+The exact packet was subsequently published at source commit
+\texttt{8374985}. One manual Linux execution, run
+\href{https://github.com/SHiJiE1115/newproj/actions/runs/39003766001}{39003766001},
+attempt one, exited zero under Python~3.12.3. The entire deterministic
+scientific object matched Windows; no scientific field was excluded.
+The service's original output ZIP matched its provider-reported digest
+and is retained at the later archive commit \texttt{468d5a4}. That archive
+commit was not the executed source. These are cross-system executions
+of the same implementation, not independent implementations or human review.
+
+All projections were compared with $95$ frozen original files using
+compressed and decoded hashes. An original provenance reader omitted
+the already frozen packet specification from its allowable origins and
+failed; a versioned index-only repair passed without changing the ZIP.
+The older count transcription from $26$ to $29$ is separately retained.
+Neither repair changed prices, priors, mixtures, policy families or inequalities.
+
+Extract the packet and, from its root, run
+\texttt{python -B verify.py --out ../result.json}, choosing a new result
+path outside the extracted directory. Assertions must remain enabled.
+No solver, model API, key, network or original research directory is required.
+The restricted file-open check allows packet files, Python runtime imports
+and the new result file; it is not an operating-system sandbox.
+The analytic case exhaustion and generator arguments remain mathematical
+premises supplied as proof texts. Their exact algebraic checks are not
+formal proof-kernel certification. Specific literature priority and
+natural academic-evaluation advantage remain unestablished.
+
+\input{andor_transfer_v21}
+
+\end{document}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_EXTRACTED_AUTHORED_SOURCE_BUILD_AND_FIXED_OBLIGATION_CHECK",
+  "source_archive_sha256": "28ca17fc04c395b17a448c2a814df28677e120c245dfde49cf938c5ebea234e8",
+  "reading_PDF_sha256": "7028d2002e855a2e333d4dfa9bba225b3fd9b92a0e86dde8a48acd2e952414c8",
+  "actual_rebuilt_PDF_raw_sha256": "f86d2f65584c1f1dfbd959f0a74e4ac7ca1defadec53ac31ba47fd54d7c3085e",
+  "raw_PDF_bytes_need_not_equal_due_to_build_metadata": true,
+  "all70_extracted_page_texts_decoded_content_streams_media_crop_boxes_and_rotation_equal": true,
+  "all25_current_number_page_aux_bindings_equal": true,
+  "source5_scientific_files_byte_exact_to_accepted_V21": true,
+  "external6_files_explicitly_supplied_and_hash_checked": true,
+  "build_adapter_actual_process": {
+    "pid": 18828,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "retained_Popen_wait": true
+  },
+  "actual_compiler_stages": [
+    {
+      "stage": "compile_1",
+      "pid": 24028,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true
+    },
+    {
+      "stage": "bibtex",
+      "pid": 3548,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true
+    },
+    {
+      "stage": "compile_2",
+      "pid": 19744,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true
+    },
+    {
+      "stage": "compile_3",
+      "pid": 25984,
+      "actual_exit_code": 0,
+      "timed_out": false,
+      "retained_Popen_wait": true
+    }
+  ],
+  "fixed_checker_actual_process": {
+    "pid": 8552,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "retained_Popen_wait": true
+  },
+  "fixed_checker_science_sha256": "7977561ca0372f9bf169cba2feac791102fdf95282efa37ccb23638a6f9d093a",
+  "fixed_checker_is_bounded_support_for_the_written_proof": true,
+  "environment_scope": "OneactualrelocatedWindows/Python3.12localdeliverycheck;notnewhostedscienceorindependenthumanreview",
+  "new_scientific_search_or_model_calls_or_hosted_runs": false
+}
