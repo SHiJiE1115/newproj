@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "status": "ACTUAL_EXECUTED_SOURCE_DISTINCT_FROM_LATER_ARCHIVE_COMMIT",
+  "run_id": 39003766001,
+  "run_attempt": 1,
+  "workflow_id": 387371861,
+  "job_id": 117311914252,
+  "executed_source_commit": "837498553f02739d60d3c53f79b8141ac4f5e105",
+  "source_url": "https://github.com/SHiJiE1115/newproj/tree/837498553f02739d60d3c53f79b8141ac4f5e105/theory/four_query_additive_v01",
+  "run_url": "https://github.com/SHiJiE1115/newproj/actions/runs/39003766001",
+  "original_archive_sha256": "83ec1668ffaef243acced0dfe4407088d42be07095f7d9b181a4998058531700",
+  "original_archive_bytes": 5710,
+  "artifact_id": 12090340504,
+  "freeze_sha256": "6911d96a9ed1830ab284688b3cfce3124b5e078f5340590b9b078acec194c60d",
+  "science_sha256": "9603869d50d3ef3605200dd4fff86476cd8ea35688d17d223f48d86ab6b9fc4f",
+  "packet_sha256": "a264fe664e9408d2c99cd1850e559620136155bee838a5dfaee140ca0348df14",
+  "new_model_API_calls": 0,
+  "same_checker_not_new_independent_implementation": true,
+  "actual_local_reference_raw_sha256": "37e2af25f4a98dd2ac785a7df8fc29feea86d9cc1f1abf627b97f68029a04153"
+}

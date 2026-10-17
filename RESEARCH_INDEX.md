@@ -88,3 +88,17 @@ the accepted private source; two actual Windows processes, one after ZIP relocat
 prepared manual Linux workflow is not yet evidence of hosted success.
 The new V19 manuscript remains private. No blanket licence, human review,
 literature-priority clearance or natural application gain is asserted.
+
+
+## Complete four-query additive actual Linux replay retained
+
+[Original service artifact and conditional offline receipt verifier](evidence/four_additive_hosted_v01/README.txt):
+actualrun39003766001, attempt1, executed source837498553f02739d60d3c53f79b8141ac4f5e105.
+LinuxPython3.12.3 checkerPID2401 exited0; the entire scientific object matches
+the Windows control, with no scientific field excluded. Original5710byte
+artifact matches the provider SHA256 and is retained without recompression.
+All1356full-source/full-policy continuous additive certificates and the old
+fixedpositive7full5040-order dual were replayed. Same-code cross-system
+reproduction is not independent human review, application advantage, priority
+clearance or original historical scientific authentication. The manuscript
+remains private; the archive commit is distinct from the executed source.

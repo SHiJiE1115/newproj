@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "file": "ARTIFACTS_METADATA_V01.json",
+      "bytes": 897,
+      "sha256": "3c640918fdbc708f988361eb2837c311ddda93cdffb94f8725815c7fde810962"
+    },
+    {
+      "file": "EXECUTED_SOURCE_V01.json",
+      "bytes": 1092,
+      "sha256": "e6835ab08476c19a783efcc7a9ec1f1da1c58a229b0b773ffa0306c7d3d5ee2a"
+    },
+    {
+      "file": "EXPECTED_SCIENCE_V01.json",
+      "bytes": 21114,
+      "sha256": "6e0043e5a0b29ddacb26b934e5b2f6baeddc92aa64d2ae8c415cfffd6a0a862f"
+    },
+    {
+      "file": "JOBS_METADATA_V01.json",
+      "bytes": 2768,
+      "sha256": "05d811e02d0bc0310d1ec96392a32e8dda1351ffe4ca43e50b8ffdefd2da7262"
+    },
+    {
+      "file": "ORIGINAL_HOSTED_ARTIFACT_V01.zip",
+      "bytes": 5710,
+      "sha256": "83ec1668ffaef243acced0dfe4407088d42be07095f7d9b181a4998058531700"
+    },
+    {
+      "file": "README.txt",
+      "bytes": 2141,
+      "sha256": "7a017b83390ab1db8219d1bac5559ce746cf0fe6bb57ce8a062d456a64406cc8"
+    },
+    {
+      "file": "RUN_METADATA_V01.json",
+      "bytes": 13854,
+      "sha256": "c2d42ad805aaf75362686c8635e46febf6954c81ac35d6451b38a2f3ed4c8af0"
+    },
+    {
+      "file": "verify_receipts_v01.py",
+      "bytes": 4173,
+      "sha256": "c44b618fc67f3967e9b00bf3f9ddabdc28e778d47d78e24fe5c44ac13de95ca1"
+    }
+  ],
+  "trust_scope": "ConditionalconsistencyofgenuineGitHubmetadata/namedsource/originalartifact;copiesalonearenotplatformauthentication",
+  "new_science_execution": false,
+  "new_workflow_dispatch": false,
+  "new_blanket_licence": false
+}
