@@ -1,0 +1,331 @@
+{
+  "schema": 1,
+  "status": "CANDIDATE_STRICT_GS_ADAPTIVITY_GAP_FULL_ORIGINAL_GAME_CERTIFICATE",
+  "scope": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\TRIANGLE3_CANDIDATE_SCOPE_V01.json",
+    "bytes": 4843,
+    "sha256": "65353f48af8fd8cb2260c66a0ec8f5ae8ab1f34b398582b772264202ea447452"
+  },
+  "source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "charges": [
+    7,
+    4,
+    3,
+    6
+  ],
+  "pair_order": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "pair_weights": [
+    0,
+    0,
+    0,
+    4,
+    4,
+    4
+  ],
+  "all16_fees": [
+    0,
+    7,
+    12,
+    19,
+    11,
+    18,
+    19,
+    26,
+    14,
+    21,
+    22,
+    29,
+    21,
+    28,
+    25,
+    32
+  ],
+  "GS_triangle_checks": [
+    {
+      "triangle": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        0,
+        0,
+        4
+      ],
+      "minimum_count": 2,
+      "GS": true
+    },
+    {
+      "triangle": [
+        0,
+        1,
+        3
+      ],
+      "weights": [
+        0,
+        0,
+        4
+      ],
+      "minimum_count": 2,
+      "GS": true
+    },
+    {
+      "triangle": [
+        0,
+        2,
+        3
+      ],
+      "weights": [
+        0,
+        0,
+        4
+      ],
+      "minimum_count": 2,
+      "GS": true
+    },
+    {
+      "triangle": [
+        1,
+        2,
+        3
+      ],
+      "weights": [
+        4,
+        4,
+        4
+      ],
+      "minimum_count": 3,
+      "GS": true
+    }
+  ],
+  "all_individual_and_pair_weights_strictly_positive": false,
+  "P_prior_all7": [
+    "0",
+    "0",
+    "0",
+    "9/47",
+    "3/47",
+    "13/94",
+    "57/94"
+  ],
+  "P_primal_mixture": [
+    {
+      "P_index": 6,
+      "probability": "14/47"
+    },
+    {
+      "P_index": 18,
+      "probability": "6/47"
+    },
+    {
+      "P_index": 19,
+      "probability": "24/47"
+    },
+    {
+      "P_index": 20,
+      "probability": "3/47"
+    }
+  ],
+  "P_exact_value": "1025/47",
+  "all32P_prior_expectations": [
+    "1333/47",
+    "1426/47",
+    "1297/47",
+    "1291/47",
+    "1291/47",
+    "1354/47",
+    "1025/47",
+    "1118/47",
+    "1297/47",
+    "2369/94",
+    "2195/94",
+    "2141/94",
+    "1354/47",
+    "2255/94",
+    "2503/94",
+    "1046/47",
+    "1139/47",
+    "1052/47",
+    "1025/47",
+    "1025/47",
+    "1025/47",
+    "22",
+    "22",
+    "1127/47",
+    "1088/47",
+    "1088/47",
+    "1061/47",
+    "1061/47",
+    "1043/47",
+    "1136/47",
+    "1049/47",
+    "22"
+  ],
+  "all7P_primal_costs": [
+    "989/47",
+    "989/47",
+    "983/47",
+    "1025/47",
+    "1025/47",
+    "1025/47",
+    "1025/47"
+  ],
+  "adaptive_mixture": [
+    {
+      "kind": "priority",
+      "index": 6,
+      "probability": "4240/14899"
+    },
+    {
+      "kind": "priority",
+      "index": 18,
+      "probability": "1092/14899"
+    },
+    {
+      "kind": "priority",
+      "index": 19,
+      "probability": "7752/14899"
+    },
+    {
+      "kind": "priority",
+      "index": 20,
+      "probability": "969/14899"
+    },
+    {
+      "kind": "adaptive",
+      "index": 39,
+      "probability": "18/317"
+    }
+  ],
+  "adaptive_upper": "324871/14899",
+  "all7adaptive_mixture_costs": [
+    "319165/14899",
+    "319165/14899",
+    "312151/14899",
+    "324871/14899",
+    "324871/14899",
+    "324871/14899",
+    "324871/14899"
+  ],
+  "strict_gap_lower_bound": "54/14899",
+  "exact_adaptive_minimax_value_claimed": false,
+  "direction": {
+    "original_P_delta": [
+      "-11/47",
+      "-45/47",
+      "8/47",
+      "1/47"
+    ],
+    "value_delta": "-3/47",
+    "positive_epsilon_limit": "36/317",
+    "chosen_epsilon": "18/317"
+  },
+  "feasibility_inequalities": [
+    {
+      "role": "Pweight",
+      "index": 6,
+      "intercept": "14/47",
+      "slope": "-11/47"
+    },
+    {
+      "role": "Pweight",
+      "index": 18,
+      "intercept": "6/47",
+      "slope": "-45/47"
+    },
+    {
+      "role": "Pweight",
+      "index": 19,
+      "intercept": "24/47",
+      "slope": "8/47"
+    },
+    {
+      "role": "Pweight",
+      "index": 20,
+      "intercept": "3/47",
+      "slope": "1/47"
+    },
+    {
+      "role": "world_upper",
+      "word": 0,
+      "intercept": "36/47",
+      "slope": "-317/47"
+    },
+    {
+      "role": "world_upper",
+      "word": 1,
+      "intercept": "36/47",
+      "slope": "-317/47"
+    },
+    {
+      "role": "world_upper",
+      "word": 4,
+      "intercept": "42/47",
+      "slope": "-33/47"
+    },
+    {
+      "role": "world_upper",
+      "word": 7,
+      "intercept": "0",
+      "slope": "0"
+    },
+    {
+      "role": "world_upper",
+      "word": 9,
+      "intercept": "0",
+      "slope": "0"
+    },
+    {
+      "role": "world_upper",
+      "word": 11,
+      "intercept": "0",
+      "slope": "0"
+    },
+    {
+      "role": "world_upper",
+      "word": 15,
+      "intercept": "0",
+      "slope": "0"
+    }
+  ],
+  "one_analytic_candidate_checked": 1,
+  "numeric_fee_prior_grid_or_LP": false,
+  "policy_completeness_inherited": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\REMAINING_SOURCE_AUDIT_V01.json",
+    "bytes": 201200,
+    "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512"
+  },
+  "separate_checker_required": true,
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "whole_project_complete": false
+}

@@ -1,0 +1,100 @@
+Four-query complete-fibre source catalogue: coverage argument
+
+Model and scope
+There are four indexed reliable queries q_i=(r_{2i},r_{2i+1}). Physical
+coordinates remain distinct even when their answers are constrained equal.
+Each label contains every equivalence partition satisfying a conjunction
+of SAME and DIFFERENT. The class count is unrestricted. We catalogue one
+nonempty projected support at a time, without quotienting by coordinate
+permutations, arbitrary literal flips, or label transformations.
+Answers x_i are indexed little-endian: integer x=sum_i x_i 2^i. A support
+is encoded by sum_{x allowed} 2^x, a16bit nonzero integer.
+
+1. Arbitrary records reduce to eight marked endpoints
+Start with a nonempty fibre on any finite record set. Collapse the prior
+SAME relation on all records. Its restriction to the eight marked endpoint
+occurrences is a partition pi. Repeated original record identities and SAME
+paths through hidden records are included in pi. A prior DIFFERENT whose
+two SAME blocks both contain endpoints induces a forbidden pair of pi
+blocks. A pair in the same block would contradict nonemptiness. Constraints
+involving a block with no endpoint impose no extra projected restriction:
+give every such block its own fresh class in the extension below. A source
+DIFFERENT is an inequality; it is not made transitive.
+
+For a proposed answer x, add the four query edges with x_i=1 to pi, and
+take their connected components c_pi(x). A zero-answer query must have its
+ends in distinct components. Equivalently the vector of all four endpoint
+connectivity answers must equal x. Call these vectors the base support G_pi.
+For each prior forbidden endpoint-block pair a,b, require a,b to be in
+distinct c_pi(x) components. This condition is necessary in every full world.
+It is sufficient: give each c_pi(x) component a distinct class, put every
+hidden-only SAME block in a separate fresh class, and assign original
+records accordingly. Every prior SAME, DIFFERENT and query answer is then
+satisfied. Thus hidden records and additional classes create no missing
+projected constraint in this reduction.
+
+Conversely every pi on the eight distinct marked records, and every subset
+of DIFFERENT pairs between distinct pi blocks, is an actual complete fibre
+on those eight records. Its base pi world always remains feasible: each
+forbidden pair lies in different pi blocks. Hence all such sources are
+nonempty. This proves equality of source classes, not merely that some
+enumerated witnesses are realizable.
+
+2. Exact finite closure for all DIFFERENT conjunctions
+For each unordered pair a,b of distinct pi blocks define the16bit filter
+H_ab={x in G_pi: c_pi(x)(a) != c_pi(x)(b)}. For any set D of forbidden pairs
+the support is exactly G_pi intersect (intersection_{ab in D} H_ab), by1.
+This simultaneous equivalence is essential: projecting arbitrary families
+of possible worlds need not in general commute with intersection.
+
+List all block pairs e_1,...,e_t, t<=28. Initially L_0={G_pi}. Inductively
+L_j=L_{j-1} union {S intersect H_ej: S in L_{j-1}}. Induction on j proves
+that L_j consists exactly of intersections specified by all subsets of the
+first j constraints. Repeated filters and different subsets yielding the
+same support can be deduplicated without changing this identity. Record
+a subset of actual block-pair constraints for each new support witness.
+L_t is the full support family for pi. Its elements are nonempty by1.
+
+Enumerating every set partition pi of eight marked endpoints covers all
+cases by1. Restricted-growth strings give each partition once: fix first
+entry0, and at position k choose any existing block label or the next new
+label. The separate verifier instead recursively chooses the block of the
+least unassigned endpoint as that endpoint plus any subset of the rest,
+then partitions the remainder. Uniqueness and completeness follow from
+the least-element block. Both give Bell(8)=4140, independently also checked
+against the standard finite Bell recurrence. Counts alone are not coverage.
+
+3. Separate computational obligations
+The producer uses union-find for pi plus positive query edges, then the
+one-pass closure in2. It retains all4140partition rows, all block-pair
+filters, all per-row support families, and one actual source witness per
+globally distinct support. It does not enumerate arbitrary hidden records
+or all2^28constraint subsets individually.
+
+The separate implementation imports no producer functions. It enumerates
+all4140actual equivalence worlds by the least-block recursion and encodes
+their28equality edges. Full-world bitsets reconstruct each pi's base support
+and every single-DIFFERENT filter. It explores the entire intersection
+closure by a queue. For each visited support and each block-pair transition,
+it also projects the actual full-world set satisfying the representative
+accumulated constraints plus that next DIFFERENT, and compares to the
+claimed support intersection. Every per-row family and their global union
+must match exactly. Every global supplied source witness is separately
+projected over all4140actual worlds. This supplies a different computational
+representation; it is still AI-authored software, not human or institutional
+independence and not a formal proof-assistant kernel.
+
+4. Two labels and the subsequent unresolved question
+Any two disjoint nonempty catalogue supports can be realized together on
+the same eight physical records by using their respective label constraints.
+Conversely each complete two-label source reduces to two catalogue entries
+by1. Thus ordered disjoint pairs enumerate the four-query two-label tasks.
+An ordered-pair count is a combinatorial count, not independent studies.
+
+This catalogue alone evaluates no randomized policy and proves no equality
+or gap R_A versus R_P. The inherited <=3identity and strict fixed7gap give
+only a minimum in[4,7]. The existing four-query randomization-benefit and
+common-completion witness has equal R_A and R_P. New prospective policy
+comparisons need exact per-input cost vectors and rational primal/dual
+certificates. No-gap finite price scans cannot settle all costs. No new
+priority, human review, application benefit or manuscript theorem is claimed.

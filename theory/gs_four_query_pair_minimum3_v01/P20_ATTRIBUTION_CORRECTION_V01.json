@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "INITIAL_V25_TRANSCRIPTION_ONLY_ORIGINAL464_AND466_PROSE_ALREADY_CORRECT",
+  "old_prose_sha256": "074d03f600bdb3c7f9d837f18bc62cf9d508672c9c2b4785650173b8badbcaf8",
+  "old_P20_literal": "P20: order[3,0,2,1], tree[3,[0,1,0],[2,[1,0,1],1]];",
+  "actual_source_sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+  "current_corrected_GS_fragment_sha256": "db72dfa164739ec2d136e0c8d7ea38060d5931f4ff249502c07725842782e46d",
+  "initial_wrong_TeX": "T_{20}&=N_3(N_0(1,0),N_2(N_1(1,0),1))",
+  "correct_TeX": "T_{20}&=N_3(N_0(1,0),N_2(N_1(0,1),1))",
+  "correction_to_previous_attribution": "The467brief/continuationplanoverstatedanoldproseorigin. Original464/466noteswerecorrect;donoteditthatcorrectprooftext. TheerrorwasintroducedininitialV25TeXonly.",
+  "initial_V25_failed_binding_exit": 1,
+  "corrected_V25_binding_exit": 0,
+  "original_fees_priors_policy_arrays_certificates_466_results_unchanged": true,
+  "private_prior_records_retained_immutable": true,
+  "public_proof_text_requires_P20_edit": false,
+  "same_AI_not_external_human_or_formal_review": true,
+  "whole_project_complete": false
+}

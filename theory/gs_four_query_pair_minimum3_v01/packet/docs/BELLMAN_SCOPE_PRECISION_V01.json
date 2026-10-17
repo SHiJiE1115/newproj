@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "status": "BAYES_LOWER_CACHE_INDEPENDENCE_SCOPE_PRECISION_ADDENDUM",
+  "original_reader_result": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+    "bytes": 2202,
+    "sha256": "ec0d09f59dba90e76ec0ed5a87fadc1adf44f55bc8eebb5320a4d3fddb93eeb7"
+  },
+  "actual_reader_terminal": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\READ_BELLMAN_CLASS.PROCESS_TERMINAL.json",
+    "bytes": 312,
+    "sha256": "d921d062a0a532a8984c56ff51ef8d4b10844ddc7fda4b9e737cd2a44cb24f53"
+  },
+  "old_metadata_label": "cached_source_policy_families_imported_or_compared=False",
+  "precise_claim": "The P full-class Bellman lower uses tasklabels,all7worlds,fee/priorandrecurrenceonly;itdoesnotusecachedPprofilesortheircompleteness. The inputsourceJSONcontainsfamilies,andtheprogramalsoaccessesA39profiletoreporttheBayesAupper. No claim entireprogramavoidsallcachedpolicydata.",
+  "P_lower_uses_cached_profile_exhaustiveness": false,
+  "source_JSON_contains_policy_families": true,
+  "A39_profile_read_for_Bayes_upper_comparison": true,
+  "mathematical_proof_values_states_unchanged": true,
+  "original_receipt_and_result_unchanged_not_a_new_reader_execution": true
+}

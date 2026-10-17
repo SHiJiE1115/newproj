@@ -1,0 +1,271 @@
+\section{A sourcewise minimum for pairwise shared costs}
+\label{app:pair-resource-support}
+The number of queries and the structure of their fees are different
+parameters. We now fix the complete four-query source of
+Theorem~\ref{thm:coverage-four} and determine a small cost-structure
+threshold. Throughout this appendix a resource shared by a pair is
+charged once when either query is purchased. Its activation reveals no
+additional answer, so both policy classes keep the same four information
+actions and the same full causal-skip priority comparator.
+
+\begin{theorem}[Sourcewise pair-resource minimum, computer-assisted]
+\label{thm:pair-resource-minimum}
+Fix the complete source with
+$W_0=\{1,7,9\}$, $W_1=\{0,4,11,15\}$ and the physical realization in
+Theorem~\ref{thm:coverage-four}. Consider fees
+\begin{equation}\label{eq:pair-resource-family}
+ F(S)=\sum_{i\in S}c_i+
+       \sum_{e\in\binom{\{0,1,2,3\}}2}
+       w_e{\bf1}\{S\cap e\ne\varnothing\},\qquad c_i,w_e\geq0.
+\end{equation}
+The minimum number of positive distinct pair weights permitting
+$R_{\mathcal A}<R_{\mathcal P}$ on this source is exactly two.
+In particular, for every pair $e$, every $c_i\geq0$ and every
+$\lambda\geq0$,
+\[
+ F(S)=\sum_{i\in S}c_i+\lambda{\bf1}\{S\cap e\ne\varnothing\}
+ \quad\Longrightarrow\quad R_{\mathcal A}=R_{\mathcal P}.
+\]
+Two positive weights suffice with strictly positive individual charges:
+\[
+ (c_0,c_1,c_2,c_3)=(4,3,2,3),\qquad
+ w_{12}=w_{23}=2,
+\]
+all other pair weights being zero. This strictly increasing coverage fee
+has exact randomized worst-input values
+\[
+ R_{\mathcal A}=\frac{286}{29},\qquad
+ R_{\mathcal P}=\frac{79}{8},\qquad
+ R_{\mathcal P}-R_{\mathcal A}=\frac{3}{232}.
+\]
+\end{theorem}
+The minimum concerns this source and the pair groups in
+\eqref{eq:pair-resource-family}. It does not give an all-source resource
+lower bound or a minimum for arbitrary larger resource groups. Repeated
+copies of the same pair combine into a single weight. There is no separate
+global setup term in the family being minimized.
+
+\begin{proof}
+We first exclude support zero or one over its entire continuous price
+domain, then give an exact support-two witness. The complete monotone-cost
+policy families for this unchanged source contain $40$ adaptive and $32$
+priority profiles, as in the preceding appendix. The new proof reuses that
+finite completeness premise. Every priority profile occurs among the
+adaptive profiles; every original policy remains correct on all seven
+inputs, including inputs assigned zero mass by a lower-bound prior.
+
+\paragraph*{Universal one-pair exclusion.}
+Fix a pair $e$ and a permutation $o$ of the four individual prices. Write
+\[
+ c_{o(j)}=d_0+\cdots+d_j\quad(0\leq j<4),\qquad
+ \lambda=d_4,\qquad d\in\mathbb R_{\geq0}^{5}.
+\]
+The $24$ closed price-order cones cover every nonnegative price vector,
+including equal and zero prices. A purchased-set fee and every fee
+difference are linear in $d$. Thus a nonnegative difference on every
+generator of a cone is nonnegative throughout the cone. Generator checks
+are universal linear inequalities; they are not sampled minimax games.
+
+Use the $32$ original priority columns followed by the $40$ original
+adaptive columns. Their union has the same adaptive value. The proof
+certificate closes a cone by either of two arguments.
+
+First, a full-game saddle can use an original hard input $w$ and original
+priority policy $p$. If $H$ is $p$'s purchased set on $w$, verify
+\[
+ F(S_a(w))\geq F(H)\quad\hbox{for every original adaptive }a,
+ \qquad
+ F(S_p(v))\leq F(H)\quad\hbox{for every }v\in W.
+\]
+The two optimal values then equal $F(H)$. The certificate uses only the
+four fixed templates $(w,p)=(1,P_6),(7,P_6),(9,P_{19}),(1,P_{19})$,
+with original zero-based priority indices. Even at a descendant cone,
+these inequalities refer to all original policies and inputs.
+
+Second, weak dominance may remove a strategy column when another is no
+dearer on every surviving row, or an objective row when another is no
+cheaper on every surviving column. These operations preserve the finite
+mixed minimax value. At a terminal node, each remaining column $t$ must
+have an original legal priority column $p_t$ satisfying
+\begin{equation}\label{eq:full-row-pair-lift}
+ F(S_{p_t}(v))\leq F(S_t(v))\qquad\hbox{for all seven original inputs }v.
+\end{equation}
+The all-original-row condition is essential. A deleted row was dominated
+on a superset of the final columns. Induction through row deletions
+therefore bounds it by a terminal row on every terminal mixture. An
+optimal terminal mixture extended by zero to the original game attains
+the original adaptive value on all inputs. Replacing each column by
+$p_t$ with the same private probability, using
+\eqref{eq:full-row-pair-lift}, gives $R_{\mathcal P}\leq R_{\mathcal A}$.
+The reverse inequality follows from policy inclusion. Earlier row
+inequalities remain valid on the further column subsets of a descendant
+cone. No claim that separate dominance runs on the two classes reach the
+same fixed point is needed.
+
+For completeness of the parameter cover, a node may split on a linear
+form $f$ taking both signs on its generators. The two closed halves
+$f\geq0$ and $f\leq0$ cover their parent. Given positive generator $p$
+and negative generator $n$, the boundary vector
+\[
+ f(p)n-f(n)p
+\]
+has nonnegative coefficients in $p,n$ and lies on $f=0$. The nonnegative
+half is generated by its retained positive and zero generators together
+with these boundary vectors: cancel negative contributions against
+positive contributions in any parent conic decomposition. The opposite
+half follows by negating $f$. All cones are pointed, since $d\geq0$, and
+have full dimension five. For the accumulated complete inequality
+description, a nonzero feasible ray is extreme exactly when its active
+normals have rank four. Removing only candidate rays of smaller active
+rank consequently preserves every extreme ray and the full cone. The
+reader reconstructs both clipped generator sets and checks full rank
+five. The rank test uses exact rational Gauss--Jordan elimination,
+separate from the producer's primitive-integer elimination.
+
+The recorded proof covers all $6\cdot24=144$ roots with $164$ nodes and
+$10$ splits. All $154$ leaves close: $73$ by full-game saddles and $81$
+by dominance and full-row lifting. There are $5{,}533$ column deletions,
+$342$ row deletions and $252$ full-original-row priority lifts.
+The separate reader checks all $504$ original tree/input paths,
+$223{,}769$ scalar generator inequalities and $289$ exact ranks. Every
+node is reached exactly once; no root or residual leaf is omitted.
+Together with the cone-cover argument, these finite certificates prove
+equality for every nonnegative $c,\lambda$, including all boundary faces.
+The case $\lambda=0$ also excludes pair support zero.
+
+\paragraph*{A two-pair witness.}
+For the charges in the statement, the complete fee vector in mask order is
+\begin{align*}
+ (F(0),\ldots,F(7))&=(0,4,5,9,6,10,9,13),\\
+ (F(8),\ldots,F(15))&=(5,9,10,14,9,13,12,16).
+\end{align*}
+It is a positive combination of four singleton coverage indicators and
+two pair indicators, hence is normalized, nonnegative, monotone and
+submodular. Its least proper query marginal is two. Some incomparable
+sets have submodularity slack zero; strict increase is the asserted
+strictness for this sparse witness.
+
+Reuse the five legal trees $a_1,a_2,a_3,p_3,p_4$ from the preceding
+appendix and its input order $\mathcal W=(0,1,4,7,9,11,15)$. Their costs
+under the new fee are
+\begin{align*}
+ a_1&:(9,9,9,10,9,10,10),\\
+ a_2&:(9,9,9,9,10,10,10),\\
+ a_3&:(16,16,12,12,12,9,9),\\
+ p_3&:(13,13,12,12,13,9,9),\\
+ p_4&:(16,16,13,13,12,9,9).
+\end{align*}
+The adaptive mixture $(a_1,a_2,a_3,p_3)$ with weights
+$(13,12,3,1)/29$ has input costs
+\[
+ (286,286,273,286,286,286,286)/29.
+\]
+The priority mixture $(a_1,a_2,p_3,p_4)$ with weights $(7,7,1,1)/16$
+has costs $(155,155,151,158,158,158,158)/16$. These give the two upper
+bounds on all original inputs. Each mixture chooses its seed before
+seeing the input; each priority seed has one legal global order.
+
+For the matching lower bounds, use the two priors on $\mathcal W$
+\[
+ \pi_A=(0,1,0,3,3,11,11)/29,\qquad
+ \pi_P=(0,0,0,1,1,3,3)/8.
+\]
+The expected-cost slacks above $286/29$ for all $40$ original adaptive
+columns, multiplied by $29$, are
+\[
+ \scriptsize
+ \begin{array}{rrrrrrrrrr}
+ 100 & 117 & 91 & 100 & 117 & 133 & 0 & 17 & 91 & 77 \\
+ 47 & 44 & 133 & 119 & 89 & 86 & 47 & 16 & 33 & 3 \\
+ 0 & 0 & 17 & 8 & 25 & 25 & 77 & 63 & 16 & 33 \\
+ 13 & 30 & 47 & 16 & 33 & 3 & 10 & 27 & 27 & 0
+ \end{array}
+\]
+and the slacks above $79/8$ for all $32$ original priority columns,
+multiplied by $8$, are
+\[
+ \scriptsize
+ \begin{array}{rrrrrrrr}
+ 28 & 33 & 25 & 28 & 33 & 37 & 0 & 5 \\
+ 25 & 21 & 13 & 12 & 37 & 24 & 13 & 4 \\
+ 9 & 1 & 0 & 0 & 5 & 1 & 6 & 6 \\
+ 4 & 9 & 3 & 8 & 3 & 8 & 0 & 1
+ \end{array}
+\]
+All are nonnegative. The binding adaptive indices are $6,20,21,39$;
+the binding priority indices are $6,18,19,30$. These are lower bounds
+against the full original classes, rather than comparisons with the
+five displayed templates alone. Any private mixture has prior expectation
+at least its corresponding bound, and its maximum input expectation
+is at least that prior expectation. This proves both exact values and
+the gap $3/232$.
+
+\paragraph*{Separate recurrence and evidence scope.}
+A second point checker reconstructs the physical promise from all
+coarsenings of the two three-block priors. It reads the frozen candidate,
+with a research-input read audit excluding the policy catalogue and main
+result. Under $\pi_A$, it minimizes, at each impure feasible-world set,
+the sum of the two successor values over all unbought queries. A pure
+state with purchased set $S$ has value $\operatorname{mass}(X)F(S)$.
+Under $\pi_P$, it considers all $24$ global orders, with an explicit
+permanent SKIP or purchase at each position and the same remaining order
+in both branches. Every impure state must continue even when its prior
+mass is zero. The resulting Bayes minima are $286/29$ and $79/8$;
+the adaptive recurrence has $63$ states. Their lower-bound role, together
+with the all-input upper mixtures, gives another proof of the same
+randomized worst-input values without reading the retained matrix.
+
+The point, mixtures and priors were frozen before full-column and
+recurrence checking. They were obtained by balancing the five displayed
+profiles; no price/prior grid or LP solver was used. The first cone
+attempt left $113$ leaves unresolved using dominance/lifting alone.
+The retained versioned repair added the four existing saddle templates
+without changing the fee family or game. Unresolved certificates were
+not treated as counterexamples or as proofs. The final certificate and
+separate reader close the full domain. These are internal exact checks
+using standard finite-game and polyhedral tools, with actual local exit
+receipts; they are not external human review or proof-kernel validation.
+\end{proof}
+
+The two-pair example has $R_{\mathcal P}/R_{\mathcal A}=2291/2288$.
+Its cost reduction relative to the optimal priority value is $3/2291$,
+approximately $0.13\%$. It supplies an exact structural separation,
+without establishing a large practical saving. Shared-resource and
+coverage cost modeling are established~\cite{harris2025}; the sourcewise
+support minimum is the claim being examined here. Pandora's fixed-order
+optimality theorem~\cite[Theorem~4.1 of the inspected version]{pandora}
+uses independent rewards and a different utility objective. Stochastic
+Boolean evaluation~\cite{hellerstein2022adaptivity} uses its own input
+distribution, costs and comparator. A theorem transfer requires preserving
+these contracts. The bounded primary comparison leaves exact literature
+priority open.
+
+\begin{corollary}[A sparse resource-parameter neighborhood]
+\label{cor:sparse-pair-resource-robust}
+For the fixed source and two-pair fee of
+Theorem~\ref{thm:pair-resource-minimum}, perturb each of the four
+individual charges and the two positive pair weights by at most
+$1/1856$. Throughout this six-dimensional parameter box, the fee remains
+strictly increasing coverage and submodular, has exactly two positive
+pair groups, and satisfies
+\[
+ R_{\mathcal P}-R_{\mathcal A}\geq\frac{3}{464}.
+\]
+\end{corollary}
+\begin{proof}
+For fixed input and seed, changing all purchased-set fees by at most $r$
+changes cost by at most $r$. Private expectation, maximum over inputs and
+infimum over a fixed policy class preserve this bound. Each optimal value
+is therefore $1$-Lipschitz in the fee sup norm, so the gap loses at most
+$2r$. Each set activates at most six of the listed resources. A coordinate
+perturbation of size $\delta=1/1856$ changes its fee by at most
+$6\delta=3/928$. The resulting gap is at least
+\[
+ \frac{3}{232}-12\delta=\frac{3}{464}.
+\]
+Every resource weight remains at least $2-\delta>0$. The four positive
+singleton weights give strict increase; the positive coverage
+representation gives submodularity. This parameter box is restricted
+to the six stated resources and asserts no strict-submodular neighborhood
+in all fifteen nonempty fee coordinates.
+\end{proof}

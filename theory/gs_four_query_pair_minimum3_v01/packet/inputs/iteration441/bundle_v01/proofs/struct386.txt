@@ -1,0 +1,121 @@
+Two-column exact cost formula for the fixed core/envelope family
+
+Scope, chronology, and model
+This tests the exact candidate selected at385before new computation. Let
+ L0={1,7}, L1={0,3,4,15}, U0={1,5,7,9},
+ U1={0,2,3,4,8,10,11,12,14,15}.
+Inputs are four-bit little-endian response words. For any promise satisfying
+L0 subset W0 subset U0 and L1 subset W1 subset U1, and any finite normalized
+nonnegative monotone cost F on purchased coordinate sets, define
+ A=F({0,1}), X=F({0,1,2}), Y=F({0,2,3}),
+ B=F({1,2,3}), Z=F({1,2}).
+In particular A<=X,Z<=X,Z<=B, and all five costs are nonnegative.
+The core/envelope are partial promises, not assumed physically realizable.
+The prior384catalogue eligibility proof identifies exactly two physical source
+orbits868/1204,96ordered tasks, for this fixed template up to coordinate/label
+changes. Reuse that already checked eligibility; do not repeat the entire scan.
+
+Two upper policies
+P5: tree[1,[0,1,0],[2,1,[3,0,1]]], order(1,0,2,3).
+P11: tree[2,[1,[0,1,0],1],[0,1,[3,0,1]]], order(2,1,0,3).
+Both are correct on U and have a legal global order with causal permanent skips.
+Their costs on inputs1,7,3 are respectively
+                P5     P11
+  input1         A       X
+  input7         B       Y
+  input3         Z       Z.
+Every other U input has its pair of purchased sets coordinatewise contained
+in one of these three rows, except input5 whose pair is(A,Y). These are
+monotonicity bounds, not additive identities for nonadditive F.
+
+Self-contained adaptive lower bound
+At negative1, positive0 differs only at q0, and positive3 only at q1. Every
+correct policy therefore buys q0,q1. At negative7, positives3,15force q2,q3,
+while positive4forces at least one of q0,q1.
+If a policy buys q1 on input7, its cost pair at(1,7)dominates(A,B).
+If it does not, its input7set contains{0,2,3}. To buy q1 on input1 while
+skipping it on input7, the deterministic histories must first diverge on q2:
+the two inputs differ only at q1,q2. Thus input1also buys q2 and its paid set
+contains{0,1,2}. The pair dominates(X,Y). This proves pair domination for
+every correct adaptive policy. It also holds seedwise for zero-error randomized
+policies; removing pure continuations/known-response purchases only shrinks
+paid sets under monotone F. The saved23complete core vectors and old576full-tree
+coverage are separately retained corroboration; no new full-tree census is needed.
+Input3must buy q1,q2 to distinguish negative1,7, giving independent lower Z.
+
+Exact randomized value
+Let h be the two-row/two-column minimax value for the first two rows above:
+  if B<=A:                         h=A;
+  if B>A and B<=Y:                 h=B;
+  if B>A,B>Y and X<=Y:             h=Y;
+  if B>A,B>Y and X>Y:
+       alpha=X-A>=0, beta=B-Y>0, D=alpha+beta>0,
+       h=(beta*A+alpha*B)/D.
+The common zero-error randomized value is R_A=R_P=max(Z,h).
+
+In the first case choose P5 and point prior1. Its row7cost B<=A, and
+Z<=B<=A. In the second choose P5 and point prior7; A<B and Z<=B, while
+min(B,Y)=B. In the third choose P11 and point prior7; A<=X<=Y, Z<=X<=Y,
+and min(B,Y)=Y. The special input5cost is A,A,Yrespectively, no larger.
+
+In the interior case choose P5,P11with probabilities
+ (X-Y)/D, (B-A)/D.
+They are positive, sum1, and both negative rows have expected cost h.
+The prior on inputs1,7with probabilities beta/D,alpha/D gives exactly h
+against both columns, hence at least h against EVERYadaptive policy by the
+paid-set pair domination. Input3adds the lower bound Z. If h>=Z use this
+negative prior; if Z>=h use point prior3. The upper mixture has cost Z at
+input3. Its special input5slack below h is (B-A)(X-Y)/D>=0. All other inputs
+are covered by the paid-set subset rows. This proves the claimed max formula.
+
+Boundary coverage and signs
+The four cases partition by ordered comparisons B<=A, B<=Y, X<=Y; the interior
+case splits into the two closed regions numerator>=D*Z and numerator<=D*Z.
+These cover the max cap, including equality. Zero costs and all ties use one
+of the closed branches. alpha=0 is allowed: beta>0 still gives D>0. No
+division occurs on the excluded beta=0 or X=Y boundaries. Primal and prior
+normalizations, crossing identities and all row inequalities are verified
+as exact rational-coefficient polynomial identities. Signs use products/sums
+of the stated nonnegative monotonicity and case generators. A separate
+monomial-list implementation reconstructs the identities without producer code.
+
+Deterministic value and certificate bound
+The exact deterministic value is
+ D_A=D_P=min(max(A,B),max(X,Y)).
+Any adaptive policy's cost pair dominates one column; its worst cost is thus
+at least the minimum of the two column maxima. Choosing the cheaper pure
+priority column matches this. All U costs of each pure column are bounded
+by its corresponding column maximum, including input5.
+
+The exact certificate bound is
+ K_F=max(A,Z,min(B,Y)).
+At inputs1,7,3the minimal core certificate masks are3,(13or14),6respectively.
+These same certificate alternatives are supplied by the two policies on U,
+so they remain exact for every intermediate W. On other inputs the cheaper
+of the two policy certificates is no more costly than one of these bounds;
+for special5it is min(A,Y)<=A. Monotonicity of min under componentwise
+domination justifies the other rows. No arbitrary completion of F is assumed.
+
+Sharp factor2for deterministic versus randomized cost, NOTan A/P gap
+Each nonnegative column maximum is at most its column sum. Therefore
+ D_A=D_P<=min(A+B,X+Y).
+The uniform prior on the two negative inputs, together with pair domination,
+gives R_A=R_P>=min(A+B,X+Y)/2. Thus D<=2R for all allowed F, including D=R=0.
+Use the already retained385source868first failed ideal13183. Its0/1monotone
+table has A=Y=Z=0,X=B=1. The formulas give K=0,D=1,R=1/2, attaining factor2.
+The checker also verifies the explicit half/half upper mixture and negative
+prior on actual trees, all free certificates, and deterministic lower witnesses.
+This is the benefit of randomization within either policy class; A=P throughout.
+No positive-additive, strictly-monotone, or universal-menu ratio claim is made.
+
+Evidence and preservation
+Both catalogue source realizations are inherited from377and their eligibility
+from384. New checks trace the fixed core/upper trees, hard certificates and
+pair/row containment, five saddle subcases, the sharpness witness and inverse
+cost-set permutation for the two already eligible targets. This is a new
+all-monotone result beyond the old additive formula, not a new model/API study.
+Generic two-by-two minimax formulas, weak bounds and factor2from a two-input
+uniform prior are supporting classical tools, not a novel general framework.
+Model-specific literature priority remains open. V13/P1/old results/public
+archives/negative model evidence/daily automation remain unchanged. No human
+approval, formal proof-kernel verification or historical authenticity is claimed.

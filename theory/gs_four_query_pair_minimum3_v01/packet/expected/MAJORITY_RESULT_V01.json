@@ -1,0 +1,31 @@
+{
+  "threshold_and_subset": {
+    "nonempty_ideals": 167,
+    "threshold_sources": 1300,
+    "threshold_cells": 155995,
+    "pointwise_sources": 31,
+    "pointwise_input_checks": 3174
+  },
+  "structural": {
+    "structural_sources": 14,
+    "actual_binding_checks": 2336,
+    "scalar_lemma_algebra": {
+      "386": {
+        "identities": 64,
+        "normalizations": 10,
+        "cases": 5
+      },
+      "393": {
+        "identities": 105,
+        "normalizations": 14,
+        "cases": 7
+      },
+      "399": {
+        "identities": 52,
+        "normalizations": 8,
+        "cases": 4
+      }
+    },
+    "ordered_case_exhaustion_and_generator_signs": "analyticargumentsincluded;polynomialidentitiesandpositiveproductcertificatesreplayed"
+  }
+}

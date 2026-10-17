@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "status": "FROZEN_ANALYTIC_TRIANGLE_SUPPORT3_CANDIDATE_AND_GS_SUPPORT_MINIMUM_AUDIT",
+  "previous_turn": {
+    "turn": 463,
+    "classification": "progress",
+    "closure": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\CLOSURE_V01.json",
+      "bytes": 53448,
+      "sha256": "13aea214fcd060d041907ddb7e9772175b621c30fa42e3fcca06fedc4f5e6404"
+    },
+    "actual_exit": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\CLOSE_GS_PARTIAL.PROCESS_TERMINAL.json",
+      "bytes": 314,
+      "sha256": "bc6d4e39e658d177d9c22962d3587de8ee2c447a636cce3339c4a5b466cd2c2a"
+    }
+  },
+  "motivation": "Afterverified6edgeGSgap,derivea3edgecliquefaceanalytically.Thepositive-supportrelationofaGSquadraticcostistransitive,soatmost2positiveedgesaredisjointoronepair. Savedbalancedhierarchyproofsmayexcludethese. Checkoneanalyticallyderivedtrianglecandidateagainstalloriginalpolicies;notblind/statisticaldiscoveryorapricegrid.",
+  "source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "inherited_monotone_policy_completeness": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\REMAINING_SOURCE_AUDIT_V01.json",
+    "bytes": 201200,
+    "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512"
+  },
+  "original_projection": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+    "bytes": 730524,
+    "sha256": "055045951ca0b4990f697b4d379d61882004b94c79893ff0f019dcb63b604739"
+  },
+  "source_task": [
+    642,
+    34833
+  ],
+  "original_A_P_counts": [
+    40,
+    32
+  ],
+  "W": [
+    0,
+    1,
+    4,
+    7,
+    9,
+    11,
+    15
+  ],
+  "fixed_analytic_candidate": {
+    "origin": "Analytic4x4saddleoninternaltriangleweightsv=4,cross0; choosepositiveci=(7,4,3,6) makingfixedbasisweightspositive. This is a deliberate face specialization and algebraic candidate, not an automatic pointscan.",
+    "individual_charges": [
+      7,
+      4,
+      3,
+      6
+    ],
+    "pair_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "pair_weights": [
+      0,
+      0,
+      0,
+      4,
+      4,
+      4
+    ],
+    "P_basis_columns": [
+      6,
+      18,
+      19,
+      20
+    ],
+    "basis_worlds": [
+      7,
+      9,
+      11,
+      15
+    ],
+    "candidate_A_index": 39
+  },
+  "work": "Solve ONLY these fixed5x5rationallinear systems for4supportPmixture/prior/value and thedirectioncreatedbyaddingA39. Check proposedPdualagainstALL32originalP,all7worldPupperbounds,allcost/sourceGSconditions. Ifvalidanddualdirectionnegative,chooseepsilonhalfofexactnonnegativeweight/worldupperfeasibilityinterval,thencheckadaptiveupper<exactPvalue on all7worlds. Do not inferfullgapfromreduced5x6gamealone.",
+  "if_certificate_fails": "Record every violating full-original P/worldconstraint;no GSgapclaim or price change/automatic pointscan. Reassess original matrix reduction.",
+  "method_scope_revision": "Seconddeliberatelyderivedcertificatecandidate,withoutexact/numericaloptimizationoracleorfee/priorgrid.Retainfirst6edgecandidateandcertificate. DonotclaimglobalGSinequalityfromlowercover;GSsupportmin3requiresseparatebalancedcone/classificationaudit.",
+  "separate_checker": "Different exact cost/physical/path and Fraction expectation verification; readscope/source/certificate/dependencies,notproducer code. SameAI,notexternalhuman/formalreview.",
+  "preserve": "PublicV24/P1negative353nativefixedbaseline/sourceexecutionarchive/controllerkeys/authorfactsdeferralunchanged",
+  "storage": "Freshoriginal10GiBguards,C<=1MiB/D<=64MiB,verifiedDonly,nofallback",
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "whole_project_complete": false,
+  "additional_derivation": {
+    "GS_positive_support": "wij,wjk>0 implieswik>=min(wij,wjk)>0;positivecomponentsarecliques.Atmost2edges=>disjointoronepair.",
+    "P_basis_expected_algebra": {
+      "prior_worlds_7_9_11_15": [
+        "18/94",
+        "6/94",
+        "13/94",
+        "57/94"
+      ],
+      "P_columns_6_18_19_20": [
+        "14/47",
+        "6/47",
+        "24/47",
+        "3/47"
+      ],
+      "proposed_P_value": "1025/47"
+    },
+    "derivation_warning": "ExpectedpriorvaluesarehypothesestobecheckedwithfixedlinearsystemsandALL32P;nojournalnoveltyorapplicationclaim."
+  }
+}

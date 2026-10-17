@@ -1,0 +1,1264 @@
+{
+  "schema": 1,
+  "status": "FROZEN_PUBLIC_GS_ONE_PATH_METADATA_DERIVATIVE_BEFORE_ACTUAL_REPLAY",
+  "expected_children": 17,
+  "expected_whole_objects": 18,
+  "residual_ids": [
+    1209,
+    1217,
+    1221,
+    1258,
+    1265,
+    1292,
+    1312,
+    1322,
+    1328,
+    1343,
+    1344
+  ],
+  "files": [
+    {
+      "role": "iteration441/bundle_v01/algebra.py",
+      "file": "inputs/iteration441/bundle_v01/algebra.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\algebra.py",
+      "bytes": 10614,
+      "sha256": "a22cb6948223e26fb681ae3243a0365a0f637ac397926768cc60a6cc00747f2f",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/algebra.py"
+    },
+    {
+      "role": "iteration441/bundle_v01/catalogue.py",
+      "file": "inputs/iteration441/bundle_v01/catalogue.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\catalogue.py",
+      "bytes": 3070,
+      "sha256": "901f5f4bb8280a98ccb521e14c320032e2543c7a09a35587a20bd14e4bb635b3",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/catalogue.py"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/catalogue.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/catalogue.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\catalogue.json.gz",
+      "bytes": 71008,
+      "sha256": "facc2b7e40aa88fd3b1ef7d9c4041ffaf2b7436587d476cfd5586232fea439d3",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/catalogue.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/families.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/families.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\families.json.gz",
+      "bytes": 716605,
+      "sha256": "dd3cc25966e8b573125e7a3e582a2be5f63455c277ee49a51f861653e32eccbd",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/families.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/groups.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/groups.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\groups.json.gz",
+      "bytes": 3229,
+      "sha256": "5b21ddc7493a0cc41465826b30e96044fdadaf7fd1d5e3c42e22bf79d3a34f2a",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/groups.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/ideals.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/ideals.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\ideals.json.gz",
+      "bytes": 422,
+      "sha256": "2877225d260c4f206f790c162e12ebd41c444002514ab98208b41568465e5b71",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/ideals.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/seven.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/seven.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\seven.json.gz",
+      "bytes": 660,
+      "sha256": "4e5b5d4e98bbb8e80b9c5a005003c773bd843bc8919ae3ddd886b37e368d0aab",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/seven.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1209.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1209.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1209.json.gz",
+      "bytes": 9102,
+      "sha256": "9e9f2a5ea888a59f5f2bd509e23b7b46c0c8841de12d5789bfcb993238e6a08c",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1209.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1217.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1217.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1217.json.gz",
+      "bytes": 1431,
+      "sha256": "5475703cb58f9c9fefd11e0e6731135ab5c4ce54c66aa0d9227c96666916fe49",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1217.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1221.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1221.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1221.json.gz",
+      "bytes": 13089,
+      "sha256": "c31a6185d3792130edc5fefd597002e09d5d21f9ca40593b02362be024722212",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1221.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1258.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1258.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1258.json.gz",
+      "bytes": 31978,
+      "sha256": "b33b7a69180f0d451547b0e5533fcf52134fa67c771433d09a3818e8befffbaa",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1258.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1265.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1265.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1265.json.gz",
+      "bytes": 34972,
+      "sha256": "5a3544636e46d3712ff92393fc99dfb1923419aa7cb090efa6186cced8de376c",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1265.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1292.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1292.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1292.json.gz",
+      "bytes": 40804,
+      "sha256": "4ae4d13cd440a1de1c2dfa1131f0e65ab229083290c33cae551fc63a8a535d83",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1292.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1312.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1312.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1312.json.gz",
+      "bytes": 29241,
+      "sha256": "74502d4a339bf2a6fffbf8336bb9ccdd92c6a15e94d55daf77983fdb68cd495e",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1312.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1322.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1322.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1322.json.gz",
+      "bytes": 28690,
+      "sha256": "ec0cff5db32d7dc323ca6d481b2790f0a9593398b6b6131911ccca5fb6c4d3a6",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1322.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1328.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1328.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1328.json.gz",
+      "bytes": 15829,
+      "sha256": "a1bc4c91fa787403893789b9972584ea051e027fac5f90c0eee53adbd3a3cd92",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1328.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1343.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1343.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1343.json.gz",
+      "bytes": 36120,
+      "sha256": "72ee3bd3b92c0fd17bb71e739c7fc572cdfe6b9e94de2ffa759de369d5c2ff43",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1343.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/source1344.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/source1344.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\source1344.json.gz",
+      "bytes": 30971,
+      "sha256": "83cbf19449b6e0bd75bc0237c2dce0f8103a5df95c1ae40d096ab9792a6ef989",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/source1344.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct386.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct386.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct386.json.gz",
+      "bytes": 2631,
+      "sha256": "459c8afc31dee34eddec48261720247e6d0a45fba1fde6bd9c9e3fa2bfb118ac",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct386.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct393.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct393.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct393.json.gz",
+      "bytes": 9690,
+      "sha256": "c136e50b9d0abae0ac9f003d78e051b08e39d6bb2425350d983860bc810b94cc",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct393.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct394.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct394.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct394.json.gz",
+      "bytes": 9318,
+      "sha256": "c5129a5ba40f141b4cdf6456e4e0ab62973534358dba3dec0d8319392c943556",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct394.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct395.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct395.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct395.json.gz",
+      "bytes": 11819,
+      "sha256": "1e177bf6c567fd1467499becd0910c42526a0019f9e41225a79297727f8f8ccf",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct395.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct396.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct396.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct396.json.gz",
+      "bytes": 14255,
+      "sha256": "2660e9dceed825e15f0ab0d3f0c69b67fb8880a32089cf823f643f42e0e8ba1b",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct396.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct397.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct397.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct397.json.gz",
+      "bytes": 12282,
+      "sha256": "e9894c2bd846ba5b39f3ee395e8433cf1c6938a45349a85dd3dd1e92e5085440",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct397.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct398.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct398.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct398.json.gz",
+      "bytes": 12501,
+      "sha256": "e73b03301592b1b02e2a7280372c20180c87394b78bc8bcffe823731adf7cecb",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct398.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/struct399.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/struct399.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\struct399.json.gz",
+      "bytes": 11022,
+      "sha256": "5c7a87b51d6cfe69e0204bffdece6d4e7db57ccfb155cc7d726e4a5719579f50",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/struct399.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/data/threshold.json.gz",
+      "file": "inputs/iteration441/bundle_v01/data/threshold.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\data\\threshold.json.gz",
+      "bytes": 111121,
+      "sha256": "901f544dbcbbbe0bf1901f506dc4ec82b3ae50fcb897a065a537504a1b84474a",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/data/threshold.json.gz"
+    },
+    {
+      "role": "iteration441/bundle_v01/DATA_MANIFEST.json",
+      "file": "inputs/iteration441/bundle_v01/DATA_MANIFEST.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\DATA_MANIFEST.json",
+      "bytes": 27171,
+      "sha256": "3d1fb844bbd1a35bc5b221dfe229b0e813ceab29fdbb9caa831d467d4db06978",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/DATA_MANIFEST.json"
+    },
+    {
+      "role": "iteration441/bundle_v01/MANIFEST.json",
+      "file": "inputs/iteration441/bundle_v01/MANIFEST.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\MANIFEST.json",
+      "bytes": 8421,
+      "sha256": "8ba55dc33fccd0ecc8aeee018f87a628eee661bebada9910cd7af92ca41c39f1",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/MANIFEST.json"
+    },
+    {
+      "role": "iteration441/bundle_v01/policies.py",
+      "file": "inputs/iteration441/bundle_v01/policies.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\policies.py",
+      "bytes": 3131,
+      "sha256": "7ce986467d975a7334e96c4d188b9146396efc41bdadb39d415552162aa0df2f",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/policies.py"
+    },
+    {
+      "role": "iteration441/bundle_v01/prices.py",
+      "file": "inputs/iteration441/bundle_v01/prices.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\prices.py",
+      "bytes": 12332,
+      "sha256": "c9f4f3ec83bf0ee4b930e2ebc2ad39b62f026e451b97824c3e1e4bb91d74be20",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/prices.py"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofio.py",
+      "file": "inputs/iteration441/bundle_v01/proofio.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofio.py",
+      "bytes": 1991,
+      "sha256": "00a6b2e1a56eb0fe905e975c9a651c51b8f6839501077e150b9a5a643fd4fb42",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofio.py"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/batch.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/batch.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\batch.txt",
+      "bytes": 4701,
+      "sha256": "bd4b23b4044d7d3dcb154e3e943c74cb4310f2c5fd7c2b5ad5ed5d867d2b2065",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/batch.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/catalogue.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/catalogue.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\catalogue.txt",
+      "bytes": 6231,
+      "sha256": "c9bdd33d7449f15d205ea6d45084eea852a6ae8a48921d7db14509e53196e940",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/catalogue.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/integrated.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/integrated.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\integrated.txt",
+      "bytes": 11067,
+      "sha256": "8d7b7f24222b9776161ef73002b7634cad29b2e8c497d7fe429c88b3cf621175",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/integrated.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/library.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/library.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\library.txt",
+      "bytes": 4399,
+      "sha256": "4fe029c1018d660f663042590a712dcecf267a9e21634569e568ed9c71947d4c",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/library.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/normalform.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/normalform.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\normalform.txt",
+      "bytes": 5747,
+      "sha256": "293fa656664800bd5bb327998600becbdba7c3015229183050d56ba2add234af",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/normalform.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/source1209.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/source1209.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\source1209.txt",
+      "bytes": 3668,
+      "sha256": "d63ce5f4455674b60071058bfd203683523e55269446f92e811e04416c942ce5",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/source1209.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/source1322.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/source1322.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\source1322.txt",
+      "bytes": 4809,
+      "sha256": "d8c733d2e9f7a7388b56fc8d69af47e033c5d2c8aef6116e6272bb49c45c1109",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/source1322.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct386.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct386.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct386.txt",
+      "bytes": 6933,
+      "sha256": "522c56cf482bc4f65db3a8e359c2e753be469b17b78d799b10b6bc359b00beb7",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct386.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct393.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct393.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct393.txt",
+      "bytes": 4867,
+      "sha256": "c7b5e2513a59ed6035b124bedec90ea839e8cb6389e262507320386dff5676d3",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct393.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct394.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct394.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct394.txt",
+      "bytes": 4243,
+      "sha256": "e068a6a905059de505c78d4478a867789c38c42468454cc828600fb8228f0f5b",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct394.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct395.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct395.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct395.txt",
+      "bytes": 4283,
+      "sha256": "5943cc0cbfdf83be83b12d836e74eba5a8695e6564be7f7e64046857a021c3a5",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct395.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct396.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct396.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct396.txt",
+      "bytes": 4495,
+      "sha256": "28b4e8ea8a15e1f86e401f9d8cf32f4d7ef0534b18285ff47f3ebc1c7c85f70e",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct396.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct397.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct397.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct397.txt",
+      "bytes": 3927,
+      "sha256": "fcde63a30e4e8d91fcc01cb3acde5aab90e5b73c449696b335d71a79e81b25da",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct397.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct398.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct398.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct398.txt",
+      "bytes": 3147,
+      "sha256": "40e443bc911b14863882f1935af6e5ea1a4a345e92dbb3c7571decdbe419aa73",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct398.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/struct399.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/struct399.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\struct399.txt",
+      "bytes": 4074,
+      "sha256": "3c9d51fb7bdd65ef7ad5189c9f8c7d15bc43e5b3c983507a15e5ee108cc1f379",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/struct399.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/proofs/threshold.txt",
+      "file": "inputs/iteration441/bundle_v01/proofs/threshold.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\proofs\\threshold.txt",
+      "bytes": 5617,
+      "sha256": "565d15f5998840a6f990abfa52373cf19a5bdab66f7f9f1b4f87efc02ca30999",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/proofs/threshold.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/README.txt",
+      "file": "inputs/iteration441/bundle_v01/README.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\README.txt",
+      "bytes": 5008,
+      "sha256": "e15b17e09ae483955246deccf1095ab37a9813417f8b222410c629cfbff68039",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/README.txt"
+    },
+    {
+      "role": "iteration441/bundle_v01/seven.py",
+      "file": "inputs/iteration441/bundle_v01/seven.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\seven.py",
+      "bytes": 5281,
+      "sha256": "86a5411940b60619d1ebc2cf27abc8656a1a546027e34f2b25f6736bf2432a72",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/seven.py"
+    },
+    {
+      "role": "iteration441/bundle_v01/structures.py",
+      "file": "inputs/iteration441/bundle_v01/structures.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\structures.py",
+      "bytes": 7693,
+      "sha256": "a492456f99c442a8819cddf1a71b73ab5352d8888233d044fc035b69ba4953a4",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/structures.py"
+    },
+    {
+      "role": "iteration441/bundle_v01/verify.py",
+      "file": "inputs/iteration441/bundle_v01/verify.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\bundle_v01\\verify.py",
+      "bytes": 4022,
+      "sha256": "ac03e61b499a61cdf777fcc6aacfe5fd1d10ff2797facc6502e23647d177f93f",
+      "kind": "immutable",
+      "stage": "iteration441/bundle_v01/verify.py"
+    },
+    {
+      "role": "iteration441/ACCEPTANCE_V01.json",
+      "file": "inputs/iteration441/ACCEPTANCE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\ACCEPTANCE_V01.json",
+      "bytes": 10252,
+      "sha256": "fde76226b9a8f75505310aad8c3cf6121ce5b4df50120d2528647313a090dbce",
+      "kind": "immutable",
+      "stage": "iteration441/ACCEPTANCE_V01.json",
+      "origin_metadata_derivative": {
+        "origin_bytes": 10347,
+        "origin_sha256": "6a75bd679c9339a9b56d92bd691d8da301cd1638aae2c7929c41e0b151bea224",
+        "derived_bytes": 10252,
+        "derived_sha256": "fde76226b9a8f75505310aad8c3cf6121ce5b4df50120d2528647313a090dbce",
+        "changed_JSON_pointer": "/protected_inputs/0/path",
+        "private_path_value_sha256": "e703022664135ea6d811faef48762e66a74ac29b97e1c0fe0881c17e9ceb263a",
+        "public_logical_path": "origin-private://sealed-P1-location",
+        "only_one_path_string_literal_changed_all_other_raw_bytes_exact": true,
+        "origin_record_not_redistributed": true,
+        "origin_commitment_not_falsely_checked_as_derived_raw_hash": true
+      }
+    },
+    {
+      "role": "iteration441/LOCAL_RESULT_V01.json",
+      "file": "inputs/iteration441/LOCAL_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\LOCAL_RESULT_V01.json",
+      "bytes": 23809,
+      "sha256": "37e2af25f4a98dd2ac785a7df8fc29feea86d9cc1f1abf627b97f68029a04153",
+      "kind": "immutable",
+      "stage": "iteration441/LOCAL_RESULT_V01.json"
+    },
+    {
+      "role": "majority_v01.py",
+      "file": "inputs/majority_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration459\\bundle_v03\\majority_v01.py",
+      "bytes": 966,
+      "sha256": "ee12ec7332dc3bfe683964327d467c682fc1eb38af6ad125b06aa232617910c3",
+      "kind": "immutable",
+      "stage": "majority_v01.py"
+    },
+    {
+      "role": "iteration458/audit_remaining_sources_v02.py",
+      "file": "inputs/iteration458/audit_remaining_sources_v02.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\audit_remaining_sources_v02.py",
+      "bytes": 14329,
+      "sha256": "c3298f571fa8a8a349ae5cfae34d20f46e0434a72181e8a9d5c7f2dbd4960711",
+      "kind": "immutable",
+      "stage": "iteration458/audit_remaining_sources_v02.py"
+    },
+    {
+      "role": "expected/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "file": "expected/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "bytes": 730524,
+      "sha256": "055045951ca0b4990f697b4d379d61882004b94c79893ff0f019dcb63b604739",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "expected/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+      "file": "expected/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REMAINING_SOURCE_AUDIT_V01.json",
+      "bytes": 201200,
+      "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/GS_SCOPE_V01.json",
+      "file": "inputs/iteration463/GS_SCOPE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\GS_SCOPE_V01.json",
+      "bytes": 24275,
+      "sha256": "787e74427596fee670d7b1828682c697984dff4c31f08f8feebf0b6064a808a9",
+      "kind": "immutable",
+      "stage": "iteration463/GS_SCOPE_V01.json"
+    },
+    {
+      "role": "iteration463/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "file": "inputs/iteration463/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "bytes": 730524,
+      "sha256": "055045951ca0b4990f697b4d379d61882004b94c79893ff0f019dcb63b604739",
+      "kind": "immutable",
+      "stage": "iteration463/RESIDUAL_SOURCE_PROJECTIONS_V01.json"
+    },
+    {
+      "role": "iteration463/REMAINING_SOURCE_AUDIT_V01.json",
+      "file": "inputs/iteration463/REMAINING_SOURCE_AUDIT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\REMAINING_SOURCE_AUDIT_V01.json",
+      "bytes": 201200,
+      "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512",
+      "kind": "immutable",
+      "stage": "iteration463/REMAINING_SOURCE_AUDIT_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 42302,
+      "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1209_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1209_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1209_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1209_GS_PROOF_V01.json.gz",
+      "bytes": 39491,
+      "sha256": "05343b8c9ab23a6065f65d8bbbc0acdd73d0aa24699687bbad39900824aecdf5",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1209_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1209_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1209_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1209_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3299,
+      "sha256": "7665d49e8dc60f3be378ec63be5ab09216b7805269e6c95ccbf14c1ae0f7b8cd",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1217_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1217_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1217_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 31247,
+      "sha256": "968a583960ebff7ab3d84b52076978e0aee8012c5bc653d2dceb6a701ac88907",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1217_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1217_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1217_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1217_GS_PROOF_V01.json.gz",
+      "bytes": 27050,
+      "sha256": "c2f27b28f3ef9f0dc43ddef2961e5fb72e1133fcf6e1e07b86c081504e881320",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1217_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1217_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1217_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1217_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3296,
+      "sha256": "b9f7992295382e16dc3d1a24278b816efad330a78b9603363a0b8c8efa29f593",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1221_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1221_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1221_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 26865,
+      "sha256": "ca2b31758d95c4e8403e5fcaee0806244bbc330438ba2a00b030f7b0098612a3",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1221_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1221_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1221_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1221_GS_PROOF_V01.json.gz",
+      "bytes": 11590,
+      "sha256": "1a8815002004136e0a406936aa6771b0fbc121639fec562d7f746f32b4f542d6",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1221_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1221_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1221_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1221_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3294,
+      "sha256": "070cb737976d820ed04e39183ba9356edd4185fe9aee84c6ec4079a44e6dd0e2",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1258_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1258_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1258_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 48081,
+      "sha256": "dbecd08d6672654989e1ef03aa970ab4f0d37285e09fac53ba69b7f44ffe764d",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1258_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1258_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1258_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1258_GS_PROOF_V01.json.gz",
+      "bytes": 11548,
+      "sha256": "b20c9d506c4185a3d39d3674aef9c5696822776d25f2b8b4193124433e7d8466",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1258_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1258_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1258_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1258_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3294,
+      "sha256": "e2b830c006ffde91714858fd05f16473f6128cb2aeafaa81ce1f02b787ff1b16",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1265_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1265_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1265_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 54668,
+      "sha256": "107426c944b90862fd28f4e86828926ce14a214e0472f398d7ac2853bc4458fa",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1265_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1265_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1265_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1265_GS_PROOF_V01.json.gz",
+      "bytes": 31084,
+      "sha256": "a087c54fe42f95828ff2d56037aa2e2fc1ef476c851d6454047e581ed469298e",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1265_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1265_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1265_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1265_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3297,
+      "sha256": "bdd3ef2051820b1fd4a082f4e10767136e85ff9780bdcb23f5e97d08bfdb32d4",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1292_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1292_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1292_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 59831,
+      "sha256": "39cffdeae00bf9fabc82c31466c94a79d86e6a974d953208b03d82305a2f7098",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1292_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1292_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1292_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1292_GS_PROOF_V01.json.gz",
+      "bytes": 14385,
+      "sha256": "e8a2e08600a8bf5aee8d76b8fb2b3cd4c67c83131a5b46d49d4de89e385eae69",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1292_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1292_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1292_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1292_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3293,
+      "sha256": "4dd5b15c1c0fec0e9d5f325e72f2fe2815c3cd8556bc4f67dc729244b2595142",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1312_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1312_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1312_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 47568,
+      "sha256": "f1378b2c0fa4ff83a63f6ea6f36d942e2d4e8d97fbfbffbd40484c389a52761d",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1312_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1312_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1312_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1312_GS_PROOF_V01.json.gz",
+      "bytes": 17067,
+      "sha256": "cf9256d0f8f5f65ea270e21bf1c9bccd7c95a4d848a13a18a8f7805404250147",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1312_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1312_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1312_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1312_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3294,
+      "sha256": "81f4bd29b06d97a54e9e9449d2926ba288a3af456aac1f2000572c3deb36fbc7",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1322_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1322_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1322_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 44338,
+      "sha256": "29d625815003a738520d650b87426f45f6687147c210972d90728a5d04c656eb",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1322_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1322_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1322_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1322_GS_PROOF_V01.json.gz",
+      "bytes": 46647,
+      "sha256": "7670075361427c0b49e8e80fc89d79f7c09c18e038b27aadd20418559fbd4b89",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1322_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1322_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1322_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1322_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3300,
+      "sha256": "80ea1684453840af25d8d15585aa65781abd7c24331d85f0b38e46b6d616bb4c",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1328_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1328_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1328_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 31206,
+      "sha256": "a23a0cd90ab9bd8aa135b0a0dc1620c571a73c2cff45d20ba21a23dd6a4e7fc2",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1328_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1328_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1328_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1328_GS_PROOF_V01.json.gz",
+      "bytes": 24506,
+      "sha256": "ceb00ab6e6cf8e3aad4a28e0ca5fa43e1cdabd3b81d498168c5692c7c6a8dcee",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1328_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1328_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1328_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1328_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3300,
+      "sha256": "eca782339a01baad4791a99971b1a984b634889756b8b2c48faa0883074c04a6",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1343_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1343_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1343_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 55092,
+      "sha256": "aa78db8a15a8f1ab149a1c225ea14d2ed09fd4ccd7441bdf7d6c37c793947cc4",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1343_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1343_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1343_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1343_GS_PROOF_V01.json.gz",
+      "bytes": 21778,
+      "sha256": "f9efc4290aa6f3031a63a78f3b3b8fd950574ec71585fbd8beb3884eb96ae746",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1343_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1343_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1343_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1343_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3294,
+      "sha256": "01f1364ea302caf2829080591d1055fc87deb51f5f58de98f486dcacaac5cbea",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration463/SOURCE1344_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration463/SOURCE1344_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1344_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 48314,
+      "sha256": "44f72bf46ab19b1a28a29ebae36b3494bb9b193121d90dc494ace83eddef6033",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1344_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration463/SOURCE1344_GS_PROOF_V01.json.gz",
+      "file": "inputs/iteration463/SOURCE1344_GS_PROOF_V01.json.gz",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration463\\SOURCE1344_GS_PROOF_V01.json.gz",
+      "bytes": 16537,
+      "sha256": "86d2f74f1fe508562f98ef2ad80a3a48d7534ac46d1d49ba66490fb76de1de88",
+      "kind": "immutable",
+      "stage": "iteration463/SOURCE1344_GS_PROOF_V01.json.gz"
+    },
+    {
+      "role": "expected/iteration464/SOURCE1344_BALANCED_LOWER_RESULT_V01.json",
+      "file": "expected/iteration464/SOURCE1344_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1344_BALANCED_LOWER_RESULT_V01.json",
+      "bytes": 3294,
+      "sha256": "a4cb663e9ee25807bbbf8c8b4b2a2d94ea18e22a0bb653f785c4ccfe4764ee42",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration464/read_balanced_gs_lower_v01.py",
+      "file": "inputs/iteration464/read_balanced_gs_lower_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\read_balanced_gs_lower_v01.py",
+      "bytes": 13712,
+      "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999",
+      "kind": "immutable",
+      "stage": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "role": "iteration464/verify_triangle3_gs_gap_v01.py",
+      "file": "inputs/iteration464/verify_triangle3_gs_gap_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\verify_triangle3_gs_gap_v01.py",
+      "bytes": 8218,
+      "sha256": "3e6d05712dcb341e9e5e4b6b3ad8190aafd777ecf1accc1b33ec23c240e64da0",
+      "kind": "immutable",
+      "stage": "iteration464/verify_triangle3_gs_gap_v01.py"
+    },
+    {
+      "role": "iteration464/TRIANGLE3_CANDIDATE_SCOPE_V01.json",
+      "file": "inputs/iteration464/TRIANGLE3_CANDIDATE_SCOPE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\TRIANGLE3_CANDIDATE_SCOPE_V01.json",
+      "bytes": 4843,
+      "sha256": "65353f48af8fd8cb2260c66a0ec8f5ae8ab1f34b398582b772264202ea447452",
+      "kind": "immutable",
+      "stage": "iteration464/TRIANGLE3_CANDIDATE_SCOPE_V01.json"
+    },
+    {
+      "role": "iteration464/TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+      "file": "inputs/iteration464/TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+      "bytes": 5556,
+      "sha256": "55ae4c3b7cec7d7f5d291c7bb2b37df579cf2b040ad5c44006b53b9141ba6efa",
+      "kind": "immutable",
+      "stage": "iteration464/TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json"
+    },
+    {
+      "role": "iteration464/SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration464/SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 42302,
+      "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+      "kind": "immutable",
+      "stage": "iteration464/SOURCE1209_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration464/REMAINING_SOURCE_AUDIT_V01.json",
+      "file": "inputs/iteration464/REMAINING_SOURCE_AUDIT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\REMAINING_SOURCE_AUDIT_V01.json",
+      "bytes": 201200,
+      "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512",
+      "kind": "immutable",
+      "stage": "iteration464/REMAINING_SOURCE_AUDIT_V01.json"
+    },
+    {
+      "role": "iteration464/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "file": "inputs/iteration464/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "bytes": 730524,
+      "sha256": "055045951ca0b4990f697b4d379d61882004b94c79893ff0f019dcb63b604739",
+      "kind": "immutable",
+      "stage": "iteration464/RESIDUAL_SOURCE_PROJECTIONS_V01.json"
+    },
+    {
+      "role": "iteration464/RELATIVE_GS_ROBUST_BOX_V01.json",
+      "file": "inputs/iteration464/RELATIVE_GS_ROBUST_BOX_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\RELATIVE_GS_ROBUST_BOX_V01.json",
+      "bytes": 71528,
+      "sha256": "eb510ae51cc02817ce71178bc88b26fe8cc2b65e45e4d8cac854811fd9e965fd",
+      "kind": "immutable",
+      "stage": "iteration464/RELATIVE_GS_ROBUST_BOX_V01.json"
+    },
+    {
+      "role": "expected/iteration464/TRIANGLE3_INDEPENDENT_STRICT_GS_GAP_CHECK_V01.json",
+      "file": "expected/iteration464/TRIANGLE3_INDEPENDENT_STRICT_GS_GAP_CHECK_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\TRIANGLE3_INDEPENDENT_STRICT_GS_GAP_CHECK_V01.json",
+      "bytes": 3426,
+      "sha256": "35bde2ddc3772b57c3ed7cd5df566842f8f0816f957371e7b14e9a8dcc490d71",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "iteration465/common_v01.py",
+      "file": "inputs/iteration465/common_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\common_v01.py",
+      "bytes": 6332,
+      "sha256": "3c71f2316699f43a130d093b0cd56665ad5918d4cac51d13f1c73c9dd2279efa",
+      "kind": "immutable",
+      "stage": "iteration465/common_v01.py"
+    },
+    {
+      "role": "iteration465/produce_bellman_class_v01.py",
+      "file": "inputs/iteration465/produce_bellman_class_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\produce_bellman_class_v01.py",
+      "bytes": 3066,
+      "sha256": "d2f1b7bc84debbd364bd95dff5f818bf9ef03ee86e748b3f5c87a4b44d3e2475",
+      "kind": "immutable",
+      "stage": "iteration465/produce_bellman_class_v01.py"
+    },
+    {
+      "role": "iteration465/read_bellman_class_v01.py",
+      "file": "inputs/iteration465/read_bellman_class_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\read_bellman_class_v01.py",
+      "bytes": 6018,
+      "sha256": "36ecad2b27b9d3692545f5c1db3c37cb7cfc84a383c91da963d98ff8661dd180",
+      "kind": "immutable",
+      "stage": "iteration465/read_bellman_class_v01.py"
+    },
+    {
+      "role": "iteration465/BELLMAN_CLASS_SCOPE_V01.json",
+      "file": "inputs/iteration465/BELLMAN_CLASS_SCOPE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\BELLMAN_CLASS_SCOPE_V01.json",
+      "bytes": 1088,
+      "sha256": "d06b9e4b2abc820933b12fa13b5dde33dcd36745fbfc3b4de99a5126a1f75c24",
+      "kind": "immutable",
+      "stage": "iteration465/BELLMAN_CLASS_SCOPE_V01.json"
+    },
+    {
+      "role": "iteration465/SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "file": "inputs/iteration465/SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+      "bytes": 42302,
+      "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad",
+      "kind": "immutable",
+      "stage": "iteration465/SOURCE1209_ORIGINAL_FAMILIES_V01.json"
+    },
+    {
+      "role": "iteration465/TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+      "file": "inputs/iteration465/TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+      "bytes": 5556,
+      "sha256": "55ae4c3b7cec7d7f5d291c7bb2b37df579cf2b040ad5c44006b53b9141ba6efa",
+      "kind": "immutable",
+      "stage": "iteration465/TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json"
+    },
+    {
+      "role": "expected/iteration465/CAUSAL_SKIP_BELLMAN_PROOF_V01.json",
+      "file": "expected/iteration465/CAUSAL_SKIP_BELLMAN_PROOF_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\CAUSAL_SKIP_BELLMAN_PROOF_V01.json",
+      "bytes": 486925,
+      "sha256": "c0886b11bd2791469209e444a726128103d3b961bdb601efc28e8a92a70b0ba8",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "expected/iteration465/SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+      "file": "expected/iteration465/SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+      "bytes": 2202,
+      "sha256": "ec0d09f59dba90e76ec0ed5a87fadc1adf44f55bc8eebb5320a4d3fddb93eeb7",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "expected/MAJORITY_RESULT_V01.json",
+      "file": "expected/MAJORITY_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\EXPECTED_MAJORITY_WHOLE_V01.json",
+      "bytes": 749,
+      "sha256": "8b23497b8250c0a35584a6f1fd668101b16731cae94d9a2ba58330013acde5e3",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "expected/GS_COMBINED_SCIENCE_V01.json",
+      "file": "expected/GS_COMBINED_SCIENCE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\EXPECTED_GS_COMBINED_SCIENCE_V01.json",
+      "bytes": 9170,
+      "sha256": "66f48f17a68efd46b9f292dac3109792dacac1b5b6eb8c0de7bcdcfa64527736",
+      "kind": "expected_whole_JSON"
+    },
+    {
+      "role": "combine_gs3_v01.py",
+      "file": "inputs/combine_gs3_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\combine_gs3_v01.py",
+      "bytes": 7936,
+      "sha256": "d7e08b293a64ec4700596c9209dec63b96e34e0bc3d352cd43051f7a9f28f9de",
+      "kind": "immutable",
+      "stage": "combine_gs3_v01.py"
+    },
+    {
+      "role": "docs/GS_SUPPORT3_THEOREM_AND_PROOF_V01.txt",
+      "file": "docs/GS_SUPPORT3_THEOREM_AND_PROOF_V01.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\GS_SUPPORT3_THEOREM_AND_PROOF_V01.txt",
+      "bytes": 8730,
+      "sha256": "074d03f600bdb3c7f9d837f18bc62cf9d508672c9c2b4785650173b8badbcaf8",
+      "kind": "scope_or_proof_document"
+    },
+    {
+      "role": "docs/GS_BOUNDARY_PRIORITY_AND_TRANSFER_AUDIT_V01.txt",
+      "file": "docs/GS_BOUNDARY_PRIORITY_AND_TRANSFER_AUDIT_V01.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\GS_BOUNDARY_PRIORITY_AND_TRANSFER_AUDIT_V01.txt",
+      "bytes": 9939,
+      "sha256": "86caaf2245d08d96a47ce89f426c48d315fa053615eb6986d7798cb210d39de0",
+      "kind": "scope_or_proof_document"
+    },
+    {
+      "role": "docs/GS_BOUNDARY_PRIMARY_POSITIONING_V01.json",
+      "file": "docs/GS_BOUNDARY_PRIMARY_POSITIONING_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\GS_BOUNDARY_PRIMARY_POSITIONING_V01.json",
+      "bytes": 7089,
+      "sha256": "3d3edac8335752eefbf7e3b2218d70e56725195857d625476213ad0d6c418cb3",
+      "kind": "scope_or_proof_document"
+    },
+    {
+      "role": "docs/BELLMAN_SCOPE_PRECISION_V01.json",
+      "file": "docs/BELLMAN_SCOPE_PRECISION_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\BELLMAN_SCOPE_PRECISION_V01.json",
+      "bytes": 1267,
+      "sha256": "8d68cce0fd1057f17ef085f1114823ab1b06a82460e983f6a7ce163e2121a549",
+      "kind": "scope_or_proof_document"
+    },
+    {
+      "role": "docs/COMBINED_GS_SCOPE_V01.json",
+      "file": "docs/COMBINED_GS_SCOPE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\COMBINED_GS_SCOPE_V01.json",
+      "bytes": 3623,
+      "sha256": "665402e3fdb81592ea6eb1de7c127e28a0b4c8321b928c34c7349bdd0b3e238b",
+      "kind": "scope_or_proof_document"
+    },
+    {
+      "role": "docs/FULLCLASS_RELATIVE_BOX_SCOPE_ADDENDUM_V01.json",
+      "file": "docs/FULLCLASS_RELATIVE_BOX_SCOPE_ADDENDUM_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\FULLCLASS_RELATIVE_BOX_SCOPE_ADDENDUM_V01.json",
+      "bytes": 881,
+      "sha256": "8e03787f1f49e58748a034d4c3d85f8f3d7db1cd7f2ae240ba27129953485c0b",
+      "kind": "scope_or_proof_document"
+    },
+    {
+      "role": "packet_child_v01.py",
+      "file": "packet_child_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\packet_child_v01.py",
+      "bytes": 5480,
+      "sha256": "73255572e1514b6006cc932fc982e3c21da4ef257b43111ab7cf4819f831ea67",
+      "kind": "replay_runtime"
+    },
+    {
+      "role": "replay_gs3_v01.py",
+      "file": "replay_gs3_v01.py",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\replay_gs3_v01.py",
+      "bytes": 16228,
+      "sha256": "02e549d98dd2bc7c81f5287ec6f17f8bcb5541698b2b63c69c799e130da69bd7",
+      "kind": "replay_runtime"
+    },
+    {
+      "role": "README.txt",
+      "file": "README.txt",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\README_PACKET_V01.txt",
+      "bytes": 3180,
+      "sha256": "ea8078527dcb87ca87d9c40b6eff52ead2eba804ba38ad9c593c2bff44228753",
+      "kind": "documentation"
+    },
+    {
+      "role": "PUBLIC_METADATA_DERIVATION_V01.json",
+      "file": "PUBLIC_METADATA_DERIVATION_V01.json",
+      "origin_path": "public-derived://PUBLIC_METADATA_DERIVATION_V01.json",
+      "kind": "public_derivation_record",
+      "bytes": 17507,
+      "sha256": "3398e6d56fa434f469c27d9e1bb696a10f6b272d42e29fd8c2e363195c20e3ab"
+    },
+    {
+      "role": "P20_ATTRIBUTION_CORRECTION_V01.json",
+      "file": "P20_ATTRIBUTION_CORRECTION_V01.json",
+      "origin_path": "public-derived://P20_ATTRIBUTION_CORRECTION_V01.json",
+      "kind": "public_derivation_record",
+      "bytes": 1147,
+      "sha256": "19a424a8a5b64406d73ba22362e6da1bcc9e45c1e8d59af97668588c5ca9b769"
+    }
+  ],
+  "outputs": [
+    {
+      "stage": "iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "expected_file": "expected/iteration458/RESIDUAL_SOURCE_PROJECTIONS_V01.json",
+      "raw_byte_exact": true
+    },
+    {
+      "stage": "iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration458\\REMAINING_SOURCE_AUDIT_V01.json",
+      "expected_file": "expected/iteration458/REMAINING_SOURCE_AUDIT_V01.json",
+      "raw_byte_exact": true
+    },
+    {
+      "stage": "iteration464/SOURCE1209_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1209_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1209_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1217_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1217_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1217_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1221_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1221_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1221_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1258_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1258_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1258_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1265_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1265_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1265_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1292_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1292_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1292_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1312_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1312_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1312_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1322_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1322_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1322_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1328_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1328_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1328_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1343_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1343_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1343_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/SOURCE1344_BALANCED_LOWER_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1344_BALANCED_LOWER_RESULT_V01.json",
+      "expected_file": "expected/iteration464/SOURCE1344_BALANCED_LOWER_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration464/TRIANGLE3_INDEPENDENT_STRICT_GS_GAP_CHECK_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\TRIANGLE3_INDEPENDENT_STRICT_GS_GAP_CHECK_V01.json",
+      "expected_file": "expected/iteration464/TRIANGLE3_INDEPENDENT_STRICT_GS_GAP_CHECK_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "iteration465/CAUSAL_SKIP_BELLMAN_PROOF_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\CAUSAL_SKIP_BELLMAN_PROOF_V01.json",
+      "expected_file": "expected/iteration465/CAUSAL_SKIP_BELLMAN_PROOF_V01.json",
+      "raw_byte_exact": true
+    },
+    {
+      "stage": "iteration465/SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+      "expected_file": "expected/iteration465/SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "MAJORITY_RESULT_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\EXPECTED_MAJORITY_WHOLE_V01.json",
+      "expected_file": "expected/MAJORITY_RESULT_V01.json",
+      "raw_byte_exact": false
+    },
+    {
+      "stage": "GS_COMBINED_SCIENCE_V01.json",
+      "origin_path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\EXPECTED_GS_COMBINED_SCIENCE_V01.json",
+      "expected_file": "expected/GS_COMBINED_SCIENCE_V01.json",
+      "raw_byte_exact": false
+    }
+  ],
+  "legacy_audits": [
+    "iteration464/SOURCE1209_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1217_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1221_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1258_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1265_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1292_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1312_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1322_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1328_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1343_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/SOURCE1344_BALANCED_LOWER_INPUTS_V01.json",
+    "iteration464/TRIANGLE3_INDEPENDENT_STRICT_GS_INPUTS_V01.json",
+    "iteration465/SEPARATE_BELLMAN_INPUTS_V01.json"
+  ],
+  "host_guard_sha256": "46c479cce96401622e428b61691f639de4fa756efb32cd14d9f0cce433661fcb",
+  "host_config_sha256": "a6fd1345b1831f59c6d1455ece52ac410c31ac0bca47099e0c59ae798dbee7ad",
+  "mathematical_code_changed": false,
+  "only_provenance_global_pin_label_binding": false,
+  "expected_values_never_staged_in_scientific_work": true,
+  "private_only": false,
+  "priority": "OPEN",
+  "whole_project_complete": false,
+  "provenance_binding": "OriginalpinlabelsplusONEdeclaredinherited441acceptancefingerprintbridge;actualderivedbytesseparatelychecked;allmathsourcebyteexact",
+  "public_candidate": true
+}

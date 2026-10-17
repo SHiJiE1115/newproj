@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "status": "FROZEN_PRIVATE_COMBINED_GS_MIN3_RELOCATED_PROOF_BEFORE_NEW_RUN",
+  "previous_turn": {
+    "turn": 465,
+    "classification": "progress",
+    "closure": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\CLOSURE_V01.json",
+      "bytes": 19637,
+      "sha256": "4fb2a90872c3e73fb933a87599f37961b97992939b6e01d5f334ac5a2fff45ac"
+    },
+    "actual_exit": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\CLOSE_PRIORITY_REVIEW.PROCESS_TERMINAL.json",
+      "bytes": 314,
+      "sha256": "f5cdc79532b1f9407cdf7483bf82fb13b7cc9dabbe3aab5d5ae1f5bace8c5b55"
+    }
+  },
+  "target": "One extracted/actuallyrerun private combined proof of exactGSrestrictedpositivepairsupportminimum3oncompleteFOUR-querysources/fullcausalSKIPprivateminimax;substantivepaperintegrationafterportability.",
+  "scientific_children": [
+    "Fresh458residualphysical/policycoverageauditfromunchanged441frozendata",
+    "Fresh1345finiteallmonotonecertificatesusing441kernels(noglobalcatalogue/policyregeneration)",
+    "11FractionbalancedGSreadersx144closedroots=1584",
+    "465Bellmanproofregenerationandseparatereader,24orders1602states",
+    "464triangleuppercheckerfullphysicalsourceand504originalpaths",
+    "NewcombinedGS3support/GS/relativeboxcomposer"
+  ],
+  "expected_children": 17,
+  "expected_whole_objects": 18,
+  "transport": "Originalmathematicaltargetfilesremainbyteexact. Explicitwrapperexecutesexactprefixandbodywithdeclaredmetadata-onlypinbindingbeforeinputreads: pinreturnsORIGINpathlabelplusACTUALcurrentfilebytes/SHA. No originpathopen/fallback. Sourcefullbytesandprefix/bodyboundaryaredocumented;mathinstructionsunchanged. WrapperandlegacyIOauditsrecordACTUALpacket/work/runtime paths. No old PID/contextmetadata reinterpretedascurrentexecution.",
+  "fresh_audit_snapshots": "Fresh458audit/projectionmustcomparefullywithfrozenraw/wholeobjects beforeimmutable463dependencysnapshotsareadmittedtolowers. Inheritedglobalcatalogue/fullpolicycoverkeptdistinctfromfresh1345finitekernels/11residualcoverageaudit.",
+  "source_context": "FrozenGS463hypothesisscopeand464candidate/465readerlabelsremainorigincontext;currentresultstatesuniversalGSequalityREFUTED,GSsupportmin3,andoldunrestrictedmin2unchanged. BellmanmetadataaddendumclarifiesA39profileusedforBayesupperonly.",
+  "comparison": "WholeJSONobjects/canonicalhashesandbyteexactregeneratedBellmanproof;no discardedmathematicalfields. CurrentactualPID/exit/CPU/IOreceiptsseparate. Explicit6balancedhistories,allzero/tiefaces,sourceall1356and42864orderedtasks coverage;pointRAuppernotexactRA;relative5parameterGSboxonly.",
+  "private_packet": "Mayretainopaqueoriginprivatepathmetadatafromprior441acceptance;neveropenP1/originpaths. Notpublicupload/privacycertification. Futurepublicderivaterequiresseparatereview.",
+  "runtime": "Pythonstdlibraryscientificcores,isolated-B/assertionsenabled;actualrelocationtestedonWindows. No untestedcross-OSclaim.",
+  "bounds": {
+    "packet_uncompressed_max_bytes": 33554432,
+    "C_expected_bytes_per_phase": 1048576,
+    "D_expected_bytes_per_phase": 67108864,
+    "no_C_fallback": true
+  },
+  "storage": "Freshoriginal10GiBguardbeforehostphasesandmathchildren;verifiedDGUID24e3d2ec-f154-46da-95c6-924f89aa02d0;allnewdataandtempD.",
+  "avoid": "No LP,newfee/priorgrid,globalcatalogueregen,modelAPI,oldhostedrerun,humanlabels,cosmeticPDF,publicreleaseorsubmission.",
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "author_facts": "Deferred;no request",
+  "whole_project_complete": false
+}

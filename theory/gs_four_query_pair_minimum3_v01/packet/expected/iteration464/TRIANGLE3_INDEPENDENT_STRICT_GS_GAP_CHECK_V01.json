@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "status": "PASS_STRICT_QUADRATIC_GS_GAP_FULL_ORIGINAL32P40A7WORLDS",
+  "scope": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\TRIANGLE3_CANDIDATE_SCOPE_V01.json",
+    "bytes": 4843,
+    "sha256": "65353f48af8fd8cb2260c66a0ec8f5ae8ab1f34b398582b772264202ea447452"
+  },
+  "source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "certificate": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+    "bytes": 5556,
+    "sha256": "55ae4c3b7cec7d7f5d291c7bb2b37df579cf2b040ad5c44006b53b9141ba6efa"
+  },
+  "costs_directly_reconstructed": [
+    0,
+    7,
+    12,
+    19,
+    11,
+    18,
+    19,
+    26,
+    14,
+    21,
+    22,
+    29,
+    21,
+    28,
+    25,
+    32
+  ],
+  "GS_submodular_set_inequalities": 256,
+  "GS_discrete_exchange_tests": 256,
+  "GS_all_triangle_minimum_tests": 4,
+  "physical_prior_coarsenings": 10,
+  "physical_supports": [
+    {
+      "label": 0,
+      "words": [
+        1,
+        7,
+        9
+      ],
+      "valid_partitions": 3
+    },
+    {
+      "label": 1,
+      "words": [
+        0,
+        4,
+        11,
+        15
+      ],
+      "valid_partitions": 5
+    }
+  ],
+  "original_paths_checked": 504,
+  "inherited_exhaustive_policy_completeness": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration464\\REMAINING_SOURCE_AUDIT_V01.json",
+    "bytes": 201200,
+    "sha256": "c1ed5975cfce3f89e83194e6b69add4152a564b8a51ce73fa4271787a5d27512"
+  },
+  "P_exact_minimax": "1025/47",
+  "adaptive_minimax_upper": "324871/14899",
+  "strict_minimax_gap_lower_bound": "54/14899",
+  "exact_adaptive_minimax_claimed": false,
+  "all32P_expectations_verified": [
+    "1333/47",
+    "1426/47",
+    "1297/47",
+    "1291/47",
+    "1291/47",
+    "1354/47",
+    "1025/47",
+    "1118/47",
+    "1297/47",
+    "2369/94",
+    "2195/94",
+    "2141/94",
+    "1354/47",
+    "2255/94",
+    "2503/94",
+    "1046/47",
+    "1139/47",
+    "1052/47",
+    "1025/47",
+    "1025/47",
+    "1025/47",
+    "22",
+    "22",
+    "1127/47",
+    "1088/47",
+    "1088/47",
+    "1061/47",
+    "1061/47",
+    "1043/47",
+    "1136/47",
+    "1049/47",
+    "22"
+  ],
+  "all7P_upper_verified": [
+    "989/47",
+    "989/47",
+    "983/47",
+    "1025/47",
+    "1025/47",
+    "1025/47",
+    "1025/47"
+  ],
+  "all7adaptive_upper_verified": [
+    "319165/14899",
+    "319165/14899",
+    "312151/14899",
+    "324871/14899",
+    "324871/14899",
+    "324871/14899",
+    "324871/14899"
+  ],
+  "fixed_prior_consequence": {
+    "same_prior_as_P_lower": true,
+    "A_index": 39,
+    "A_expectation": "1022/47",
+    "P_Bayes_exact": "1025/47",
+    "Bayes_gap_lower_bound": "3/47",
+    "not_the_same_as_worst_input_gain": true,
+    "zero_prior_worlds_still_zero_error_correctness_obligations": true
+  },
+  "one_analytic_candidate_not_numerical_cost_prior_grid_or_LP": true,
+  "producer_code_or_diagnostic_read": false,
+  "same_agent_internal_not_external_human_or_formal_review": true,
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "whole_project_complete": false
+}

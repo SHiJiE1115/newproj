@@ -1,0 +1,164 @@
+BOUNDED GS-BOUNDARY PRIORITY AND EXACT REDUCTION AUDIT
+Internal AI reading and exact programs; bibliographic priority remains OPEN.
+OrdinaryCCFB/C target; no acceptance forecast or application-benefit claim.
+
+1. The claim that can be carried forward
+
+Within complete FOUR-query equality promises and nonnegative quadratic
+pair-coverage final-set costs, requiring GS changes the minimum positive-pair
+support that permits private zero-error worst-input adaptivity advantage from
+the unrestricted value2to the exact restricted value3. The comparator fixes
+a global order per private seed and permits causal permanent SKIP and stop.
+The explicit3-edge GS witness has positive individual charges, RP=1025/47,
+RA<=324871/14899, gap>=54/14899, and a five-parameter relative GS robustness
+box. RA's exact value is not claimed. Current public V24 is unchanged.
+
+The candidate contribution is this precise bounded source/cost/comparator
+boundary, not generic GS adaptivity advantage or a new shared-cost model.
+Counting named pair fees is intrinsic inside the quadratic pair-coverage
+class: w_ij=F({i})+F({j})-F({i,j}); then c_i=F({i})-sum_j w_ij.
+Allowing other higher-arity cost representations changes that counting question.
+
+2. Existing generic adaptivity results must be credited
+
+Nielsen/Rohwedder/Schewior, APPROX2025, Theorem1:
+https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.APPROX/RANDOM.2025.26
+The official model uses independent nondegenerate bits, additive testing costs,
+and expected cost to evaluate k-of-n. The theorem gives gap exactly2.
+Additive costs are GS, so 'GS can have an adaptivity gap' is already a generic
+phenomenon. Hellerstein/Kletenik/Liu/Witter arXiv2208.03810v1, Section1/Table1,
+is further existing SBFE adaptivity-gap literature, not new territory here.
+https://arxiv.org/abs/2208.03810
+
+The apparent comparator difference cannot be used carelessly. In a full-cube
+threshold, every untested variable at every mixed partial state is pivotal:
+complete the other bits with exactly k-currentones-1 additional ones. The two
+inputs differing only at that skipped bit require opposite answers. A permanent
+SKIP would make both indistinguishable. Thus our strong SKIP comparator reduces
+to prefix-and-stop in that setting. The separate program checks261explicit
+pivotal pairs across135mixed partial states for n=3,4; the general argument is
+the one just given. Generic GS separation is not saved as a novelty claim by
+renaming the fixed-order comparator.
+
+For the exact source boundary, literal full-cube threshold copies also fail:
+interior k-of-n positive inputs of weightskcan have an AND-meet of weightk-1.
+Complete prior equivalence fibres are meet-closed: intersect any two permitted
+equivalence relations; SAME/DIFFERENT priors remain satisfied and queried SAME
+bits are intersected coordinatewise. Query permutations commute with this
+operation, and swapping labels leaves one fibre nonclosed. All108query-
+permutation/labelswap toy controls confirm the obstruction. This excludes only
+the stated literal-copy route, not nonlinear or additional-query encodings.
+It does not establish literature priority or rule out every possible reduction.
+
+3. GS structure itself is standard
+
+Hajek, Substitute Valuations: Generation and Structure, arXiv0712.3870v3:
+https://arxiv.org/abs/0712.3870
+Definition3/Proposition4 onPDFpages5--6state the S3/submodular characterization,
+crediting earlier work. The interaction-function discussion explains the double-
+minimum condition. Our quadratic specialization and hierarchy cone geometry
+are standard tools, not a separate new characterization claim. The paper's
+full four-good GS parameterization is larger than our quadratic cost subclass.
+
+The new example also has the standard form
+ F(S)=sum_{i in S}c_i+4min(|S intersectK|,1)+4min(|S intersectK|,2), K={1,2,3}.
+That is modular cost plus two nested uniform-matroid rank terms. All16mask
+identities were checked. This representation does not change the theorem's
+explicit count of positive QUADRATIC PAIR weights and is not claimed novel.
+
+4. Pandora comparison: actual value obstruction
+
+Berger/Ezra/Feldman/Fusco, arXiv2303.01078v1, Section2/Theorem4.1/AppendixC:
+https://arxiv.org/html/2303.01078v1
+Its independent nonnegative rewards, maximum-observed-reward-minus-cost
+objective and fixed-prefix strategy admit an optimal fixed order for submodular
+cost. ArXiv currently lists onlyv1. The publisher abstract agrees with the
+broad structural result; full publisherPDF was unavailable403 and is NOT
+silently treated as identical to the preprint body.
+https://pubsonline.informs.org/doi/10.1287/moor.2023.0248
+
+Our certified prior has BP=1025/47, whereas A39costs1022/47, so BA<BP. A
+target satisfying BOTH UA=K-BA and Ufixedprefix=K-BP with ONE common offsetK
+would contradict that Pandora theorem's equality of the two target optima.
+Consequently no reduction with all these exact optimum-preserving properties
+can exist for this instance. This is a bounded mathematical obstruction,
+stronger than noticing different words, but not an impossibility of all other
+reductions or an exhaustive priority certificate. It is no counterexample to
+the cited Pandora theorem, whose assumptions and objective remain intact.
+
+The literal prior is also not a product distribution: its four bit marginals
+are(1,44/47,75/94,38/47). Their product assigns mass513/207646to legalword1,
+which actually has prior mass0. Correlation alone cannot dismiss the correlated
+Pandora approximation literature; that comparison is retained explicitly in
+the earlier462primary ledger. No new blanket non-transfer claim is made.
+
+5. An actual positive preserving reduction
+
+For each of the three pair resources add TWO constant-zero incidence tickets,
+one immediately before each incident original query in its expanded order.
+There are10actions and20records. Either ticket activates its resource; every
+resource containing a query must be active before that query can be bought.
+Eligibility is AND across resources, OR among copies of each resource.
+The original query still reveals exactly its old bit. Tickets reveal nothing.
+
+Every original adaptive or priority policy buys exactly one ticket at its
+first touch of each resource. All72original policies and504input paths have
+identical original query transcripts, output labels and all7symbolic charge
+coefficients(3528coefficient equalities), including the full expanded priority
+order. Producer checks all2048ten-bit physical answerwords for both labels;
+the separate extension argument uses fresh forced-DIFFERENT record pairs and
+all10old prior-block coarsenings. Complete projected support is exactly oldW
+times six fixed zeros.
+
+Conversely erase constant-ticket actions from any legal target policy, simulate
+their known internal state, and keep remaining original queries. Each touched
+resource already paid at least one ticket, so original cost is no higher.
+Deleting ticket positions preserves the target global-order property. Hence
+A and P optima separately agree between original and this EXPLICITLY
+PREREQUISITE-CONSTRAINED additive target, for every prior and private worst-input
+expectation. This is standard activation modeling, not an unconstrained
+four-query additive reduction. No exhaustive10!-order target search is claimed.
+
+6. Adaptive-submodular utility theorems
+
+Golovin/Krause, arXiv1003.3967v5, Definition3/Theorem5/Sections2.4and15.1:
+https://arxiv.org/html/1003.3967v5
+Adaptive submodularity concerns a utility's posterior conditional marginal
+benefits. The cited nonuniform-cost extension uses modular item costs, and the
+named theorem gives an adaptive greedy approximation guarantee. These facts
+do not give exact fixed-order collapse from a GS condition on fees alone.
+We have not proved that no suitable adaptive-submodular utility encoding exists;
+constructing one and checking all conditions is an additional transfer task.
+
+7. Full-class upper-certificate strengthening
+
+The key BP=1025/47claim no longer needs the cached32profiles' exhaustive-
+coverage premise. A new direct Bellman certificate covers all24global orders
+and1602states(V,k,S). It chooses between causal SKIP and TAKE, adds the exact
+prior mass times final-set cost increment, and requires both outcome branches
+to remain feasible. It includes noninformative queries. A mixed terminal state
+is infeasible EVEN AT ZERO PRIOR MASS; all7worlds remain correctness obligations.
+The separate Fraction reader verifies every recurrence, including110zero-mass
+mixed states, and obtains the same BP. Private Bayes randomization cannot beat
+the best pure continuation. Old explicit P and A mixtures still verify the
+full7world minimax upper/lower bounds. This strengthens the example and the
+value-offset obstruction without rebuilding any global policy/source catalogue.
+
+8. Conclusion and next work
+
+No direct subsumption of the precise GSrestricted supportminimum3was
+established in these inspected named results and actual transfer attempts.
+This bounded finding is not proof of first-in-literature. The responsible
+contribution wording is the exact complete-four-query boundary with its
+explicit strongest comparator, source/cost scope and robust constructed witness.
+No claim of a new generic GS gap, cost model, GS geometry or Bellman/minimax
+technique should be made.
+
+Next prepare ONE relocatable combined proof with the new full-class Bellman
+module, upper/robustness certificates, fresh1584cone lower proof and inherited
+1345monotone/source-classification dependencies explicitly separated. Then
+integrate the substantive result into the paper with calibrated related work.
+PublicV24 remains unchanged; all proofs/negative model results/P1/source/
+execution/archive identities remain distinct. No modelAPI, LP, numeric fee/prior
+grid, global catalogue regeneration, human labels, PDF, public upload or
+submission. Author facts/final approval remain deferred; no user action needed.

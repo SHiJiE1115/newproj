@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "status": "FROZEN_BEFORE_COMBINED_SCIENTIFIC_EXECUTION",
+  "parent_scope": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration466\\COMBINED_GS_SCOPE_V01.json",
+    "bytes": 3623,
+    "sha256": "665402e3fdb81592ea6eb1de7c127e28a0b4c8321b928c34c7349bdd0b3e238b"
+  },
+  "strengthening": "Forall16purchasedsetsinthefixedtriangle5parameterfamily,coefficientL1<=7. HenceANYzeroerrorPpolicy(piBayes)andthefixedadaptivewitnessare7Lipschitz. FullclassBellmanBP(center)minusVA(center)minus14r>=gap/2 at r=gap/28. No cachedPexhaustivenessneededforrelativeboxlower.",
+  "checks": "All16setcoefficients;exactcenterfees;radius27/208586;gap27/14899;224oldaffineboundscrosscheckonly.",
+  "not_claimed": "NewLipschitztheory;arbitraryindependent10parameterGSneighborhood;exactRA;priorityclearance",
+  "priority": "OPEN",
+  "whole_project_complete": false
+}

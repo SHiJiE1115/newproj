@@ -1,0 +1,152 @@
+EXACT GS-RESTRICTED PAIR-SUPPORT MINIMUM THREE
+Internal computer-assisted result; bibliographic priority OPEN.
+Current public V24 is unchanged; this new result is not yet in that paper.
+
+THEOREM (four queries; quadratic pair-coverage GS costs).
+Consider complete labelled equivalence-partition fibres for four fixed indexed
+pair-equality queries, with unrestricted class count. Both policy classes must
+classify every legal input with zero error and buy exactly the same available
+query answers. A may choose queries adaptively. P fixes a global order per
+private, input-independent seed and may causally permanently SKIP and stop.
+Let RA,RP minimize the worst-input expected final purchased-set cost.
+
+Let F(S)=sum_{i in S}c_i+sum_{i<j}w_ij 1{S intersects{i,j}}, c_i,w_ij>=0,
+and suppose F is gross substitutes (GS). For this quadratic class the standard
+local GS criterion says each triangle's minimum w_ij is attained at least twice.
+The least number of POSITIVE PAIR WEIGHTS for which some complete four-query
+source has RA<RP is exactly THREE. This remains true when all individual
+charges are required strictly positive. This counts named pair-resource fees;
+it is not a statement about arbitrary higher-arity resource representations.
+
+1. Lower bound: at most two positive pair weights
+
+The positive-weight relation is transitive: w_ij,w_jk>0 forces w_ik>0, otherwise
+the triangle has a unique zero minimum. Positive-support components therefore
+are cliques. A graph with at most two positive edges has either a single edge
+or two disjoint edges. The64support patterns were independently checked:
+15are disjoint-clique patterns and10have at most two edges.
+
+Take any two disjoint pairs. Rank their weights h1>=h2>=0 and set h3=0.
+They embed in the balanced four-leaf hierarchy with first pair height h1,
+second pair height h2 and final merge height0. The3pair partitions and2weight
+orders are exactly6ranked histories, IDs2,5,8,10,13,15. All24closed individual-
+price orders cover arbitrary c_i>=0. Ties and zeros lie on included faces.
+
+The previously accepted complete-source classification has1356source orbits
+(42864orderedtasks). Its1345cases equal for ALL normalized nonnegative
+monotone set costs are inherited, together with the global catalogue and full
+policy-completeness premises. They are not falsely counted as freshly rebuilt.
+For each of the11residuals, this turn actually executes the accepted Fraction
+reader restricted to the144balanced-root cones. All1584roots close, with
+2074nodes,4330508exact inequalities and6957original policy paths. The reader
+reconstructs fees from merge blocks, checks exact cone clipping, common weak
+game reductions, and priority lifts on ALL ORIGINAL rows. There are no open
+lower-bound regions. Query/label transport is inherited from the accepted
+source audit and the full10-coefficient permutation identities of463.
+
+Hence RA=RP for every complete four-query source with at most two positive
+quadratic-GS pair weights. This is a worst-input minimax statement; it does
+not assert Bayes equality under every prior.
+
+2. Complete physical upper example
+
+Queries q_i compare records(2i,2i+1), i=0,1,2,3; SAME returns1.
+Label0 prior SAME partition [0,0,0,1,0,1,0,2], DIFFERENT(3,7).
+Label1 prior SAME partition [0,1,0,1,0,2,0,1], no DIFFERENT constraint.
+Every partition satisfying the appropriate prior is admitted: these are
+complete unrestricted-class fibres, not a cherry-picked arbitrary promise.
+Their exact supports are W0={1,7,9},W1={0,4,11,15}. Source1209 contains all
+7worlds. The separate reader enumerates all prior-block coarsenings, checks
+the supports, and traces504paths of the original40A/32P retained families.
+Their exhaustive monotone-cost policy-completeness proof is explicitly inherited.
+
+Set c=(7,4,3,6), w12=w13=w23=4, and w01=w02=w03=0.
+All individual charges are strictly positive; exactly three pair fees are
+positive. The cost is GS: the internal triangle has equal weights4and every
+triangle containing0has two zero weights. The separate reader additionally
+checks all256set submodularity inequalities and256discrete GS exchanges.
+For masks0through15 the costs are
+ [0,7,12,19,11,18,19,26,14,21,22,29,21,28,25,32].
+
+On W=(0,1,4,7,9,11,15), use prior
+ (0,0,0,9/47,3/47,13/94,57/94).
+All32original P policies have expected cost at least1025/47 under this prior.
+The P mixture on original columns(6,18,19,20) with probabilities
+ (14,6,24,3)/47
+has costs(989,989,983,1025,1025,1025,1025)/47 on all7worlds. Thus
+ RP=1025/47, by exact matching lower and upper certificates.
+
+Define trees as [query,answer0child,answer1child], leaves are output labels.
+The relevant policies are explicitly
+ P6: order[1,0,2,3], tree[1,[0,1,0],[3,0,1]];
+ P18: order[2,3,1,0], tree[2,[1,[0,1,0],1],[3,[1,1,0],1]];
+ P19: order[2,3,0,1], tree[3,[0,1,0],[1,0,1]];
+ P20: order[3,0,2,1], tree[3,[0,1,0],[2,[1,0,1],1]];
+ A39: tree[2,[1,[3,[0,1,0],0],1],[3,[1,1,0],1]].
+These are legal/correct on every original world, including zero-prior ones.
+
+The adaptive mixture uses these four P policies plus A39, with probabilities
+ (4240,1092,7752,969,846)/14899.
+Its7world costs are
+ (319165,319165,312151,324871,324871,324871,324871)/14899.
+Therefore
+ RA <=324871/14899 <1025/47=RP,
+ RP-RA >=54/14899 >0.
+The exact adaptive minimax value is NOT claimed. No LP or optimization oracle
+was used: only fixed5x5rational systems and full original-game inequalities.
+The reduced5x6game alone was not accepted as a gap certificate.
+
+The fixed prior also yields a distinct Bayes consequence: A39alone costs
+1022/47 in expectation, versus P Bayes optimum1025/47, a gap at least3/47.
+That Bayes comparison is not the same as the worst-input bound above.
+
+3. Non-isolated relative GS family
+
+Vary five parameters(c0,c1,c2,c3,v) around(7,4,3,6,4), keeping
+w12=w13=w23=v and all edges incident to0zero. In the CLOSED Linfinity box
+of radius27/208586, all individual charges and v stay positive and the costs
+remain GS with exactly3positive pair weights. Keep the same prior and same
+adaptive mixture. Every prior expected P cost minus every adaptive world cost
+is affine. All224such affine interval inequalities certify
+ RP-RA >=27/14899 >0 throughout the box.
+The producer uses coefficient sensitivity bounds; the separate composite check
+recomputes exact closed-box interval minima. There is no sampled price grid.
+This is a five-dimensional relative GS family, not a claim that arbitrary
+independent perturbations of all six weights preserve GS.
+
+4. Discovery, dependencies and limits
+
+The former universal hypothesis 'all quadratic GS costs imply RA=RP through
+four queries' is REFUTED. Its463partial equality regions remain valid. There
+is no reason to finish an equality proof of the refuted universal statement;
+the unclassified regions are not all asserted to be gaps.
+
+The first deliberately derived6-edge GS candidate also passes the full-game
+checker: RP=197/8,RA<=42143/1712,gap>=15/1712. The3-edge example then came
+from an analytic face/saddle calculation. These are mathematical discoveries,
+not blinded statistical experiments or an unreported fee/prior scan.
+
+Older V24 Theorem30 still has unrestricted positive-pair minimum TWO. The new
+minimum THREE is restricted to QUADRATIC GS costs and does not replace or
+contradict the old theorem. It is not a result for arbitrary GS set functions,
+larger menus, every3-edge instance, historical execution authenticity or actual
+academic-evaluation performance. The small constructed advantage is a strict
+mathematical separation, not an empirical effect size or an acceptance forecast.
+
+GS geometry, finite minimax, Cramer systems and affine robustness are standard
+tools, credited in the existing primary-theorem audit462. This result does not
+contradict independent-reward utility-search Pandora theorems. A new strict
+source/information/cost/objective/comparator-preserving priority audit is still
+needed. Bibliographic priority remains OPEN; application gain NOT_ESTABLISHED.
+
+The checks are different programs by the same AI, not an external independent
+implementation, human author review or proof assistant. All true exits and
+hashes are retained. An initial composite QA run failed because a helper
+received a string path rather than Path; the corrected V02 changes only those
+two helper conversions, and the failed run is preserved. No scientific data,
+fees, policies, proof scope or inequalities were changed by that repair.
+
+Public V24 and all prior P1/negative model/native fixed-baseline/source/
+execution/archive identities remain unchanged. New artifacts are on verifiedD
+with original10GiB preflights. No model API, human labels, PDF, public upload
+or submission is made. Actual-author facts/final approval remain deferred.

@@ -1,0 +1,221 @@
+\section{A total-function completion obstruction and AND--OR comparison}
+\label{app:andor-transfer}
+These supporting results fix the physical queries and unit prices. We
+prove an exact minimum over every compatible total Boolean function on
+one complete source, then examine a specific transfer of Ito--Suzuki's
+total-tree result~\cite{itosuzuki2025collapse}. Other reductions and
+changes of menu or cost remain outside these claims.
+
+\subsection{A complete source and a compatible total function}
+Use eight records and the four indexed queries
+$q_i=(2i,2i+1)$, $i=0,1,2,3$. Under label zero impose the SAME partition
+$(0,1,0,1,0,2,0,3)$ and $\DIFF(5,7)$. Under label one impose the SAME
+partition $(0,0,0,1,0,1,0,1)$ and no DIFFERENT constraint.
+Retain every satisfying equivalence partition. Encode a word by
+$w=\sum_{i=0}^{3}2^i x_i$. The full answer supports are
+\[
+ W_0=\{0,3,4,7,8,11\},\qquad W_1=\{1,15\}.
+\]
+Indeed, the first prior gives $x_0=x_1$ and forbids $x_2=x_3=1$;
+the second gives $x_0=1$ and $x_1=x_2=x_3$. Assigning each remaining
+block a distinct fresh class proves sufficiency. This is the existing complete eight-input source in the four-query proof.
+
+The total function
+\[
+ g(x)=(x_0\wedge\neg x_1)\vee(x_2\wedge x_3)
+\]
+is compatible. In variables $(x_0,1-x_1,x_2,x_3)$ this is a positive AND--OR tree.
+Negation decodes the same paid query; it is not a physical symmetry in
+the source catalogue.
+
+\subsection{The forced hard-product distribution leaves the promise}
+Let $S$ be uniform on the eight original words, and let $L,R$ be the two
+AND child values of $g$. Their joint law is
+\[
+ \delta(0,0)=\frac34,\quad
+ \delta(1,0)=\delta(0,1)=\frac18,\quad\delta(1,1)=0.
+\]
+For a unit-cost AND of two literals, a distribution conditional on
+output zero assigns probabilities $p,q$ to the two single-zero assignments
+and $r$ to the double-zero assignment. The two directional orders cost
+$1+q$ and $1+p$, so
+\[
+ \min(1+p,1+q)\le 1+\frac{p+q}{2}
+      =\frac32-\frac r2\le\frac32.
+\]
+The unique least-favourable distribution has $r=0$, $p=q=1/2$;
+conditional on output one there is only one assignment. Thus the hard
+child laws required in the cited Lemma~4.3 are forced in this example:
+the left zero law is uniform on actual bits $00,11$, and the right
+zero law is uniform on $10,01$. Their one laws are $10$ and $11$,
+respectively.
+
+Combining these laws independently conditional on the child values,
+as in the cited Definition~4.1, gives the following positive masses:
+\[
+ S^\delta(w)=
+ \begin{cases}
+  3/16,&w\in\{4,7,8,11\},\\
+  1/16,&w\in\{5,9,12,15\}.
+ \end{cases}
+\]
+Words $5,9,12\notin W_0\cup W_1$ carry exactly $3/16$ mass
+outside the original promise. Uniqueness forces this escape for the
+specified completion, $\delta$ and hard-child requirement. The product
+remains legal on the cited paper's full cube; its preservation of this
+relational promise would be an extra, false premise.
+
+\subsection{The values of this promise and this completion differ}
+At unit prices, the existing four-query certificate specializes to
+$R_{\mathcal A}=R_{\mathcal P}=5/2$ on this source. This value also has
+a short direct proof. Opposite-label single-bit neighbours force queries
+$0,1$ on word $1$ and $2,3$ on word $15$. The first query of any correct
+tree is therefore outside the mandatory pair of one of these words.
+Its cost is at least three there and at least two on the other word.
+The prior uniform on $1,15$ gives lower $5/2$, including for mixtures.
+Zero-prior inputs remain required for correctness.
+
+For the upper bound let $N_i(L,R)$ query $i$ and take $L,R$ on answers
+zero and one, respectively. Mix the two legal priority trees
+\[
+ \begin{split}
+ T_1&=N_1\bigl(N_0(0,1),N_2(0,N_3(0,1))\bigr),\\
+ T_2&=N_2\bigl(N_1(N_0(0,1),0),N_3(0,1)\bigr)
+ \end{split}
+\]
+equally, with orders $(1,0,2,3)$ and $(2,1,0,3)$. On words
+$(0,1,3,4,7,8,11,15)$ their costs are $(2,2,2,2,3,2,2,3)$ and
+$(3,3,2,2,2,3,2,2)$, so every expected cost is at most $5/2$.
+These are the existing policies $P_5,P_{14}$ on a certified tie face;
+no new minimax solve is used.
+
+For the specified total $g$, both full-cube values equal $3$.
+For the lower bound give words $4,7,8,11$ equal probability. Independently
+in each child, the unique zero literal has a uniformly random position.
+Full-cube correctness requires finding a zero in each AND. The first
+query in either child costs one, and with probability $1/2$ forces its
+second query, even after observations in the other independent child.
+Hence every adaptive algorithm has expected cost at least $3$.
+The eight directional seeds uniformly order the root's children and each
+child's leaves. When both children are false, each costs at most $3/2$
+in expectation; when both are true, cost is $2$. When exactly one is true,
+the uniform root order gives at most $(2+(3/2+2))/2=11/4$. Thus the
+full-cube priority upper bound is $3$.
+Restriction gives a valid but non-sharp promise upper bound. The next
+subsection proves that the full-cube minimum remains $3$ over every
+compatible total function on this same menu, including nonunate ones.
+
+\subsection{The minimum over all compatible total functions}
+\label{sec:unit-common-completion}
+Let $W=W_0\cup W_1$ be this eight-word promise. Write $\Comp(W)$ for
+all compatible total Boolean functions on the same four coordinates.
+For $f\in\Comp(W)$, $R_{\mathcal C}(f;\mathbf1)$ requires correctness
+on the full cube; every seed computes the same $f$. The notation
+$R_{\mathcal C}(W;\mathbf1)$ charges only the original promise.
+
+\begin{proposition}[Exact unit-cost common-completion minimum]
+\label{prop:unit-common-completion}
+On this complete source, with unit query prices and zero-error
+input-independent private randomness,
+\[
+ \begin{aligned}
+ \min_{f\in\Comp(W)}R_{\mathcal A}(f;\mathbf1)
+ &=\min_{f\in\Comp(W)}R_{\mathcal P}(f;\mathbf1)=3,\\
+ R_{\mathcal A}(W;\mathbf1)&=R_{\mathcal P}(W;\mathbf1)=\frac52.
+ \end{aligned}
+\]
+The minima include nonunate functions. Thus the common-total-completion
+minimum is exactly $6/5$ times the promise value on this fixed source.
+\end{proposition}
+\begin{proof}
+The promise value and the full-cube upper bound $3$ for the displayed
+$g$ were proved above. We prove that every compatible total $f$ has
+$R_{\mathcal A}(f;\mathbf1)\ge3$.
+
+Let $w^{(q)}$ denote word $w$ with coordinate $q$ toggled, and define
+$s_f(w)=|\{q:f(w)\ne f(w^{(q)})\}|$. If these labels differ, any
+deterministic tree computing $f$ must query $q$ on $w$: otherwise both
+inputs have the same purchased transcript and output. Therefore every
+zero-error seed costs at least $s_f(w)$ on that same input, and
+\[
+ R_{\mathcal A}(f;\mathbf1)\ge\max_w s_f(w).
+\]
+For an arbitrary seed probability space, discard the finite union of
+erroneous null seed sets over all $16$ inputs first. This preserves
+expected costs. The sensitivity lower bound is standard decision-tree
+reasoning; no new general lower-bound method is proposed.
+
+Suppose all sensitivities are at most two. The eight original labels
+then force every other value by the following six implications.
+\begin{enumerate}
+ \item Word $1$ has value one and its neighbours $0,3$ have value zero.
+ Its other neighbours $5,9$ must have value one.
+ \item Word $15$ has value one and neighbours $7,11$ have value zero.
+ Its other neighbours $13,14$ must have value one.
+ \item Word $7$ has value zero and neighbours $5,15$ now have value one.
+ Its neighbour $6$ must have value zero.
+ \item Word $11$ has value zero and neighbours $9,15$ now have value one.
+ Its neighbour $10$ must have value zero.
+ \item The four neighbours $0,3,6,10$ of word $2$ all have value zero.
+ Value one at $2$ would give sensitivity four, so $f(2)=0$.
+ \item Word $14$ now has value one and neighbours $6,10$ have value zero.
+ Its neighbour $12$ must have value one.
+\end{enumerate}
+All $16$ values are fixed. Their one-set is
+$\{1,5,9,12,13,14,15\}$, exactly the one-set of $g$. Thus every
+compatible $f\ne g$ has an input with at least three mandatory queries
+and hence randomized value at least three. For $g$ itself, the preceding
+independent-child hard prior gives lower three even though its maximum
+sensitivity is only two. The legal priority upper three for $g$ and
+$R_{\mathcal A}\le R_{\mathcal P}$ complete both minima.
+\end{proof}
+
+This excludes a value-preserving common-total-function route on the
+unchanged menu at these prices. Promise-correct seed trees may have
+different off-promise completions; their value $5/2$ is therefore
+consistent with the common-completion minimum $3$. The off-promise
+words used in the proof are correctness obligations for $f$, not added
+original source inputs. The result gives no unequal-price statement,
+general $6/5$ bound, or change to the five-to-seven randomized additive
+adaptive/priority interval. Generic completion phenomena and methods
+remain established context; exact literature priority is not certified.
+
+\subsection{Depth-first and global-order sets are incomparable}
+For $h=(x_0\wedge x_1)\vee(x_2\wedge x_3)$, global order $(0,2,1,3)$
+is a legal priority policy with short-circuit skips. Its prefix $(0,2,1)$
+on the all-one input interleaves unfinished children, violating depth-firstness.
+
+Conversely, query $0$ first. If it is zero, evaluate the other child in
+order $(2,3)$. If it is one, query $1$; on a zero answer evaluate the
+other child in order $(3,2)$, and otherwise stop with one. Short-circuit
+each AND. This policy is depth-first and correct on all $16$ words.
+At words $0,4$ its paid masks are $5,13$: purchasing $3$ depends on the
+answer at $2$, and these words differ only at $2$. Any causal priority
+policy with this entire paid-set vector must put $2$ before $3$.
+At words $1,9$ the masks are $11,15$, forcing $3$ before $2$ by the same
+argument. No global order has this vector. This statement concerns a
+specific policy vector; it does not assert unequal class optima for $h$.
+
+Incomparability does not contradict the valid unit-cost total-domain chain
+\[
+ R_{\mathcal A}\le R_{\mathcal P}\le R_{\rm dir}=R_{\rm DF},
+\]
+because the last comparison uses the smaller directional embedding and
+the cited value theorem, rather than a depth-first/priority inclusion.
+A sufficient transfer route to a promise $W$ would supply a compatible
+total tree $T$ on the same menu/prices, a valid directional/depth-first
+equality at those prices, and $R_{\rm DF}(T)\le R_{\mathcal A}(W)$.
+The resulting sandwich proves equality on $W$. On our unit-cost source,
+Proposition~\ref{prop:unit-common-completion} rules out that sharp route
+through any compatible total tree on the unchanged menu. Other
+reductions and changes of the information or cost contract remain open.
+
+\paragraph*{Verification scope.}
+Two implementations reconstruct the complete source and check all
+$16$ product masses, the policy witnesses and the precedence cycle.
+The analytic arguments establish the hard-child uniqueness and lower
+bounds. The six fixed sensitivity implications were additionally checked
+without enumerating or optimizing completions. Their universal-policy
+lower bound is the written proof, rather than a conclusion from fixtures.
+These checks establish neither human review, formal certification,
+literature priority nor natural application gain.

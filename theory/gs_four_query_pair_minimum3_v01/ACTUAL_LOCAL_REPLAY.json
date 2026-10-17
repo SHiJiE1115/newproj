@@ -1,0 +1,411 @@
+{
+  "schema": 1,
+  "status": "PASS_ACTUAL_EXTRACTED_COMBINED_GS_MINIMUM3_ALL17CHILDREN18WHOLEOBJECTS",
+  "created_utc": "2026-10-17T13:15:52.207650+00:00",
+  "actual_controller_pid": 22700,
+  "packet": "artifact-origin://scratch/iteration468_public_gs_extracted_v01",
+  "work": "artifact-origin://scratch/iteration468_public_gs_work_v01",
+  "out": "artifact-origin://artifacts/iteration468/actual_public_gs_v01",
+  "manifest": {
+    "path": "artifact-origin://scratch/iteration468_public_gs_extracted_v01/MANIFEST_V01.json",
+    "bytes": 64331,
+    "sha256": "03b891e3f8cb40f63d179b8180557e2ce1c986fe4fd19b02456b564b4593914b"
+  },
+  "actual_science": {
+    "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/GS_COMBINED_SCIENCE_V01.json",
+    "bytes": 9170,
+    "sha256": "66f48f17a68efd46b9f292dac3109792dacac1b5b6eb8c0de7bcdcfa64527736"
+  },
+  "children": [
+    {
+      "phase": "RESIDUAL_COVER",
+      "pid": 22804,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/RESIDUAL_COVER.PROCESS_TERMINAL.json",
+        "bytes": 301,
+        "sha256": "7d4c7255936273a5729a7e9c3b77545d66e4860f7b2582f92ca2724c5b9e4040"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/RESIDUAL_COVER.PHYSICAL_IO.json",
+        "bytes": 55361,
+        "sha256": "7ec4cffb56f411f7cfff2cf31ba8dc800f492d5572bd9cab1a45ea9ce6a8cc5a"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration458/audit_remaining_sources_v02.py",
+        "bytes": 14329,
+        "sha256": "c3298f571fa8a8a349ae5cfae34d20f46e0434a72181e8a9d5c7f2dbd4960711"
+      },
+      "source_file_role": "iteration458/audit_remaining_sources_v02.py"
+    },
+    {
+      "phase": "MONOTONE_1345",
+      "pid": 26800,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/MONOTONE_1345.PROCESS_TERMINAL.json",
+        "bytes": 300,
+        "sha256": "2a57ed7856fcfa77cb9e2355a9f3037a13dc577167d378b412e7d83deba13869"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/MONOTONE_1345.PHYSICAL_IO.json",
+        "bytes": 10425,
+        "sha256": "14b0f3c456397003718a24193a2e662e868ea6122ab1636b6db198dabfc13249"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/majority_v01.py",
+        "bytes": 966,
+        "sha256": "ee12ec7332dc3bfe683964327d467c682fc1eb38af6ad125b06aa232617910c3"
+      },
+      "source_file_role": "majority_v01.py"
+    },
+    {
+      "phase": "LOWER_1209",
+      "pid": 14500,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1209.PROCESS_TERMINAL.json",
+        "bytes": 302,
+        "sha256": "ef2d793ec4d21124c84d573ef85c9f6fe658a2917c61907c5183693f159753cf"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1209.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "dff6f43d79ccde896f565467faa8448733a19c855e4ce3a5f50e18d4fe0df1c5"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1217",
+      "pid": 26012,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1217.PROCESS_TERMINAL.json",
+        "bytes": 302,
+        "sha256": "b46f2f8aaa46bf05c3c14eba481498f19663a41eb6acc8a7e9a49620a20e5ecd"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1217.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "1623b3881d14518672b1a4a119065e1c3617096789c5dd4a435a9cd8041b5466"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1221",
+      "pid": 27508,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1221.PROCESS_TERMINAL.json",
+        "bytes": 299,
+        "sha256": "a19e09887b07edf7eaecb129fb45c210c8b9ae8ec8abbc5bfd6b3c2b5e24ed35"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1221.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "2927cb5eb40bd3bf0a4dc5865ff277254c8221f1c837269ce2e9ffb6633b2252"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1258",
+      "pid": 15232,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1258.PROCESS_TERMINAL.json",
+        "bytes": 301,
+        "sha256": "2a63f88fbb0074cee32b142bb8d1118a71cb2e7b9d7500e62dbb6b0f1804bdcb"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1258.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "9452b0bb620e71f493a240eee01a20bc783c9260080748d357f22257377f5428"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1265",
+      "pid": 17932,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1265.PROCESS_TERMINAL.json",
+        "bytes": 303,
+        "sha256": "fb0aa3885988bccfe600337a5b7ba0f62c653a490607e5739f04e814a5e5c302"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1265.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "772b1e5ea35695c384865fa27aa87681a939a46244c49d4446dcb958156942ce"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1292",
+      "pid": 20672,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1292.PROCESS_TERMINAL.json",
+        "bytes": 300,
+        "sha256": "2ae5500435018e7b81972cfa68a2c9ebe5b9012549c92c861a9747e3f2e996f5"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1292.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "1185d6a69f93af947a6c42668f781b068cabfd2425ae625312f807f604aa3502"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1312",
+      "pid": 24908,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1312.PROCESS_TERMINAL.json",
+        "bytes": 298,
+        "sha256": "7e2d18f7a38186c9e62da374413dda12b5cd1ebf32ed278ef166661b15ff3e31"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1312.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "2d030e06616718ba599569f9273fda12c59adf9d8dce684cf29fc00acb4773ab"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1322",
+      "pid": 27320,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1322.PROCESS_TERMINAL.json",
+        "bytes": 302,
+        "sha256": "385945a5ed30b651e33e66054c2df97e3f4ad7ee29a87a0fef2d39c8aadd5805"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1322.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "8130714eae99ad7727fb62e524ff89f77a6b3cb65112a94689ccbc222dfff594"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1328",
+      "pid": 16700,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1328.PROCESS_TERMINAL.json",
+        "bytes": 303,
+        "sha256": "06ff17692f103067c1af51ff343a58c4cedeff8d751eeeaa39608b2be790573e"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1328.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "19c265f37f04dc7ce18da2739f6f27034dbda2af169034afa820c6c4ad2efb3f"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1343",
+      "pid": 6204,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1343.PROCESS_TERMINAL.json",
+        "bytes": 302,
+        "sha256": "5adcdfe9abcc4dee75436569fda3acb1badbca4c51cd5ce0a7574614fc642e06"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1343.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "4dab28026e02fe1d68562d2c97013b89a3457eb3cc37b9fd64abc81c50e85879"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "LOWER_1344",
+      "pid": 2808,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1344.PROCESS_TERMINAL.json",
+        "bytes": 301,
+        "sha256": "5c473e13f3d22da106bee4cfbc6ba9da8d1370b0a975e211362f5a5f9afffaa1"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/LOWER_1344.PHYSICAL_IO.json",
+        "bytes": 9100,
+        "sha256": "6da2e91917124f4c1577304c60663a5df724259baf95ec9aa3b55114bbb36496"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/read_balanced_gs_lower_v01.py",
+        "bytes": 13712,
+        "sha256": "74268b78f0e7557545de3533c01922c1914bf7e88c6340cdb304a33cb948e999"
+      },
+      "source_file_role": "iteration464/read_balanced_gs_lower_v01.py"
+    },
+    {
+      "phase": "TRIANGLE_UPPER",
+      "pid": 24628,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/TRIANGLE_UPPER.PROCESS_TERMINAL.json",
+        "bytes": 305,
+        "sha256": "0849c774ad8066981b70ccb7e84ccca18d24a418e8c489eff191afdb04fd9c41"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/TRIANGLE_UPPER.PHYSICAL_IO.json",
+        "bytes": 9492,
+        "sha256": "57fbe3023137cd4bff2e1e592c7a6017b55e28178ca87ee02b568f4f8f3376bb"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration464/verify_triangle3_gs_gap_v01.py",
+        "bytes": 8218,
+        "sha256": "3e6d05712dcb341e9e5e4b6b3ad8190aafd777ecf1accc1b33ec23c240e64da0"
+      },
+      "source_file_role": "iteration464/verify_triangle3_gs_gap_v01.py"
+    },
+    {
+      "phase": "BELLMAN_PRODUCE",
+      "pid": 14976,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/BELLMAN_PRODUCE.PROCESS_TERMINAL.json",
+        "bytes": 308,
+        "sha256": "f452abbc7867487ab8c0d5722ac40ca19df07ef4c6e67a419644261c95f95fae"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/BELLMAN_PRODUCE.PHYSICAL_IO.json",
+        "bytes": 5760,
+        "sha256": "92368d6a6ff63aeadde9e8aeb28d76a9cdf81522b6b60d136e4352a869d7c22d"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration465/produce_bellman_class_v01.py",
+        "bytes": 3066,
+        "sha256": "d2f1b7bc84debbd364bd95dff5f818bf9ef03ee86e748b3f5c87a4b44d3e2475"
+      },
+      "source_file_role": "iteration465/produce_bellman_class_v01.py"
+    },
+    {
+      "phase": "BELLMAN_READ",
+      "pid": 9560,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/BELLMAN_READ.PROCESS_TERMINAL.json",
+        "bytes": 302,
+        "sha256": "a54818dc344d13716447b14bb289f94ec3127daa3aca9b615f2fc7aa1c776157"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/BELLMAN_READ.PHYSICAL_IO.json",
+        "bytes": 8555,
+        "sha256": "67c4710256b5791d2f6fa2a0bfadd340235913fa63e68fb7b0a891278f342648"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/iteration465/read_bellman_class_v01.py",
+        "bytes": 6018,
+        "sha256": "36ecad2b27b9d3692545f5c1db3c37cb7cfc84a383c91da963d98ff8661dd180"
+      },
+      "source_file_role": "iteration465/read_bellman_class_v01.py"
+    },
+    {
+      "phase": "COMBINE_GS3",
+      "pid": 3944,
+      "actual_exit_code": 0,
+      "terminal": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/COMBINE_GS3.PROCESS_TERMINAL.json",
+        "bytes": 303,
+        "sha256": "f61a571cb636d848603e4b5552199dabf7d9574af52d5ede84b745663f08d43c"
+      },
+      "physical_IO": {
+        "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/COMBINE_GS3.PHYSICAL_IO.json",
+        "bytes": 5573,
+        "sha256": "ab2240968c11e34cabdfa00fe5a92dd0f5feffbad127d33b5c5f6873dc6aaf00"
+      },
+      "target": {
+        "path": "artifact-origin://scratch/iteration468_public_gs_work_v01/core/combine_gs3_v01.py",
+        "bytes": 7936,
+        "sha256": "d7e08b293a64ec4700596c9209dec63b96e34e0bc3d352cd43051f7a9f28f9de"
+      },
+      "source_file_role": "combine_gs3_v01.py"
+    }
+  ],
+  "mathematical_children": 17,
+  "whole_objects": 18,
+  "dependency_bridge": {
+    "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/DEPENDENCY_BRIDGE_V01.json",
+    "bytes": 2776,
+    "sha256": "8c913121871fc4c72f9e4613504d0b1ad5001c8d499829e76d1828c66345e82e"
+  },
+  "whole_correspondence": {
+    "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/WHOLE_OBJECT_CORRESPONDENCE_V01.json",
+    "bytes": 16860,
+    "sha256": "d63327b5c552558ad8ff0e3532b6bec3999ea146f557b93f2dbd6a0cb061d44d"
+  },
+  "current_scope": {
+    "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/ORIGIN_AND_CURRENT_SCOPE_V01.json",
+    "bytes": 1206,
+    "sha256": "f4a7442d7a42b8dd23cbca5344d2fb7b5d28c9fb29040d253cb62b751d505883"
+  },
+  "parent_IO": {
+    "path": "artifact-origin://artifacts/iteration468/actual_public_gs_v01/PARENT_PHYSICAL_IO_V01.json",
+    "bytes": 51462,
+    "sha256": "8b2dcd17b41ecf5e1795ce2441631d216f226571cf73078bf01d6f4c8078ce54"
+  },
+  "all_frozen_and_staged_immutable_files_rehashed_after": true,
+  "raw_Bellman_proof_regenerated_byte_exact": true,
+  "full_source_catalogue_and_global_policy_enumeration_regenerated": false,
+  "all_scientific_target_sources_byte_exact": true,
+  "relocation_tested_platform": "Windows",
+  "public_metadata_derivative_uses_one_declared_origin_fingerprint_bridge": true,
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "same_agent_internal_not_external_human_or_formal_review": true,
+  "no_model_API_LP_newpricepriorgrid_globalenumeration_publication_or_submission": true,
+  "whole_project_complete": false
+}

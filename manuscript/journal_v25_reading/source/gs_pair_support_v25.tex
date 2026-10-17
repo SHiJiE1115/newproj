@@ -1,0 +1,412 @@
+\section{The pair-support boundary under gross substitutes}
+\label{app:gs-pair-support}
+The fee restriction in this appendix is stronger than submodularity.
+It changes the pair-support minimum of
+Theorem~\ref{thm:global-pair-resource-minimum} from two to three,
+without changing the complete-source or full causal-skip comparator
+contract. Gross substitutes (GS) is applied to the set function used
+as a fee; no demand, reward or posterior model is imposed on the
+unknown relational state.
+
+\paragraph*{The standard GS condition in the quadratic class.}
+For sets $X,Y\subseteq Q$ and $i\in X\setminus Y$, the discrete
+exchange formulation of GS requires
+\begin{align}
+ F(X)+F(Y)\leq\max\bigl\{&F(X-i)+F(Y+i),\nonumber\\
+ &\max_{j\in Y\setminus X}
+       [F(X-i+j)+F(Y+i-j)]\bigr\}.
+ \label{eq:gs-exchange}
+\end{align}
+The first option remains when $Y\setminus X$ is empty. Additions and
+deletions denote set operations. For the nonnegative pair-coverage
+fee~\eqref{eq:global-pair-fee}, expansion gives
+\[
+ F(S)=\sum_i\left(c_i+\sum_{j\ne i}w_{ij}\right)
+                  {\bf1}_{i\in S}
+       -\sum_{i<j}w_{ij}{\bf1}_{\{i,j\}\subseteq S}.
+\]
+Its conditional two-coordinate interaction is $w_{ij}$, independent
+of the conditioning set. The standard submodularity/S3
+characterization therefore says precisely that the minimum of
+$w_{ij},w_{ik},w_{jk}$ is attained at least twice for each triple.
+We use this established characterization, as recorded in
+Hajek~\cite[Definition 3 and Proposition 4]{hajek2008substitutes};
+neither the characterization nor its hierarchy geometry is a new
+claim of this paper.
+
+\begin{theorem}[GS-restricted pair-support minimum, computer-assisted]
+\label{thm:gs-pair-resource-minimum}
+Let the source and private zero-error policy classes be those of
+Theorem~\ref{thm:global-pair-resource-minimum}, on at most four
+indexed pair-equality queries, with unrestricted class count.
+Suppose the nonnegative quadratic pair-coverage
+fee~\eqref{eq:global-pair-fee} is GS. If at most two distinct pair
+weights are positive, then $R_{\mathcal A}=R_{\mathcal P}$.
+
+Over all complete sources with exactly four indexed queries, the
+least positive pair support permitting a strict gap is exactly
+three. This also holds when all individual charges must be strictly
+positive. A complete source and fee with three positive pairs satisfy
+\[
+ R_{\mathcal P}=\frac{1025}{47},\qquad
+ R_{\mathcal A}\leq\frac{324871}{14899},\qquad
+ R_{\mathcal P}-R_{\mathcal A}\geq\frac{54}{14899}>0.
+\]
+No exact adaptive value is asserted for this witness.
+\end{theorem}
+
+The support counts positive weights on named groups of size two.
+Repeated occurrences of a pair combine into its one weight. It does
+not count resources in arbitrary higher-arity representations of
+the same function. In particular, this is not an extremal statement
+for all GS set functions or all menu sizes.
+
+\begin{proof}
+\paragraph*{Why two positive pairs must be disjoint.}
+If $w_{ij},w_{jk}>0$ and $w_{ik}=0$, the triple has a unique minimum,
+contradicting S3. The positive-edge relation is transitive, so its
+connected components are cliques. With at most two positive edges,
+there are no edges, one edge, or two disjoint edges. For four labelled
+vertices the $64$ support patterns contain $15$ disjoint-clique
+patterns, of which $10$ have at most two edges; these finite counts
+are also checked by the composer. The transitivity argument, rather
+than those counts alone, establishes the required exclusion.
+
+For two disjoint pairs, order their weights as $h_1\geq h_2\geq0$.
+Merge the first pair at height $h_1$, the second at height $h_2$,
+and both pairs at height $h_3=0$. The weight on a pair of leaves is
+the height at which they first meet. The three pair partitions and
+two relative weight orders give six ranked balanced histories.
+They also contain the one-edge and empty cases on their zero faces.
+We verify the larger closed cones $h_1\geq h_2\geq h_3\geq0$;
+their $h_3=0$ faces suffice for the two-edge lower bound.
+
+For each individual-price order $o$, use
+\[
+ c_{o(j)}=d_0+\cdots+d_j\quad(0\leq j<4),\qquad
+ (h_1,h_2,h_3)=(d_4+d_5+d_6,d_5+d_6,d_6),
+ \quad d\geq0.
+\]
+Every purchased-set fee is linear in these seven variables. The
+$24$ closed price orders include every nonnegative individual
+price, with all ties and zeros, and the six balanced histories
+include every at-most-two-edge GS fee. This is a continuous cover,
+not a collection of tested price vectors.
+
+\paragraph*{The all-source lower cover.}
+The complete source and policy cover of
+Theorem~\ref{thm:global-pair-resource-minimum} supplies $1356$
+canonical sources and $42864$ ordered tasks. Its $1345$ monotone-fee
+equality cases apply here because nonnegative pair-coverage fees
+are normalized and monotone. The other $11$ sources are exactly
+those of Table~\ref{tab:global-pair-residuals}; none is omitted by
+assuming a small gap or a convenient policy family.
+
+For each residual source, the six histories and $24$ price orders
+give $144$ roots. A separate fraction-based reader rebuilds fees
+from the merge blocks, rather than importing the producer's fee
+coefficients. At a pure-saddle leaf an original hard input bounds
+every adaptive column from below, and one legal priority column
+achieves that bound on every original input. At a lifting leaf,
+common weak row/column dominance reductions preserve the finite
+mixed value. The reader follows removed-row witnesses and checks
+priority replacements against \emph{all original rows}, so replacing
+a terminal mixture remains valid even on deleted objective rows
+and zero-prior correctness inputs. Inclusion gives the reverse
+inequality, as in the proof of
+Theorem~\ref{thm:global-pair-resource-minimum}.
+
+Every split retains both closed halves of its linear inequality.
+The crossing-ray construction there applies in dimension seven.
+Using the entire accumulated halfspace description, an extreme
+nonzero ray has active-normal rank six; exact fractional
+Gauss--Jordan elimination reconstructs that rank and the clipped
+cones separately from the producer's integer elimination. The
+reader checks full dimension seven before discarding only
+nonextreme candidate generators. Consequently generator signs
+certify the entire cone and its boundary faces.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+Source ID & Closed roots & Nodes & Saddle/lifting leaves & Inequalities\\
+\midrule
+1209 & $144$ & $288$ & $96/120$ & $366493$\\
+1217 & $144$ & $148$ & $40/106$ & $318037$\\
+1221 & $144$ & $144$ & $60/84$ & $238728$\\
+1258 & $144$ & $144$ & $96/48$ & $289688$\\
+1265 & $144$ & $204$ & $92/82$ & $428417$\\
+1292 & $144$ & $144$ & $96/48$ & $379848$\\
+1312 & $144$ & $144$ & $60/84$ & $394716$\\
+1322 & $144$ & $284$ & $45/169$ & $693161$\\
+1328 & $144$ & $286$ & $106/109$ & $312764$\\
+1343 & $144$ & $144$ & $72/72$ & $456652$\\
+1344 & $144$ & $144$ & $60/84$ & $452004$\\
+\midrule
+Total & $1584$ & $2074$ & $823/1006$ & $4330508$\\
+\bottomrule
+\end{tabular}
+\caption{All residual lower certificates for the six balanced GS
+histories. All roots close, with no unstarted root or residual leaf.
+The final column counts exact scalar inequalities, not independent
+experiments. The full global source and policy enumeration is an
+explicitly inherited premise.}
+\label{tab:gs-balanced-lower}
+\end{table}
+
+Across the $1584$ roots, the readers check $2074$ nodes, $245$
+splits, $63874$ column deletions, $4411$ row deletions, $4250$
+full-original-row priority lifts, $4330508$ scalar inequalities
+and $6005$ exact ranks. The $1829$ closed leaves comprise $823$
+pure saddles and $1006$ lifting leaves. No fixed-rational template
+leaf is needed. The source audit reconstructs the $22$ physical
+label supports, $6957$ original policy/input paths and their
+transport to all $408$ residual ordered tasks.
+
+For query permutations the individual and six pair coefficients
+of every purchased mask rename identically. The composer checks
+all $24\cdot16=384$ ten-coefficient identities. Transforming
+tree queries, global orders and terminal labels therefore
+preserves every real fee and private input-independent mixture;
+the inverse transformation gives the reverse map. This transports
+the lower bound from the canonical representatives. Smaller menus
+can be padded by fresh pairs forced DIFFERENT under both labels,
+with zero charge and zero incident pair weights. Such known-answer
+queries add no information or fee, preserve GS, and can be erased
+from each seed's order. This proves the equality assertion.
+
+\paragraph*{A complete physical three-pair witness.}
+Let $q_i$ compare records $2i,2i+1$ for $0\leq i<4$, returning one
+on SAME. Label zero has prior SAME partition
+$(0,0,0,1,0,1,0,2)$ and constraint $3\not\sim7$.
+Label one has prior SAME partition $(0,1,0,1,0,2,0,1)$ and no
+DIFFERENT constraint. Each label retains every coarsening allowed
+by its prior, with unrestricted class count. Enumerating the five
+coarsenings of the three prior blocks on each side gives exactly
+\[
+ W_0=\{1,7,9\},\qquad W_1=\{0,4,11,15\}.
+\]
+Integers encode answer words by $w=\sum_i2^i q_i$.
+These are the original complete source $1209$, rather than a
+selected subset of its legal worlds.
+
+Set
+\[
+ (c_0,c_1,c_2,c_3)=(7,4,3,6),\qquad
+ w_{12}=w_{13}=w_{23}=4,\qquad w_{0i}=0.
+\]
+Every triangle either has three equal positive weights or two zero
+weights, so the fee is GS. All individual charges are positive,
+and exactly three pair weights are positive. On masks $0$ through
+$15$, the fee values are
+\[
+ (0,7,12,19,11,18,19,26,14,21,22,29,21,28,25,32).
+\]
+The separate checker also evaluates all set submodularity
+inequalities and discrete exchange alternatives in
+\eqref{eq:gs-exchange} directly.
+
+Here are explicit legal witness trees. Write $N_i(L,R)$ for
+query $q_i$ with zero-child $L$ and one-child $R$, with terminal
+labels $0,1$. The subscripted names are retained column IDs:
+\begin{align*}
+ T_6&=N_1(N_0(1,0),N_3(0,1)),\\
+ T_{18}&=N_2(N_1(N_0(1,0),1),N_3(N_1(1,0),1)),\\
+ T_{19}&=N_3(N_0(1,0),N_1(0,1)),\\
+ T_{20}&=N_3(N_0(1,0),N_2(N_1(0,1),1)),\\
+ T_{39}^{\mathcal A}
+   &=N_2(N_1(N_3(N_0(1,0),0),1),N_3(N_1(1,0),1)).
+\end{align*}
+The four $T_j$ are priority trees with orders $(1,0,2,3)$,
+$(2,3,1,0)$, $(2,3,0,1)$ and $(3,0,2,1)$, respectively.
+They use only causal permanent skips. Every tree is correct on
+all seven worlds, regardless of the prior mass below.
+
+\paragraph*{A lower bound against the entire priority class.}
+On $W=(0,1,4,7,9,11,15)$, take the fixed prior
+\[
+ \pi=(0,0,0,9/47,3/47,13/94,57/94).
+\]
+Let $B_o(V,k,S)$ be the minimum \emph{unnormalized} prior-weighted
+future fee for a fixed global order $o$, current feasible worlds
+$V$, suffix position $k$ and already purchased set $S$.
+The weights are the original $\pi$, not renormalized on $V$.
+For pure or empty $V$ put $B_o=0$. At a mixed state with $k=4$
+put $B_o=+\infty$, even if $\pi(V)=0$. Otherwise let $q=o(k)$,
+$V_b=\{w\in V:q(w)=b\}$ and $m(V)=\sum_{w\in V}\pi(w)$.
+Then
+\begin{align}
+ B_o(V,k,S)=\min\bigl\{&B_o(V,k+1,S),\nonumber\\
+ &m(V)\bigl(F(S+q)-F(S)\bigr)
+       +\sum_{b=0}^1 B_o(V_b,k+1,S+q)\bigr\}.
+ \label{eq:gs-fullclass-bellman}
+\end{align}
+The first option is SKIP. The second is feasible only if both
+branches are feasible; it includes uninformative purchases.
+Correctness is imposed on every legal world, including zero-mass
+ones. A pure state may stop at no greater monotone cost. Every
+fixed-order causal policy makes precisely one of these choices,
+and $S$ retains all context needed for a nonadditive final-set fee.
+Induction on the suffix proves the recurrence. Randomization
+cannot improve a specified-prior minimum of linear expected costs.
+
+The exact proof and its separate fraction-based reader evaluate
+all $24$ orders and $1602$ distinct states: $526$ mixed choices,
+$572$ pure states and $504$ infeasible mixed terminal states.
+There are $110$ mixed zero-prior states, which retain their
+correctness obligations. They certify
+\[
+ B_{\mathcal P}(\pi,F)
+    =\min_o B_o(W,0,\varnothing)=\frac{1025}{47}.
+\]
+This point lower bound does not assume that the cached $32$
+priority profiles exhaust the class. It directly covers every
+global order and causal continuation.
+
+Mix $T_6,T_{18},T_{19},T_{20}$ with probabilities
+$(14,6,24,3)/47$. Its costs on all seven worlds are
+\[
+ (989,989,983,1025,1025,1025,1025)/47.
+\]
+The maximum matches the full-class prior lower bound, so
+$R_{\mathcal P}=1025/47$.
+
+\paragraph*{Adaptive upper bound and strictness.}
+Mix the same four trees and $T_{39}^{\mathcal A}$ with probabilities
+\[
+ (4240,1092,7752,969,846)/14899.
+\]
+The all-world cost vector is
+\[
+ (319165,319165,312151,324871,324871,324871,324871)/14899.
+\]
+It proves the displayed adaptive upper bound and strict gap.
+The source checker traces all $504$ original retained-policy/input
+paths, validates their tree/order witnesses and checks both mixtures
+on the full original seven-world source. Cached policy data are
+used for those feasibility and cost checks, but not as a premise
+of the full-class priority lower bound above. The certified
+at-most-two-edge exclusion and this positive three-edge witness
+give both claimed minima.
+\end{proof}
+
+\begin{corollary}[A relative GS neighborhood with a full-class lower bound]
+\label{cor:gs-relative-robustness}
+Keep this source, let $z=(c_0,c_1,c_2,c_3,v)$, and set
+$w_{12}=w_{13}=w_{23}=v$ and all other pair weights to zero.
+For every $z$ in the closed box
+\[
+ \|z-(7,4,3,6,4)\|_\infty\leq\frac{27}{208586},
+\]
+the fee is GS, all individual charges and exactly three pair
+weights are positive, and
+$R_{\mathcal P}(z)-R_{\mathcal A}(z)\geq27/14899>0$.
+This is a relative five-parameter family, not independent
+perturbations of all ten quadratic coefficients.
+\end{corollary}
+\begin{proof}
+For each purchased set $S$, the five nonnegative coefficients
+of $F_z(S)$ sum to at most $4+3=7$. Thus if
+$\|z-z^0\|_\infty\leq r$, then
+$|F_z(S)-F_{z^0}(S)|\leq7r$ for \emph{every} $S$.
+For any legal priority policy, prior averaging preserves that
+bound. Taking the minimum over the full policy class gives
+$B_{\mathcal P}(\pi,z)\geq1025/47-7r$.
+For the explicit adaptive mixture above, the maximum over all
+worlds is at most $324871/14899+7r$. Hence
+\[
+ R_{\mathcal P}(z)-R_{\mathcal A}(z)
+   \geq\frac{54}{14899}-14r
+   \geq\frac{27}{14899}
+\]
+at the stated radius. Positivity and the fixed equal-weight
+triangle preserve GS throughout the closed box. This standard
+Lipschitz argument uses the full-class Bellman center bound,
+not exhaustiveness of cached priority profiles. The composer
+also checks all $16$ set sensitivities and the $224$ older affine
+interval inequalities as consistency checks; the latter are
+not a completeness premise for this proof.
+\end{proof}
+
+\subsection{Prior objectives, established tools and scope}
+The same prior supplies a distinct comparison:
+$T_{39}^{\mathcal A}$ has prior expectation $1022/47$, whereas
+$B_{\mathcal P}(\pi,F)=1025/47$. Its Bayes gap is at least $3/47$;
+this is not the worst-input gap of the theorem. It also obstructs
+one specific transfer route to independent-reward submodular-cost
+Pandora search~\cite[Theorem 4.1, arXiv version]{pandora}.
+If a target simultaneously had optimal adaptive utility
+$K-B_{\mathcal A}$ and optimal fixed-prefix utility
+$K-B_{\mathcal P}$ for one common $K$, that theorem's utility
+equality would force Bayes cost equality here, a contradiction.
+This conditional argument excludes neither other reductions nor
+other reward-search models. The cited theorem numbering refers
+to the inspected arXiv v1, without asserting that its body equals
+the publisher's final article.
+
+Nor is a generic GS adaptivity gap new: additive functions already
+satisfy GS, and stochastic Boolean evaluation has known additive
+gaps~\cite{hellerstein2022adaptivity,nielsen2025kofn}.
+Theorem 1 of Nielsen et al. gives a tight gap of two for product-bit
+$k$-of-$n$ evaluation. At a mixed feasible state of a full-cube
+threshold, every unqueried bit is pivotal on some completion;
+permanently skipping it cannot give a correct policy. Thus the
+causal-SKIP convention does not erase that known phenomenon.
+The candidate increment here is the exact pair-support boundary
+on complete four-query sources under the stated private minimax
+contract, compared with unrestricted minimum two. It is not a
+new GS model, general adaptivity principle or new Bellman method.
+The bounded primary comparison does not settle priority of that
+exact boundary or rule out every preserving reduction.
+
+GS of a fee also differs from adaptive submodularity of a
+posterior utility. Golovin and Krause's definition and named
+guarantees~\cite[Definition 3 and Theorem 5]{golovin2017adaptive}
+concern conditional expected marginal utility; the cited
+nonuniform-cost extension uses modular item costs. Those
+approximation guarantees do not supply an exact equality of
+the two cost-minimizing classes considered here. This comparison
+does not rule out a separately proved utility reduction.
+
+\subsection{Actual combined replay and inherited premises}
+The private packet
+\path{combined_GS_minimum3_private_v01.zip} was actually extracted
+and run in a new Windows directory, with separate work and output
+directories. All $17$ mathematical child processes exited zero;
+$18$ entire JSON output objects matched their frozen pre-execution
+references, without omitting mathematical fields. The Bellman
+proof was regenerated byte for byte. The children comprise a
+residual source audit, the $1345$ finite monotone-certificate
+kernels, eleven balanced-cone readers, the physical/GS/upper
+checker, a Bellman producer and separate reader, and the composer.
+Each has an actual start and retained-handle terminal receipt.
+
+The global source and full global policy enumeration remain
+inherited from the accepted four-query cover; they were not
+regenerated. The $1345$ finite kernels, eleven residual physical
+and minimal-policy audits, all $1584$ lower roots, and the full
+Bellman point proof were freshly executed. Frozen scopes commit
+to dependency snapshots; the fresh residual audit and projection
+must match those whole snapshots before readers run. Original
+mathematical target files and inputs retain their byte identities.
+An explicit staging wrapper binds only provenance pin path labels
+to their original labels, together with actual current byte counts
+and hashes. All physical reads stay at the new work paths or
+runtime; separate records identify current paths, PIDs and exits.
+Original discovery-era hypotheses, scope labels and process data
+are preserved as origin context, not current verdicts or processes.
+The Python audit boundary is not operating-system isolation.
+
+The combined proof does read cached policy trees and profiles for
+legal mixtures, world-cost vectors, path checks and the older
+affine crosschecks. Only the point and relative-box priority
+\emph{lower bounds} avoid their exhaustiveness premise. The
+separate Bellman reader accesses the adaptive profile for the
+Bayes upper comparison. No claim of avoiding all cached data is
+intended. This private packet has no new public or hosted replay;
+the earlier public V24 packet proves unrestricted minimum two.
+The result is internal computer-assisted verification, without
+human or external independent review or formal proof-kernel
+certification. No practical academic-evaluation advantage or
+publication outcome follows from the constructed strict gap.

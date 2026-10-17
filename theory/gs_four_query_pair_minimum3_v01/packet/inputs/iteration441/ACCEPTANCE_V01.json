@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "status": "ACCEPT_FULL_PORTABLE_PROOF_ACTUAL_RELOCATED_REPLAY_AND_ORIGINAL_SCIENCE_CORRESPONDENCE",
+  "created_utc": "2026-10-17T04:14:26.377721+00:00",
+  "research_iteration": 441,
+  "spec": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PACKET_SPEC_V01.json",
+    "bytes": 26713,
+    "sha256": "05ddd9191e8094e10b8ce93c069df58d70eb55ecba0cf503c7f5dfed7da20f8a"
+  },
+  "packet": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PORTABLE_PROOF_V01.zip",
+    "bytes": 1304852,
+    "sha256": "a264fe664e9408d2c99cd1850e559620136155bee838a5dfaee140ca0348df14"
+  },
+  "freeze": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FREEZE_V01.json",
+    "bytes": 456,
+    "sha256": "7fe84bc56c16cd8ac5c59df40f2480176ca7c29ac5626a13622bec4f0cca0f01"
+  },
+  "projection": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK_V02.json",
+    "bytes": 485,
+    "sha256": "c9aee328340d0fc103ed43d5c8e91aec5936fcd8a5cf6585400a2ee5c08a0cdd"
+  },
+  "retained_projection_failure": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK.PROCESS_TERMINAL.json",
+    "bytes": 312,
+    "sha256": "1e60264834ccbdc3977eb95cb2385ab88f683964dd259331764654fa60cecbf5"
+  },
+  "reader_repair": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_REPAIR_FREEZE_V02.json",
+    "bytes": 1001,
+    "sha256": "60360b6260bfda200c85d88c9f5a637133927600c616f845114124d0f1c75cb5"
+  },
+  "local": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\LOCAL_RESULT_V01.json",
+    "bytes": 23809,
+    "sha256": "37e2af25f4a98dd2ac785a7df8fc29feea86d9cc1f1abf627b97f68029a04153"
+  },
+  "relocated": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\RELOCATED_RESULT_V01.json",
+    "bytes": 23809,
+    "sha256": "52d7d6afa2160ca0c36575a9466a6165ece3fff1974e0f3c8c074c3510b79110"
+  },
+  "relocation_comparison": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\RELOCATION_COMPARISON_V01.json",
+    "bytes": 1353,
+    "sha256": "2d8eeb93e391b69f328759463f47192813d0b2c44cdf2747e13042393fc3276e"
+  },
+  "original_science_correspondence": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\ORIGINAL_SCIENCE_CORRESPONDENCE_V01.json",
+    "bytes": 1601,
+    "sha256": "999b3e295fa3afe1e584b2b719193fb2dd0c1c98476d8699da59327dac4f0f7f"
+  },
+  "real_child_terminals": [
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\LOCAL_CHILD_TERMINAL.json",
+      "bytes": 200,
+      "sha256": "7b741719c5df04c5d8dab50d6ff59521e005bce9a1edfbf6eefbafe14cb52b26"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\RELOCATED_CHILD_TERMINAL.json",
+      "bytes": 198,
+      "sha256": "6cba0f1dc60e211bc49563dcec5162df76bb582a57869b176d2ec5511c962c8b"
+    }
+  ],
+  "science_sha256": "9603869d50d3ef3605200dd4fff86476cd8ea35688d17d223f48d86ab6b9fc4f",
+  "previous440closure_files_rehashed": 38,
+  "actual_stages": [
+    {
+      "phase": "BUILD_DATA",
+      "actual_exit_code": 0,
+      "start": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\BUILD_DATA.PROCESS_START.json",
+        "bytes": 427,
+        "sha256": "77b874014a63516715c3021ea01a39edbc67e161f4705335d97a24ca8144c804"
+      },
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\BUILD_DATA.PROCESS_TERMINAL.json",
+        "bytes": 314,
+        "sha256": "941565cd3851dc0ae92ce1bd10b2cc3ce08ecff8683f5d3023004a0205c73765"
+      },
+      "storage": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\BUILD_DATA.STORAGE.json",
+        "bytes": 3194,
+        "sha256": "d45ce7c63b259a9b608f139c15f96d28f3cde5c16eb6b6eefbf91e3fc3558a36"
+      }
+    },
+    {
+      "phase": "FREEZE_PACKET",
+      "actual_exit_code": 0,
+      "start": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FREEZE_PACKET.PROCESS_START.json",
+        "bytes": 429,
+        "sha256": "be518e8ce99de27b2ebc93a0c328c31f6a8672f2058900cd437d52fe5da76457"
+      },
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FREEZE_PACKET.PROCESS_TERMINAL.json",
+        "bytes": 311,
+        "sha256": "0cf0ee2b782e9cc903e19cdd7c8b97a7b7967b2194a3b7afd19be036b53fb197"
+      },
+      "storage": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FREEZE_PACKET.STORAGE.json",
+        "bytes": 3196,
+        "sha256": "7a5685344022db0d32eaeb9309d3810e175baa8fb3a8925b1981ae3a3cb90f34"
+      }
+    },
+    {
+      "phase": "FULL_LOCAL_REPLAY",
+      "actual_exit_code": 0,
+      "start": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FULL_LOCAL_REPLAY.PROCESS_START.json",
+        "bytes": 425,
+        "sha256": "6e3be339bc074e2a1503733133878ce281ca44eb49b30fe88957a68caa40d70d"
+      },
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FULL_LOCAL_REPLAY.PROCESS_TERMINAL.json",
+        "bytes": 309,
+        "sha256": "9a87ffbf1c24f35ed0374b8fa6031086d436cad3cd18981d7dcb187feea0f9cc"
+      },
+      "storage": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FULL_LOCAL_REPLAY.STORAGE.json",
+        "bytes": 3192,
+        "sha256": "d9dde9128a992ba68b5ab06ea460c86457dd8676658e27d4f2af1a56849f2dbb"
+      }
+    },
+    {
+      "phase": "PROJECTION_CHECK",
+      "actual_exit_code": 1,
+      "start": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK.PROCESS_START.json",
+        "bytes": 433,
+        "sha256": "96a8c4b555d4dba0d042f3bf5243361be5422040fbfd674d51ea2d02cb0eb10a"
+      },
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK.PROCESS_TERMINAL.json",
+        "bytes": 312,
+        "sha256": "1e60264834ccbdc3977eb95cb2385ab88f683964dd259331764654fa60cecbf5"
+      },
+      "storage": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK.STORAGE.json",
+        "bytes": 3196,
+        "sha256": "85621822e18821586e61650b74101def6be46cf0048002c36d05b7bcbae68533"
+      }
+    },
+    {
+      "phase": "FULL_RELOCATED_REPLAY",
+      "actual_exit_code": 0,
+      "start": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FULL_RELOCATED_REPLAY.PROCESS_START.json",
+        "bytes": 429,
+        "sha256": "e38b980884aa7194ede393fe09748ab0b21a3a3194310a969ea31b172d22f801"
+      },
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FULL_RELOCATED_REPLAY.PROCESS_TERMINAL.json",
+        "bytes": 312,
+        "sha256": "4d222cededa2b9352476172599a8620bc69ee3d97a38168910aa46da42a3299e"
+      },
+      "storage": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\FULL_RELOCATED_REPLAY.STORAGE.json",
+        "bytes": 3194,
+        "sha256": "e4bb27f0db563736666497bbba336019c4633df049f11736e700e4a13607a838"
+      }
+    },
+    {
+      "phase": "PREPARE_PROJECTION_REPAIR",
+      "actual_exit_code": 0,
+      "start": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PREPARE_PROJECTION_REPAIR.PROCESS_START.json",
+        "bytes": 442,
+        "sha256": "437fa0e7a731daaf11a4894071a9d4dd715a366010bf0f6fa5d84d8d7480e348"
+      },
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PREPARE_PROJECTION_REPAIR.PROCESS_TERMINAL.json",
+        "bytes": 314,
+        "sha256": "508099417f633c059dc3cc22c998dc4849eee00f1b6fd4483b70bfc8c833244d"
+      },
+      "storage": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PREPARE_PROJECTION_REPAIR.STORAGE.json",
+        "bytes": 3194,
+        "sha256": "9e24dc0b6698adca4766040a54cd5443aa5f5c9b068389fe98da642f4c2d825f"
+      }
+    },
+    {
+      "phase": "PROJECTION_CHECK_V02",
+      "actual_exit_code": 0,
+      "start": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK_V02.PROCESS_START.json",
+        "bytes": 433,
+        "sha256": "3314c2f62bac4e5b3dd3e05f6988d73e724a5734800af9ffd284df982e091462"
+      },
+      "terminal": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK_V02.PROCESS_TERMINAL.json",
+        "bytes": 313,
+        "sha256": "bf375a5bb704d4c46ec5b56c301846be6dcc3e0dda9cb25c75f74b01f18dd562"
+      },
+      "storage": {
+        "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\PROJECTION_CHECK_V02.STORAGE.json",
+        "bytes": 3194,
+        "sha256": "18bedf5a3243f64b949bae9cfa4b3700ea48447eef2f7c682aede344208e7c99"
+      }
+    }
+  ],
+  "protected_inputs": [
+    {
+      "path": "origin-private://sealed-P1-location",
+      "bytes": 6073,
+      "sha256": "1d74a539c62fe5dad4438f561416cca5b18a87d3e597b10e71a1cf2cc1538b8e"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration353\\ACTUAL_CONTINUATION_RESULT_V02.json",
+      "bytes": 1867359,
+      "sha256": "05cbe5afbdd442e8bdfac18860ea542898f353ea318da31fe49e52b212bd3f0f"
+    },
+    {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration433\\output\\pdf\\private_manuscript_v18_v02.pdf",
+      "bytes": 768436,
+      "sha256": "6169ce87ea7b6c50ccad81a51e719c90075d45e28a237dd0b07d975c6ef4d573"
+    }
+  ],
+  "new_model_API_calls": 0,
+  "new_scientific_grid": false,
+  "formal_proof_kernel": false,
+  "human_review": false,
+  "priority_or_application_gain_established": false,
+  "new_public_upload_or_manuscript": false,
+  "whole_project_complete": false,
+  "next": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration441\\NEXT_MANUSCRIPT_INTEGRATION_V01.json",
+    "bytes": 2510,
+    "sha256": "984d1dd7c98ab94c6753979282b474ee00da8fe3f496abbc2e1e94b57ff20a55"
+  },
+  "required_user_action": null
+}

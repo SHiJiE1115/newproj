@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "status": "V25_CORRECTED_ACCEPTED_PRIVATE_AT_BUILD_PUBLIC_CANDIDATE",
+  "PDF_sha256": "1039f86ba104b2e55109deecdcf82bc65d92bb49c204badfaae667d162825c91",
+  "PDF_pages": 91,
+  "main_pages": 16,
+  "statements": 32,
+  "proofs": 29,
+  "tables": 12,
+  "references": 29,
+  "numbered_statement_map": [
+    {
+      "label": "lem:dominance",
+      "number": "1",
+      "page": 6,
+      "body_sha256": "4e4c74b3151bd659145348707350760d72e434cb512bc90a8fb1f788828230ea"
+    },
+    {
+      "label": "lem:criterion",
+      "number": "2",
+      "page": 6,
+      "body_sha256": "92b82926bd0da2971d6663256b6e7358bd1c3f67f3146b2d3f29c37ae8ec8f8a"
+    },
+    {
+      "label": "thm:boundary",
+      "number": "3",
+      "page": 7,
+      "body_sha256": "df135a103c126c78665f96b6db00b3ecd9f73ef51f98b714d2efd7ed015444d1"
+    },
+    {
+      "label": "lem:finite",
+      "number": "4",
+      "page": 9,
+      "body_sha256": "39f3f7a3361d409d9930734f122479df6e077436cd05e62ff4178b2e1a590384"
+    },
+    {
+      "label": "thm:generic-random-three",
+      "number": "5",
+      "page": 11,
+      "body_sha256": "9fe9bff41d89230686e265539b172fd825fe06d05ee2b7411dc486a218e7e498"
+    },
+    {
+      "label": "thm:random-priority-four",
+      "number": "6",
+      "page": 11,
+      "body_sha256": "5e3b4574974838d07eee797ddcd41bf9b9062ff6e6de7bf2fce21f3f17c0e01d"
+    },
+    {
+      "label": "thm:four-additive",
+      "number": "7",
+      "page": 12,
+      "body_sha256": "af523636edc152111c03aef8f8b73e3fa69fe4f7fad897a7bd57f8c2f2a2d0f1"
+    },
+    {
+      "label": "cor:additive-first-interval",
+      "number": "8",
+      "page": 15,
+      "body_sha256": "eef01ca82f14aa09cb1ddb25b98c7011ce01d652cf22ece5557b1d3bf30d47ec"
+    },
+    {
+      "label": "thm:price",
+      "number": "9",
+      "page": 16,
+      "body_sha256": "ec4b1803715c6b9980e31f1308fc748ebcf243f918186300763df6e0607462e7"
+    },
+    {
+      "label": "thm:submodular",
+      "number": "10",
+      "page": 16,
+      "body_sha256": "d265e4479fd49c2a493aeaad563f0b19d1c2b7fc7532567456072a8b82a1991a"
+    },
+    {
+      "label": "prop:record-control",
+      "number": "11",
+      "page": 35,
+      "body_sha256": "ed3be1ab0f7f065848798b731d594f02de3bcc4e0249b3887668e6e1c5be7841"
+    },
+    {
+      "label": "thm:record-path",
+      "number": "12",
+      "page": 36,
+      "body_sha256": "3f011d43cf6b2abf035e85a04f776e399e30217606b812b2bacf78cde74bf5fd"
+    },
+    {
+      "label": "cor:record-path-unit",
+      "number": "13",
+      "page": 37,
+      "body_sha256": "a7ce2d85dc5c2e31382abe228557c721f00623e2051ca688cb65e646e529123d"
+    },
+    {
+      "label": "cor:record-path-additive",
+      "number": "14",
+      "page": 37,
+      "body_sha256": "5889261a2598ced8d838ef96811698281d415183eb4407fbf89d7029d36749ac"
+    },
+    {
+      "label": "thm:full11-copy-pin",
+      "number": "15",
+      "page": 40,
+      "body_sha256": "63333502f513c4674e26c1ce3f9c037e8def65a7f4ed3324219208f8fb224b4d"
+    },
+    {
+      "label": "prop:ro-certificate",
+      "number": "16",
+      "page": 41,
+      "body_sha256": "e66318b72d1d9297c95d5211fb1adb1308d1551abdac71d3edd087a137cb3740"
+    },
+    {
+      "label": "prop:pointwise-certificate",
+      "number": "17",
+      "page": 42,
+      "body_sha256": "d2240823404c9128de2b80a2775cc089111461c71835f0e5c3eeea244fc165df"
+    },
+    {
+      "label": "thm:random-small",
+      "number": "18",
+      "page": 46,
+      "body_sha256": "651485f3f89a34aa7b57d49e87f48554744318b58167dd9639c0ddf5aab1460a"
+    },
+    {
+      "label": "cor:random-minimum",
+      "number": "19",
+      "page": 48,
+      "body_sha256": "65fd743e6311384330ff36d9d053437925a6c1bdf6720eb8c05e357b75cdb2cb"
+    },
+    {
+      "label": "lem:generic-root-flip",
+      "number": "20",
+      "page": 54,
+      "body_sha256": "6c689075f8cc833e2969cf221e6700eb50fe2df28cdcfb095ed4cb311c5ba8e4"
+    },
+    {
+      "label": "lem:generic-promise-extension",
+      "number": "21",
+      "page": 54,
+      "body_sha256": "78de9a7313218bcb3479f7354090411e7147f5d47775c98b5b3b0f9a5a9b4209"
+    },
+    {
+      "label": "cor:generic-random-minimum-four",
+      "number": "22",
+      "page": 55,
+      "body_sha256": "94b93ad5c5664f8fd100bf8d1ace6977abb2db3e023daa9bef310e5ca42c19e2"
+    },
+    {
+      "label": "thm:seven-private-curve",
+      "number": "23",
+      "page": 60,
+      "body_sha256": "8ac85001effc69e02a659d41764ecb15d7a11db3d127ae688eae73cb249a4d00"
+    },
+    {
+      "label": "prop:controlled-lineage-bytes",
+      "number": "24",
+      "page": 63,
+      "body_sha256": "331dd21dc0371037f03e9ec91809a77cbe2d7c71d59681994a932f48e2610f0b"
+    },
+    {
+      "label": "prop:unit-common-completion",
+      "number": "25",
+      "page": 71,
+      "body_sha256": "1ff1c628b2a94a382d22c7c3ab9a59f03be0a23486343a64ba84be1e0a77b8f0"
+    },
+    {
+      "label": "thm:coverage-four",
+      "number": "26",
+      "page": 73,
+      "body_sha256": "0e73a215f8ea0060c2c3cbc47602043220589a75e57bd95bdb694970598c6dfb"
+    },
+    {
+      "label": "cor:coverage-robust",
+      "number": "27",
+      "page": 76,
+      "body_sha256": "0c5dfe021b9e3aaec8c3fffdca9eb55bb9dac1c81644fa61018f23e150cd3ed4"
+    },
+    {
+      "label": "thm:pair-resource-minimum",
+      "number": "28",
+      "page": 78,
+      "body_sha256": "541589127fd70dd36145999b96d9dd5ce2ea1c1feda7cf79785eac95b0188b5e"
+    },
+    {
+      "label": "cor:sparse-pair-resource-robust",
+      "number": "29",
+      "page": 81,
+      "body_sha256": "f6456e94695ef430d3be0df5ec357e2f4bbe133581c1c12a069365a2626546a1"
+    },
+    {
+      "label": "thm:global-pair-resource-minimum",
+      "number": "30",
+      "page": 82,
+      "body_sha256": "d5888030ba8b58cb9ad056ee955e26352f1d60e32252e43d05308b51aa292811"
+    },
+    {
+      "label": "thm:gs-pair-resource-minimum",
+      "number": "31",
+      "page": 86,
+      "body_sha256": "22919217929c5e3822d2db505ed8ded256760c23effb87343c3336721385cba4"
+    },
+    {
+      "label": "cor:gs-relative-robustness",
+      "number": "32",
+      "page": 90,
+      "body_sha256": "9c8cd4e8a0e8267ac379819990dc6d04dadf4b536e53b6af75d8eaf7843a795f"
+    }
+  ],
+  "all30old_statement_bodies_and27proofs_unchanged": true,
+  "GS_theorem": {
+    "number": 31,
+    "page": 86,
+    "scope": "CompleteFOUR-querysources;quadraticpaircoverageGS;fullcausalSKIPprivatezeroerrorminimax;minimumpositivepairs3;Pexact1025/47,A<=324871/14899"
+  },
+  "GS_robustness": {
+    "number": 32,
+    "page": 90,
+    "dimension": 5,
+    "radius": "27/208586",
+    "gap_lower": "27/14899",
+    "notarbitrary10parameterGSbox": true
+  },
+  "public_proof_relative_path": "../../theory/gs_four_query_pair_minimum3_v01",
+  "prose_attribution_correction": "Original464/466P20prosewasalreadycorrect. OnlyinitialV25TeXhadareversedleafpair;acceptedcorrectedreadingmatchesoriginalprofile.",
+  "original_private_GS_ZIP_sha256": "2291378aee41a9dfa24dfe975838bf0ea9ee9d85785ac6c98acb4bc7eeb4f015",
+  "source_global_enumeration_inherited_current_finite_replay_distinct": true,
+  "same_AI_not_external_human_or_formal_review": true,
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "author_facts_and_approval_deferred": true,
+  "not_submitted": true
+}

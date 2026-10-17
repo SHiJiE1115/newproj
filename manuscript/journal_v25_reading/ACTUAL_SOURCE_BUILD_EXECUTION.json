@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "outer_start": {
+    "pid": 3108,
+    "command": [
+      "runtime-or-host-origin://00e3e698c700e83f/python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "artifact-origin://artifacts/iteration468/rebuild_public_source_v01.py"
+    ],
+    "started_utc": "2026-10-17T13:15:41.359526+00:00",
+    "script_sha256": "ea81659a86ba546404506f8e06552b6318fb4795d10657a07716011dc1a9ac32"
+  },
+  "outer_terminal": {
+    "pid": 3108,
+    "actual_exit_code": 0,
+    "timed_out": false,
+    "completed_utc": "2026-10-17T13:16:07.609755+00:00",
+    "wall_seconds": 26.271291900018696,
+    "full_process_CPU": {
+      "seconds": 7.625,
+      "method": "GetProcessTimes on retained child handle; whole process including imports"
+    }
+  },
+  "all4compiler_stages": [
+    {
+      "start": {
+        "pid": 18828,
+        "command": [
+          "runtime-or-host-origin://9d0c50a24e3a40e5/pdflatex.exe",
+          "--disable-installer",
+          "--disable-write18",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "paper.tex"
+        ],
+        "retained_Popen": true,
+        "started_utc": "2026-10-17T13:15:47.765240+00:00"
+      },
+      "terminal": {
+        "stage": "compile_1",
+        "pid": 18828,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "retained_Popen_wait": true,
+        "wall_seconds": 3.196310100000119
+      }
+    },
+    {
+      "start": {
+        "pid": 14700,
+        "command": [
+          "runtime-or-host-origin://3a6e46f884554a6e/bibtex.exe",
+          "--disable-installer",
+          "paper"
+        ],
+        "retained_Popen": true,
+        "started_utc": "2026-10-17T13:15:51.109765+00:00"
+      },
+      "terminal": {
+        "stage": "bibtex",
+        "pid": 14700,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "retained_Popen_wait": true,
+        "wall_seconds": 1.260788700019475
+      }
+    },
+    {
+      "start": {
+        "pid": 20680,
+        "command": [
+          "runtime-or-host-origin://9d0c50a24e3a40e5/pdflatex.exe",
+          "--disable-installer",
+          "--disable-write18",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "paper.tex"
+        ],
+        "retained_Popen": true,
+        "started_utc": "2026-10-17T13:15:52.792756+00:00"
+      },
+      "terminal": {
+        "stage": "compile_2",
+        "pid": 20680,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "retained_Popen_wait": true,
+        "wall_seconds": 2.314617099997122
+      }
+    },
+    {
+      "start": {
+        "pid": 23804,
+        "command": [
+          "runtime-or-host-origin://9d0c50a24e3a40e5/pdflatex.exe",
+          "--disable-installer",
+          "--disable-write18",
+          "-interaction=nonstopmode",
+          "-halt-on-error",
+          "paper.tex"
+        ],
+        "retained_Popen": true,
+        "started_utc": "2026-10-17T13:15:55.297787+00:00"
+      },
+      "terminal": {
+        "stage": "compile_3",
+        "pid": 23804,
+        "actual_exit_code": 0,
+        "timed_out": false,
+        "retained_Popen_wait": true,
+        "wall_seconds": 2.405469599994831
+      }
+    }
+  ],
+  "PDF_correspondence": "All91wholepagetextsandMediaBoxesexact;distributedreadingPDFisoriginalacceptedrawbyteexactPDF.",
+  "original_V25_visual_review": "All91contactpagesand30fullviewsalreadycheckedonthisEXACTreadingPDF;notanewhumanreview.",
+  "no_pixelidentity_of_the_new_rebuilt_PDF_claimed": true
+}

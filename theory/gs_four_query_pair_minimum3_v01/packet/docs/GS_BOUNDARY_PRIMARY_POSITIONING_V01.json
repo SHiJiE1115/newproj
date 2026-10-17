@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "status": "BOUNDED_PRIMARY_GS_BOUNDARY_POSITIONING_AND_EXACT_TRANSFER_AUDIT_COMPLETE_PRIORITY_OPEN",
+  "scope": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\PRIORITY_REDUCTION_SCOPE_V01.json",
+    "bytes": 2442,
+    "sha256": "d5e43e75f212917744b2491c6a7160051ba56b02449334f40a1e671c26997e30"
+  },
+  "primary_captures": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\PRIMARY_CAPTURE_V01.json",
+    "bytes": 4267,
+    "sha256": "f6656c0b4ac9931e4550b7a294a335deceee86a250ce164f032de5aac3d3f6cc"
+  },
+  "literal_locator_audit": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\PRIMARY_LITERAL_LOCATOR_CHECK_V01.json",
+    "bytes": 1365,
+    "sha256": "9efaf6d28bd6007752d86f93163cab0ac4a0f8b039864ef42726764b82029b65"
+  },
+  "fresh_primary_sources": [
+    {
+      "title": "Pandora's Problem with Combinatorial Cost",
+      "authors": "Berger/Ezra/Feldman/Fusco",
+      "URL": "https://arxiv.org/html/2303.01078v1",
+      "publisher_URL": "https://pubsonline.informs.org/doi/10.1287/moor.2023.0248",
+      "version_read": "Latest listed arXivv1 body; publisherabstract seen,fullpublisherPDF unavailable403",
+      "locators": "Section2;Theorem4.1;AppendicesA,C",
+      "meaning": "Independent-reward utility search; submodular costs admit fixed-prefix optimality. New common-utility-offset A/P-value-preserving reduction is obstructed by the certified Bayes gap.",
+      "not_claimed": "No contradiction to that theorem or claim finaljournalbody matchesv1."
+    },
+    {
+      "title": "Non-Adaptive Evaluation of k-of-n Functions: Tight Gap and a Unit-Cost PTAS",
+      "authors": "Mads Anker Nielsen, Lars Rohwedder, Kevin Schewior",
+      "URL": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.APPROX/RANDOM.2025.26",
+      "version_read": "OfficialAPPROX2025HTML",
+      "locators": "Definitions inSection1;Theorem1;Section3gap construction",
+      "meaning": "Product-bit,additive-costSBFEhasgapexactly2. GenericGSadaptivityseparationisnotanewclaim. Fullcube threshold pivotality also rules out permanentSKIP at mixed states.",
+      "not_claimed": "No four-querycomplete-fibre or pair-support threshold follows without an actual preserving reduction."
+    },
+    {
+      "title": "Substitute Valuations: Generation and Structure",
+      "authors": "Bruce Hajek",
+      "URL": "https://arxiv.org/abs/0712.3870",
+      "version_read": "arXiv0712.3870v3",
+      "locators": "Definition3/Proposition4,PDFpages5--6;interaction interpretation,page7",
+      "meaning": "StandardS3/submodular characterization,creditedthere toearlierwork,underliesourquadraticGSspecialization. No new GSgeometry,characterization or hierarchy-model claim."
+    },
+    {
+      "title": "Adaptive Submodularity: Theory and Applications in Active Learning and Stochastic Optimization",
+      "authors": "Daniel Golovin, Andreas Krause",
+      "URL": "https://arxiv.org/html/1003.3967v5",
+      "version_read": "arXivv5HTML",
+      "locators": "Definition3;Theorem5;Sections2.4and15.1",
+      "meaning": "Adaptive diminishing returns constrain utility and posterior; costs in cited extension are modular. Named guarantees are approximation results, not an exact GS-cost fixed-order collapse.",
+      "not_claimed": "No assertion that no adaptive-submodular utility reduction could exist."
+    },
+    {
+      "title": "Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem",
+      "authors": "Lisa Hellerstein, Devorah Kletenik, Naifeng Liu, R. Teal Witter",
+      "URL": "https://arxiv.org/abs/2208.03810",
+      "version_read": "arXivv1PDF",
+      "locators": "Section1andTable1;Theorem1 context",
+      "meaning": "Existing additive/product-bit SBFE adaptivity-gap literature; source/comparator assumptions must be retained."
+    }
+  ],
+  "inherited_three_primary_comparisons": {
+    "ledger": {
+      "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration462\\PRIMARY_COMPARISON_GLOBAL_V02.json",
+      "bytes": 5599,
+      "sha256": "1ea93c6cc56aca566f56351bd65d9134ed04eb05f48dcaddbb7a8ee1f01b4263"
+    },
+    "titles": [
+      "Pandora's Box Problem with Order Constraints",
+      "Approximating Pandora's Box with Correlations",
+      "A General Framework for Sequential Batch-Testing"
+    ],
+    "not_newly_read_or_universally_dismissed": true
+  },
+  "actual_ten_ticket_map": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\TEN_TICKET_TRANSFER_AND_OBSTRUCTION_V01.json",
+    "bytes": 254909,
+    "sha256": "f4f3f2bce441a74e768aa9929795326c9552f98475e2b1f55629ee9dab24687c"
+  },
+  "separate_map_checker": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\SEPARATE_TRANSFER_CHECK_V01.json",
+    "bytes": 2127,
+    "sha256": "e69cdc59a973658a8fad4cb08512c09f15e7c38b775aa9186a81ae1062d4094b"
+  },
+  "full_class_Bellman_upper_support": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\SEPARATE_BELLMAN_CLASS_RESULT_V01.json",
+    "bytes": 2202,
+    "sha256": "ec0d09f59dba90e76ec0ed5a87fadc1adf44f55bc8eebb5320a4d3fddb93eeb7"
+  },
+  "important_positioning_correction": "Do not claim genericfirstGSadaptivitygap. ExistingadditiveSBFEgapsalready useGScosts. CandidateincrementisexactGSrestrictedpositivepair-supportminimum3overcompleteFOUR-querysources/fullcausalSKIPprivateminimax,againstunrestrictedminimum2.",
+  "standard_tool_credit": [
+    "GS/S3hierarchicalgeometry",
+    "finite minimax",
+    "incidence-ticket activation modeling",
+    "Cramer and affine Lipschitz certificates",
+    "Bellman backward induction"
+  ],
+  "bounded_obstruction": "For certified prior,BA<=1022/47<1025/47=BP. No independent-reward/submodular Pandora target can simultaneously have UA=K-BA andUfixedprefix=K-BP withonecommonK, since its named theorem forcesutilityequality. This is a specific value-preserving-route obstruction, not all-reduction impossibility or a priority proof.",
+  "actual_positive_transfer": "4queries->10additiveconstant-ticketactions with explicit AND-across/OR-within resource eligibility. Information and all7symbolicchargecoefficients exact on504paths; reverse erasure costnonincrease. Not ordinaryunconstrainedfour-queryadditivemodel.",
+  "source_control": "Complete equivalence fibres are closedunderliteralbitwiseAND; interiorfullcube k-of-n positivefibres are not. This rules out identity/querypermutation/labelswap copies only.",
+  "no_direct_subsumption_established_in_inspected_named_theorems": true,
+  "search_absence_or_model_difference_alone_proves_novelty": false,
+  "reasonable_next_action": "Prepare one combined relocated proof and substantive manuscript integration of the exact bounded theorem, using careful contribution wording; priority remainsOPEN.",
+  "new_GS_claim_in_current_paper": false,
+  "publisher_full_body_unavailable_not_silently_substituted": true,
+  "same_agent_internal_not_external_human_or_formal_review": true,
+  "priority": "OPEN",
+  "application_advantage": "NOT_ESTABLISHED",
+  "whole_project_complete": false
+}

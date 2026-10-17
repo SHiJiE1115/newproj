@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "origin_context_immutable": "Old441receiptsand463hypothesis/464candidate/465readerlabelsareorigincontext;notcurrentPIDorverdict.",
+  "current_verdict": "GS_restricted_minimum3;universalGS_equalityREFUTED;oldunrestrictedminimum2unchanged",
+  "origin_pin_label_binding": "Originpathlabels;allactualbytes/SHAchecked;ONEdeclaredderivedacceptancerecordreturnsinheritedorigincommitmentafteractualderivedhashcheck;separatephysicalIOandcurrentprocessreceipts;nooriginfilesystemfallback",
+  "inherited_global_source_and_full_policy_enumeration": true,
+  "fresh_finite_monotone_source_kernels": 1345,
+  "fresh_residual_source_and_minimal_policy_audits": 11,
+  "fresh_balanced_lower_roots": 1584,
+  "full_class_P_lower_does_not_use_cached32profile_exhaustiveness": true,
+  "A39_profile_read_only_for_Bayes_upper_comparison_in_separate_Bellman_reader": true,
+  "combined_proof_also_reads_cached_profiles_for_feasible_mixtures_and_affine_crosschecks": true,
+  "relative_box_full_class_lower_by_all16set_Lipschitz_bound": true,
+  "arbitrary10parameter_GS_box_claimed": false,
+  "same_agent_internal_not_human_external_or_formal_review": true,
+  "priority": "OPEN",
+  "whole_project_complete": false
+}

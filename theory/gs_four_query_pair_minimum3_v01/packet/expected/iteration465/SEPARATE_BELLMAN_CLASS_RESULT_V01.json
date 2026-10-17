@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "status": "PASS_FULL_CAUSAL_SKIP_BAYES_CLASS_BY_EXACT_BELLMAN_RECURRENCE",
+  "scope": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\BELLMAN_CLASS_SCOPE_V01.json",
+    "bytes": 1088,
+    "sha256": "d06b9e4b2abc820933b12fa13b5dde33dcd36745fbfc3b4de99a5126a1f75c24"
+  },
+  "source": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\SOURCE1209_ORIGINAL_FAMILIES_V01.json",
+    "bytes": 42302,
+    "sha256": "03d5f73f832bf7888a61c75ddd761704dab14ed3fbafe99f65dc6347d9f706ad"
+  },
+  "certificate": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\TRIANGLE3_STRICT_GS_GAP_CANDIDATE_CERTIFICATE_V01.json",
+    "bytes": 5556,
+    "sha256": "55ae4c3b7cec7d7f5d291c7bb2b37df579cf2b040ad5c44006b53b9141ba6efa"
+  },
+  "proof": {
+    "path": "D:\\CodexResearch\\ccfa-ccfa-01a0ce5d\\artifacts\\iteration465\\CAUSAL_SKIP_BELLMAN_PROOF_V01.json",
+    "bytes": 486925,
+    "sha256": "c0886b11bd2791469209e444a726128103d3b961bdb601efc28e8a92a70b0ba8"
+  },
+  "all24_globalorders_checked": true,
+  "all1602states_checked": true,
+  "counts": {
+    "nodes": 1602,
+    "mixed_choices": 526,
+    "pure": 572,
+    "infeasible_mixed_terminal": 504,
+    "zero_prior_mixed_states": 110
+  },
+  "P_Bayes_exact": "1025/47",
+  "A39_Bayes_upper": "1022/47",
+  "Bayes_gap_lower": "3/47",
+  "original_zero_prior_worlds_remain_correctness_obligations": true,
+  "full_policy_class_coverage": "Every fixed-order zero-error continuation either stops on a pure version space or makes the next causalSKIP/TAKE decision. Both branches are checked; mixedterminal is infeasible evenatzeroprior. State(V,k,S)containsallfutureinformationandfinal-setcostcontext. Monotonecost makespurestopoptimal. PrivateBayesrandomizationislinear andcannotbeatbestpureorder/policy.",
+  "P_lower_no_longer_requires_cached32profile_exhaustiveness": true,
+  "cached_source_policy_families_imported_or_compared": false,
+  "exact_adaptive_minimax_or_priority_claimed": false,
+  "producer_code_imported": false,
+  "same_agent_internal_not_external_human_or_formal_review": true,
+  "whole_project_complete": false
+}
