@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "packet": {
+    "name": "public_fixed_depth_witness_v01.zip",
+    "bytes": 188536,
+    "sha256": "80c4010ff82f293057d520c1994f089075e20150dbfb03396c3b28c66441b2b4"
+  },
+  "original598_archive": {
+    "bytes": 198324,
+    "sha256": "14c6b3dc3bb4663dac65f176c81cb8a6db4988b02a9bbd9149b276566868f063"
+  },
+  "expected_entrypoint": "python -I -X utf8 -B run.py",
+  "dependency": "Python3.10+ standard library; fresh extraction; no external downloads.",
+  "execution_summary": {
+    "name": "WINDOWS_EXECUTION_SUMMARY_V01.json",
+    "bytes": 2656,
+    "sha256": "280b6ecf2cf937fd735b0822f748f879436edc1383e0ef92cd44034b3f7220fd"
+  },
+  "lineage_location": "PUBLIC_DERIVATION.json inside the archive",
+  "no_new_blanket_license": true
+}

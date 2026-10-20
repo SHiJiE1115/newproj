@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "kind": "Derived public summary of a retained local Windows execution",
+  "packet": {
+    "name": "public_fixed_depth_witness_v01.zip",
+    "bytes": 188536,
+    "sha256": "80c4010ff82f293057d520c1994f089075e20150dbfb03396c3b28c66441b2b4"
+  },
+  "environment": {
+    "platform": "win32",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "completed_utc": "2026-10-20T03:16:27.580852+00:00",
+  "actual_children": [
+    {
+      "phase": "FIXED",
+      "actual_pid": 30948,
+      "actual_exit_code": 0,
+      "completed_utc": "2026-10-20T03:16:24.979447+00:00",
+      "wall_seconds": 0.7660000000032596,
+      "original_terminal_bytes": {
+        "bytes": 249,
+        "sha256": "4e1f077e61d595dd61fc78eea457907130da65cc7dfbc75d2cd8c053f1348df2"
+      },
+      "executed_script_sha256": "1ec86a27da66606405640c1df87026798171dab79f4c0b82b3823e2e68ebca22"
+    },
+    {
+      "phase": "VERIFY",
+      "actual_pid": 8752,
+      "actual_exit_code": 0,
+      "completed_utc": "2026-10-20T03:16:27.340234+00:00",
+      "wall_seconds": 2.297000000020489,
+      "original_terminal_bytes": {
+        "bytes": 247,
+        "sha256": "f0499ee01b50c537903b31b17ab2a1f064811e6039daec1f3cc4a535b46f48cf"
+      },
+      "executed_script_sha256": "0a09ba80d48e8c7a08bdc660e2df688dc4fe26e691db80cc391f3b64cbcf9235"
+    }
+  ],
+  "complete_producer_scientific_fields_equal": true,
+  "complete_checker_scientific_fields_equal": true,
+  "producer_metadata_exclusions": [
+    "wall_seconds"
+  ],
+  "checker_metadata_exclusions": [
+    "checker_sha256",
+    "production_exit_receipt_sha256",
+    "production_sha256",
+    "protocol_sha256",
+    "wall_seconds"
+  ],
+  "new_metadata_recomputed_and_bound": true,
+  "counts": {
+    "orders": 5064,
+    "physical_partitions": 4140
+  },
+  "seven": {
+    "adaptive_cost": 4.5,
+    "priority_cost": 5.0,
+    "depth_limited_units": {
+      "1": null,
+      "2": 10,
+      "3": 10,
+      "4": 9
+    }
+  },
+  "horn_control": {
+    "adaptive_cost": 5.0,
+    "priority_cost": 6.0
+  },
+  "raw_local_replay_result": {
+    "bytes": 1834,
+    "sha256": "f0b67701dd009d3971be89cab21e9d1c34f3528294a5d36f7c823fc8b1673e90"
+  },
+  "scope": "One actual fresh Windows extraction of the public D2 derivative. Historical receipts inside the ZIP are separate. No new Linux run, universal D1 proof, full B5/six-query replay, API call, human review, application superiority or journal submission.",
+  "provenance_limit": "The terminal hashes identify locally retained original receipt bytes. This derived public summary omits local paths; it is not an OS-signed attestation or an original raw receipt."
+}

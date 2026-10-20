@@ -1,5 +1,14 @@
 # Research materials: current index
 
+## Fixed depth-four witness supplement (20 October 2026)
+
+[Public fixed-depth supplement](theory/fixed_depth_witness_v01/README.txt)
+contains the metadata-clean D2 archive and a scoped summary of its actual fresh
+Windows replay. Both fixed-control programs completed with all scientific fields
+matching the retained controls. The archive does not replay the universal
+depth-three or six-query/B5 proofs. The focused V34 paper remains unsubmitted.
+
+
 ## Structural purchase-depth: actual Linux reproduction retained (20 October 2026)
 
 [Original service artifact and scope](evidence/structural_depth_hosted_v01/README.txt)
