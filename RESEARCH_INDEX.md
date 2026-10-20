@@ -1,5 +1,15 @@
 # Research materials: current index
 
+## New structural purchase-depth proof supplement (20 October 2026)
+
+[Public R64 and C4_64 proof packet](theory/structural_depth_v01/README.txt) preserves
+the mathematical cases while removing private machine metadata. The exact public
+packet passed a fresh Windows replay. One fixed-tag Linux reproduction is prepared;
+this deposit does not yet claim that execution succeeded. Scope and byte bindings
+are in the supplement. The current V34 manuscript candidate remains private.
+The earlier version headings below retain their historical deposit wording.
+
+
 ## Current reviewed V13 editorial draft
 
 [40-page V13 reading copy and exact editable source](manuscript/journal_v13/README.txt) preserve all15numbered statements,12proofs and5tables from V12, with a current30claim index. Formal2025journal citation/version numbering, public availability, actual small-menu source/run/archive provenance and bounded related-work positioning are unified. The complete12member source ZIP is exact to the accepted local source; only the public claim ledger is explicitly path-normalized. [Version and verification scope](manuscript/journal_v13/PROVENANCE_SCOPE_V13.json) distinguish real local compilation, existing hosted executions and their limits. No new workflow/science/model execution is performed by this editorial deposit. PublicV12and all older evidence remain unchanged. Exact literature priority, final author facts/approval and journal submission remain open; no application advantage is established.

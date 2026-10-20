@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "packet": {
+    "name": "public_structural_depth_v01.zip",
+    "bytes": 1033046,
+    "sha256": "db76170d0a2f23deab3e59d4077f5525bc89b369c19b4569d424114b22cda413"
+  },
+  "runner": {
+    "name": "run_public_structural_hosted_v01.py",
+    "bytes": 16062,
+    "sha256": "ceb46bc6e6436cae1128a986595db0b5eba83aed96712eff3af3a5e50466f4f0"
+  },
+  "package_manifest_sha256": "31ed394908f4779e3cff359d635f84eb69a45ba098512e0c74c55f7ea393a839",
+  "mathematical_projection": {
+    "R": {
+      "cases": 64,
+      "all_UNSAT": true,
+      "open_cases": 0,
+      "not_attempted": 0,
+      "proof_nodes": 35244,
+      "unit_steps": 562548
+    },
+    "C4": {
+      "cases": 64,
+      "unit_steps": 2331,
+      "witness_splits": 0
+    }
+  },
+  "manual_execution_intent": {
+    "mechanism": "One normal non-force Git push creates the exact named tag; GitHub event is push, not workflow_dispatch",
+    "tag": "rrnc-structural-depth-607-v01",
+    "attempt": 1,
+    "automatic_retry": false,
+    "other_workflows_triggered_by_this_tag": false
+  },
+  "limits": {
+    "job_minutes": 12,
+    "outer_seconds": 600,
+    "contents_permission": "read",
+    "API_calls": 0
+  },
+  "scope": "Same-checker reproduction of finite R64 and C4_64 premises; not a new implementation, written proof formalization, B5/D2 replay, application benefit, human review or priority clearance."
+}

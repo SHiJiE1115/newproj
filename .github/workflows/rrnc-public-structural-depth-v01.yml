@@ -1,0 +1,48 @@
+# Candidate workflow for independent review before source freeze and publication.
+# Historical action pins: no floating action refs.
+name: Public structural depth finite-premise replay
+
+on:
+  push:
+    tags:
+      - rrnc-structural-depth-607-v01
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrnc-public-structural-depth-607-v01
+  cancel-in-progress: false
+
+jobs:
+  verify-structural-premises:
+    if: ${{ github.event.created == true && github.repository == 'SHiJiE1115/newproj' && github.ref == 'refs/tags/rrnc-structural-depth-607-v01' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out the selected source commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify frozen wrapper and replay the public packet once
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s  %s\n' 'ceb46bc6e6436cae1128a986595db0b5eba83aed96712eff3af3a5e50466f4f0' 'theory/structural_depth_v01/run_public_structural_hosted_v01.py' | sha256sum --check --strict -
+          python3 -I -X utf8 -B 'theory/structural_depth_v01/run_public_structural_hosted_v01.py' \
+            --packet 'theory/structural_depth_v01/public_structural_depth_v01.zip' \
+            --expected-zip-sha256 'db76170d0a2f23deab3e59d4077f5525bc89b369c19b4569d424114b22cda413' \
+            --expected-manifest-sha256 '31ed394908f4779e3cff359d635f84eb69a45ba098512e0c74c55f7ea393a839' \
+            --execution-kind github-actions \
+            --out "$RUNNER_TEMP/structural-depth-607-v01"
+      - name: Preserve original success or failure outputs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: structural-depth-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/structural-depth-607-v01/receipts/**
+          if-no-files-found: error
+          retention-days: 14
+          include-hidden-files: false
