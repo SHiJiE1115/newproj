@@ -1,5 +1,22 @@
 # Research materials: current index
 
+## Structural purchase-depth: actual Linux reproduction retained (20 October 2026)
+
+[Original service artifact and scope](evidence/structural_depth_hosted_v01/README.txt)
+retain [successful run 39358938427](https://github.com/SHiJiE1115/newproj/actions/runs/39358938427),
+attempt 1, executed source `ea1a0914cc642b2ca18787ee1342ab76b7654771`.
+The Linux package entrypoint and both checkers actually exited 0; all 64 R
+and 64 C4 cases passed. Complete scientific results agree with the Windows
+control under the precisely listed runtime/path omissions. The original
+12,128-byte ZIP matches the GitHub service artifact digest and is retained
+unchanged. This is same-checker finite-premise reproduction, not a replay
+of B5, the six-query boundary or the D2 witness, a new independent
+implementation, human review, application advantage or journal acceptance.
+The later archive commit is distinct from the executed source. Earlier
+deposit wording below is preserved as historical; the Linux execution
+prepared in the next section has now completed. V34 remains private.
+
+
 ## New structural purchase-depth proof supplement (20 October 2026)
 
 [Public R64 and C4_64 proof packet](theory/structural_depth_v01/README.txt) preserves

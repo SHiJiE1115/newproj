@@ -1,0 +1,81 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 118420263302,
+      "run_id": 39358938427,
+      "workflow_name": "Public structural depth finite-premise replay",
+      "head_branch": "rrnc-structural-depth-607-v01",
+      "run_url": "https://api.github.com/repos/SHiJiE1115/newproj/actions/runs/39358938427",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUy7lgM8AAAAbkmXRhg",
+      "head_sha": "ea1a0914cc642b2ca18787ee1342ab76b7654771",
+      "url": "https://api.github.com/repos/SHiJiE1115/newproj/actions/jobs/118420263302",
+      "html_url": "https://github.com/SHiJiE1115/newproj/actions/runs/39358938427/job/118420263302",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-20T02:26:44Z",
+      "started_at": "2026-10-20T02:26:46Z",
+      "completed_at": "2026-10-20T02:26:54Z",
+      "name": "verify-structural-premises",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-20T02:26:47Z",
+          "completed_at": "2026-10-20T02:26:47Z"
+        },
+        {
+          "name": "Check out the selected source commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-20T02:26:47Z",
+          "completed_at": "2026-10-20T02:26:50Z"
+        },
+        {
+          "name": "Verify frozen wrapper and replay the public packet once",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-20T02:26:50Z",
+          "completed_at": "2026-10-20T02:26:52Z"
+        },
+        {
+          "name": "Preserve original success or failure outputs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-20T02:26:52Z",
+          "completed_at": "2026-10-20T02:26:53Z"
+        },
+        {
+          "name": "Post Check out the selected source commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-20T02:26:53Z",
+          "completed_at": "2026-10-20T02:26:53Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-20T02:26:53Z",
+          "completed_at": "2026-10-20T02:26:53Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/SHiJiE1115/newproj/check-runs/118420263302",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000014,
+      "runner_name": "GitHub Actions 1000000014",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

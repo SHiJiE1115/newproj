@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "status": "PASS_RETAINED_PROVIDER_BOUND_R64_C4_64_LINUX_REPRODUCTION",
+  "record_type": "Public derived scope summary; original execution evidence is in the unchanged ZIP and service snapshots.",
+  "run_id": 39358938427,
+  "run_attempt": 1,
+  "run_url": "https://github.com/SHiJiE1115/newproj/actions/runs/39358938427",
+  "executed_source_commit": "ea1a0914cc642b2ca18787ee1342ab76b7654771",
+  "event": "push",
+  "tag": "rrnc-structural-depth-607-v01",
+  "workflow_path": ".github/workflows/rrnc-public-structural-depth-v01.yml",
+  "job_id": 118420263302,
+  "artifact_id": 12236074178,
+  "runtime": {
+    "system": "Linux",
+    "python": "3.12.3"
+  },
+  "actual_process_exits": {
+    "package_entrypoint": 0,
+    "R": 0,
+    "C4": 0
+  },
+  "mathematical_projection": {
+    "R": {
+      "cases": 64,
+      "all_UNSAT": true,
+      "open_cases": 0,
+      "not_attempted": 0,
+      "proof_nodes": 35244,
+      "unit_steps": 562548
+    },
+    "C4": {
+      "cases": 64,
+      "unit_steps": 2331,
+      "witness_splits": 0
+    }
+  },
+  "comparison_with_prior_Windows_execution": {
+    "Windows_runtime": {
+      "system": "Windows",
+      "python": "3.12.14"
+    },
+    "all_64_R_scientific_rows_equal": true,
+    "complete_R_object_equal_after_only_listed_runtime_or_path_omissions": true,
+    "R_omitted_fields": [
+      "actual_pid",
+      "checked_at_utc",
+      "elapsed_seconds",
+      "checker.path",
+      "production_result.path",
+      "frozen_protocol.path"
+    ],
+    "R_hash_and_size_fields_of_source_pins_retained": true,
+    "complete_parsed_C4_JSON_equal": true,
+    "comparison_is_more_than_aggregate_projection": true,
+    "private_local_evidence_is_not_redistributed_here": true
+  },
+  "review": {
+    "two_AI_evidence_checks_agree": true,
+    "human_review": false,
+    "review_was_read_only_no_new_mathematical_execution": true
+  },
+  "provenance": {
+    "identity_basis": "Original GitHub API run/job/artifact snapshots, exact service artifact size and SHA256, and matching retained process receipts.",
+    "transport": "The exact artifact was obtained through nightly.link after anonymous GitHub archive retrieval returned HTTP 401.",
+    "transport_is_not_execution_authenticator": true,
+    "conditional_trust": "Interpretation relies on authentic GitHub API snapshots, its artifact digest, and the GitHub runner; environment strings alone do not establish execution."
+  },
+  "scope_limits": {
+    "same_checker_cross_system_reproduction": true,
+    "new_independent_mathematical_implementation": false,
+    "new_theorem_or_new_case_search_by_retention": false,
+    "written_normalization_coverage_and_gluing_formally_verified": false,
+    "D2_witness_or_B5_or_six_query_replayed": false,
+    "all_manuscript_claims_reproduced": false,
+    "original_academic_evaluation_advantage_established": false,
+    "literature_priority_cleared": false,
+    "human_author_approval": false,
+    "journal_submission_or_acceptance": false
+  },
+  "publication_identity": {
+    "executed_source_commit": "ea1a0914cc642b2ca18787ee1342ab76b7654771",
+    "later_archive_commit": null,
+    "explanation": "The later repository commit containing this directory archives this earlier run; it is not the source commit executed by the runner. Its identifier is assigned by publication and is not embedded self-referentially."
+  }
+}
