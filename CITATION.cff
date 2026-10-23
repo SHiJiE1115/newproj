@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "For individual proof components, cite the fixed versions in docs/CITATION.md. This entry cites the repository artifact collection, not the manuscript."
+type: software
+title: "Priced Equality Queries: Proof and Reproduction Artifacts"
+authors:
+  - name: "SHiJiE1115"
+repository-code: "https://github.com/SHiJiE1115/priced-equality-queries"
+url: "https://github.com/SHiJiE1115/priced-equality-queries"
+abstract: "Computational proof artifacts, exact verification programs, and reproduction records for adaptivity thresholds in priced equality queries under complete equivalence promises."
+keywords:
+  - query complexity
+  - adaptivity
+  - equality queries
+  - decision trees
+  - computer-assisted proof
